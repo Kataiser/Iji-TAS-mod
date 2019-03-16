@@ -10,8 +10,9 @@
 //  Frames until next step
 //  Target/actual FPS
 
+// Main menu
 //speed 1
-//speed 1000
+speed 1000
 escape 12
 enter 4
 enter 15
@@ -23,10 +24,9 @@ escape 4
 
 // Sector 1
 escape right- 103
-speed 2
+speed 5
 up- 15
-up+ 10
+up+ 12
 up- 60
 
-speed 30
 end
