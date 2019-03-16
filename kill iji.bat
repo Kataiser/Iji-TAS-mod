@@ -1,0 +1,1 @@
+taskkill /IM "iji_17_tas.exe" /F
