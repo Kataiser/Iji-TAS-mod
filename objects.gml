@@ -2414,6 +2414,8 @@ Create Event:
 
 execute code:
 
+scr_storeseed();
+
 killtype=1;
 image_speed=0.5;
 state=1;
@@ -2441,6 +2443,9 @@ if (global.really){
     resistance*=2;
     security*=2;
     }
+    
+scr_restoreseed();
+
 Alarm Event for alarm 0:
 
 set variable reloading to 0
@@ -2455,6 +2460,8 @@ else
 Alarm Event for alarm 2:
 
 execute code:
+
+scr_storeseed();
 
 //Fast getup fix
 if (golden)
@@ -2611,10 +2618,15 @@ else{
         }
     }
 if (global.really && state==1 && alarm[2]>5)
-    alarm[2]=5;
+    {alarm[2]=5;}
+    
+scr_restoreseed();
+
 Alarm Event for alarm 4:
 
 execute code:
+
+scr_storeseed();
 
 //Death
 if (dead==1){
@@ -2696,12 +2708,17 @@ if (dead==0) && state==5{
         alarm[2]=14;
         }    
     }
+    
+scr_restoreseed();
+
 Alarm Event for alarm 5:
 
 set variable angry to 0
 Alarm Event for alarm 6:
 
 execute code:
+
+scr_storeseed();
 
 if (golden){
 if (facing==0){
@@ -2818,9 +2835,14 @@ else{
     }
 }
 }
+
+scr_restoreseed();
+
 Alarm Event for alarm 7:
 
 execute code:
+
+scr_storeseed();
 
 if (alarm[2]>=1 && state==3 && (sprite_index==spr_tasensoldier_pain || sprite_index==spr_tasensoldier_painleft)){
     alarm[7]=4;
@@ -2829,9 +2851,14 @@ if (alarm[2]>=1 && state==3 && (sprite_index==spr_tasensoldier_pain || sprite_in
     repeat(2)
         (instance_create(bbox_left-8+random(bbox_right-bbox_left+16),bbox_top-4+random(bbox_bottom-bbox_top+8),obj_glassspark)).image_index=4;
     }
+    
+scr_restoreseed();
+
 Step Event:
 
 execute code:
+
+scr_storeseed();
 
 //Golden
 if (golden && !goldeninit){
@@ -3115,9 +3142,12 @@ if (state==4){
         move_contact_solid(270,-1);
         }
     }
+
 Collision Event with object obj_bullet:
 
 execute code:
+
+scr_storeseed();
 
 if (!other.stagger)
     ijikill=1;
@@ -3167,9 +3197,14 @@ with (other){
         instance_create(x,y,obj_bullethit);
     instance_destroy();
     }
+
+scr_restoreseed();
+
 Collision Event with object obj_pellet:
 
 execute code:
+
+scr_storeseed();
 
 if (!other.stun)
     ijikill=1;
@@ -3221,9 +3256,14 @@ with (other){
         instance_create(x,y,obj_bullethit);
     instance_destroy();
     }
+    
+scr_restoreseed();
+
 Collision Event with object obj_kickbox:
 
 execute code:
+
+scr_storeseed();
 
 global.temp=0;
 with (other){
@@ -3302,9 +3342,14 @@ if (angry==0){
         }
     }
 }
+
+scr_restoreseed();
+
 Collision Event with object obj_rocketexplosion:
 
 execute code:
+
+scr_storeseed();
 
 {
 if (other.dud==0){
@@ -3330,9 +3375,14 @@ if (angry==0){
         script_execute(scr_enemyknockdown,2,force);
     }
 }
+
+scr_restoreseed();
+
 Collision Event with object obj_mpfbexplosion:
 
 execute code:
+
+scr_storeseed();
 
 //Nanodust
 if (!golden){
@@ -3401,9 +3451,14 @@ else{
             script_execute(scr_enemyknockdown,2,force);
         }
     }
+    
+scr_restoreseed();
+
 Collision Event with object obj_pulse:
 
 execute code:
+
+scr_storeseed();
 
 global.truce=0;
 if (!other.linker)
@@ -3447,10 +3502,15 @@ if (dead==0 && !other.linker){
     instance_create(other.x-3+random(7),other.y-3+random(7),obj_tasensplat);
     }
 if (other.linker)
-    scr_pulselink(3);
+    {scr_pulselink(3);}
+    
+scr_restoreseed();
+
 Collision Event with object obj_enemyrocketexplosion:
 
 execute code:
+
+scr_storeseed();
 
 {
 if (other.dud==0){
@@ -3467,9 +3527,14 @@ if (other.dud==0){
         script_execute(scr_enemyknockdown,2,force);
     }
 }
+
+scr_restoreseed();
+
 Collision Event with object obj_shockexplosion:
 
 execute code:
+
+scr_storeseed();
 
 {
 if (other.dud==0){
@@ -3494,9 +3559,14 @@ if (angry==0){
         script_execute(scr_enemyknockdown,2,force);
     }
 }
+
+scr_restoreseed();
+
 Collision Event with object obj_shockballexplosion:
 
 execute code:
+
+scr_storeseed();
 
 {
 if (other.dud==0){
@@ -3521,9 +3591,14 @@ if (angry==0){
     alarm[5]=300;
     }
 }
+
+scr_restoreseed();
+
 Collision Event with object obj_enemympfbexplosion:
 
 execute code:
+
+scr_storeseed();
 
 //Nanodust
 if (!golden){
@@ -3579,9 +3654,14 @@ else{
             script_execute(scr_enemyknockdown,2,force);
         }
     }
+    
+scr_restoreseed();
+
 Collision Event with object obj_pushbox:
 
 execute code:
+
+scr_storeseed();
 
 if (dead==0){
     if (global.truce){
@@ -3627,9 +3707,14 @@ else{
     global.erasetop=0;
     global.topmessage="Unable to connect to nanofield; subject is dead";
     }
+    
+scr_restoreseed();
+
 Collision Event with object obj_meta:
 
 execute code:
+
+scr_storeseed();
 
 {
 with (other)
@@ -3641,9 +3726,14 @@ if (other.sprite_index=spr_glass2 || other.sprite_index=spr_glass2small || other
     }
 */
 }
+
+scr_restoreseed();
+
 Collision Event with object obj_thor:
 
 execute code:
+
+scr_storeseed();
 
 if (thored==0){
     ijikill=1;
@@ -3698,9 +3788,14 @@ if (thored==0){
         instance_destroy();
         }
     }
+    
+scr_restoreseed();
+
 Collision Event with object obj_enemyshockballexplosion:
 
 execute code:
+
+scr_storeseed();
 
 {
 if (other.dud==0){
@@ -3718,9 +3813,14 @@ if (other.dud==0){
     target=other.target;
     }
 }
+
+scr_restoreseed();
+
 Collision Event with object obj_enemyshockexplosion:
 
 execute code:
+
+scr_storeseed();
 
 {
 if (other.dud==0){
@@ -3738,9 +3838,14 @@ if (other.dud==0){
         script_execute(scr_enemyknockdown,2,force);
     }
 }
+
+scr_restoreseed();
+
 Collision Event with object obj_enemypulse:
 
 execute code:
+
+scr_storeseed();
 
 ijikill=0;
 if (other.hyper==1 && armor<30){
@@ -3775,9 +3880,14 @@ if (dead==0){
     armor-=1;
     instance_create(other.x-3+random(7),other.y-3+random(7),obj_tasensplat);
     }
+    
+scr_restoreseed();
+
 Collision Event with object obj_impulseexplosion:
 
 execute code:
+
+scr_storeseed();
 
 if (other.dud==0){
     if (angry==0){
@@ -3798,6 +3908,9 @@ if (other.dud==0){
     else
         script_execute(scr_enemyknockdown,2,force,1);
     }
+    
+scr_restoreseed();
+
 ______________________________________________________
 
 Information about object: obj_pellet
@@ -4900,12 +5013,12 @@ Create Event:
 
 execute code:
 
+scr_storeseed();
+
 killtype=1;
 image_speed=0.5;
 state=1;
-scr_storeseed();
 alarm[2]=25+random(10);
-scr_restoreseed();
 hp=1;
 maxhp=1;
 armor=100;
@@ -4920,6 +5033,8 @@ if (global.really){
     instance_destroy();
     instance_create(x,y,obj_tasensoldier);
     }
+    
+scr_restoreseed();
 
 Alarm Event for alarm 0:
 
@@ -5676,7 +5791,7 @@ if (dead==0 && !other.linker){
     instance_create(other.x-3+random(7),other.y-3+random(7),obj_tasensplat);
     }
 if (other.linker)
-    scr_pulselink(2);
+    {scr_pulselink(2);}
     
 scr_restoreseed();
 
