@@ -40743,3 +40743,9 @@ instance_activate_object(obj_tas)
 with (obj_sabot) {scr_unpause();}
 paused = false;
 
+#define scr_storeseed
+random_set_seed(killdataid);
+
+#define scr_restoreseed
+random_set_seed(global.seed)
+
