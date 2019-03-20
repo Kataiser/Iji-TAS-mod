@@ -54231,13 +54231,6 @@ Key Press Event for Key:
 
 execute code:
 
-io_clear();
-game_restart();
-
-Key Press Event for Key:
-
-execute code:
-
 if (!has_started) {
     tas_file_name = get_open_filename("TAS file|*.tas", "");
     
@@ -54251,13 +54244,6 @@ if (!has_started) {
         has_started = true;
     }
 }
-
-Key Press Event for L-key Key:
-
-execute code:
-
-state_filename_load = get_open_filename("STATE file|*.state", "");
-if (state_filename_load != "") {game_load(state_filename_load);}
 
 ______________________________________________________
 
@@ -54290,6 +54276,26 @@ execute code:
 if (paused == true) {
     draw_background(global.pausebackid,view_xview[0],view_yview[0])
 }
+
+Key Press Event for Key:
+
+execute code:
+
+io_clear();
+game_restart();
+
+Key Press Event for K-key Key:
+
+execute code:
+
+game_end();
+
+Key Press Event for L-key Key:
+
+execute code:
+
+state_filename_load = get_open_filename("STATE file|*.state", "");
+if (state_filename_load != "") {game_load(state_filename_load);}
 
 Key Press Event for M-key Key:
 

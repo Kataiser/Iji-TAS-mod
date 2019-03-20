@@ -20438,7 +20438,7 @@ tempstring[5]=file_text_read_string(fileid);
 file_text_readln(fileid);
 tempstring[6]=file_text_read_string(fileid);
 file_text_readln(fileid);
-compare=file_text_read_real(fileid);
+compare=real(file_text_read_string(fileid));
 file_text_close(fileid);
 //Add ASCII values together regardless of position
 for (i=0;i<=4;i+=1){
@@ -20498,6 +20498,7 @@ else
 }
 else
     wrongsum=1;
+
 #define scr_appendsave
 //Add ASD to a previous version savefile
 if (file_exists("ijisave.sav")){
