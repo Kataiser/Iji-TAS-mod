@@ -1,15 +1,4 @@
 // 1.7 (Modded) Non-Pacifist by Kataiser
-// Backspace: close file
-// Backspace again: restart game
-// Space: load a TAS file
-// N: pause/unpause
-// M: advance frame while paused (currently broken)
-// L: load savestate
-// Debug text:
-//  Current line, step, and frame
-//  Current inputs
-//  Frames until next step
-//  Target/actual FPS
 
 // Main menu
 speed 1000
