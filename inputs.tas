@@ -1,9 +1,10 @@
 // 1.7 (Modded) Non-Pacifist by Kataiser
 // Backspace: close file
 // Backspace again: restart game
-// Space: run TAS
+// Space: load a TAS file
 // N: pause/unpause
 // M: advance frame while paused (currently broken)
+// L: load savestate
 // Debug text:
 //  Current line, step, and frame
 //  Current inputs
@@ -11,7 +12,6 @@
 //  Target/actual FPS
 
 // Main menu
-//speed 1
 speed 1000
 escape 12
 enter 4
@@ -23,8 +23,9 @@ escape 3
 escape 4
 
 // Sector 1
+speed 30
+save: sec1
 escape right- 103
-speed 5
 up- 15
 up+ 12
 up- 60

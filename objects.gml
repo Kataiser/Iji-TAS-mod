@@ -54122,7 +54122,6 @@ Create Event:
 execute code:
 
 randomize();
-globalvar seed;
 global.seed = random_get_seed();
 instance_create(x,y,obj_taspause);
 rm_speed = 30;
@@ -54137,21 +54136,20 @@ inputs_file = file_text_open_read(tas_file_name);
 line = 0;
 
 repeat (step) {
-    do {
-        scr_readline();
-        
-        if (string_count("speed", current_inputs) == 1 and string_count("//", current_inputs) == 0) {
-            room_speed = num_in_inputs;
-            rm_speed = num_in_inputs;
-            scr_readline();
-        }
+    scr_nextline();
+    
+    if (string_count("speed", current_inputs) == 1 and string_count("//", current_inputs) == 0) {
+        room_speed = num_in_inputs;
+        rm_speed = num_in_inputs;
+        scr_nextline();
     }
-    until (current_inputs != "" and string_count("//", current_inputs) == 0)
 }
 
 file_text_close(inputs_file);
 step += 1;
+alarm[0] = num_in_inputs;
 
+handle = false;
 scr_executecommand("escape", vk_escape);
 scr_executecommand("enter", vk_enter);
 scr_executecommand("up", vk_up);
@@ -54174,14 +54172,21 @@ scr_executecommand("6", ord('6'));
 scr_executecommand("7", ord('7'));
 scr_executecommand("8", ord('8'));
 scr_executecommand("9", ord('9'));
+if (handle) {io_handle();}
 
-if (string_count("speed", current_inputs) == 1) {
-    room_speed = num_in_inputs;
-    rm_speed = num_in_inputs;
-    alarm[0] = 1;
+if (string_count("save: ", current_inputs) == 1) {
+    state_filename_save = string_replace(current_inputs, "save: ", "");
+    io_clear();
+    game_save("savestates\" + state_filename_save + ".state");
+    // yeah this eats the frame ¯\_(?)_/¯
 }
-else {
-    alarm[0] = num_in_inputs;
+
+Begin Step Event:
+
+execute code:
+
+if (has_started) {
+    room_speed = rm_speed;
 }
 
 End Step Event:
@@ -54189,7 +54194,6 @@ End Step Event:
 execute code:
 
 if (has_started) {
-    room_speed = rm_speed;
     frame += 1;
 }
 
@@ -54247,6 +54251,13 @@ if (!has_started) {
         has_started = true;
     }
 }
+
+Key Press Event for L-key Key:
+
+execute code:
+
+state_filename_load = get_open_filename("STATE file|*.state", "");
+if (state_filename_load != "") {game_load(state_filename_load);}
 
 ______________________________________________________
 

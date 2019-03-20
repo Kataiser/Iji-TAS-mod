@@ -40697,16 +40697,18 @@ if (!horsegameover && !horsevictory){
             instance_destroy();
         }
     }
-#define scr_readline
-line += 1;
-current_inputs = file_text_read_string(inputs_file);
-num_in_inputs = real(string_digits(current_inputs));
-file_text_readln(inputs_file);
+#define scr_nextline
+do {
+    line += 1;
+    current_inputs = file_text_read_string(inputs_file);
+    num_in_inputs = real(string_digits(current_inputs));
+    file_text_readln(inputs_file);
+}
+until (current_inputs != "" and string_count("//", current_inputs) == 0)
 
 #define scr_executecommand
 key_short = argument0;
 key_long = argument1;
-handle = false;
 
 if (string_count("end", current_inputs) == 1) {
     io_clear();
@@ -40729,8 +40731,6 @@ else {
         handle = true;
     }
 }
-
-if (handle) {io_handle();}
 
 #define scr_taspause
 global.pausebackid = background_create_from_screen(0,0,800,600,false,false);
