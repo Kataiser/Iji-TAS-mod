@@ -54176,8 +54176,8 @@ if (handle) {io_handle();}
 if (string_count("save: ", current_inputs) == 1) {
     state_filename_save = string_replace(current_inputs, "save: ", "");
     io_clear();
-    game_save("savestates\" + state_filename_save + ".state");
     alarm[0] = 1;
+    game_save("savestates\" + state_filename_save + ".state");
     // yeah this eats the frame
 }
 else {alarm[0] = num_in_inputs;}
@@ -54209,11 +54209,11 @@ if (debug_text) {
     
     if instance_exists(obj_shakescreen) {
         root_x = obj_shakescreen.x-400;
-        root_y = obj_shakescreen.y-300;
+        root_y = obj_shakescreen.y-301;
     }
     else {
         root_x = 0;
-        root_y = 0;
+        root_y = -1;
     }
     
     file_opened = true;
