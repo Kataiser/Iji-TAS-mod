@@ -54202,7 +54202,8 @@ Draw Event:
 execute code:
 
 if (debug_text) {
-    draw_set_font(global.fontwhite);
+    //draw_set_font(global.fontwhite);
+    draw_set_font(fnt_tasdebug);
     draw_set_color(c_white);
     
     if instance_exists(obj_shakescreen) {
@@ -54217,9 +54218,9 @@ if (debug_text) {
     file_opened = true;
     if (file_opened == true) {
         draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
-        draw_text_ext(root_x,root_y + 28,current_inputs,28,800);
-        draw_text_ext(root_x,root_y + 56,alarm[0],28,800);
-        draw_text_ext(root_x,root_y + 84,string(room_speed) + "/" + string(fps),28,800);
+        draw_text_ext(root_x,root_y + (18 * 1),current_inputs,28,800);
+        draw_text_ext(root_x,root_y + (18 * 2),alarm[0],28,800);
+        draw_text_ext(root_x,root_y + (18 * 3),string(room_speed) + "/" + string(fps),28,800);
     }
     else {
         draw_text_ext(root_x,root_y,line,28,800);
