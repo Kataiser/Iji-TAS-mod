@@ -54127,6 +54127,7 @@ instance_create(x,y,obj_taspause);
 rm_speed = 30;
 has_started = false;
 debug_text = true;
+held_keys = ds_list_create(); //data strutures don't get saved in savestates, but that's not a problem (hopefully)
 
 Alarm Event for alarm 0:
 
@@ -54138,7 +54139,7 @@ line = 0;
 repeat (step) {
     scr_nextline();
     
-    if (string_count("speed", current_inputs) == 1 and string_count("//", current_inputs) == 0) {
+    if (string_count("speed", current_inputs) == 1) {
         room_speed = num_in_inputs;
         rm_speed = num_in_inputs;
         scr_nextline();
@@ -54216,10 +54217,14 @@ if (debug_text) {
         root_y = -1;
     }
     
+    held_keys_string = "";
+    for (i=0; i<=ds_list_size(held_keys); i+=1) {held_keys_string += string(ds_list_find_value(held_keys, i)) + " ";}
+    held_keys_string = string_replace(held_keys_string, "0", "");
+    
     file_opened = true;
     if (file_opened == true) {
         draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
-        draw_text_ext(root_x,root_y + (18 * 1),current_inputs,28,800);
+        draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
         draw_text_ext(root_x,root_y + (18 * 2),alarm[0],28,800);
         draw_text_ext(root_x,root_y + (18 * 3),string(room_speed) + "/" + string(fps),28,800);
     }
