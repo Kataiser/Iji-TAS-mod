@@ -54147,7 +54147,6 @@ repeat (step) {
 
 file_text_close(inputs_file);
 step += 1;
-alarm[0] = num_in_inputs;
 
 handle = false;
 scr_executecommand("escape", vk_escape);
@@ -54178,8 +54177,10 @@ if (string_count("save: ", current_inputs) == 1) {
     state_filename_save = string_replace(current_inputs, "save: ", "");
     io_clear();
     game_save("savestates\" + state_filename_save + ".state");
-    // yeah this eats the frame ¯\_(?)_/¯
+    alarm[0] = 1;
+    // yeah this eats the frame
 }
+else {alarm[0] = num_in_inputs;}
 
 Begin Step Event:
 
