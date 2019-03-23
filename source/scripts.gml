@@ -5149,6 +5149,7 @@ if (visioncheck==4){
     visioncheck=0;
     }
 }
+
 #define scr_ijibeginstep
 //Pulse sfx
 if (firingpulse>0)
@@ -5189,6 +5190,7 @@ if (!mdk && noliftride==0 && keyboard_check(vk_up) && global.state==1 && !global
         }
     }
 }
+
 #define scr_ijiendstep
 if (!ignorephysics){
 
@@ -40737,13 +40739,29 @@ else {
 }
 
 #define scr_taspause
-global.pausebackid = background_create_from_screen(0,0,800,600,false,false);
-instance_deactivate_all(1);
+pausebackid = background_create_from_screen(0,0,800,600,false,false);
+instance_deactivate_all(true);
 paused = true;
 
 #define scr_tasunpause
-instance_activate_object(obj_sabot)
-instance_activate_object(obj_tas)
+/*instance_activate_all();
+
+if (global.horse){
+    instance_deactivate_region(x-900,y-900,1800,1800,0,1);
+    with (obj_shakescreen)
+        scr_methodhorse();
+    }
+else{
+    if (global.sector!=11 && global.sector!=12 && global.sector!=13 && global.sector!=14 && global.sector!=15){
+        instance_deactivate_region(x-1600,y-1400,3200,2800,0,1);
+        with (obj_shakescreen)
+            scr_methodx();
+        }
+    }
+These might be used if scr_unpause causes problems.*/
+
+instance_activate_object(obj_tas);
+instance_activate_object(obj_sabot);
 with (obj_sabot) {scr_unpause();}
 paused = false;
 

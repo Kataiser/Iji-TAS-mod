@@ -24,8 +24,8 @@ Line syntax: `-` after a key presses and holds it, `+` releases it, and neither 
 
 Backspace: restart game  
 Space: load a TAS file  
-N: pause/unpause  
-M: advance frame while paused (currently broken, causes desync)  
+M: pause/unpause  
+N: advance frame while paused
 L: load savestate  
 K: close Iji
 
@@ -33,14 +33,14 @@ Debug text:
 \> Current line, step, and frame  
 \> Current inputs  
 \> Frames until next step  
-\> Target/actual FPS  
+\> Target FPS, actual FPS, and activated instance count  
 
 ## Modifications
 As per the rules of TAS modding, only the bare minimum of changes to the game have been made to allow the reading of the inputs from a file, along with some minor changes to make creation much easier without affecting gameplay and the final playback.
 
 - Reading inputs from a chosen file, with guaranteed sync
 - Saving and loading of savestates
-- Pausing and frame-advancing (currently broken)
+- Pausing and frame-advancing
 - Deterministic enemy RNG (currently not for every enemy)
 - Framerate control (due to the lack of delta-time in Game Maker 8.1, this doesn't affect gameplay)
 - Debug text (will be toggleable at some point)

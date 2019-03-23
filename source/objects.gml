@@ -54183,6 +54183,12 @@ if (string_count("save: ", current_inputs) == 1) {
 }
 else {alarm[0] = num_in_inputs;}
 
+Alarm Event for alarm 1:
+
+execute code:
+
+with (obj_taspause) {scr_taspause();}
+
 Begin Step Event:
 
 execute code:
@@ -54217,6 +54223,7 @@ if (debug_text) {
         root_y = -1;
     }
     
+    fps_string = string(room_speed) + "/" + string(fps) + "/" + string(instance_count);
     held_keys_string = "";
     for (i=0; i<=ds_list_size(held_keys); i+=1) {held_keys_string += string(ds_list_find_value(held_keys, i)) + " ";}
     held_keys_string = string_replace(held_keys_string, "0", "");
@@ -54226,7 +54233,7 @@ if (debug_text) {
         draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
         draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
         draw_text_ext(root_x,root_y + (18 * 2),alarm[0],28,800);
-        draw_text_ext(root_x,root_y + (18 * 3),string(room_speed) + "/" + string(fps),28,800);
+        draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
     }
     else {
         draw_text_ext(root_x,root_y,line,28,800);
@@ -54267,27 +54274,31 @@ Create Event:
 
 execute code:
 
-globalvar pausebackid;
 paused = false;
 
 Alarm Event for alarm 0:
 
 execute code:
 
-scr_taspause()
+keyboard_key_press(ord("M"));
+io_handle();
+
+// Q: why not just run scr_taspause?
+// A: it causes dysync for some reason
 
 Draw Event:
 
 execute code:
 
 if (paused == true) {
-    draw_background(global.pausebackid,view_xview[0],view_yview[0])
+    draw_background(pausebackid,view_xview[0],view_yview[0])
 }
 
 Key Press Event for Key:
 
 execute code:
 
+///Restart the game
 io_clear();
 game_restart();
 
@@ -54295,16 +54306,39 @@ Key Press Event for K-key Key:
 
 execute code:
 
+///Close the game
+io_clear();
 game_end();
 
 Key Press Event for L-key Key:
 
 execute code:
 
+///Load savestate
 state_filename_load = get_open_filename("STATE file|*.state", "");
-if (state_filename_load != "") {game_load(state_filename_load);}
+if (state_filename_load != "") {
+    instance_activate_object(obj_tas);
+    ds_list_clear(obj_tas.held_keys);
+    paused = false;
+    game_load(state_filename_load);
+}
 
 Key Press Event for M-key Key:
+
+execute code:
+
+///Pause/unpause
+keyboard_key_release(ord("M"));
+io_handle();
+
+if (paused == false) {
+    scr_taspause();
+}
+else {
+    scr_tasunpause();
+}
+
+Key Press Event for N-key Key:
 
 execute code:
 
@@ -54312,18 +54346,6 @@ execute code:
 if (paused == true) {
     scr_tasunpause();
     alarm[0] = 1;
-}
-
-Key Press Event for N-key Key:
-
-execute code:
-
-///Pause/unpause
-if (paused == false) {
-    scr_taspause()
-}
-else {
-    scr_tasunpause()
 }
 
 ______________________________________________________
