@@ -25,7 +25,7 @@ Line syntax: `-` after a key presses and holds it, `+` releases it, and neither 
 Backspace: restart game  
 Space: load a TAS file  
 M: pause/unpause  
-N: advance frame while paused
+N: advance frame while paused  
 L: load savestate  
 K: close Iji
 
