@@ -6161,6 +6161,8 @@ else if (global.state==8){
     }
 
 #define scr_bullet
+scr_storeseed();
+
 //Argument0 is bullet type
 // 0 pellet
 // 1 bullet
@@ -6229,6 +6231,9 @@ if (nanoblast && !obj_iji.nanoblasted && hit){
     instance_create(x,y,obj_explosioncenter);
     scr_shakescreen(2);
     }
+    
+scr_restoreseed();
+
 #define scr_recoveryblink
 //Blink when damaged
 if (blink==1 && !obj_iji.invisible){
@@ -8497,7 +8502,9 @@ if (check>0){
         check.cfised=1;
         check.ijikill=1;
         if (check.angry==0){
+            scr_storeseed();
             check.alarm[2]=random(60-(global.difficulty*20))+30-(global.difficulty*10);
+            scr_restoreseed();
             check.angry=1;
             check.visible=0;
             instance_create(check.bbox_left+((check.bbox_right-check.bbox_left)/2), check.bbox_top+((check.bbox_bottom-check.bbox_top)/2), obj_megaflash);
@@ -10563,7 +10570,9 @@ while (hit==0 && lifespan<100){
     if (temprand<0.1)
         instance_create(x,y,obj_airspark);
     //Spread bullets
+    scr_storeseed();
     y=(y-12+random(24));
+    scr_restoreseed();
 
     lifespan=lifespan+2.4;
     if (argument0==0){
@@ -10585,6 +10594,7 @@ while (hit==0 && lifespan<100){
         }
     }
 }
+
 #define scr_dropammo
 //Enemy drops ammo
 //Argument0 is x
@@ -10593,7 +10603,9 @@ while (hit==0 && lifespan<100){
 //Argument3 is type
 if (facing) ammofix=16;
 else ammofix=-16;
+scr_storeseed();
 ammodrop = random(argument2);
+scr_restoreseed();
 if (ammodrop < 1){
     if (argument3 == 1)
     instance_create(x+argument0-16+ammofix, y+argument1-16, obj_ammo1);
@@ -10620,6 +10632,7 @@ if (ammodrop < 1){
     if (argument3 == 12)
     instance_create(x+argument0-16+ammofix, y+argument1-16, obj_ammo12);
     }
+
 #define scr_enemyplasmatrace
 //Plasma trace
 if (place_free(x,y)==0) distance=2001;
@@ -11048,6 +11061,8 @@ if (hp<=0 && !dead && argument1==0){
         }
     repeat(3)
         instance_create(x+15,y+15,obj_tasenbloodspecial);
+        
+    scr_storeseed();
     if (facing==0){
         if (krotera)
             sprite_index=spr_krotera_deathleft;
@@ -11067,7 +11082,9 @@ if (hp<=0 && !dead && argument1==0){
         tempid.direction=(35 + random(20));
         tempid.speed=(6 + random(8));
         }
+    scr_restoreseed();
     }
+
 #define scr_assassinpain
 //Argument0 one is teleporting to safety
 lastx=x;
@@ -40744,29 +40761,36 @@ instance_deactivate_all(true);
 paused = true;
 
 #define scr_tasunpause
-/*instance_activate_all();
-
-if (global.horse){
-    instance_deactivate_region(x-900,y-900,1800,1800,0,1);
-    with (obj_shakescreen)
-        scr_methodhorse();
-    }
-else{
-    if (global.sector!=11 && global.sector!=12 && global.sector!=13 && global.sector!=14 && global.sector!=15){
-        instance_deactivate_region(x-1600,y-1400,3200,2800,0,1);
-        with (obj_shakescreen)
-            scr_methodx();
-        }
-    }
-These might be used if scr_unpause causes problems.*/
-
 instance_activate_object(obj_tas);
 instance_activate_object(obj_sabot);
-with (obj_sabot) {scr_unpause();}
 paused = false;
 
+if (room == rom_resolution or room == rom_main or room == rom_cut or room == rom_clear or room == rom_endgame) {
+    instance_activate_all();
+}
+else {
+    //below code is adapted from scr_unpause
+    with (obj_sabot){
+    pause=0;
+    instance_activate_all();
+    if (global.horse){
+        instance_deactivate_region(x-900,y-900,1800,1800,0,1);
+        with (obj_shakescreen)
+            scr_methodhorse();
+        }
+    else{
+        if (global.sector!=11 && global.sector!=12 && global.sector!=13 && global.sector!=14 && global.sector!=15){
+            instance_deactivate_region(x-1600,y-1400,3200,2800,0,1);
+            with (obj_shakescreen)
+                scr_methodx();
+            }
+        }
+    instance_activate_object(obj_activateme);
+    }
+}
+
 #define scr_storeseed
-random_set_seed(killdataid);
+random_set_seed(id);
 
 #define scr_restoreseed
 random_set_seed(global.seed)
