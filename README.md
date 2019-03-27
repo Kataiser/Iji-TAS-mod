@@ -8,8 +8,8 @@ https://discord.gg/8P9fjRW
 Please consider joining if you're at all interested!
 
 ## Download and installation
-[downloader.zip (89.2 MB)](https://github.com/Kataiser/Iji-TAS-mod/raw/master/downloader.zip)  
-Extract the .zip and run `Download Iji-TAS-mod.bat`. Doesn't include an auto-updater, but you can re-run the batch file to get updates.
+[Iji_TAS_mod.zip (80.1 MB)](https://github.com/Kataiser/Iji-TAS-mod/raw/master/Iji_TAS_mod.zip)  
+Extract the .zip and run `Downloader.bat`. You can run `Updater.bat` occasionally to get updates.
 
 ## Syntax, controls, and documentation
 
