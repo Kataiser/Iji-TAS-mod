@@ -54176,18 +54176,13 @@ if (handle) {io_handle();}
 
 if (string_count("save: ", current_inputs) == 1) {
     state_filename_save = string_replace(current_inputs, "save: ", "");
+    obj_taspause.most_recent_savestate = state_filename_save
     io_clear();
     alarm[0] = 1;
     game_save("savestates\" + state_filename_save + ".state");
     // yeah this eats the frame
 }
 else {alarm[0] = num_in_inputs;}
-
-Alarm Event for alarm 1:
-
-execute code:
-
-with (obj_taspause) {scr_taspause();}
 
 Begin Step Event:
 
@@ -54275,6 +54270,7 @@ Create Event:
 execute code:
 
 paused = false;
+most_recent_savestate = "INIT";
 
 Alarm Event for alarm 0:
 
@@ -54306,9 +54302,13 @@ Key Press Event for K-key Key:
 
 execute code:
 
-///Close the game
-io_clear();
-game_end();
+///Load most recent savestate
+if (most_recent_savestate != "INIT") {
+    instance_activate_object(obj_tas);
+    ds_list_clear(obj_tas.held_keys);
+    paused = false;
+    game_load("savestates\" + most_recent_savestate + ".state");
+}
 
 Key Press Event for L-key Key:
 

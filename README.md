@@ -27,7 +27,7 @@ Space: load a TAS file
 M: pause/unpause  
 N: advance frame while paused  
 L: load savestate  
-K: close Iji
+K: load most recently saved savestate
 
 Debug text:  
 \> Current line, step, and frame  
