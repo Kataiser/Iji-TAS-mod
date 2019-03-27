@@ -7,10 +7,9 @@ Please note that Iji was made by [Daniel Remar](https://twitter.com/reallyremar)
 https://discord.gg/8P9fjRW  
 Please consider joining if you're at all interested!
 
-## Downloads
-Everything (recommended, includes documentation and kill script): [Iji-TAS-mod-master.zip](https://github.com/Kataiser/Iji-TAS-mod/archive/master.zip)  
-Just the modded game: [iji_17_tas.exe](https://github.com/Kataiser/Iji-TAS-mod/raw/master/iji_17_tas.exe)  
-Neither has an auto-updater, check back to https://github.com/Kataiser/Iji-TAS-mod occasionally for updates
+## Download and installation
+[downloader.zip (89.2 MB)](https://github.com/Kataiser/Iji-TAS-mod/raw/master/downloader.zip)  
+Extract the .zip and run `Download Iji-TAS-mod.bat`. Doesn't include an auto-updater, but you can re-run the batch file to get updates.
 
 ## Syntax, controls, and documentation
 
