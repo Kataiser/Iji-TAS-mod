@@ -44,6 +44,7 @@ As per the rules of TAS modding, only the bare minimum of changes to the game ha
 - Deterministic enemy RNG (currently not for every enemy)
 - Framerate control (due to the lack of delta-time in Game Maker 8.1, this doesn't affect gameplay)
 - Debug text (will be toggleable at some point)
+- Disabled Vsync
 
 ## It broke!
 Sorry. This is a work-in-progress mod of a complex game that I didn't make, in a fairly old engine that's already being pushed to its limits by this game. There's a to-do page over at https://github.com/Kataiser/Iji-TAS-mod/projects/1, and any reproducible bugs specific to the mod should be added to https://github.com/Kataiser/Iji-TAS-mod/issues and/or mentioned on the Discord.
