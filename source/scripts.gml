@@ -40726,6 +40726,8 @@ do {
 }
 until (current_inputs != "" and string_count("//", current_inputs) == 0)
 
+frames_on_step = 1;
+
 #define scr_executecommand
 key_short = argument0;
 key_long = argument1;
@@ -40761,18 +40763,13 @@ instance_deactivate_all(true);
 paused = true;
 
 #define scr_tasunpause
-instance_activate_object(obj_tas);
-instance_activate_object(obj_sabot);
+instance_activate_all();
 paused = false;
 
-if (room == rom_resolution or room == rom_main or room == rom_cut or room == rom_clear or room == rom_endgame) {
-    instance_activate_all();
-}
-else {
+if (room != rom_resolution and room != rom_main and room != rom_cut and room != rom_clear and room != rom_endgame) {
     //below code is adapted from scr_unpause
     with (obj_sabot){
     pause=0;
-    instance_activate_all();
     if (global.horse){
         instance_deactivate_region(x-900,y-900,1800,1800,0,1);
         with (obj_shakescreen)
@@ -40790,8 +40787,20 @@ else {
 }
 
 #define scr_storeseed
-random_set_seed(id);
+//random_set_seed(id);
 
 #define scr_restoreseed
-random_set_seed(global.seed)
+//random_set_seed(global.seed)
+
+#define scr_seed
+hash = 1;
+
+for (si = 0; si <= string_length(argument0); si += 1) {
+    char_as_ascii = ord(string_char_at(argument0, si));
+    hash += char_as_ascii;
+}
+
+hash *= (id - 100000);
+hash += argument1;
+random_set_seed(hash);
 

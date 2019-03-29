@@ -54109,7 +54109,7 @@ Mask:
 ______________________________________________________
 
 Information about object: obj_tas
-Sprite: 
+Sprite: spr_sabot
 Solid: false
 Visible: true
 Depth: 0
@@ -54122,12 +54122,13 @@ Create Event:
 execute code:
 
 randomize();
-global.seed = random_get_seed();
-instance_create(x,y,obj_taspause);
 rm_speed = 30;
 has_started = false;
-debug_text = true;
 held_keys = ds_list_create(); //data strutures don't get saved in savestates, but that's not a problem (hopefully)
+tas_font = font_add_sprite(spr_text_tas,32,0,0);
+current_inputs = " ";
+frames_on_step = 1;
+alarm[1] = 1;
 
 Alarm Event for alarm 0:
 
@@ -54184,12 +54185,31 @@ if (string_count("save: ", current_inputs) == 1) {
 }
 else {alarm[0] = num_in_inputs;}
 
+Alarm Event for alarm 1:
+
+execute code:
+
+alarm[1] = 1;
+
+if (has_started) {
+    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
+}
+
+Step Event:
+
+execute code:
+
+if (has_started) {
+    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
+}
+
 Begin Step Event:
 
 execute code:
 
 if (has_started) {
     room_speed = rm_speed;
+    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
 }
 
 End Step Event:
@@ -54197,44 +54217,59 @@ End Step Event:
 execute code:
 
 if (has_started) {
+    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
     frame += 1;
+    frames_on_step += 1;
+}
+
+Collision Event with object obj_tas:
+
+execute code:
+
+if (has_started) {
+    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
+}
+
+Keyboard Event for Key:
+
+execute code:
+
+if (has_started) {
+    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
 }
 
 Draw Event:
 
 execute code:
 
-if (debug_text) {
-    //draw_set_font(global.fontwhite);
-    draw_set_font(fnt_tasdebug);
-    draw_set_color(c_white);
+draw_set_font(tas_font);
+draw_set_color(c_white);
+
+if instance_exists(obj_shakescreen) {
+    root_x = obj_shakescreen.x-396;
+    root_y = obj_shakescreen.y-296;
     
-    if instance_exists(obj_shakescreen) {
-        root_x = obj_shakescreen.x-400;
-        root_y = obj_shakescreen.y-301;
-    }
-    else {
-        root_x = 0;
-        root_y = -1;
-    }
-    
-    fps_string = string(room_speed) + "/" + string(fps) + "/" + string(instance_count);
-    held_keys_string = "";
-    for (i=0; i<=ds_list_size(held_keys); i+=1) {held_keys_string += string(ds_list_find_value(held_keys, i)) + " ";}
-    held_keys_string = string_replace(held_keys_string, "0", "");
-    
-    file_opened = true;
-    if (file_opened == true) {
-        draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
-        draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
-        draw_text_ext(root_x,root_y + (18 * 2),alarm[0],28,800);
-        draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
-    }
-    else {
-        draw_text_ext(root_x,root_y,line,28,800);
-        draw_text_ext(root_x,root_y + 28,"File closed",28,800);
+    if (!global.hidetime) {
+        root_x += 4;
+        root_y += 60;
     }
 }
+else {
+    root_x = 4;
+    root_y = 4;
+}
+
+fps_string = string(room_speed) + "/" + string(fps) + "/" + string(instance_count);
+held_keys_string = "";
+for (i=0; i<=ds_list_size(held_keys); i+=1) {held_keys_string += string(ds_list_find_value(held_keys, i)) + " ";}
+held_keys_string = string_replace(held_keys_string, "0", "");
+
+draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
+draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
+draw_text_ext(root_x,root_y + (18 * 2),alarm[0],28,800);
+draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
+
+//No seed stuff here, hopefully no draw events have important gameplay RNG
 
 Key Press Event for Key:
 
@@ -54347,5 +54382,22 @@ if (paused == true) {
     scr_tasunpause();
     alarm[0] = 1;
 }
+
+______________________________________________________
+
+Information about object: obj_tascollision
+Sprite: spr_kickbox
+Solid: false
+Visible: false
+Depth: 1
+Persistent: true
+Parent: obj_activateme
+Mask: 
+
+Create Event:
+
+execute code:
+
+///Used for collision events with obj_tas every frame
 
 ______________________________________________________
