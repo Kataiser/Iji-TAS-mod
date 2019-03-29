@@ -30,7 +30,7 @@ K: load most recently saved savestate
 
 Debug text:  
 \> Current line, step, and frame  
-\> Current inputs  
+\> Held keys  
 \> Frames until next step  
 \> Target FPS, actual FPS, and activated instance count  
 
