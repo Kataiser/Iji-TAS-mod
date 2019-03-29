@@ -46,4 +46,7 @@ As per the rules of TAS modding, only the bare minimum of changes to the game ha
 - Disabled Vsync
 
 ## It broke!
-Sorry. This is a work-in-progress mod of a complex game that I didn't make, in a fairly old engine that's already being pushed to its limits by this game. There's a to-do page over at https://github.com/Kataiser/Iji-TAS-mod/projects/1, and any reproducible bugs specific to the mod should be added to https://github.com/Kataiser/Iji-TAS-mod/issues and/or mentioned on the Discord.
+Sorry. This is a work-in-progress mod of a complex game that I didn't make, in a different version of an engine that's already being pushed to its limits by this game. There's a to-do page over at https://github.com/Kataiser/Iji-TAS-mod/projects/1, and any reproducible bugs specific to the mod should be added to https://github.com/Kataiser/Iji-TAS-mod/issues and/or mentioned on the Discord.
+
+## Why not just use Hourglass?
+I've already done a [TAS of this game](https://www.youtube.com/watch?v=eiYmJJUmzpI) using [Hourglass](https://github.com/TASVideos/hourglass-win32), and it's still a totally viable option. However, there were a few frustrations I had with it that I wanted to fix with this mod: you can't make changes to an existing TAS and have them propogate forward in time, you have to replay the entire TAS so far in fast-forward after reopening the game in order to continue, playback is laggy, and it crashes occasionally. I hope this mod makes your TASing life easier.
