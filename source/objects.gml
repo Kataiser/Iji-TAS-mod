@@ -12055,6 +12055,16 @@ if (face.count>-1){
     image_single=1;
     }
 }
+Draw Event:
+
+execute code:
+
+draw_self();
+
+if (image_index == 0) {
+    draw_sprite(spr_tastext, 0, x + 4, y + 252);
+}
+
 ______________________________________________________
 
 Information about object: obj_intro1
@@ -46629,6 +46639,7 @@ else
     draw_sprite(spr_mainfullweapons,obj_face.weaponinfo,672,0);
 draw_sprite(spr_mainarrows,0,622,0);
 }
+
 Key Press Event for Key:
 
 execute code:
@@ -54399,5 +54410,16 @@ Create Event:
 execute code:
 
 ///Used for collision events with obj_tas every frame
+
+______________________________________________________
+
+Information about object: obj_tastext
+Sprite: spr_tastext
+Solid: false
+Visible: true
+Depth: 0
+Persistent: false
+Parent: 
+Mask: 
 
 ______________________________________________________
