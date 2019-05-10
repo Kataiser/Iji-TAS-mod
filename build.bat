@@ -8,6 +8,7 @@ md build_target\savestates
 xcopy iji_17_tas.exe build_target\ /v /f
 xcopy LICENSE build_target\ /v /f
 xcopy README.md build_target\ /v /f
+xcopy tas_text.gmspr build_target\ /v /f
 xcopy "kill iji.bat" build_target\ /v /f
 xcopy "%~dp0\inputs" "%~dp0\build_target\inputs\" /e /q /v /f
 

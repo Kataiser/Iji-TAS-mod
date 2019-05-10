@@ -25,6 +25,7 @@ Backspace: restart game
 Space: load a TAS file  
 M: pause/unpause  
 N: advance frame while paused  
+B: stop TAS execution  
 L: load savestate  
 K: load most recently saved savestate
 

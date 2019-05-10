@@ -40742,6 +40742,7 @@ if (string_count("end", current_inputs) == 1) {
     rm_speed = 30;
     handle = true;
     ds_list_clear(held_keys);
+    alarm[0] = -1;
 }
 else {
     if (string_count(" " + key_short + "- ", " " + current_inputs + " ") == 1) {
@@ -40801,10 +40802,9 @@ hash = 1;
 
 for (si = 0; si <= string_length(argument0); si += 1) {
     char_as_ascii = ord(string_char_at(argument0, si));
-    hash += char_as_ascii;
+    hash += char_as_ascii * si;
 }
 
-hash *= (id - 100000);
 hash += argument1;
 random_set_seed(hash);
 

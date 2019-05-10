@@ -12108,6 +12108,13 @@ Alarm Event for alarm 0:
 execute code:
 
 visible=1;
+Draw Event:
+
+execute code:
+
+draw_self();
+draw_sprite(spr_tastext, 0, x + 35, y + 57);
+
 ______________________________________________________
 
 Information about object: obj_menutext
@@ -12908,6 +12915,7 @@ if (cracked==0){
             global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
         else
             global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+        clipboard_set_text(string(random_get_seed()))
         script_execute(scr_begincrack);
         }
     else{
@@ -12919,6 +12927,7 @@ if (cracked==0){
         scr_sound("glo_crackfail");
         }
     }
+
 Draw Event:
 
 execute code:
@@ -54123,10 +54132,10 @@ Information about object: obj_tas
 Sprite: spr_sabot
 Solid: false
 Visible: true
-Depth: 0
+Depth: -10000
 Persistent: true
 Parent: obj_activateme
-Mask: 
+Mask: spr_block
 
 Create Event:
 
@@ -54139,7 +54148,6 @@ held_keys = ds_list_create(); //data strutures don't get saved in savestates, bu
 tas_font = font_add_sprite(spr_text_tas,32,0,0);
 current_inputs = " ";
 frames_on_step = 1;
-alarm[1] = 1;
 
 Alarm Event for alarm 0:
 
@@ -54196,31 +54204,12 @@ if (string_count("save: ", current_inputs) == 1) {
 }
 else {alarm[0] = num_in_inputs;}
 
-Alarm Event for alarm 1:
-
-execute code:
-
-alarm[1] = 1;
-
-if (has_started) {
-    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
-}
-
-Step Event:
-
-execute code:
-
-if (has_started) {
-    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
-}
-
 Begin Step Event:
 
 execute code:
 
 if (has_started) {
     room_speed = rm_speed;
-    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
 }
 
 End Step Event:
@@ -54228,25 +54217,9 @@ End Step Event:
 execute code:
 
 if (has_started) {
-    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
+    scr_seed(current_inputs, frames_on_step)
     frame += 1;
     frames_on_step += 1;
-}
-
-Collision Event with object obj_tas:
-
-execute code:
-
-if (has_started) {
-    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
-}
-
-Keyboard Event for Key:
-
-execute code:
-
-if (has_started) {
-    with (all) {scr_seed(other.current_inputs, other.frames_on_step)}
 }
 
 Draw Event:
@@ -54280,8 +54253,6 @@ draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
 draw_text_ext(root_x,root_y + (18 * 2),alarm[0],28,800);
 draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
 
-//No seed stuff here, hopefully no draw events have important gameplay RNG
-
 Key Press Event for Key:
 
 execute code:
@@ -54306,7 +54277,7 @@ Information about object: obj_taspause
 Sprite: 
 Solid: false
 Visible: true
-Depth: 0
+Depth: -10000
 Persistent: true
 Parent: obj_activateme
 Mask: 
@@ -54344,6 +54315,20 @@ execute code:
 io_clear();
 game_restart();
 
+Key Press Event for B-key Key:
+
+execute code:
+
+scr_tasunpause();
+with (obj_tas) {
+    io_clear();
+    room_speed = 30;
+    rm_speed = 30;
+    handle = true;
+    ds_list_clear(held_keys);
+    alarm[0] = -1;
+}
+
 Key Press Event for K-key Key:
 
 execute code:
@@ -54352,7 +54337,7 @@ execute code:
 if (most_recent_savestate != "INIT") {
     instance_activate_object(obj_tas);
     ds_list_clear(obj_tas.held_keys);
-    paused = false;
+    scr_tasunpause();
     game_load("savestates\" + most_recent_savestate + ".state");
 }
 
@@ -54396,23 +54381,6 @@ if (paused == true) {
 
 ______________________________________________________
 
-Information about object: obj_tascollision
-Sprite: spr_kickbox
-Solid: false
-Visible: false
-Depth: 1
-Persistent: true
-Parent: obj_activateme
-Mask: 
-
-Create Event:
-
-execute code:
-
-///Used for collision events with obj_tas every frame
-
-______________________________________________________
-
 Information about object: obj_tastext
 Sprite: spr_tastext
 Solid: false
@@ -54421,5 +54389,13 @@ Depth: 0
 Persistent: false
 Parent: 
 Mask: 
+
+Create Event:
+
+execute code:
+
+if (room == rom_resolution) {
+    sprite_replace_sprite(spr_tastext, 'tas_text.gmspr')
+}
 
 ______________________________________________________
