@@ -9,7 +9,8 @@ Please consider joining if you're at all interested!
 
 ## Download and installation
 [Iji_TAS_mod.zip (14ish MB)](https://github.com/Kataiser/Iji-TAS-mod/releases/latest/download/Iji-TAS-mod.zip)  
-Doesn't include an auto-updater, check back to https://github.com/Kataiser/Iji-TAS-mod occasionally for updates
+Doesn't include an auto-updater, check back to https://github.com/Kataiser/Iji-TAS-mod occasionally for updates  
+This may also be useful: https://github.com/Kataiser/wtf-to-itf
 
 ## Syntax, controls, and documentation
 
