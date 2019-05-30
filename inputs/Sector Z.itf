@@ -217,8 +217,8 @@ up+ 21
 up- 6
 up+ 12
 up- 5
-// Frame 1826, step 216
 up+ 20
+// Frame 1826, step 217
 up- 5
 up+ 14
 up- 9
@@ -313,9 +313,9 @@ up+ 4
 left+ 6
 right- 1
 right+ 1
-// Frame 2726, step 312
 right- 1
 right+ 1
+// Frame 2726, step 314
 right- 1
 right+ 2
 left- 64
@@ -393,10 +393,10 @@ left+ 4
 left- 1
 left+ 4
 x- 1
-// Frame 3655, step 392
 left- x+ 31
 up- 2
 up+ 52
+// Frame 3655, step 395
 x- 1
 x+ 4
 left+ 11
@@ -490,11 +490,11 @@ up- 9
 up+ 36
 x- 1
 x+ 20
-// Frame 4572, step 489
 right+ 3
 up- right- 6
 up+ 20
 up- 24
+// Frame 4572, step 493
 up+ 1
 up- 7
 up+ 8
