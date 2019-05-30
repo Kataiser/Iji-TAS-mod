@@ -1,9 +1,9 @@
-// Generated from 1.6 non-pacifist 26-19.wtf
+// Generated from IjiNonPacifistCredits.wtf
 // by https://github.com/Kataiser/wtf-to-itf
 
-6
+4
 escape- 1
-escape+ 7
+escape+ 6
 enter- 1
 enter+ 1
 enter- 1
@@ -11,2014 +11,4088 @@ enter+ 1
 enter- 1
 enter+ 1
 enter- 1
-enter+ 1
+enter+ 7
+enter- 1
+enter+ 14
 enter- 1
 enter+ 1
 enter- 1
-enter+ 12
-enter- 1
-enter+ 1
-enter- 1
-enter+ 27
+enter+ 16
+escape- 2
+escape+ 2
+escape- 2
+escape+ 2
 escape- 1
-escape+ 23
+escape+ 2
 escape- 1
-escape+ 10
-escape- right- 1
-escape+ 124
+right- escape+ 126
 up- 7
-up+ 24
-up- 26
-up+ 7
-up- 1
-up+ 21
-up- 6
-up+ 35
-up- 13
-up+ 30
-up- 4
-up+ 10
-up- 6
+up+ 23
+up- 10
 up+ 15
-up- 11
-up+ 2
 up- 6
-up+ 33
-up- 13
-up+ 117
-up- 5
-up+ 170
-c- 1
-c+ 1
-right+ 3
-up- right- 1
-up+ 42
-z- 1
-z+ 69
-// Frame 907, step 54
-down- 6
-right+ down+ 37
-right- 60
-right+ 3
-escape- right- 2
-escape+ 1
-c- 1
-right+ c+ 4
-up- right- 2
-up+ 87
-up- 36
-up+ 4
-up- 3
-up+ 24
-up- 14
-up+ 5
-up- 12
-up+ 73
-up- 6
-up+ 154
-up- 25
-up+ 28
-up- 8
-up+ 26
-up- 3
 up+ 16
 x- 1
-x+ 8
-up- 4
-up+ 6
-down- 3
-down+ 8
-x- 1
-x+ 58
-up- 6
-up+ 21
-up- 9
-up+ 14
-up- 3
-up+ 35
-down- 6
-down+ 14
-// Frame 1845, step 97
-right+ 101
-right- 48
-z- 1
-z+ 31
-up- 11
+x+ 1
+up- 8
+up+ 25
+up- 15
+up+ 25
+up- 15
+up+ 12
+up- 13
 up+ 4
+up- 7
+up+ 21
 up- 3
-up+ 30
-escape- 1
-escape+ 10
-right+ 5
-right- 26
+up+ 105
+up- 2
+up+ 130
+c- 2
+c+ 3
+up- 1
+up+ 48
+z- 1
+z+ 49
+down- 5
+down+ 90
+// Frame 975, step 55
+escape- right+ 1
+right- escape+ 2
+c- 2
+c+ 2
+right+ 1
+up- right- 1
+up+ 84
+up- 5
+up+ 20
+up- 8
+up+ 15
+up- 15
+up+ 11
+up- 1
+up+ 66
+up- 15
+up+ 114
+up- 11
+up+ 15
+x- 5
+x+ 12
 c- 1
 c+ 4
-up- 4
-up+ 74
-z- 1
-z+ 53
+up- 12
+up+ 26
 up- 23
-up+ 22
+up+ 56
+x- 2
+x+ 2
+up- 20
+up+ 19
+up- 5
+up+ 42
+down- 1
+right+ down+ 39
+right- 105
+z- 1
+// Frame 1889, step 93
+z+ 26
+up- 10
+up+ 4
+up- 4
+up+ 24
+escape- right+ 1
+up- right- escape+ 1
+up+ 1
+right+ 1
+right- 109
+z- 1
+z+ 60
+up- 9
+up+ 15
 up- 21
 up+ 5
 up- 9
-up+ 19
-up- 22
-up+ 9
-x- 1
-x+ 20
-up- 18
-up+ 13
-x- 4
-x+ 19
-x- 8
-x+ 58
-up- 15
-up+ 144
-right+ 49
+up+ 15
+up- 17
+up+ 11
+up- 10
+up+ 103
+up- 14
+up+ 36
+up- 3
+up+ 1
+up- 5
+up+ 80
+right+ 36
 enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 22
-// Frame 2750, step 141
-escape- right- 1
-escape+ 91
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- 1
+right- escape+ 91
 c- 1
-c+ 4
-c- right+ 1
+c+ 1
+right+ 3
+c- 1
 down- c+ 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-right- down+ 60
-c- 1
-c+ 4
-c- right+ 1
-right- c+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
 down+ 1
 down- 1
 down+ 1
-down- 1
-down+ 5
-up- right- 3
-up+ 4
-q- 1
-q+ 140
-up- 4
-up+ 44
+right- down- 1
+right+ down+ 1
+right- down- 1
+down+ 50
 c- 1
 c+ 2
-right+ 9
+right+ 2
 c- 1
-c+ 4
+down- c+ 1
+down+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+down+ 3
+// Frame 2789, step 153
+right- 2
+up- 2
+up+ 80
+5- 9
+5+ 23
+up- 15
+up+ 35
+c- 2
+c+ 2
+right+ 1
 up- right- 1
-up+ 98
-down- 3
-down+ 69
-x- 1
-x+ 13
-up- 5
-up+ 27
-up- 18
-up+ 66
-up- 6
-up+ 1
-right+ 42
-right- 54
-up- 3
-up+ 27
-up- 23
-up+ 16
-up- 5
+up+ 87
+down- 7
+down+ 49
 x- 1
 x+ 16
-up+ 7
-right+ 37
-// Frame 3687, step 201
-left- 32
-up- 8
-up+ 53
-up- 10
-up+ 11
-up- right- left+ 1
-up+ 9
-right+ 9
-right- 5
-right+ 9
-right- 3
-right+ 6
-up- right- 3
-up+ 20
-up- 17
-up+ 38
-up- 13
-up+ 2
-right+ 3
-left- 47
-up- 22
-up+ 8
-up- 13
-up+ 6
-up- 9
-up+ 26
-up- 15
-left+ up+ 4
-right- 44
-up- 1
-up+ 32
-up- 7
-up+ 8
-up- 8
-up+ 14
-c- 1
-c+ 4
-left- up- right+ 15
-up+ 8
-right- left+ 30
-up- 7
-up+ 15
-x- 1
-x+ 22
-up- 13
-up+ 3
-left- up- right+ 10
-up+ 2
-up- right- left+ 10
-up+ 2
-left- up- right+ 15
-up+ 4
-up- 19
-up+ 60
-c- 1
-c+ 4
-up- 1
-up+ 39
-up- 1
-// Frame 4587, step 261
-up+ 5
-up- 40
-left+ up+ 70
-left- 75
-right- left+ 77
-up- 24
-up+ 72
-right+ 13
-right- 20
-up- 19
-up+ 52
-c- 1
-c+ 4
-left- up- right+ 1
-up+ 14
-left+ 2
-left- 2
-left+ 26
-left- 89
-up- 7
-up+ 25
-up- 19
-up+ 12
-up- 10
-up+ 41
-x- 1
-a- x+ 1
-a+ 1
-a- 1
-a+ 9
-up- 6
-up+ 17
-up- 4
-up+ 28
-up- 12
-up+ 9
-x- 1
-x+ 79
-up- 15
-up+ 8
-left+ 2
-escape- 1
-// Frame 5531, step 304
-left- escape+ 34
-up- 13
-up+ 97
-left+ 4
-right- 71
-right+ 5
-q- 1
-left- q+ 29
-up- 2
-up+ 36
-up- 8
-up+ 20
-c- 1
-left+ c+ 4
-left- up- 2
-up+ 34
 up- 3
-left+ 2
-right- 3
-up+ 95
-up- 2
-up+ 15
-up- 17
-up+ 34
-up- 4
-up+ 14
-up- 2
-up+ 101
-escape- 1
-escape+ 10
-c- 1
-right+ c+ 4
-c- 1
-down- c+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-right- down+ 1
-right+ 1
-right- 1
-down- right+ 1
-right- down+ 1
-right+ 1
-right- 76
-c- 1
-right+ c+ 4
-1- 1
-2- 1+ 1
-c- 2+ 1
-down- c+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-right- down+ 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-down- right+ 1
-right- down+ 1
-right+ 1
-right- 1
-right+ 11
-escape- right- 1
-escape+ 14
-up- 8
-up+ 27
-x- 1
-x+ 2
-up- 13
-up+ 46
-up- 3
-up+ 13
-up- 6
-up+ 43
-up- 44
-left- right+ up+ 17
-up- 1
-up+ 13
-// Frame 6439, step 386
-up- 2
-up+ 33
-left+ 5
-right- 2
-right+ 1
-right- 42
-up- 2
-up+ 14
-down- 5
-right+ down+ 89
-right- 58
-up- 8
-up+ 56
-up- 26
-up+ 2
-up- 12
-up+ 67
-right+ 36
-escape- 1
-escape+ 32
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 23
-escape- right- 2
-escape+ 93
-down- 1
-right+ down+ 98
-down- 8
-escape- 1
-escape+ 3
-down+ 7
-left- 30
-right- left+ 8
-down- 1
-right+ down+ 68
-// Frame 7350, step 427
-left- 50
-left+ 8
-right- 42
-c- 1
-right+ c+ 4
-up- right- 1
-up+ 47
-up- 4
-up+ 10
-up- 13
-up+ 15
-up- 1
-up+ 48
-up- 12
-right+ up+ 2
-s- 1
-left- s+ 7
-down- 3
-down+ 7
-up- 6
-up+ 12
-right- left+ 5
-up- 2
-up+ 24
-c- right+ 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 4
-up- right- 1
-up+ 13
-up- 1
-up+ 12
-up- 13
-right+ up+ 2
-left- 26
-left+ 8
-left- 9
-right- left+ 6
-right+ 10
-right- 1
-up- 1
-up+ 48
-up- 11
-up+ 42
-up- 17
-up+ 43
-right+ 11
-up- right- 10
 up+ 19
-up- 17
-up+ 91
-up- 18
-up+ 28
-up- 17
-// Frame 8251, step 484
-up+ 66
-up- 22
-up+ 103
-up- 3
-up+ 26
-c- 1
-c+ 2
-right+ 2
-up- right- 1
-up+ 38
-up- 14
-up+ 2
-up- 13
-up+ 15
-up- 3
-up+ 22
-up- 3
-left- right+ 11
-up+ 2
-up- 2
-right- left+ 11
-up+ 15
-up- 1
-up+ 24
-up- 13
-up+ 15
-up- 1
-up+ 11
-up- 13
-up+ 59
-up- 11
-up+ 58
-right+ 2
-escape- up- right- 2
-escape+ 1
-up+ 1
-up- 18
-up+ 36
-up- 2
-up+ 9
-up- 39
-up+ 23
-left- right+ 60
-up- 3
-up+ 58
-right- 1
-left+ 34
-// Frame 9168, step 532
-c- 1
-right+ c+ 4
-left- 9
-up- 4
-up+ 196
-up- 3
-left+ 2
-right- 19
-up+ 32
-up- 6
-up+ 7
-left- up- right+ 15
-up+ 1
-right- left+ 85
-up- 13
-up+ 15
-up- 1
-up+ 28
-up- 27
-up+ 9
-right+ 9
-left- up- 16
-up+ 5
-up- 15
-up+ 18
-up- 1
-up+ 19
-up- 2
-up+ 2
-up- 44
-escape- 1
-escape+ 38
-left+ up+ 70
-right- 80
-up- 10
-up+ 38
-up- 4
-up+ 7
-up- 4
-up+ 63
-// Frame 10125, step 573
-up- 7
-up+ 31
-up- 5
-up+ 14
-up- 19
-up+ 70
-up- 5
-up+ 9
-right+ 37
-right- 107
-up- 7
+up- 25
 up+ 50
-right+ 136
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-right- x- down+ 22
-right+ 178
-x+ 56
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 10
-down- 1
-down+ 9
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-// Frame 11033, step 668
-down+ 88
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 23
-escape- right- 1
-escape+ 109
-down- 1
-right+ down+ 35
-right- 85
-up- 5
-up+ 22
-up- 16
-up+ 52
-down- right+ 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-z- c+ 1
-z+ 1
-c- down+ 1
-down- c+ 1
-down+ 1
-down- 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-right- down+ 11
-up- 1
-up+ 37
-c- 1
-right+ c+ 4
-up- right- 1
-up+ 13
-a- 1
-a+ 54
-c- 1
-right+ c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-right- c+ 4
-up- 1
-up+ 59
-up- 9
-up+ 19
 up- 3
-up+ 3
-x- 7
-x+ 58
-up- 2
-up+ 11
-up- 28
-up+ 13
-up- 2
-up+ 12
-up- 12
-up+ 15
-up- 1
-up+ 7
-down- 2
-// Frame 12037, step 743
-down+ 4
-x- 1
-x+ 24
-up- 17
-up+ 38
-up- 16
-up+ 3
-left- right+ 11
-left+ 14
-c- 1
-left- c+ 56
-right- left+ 145
-up- 1
-right+ 3
-left- 10
-up+ 15
-up- 1
-up+ 12
-left+ 1
-escape- 1
-left- up- escape+ 1
-up+ 13
-up- 2
-left+ 4
-right- 7
-up+ 15
-up- 15
-up+ 4
-x- 1
-a- x+ 1
-a+ 52
-up- 25
-up+ 46
-up- 25
-up+ 11
-up- 7
-up+ 21
-left- right+ 3
-q- 1
-q+ 31
-// Frame 12953, step 784
-up- 1
-up+ 13
-up- 4
-up+ 31
-up- 4
-up+ 193
-up- 8
-up+ 73
-down- 3
-down+ 172
-up- 16
-up+ 38
-up- 31
-up+ 66
-up- 7
-up+ 37
-x- 1
-x+ 79
-c- 1
-c+ 3
-left+ 1
-up- right- 1
-up+ 38
-up- 3
-up+ 33
-up- 5
-up+ 62
-// Frame 13897, step 812
-up- 2
-up+ 66
-up- 31
-up+ 7
-up- 10
-up+ 121
-up- 4
-up+ 2
-right+ 5
-right- 72
-up- 11
-up+ 193
-up- 2
 up+ 81
-up- 16
-left- right+ up+ 42
-up- 1
-up+ 97
 up- 8
-up+ 64
-x- 2
-x+ 14
-up- 3
-up+ 44
-up- 6
-right- left+ 7
-up+ 15
-up- 1
-up+ 26
-c- 1
-right+ c+ 4
-left- up- 1
-up+ 14
-up- 15
+up+ 24
+up- 23
 up+ 2
-left+ 2
-right- 12
-up- 8
-up+ 39
-down- right+ 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-z- c+ 1
-z+ 1
-c- down+ 1
-down- c+ 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
 down- 1
-right- down+ 56
-up- 7
-up+ 48
-c- 1
-c+ 4
-right+ 7
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 4
-up- right- 1
-up+ 15
-c- 1
-right+ c+ 4
-up- right- 1
-up+ 131
-up- 17
-up+ 86
-down- right+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-// Frame 14799, step 899
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 45
-escape- 1
-escape+ 24
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 22
-escape- right- 1
-escape+ 64
-up- 3
-up+ 30
-up- 27
-up+ 28
-up- 12
-up+ 10
-up- 4
-up+ 41
-up- 21
-up+ 21
-up- 25
-up+ 13
-up- 17
-up+ 17
-up- 42
-up+ 1
-a- right+ 1
-a+ 174
-left- 20
-right- left+ 65
+down+ 5
 x- 1
-x+ 14
-down- right+ 3
-down+ 4
-c- 1
-c+ 11
-// Frame 15978, step 961
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 301
-escape- left- 1
-escape+ 23
-right- 3- left+ 1
-3+ 16
-up- 32
-up+ 6
-up- 13
-up+ 72
-up- 2
-right+ 5
-left- 6
-up+ 3
-left+ 7
-right- 5
-down- right+ 21
-down+ 4
-right- 4
-up- 20
-up+ 29
-up- 3
-left- right+ 10
-up+ 15
+x+ 15
 up- 1
-up+ 13
+right+ up+ 25
+left- 46
+up- 8
+up+ 14
+up- 4
+up+ 31
+up- 6
+up+ 9
+up- 1
+right- left+ up+ 9
+left- right+ 1
+left+ 1
+left- 1
+left+ 1
+right- 1
+right+ 1
+left- 1
+right- left+ 2
+left- right+ 2
+right- left+ 3
+left- right+ 2
+right- left+ 3
+left- right+ 1
+right- left+ 9
+// Frame 3760, step 209
+right+ 1
+up- right- 3
+up+ 61
+up- 3
+up+ 11
+right+ 2
+left- 49
+x- 1
+x+ 5
 up- 9
 up+ 9
-up- 13
-up+ 15
-up- 1
-up+ 13
-up- 4
-up+ 45
-up- 12
-up+ 35
-up- 19
-up+ 32
-up- 29
-left+ up+ 8
-up- right- 13
-up+ 3
-// Frame 16878, step 1018
-right+ 12
-up- right- 13
-up+ 42
-up- 4
-up+ 11
-up- 7
-up+ 66
-up- 27
-up+ 31
-up- 3
-up+ 26
-up- 5
-up+ 16
-up- 16
-up+ 10
-up- 32
-up+ 7
-up- 26
-up+ 44
-up- 7
+up- 14
 up+ 4
-right+ 130
-// Frame 17800, step 1041
-right- 65
-right+ 2
-escape- right- 1
-escape+ 122
-up- 35
-up+ 137
-up- 3
-up+ 94
-up- 30
-up+ 7
-up- 1
-up+ 14
-up- 10
-up+ 18
+up- 6
+up+ 24
 up- 7
-up+ 90
-up- 17
-up+ 58
-down- 4
-down+ 3
-right+ 98
-right- 67
-up- 9
-up+ 20
-up- 2
-up+ 49
-up- 25
-up+ 13
-right+ 21
-left- 2
-left+ 20
-left- 7
-up- 1
-up+ 50
-c- 1
-left+ c+ 4
-1- 1
-3- 1+ 1
-c- 3+ 1
-down- c+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-right- down+ 1
-right+ 1
-right- 1
-up- right+ 1
-right- up+ 1
-up- right+ 1
-right- up+ 1
-right+ 1
-right- 1
-right+ 1
-down- 1
-down+ 1
-down- 1
-right- down+ 1
-right+ 1
-right- 1
-down- right+ 1
-down+ 2
-right- 9
-escape- 1
-escape+ 1
-3- 1
-3+ 14
-right+ 74
-x- 2
-right- x+ 31
-up- 31
-right+ up+ 10
-left- 6
-4- 1
-4+ 46
-up- 12
-left+ up+ 3
-right- 43
-x- 1
-left- d- right+ x+ 1
-d+ 2
-right- left+ 44
-// Frame 18720, step 1124
-escape- 1
-escape+ 69
-c- 1
-right+ c+ 4
-c- 1
-right- c+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-right- down+ 14
-up- 10
-right+ up+ 5
-left- 7
-x- 1
-x+ 43
-right- left+ 45
-up- 3
-left- right+ 20
-up+ 68
-up- 19
-up+ 14
-up- 16
-up+ 29
-up- 8
-up+ 10
-up- 10
-up+ 16
-up- 2
 up+ 7
-left+ 6
-right- 19
-left- right+ 9
-up- 4
-left+ 2
+left+ 4
 right- 8
-up+ 24
-up- 14
-up+ 24
-up- 14
-up+ 16
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 5
 up- 1
-up+ 57
-up- 8
-up+ 7
-c- right+ 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 4
-left- up- 4
-up+ 87
-c- 1
-left+ c+ 4
-3- 1
-4- 3+ 1
-c- 4+ 1
-right- c+ 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-down- right+ 1
-down+ 1
-down- 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-right+ 1
-right- 1
-down- right+ 1
-right- down+ 1
-right+ 1
-right- 1
-up- right+ 1
-right- up+ 1
-up- right+ 1
-right- up+ 1
-right+ 1
-right- 1
-down- right+ 1
-right- down+ 1
-right+ 1
-right- 1
-down- right+ 1
-right- down+ 1
-// Frame 19621, step 1217
-right+ 11
-escape- 1
-right- escape+ 48
-up- 4
-right+ 1
-left- 6
+up+ 26
+up- 10
+up+ 8
+up- 5
+up+ 10
+c- 2
+right+ c+ 3
+up- right- 2
+up+ 12
+up- 2
+up+ 15
+x- 6
+x+ 12
+up- 9
 up+ 2
-left+ 5
-up- right- 32
-up+ 21
-up- 15
-up+ 11
-left- up- right+ 11
-up+ 7
-up- right- left+ 11
-up+ 7
-left- up- right+ 11
-up+ 7
-up- right- left+ 22
-up+ 19
+left- up- right+ 9
+up+ 2
+up- right- left+ 9
+up+ 2
+left- up- right+ 14
+up+ 3
+up- 9
+up+ 25
+c- 2
+c+ 3
 up- 1
-up+ 60
-up- 8
-up+ 11
+up+ 17
+c- 2
+c+ 3
+up- 1
+up+ 1
+1- 1
+1+ 79
+up- 5
+up+ 122
+right- left+ 70
+x- 1
+x+ 29
+x- 7
+x+ 25
+// Frame 4668, step 286
+x- 1
+x+ 14
+right+ 9
+right- 9
 x- 1
 x+ 3
-a- 1
-s- a+ 1
-s+ 44
-s- 1
-s+ 59
-up- right+ 1
-up+ 127
-up- 2
+up- 17
+up+ 8
+x- 1
+x+ 22
+up- 1
+up+ 9
+right+ 3
+right- 5
+c- 1
+c+ 4
+right+ 4
+5- 1
+right- 5+ 19
+left- right+ 85
+x- 1
+1- x+ 1
+1+ 23
+up- 5
+up+ 9
+x- 1
+x+ 15
+up- 8
+up+ 15
+x- 3
+x+ 12
+up- 13
+up+ 10
+up- x- 11
+x+ 4
+up+ 17
+left+ 1
+right- 9
+right+ 10
 left- 6
-up+ 3
-left+ 4
-up- right- 20
-up+ 2
-right+ 11
-left- up- 3
-left+ 2
+left+ 1
 left- 3
-left+ 2
-left- 10
+up- 18
+up+ 20
+c- 1
+c+ 4
+up- 1
+up+ 23
+5- 1
+5+ 14
+escape- 1
+escape+ 35
+up- 11
+up+ 76
+left+ 5
+right- 74
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 3
+right- left+ 2
+left- right+ 16
+up- 1
+up+ 36
+x- 1
+x+ 17
+c- 1
+left+ c+ 4
+left- up- 1
+up+ 5
+1- 2
+// Frame 5570, step 361
+1+ 23
+up- 4
+right- 1
+left+ 9
+up+ 10
+x- 3
+x+ 55
+up- 18
 up+ 17
 x- 1
-right- left+ x+ 23
-right+ 11
-right- 3
-s- 1
-s+ 121
+up- x+ 4
+up+ 40
+up- 12
+up+ 62
+escape- 1
+escape+ 7
+x- 2
+c- x+ 1
+c+ 1
+right+ 3
+c- 1
+down- c+ 1
+right- down+ 1
 down- right+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 1
-down- 1
-left- x- down+ 1
+right- down+ 1
+right+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+right- 91
+up- 13
+up+ 4
+x- 1
+x+ 5
+5- 1
+5+ 3
+up- 1
+up+ 55
+up- 2
+up+ 67
+up- 1
+up+ 14
+right+ 1
+left- 26
+x- 1
 x+ 15
-left+ 16
-up- 23
+up- 1
+up+ 12
+left+ 3
+right- 42
+up- 1
+// Frame 6492, step 414
+up+ 8
+down- 6
+down+ 127
+up- 10
+up+ 43
+up- 20
 up+ 10
+x- 1
+x+ 52
+right+ 12
+escape- 1
+escape+ 28
+escape- 1
+enter- escape+ 1
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- 1
+right- escape+ 58
+5- 1
+5+ 30
+down- 1
+right+ down+ 42
+left- 3
+left+ 45
+escape- down- 1
+escape+ 2
+down+ 12
+left- 26
+right- left+ 7
+down- 1
+down+ 101
+up- 1
+up+ 25
+up- 10
+up+ 4
+up- 11
+up+ 13
+up- 1
+up+ 40
+up- 1
+up+ 10
+right+ 3
+right- 7
+down- 1
+down+ 10
+up- 1
+up+ 8
+up- 6
+up+ 5
+right+ 3
+left- 23
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 4
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
+left- right+ 1
+right- left+ 2
+left- right+ 3
+left+ 3
+up- right- 1
+up+ 44
+up- 8
+up+ 34
+up- 7
+// Frame 7393, step 489
+up+ 19
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 3
+left- right+ 2
+right- left+ 14
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+right+ 1
 right- 1
-left- right+ 2
-right- left+ 2
-left- right+ 2
-right- left+ 2
-left- right+ 2
-right- left+ 2
-left- right+ 2
+up- 30
+up+ 110
+up- 32
+up+ 51
+up- 19
+up+ 83
+up- 16
+up+ 37
+up- 15
+up+ 3
+up- 11
+up+ 13
+up- 12
+up+ 10
+up- 4
+left- right+ 9
+up+ 2
+up- 4
+right- left+ 8
+up+ 13
+up- 1
+up+ 20
+up- 11
+up+ 13
+up- 1
+up+ 10
+up- 11
+// Frame 8294, step 532
+up+ 13
+up- 1
+up+ 42
+x- 1
+x+ 51
+escape- right+ 1
+up- right- escape+ 25
+up+ 60
+up- 1
+right+ up+ 25
+left- 68
+up- 5
+up+ 27
+up- 1
+up+ 13
+left+ 3
+right- 26
+c- 3
+c+ 1
+down- right+ 1
+left- down+ 5
+up- 6
+up+ 161
+up- 4
 left+ 1
+right- 14
+up+ 32
+up- 1
+up+ 8
+up- right+ 1
+left- 14
+up+ 1
+right- left+ 71
+up- 11
+up+ 13
+up- 1
+up+ 38
+up- 1
+up+ 14
+right+ 1
 right- 2
+left- right+ 1
+left+ 4
+left- up- 18
+up+ 3
+// Frame 9263, step 578
+up- 13
+up+ 15
+up- 1
+up+ 53
+escape- 1
+escape+ 25
+up- 1
+left+ up+ 25
+right- 133
+up- 10
+up+ 95
+up- 16
+up+ 15
+up- 6
+up+ 11
+up- 11
+up+ 54
+up- 4
+up+ 139
+x- 2
+x+ 46
+right+ 97
+c- 1
+c+ 1
+c- 1
+c+ 1
+c- 1
+c+ 10
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+// Frame 10191, step 619
+c- 1
+c+ 1
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 152
+escape- 1
+escape+ 84
+escape- 1
+enter- escape+ 1
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- 1
+right- escape+ 18
+5- 1
+5+ 60
+down- 1
+down+ 118
+x- 1
+x+ 35
+up- 10
+up+ 115
+c- 2
+c+ 2
+right+ 1
+up- right- 1
+up+ 9
+c- 2
+c+ 3
+up- 1
+up+ 67
+up- 4
+up+ 9
+x- 1
+x+ 48
+up- 28
+up+ 21
+up- 21
+up+ 12
+up- 5
+up+ 8
+x- 4
+x+ 16
+up- 1
+up+ 43
+1- 1
+1+ 1
+up- 1
+up+ 11
+left- right+ 5
+// Frame 11103, step 673
+left+ 3
+right- 4
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
+left- right+ 5
+c- 6
+c+ 20
+x- 3
+x+ 23
+right- left+ 20
+x- 8
+x+ 40
+5- 1
+5+ 54
+up- right+ 4
+left- 10
+up+ 13
+up- 1
+up+ 10
+escape- 1
+up- escape+ 1
+up+ 11
+up- 4
+right- left+ 8
+up+ 13
+up- 12
+up+ 3
+x- 2
+x+ 1
+1- 5
+1+ 17
+x- 2
+x+ 9
+x- 2
+x+ 13
+up- 7
+up+ 12
+5- 1
+5+ 41
+up- 19
+up+ 18
+up- 2
+up+ 13
+right+ 3
+left- 34
+up- 1
+up+ 13
+up- 6
+up+ 21
+// Frame 12083, step 725
+x- 1
+x+ 13
+up- 18
+up+ 62
+up- 3
+up+ 70
+up- 10
+up+ 19
+up- 1
+up+ 38
+down- 1
+down+ 151
+x- 1
+x+ 60
+up- 5
+up+ 27
+up- left+ 1
+left- up+ 37
+up- 16
+up+ 10
+x- 1
+x+ 6
+1- 3
+1+ 40
+x- 3
+x+ 1
+5- 1
+5+ 5
+c- 1
+left+ c+ 4
+up- right- 1
+up+ 65
+up- 5
+up+ 58
+up- 20
+up+ 9
+x- 1
+// Frame 13005, step 763
+x+ 5
+c- 1
+c+ 40
+up- 10
+up+ 49
+up- 5
+up+ 62
+up- 9
+up+ 20
+up- 5
+up+ 135
+x- 4
+x+ 64
+up- 1
+up+ 12
+right+ 1
+left- 5
+1- 1
+1+ 2
+right- left+ 1
+left- right+ 1
+right- left+ 1
+left- right+ 1
+right- left+ 2
+left- right+ 2
+right- left+ 2
 left- right+ 2
 right- left+ 2
 left- right+ 2
 right- left+ 2
 left- right+ 2
-down- left+ 1
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 4
+up- 1
+up+ 46
+down- 1
+c- 1
+c+ 1
+c- 1
+c+ 1
+c- 1
+c+ 1
+c- z- 1
+left+ down+ c+ z+ 1
+c- 1
+down- c+ 1
 down+ 1
 down- 1
 down+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+left- right+ down+ 11
+c- 1
+c+ 4
+up- 1
+up+ 11
+c- 1
+c+ 3
 down- 1
-down+ 1
+down+ 3
+c- 1
+c+ 3
 down- 1
-down+ 1
+down+ 3
+c- 1
+c+ 4
+up- 1
+up+ 21
+up- 6
+up+ 17
+up- 5
+up+ 22
+x- 3
+x+ 26
+up- 1
+up+ 20
+up- 2
+up+ 14
+up- 6
+right- left+ 5
+up+ 13
+up- 1
+up+ 22
+c- 1
+c+ 1
+right+ 3
+left- up- 1
+up+ 14
+up- 1
+up+ 12
+left+ 3
+right- 10
+up- 1
+up+ 11
+x- 6
+x+ 61
+up- 3
+up+ 23
+up- 2
+up+ 20
+c- 2
+// Frame 13910, step 870
+right+ c+ 3
+up- right- 1
+up+ 120
+up- 19
+up+ 64
+right+ 24
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 1
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 17
+escape- 1
+escape+ 22
+escape- 1
+enter- escape+ 1
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- 1
+right- escape+ 56
+x- 4
+x+ 4
+up- 12
+up+ 37
+x- 4
+x+ 20
+up- 13
+up+ 9
+x- 1
+up- x+ 15
+up+ 48
+up- 15
+up+ 11
+up- 12
+up+ 14
+up- 1
+up+ 15
+x- 1
+5- x+ 1
+5+ 13
+up- 1
+right+ up+ 57
+left- 134
+right- left+ 56
+x- 1
+1- x+ 1
+1+ 9
+c- 1
+c+ 1
+right+ 2
 down- 1
-down+ 1
+down+ 3
+c- 1
+c+ 3
 down- 1
-down+ 1
+down+ 3
+c- 1
+c+ 3
 down- 1
-down+ 1
+down+ 3
+c- 1
+c+ 3
 down- 1
-down+ 1
+down+ 3
+c- 1
+c+ 4
+left- up- 1
+up+ 17
+x- 1
+x+ 3
+right- 3- left+ 1
+3+ 19
+c- 2
+right+ c+ 2
+right- down- 1
+down+ 3
+c- 1
+c+ 3
 down- 1
-down+ 1
+// Frame 14848, step 965
+down+ 3
+c- 1
+c+ 3
 down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 7
-// Frame 20521, step 1357
-down- 1
-down+ 9
-down- 2
-down+ 13
-down- 1
-down+ 74
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 23
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
+down+ 3
+c- 1
+c+ 3
+right+ 1
+escape- 1
+up- right- escape+ 1
+up+ 11
+x- 1
+x+ 1
+up- 1
+up+ 58
+x- 1
+x+ 31
+up- 1
+left- right+ 10
+5- 1
+up+ 5+ 5
+right- left+ 12
+3- 1
+3+ 1
+up- 11
+up+ 31
+up- 4
+left- right+ 8
+up+ 13
+up- 1
+up+ 15
+up- 1
+up+ 10
+up- 11
+up+ 13
+up- 1
+up+ 17
+up- x- 1
+x+ 3
+up+ 47
+x- 1
+x+ 8
+up- 3
+up+ 33
+up- 4
+up+ 24
+up- 14
+up+ 7
+left+ 8
+up- right- 13
+up+ 13
+up- 11
+up+ 13
+up- 1
+up+ 20
+up- 4
+up+ 12
+up- 9
+up+ 25
+up- 2
+up+ 11
+x- 9
+x+ 48
+x- 1
+up- x+ 6
+up+ 24
+// Frame 15857, step 1032
+up- 12
+up+ 38
+right+ 4
+left- 3
+left+ 5
+left- 5
+left+ 1
+left- 5
+left+ 1
+right- 5
+up- 18
+up+ 10
+1- 1
+1+ 9
+up- 5
+up+ 174
+escape- 1
+escape+ 19
+x- 3
+x+ 20
+x- 9
+x+ 24
+x- 9
+x+ 8
+up- 8
+up+ 25
+x- 1
+3- x+ 1
+3+ 1
+right+ 5
+left- 3
+right- left+ 21
+up- 5
+up+ 31
+x- 2
+x+ 116
+1- 1
+1+ 15
+up- 15
+up+ 14
+up- 1
+up+ 30
+up- 12
+// Frame 16759, step 1076
+up+ 44
+x- 4
+x+ 25
+x- 6
+x+ 24
+x- 3
+x+ 14
+5- 1
+5+ 28
 down- 3
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
+down+ 2
+right+ 4
+right- 222
+3- 1
+3+ 11
+up- 1
+up+ 13
+right+ 2
+right- 17
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 3
+left+ 1
+left- 6
+up- 1
+up+ 42
+c- 1
+left+ c+ 4
+1- 3- 1
+c- 1+ 3+ 1
+right- down- c+ 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+up- right- 1
+up+ right+ 1
+right- down- 1
+right+ down+ 1
 down- 1
 down+ 1
 down- 1
 right- down+ 2
+right+ 5
 3- 1
-3+ 20
-up- 5
-up+ 18
-up- 5
-up+ 15
-up- 3
-up+ 22
-down- 3
-down+ 2
-x- 1
-x+ 51
-d- right+ 1
-d+ 1
-d- 1
-d+ 3
-right- 58
-up- 1
-up+ 16
-z- 1
-z+ 2
-a- 1
-a+ 27
-up- 12
-up+ 35
-right+ 1
-right- 2
-up- 3
-up+ 21
-up- 5
-up+ 23
-up- 10
-up+ 21
-up- 4
-up+ 8
-right+ 1
-left- 38
-up- 1
-up+ 46
-up- 3
-up+ 47
-c- 1
-// Frame 21495, step 1440
-left+ c+ 4
-up- right- 1
-up+ 15
-up- 1
-up+ 27
-right+ 3
-left- 1
-left+ 2
-x- 1
-right- x+ 14
-left- right+ 30
-up- left+ 15
-up+ 13
-up- right- 9
-up+ 18
-up- 11
-up+ 75
-up- 5
-up+ 1
-a- right+ 1
-a+ 70
-right- 97
-left- right+ 8
-down- 1
-left+ down+ 139
-right- 10
-x- 3
-x+ 55
-up- 1
-up+ 3
-down- 11
-down+ 1
-x- 2
-x+ 26
-up- 2
-up+ 30
-x- 8
-x+ 86
-c- 1
-c+ 56
-up- 5
-left- right+ 8
-up+ 23
-c- 1
-left+ c+ 5
-left- up- 1
-up+ 29
-up- 12
-up+ 17
-c- 1
-left+ c+ 4
-right- 8
-x- 1
-x+ 1
-left- right+ 20
-left+ 10
-right- 2
-d- 1
-d+ 1
-d- 1
-d+ 71
-up- 22
-up+ 40
-right+ 2
-down- 2
-down+ 1
-down- 1
-down+ 1
-down- 1
-// Frame 22398, step 1510
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 2
-down+ 1
-down- 1
-down+ 1
-down- 1
-right- down+ 145
-x- 1
-x+ 84
-up- 13
-up+ 90
-up- 4
-up+ 10
-right+ 4
-right- 3
-right+ 3
-right- 21
-up- 1
-up+ 86
-up- 1
-up+ 15
-right+ 3
-left- 43
-up- 11
-left+ up+ 7
-left- 1
-left+ 5
-left- 6
-x- 1
-a- x+ 1
-a+ 20
-up- 3
-up+ 48
-up- 6
-up+ 17
-up- 3
-up+ 36
-up- 4
-up+ 14
-c- 1
-c+ 4
-up- 1
-up+ 10
-right- left+ 5
-up- 2
-// Frame 23306, step 1572
-up+ 9
-right+ 3
-left- 3
-x- left+ 1
-right- x+ 49
-up- 1
-up+ 1
-up- 1
-up+ 1
-up- 1
-up+ 48
-up- 3
-left- right+ 5
-up+ 3
-left+ 4
-up- right- 17
-up+ 40
-up- 4
-left- right+ 20
-up+ 87
-left+ 1
+3+ 1
 escape- 1
-left- escape+ 2
-up- 15
-up+ 7
-left+ 12
+right- 3- escape+ 1
+3+ 13
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+x- right+ 3
+right- x+ 48
 up- 1
-right- 14
-up+ 5
-left- up- right+ 11
-up+ 7
-up- right- left+ 11
-up+ 7
-up- 14
-up+ 30
-up- 4
 up+ 12
-left- right+ 3
-left+ 2
-x- 1
-right- x+ 66
-up- 22
-up+ 40
-up- 12
-up+ 7
-d- 1
-d+ 1
-c- 1
-right+ c+ 4
-left- up- 2
-up+ 57
-left+ 85
-escape- left- 1
-x- escape+ 1
-x+ 15
-up- 8
-right- left+ 12
-up+ 16
-z- 1
-z+ 117
-down- right+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-// Frame 24242, step 1655
-down- 1
-down+ 2
-right- 7
-down- right+ 1
-down+ 45
-escape- 1
-escape+ 63
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 23
-escape- 1
-right- escape+ 1
-d- 1
-d+ 1
-d- 1
-d+ 31
-up- 12
-up+ 53
-up- 4
-up+ 49
-up- 3
-up+ 18
-up- 3
-up+ 46
-up- 14
-up+ 16
+right+ 3
+left- 9
+4- 1
+4+ 39
 up- 1
-up+ 21
-x- 1
-x+ 30
-up- 2
-up+ 56
-up- 4
-up+ 30
-up- 6
-up+ 29
-up- 19
-up+ 27
-up- 23
-up+ 15
-up- 1
-up+ 9
-x- 1
-x+ 39
-up- 5
-up+ 85
-up- 11
-up+ 17
-c- right+ 1
-right- c+ 34
-up- 20
-// Frame 25147, step 1712
-up+ 13
-up- 1
-up+ 44
-up- 2
 up+ 11
-up- 3
-right+ 2
-left- 6
-up+ 2
-left+ 5
-up- right- 7
-up+ 25
-up- x- 1
-up+ x+ 53
+left+ 1
+right- 46
+x- 1
+5- right+ x+ 1
+5+ 4
+right- 41
+escape- 1
+escape+ 54
+c- 1
+c+ 1
+right+ 3
+c- 1
+down- c+ 1
+down+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+right- down+ 14
 up- 1
-up+ 23
-up- 2
-up+ 42
-up- 3
-up+ 15
-left- up- right+ 4
-left+ 5
+up+ 10
+right+ 1
+// Frame 17711, step 1220
 left- 11
-up+ 13
+x- 1
+x+ 35
+right- left+ 38
 up- 4
-up+ 20
-up- 10
-up+ 32
-up- 10
-up+ 32
-left+ 2
-escape- 1
-left- escape+ 2
-d- 1
-d+ 17
-up- 2
-left+ 3
-right- 6
-up+ 29
-left- right+ 49
-c- 1
-c+ 4
-up- 1
-up+ 51
-up- 12
-up+ 15
-up- 15
-up+ 21
-// Frame 26048, step 1761
-right- left+ 16
-up- 4
-up+ 30
-up- 11
-up+ 12
-up- 7
-up+ 3
-right+ 229
-right- 12
-up- 1
-up+ 2
-up- 75
-up+ 1
-right+ 10
-left- 63
-c- 1
-c+ 4
-up- 1
-up+ 20
-up- 19
-up+ 43
-left+ 2
-escape- 1
-left- escape+ 13
-c- 1
-c+ 2
-left+ 2
-up- right- 1
+left- right+ 10
+up+ 65
+up- 20
+up+ 6
+up- 5
 up+ 34
-up- 23
-right+ up+ 2
-left- 9
-left+ 6
-left- 4
-left+ 1
-left- up- 1
-up+ 16
-up- 14
-up+ 121
-up- 6
-up+ 29
-right- left+ 2
-x- right+ 1
-left- x+ 51
-left+ 7
-left- up- 15
-up+ 5
-up- right- left+ 15
-up+ 67
-up- 15
-up+ 12
-up- 18
-// Frame 26953, step 1814
-up+ 20
-right+ 1
-left- 1
-left+ 1
-left- 1
-x- left+ 1
-right- x+ 91
 up- 7
-up+ 32
-c- 1
-c+ 4
-up- 1
-up+ 31
-right+ 12
-c- 1
-c+ 1
-left- 50
-up- 14
-up+ 8
-left+ 4
-right- 2
-right+ 1
-x- 1
-left- x+ 76
-a- 1
-a+ 39
-up- 5
-up+ 23
-up- 6
-up+ 33
-up- 41
-up+ 32
-up- 1
-up+ 15
-left+ 6
-right- 4
-right+ 1
-right- 10
-up- 1
-up+ 102
-c- 1
-c+ 4
-up- 1
+up+ 5
+left+ 1
+up- right- 14
 up+ 14
-// Frame 27856, step 1859
-x- 1
-x+ 81
-x- 1
-x+ 33
-d- 1
-s- d+ 1
-s+ 7
-up- 28
-up+ 92
-up- 5
-left- right+ 9
-up+ 16
 up- 1
-up+ 39
+up+ 48
+up- 7
+up+ 6
+c- 2
+c+ 2
+down- right+ 1
+down+ 3
 c- 1
-c+ 4
-up- right- left+ 1
-up+ 69
-right+ 6
-left- 9
-left+ 6
-right- 33
-up- 15
-up+ 16
-up- 6
-up+ 41
-up- 22
-up+ 75
-up- 12
-up+ 24
-up- 2
-// Frame 28848, step 1891
-up+ 36
-x- 1
-x+ 10
-right+ 24
-up- 24
-up+ 2
-up- 13
-right- 7
-up+ 13
-up- 1
-up+ 285
-up- 4
-up+ 19
-up- 3
-up+ 21
-right+ 1
-left- 119
-c- 1
-c+ 4
-up- 1
-up+ 35
-up- 10
-up+ 2
-right- left+ 52
-up- 15
-up+ 23
-right+ 3
-left- 93
+c+ 3
 down- 1
-left+ down+ 143
-left- 44
-left+ 2
-escape- 1
-left- escape+ 30
-up- 5
-up+ 66
-up- 2
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 4
+left- up- 7
 up+ 51
-right- left+ 1
-x- 1
-left- right+ x+ 34
-d- 1
-d+ 50
-right- left+ 2
+x- 5
+x+ 16
 c- 1
-c+ 1
-right+ 3
-left- up- 2
-up+ 17
-a- 1
-s- a+ 1
-// Frame 29809, step 1943
-s+ 10
-z- 1
-z+ 29
-up- 1
+left+ c+ 4
+3- 4- 1
+c- 3+ 4+ 1
+right- c+ 1
+right+ 1
+right- 1
+right+ 1
+right- down- 1
+right+ down+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- down- 1
+right+ down+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+right- down+ 1
+right+ 1
+right- 1
+right+ 1
+right- 2
+right+ 8
+escape- 1
+right- escape+ 48
+up- 5
+left- right+ 5
 up+ 2
-left+ 37
-right- 63
-right+ 243
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-left- down+ 1
-x- left+ 1
-left- s- x+ 1
-s+ 42
-up- left+ 15
-right- up+ 8
-left- right+ 23
-right- left+ 2
-x- right+ 1
-x+ 15
-up- 19
-up+ 80
+left+ 5
 up- right- 11
-up+ 19
-left- right+ 4
-x- 1
-right- a- left+ x+ 1
-s- a+ 1
-s+ 66
+up+ 2
+right+ 5
+left- up- 11
+up+ 2
+left+ 5
+up- right- 11
+up+ 2
+right+ 5
+left- up- 11
+up+ 2
+left+ 5
+up- right- 29
+up+ 27
 up- 17
 up+ 17
-// Frame 30728, step 1984
-right+ 168
-c- 1
-c+ 4
+up- 1
+up+ 55
+x- 1
+x+ 1
+4- 1
+4+ 94
+up- 1
+right+ up+ 20
+// Frame 18717, step 1322
+right- 108
+up- 1
+right+ 2
+right- 5
+up+ 3
+right+ 4
+up- 8
+right- 12
+up+ 2
+right+ 10
 left- up- 1
-up+ 42
-left+ 13
-left- 64
-up- left+ 4
+left+ 6
+left- 12
+up+ 5
+x- 10
+right- left+ x+ 26
+right+ 15
+4- 1
+4+ 134
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 1
+c- 1
+left- x- c+ 1
+x+ 2
+left+ 3
+left- 4
+left+ 1
+left- 7
+left+ 2
+left- 4
+left+ 2
+left- 3
+left+ 1
+left- up- 10
+up+ 20
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 3
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+left+ 24
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 64
+escape- 1
+enter- escape+ 1
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- right- 1
+3- escape+ 1
+3+ 24
+up- 21
 up+ 13
-up- 7
-left- 9
-up+ 9
-up- 16
+up- 1
+up+ 15
+down- 5
+down+ 1
+x- 1
+5- x+ 1
+5+ 36
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 24
+up- 1
+up+ 15
+z- 1
+z+ 24
+up- 1
+up+ 36
+right+ 1
+right- 5
+up- 1
+up+ 14
+x- 1
+x+ 32
+up- 10
+up+ 11
+4- 1
+4+ 1
+up- 1
+up+ 10
+right+ 2
+left- 7
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+// Frame 19631, step 1458
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 7
+up- 1
+up+ 43
+up- 1
+up+ 38
+c- 1
+c+ 3
+left+ 1
+up- right- 1
+up+ 13
+up- 1
+up+ 25
+right+ 1
+left- 1
+x- left+ 2
+right- x+ 44
+up- 5
 up+ 17
+right+ 3
+up- right- 20
+up+ 57
+up- 3
+up+ 106
+3- 1
+3+ 39
+left- right+ 8
+down- 1
+left+ down+ 38
+right- 139
+x- 1
+x+ 43
+x- 9
+x+ 10
+up- 10
+up+ 79
+c- 1
+c+ 60
+4- 1
+// Frame 20585, step 1501
+4+ 1
+up- 5
+left- right+ 6
+up+ 20
 c- 1
 c+ 2
 left+ 2
-up- right- 1
-up+ 45
-right+ 20
-left- 1
-left+ 97
+left- up- 1
+up+ 25
+up- 10
+up+ 15
+c- 2
+c+ 1
+left+ 1
+right- down- 1
+down+ 1
+x- 3
+right+ x+ 1
+right- 22
+5- 1
+5+ 67
+up- 1
+up+ 52
+escape- 1
+escape+ 120
 x- 1
-right- x+ 18
-c- right+ 1
-right- c+ 69
+x+ 154
+x- 1
+x+ 1
+up- 10
+1- up+ 1
+1+ 5
+right+ 5
+right- 1
+right+ 1
+right- 19
+up- 1
+up+ 15
+x- 3
+x+ 4
+5- 1
+5+ 52
+up- 1
+up+ 12
+right+ 5
+left- 42
+// Frame 21497, step 1548
+up- 1
+up+ 9
+left+ 11
+left- 11
+x- 1
+1- x+ 1
+1+ 16
+up- 15
+up+ 26
+up- 1
+up+ 16
+x- 1
+x+ 20
+up- 18
+up+ 9
+c- 1
+c+ 1
+left+ 3
+up- right- 1
+up+ 70
+up- 10
+up+ 35
+up- 3
+left- right+ 3
+4- 1
+4+ 1
+up+ 3
+left+ 4
+up- 3
+right- 9
+up+ 38
+up- 5
+left- right+ 7
+up+ 81
+escape- 1
+escape+ 2
+up- 15
+up+ 7
+left+ 10
+up- right- 15
+up+ 1
+right+ 4
+left- up- 11
+up+ 2
+left+ 5
+up- right- 11
+up+ 6
+up- 9
+up+ 27
+up- 1
+up+ 15
+left- right+ 3
+x- 1
+3- left+ x+ 1
+right- 3+ 33
+up- 2
+up+ 2
+up- 1
+up+ 1
+up- 1
+up+ 1
+up- 2
+up+ 1
+up- 1
+up+ 17
+up- 13
+up+ 12
+x- 2
+x+ 11
+5- 1
+5+ 20
+up- 9
+up+ 10
+c- 2
+c+ 1
+right+ 2
+left- up- 1
+up+ 45
+escape- 1
+escape+ 4
+z- 2
+z+ 21
+// Frame 22400, step 1631
+up- 9
+right- left+ 9
+up+ 5
+x- 11
+x+ 80
+right+ 21
+c- 1
+c+ 1
+c- 1
+c+ 8
+c- 1
+c+ 17
+escape- 1
+escape+ 63
+escape- 1
+enter- escape+ 1
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- 1
+right- escape+ 23
+3- 1
+3+ 13
+up- 9
+up+ 41
+up- 1
+up+ 36
+x- 1
+5- x+ 1
+5+ 60
+c- 1
+c+ 5
+up- 12
+up+ 14
+up- 1
+up+ 50
+x- 1
+3- x+ 1
+3+ 39
+up- 1
+up+ 29
+up- 5
+up+ 27
+up- 1
+up+ 36
+up- 20
+up+ 12
+up- 1
+up+ 10
+// Frame 23300, step 1681
+x- 6
+x+ 27
+up- 2
+up+ 73
+up- 1
+up+ 22
+up- 2
+up+ 12
+c- 1
+c+ 39
+up- 12
+up+ 10
+right+ 4
+up- 2
+right- 2
+left- right+ 6
+up+ 2
+left+ 5
+up- right- 6
+up+ 23
+up- 5
+up+ 30
+x- 5
+x+ 56
+up- 3
+up+ 15
+left- up- right+ 2
+left+ 7
+left- 10
+up+ 6
+left+ 5
+left- up- 5
+up+ 16
+up- 1
+up+ 35
+up- 8
+up+ 30
+escape- 1
+escape+ 30
+c- 2
+c+ 1
+left+ 2
+left- up- 1
+up+ 38
+up- 15
+// Frame 24203, step 1727
+up+ 10
+up- 10
+up+ 20
+right- left+ 12
+up- 1
+up+ 29
+up- 11
+up+ 9
+up- 1
+up+ 17
+right+ 120
+up- right- 170
+up+ 1
+right+ 23
+left- 50
+c- 1
+left+ c+ 4
+left- up- 1
+up+ 19
+up- 5
+up+ 26
+4- 1
+4+ 20
+escape- 1
+escape+ 12
+c- 1
+c+ 3
+left+ 1
+up- right- 1
+up+ 33
+up- 1
+up+ 15
+right+ 4
+left- 6
+left+ 5
+left- 18
+up- 12
+up+ 55
+up- 1
+up+ 27
+up- 1
+up+ 20
+up- 1
+up+ 29
+right- left+ 1
+x- 1
+left- right+ x+ 20
+up- 5
+up+ 1
+up- 9
+up+ 15
+up- 13
+up+ 1
+left+ 4
+up- 2
+right- 7
+up+ 61
+up- 18
+up+ 23
+up- 1
+up+ 16
 left- right+ 2
 x- 1
-right- left+ x+ 59
-right+ 39
+right- left+ x+ 35
+up- 2
+up+ 2
+up- 1
+// Frame 25124, step 1795
+up+ 1
+up- 1
+up+ 2
+up- 2
+up+ 18
+up- 10
+up+ 22
+c- 2
+c+ 3
+up- 1
+up+ 27
+left- right+ 44
+up- 1
+up+ 63
+up- 1
+up+ 15
+right- left+ 3
 x- 1
-x+ 54
+1- right+ x+ 1
+left- 1+ 41
+up- 2
+up+ 1
+up- 2
+up+ 1
+up- 2
+up+ 56
+up- x- 1
+up+ x+ 34
+x- 5
+x+ 10
+up- 1
+up+ 12
+left+ 7
+right- 14
+x- 1
+x+ 22
+x- 10
+x+ 31
+3- 1
+3+ 12
+left- right+ 9
+up- 14
+up+ 7
+left+ 7
+c- 2
+c+ 3
+up- right- 1
+up+ 14
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
+x- 1
+x+ 8
+1- 1
+1+ 35
+up- 15
+up+ 79
+up- 5
+left- right+ 8
+up+ 14
+// Frame 26028, step 1859
+up- 1
+up+ 33
+c- 3
+left+ c+ 2
+up- right- 1
+up+ 59
+right+ 5
+left- 7
+left+ 8
+right- 37
+x- 4
+x+ 29
+x- 1
+x+ 19
+4- 1
+4+ 1
+4- 1
+4+ 92
+up- 7
+up+ 48
+x- 1
+x+ 1
+right+ 2
+right- 6
+right+ 12
+up- right- 3
+up+ 9
+right+ 11
+1- 1
+1+ 3
+left- up- 5
+right- left+ 9
+up+ 2
+right+ 3
+up- 6
+right- 1
+right+ 2
+right- 11
+up+ 11
+up- 1
+up+ 68
+x- 4
+x+ 35
+up- 1
+up+ 23
+x- 1
+x+ 42
+// Frame 26954, step 1907
+right+ 6
+left- 2
+left+ 10
+right- 20
+up- 9
+up+ 26
+up- 2
+up+ 15
+right+ 2
+left- 120
+c- 2
+c+ 3
+up- 1
+up+ 28
+up- 1
+up+ 10
+left+ 4
+right- 47
+up- 13
+up+ 20
+right+ 3
+left- 29
+4- 1
+4+ 1
+4- 1
+4+ 61
+down- 5
+down+ 144
+escape- 1
+escape+ 85
+up- 3
+up+ 37
+right- left+ 1
+x- 1
+left- right+ x+ 11
+up- 3
+up+ 1
+up- 2
+up+ 47
+c- 2
+c+ 2
+down- 1
+down+ 28
+z- 1
+z+ 24
+up- 1
+left+ up+ 37
+right- 60
+right+ 200
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 2
+c+ 1
+// Frame 27856, step 1967
+right- 2
+right+ 4
+c- 2
+right- c+ 8
+left- right+ 1
+left+ 5
+left- x- 1
+3- left+ x+ 1
+3+ 1
+3- 1
+3+ 1
+right- 36
+up- 2
+up+ 1
+up- 4
+up+ 1
+up- 2
+up+ 1
+up- 1
+up+ 17
+x- 1
+right+ 17
+left- 4- x+ 1
+4+ 69
+right- left+ 2
+right+ 4
+left- 3
+left+ 9
+left- 5
+right- left+ 1
+z- 1
+z+ 2
+c- 1
+x- c+ 10
+left- right+ x+ 7
+right- 1
+left+ 2
+x- 1
+right+ 1
+x+ 7
+left- 4
+left+ 3
+right- 2
+right+ 14
+right- 8
+up- 7
+left- right+ 9
+up+ 6
+up- 13
+up+ 8
+up- 1
+up+ 6
+left+ 3
 left- 1
+left+ 4
+left- 2
+left+ 4
+c- 1
+c+ 4
+up- right- 2
+up+ 19
+right+ 1
+left- 6
+x- 1
+right- left+ x+ 40
+up- 2
+up+ 21
+right+ 1
+up- right- 15
+up+ 5
+left- right+ 1
+3- x- 1
+right- left+ 3+ x+ 1
+3- 1
+3+ 10
+c- 1
+right+ c+ 4
+left- up- 8
+up+ 2
+up- 1
+up+ 25
+up- 1
+up+ 26
+right- left+ 1
+x- 1
+left- right+ x+ 1
+c- 1
+c+ 92
+right- left+ 2
+up- 1
+up+ 18
+x- 1
+x+ 14
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+// Frame 28758, step 2104
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+left+ 11
+c- 1
+c+ 1
+c- 1
+c+ 1
+c- 1
+c+ 1
+c- 1
+c+ 7
+c- 1
+c+ 8
+c- 1
+c+ 53
+escape- 1
+enter- escape+ 1
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- 1
+right- escape+ 1
+3- 1
+3+ 71
+z- 1
+z+ 26
+up- 8
+up+ 40
+up- 2
+up+ 22
+up- 1
+up+ 20
+x- 1
+1- x+ 1
+1+ 39
+x- 1
+5- x+ 1
+5+ 5
+up- 1
+up+ 15
+right+ 3
+right- 7
+right+ 2
+right- 40
+up- 5
+up+ 19
+up- 10
+up+ 10
+up- 4
+up+ 20
+x- 4
+x+ 53
+4- 1
+4+ 40
+up- 17
+up+ 3
+right+ 9
+up- right- 1
+up+ 9
+up- 1
+up+ 12
+right+ 9
+right- 3
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 3
+left- right+ 3
+right- 1
+left+ 4
+left- right+ 2
+right- left+ 1
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+// Frame 29747, step 2188
+right- left+ 2
+left- right+ 3
+right- left+ 2
+left- right+ 10
+left+ 3
+up- right- 4
+up+ 6
+right+ 8
+right- 5
+right+ 1
+right- 3
+right+ 1
+right- 4
+left- right+ 5
+x- 1
+right- left+ x+ 37
+up- 1
+up+ 20
+1- 1
+1+ 5
+up- 2
+up+ 63
+up- 7
+up+ 6
+up- x- 1
+x+ 6
+up+ 10
+4- 1
+4+ 6
+up- 5
+up+ 205
+up- 1
+up+ 1
+up- 1
+up+ 25
+up- 25
+up+ 30
+down- right+ 2
+down+ 7
+right- 6
+up- 12
+up+ 14
+up- 1
+up+ 23
+4- 1
+4+ 18
+up- 1
+up+ 9
+right+ 3
+right- 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 3
+left- right+ 1
+right- left+ 10
+up- 1
+up+ 38
+right+ 1
+escape- 1
+left- escape+ 97
+c- 2
+c+ 3
+up- 1
+up+ 2
+right- left+ 1
+right+ 1
+left- 1
+left+ 7
+right- 21
+left- right+ 6
+right- left+ 2
+right+ 1
+left- 1
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+right+ 2
+x- 1
+x+ 28
+right- 4
+up- 3
+up+ 1
+up- 4
+up+ 39
+left- right+ 2
+x- left+ 2
+right- x+ 19
+right+ 4
+left- 6
+up- 2
+up+ 1
+up- 2
+up+ 1
+// Frame 30786, step 2334
+up- 2
+up+ 1
+up- 2
+up+ 19
+right- left+ 8
+up- 1
+up+ 14
+x- 2
+right+ x+ 2
+right- 13
+right+ 4
+right- 10
+up- 2
+up+ 1
+up- 2
+up+ 1
+up- 1
+up+ 1
+up- 2
+up+ 17
+left- right+ 9
+x- left+ 23
+x+ 22
+right- 4
+up- 1
+up+ 2
+up- 2
+up+ 2
+5- 1
+5+ 28
+up- 2
+up+ 134
+x- 3
+x+ 52
+c- 1
+c+ 5
+up- 17
+up+ 11
+up- 1
+up+ 62
+up- 5
+left- right+ 7
+up+ 14
+up- 1
+up+ 66
+up- 1
+up+ 4
+escape- 1
+escape+ 30
+up- 1
+up+ 10
+left+ 2
+right- 4
+// Frame 31695, step 2388
+right+ 2
+right- 1
+right+ 1
+left- 1
+left+ 10
+right- 1
+left- right+ 3
+left+ 2
+right- 8
+up- 1
+up+ 56
+up- 1
+up+ 10
+right+ 7
+right- 97
+up- 1
+up+ 11
+3- 1
+3+ 62
+x- 1
+x+ 20
+4- 3
+4+ 44
+up- 13
+up+ 4
+right+ 1
+left- up- 20
+up+ 11
+up- 1
+up+ 9
+up- 6
+up+ 65
+up- 20
+up+ 3
+left+ 10
+up- right- 18
+up+ 65
+c- 2
+c+ 2
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 4
+up- 1
+up+ 23
+up- 13
+up+ 5
+up- right+ 4
+left- 14
+up+ 8
+x- 1
+x+ 2
+right- left+ 25
+right+ 25
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+// Frame 32615, step 2460
+c+ 1
+c- 1
+c+ 33
+c- 1
+c+ 12
+c- 1
+c+ 14
+c- 1
+c+ 8
+c- 1
+c+ 81
+c- 1
+c+ 121
+c- 1
+c+ 17
+escape- 1
+escape+ 67
+escape- 1
+enter- escape+ 1
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- 1
+right- escape+ 1
+3- 1
+3+ 35
+up- 1
+up+ 25
+right+ 3
+c- 2
+right- c+ 115
+right+ 1
+left- 5
+right- left+ 18
+up- 1
+up+ 25
+left- right+ 1
+x- 1
+right- left+ x+ 15
+4- 1
+4+ 4
+up- 1
+up+ 15
+right+ 1
+left- 61
+up- 19
+up+ 26
+up- 6
+up+ 9
+c- 2
+c+ 1
+left+ 2
+up- right- 1
+up+ 15
+left- right+ 1
+x- 1
+left+ x+ 7
+left- 4
+left+ 15
+up- right- 1
+up+ 2
+up- 1
+up+ 19
+right+ 2
+up- 3
+right- 2
+right+ 1
+right- 1
+right+ 5
+left- 8
+up+ 11
+up- 1
+3- 1
+3+ 4
+up+ 24
+up- 17
+up+ 11
+up- 1
+up+ 13
+// Frame 33573, step 2540
+c- 1
+c+ 20
+up- 4
+right- 2
+left+ 7
+up+ 54
+up- 1
+up+ 15
+x- 5
+x+ 11
+x- 80
+x+ 30
+5- 1
+5+ 8
+up- 3
+up+ 13
+up- 1
+up+ 15
+up- 6
+left- right+ 10
+up+ 18
+up- 7
+right- left+ 5
+up+ 14
+up- 3
+up+ 12
+down- 3
+down+ 24
+x- 1
+x+ 25
+c- 2
+c+ 2
+right+ 1
+left- up- 1
+up+ 68
+up- 20
+up+ 51
+x- 1
+x+ 30
+up- 8
+right- left+ 5
+up+ 11
+right+ 3
+up- 6
+right- 1
+right+ 2
+right- 6
+up+ 5
+up- 10
+up+ 45
+z- 1
+z+ 25
+x- 1
+x+ 6
+3- 1
+3+ 10
+c- 1
+c+ 4
+up- 1
+up+ 16
+z- 1
+z+ 50
+up- 1
+c- 1
+c+ 5
+up+ 5
+down- 1
+down+ 15
+x- 1
+x+ 15
+5- 3
+5+ 15
+up- 5
+up+ 37
+// Frame 34496, step 2615
+up- 20
+up+ 33
+up- 2
+up+ 1
+up- 4
+up+ 1
+up- 2
+up+ 30
+x- 1
+x+ 15
+up- 2
+up+ 11
+c- 1
+c+ 2
+right+ 2
+left- up- 1
+up+ 48
+up- 2
+up+ 16
+right- left+ 25
+up- 1
+up+ 30
+4- x- 1
+4+ x+ 18
+c- 1
+c+ 13
+c- 2
+c+ 2
+right+ 1
+left- up- 1
+up+ 30
+up- 4
+right- left+ 13
+up+ 10
+up- 4
+up+ 20
+left- right+ 1
+x- 1
+right- left+ x+ 3
+left- right+ 2
+1- left+ 1
+1+ 1
+left- 18
+up- 2
+up+ 15
+left+ 8
+up- 8
+left- 12
+up+ 11
+up- 1
+up+ 9
+x- 1
+x+ 1
+up- 12
+up+ 14
+up- 7
+up+ 6
+up- 7
+up+ 11
+c- 1
+right- left+ c+ 48
+right+ 10
+left- 3
+left+ 10
+left- 1
+right- left+ 37
+x- 1
+4- x+ 1
+4+ 75
+up- 1
+up+ 15
+up- 6
+up+ 13
+up- 2
+// Frame 35451, step 2690
+up+ 7
+up- 1
+up+ 19
+x- 1
+x+ 87
+up- 8
+up+ 29
+left- right+ 1
+x- 1
+right- 1- left+ x+ 1
+1+ 18
+up- 2
+up+ 1
+up- 1
+up+ 2
+up- 1
+up+ 1
+up- 2
+up+ 25
+x- 2
+x+ 46
+x- 10
+x+ 40
+up- 2
+up+ 1
+up- 1
+up+ 2
+up- 1
+up+ 1
+up- 1
+up+ 2
+up- 1
+up+ 44
+x- 3
+x+ 34
+up- 1
+up+ 49
+up- 6
+up+ 15
+up- 1
+up+ 11
+right+ 3
+right- 15
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 10
+up- 1
+up+ 14
+x- 1
+x+ 2
+up- 1
+up+ 5
+4- 1
+4+ 31
+up- 32
+up+ 14
+up- 2
+c- 2
+c+ 14
+up+ 40
+c- 2
+c+ 1
+right+ 2
+left- up- 1
+up+ 18
+up- 2
+up+ 25
+right- left+ 1
+x- 1
+left- right+ x+ 36
+up- 2
+up+ 1
+up- 1
+up+ 2
+up- 1
+up+ 1
+up- 2
+up+ 1
+up- 2
+up+ 60
+up- 1
+up+ 11
+left+ 1
+right- 13
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 13
+up- 6
+up+ 26
+// Frame 36391, step 2802
+up- 7
+up+ 65
+up- 8
+up+ 28
+c- 3
+c+ 2
+c- right+ 1
+down- c+ 1
+down+ 1
+down- 1
+down+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+down+ 15
+c- 2
+c+ 2
+right+ 1
+c- 1
+right- down- c+ 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+down+ 1
+down- 1
+right- down+ 29
+up- 12
+up+ 16
+escape- 1
+escape+ 50
+up- 1
+up+ 19
+c- 1
+c+ 4
+escape- 1
+up- escape+ 1
+up+ 35
+left- right+ 11
+up- 5
+left+ 1
+right- 6
+up+ 17
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 4
+escape- right+ 1
+up- right- escape+ 1
+up+ 19
+up- 5
+left- right+ 9
+up+ 15
+right- left+ 10
+up- 1
+up+ 10
+right+ 2
+left- 1
+left+ 1
+left- 4
+left+ 2
+c- 1
+c+ 4
+4- 8- 1
+c- 4+ 8+ 1
+right- down- c+ 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+up- right- 1
+up+ right+ 1
+up- right- 1
+up+ right+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+up- right- 1
+up+ right+ 1
+right- 1
+right+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+down+ 1
+// Frame 37305, step 2908
+down- 1
+right- down+ 1
+right+ 1
+right- 1
+right+ 8
+right- 1
+escape- right+ 1
+right- escape+ 31
+up- 10
+up+ 7
+escape- 1
+escape+ 27
+up- 4
+up+ 63
+3- 10
+3+ 13
+3- 1
+3+ 45
+right+ 157
+escape- 1
+escape+ 48
+c- 1
+up- x- c+ 1
+x+ 14
+right- 5
+up+ 2
+right+ 10
+left- up- 2
+up+ 21
+up- 23
+left+ up+ 10
+up- right- 1
+up+ 22
+up- 23
+up+ 1
+right+ 9
+left- up- 1
+up+ 25
+up- 18
+up+ 3
+left+ 10
+up- right- 6
+up+ 18
+up- 22
+up+ 1
+right+ 10
+left- up- 4
+up+ 3
+left+ 6
+right- 14
+left- right+ 10
+up- 5
+up+ 16
+right- left+ 1
+x- 1
+left- up- right+ x+ 20
+up+ 9
+left+ 5
+right- 1
+right+ 8
+up- right- 1
+up+ 14
+right+ 1
+left- 3
+left+ 1
+left- 22
+4- 1
+up- c- 4+ 70
+up+ c+ 8
+left+ 50
+left- 1
+up- 48
+x- 15
+left+ 1
+up+ 7
+right- 1
+x+ 3
+3- x- 1
+3+ x+ 1
+3- 1
+c- 3+ 1
+c+ 4
+left- up- right+ 17
+// Frame 38206, step 2992
+up+ 2
+left+ 10
+up- right- 5
+up+ 19
+up- 27
+right+ up+ 5
+left- up- 1
+up+ 22
+up- 25
+left+ up+ 8
+up- right- 7
+up+ 17
+up- 22
+right+ up+ 10
+left- up- 18
+up+ 3
+c- 3
+c+ 1
+right- left+ 1
+x- 2
+left- right+ x+ 3
+up- 7- 1
+7+ 21
+up+ 2
+left+ 9
+up- right- 6
+up+ 18
+left- up- right+ 5
+up+ 14
+right- left+ 5
+c- 1
+x- c+ 1
+x+ 2
+up- 1
+up+ 19
+up- 17
+up+ 3
+right+ 9
+left- up- 2
+up+ 4
+left+ 10
+right- 3
+right+ 1
+right- 6
+left- right+ 1
+x- 1
+left+ x+ 3
+left- 3
+up- 5
+right- left+ 2
+up+ 4
+left- right+ 16
+c- 2
+c+ 2
+left+ 1
+up- right- 20
+up+ 2
+right+ 10
+left- up- 1
+up+ 22
+up- 25
+up+ 2
+left+ 5
+up- right- 4
+up+ 20
+up- 25
+up+ 3
+right+ 5
+left- up- 23
+up+ 8
+up- 5
+c- 2
+c+ 10
+up+ 3
+left+ 9
+up- right- 1
+up+ 25
+left- right+ 1
+x- 1
+right- left+ x+ 4
+up- 17
+up+ 3
+right+ 9
+left- up- 1
+up+ 4
+left+ 4
+left- 16
+right- left+ 2
+up- 5
+up+ 4
+left- c- right+ 1
+c+ 2
+left+ 1
+right- 1
+right+ 1
+left- 1
+right- left+ 8
+left- right+ 1
+x- 1
+x+ 13
+c- 1
+c+ 3
+left+ 1
+up- right- 20
+// Frame 39224, step 3097
+up+ 3
+right+ 9
+left- up- 24
+up+ 3
+up- x- 1
+x+ 25
+up+ 1
+left+ 6
+left- 9
+right- left+ 30
+up- 20
+up+ 10
+right+ 2
+left- up- 1
+up+ 6
+left+ 5
+right- 10
+left- right+ 5
+left+ 1
+x- 3
+x+ 25
+left- up- 9
+right- left+ 10
+up+ 11
+up- 1
+up+ 25
+up- 1
+up+ 15
+right+ 4
+right- 3
+right+ 1
+left- 1
+x- left+ 2
+x+ 4
+5- 2
+5+ 19
+4- 5- 4
+4+ 1
+5+ 6
+5- 4
+right- 5+ 211
+down- 1
+down+ 3
+x- 1
+x+ 13
+z- 2
+z+ 21
+z- 1
+z+ 23
+z- 2
+z+ 22
+z- 1
+z+ 17
+c- 1
+right+ c+ 4
+c- 1
+right- c+ 1
+right+ 1
+right- 1
+right+ 1
+right- down- 1
+// Frame 40160, step 3159
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+right- down+ 1
+right+ 1
+right- down- 1
+right+ down+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+up- right- 1
+up+ right+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- down- 1
+x- right+ down+ 101
+x+ 267
+c- 1
+c+ 8
+c- 1
+c+ 8
+c- 1
+c+ 60
+escape- 1
+enter- escape+ 1
+escape- enter+ 1
+enter- escape+ 1
+enter+ 19
+escape- c- 1
+right- escape+ c+ 66
+z- 2
+z+ 15
+4- 3
+4+ 15
+up- 4
+up+ 149
+up- 1
+up+ 56
+up- 22
+up+ 22
+up- 7
+up+ 10
+down- 4
+down+ 16
+up- 1
+up+ 16
+left- right+ 1
+x- 1
+right- left+ x+ 26
+// Frame 41080, step 3215
+up- 2
+up+ 1
+up- 2
+up+ 1
+up- 2
+up+ 2
+8- 1
+8+ 1
+8- 1
+8+ 15
+up- 8
+up+ 20
+x- 8
+up- x+ 2
+up+ 23
+5- 1
+5+ 10
+up- 1
+up+ 29
+z- 1
+z+ 85
+x- 5
+x+ 17
+8- 1
+8+ 1
+8- 1
+8+ 14
+up- 24
+up+ 4
+up- 1
+up+ 215
+escape- 1
+escape+ 4
+up- 3
+left- right+ 5
+up+ 4
+right- left+ 2
+right+ 1
+x- 1
+right- x+ 2
+escape- right+ 1
+escape+ 8
+left- 84
+up- 1
+up+ 14
+left+ 5
+right- 42
+5- 1
+5+ 100
+up- 9
+up+ 135
+escape- 1
+escape+ 10
+up- 1
+up+ 15
+right+ 3
+left- 9
+left+ 9
+right- 51
+x- 1
+8- x+ 1
+8+ 1
+8- 1
+8+ 14
+up- 17
+up+ 15
+x- 45
+// Frame 41980, step 3283
+x+ 42
+up- 2
+up+ 30
+c- 1
+c+ 2
+right+ 2
+c- 1
+right- down- c+ 1
+right+ down+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- 1
+right+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+right- down+ 1
+right+ 1
+right- 1
+up- right+ 1
+up+ 1
+up- right- 1
+up+ right+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+7- down+ 1
+7+ 1
+7- 1
+7+ 3
+7- 1
+7+ 53
+up- 1
+up+ 15
+x- 9
+x+ 42
+c- 1
+x- c+ 1
+x+ 52
+up- 1
+up+ 114
+up- 9
+left- right+ 9
+up+ 3
+left+ 9
+up- right- 7
+up+ 9
+right+ 2
+up- 7
+right- 7
+up+ 14
+up- 1
+up+ 21
+up- 8
+up+ 11
+x- 9
+x+ 46
+up- 17
+up+ 6
+up- right+ 3
+left- 9
+up+ 7
+x- 4
+x+ 13
+up- 2
+c- 2
+c+ 12
+up+ 16
+up- 1
+// Frame 42980, step 3357
+up+ 17
+x- 1
+x+ 3
+up- 1
+up+ 11
+up- 13
+up+ 1
+left+ 4
+up- right- 8- 1
+8+ 1
+8- 1
+7+ 7
+up+ 6
+left- up- right+ 15
+up+ 16
+up- 1
+up+ 40
+up- 10
+up+ 9
+x- 7
+x+ 25
+up- 19
+up+ 4
+left+ 9
+up- right- 2
+right+ 4
+right- 9
+up+ 5
+up- 3
+up+ 5
+x- 3
+up- 1
+right+ x+ 7
+left- 11
+up+ 15
+up- 5
+right- left+ 8
+up+ 14
+up- 5
+left- right+ 6
+up+ 18
+c- 2
+c+ 2
+left+ 1
+right- 169
+up- 6
+up+ 160
+up- 1
+right+ up+ 88
+left- 137
+up- 5
+right- left+ 3
+up+ 6
+down- 1
+c- 1
+right+ c+ 1
+c- 1
+c+ 1
+c- 1
+c+ 1
+c- z- 1
+down+ c+ z+ 1
+c- 1
+right- down- c+ 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+down+ 1
+down- 1
+down+ 11
+right- 1
+c- 1
+c+ 3
+down- 1
+right+ down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+right- c- 1
+right+ c+ 3
+down- 1
+down+ 3
+c- 1
+right- c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 4
+escape- 1
+down- escape+ 1
+down+ 5
+up- 4
+left- right+ 4
+up+ 6
+c- 1
+c+ 4
+up- 1
+up+ 13
+c- 2
+c+ 2
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+// Frame 43880, step 3497
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 5
+c- 2
+c+ 2
+down- left+ 1
+down+ 3
+c- 1
+c+ 3
+right- down- 1
+down+ 3
+c- 1
+c+ 3
+down- 1
+down+ 3
+c- 1
+c+ 4
+escape- 1
+up- escape+ 1
+up+ 13
+c- 1
+c+ 3
+down- 1
+down+ 13
+up- 1
+up+ 15
+4- 1
+4+ 32
+left- right+ 26
+up- 1
+up+ 13
+left+ 4
+right- 17
+up- 3
+up+ 31
+escape- 1
+escape+ 2
+c- 1
+c+ 3
+right+ 1
+c- 1
+down- c+ 1
+down+ 1
+down- 1
+down+ 1
+right- down- 1
+right+ down+ 1
+right- down- 1
+down+ 36
+c- 2
+right+ c+ 3
+c- 1
+right- down- c+ 1
+right+ down+ 1
+right- down- 1
+right+ down+ 1
+down- 1
+down+ 1
+down- 1
+right- down+ 14
+escape- 1
+escape+ 15
+up- 10
+up+ 12
+up- 10
+up+ 3
+right+ 44
+escape- 1
+escape+ 1
+escape- 1
+escape+ 193
+left- 145
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+// Frame 44802, step 3675
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 4
+right- left+ 1
+left- right+ 1
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+x- right+ 6
+x+ 17
+up- right- 30
+x- 4
+up+ 16
+x+ 1
+c- 5
+c+ 27
+left- right+ 5
+right- 1
+left+ 5
+left- right+ 5
+right- 1
+left+ 4
+x- 10
+left- right+ 1
+x+ 26
+right- 1
+left+ 16
+up- 10
+up+ 17
+x- 5
+left- 1
+right+ 1
+x+ 10
+up- 13
+up+ 27
+right- 1
+left+ 2
+x- 6
+5- x+ 1
+5+ 2
+5- 1
+5+ 10
+up- 18
+up+ 22
+left- right+ 4
+up- 10
+right- left+ 13
+left- right+ 3
+up+ 5
+right- left+ 2
+left- 1
+right+ 1
+right- left+ 7
+left- right+ 1
+right- left+ 1
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+x- 1
+3- x+ 1
+3+ 19
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+x- 1
+right+ x+ 4
+left- 2
+up- 4
+left+ 2
+right- 4
+left- right+ 5
+right- 1
+left+ 14
+up+ 30
+left- 1
+4- right+ 3
+4+ 53
+up- 20
+right- left+ 3
+left- right+ 3
+right- left+ 2
+left- right+ 3
+right- left+ 3
+left- up+ right+ 3
+right- left+ 1
+left- right+ 8
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+// Frame 45725, step 3844
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+x- right+ 6
+x+ 21
+up- right- 23
+x- 17
+up+ right+ 13
+x+ 4
+right- 2
+c- 3
+c+ 2
+c- 3
+c+ 20
+x- 10
+up- 1
+up+ 16
+left- right+ x+ 30
+right- 1
+left+ 4
+x- 26
+x+ 12
+up- 8
+up+ 7
+c- 3
+c+ 22
+x- 3
+right+ 1
+right- 11
+left- x+ right+ 13
+up- 2
+up+ 9
+right- left+ 4
+right+ 1
+right- 3
+right+ 4
+left- 28
+right- left+ 1
+x- 1
+5- x+ 1
+5+ 3
+5- 1
+5+ 5
+up- 20
+up+ 9
+right+ 3
+left- up- 3
+right- left+ 6
+up+ 33
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- x- left+ 1
+3- x+ 1
+3+ 1
+left- right+ 1
+right- left+ 21
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+right+ 1
+left- 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
+x- 1
+left- right+ x+ 5
+up- 1
+right- left+ 3
+up+ 1
+left- right+ 15
+up- right- left+ 20
+up+ 5
+4- 4
+4+ 37
+left- 1
+right+ 31
+up- 25
+right- left+ up+ 1
+left- 1
+right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 8
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+// Frame 46633, step 4018
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+right+ 1
+left- 1
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 6
+x- 3
+x+ 16
+up- 24
+up+ 3
+c- 3
+c+ 1
+x- 18
+left- 2
+right+ 1
+x+ 37
+right- 1
+left+ 11
+x- 14
+x+ 7
+up- 14
+up+ 16
+left- right+ 1
+up- left+ 1
+right- 1
+up+ right+ 13
+x- 4
+right- x+ 3
+c- 11
+c+ 2
+left- right+ 12
+up- 3
+right- 2
+left+ 4
+up+ 18
+left- right+ 5
+right- left+ 1
+x- 1
+right+ 3
+x+ 1
+right- 3
+5- 1
+5+ 1
+5- 1
+5+ 12
+left- right+ 15
+right- left+ 3
+up- 15
+up+ 13
+left- right+ 3
+left+ 1
+right- 3
+left- right+ 1
+right- left+ 1
+left- right+ 2
 right- left+ 2
 left- right+ 2
 right- left+ 2
@@ -2033,1738 +4107,385 @@ right- left+ 2
 left- right+ 2
 right- left+ 3
 left- right+ 2
-left+ 1
-right- 1
-right+ 1
-left- 1
-left+ 1
-right- 1
-right+ 1
-left- 1
-left+ 1
-left- 1
-left+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 64
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 23
-down- 1
-escape- down+ 1
-right- escape+ 1
-q- 1
-q+ 18
-c- 1
-c+ 4
-up- 1
-up+ 67
-z- 1
-z+ 30
-up- 1
-up+ 20
-up- 12
-up+ 55
-up- 1
-up+ 5
-down- 6
-down+ 8
-// Frame 31675, step 2102
-up- 4
-c- right+ up+ 2
-right- c+ 56
-down- right+ 1
-right- down+ 30
-up- 6
-left- right+ 8
-up+ 23
-right- left+ 11
-right+ 23
-right- 46
-up- 12
-up+ 14
-up- 10
-up+ 7
-up- 15
-up+ 20
-x- 3
-x+ 52
-down- 1
-down+ 63
-up- 20
-up+ 2
-a- 1
-a+ 1
-a- 1
-s- a+ 1
-s+ 7
-up- 1
-up+ 10
-up- 11
-right+ up+ 4
-left- 73
-up- left+ 1
-up+ 15
-x- 2
-right- x+ 37
-up- 29
-up+ 31
-up- 14
-// Frame 32670, step 2143
-up+ 18
-d- 1
-s- d+ 1
-s+ 83
-up- 8
-up+ 7
-up- 10
-up+ 26
-up- 6
-right+ up+ 125
-right- 59
-up- 11
-up+ 104
-up- 14
-up+ 41
-up- 10
-up+ 17
-up- 1
-up+ 39
-down- right+ 1
-right- down+ 16
-up- 14
-up+ 16
-up- 1
-up+ 49
-up- 10
-up+ 1
-right+ 3
-right- 28
-up- 1
-up+ 45
-left- right+ 2
-escape- 1
-escape+ 97
-c- 1
-c+ 4
-up- right- left+ 1
-up+ 105
-left- right+ 2
-left+ 42
-x- 1
-left- x+ 11
-up- 13
-up+ 28
-up- 7
-up+ 28
 right- left+ 2
-right+ 1
-x- 1
-left- x+ 23
-right- left+ 11
-up- 6
-up+ 21
-up- 4
-up+ 17
 left- right+ 2
-left+ 1
-x- 5
-left- x+ 29
-up- 2
-left+ up+ 1
-up- right- 1
-up+ 20
-// Frame 33677, step 2207
-right+ 7
-up- 1
-up+ 25
-x- 4
-x+ 24
-c- 1
-right- c+ 24
-d- 1
-d+ 20
-up- 4
-up+ 5
-right+ 46
-right- 98
-x- 2
-x+ 40
-up- 8
-up+ 25
-up- 13
-a- 1
-a+ 1
-a- 1
-a+ 4
-up+ 15
-up- 7
-up+ 19
-down- 1
-right+ down+ 2
-up- right- 1
-c- 2
-up+ c+ 74
-up- 4
-left- right+ 10
-up+ 16
-up- 1
-up+ 110
-escape- 1
-escape+ 12
-up- 10
-up+ 2
-left+ 30
-right- 8
-up- 1
-up+ 67
-up- 4
-up+ 7
-right+ 9
-right- 22
-right+ 15
-right- 61
-up- 1
-up+ 9
-x- 1
-s- x+ 1
-s+ 89
-x- 1
-x+ 5
-down- 1
-down+ 64
-up- 2
-d- 1
-d+ 12
-up+ 5
-left- up- right+ 20
-up+ 13
-up- 1
-up+ 10
-up- 11
-up+ 25
-up- 13
-up+ 36
-up- 26
-up+ 12
-up- right- left+ 26
-up+ 70
-c- 1
-// Frame 34577, step 2283
-c+ 4
-right+ 7
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 4
-up- right- 1
-up+ 49
-up- 1
-left- right+ 4
-right- left+ 10
-up+ 1
-right+ 4
-left- up- 3
-left+ 3
-left- 9
-up+ 12
-x- 1
-right- left+ x+ 32
-right+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 3
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 1
-down- 1
-down+ 34
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 24
-right- 29
-right+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 82
-right- 11
-right+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 45
-escape- 1
-escape+ 27
-// Frame 35534, step 2444
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 23
-escape- 1
-right- escape+ 2
-d- 1
-d+ 1
-d- 1
-d+ 39
-up- 11
-up+ 24
-c- 1
-c+ 104
-left- right+ 8
-right- left+ 35
-down- 1
-down+ 22
+right- left+ 2
 left- right+ 2
-right- x- left+ 1
-x+ 22
-up- 3
-up+ 14
-right+ 3
-left- 60
-up- 3
-up+ 49
-up- 10
-up+ 10
-c- 1
-c+ 4
-up- right- left+ 1
-up+ 82
-down- 1
-down+ 14
-up- 1
-up+ 23
-up- 10
-right+ 1
-left- 9
-up+ 13
-up- 5
-up+ 29
-up- 20
-up+ 13
-up- 1
-up+ 42
-up- 4
-right- left+ 16
-up+ 63
-up- 1
-right+ up+ 110
-right- 1
-x- 13
-q- x+ 1
-q+ 50
-// Frame 36434, step 2505
-up- 6
-down- up+ 11
-down+ 16
-up- 7
-left- right+ 9
-up+ 23
-up- 6
-right- left+ 8
-up+ 16
-up- 1
-up+ 49
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
 x- 1
-x+ 28
-c- 1
-c+ 1
-right+ 3
-left- up- 1
-up+ 46
-up- 3
-up+ 29
-up- 1
-up+ 84
-up- 1
-up+ 43
-up- 7
-left+ 2
-right- 5
-up+ 14
-right+ 2
-up- 3
-right- 1
-right+ 2
-right- 1
-right+ 1
-right- 7
-up+ 1
-right+ 4
-up- right- 15
-up+ 7
-a- 1
-a+ 1
-a- 1
-a+ 35
-z- 1
-z+ 16
-x- 8
-x+ 28
-c- 1
-c+ 4
-up- 1
-up+ 19
-z- 1
-z+ 7
-x- 17
-x+ 39
-x- 14
-x+ 159
-up- 16
-up+ 43
-z- 1
-z+ 14
-x- 2
-q- x+ 1
-q+ 35
-down- 1
-down+ 2
-// Frame 37334, step 2572
-right+ 2
-c- 1
-c+ 4
-left- up- 1
-up+ 51
-up- 28
-left+ up+ 1
-right- 29
-up- 1
+3- x+ 1
+3+ 25
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
+x- 1
+x+ 7
+up- 2
 up+ 35
-x- 1
-x+ 22
-up- 6
-up+ 5
-c- 1
-c+ 27
-c- 1
-c+ 4
-left- up- right+ 1
-up+ 34
-up- 4
+left- right+ 4
+4- 3
+4+ 70
+up- 2
 right- left+ 2
-a- 1
-a+ 1
-a- 1
-a+ 6
-up+ 14
-up- 2
-up+ 17
-up- 11
-up+ 29
-up- 3
-up+ 19
-up- 1
-up+ 25
-up- 8
-left- right+ 12
-up+ 13
-up- 1
-up+ 12
-up- 14
-up+ 16
-up- 8
-up+ 3
-left+ 4
-left- up- 8
-up+ 13
-c- 1
-right- q- left+ c+ 2
-q+ 1
-q- 1
-// Frame 38241, step 2624
-q+ 1
-q- 1
-q+ 6
-q- 1
-q+ 35
-right+ 38
-right- 134
-down- 1
-down+ 11
-up- 34
-left- right+ up+ 53
-up- 1
-up+ 106
-c- 1
-left+ c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 5
-escape- 1
-left- up- escape+ 1
-up+ 32
-up- 14
-up+ 16
-up- 1
-up+ 29
-up- 4
-up+ 28
-x- 1
-d- x+ 1
-d+ 39
-up- 2
-up+ 56
-up- 10
-left+ up+ 8
-right- 21
-up- 1
-up+ 27
-up- 3
-up+ 77
-up- 10
-up+ 10
-up- 3
-up+ 24
-up- 3
-up+ 50
-up- 13
-up+ 95
-// Frame 39156, step 2673
-left- right+ 19
-d- 1
-right- left+ d+ 45
-up- 16
-up+ 30
-up- x- 1
-x+ 20
-up+ 1
-up- 1
-up+ 42
-d- 1
-d+ 1
-d- 1
-d+ 1
-d- 1
-d+ 13
-up- 12
-up+ 22
-up- 34
-up+ 37
-c- 1
-c+ 4
-left- up- right+ 1
-up+ 15
-up- 15
-up+ 2
-left+ 1
-right- 9
-right+ 2
-x- 1
-left- x+ 16
-d- 1
-d+ 84
-up- 5
-up+ 51
-up- 13
-right- left+ up+ 60
-up- 7
-up+ 27
-up- 6
-up+ 87
-up- 5
-up+ 8
-x- 4
-x+ 22
-c- 1
-right+ c+ 4
-c- 1
-down- c+ 1
-down+ 1
-down- 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-right- down+ 5
-a- 1
-a+ 11
-c- 1
-c+ 4
-c- 1
-down- right+ c+ 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-right- down+ 28
-up- 13
-up+ 20
-up- 3
-left- right+ 5
-up+ 4
-right- left+ 2
-right+ 1
-x- 1
-left- x+ 53
-up- 2
-up+ 43
-up- 4
-up+ 57
-left+ 37
-left- 108
-up- 1
-up+ 12
-x- 1
-x+ 22
-right- left+ 79
-up- 1
-down- right+ up+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-up- right- down+ 1
-up+ 22
-c- 1
-c+ 5
-right+ 8
-escape- right- 1
-escape+ 14
-up- 13
-up+ 44
-up- 4
-left- right+ 9
-up+ 19
-right- left+ 11
-up- 5
-up+ 6
-right+ 2
-left- 7
-left+ 2
-c- 1
-c+ 4
-4- 1
-8- 4+ 1
-c- 8+ 1
-down- c+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-right- down+ 1
-right+ 1
-right- 1
-up- right+ 1
-right- up+ 1
-up- right+ 1
-right- up+ 1
-up- right+ 1
-right- up+ 1
-right+ 1
-right- 1
-down- right+ 1
-// Frame 40091, step 2833
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-right- down+ 1
-right+ 1
-right- 1
-up- right+ 1
-up+ 1
-up- 1
-right- up+ 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-up- right+ 1
-right- up+ 1
-up- right+ 1
-right- up+ 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-down- right+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 11
-escape- right- 1
-escape+ 1
-a- 1
-s- a+ 1
-s+ 28
-up- 12
-up+ 39
-up- 4
-up+ 111
-up- 4
-up+ 208
-right+ 24
-escape- 1
-escape+ 22
-escape- 1
-escape+ 1
-escape- 1
-escape+ 1
-escape- 1
-escape+ 1
-escape- 1
-escape+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-// Frame 41021, step 2896
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 2
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-up- x- down+ 1
-right- x+ 2
-right+ 12
-right- 5
-up+ 2
-left- right+ 11
-up- 1
-up+ 26
-up- 26
-left+ up+ 1
-right- 11
-up- 1
-up+ 26
-up- 28
-up+ 10
-up- 1
-up+ 49
 left- right+ 2
-left+ 13
-up- x- 1
-left- x+ 7
-left+ 3
-left- 9
-up+ 21
-left+ 53
-up- 1
-up+ 29
-up- c- 41
-up+ c+ 135
-left- 46
-x- 18
-4- x+ 1
-4+ 57
-up- 32
-up+ 6
-up- 1
-up+ 44
-left+ 1
-right- 18
+right- left+ 2
+left- right+ 2
+right- left+ 3
+left- right+ 2
+right- left+ 2
+right+ 1
+left- 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 3
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+up+ left+ 5
+left- 1
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+// Frame 47564, step 4217
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
+x- 2
+right+ x+ 21
+up- right- 32
+x- up+ 19
+c- x+ 5
+c+ 17
+up- 20
+x- up+ 25
+x+ 2
+left- 1
+right+ 10
+right- 1
+left+ 2
+x- 5
+left- right+ 2
+x+ 9
+right- 1
+left+ 2
+x- 4
+x+ 1
+up- 11
+up+ 10
+x- 11
+left- right+ x+ 15
+up- 8
+up+ 9
+left+ 2
+left- 23
+right- left+ 5
+x- 6
+left- right+ 1
+x+ 2
+5- left+ 1
+5+ 1
+5- 1
+5+ 3
+up- right- 17
+c- up+ 4
+c+ 27
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 3
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
 x- 1
-left- right+ x+ 16
-up- 1
-up+ 29
+3- x+ 1
+3+ 20
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 1
+x- 1
+right+ x+ 9
+right- 5
 up- 2
-// Frame 41928, step 2955
-left+ 11
-right- 7
-up+ 13
-up- 1
-up+ 30
-up- 4
-up+ 28
-c- 1
-c+ 4
-up- 30
-up+ 8
-left- up- right+ 1
-up+ 26
-up- 29
-up+ 2
-left+ 7
-up- right- 1
-up+ 26
-up- 23
-up+ 1
-up- 2
-up+ 12
-left- up- right+ 1
-up+ 26
-up- 26
+right+ 1
+left- 1
 up+ 3
-left+ 6
-right- 3
+right- 1
+left+ 16
+4- 5
+4+ 19
+left- 1
+right+ 65
 up- 1
-up+ 26
-up- 27
-up+ 11
-up- 1
-up+ 30
-up- 4
-up+ 7
-right+ 2
-left- 14
-x- 1
-x+ 87
-x- 9
-x+ 30
-up- 9
-up+ 43
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- up+ right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 3
+right- left+ 1
+left- right+ 5
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 1
+right- 1
+left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
+right- left+ 2
+left- right+ 2
 right- left+ 2
 x- right+ 1
-x+ 17
-left- 39
-up- 13
-right- left+ 7
-up+ 13
-up- 1
-// Frame 42864, step 3008
-up+ 30
-up- 7
-up+ 20
-right+ 1
-c- 1
-c+ 4
-up- 2
-left- 18
-up+ 2
-right- left+ 11
-up- 1
-up+ 26
-up- 26
-up+ 12
-left- up- right+ 1
-up+ 26
-up- 26
-right- left+ up+ 12
-up- 1
-up+ 26
-up- 28
-up+ 10
-up- 1
-up+ 30
-up- 3
-up+ 7
-right+ 4
-left- 1
-left+ 12
-x- 1
-left- x+ 44
-left+ 2
-up- 10
-left- 10
-up+ 13
-up- 1
-up+ 63
-up- 24
-up+ 71
-right- left+ 5
-right+ 3
-x- 1
-x+ 20
-q- 1
-q+ 225
-right- 2
-right+ 12
-right- 55
-down- 1
-down+ 3
-x- 1
 x+ 11
-z- 1
-z+ 28
-z- 1
-z+ 7
-c- 1
-c+ 13
-c- 1
-right+ c+ 4
-c- 1
-down- c+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-right- down+ 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-up- right+ 1
-right- up+ 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-down- right+ 1
-right- down+ 1
-right+ 1
-right- 1
-down- right+ 1
-down+ 361
-down- 1
-down+ 1
-down- 1
-down+ 1
-// Frame 43855, step 3104
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 9
-down- 1
-down+ 9
-down- 1
-down+ 89
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 23
-escape- right- 1
-escape+ 2
-4- 1
-4+ 62
-z- 4
-z+ 36
-up- 4
-up+ 181
-up- 4
-up+ 52
-// Frame 44779, step 3153
-up- 5
-up+ 18
-up- 4
-up+ 26
-left- right+ 2
-right- x- left+ 1
-x+ 10
-a- 1
-q- a+ 1
-q+ 50
-up- 1
-up+ 30
-up- 5
-up+ 35
-up- 9
-up+ 47
-up- 8
-up+ 21
-up- 4
-up+ 31
-x- 1
-8- x+ 1
-s- 8+ 1
-q- s+ 1
-q+ 62
-8- 1
-s- 8+ 1
-s+ 22
-z- 1
-z+ 58
-up- 21
-up+ 9
-up- 1
-right+ up+ 224
-right- 36
-escape- 1
-escape+ 4
-up- 3
-left- right+ 5
-up+ 4
-right- left+ 2
-right+ 1
-x- 1
-right- x+ 3
-right+ 16
-escape- left- 1
-escape+ 78
-up- 5
-up+ 11
-left+ 4
-right- 164
-up- 1
-up+ 171
-escape- 1
-escape+ 9
-up- 7
-up+ 13
-right+ 3
-// Frame 45682, step 3212
-left- 8
-left+ 10
-right- 28
-x- 5
-x+ 38
-up- 20
-up+ 5
-x- 64
-x+ 49
-up- 1
-up+ 38
-c- 1
-c+ 4
-c- right+ 1
-down- c+ 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-right+ 1
-right- 1
-down- right+ 1
-right- down+ 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-right+ 1
-right- 1
-up- right+ 1
-right- up+ 1
-up- right+ 1
-right- up+ 1
-right+ 1
-right- 1
-down- right+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-right- x- down+ 20
-q- x+ 1
-q+ 45
-up- 8
-up+ 22
-up- 17
-up+ 102
-up- 11
-up+ 126
-up- 9
-left- right+ 11
-up+ 8
-right- left+ 5
-up- 7
-up+ 12
-up- 1
-right+ 6
-right- 2
-7- 1
-7+ 4
-up+ 16
-up- 1
-up+ 25
-up- 10
-up+ 19
-up- 4
-// Frame 46656, step 3280
-up+ 18
-up- 6
-up+ 33
-up- 13
-up+ 12
-left- up- right+ 11
-up+ 7
-x- 1
-q- x+ 1
-q+ 19
-up- 35
-up+ 42
-up- 14
-up+ 11
-left+ 1
-right- 4
-up- 13
-up+ 8
-left- up- right+ 17
-up+ 19
-up- 1
-up+ 49
-up- 7
-up+ 19
-up- 1
-up+ 19
-up- 3
-up+ 23
-up- 21
-up+ 2
-left+ 12
-up- 1
-right- 14
-up+ 5
-up- 3
-up+ 9
-up- right+ 15
-left- 5
-up+ 18
-up- 4
-right- left+ 8
-up+ 19
-up- 5
-left- right+ 7
-up+ 21
-c- 1
-c+ 2
-right- left+ 13
-right+ 104
-up- right- 1
-up+ 62
-up- 4
-up+ 2
-right+ 34
-right- 123
-up- 3
-up+ 5
-up- 23
-up+ 25
-right+ 190
-left- 26
-up- 4
-right- left+ 6
-up+ 7
-down- 2
-c- right+ 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-z- c+ 1
-z+ 1
-c- down+ 1
-down- c+ 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-down+ 10
-right- 2
-c- 1
-c+ 4
-right+ 3
-right- 4
-c- 1
-c+ 11
-c- 1
-c+ 4
-right+ 7
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-// Frame 47556, step 3381
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 5
-escape- 1
-up- right- escape+ 4
-left- right+ 4
-up+ 7
-c- 1
-c+ 11
-c- 1
-c+ 4
-up- 1
-up+ 15
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 5
-left+ 6
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 10
-escape- left- 1
-escape+ 2
-c- 1
-c+ 4
-left+ 7
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 11
-c- 1
-c+ 4
-up- right- 1
-up+ 29
-up- 10
-up+ 49
-// Frame 48551, step 3433
-left- right+ 32
-up- 4
-up+ 25
-right- left+ 28
-up- 10
-up+ 34
-escape- 1
-escape+ 1
-c- 1
-right+ c+ 4
-c- 1
-down- c+ 1
-right- down+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-right- down+ 43
-c- 1
-c+ 2
-right+ 2
-c- 1
-right- c+ 1
-down- right+ 1
-right- down+ 1
-down- right+ 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-right- down+ 16
-escape- 1
-escape+ 14
-up- 15
-up+ 2
-up- 13
-right+ up+ 67
-escape- 1
-escape+ 1
-escape- 1
-escape+ 59
-4- 1
-4+ 13
-x- 90
-x+ 108
-left- 41
-left+ 8
-left- 51
-right- left+ 8
-right+ 231
-x- 1
-right- x+ 7
-x- 76
-x+ 16
-c- right+ 1
-c+ 40
-x- 18
-up- right- 3
-x+ up+ right+ 3
-left- 4
-right- left+ 1
-// Frame 49513, step 3496
-right+ 1
-right- 1
-right+ 12
-x- 44
-right- x+ 26
-right+ 20
-up- 7
-up+ 20
-x- 3
-up- x+ 61
-up+ 5
-x- 6
-5- x+ 1
-5+ 1
-5- 1
-right- 5+ 19
-up- 5
-up+ 1
-right+ 6
-right- 1
-right+ 11
-up- 5
-left- 5
-right- left+ 2
-up+ 2
-right+ 18
-right- 1
-right+ 27
-right- 30
-right+ 25
-x- 1
-right- 3- x+ 1
-3+ 27
-right+ 5
-x- 42
-x+ 21
-right- 36
-left- right+ 7
-left+ 1
-right- 8
-left- 1
-right+ 31
-left+ 1
-left- 4- 1
-4+ 31
-up- 32
-up+ 30
-right- left+ 2
-right+ 55
-// Frame 50432, step 3546
-x- 1
-right- x+ 19
-x- 72
-x+ 47
-right+ 1
-x- 40
-up- 38
-up+ 84
-5- x+ 1
-5+ 2
-5- 1
-right- 5+ 30
-right+ 42
-right- 5
-right+ 6
-right- 1
-right+ 46
-right- 31
-right+ 4
-right- 4
-right+ 11
-right- x- 1
-3- x+ 1
-x- 3+ 50
-right+ 18
-right- 1
-x+ 8
-right+ 8
-right- 20
-left- 1
-right+ 18
-4- 1
-4+ 83
-left+ 9
-up- 22
-left- 2
-up+ 21
-right- left+ 2
-right+ 65
-x- 1
-up- x+ 42
-up+ 12
-up- 18
-up+ 4
-x- 2
-// Frame 51358, step 3592
-x+ 4
-x- 3
-x+ 7
-up- 8
-c- 2
-up+ c+ 7
-x- 53
-x+ 31
-x- 40
-up- x+ 53
-up+ 8
-x- 8
-x+ 5
-up- 10
-x- 15
-up+ 41
-right- 5- x+ 1
-5+ 1
-5- 1
-5+ 33
-right+ 14
-up- right- 19
-up+ right+ 56
-right- 22
-right+ 19
-x- 1
-right- x+ 1
-3- 1
-x- 3+ 56
-right+ 11
-right- 1
-x+ 1
-right+ 15
 right- 6
-right+ 6
-right- 3
-4- 1
-4+ 9
-left- 1
-right+ 123
-right- left+ 6
-right+ 136
-x- 1
-up- x+ 39
-up+ 1
-up- 30
-x- 1
-up+ 18
-x+ 2
-up- 32
-up+ 10
-x- 27
-x+ 7
-up- 34
-x- 1
-up+ 29
-// Frame 52279, step 3649
+up- 38
+// Frame 48509, step 4426
+x- 2
+up+ 3
 x+ 1
-up- 56
-x- up+ 18
-up- 1
-5- x+ up+ 1
-5+ 1
-5- 1
-up- 5+ 1
-up+ 54
-up- 12
-right- 2
-up+ 39
-right+ 61
+// Frame 49479, step 4430
+x- 10
+x+ 10
+up- 4
+up+ 25
+up- 5
+up+ 15
+x- 2
+right+ x+ 6
+right- 8
+up- 20
+x- 1
+up+ 2
+right+ 24
+left- x+ 7
 right- 1
-right+ 2
+left+ 2
 x- 1
-right- 3- x+ 1
-3+ 48
-right+ 21
-x- 1
-// Frame 53468, step 3670
-x+ 13
-4- 1
-left- 4+ 14
-left+ 1
-right- 28
+left- right+ x+ 13
+up- right- left+ 15
+up+ 3
+c- 3
+c+ 17
+x- 12
+3- x+ 1
+3+ 13
 left- 1
-right+ 8
-up- 1
-up+ 16
-up- 2
-up+ 17
-up- 1
-up+ 16
-up- 1
-up+ 49
+right+ 5
 right- left+ 2
-right+ 102
-right- 4
-right+ 28
+left- right+ 3
+right- left+ 3
+left- right+ 2
+right- left+ 2
+left- right+ 14
+right- 1
+left+ 4
 x- 1
-up- x+ 34
-up+ 18
-up- 22
-up+ 6
-x- 4
-right- x+ 54
-right+ 15
-x- 3
-x+ 14
-up- 18
-up+ 7
-up- 13
-x- 19
-up+ 7
-x+ 28
-up- 2
-up+ 16
-x- 1
-x+ 15
-up- 2
-up+ 17
-x- 1
+right+ 5
 5- x+ 1
 5+ 1
 5- 1
-right- 5+ 31
-right+ 67
-up- right- 11
-up+ 19
-right+ 2
-right- 1
-right+ 18
-right- 45
-right+ 18
+left- 5+ 7
+left+ 2
+right- 4
+up- 20
+right+ up+ 14
+left- 26
+left+ 5
+right- 52
+left- right+ 5
+left+ 10
 x- 1
-x+ 919
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 1
-down- 1
-down+ 76
+x+ 952
+c- 1
+c+ 66
 enter- 1
-enter+ 13
-escape- 1
-escape+ 3
-escape- 1
-escape+ 5
-escape- 1
-escape+ 1
-escape- 1
-escape+ 
+enter+ 17
+escape- 
