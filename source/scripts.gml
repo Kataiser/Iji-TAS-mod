@@ -21734,21 +21734,25 @@ else{
         if (obj_iji.sec8cut1){
             obj_iji.sec8cut1=0;
             obj_sabot.timeline_index=tim_sec8cut1;
+            obj_sabot.timeline_running=true;
             obj_sabot.timeline_position=0;
             }
         if (obj_iji.sec8cut2){
             obj_iji.sec8cut2=0;
             obj_sabot.timeline_index=tim_sec8cut2;
+            obj_sabot.timeline_running=true;
             obj_sabot.timeline_position=0;
             }
         if (obj_iji.sec8cut3){
             obj_iji.sec8cut3=0;
             obj_sabot.timeline_index=tim_sec8cut3;
+            obj_sabot.timeline_running=true;
             obj_sabot.timeline_position=0;
             }
         if (obj_iji.sec8cut4){
             obj_iji.sec8cut4=0;
             obj_sabot.timeline_index=tim_sec8cut4;
+            obj_sabot.timeline_running=true;
             obj_sabot.timeline_position=0;
             }
         //Torbody
@@ -21758,11 +21762,13 @@ else{
             if (!obj_torbodytrigger.lookup){
                 obj_torbodytrigger.lookup=1;
                 obj_torbodytrigger.timeline_index=tim_torbodylookup;
+                obj_torbodytrigger.timeline_running=true;
                 obj_torbodytrigger.timeline_position=0;
                 }
             else if (instance_number(obj_strikelight)==15 && !obj_torbodytrigger.jump){
                 obj_torbodytrigger.jump=1;
                 obj_torbodytrigger.timeline_index=tim_torbodyjump;
+                obj_torbodytrigger.timeline_running=true;
                 obj_torbodytrigger.timeline_position=0;
                 }
             }
@@ -21774,6 +21780,7 @@ else{
     with (obj_scrollarrow) instance_destroy();
     global.textid="0";
     }
+
 #define scr_beginmessage
 //Begin message
 //Argument0 is reading logbook
@@ -32923,6 +32930,7 @@ if (megarand==1){
         tempadjust=2;
     if (obj_tor.hp>=750+tempadjust*75){
         timeline_index=tim_phantom;
+        timeline_running=true;
         timeline_position=0;
         }
     else{
@@ -33001,6 +33009,7 @@ else if (weaponrand==3){
     weight[3]-=1;
     potencycount[3]+=1;
     }
+
 #define scr_secondtier
 //Argument0 is Charge
 totalweight=0;
@@ -40730,7 +40739,7 @@ do {
 }
 until (current_inputs != "" and string_count("//", current_inputs) == 0)
 
-frames_on_step = 1;
+frames_on_step = 0;
 
 #define scr_executecommand
 key_short = argument0;
@@ -40753,11 +40762,6 @@ else {
     else if (string_count(" " + key_short + "+ ", " " + current_inputs + " ") == 1) {
         keyboard_key_release(key_long);
         ds_list_delete(held_keys, ds_list_find_index(held_keys, key_short));
-        handle = true;
-    }
-    else if (string_count(" " + key_short + " ", " " + current_inputs + " ") == 1) {
-        keyboard_key_press(key_long);
-        keyboard_key_release(key_long);
         handle = true;
     }
 }

@@ -12915,7 +12915,6 @@ if (cracked==0){
             global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
         else
             global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
-        clipboard_set_text(string(random_get_seed()))
         script_execute(scr_begincrack);
         }
     else{
@@ -17119,6 +17118,7 @@ if (global.state==1 && !global.ignoreall){
 global.ignoreall=1;
 with (other){
 timeline_index=tim_getribbon;
+timeline_running=true;
 timeline_position=0;
 with (obj_visioncheck)
     instance_destroy();
@@ -17128,6 +17128,7 @@ with (obj_alliedenemy)
     angry=0;
 }
 }
+
 ______________________________________________________
 
 Information about object: obj_blit
@@ -28548,6 +28549,7 @@ alarm[0]=7;
 obj_iji.speed=0;
 obj_iji.sprite_index=spr_basic;
 timeline_index=tim_proxima;
+timeline_running=true;
 timeline_position=0;
 sprite_index=spr_proxima_body;
 }
@@ -28560,6 +28562,7 @@ if (!commence && !global.ignoreall){
     with (obj_proxima)
         scr_proximatalk(2);
     }
+
 Draw Event:
 
 execute code:
@@ -30389,6 +30392,7 @@ else{
             sprite_index=spr_komatoannihilator_walk;
         }
     }
+
 Alarm Event for alarm 5:
 
 set variable angry to 0
@@ -31658,6 +31662,7 @@ if (global.state==1 && !global.ignoreall){
 global.ignoreall=1;
 with (other){
 timeline_index=tim_getribbon;
+timeline_running=true;
 timeline_position=0;
 with (obj_visioncheck)
     instance_destroy();
@@ -32070,6 +32075,7 @@ global.ignoreall=1;
 obj_sabot.lightrave=1;
 obj_sabot.raveflash=-0.4;
 timeline_index=tim_iosastrike;
+timeline_running=true;
 timeline_position=0;
 
 with (obj_iji){
@@ -32131,6 +32137,7 @@ instance_activate_object(obj_cdoor92);
 with (obj_cdoor92)
     visible=1;
 }
+
 ______________________________________________________
 
 Information about object: obj_cdoor92
@@ -32444,10 +32451,12 @@ if (angry==1){
     if (randomstate<0.3){
         if (facing==0 && place_meeting(x-32,y+96,target) && place_free(x-128,y-96) && !target.takingpain && !target.ansaksie){
             timeline_index=tim_destroy;
+            timeline_running=true;
             timeline_position=0;
             }
         else if (facing==1 && place_meeting(x+32,y+96,target) && place_free(x+128,y-96) && !target.takingpain && !target.ansaksie){
             timeline_index=tim_destroy;
+            timeline_running=true;
             timeline_position=0;
             }
 
@@ -32714,6 +32723,7 @@ if (angry==1){
             sprite_index=spr_iosa_walk;
         }
     }
+
 Alarm Event for alarm 5:
 
 set variable angry to 0
@@ -33364,6 +33374,7 @@ if (global.state==1 && !global.ignoreall && global.facing==1){
 global.ignoreall=1;
 with (other){
 timeline_index=tim_getribbon;
+timeline_running=true;
 timeline_position=0;
 }
 }
@@ -39676,10 +39687,12 @@ execute code:
 global.ignoreall=0;
 instance_create(x,y,obj_torbar);
 obj_tor.timeline_index=tim_tor;
+obj_tor.timeline_running=true;
 obj_tor.timeline_position=0;
 obj_iji.alwayschangeweapon=0;
 with (obj_sabot)
     scr_music("mus_tor");
+
 Alarm Event for alarm 4:
 
 execute code:
@@ -39784,6 +39797,7 @@ if (!dead && !nodraw && hp<=0 && global.hp>0 && instance_number(obj_torhammer)==
         scr_sound("exp_boss");
         scr_stoptorvoice();
         timeline_index=tim_tordeath;
+        timeline_running=true;
         timeline_position=0;
         room_speed=30;
         with (obj_sabot)
@@ -39803,10 +39817,14 @@ if (dead){
     if (y>=370 && !finaldeath){
         finaldeath=1;
         y=370;
-        if (global.killdata[797]==1)
+        if (global.killdata[797]==1) {
             timeline_index=tim_tordeath2p;
-        else
+            timeline_running=true;
+        }
+        else {
             timeline_index=tim_tordeath2;
+            timeline_running=true;
+        }
         timeline_position=0;
         }
     }
@@ -40025,6 +40043,7 @@ if (wty>0)
     wty-=1;
 if (wty>1 && hp<=0)
     global.wty=1;
+
 Collision Event with object obj_bullet:
 
 execute code:
@@ -46034,6 +46053,8 @@ else if (global.cut==14)
     timeline_index=tim_cut14;
 else if (global.cut==15)
     timeline_index=tim_cut15;
+    
+if (timeline_index != -1) {timeline_running=true;}
 
 End Step Event:
 
@@ -54143,11 +54164,12 @@ execute code:
 
 randomize();
 rm_speed = 30;
-has_started = false;
+is_executing = false;
 held_keys = ds_list_create(); //data strutures don't get saved in savestates, but that's not a problem (hopefully)
 tas_font = font_add_sprite(spr_text_tas,32,0,0);
 current_inputs = " ";
-frames_on_step = 1;
+frames_on_step = 0;
+record = false;
 
 Alarm Event for alarm 0:
 
@@ -54183,15 +54205,15 @@ scr_executecommand("a", ord('A'));
 scr_executecommand("s", ord('S'));
 scr_executecommand("d", ord('D'));
 scr_executecommand("q", ord('Q'));
-scr_executecommand("1", ord('1'));
-scr_executecommand("2", ord('2'));
-scr_executecommand("3", ord('3'));
-scr_executecommand("4", ord('4'));
-scr_executecommand("5", ord('5'));
-scr_executecommand("6", ord('6'));
-scr_executecommand("7", ord('7'));
-scr_executecommand("8", ord('8'));
-scr_executecommand("9", ord('9'));
+scr_executecommand("one", ord('1'));
+scr_executecommand("two", ord('2'));
+scr_executecommand("three", ord('3'));
+scr_executecommand("four", ord('4'));
+scr_executecommand("five", ord('5'));
+scr_executecommand("six", ord('6'));
+scr_executecommand("seven", ord('7'));
+scr_executecommand("eight", ord('8'));
+scr_executecommand("nine", ord('9'));
 if (handle) {io_handle();}
 
 if (string_count("save: ", current_inputs) == 1) {
@@ -54208,16 +54230,20 @@ Begin Step Event:
 
 execute code:
 
-if (has_started) {
+if (is_executing) {
     room_speed = rm_speed;
+    
+    if (alarm[0] == -1) {
+        alarm[0] = 1; // this is dumb
+    }
 }
 
 End Step Event:
 
 execute code:
 
-if (has_started) {
-    scr_seed(current_inputs, frames_on_step)
+if (is_executing) {
+    scr_seed(current_inputs + string(room), frames_on_step)
     frame += 1;
     frames_on_step += 1;
 }
@@ -54225,6 +54251,10 @@ if (has_started) {
 Draw Event:
 
 execute code:
+
+if (is_executing and record) {
+    screen_save('record\' + string_replace_all(string_format(frame, 6, 0), ' ', '0') + '.png')
+}
 
 draw_set_font(tas_font);
 draw_set_color(c_white);
@@ -54250,15 +54280,15 @@ held_keys_string = string_replace(held_keys_string, "0", "");
 
 draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
 draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
-draw_text_ext(root_x,root_y + (18 * 2),alarm[0],28,800);
+draw_text_ext(root_x,root_y + (18 * 2),string(frames_on_step) + " (" + string(alarm[0]) + ")",28,800);
 draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
 
 Key Press Event for Key:
 
 execute code:
 
-if (!has_started) {
-    tas_file_name = get_open_filename("TAS file|*.tas", "");
+if (!is_executing) {
+    tas_file_name = get_open_filename("ITF file|*.itf", "");
     
     if (tas_file_name != "") {
         step = 1;
@@ -54267,7 +54297,7 @@ if (!has_started) {
         last_inputs = "";
         io_clear();
         alarm[0] = 2;
-        has_started = true;
+        is_executing = true;
     }
 }
 
@@ -54321,12 +54351,18 @@ execute code:
 
 scr_tasunpause();
 with (obj_tas) {
-    io_clear();
-    room_speed = 30;
-    rm_speed = 30;
-    handle = true;
-    ds_list_clear(held_keys);
-    alarm[0] = -1;
+    if (is_executing) { 
+        io_clear();
+        room_speed = 30;
+        rm_speed = 30;
+        handle = true;
+        ds_list_clear(held_keys);
+        alarm[0] = -1;
+        is_executing = false;
+    }
+    else {
+        game_end();
+    }
 }
 
 Key Press Event for K-key Key:
@@ -54394,7 +54430,7 @@ Create Event:
 
 execute code:
 
-if (room == rom_resolution) {
+/*if (room == rom_resolution) {
     sprite_replace_sprite(spr_tastext, 'tas_text.gmspr')
 }
 
