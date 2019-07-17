@@ -10,13 +10,13 @@ Please consider joining if you're at all interested!
 ## Download and installation
 [Iji_TAS_mod.zip (14 MB)](https://github.com/Kataiser/Iji-TAS-mod/releases/latest/download/Iji-TAS-mod.zip)  
 Doesn't include an auto-updater, check back to https://github.com/Kataiser/Iji-TAS-mod occasionally for updates  
-This tool to convert from Hourglass files (`.wtf` or `.hgm`) to Iji TAS files (`.itf`) may also be useful: https://github.com/Kataiser/wtf-to-itf
+This tool to convert between Hourglass files (`.wtf` or `.hgm`) and Iji TAS files (`.itf`) may also be useful: https://github.com/Kataiser/wtf-to-itf
 
 ## Syntax, controls, and documentation
 
-**IMPORTANT:** this mod works by simulating key presses system-wide. As a result, defocusing the game window will result in the TAS not running and its inputs being sent wherever else. BE CAREFUL!
+**IMPORTANT:** this mod works by simulating key presses system-wide (an engine limitation). As a result, defocusing the game window will result in the TAS not running and its inputs being sent wherever else. BE CAREFUL!
 
-Keys: `escape, enter, up, down, left, right, z, x, c, a, s, d, q, 'one'-'nine'`  
+Keys: `escape, enter, up, down, left, right, z, x, c, a, s, d, q, one-nine`  
 Line syntax: `-` after a key presses and holds it and `+` releases it. The number afterward is the time in frames until the next step is processed (1 would be the very next frame).
 `//` anywhere in the line (preferably at the beginning) is a comment and won't be executed.  
 `save: ` command: creates a savestate file with the name after the colon (can include spaces). These *take a frame, clear current input*, and *are not invalidated.*  
