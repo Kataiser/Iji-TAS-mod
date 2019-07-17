@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_iji.x&gt;x-32 &amp;&amp; !ultrigger){
+    ultrigger=1;
+    obj_sabot.ultimatecannotpause=1;
+    }
+
+if (!triggered2 &amp;&amp; !global.ignoreall){
+triggered2=1;
+instance_create(x,y,obj_proximabar);
+}
+
+if (!donetrigger &amp;&amp; proximadead &amp;&amp; instance_number(obj_supercharge)==0 &amp;&amp; global.hp&gt;0 &amp;&amp; !obj_iji.takingpain &amp;&amp; (obj_iji.sprite_index==spr_basic || obj_iji.sprite_index==spr_basicleft || obj_iji.sprite_index==spr_run || obj_iji.sprite_index==spr_runleft)){
+donetrigger=1;
+obj_iji.takingpain=1;
+global.ignoreall=1;
+if (global.facing==0)
+    obj_iji.sprite_index=spr_basicleft;
+else
+    obj_iji.sprite_index=spr_basic;
+(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chat75";
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

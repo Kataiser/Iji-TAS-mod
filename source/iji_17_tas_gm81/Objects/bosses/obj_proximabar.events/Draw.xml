@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (yadjust&lt;0 &amp;&amp; obj_proxima.hp&gt;0)
+yadjust+=8;
+
+x=floor(x);
+y=floor(y);
+
+if (!global.specialbake){
+if (!global.suddendeath){
+    draw_set_color(c_black);
+    draw_rectangle(x-originalwidth-1,y-1,x+originalwidth,y+15,0);
+    draw_set_color(c_white);
+    draw_rectangle(x-originalwidth-1,y-1,x+originalwidth,y+15,1);
+    }
+else{
+    draw_set_color(c_black);
+    draw_rectangle(x-originalwidth-2,y-1,x+originalwidth+1,y+15,0);
+    draw_set_color(c_white);
+    draw_rectangle(x-originalwidth-2,y-1,x+originalwidth+1,y+15,1);
+    }
+}
+draw_sprite(spr_bossnames,2,x,y-10);
+
+if (obj_proxima.hp&gt;0){
+    if (!global.specialbake){
+        if (obj_proxima.hp&gt;100){
+            width=(obj_proxima.hp-100)*2;
+            width2=200;
+            }
+        else
+            width2=(obj_proxima.hp)*2;
+        if (obj_proxima.hp&lt;=100)
+            draw_sprite_stretched(sprite_index,image_index,x-width2,y,width2*2,15);
+        else
+            draw_sprite_stretched(sprite_index,1,x-width2,y,width2*2,15);
+        if (obj_proxima.hp&gt;100){
+            draw_sprite_stretched(spr_bossbar2,image_index,x-width,y,width*2,15);
+            draw_sprite(spr_bossx,0,x,y+7);
+            }
+        }
+    else{
+        draw_sprite(spr_hpbarback,9,x-81,y);
+        draw_sprite(spr_hpbar,ceil((obj_proxima.hp/obj_proxima.maxhp)*20),x-80,y);
+        }
+    }
+
+//Energy tanks (15 px gap)
+if (!global.suddendeath &amp;&amp; !global.specialbake){
+    draw_set_color(c_black);
+    draw_rectangle(x-201,y+21,x+9-201,y+30,0);
+    draw_set_color(c_white);
+    draw_rectangle(x-201,y+21,x+9-201,y+30,1);
+    if (obj_proxima.hp&gt;100)
+        draw_sprite_stretched(spr_bossbar2,image_index,x+1-201,y+22,8,8);
+    }
+
+if (obj_proxima.hp&lt;=0){
+    yadjust-=8;
+    if (yadjust&lt;-64)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

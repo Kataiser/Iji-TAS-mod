@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_proxima.nukewait&gt;=(1+global.difficulty*3) || obj_proxima.chargingnuke){
+    with (obj_terminal){
+        if ((!obj_proximatrigger.elecpad2 &amp;&amp; trigger==23) || (!obj_proximatrigger.elecpad1 &amp;&amp; trigger==24)){
+            if (sprite_index!=spr_terminal){
+                sprite_index=spr_terminal;
+                proxbeep=1;
+                }
+            }
+        else
+            proxbeep=0;
+        }
+    }
+
+with (obj_terminal){
+    if (sprite_index==spr_terminal &amp;&amp; global.bosshint){
+        draw_sprite(spr_proximause,image_index,x,y-30);
+        }
+    if (!prevbeep &amp;&amp; proxbeep){
+        with (obj_iji)
+            scr_sound("glo_cracksuccess");
+        }
+    prevbeep=proxbeep;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_enemypulse">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (shredder)
+shredderhp-=1;
+
+else{
+if (!takingpain &amp;&amp; !recovering){
+    global.armor-=(1/global.armorlevel);
+    if (overload==9){
+        global.ammo6partpart+=1;
+        if (global.ammo6partpart&gt;=5){
+            global.ammo6partpart=0;
+            global.ammo6part-=1;
+            }
+        if global.ammo6part&lt;0{
+            if (global.weapon6){
+                if (global.assimilatelevel&lt;10)
+                    maxammo=global.assimilatebase+global.assimilatelevel*global.assimilatesize;
+                else
+                    maxammo=99;
+                if (global.ammo6==maxammo)
+                    global.topmessage="Pulse ammo full";
+                else
+                    global.topmessage="Pulse ammo +1";
+                }
+            else{
+                if (global.assimilatelevel&lt;10)
+                    maxammo=global.assimilatebase+global.assimilatelevel*global.assimilatesize;
+                else
+                    maxammo=99;
+                if (global.ammo6==maxammo)
+                    global.topmessage="Unknown ammo full";
+                else
+                    global.topmessage="Unknown ammo +1";
+                }
+            global.ammo6part=24;
+            global.ammo6+=1;
+            global.erasetop=0;
+            }
+        }
+if (other.hyper==1 &amp;&amp; global.armor&lt;30){
+    global.hp-=1;
+    global.damage+=1;
+    scr_shakescreen(2);
+    if (other.hspeed&lt;0)
+        scr_knockdown(1,other.hyperstrength);
+    else
+        scr_knockdown(2,other.hyperstrength);
+    }
+}
+}
+with (other){
+    scr_pulseexplosion();
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

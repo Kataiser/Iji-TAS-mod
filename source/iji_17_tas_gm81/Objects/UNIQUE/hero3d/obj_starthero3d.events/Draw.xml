@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">cycle+=1;
+draw_set_color(c_black);
+draw_rectangle(obj_shakescreen.x-width/2,obj_shakescreen.y-height/2,obj_shakescreen.x+width/2,obj_shakescreen.y+height/2,0);
+width+=16;
+height+=12;
+
+if (cycle&gt;=45 &amp;&amp; cycle&lt;50){
+obj_sabot.heroxprev=obj_sabot.x;
+obj_sabot.heroyprev=obj_sabot.y;
+view_xview[0]=0;
+view_yview[0]=0;
+instance_create(0,0,obj_herosabot);
+obj_sabot.alarm[7]=1;
+cycle=60;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

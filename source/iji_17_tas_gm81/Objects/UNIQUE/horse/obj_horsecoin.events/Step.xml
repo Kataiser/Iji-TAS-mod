@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (bounce){
+    if (!init){
+        init=1;
+        gravity=0.5;
+        direction=random(180);
+        speed=4+random(16);
+        }
+    if (x+hspeed&lt;=8384){
+        hspeed=abs(hspeed);
+        hspeed/=2;
+        }
+    else if (x+hspeed&gt;=8928){
+        hspeed=-abs(hspeed);
+        hspeed/=2;
+        }
+    if (y+vspeed&lt;=2080){
+        vspeed=abs(vspeed);
+        vspeed/=2;
+        }
+    else if (y+vspeed&gt;=2572){
+        y=2572;
+        vspeed=-abs(vspeed);
+        vspeed/=2;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

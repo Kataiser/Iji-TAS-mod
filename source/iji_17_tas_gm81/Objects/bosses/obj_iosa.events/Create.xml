@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">state=0;
+image_single=0;
+hp=400;
+maxhp=400;
+armor=200;
+maxarmor=200;
+if (global.suddendeath){
+    hp=1;
+    maxhp=1;
+    armor=100;
+    maxarmor=100;
+    }
+enemytype=14;
+resistance=10;
+security=80;
+hyperstrength=15;
+iosa=1;
+holdstillwait=200+ceil(random(100));
+getdownwait=50+ceil(random(50));
+painwait=20+ceil(random(20));</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_com_find1" type="RESOURCE"/>
+  <resource name="snd_com_find2" type="RESOURCE"/>
+  <resource name="snd_com_pain1" type="RESOURCE"/>
+  <resource name="snd_com_pain2" type="RESOURCE"/>
+  <resource name="snd_com_death1" type="RESOURCE"/>
+  <resource name="snd_com_death2" type="RESOURCE"/>
+</resources>

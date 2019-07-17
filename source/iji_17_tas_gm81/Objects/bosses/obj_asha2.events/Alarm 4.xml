@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (randomfakes&gt;0){
+    if (elecbomb){
+        xrand=6000+random(352);
+        yrand=2816+random(96);
+        instance_create(xrand,yrand,obj_elecbomb);
+        instance_create(xrand,yrand,obj_megaflash);
+        }
+    else
+        instance_create(random(600)+obj_iji.x-300,random(400)+obj_iji.y-200,obj_megaflash);
+    randomfakes-=1;
+    if (randomfakes==0)
+        alarm[4]=2;
+    else
+        alarm[4]=3;
+    }
+else
+    alarm[2]=2;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

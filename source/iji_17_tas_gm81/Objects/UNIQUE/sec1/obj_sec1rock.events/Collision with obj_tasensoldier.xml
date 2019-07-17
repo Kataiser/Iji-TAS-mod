@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tasensoldier">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.hp&gt;0 &amp;&amp; other.state==1 &amp;&amp; other.angry &amp;&amp; other.alarm[2]&gt;2 &amp;&amp; abs(other.y-obj_iji.y)&lt;100){
+instance_destroy();
+with (other){
+    alarm[2]=1;
+    alwaysrocket=1;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

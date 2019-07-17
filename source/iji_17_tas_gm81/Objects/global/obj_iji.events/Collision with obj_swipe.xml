@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_swipe">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (shredder &amp;&amp; !other.dud)
+shredderhp-=100;
+
+if (takingpain==0 &amp;&amp; other.dud==0){
+    scr_sound("iji_swiped");
+    global.damage+=1;
+    global.hp-=1;
+    scr_shakescreen(2);
+    if (other.facing==1)
+        script_execute(scr_knockdown,2,12);
+    else
+        script_execute(scr_knockdown,1,12);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

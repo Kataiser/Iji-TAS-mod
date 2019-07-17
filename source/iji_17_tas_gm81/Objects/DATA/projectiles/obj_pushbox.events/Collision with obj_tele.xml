@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tele">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!place_meeting(x,y,obj_enemy)){
+obj_iji.cannotpause=1;
+obj_iji.cannotpausecyc=4;
+scr_sound("glo_teleport");
+obj_iji.dest=other.dest;
+with (obj_nanoflash)
+    instance_destroy();
+instance_activate_object(obj_teledest);
+obj_sabot.alarm[3]=1;
+obj_sabot.alarm[4]=3;
+obj_sabot.ignoresmooth=1;
+instance_create(x,y,obj_whiteflash2);
+with (obj_rocket) instance_destroy();
+with (obj_mpfb) instance_destroy();
+with (obj_shock) instance_destroy();
+with (obj_shockball) instance_destroy();
+with (obj_enemyrocket) instance_destroy();
+with (obj_enemympfb) instance_destroy();
+with (obj_komatompfb) instance_destroy();
+with (obj_enemyshock) instance_destroy();
+with (obj_enemyshockball) instance_destroy();
+with (obj_banana) instance_destroy();
+with (obj_detonator) instance_destroy();
+with (obj_reflector) instance_destroy();
+with (obj_harmlessexplosion) instance_destroy();
+with (obj_enemydetonator) instance_destroy();
+with (obj_glidesmoke) instance_destroy();
+with (obj_rocketexplosion) instance_destroy();
+with (obj_enemyrocketexplosion) instance_destroy();
+with (obj_mpfbexplosion) instance_destroy();
+with (obj_shockexplosion) instance_destroy();
+with (obj_enemympfbexplosion) instance_destroy();
+with (obj_enemyshockexplosion) instance_destroy();
+with (obj_plasma) instance_destroy();
+with (obj_pulse) instance_destroy();
+with (obj_enemypulse) instance_destroy();
+with (obj_smoke) instance_destroy();
+with (obj_bigsmoke) instance_destroy();
+with (obj_smokepoint) instance_destroy();
+with (obj_airspark) instance_destroy();
+with (obj_rocketlaunch) instance_destroy();
+with (obj_mpfbwake) instance_destroy();
+with (obj_mpfbspark) instance_destroy();
+with (obj_mpfbspark2) instance_destroy();
+with (obj_detonatorspark) instance_destroy();
+with (obj_pulsespark) instance_destroy();
+with (obj_shockballexplosion) instance_destroy();
+with (obj_enemyshockballexplosion) instance_destroy();
+with (obj_scrapbrown) instance_destroy();
+with (obj_scrapwhite) instance_destroy();
+with (obj_shard) instance_destroy();
+with (obj_nanospark) instance_destroy();
+with (obj_nanospark2) instance_destroy();
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

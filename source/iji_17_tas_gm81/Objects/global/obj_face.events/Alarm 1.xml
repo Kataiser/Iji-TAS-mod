@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//New game / SSWARP
+if (!global.sswarp || global.sector==1)
+    global.specialtrigger8=1;
+scr_init();
+scr_readsum();
+if (wrongsum){
+    global.kickkey=ord("Z");
+    global.firekey=ord("X");
+    global.usekey=ord("C");
+    global.weap5key=ord("Q");
+    global.weap6key=ord("W");
+    global.weap7key=ord("E");
+    global.weap8key=ord("R");
+    global.noshake=0;
+    global.detaillevel=0;
+    global.specialbake=0;
+    global.nosound=0;
+    global.nomusic=0;
+    global.noitemtext=0;
+    global.hidetime=1;
+    }
+else
+    scr_save(0);
+scr_setmaps();
+if (!global.sswarp){
+    if (tier=="new")
+        global.difficulty=selected-1;
+    else
+        global.difficulty=2;
+    }
+else
+    global.difficulty=0;
+if (!global.sswarp)
+    (instance_create(0,0,obj_loading)).destination="cut";
+else{ //SSWARP
+    tempid=instance_create(0,0,obj_loading);
+    if (warp==1){
+        tempid.destination="sector1";
+        global.sector=1;
+        }
+    if (warp==2){
+        tempid.destination="sector2";
+        global.sector=2;
+        }
+    if (warp==3){
+        tempid.destination="sector3";
+        global.sector=3;
+        }
+    if (warp==4){
+        tempid.destination="sector4";
+        global.sector=4;
+        }
+    if (warp==5){
+        tempid.destination="sector5";
+        global.sector=5;
+        }
+    if (warp==6){
+        tempid.destination="sector6";
+        global.sector=6;
+        }
+    if (warp==7){
+        tempid.destination="sector7";
+        global.sector=7;
+        }
+    if (warp==8){
+        tempid.destination="sector8";
+        global.sector=8;
+        }
+    if (warp==9){
+        tempid.destination="sector9";
+        global.sector=9;
+        }
+    if (warp==10){
+        tempid.destination="sectorx";
+        global.sector=0;
+        }
+    if (warp==0){
+        tempid.destination="sectorz";
+        global.sector=1;
+        }
+    }
+global.cut=1;
+instance_create(0,0,obj_loadingback);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

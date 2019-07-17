@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">realx=424;
+realy=360;
+x1=realx;
+y1=realy;
+x2=realx;
+y2=realy;
+x3=realx;
+y3=realy;
+x4=realx;
+y4=realy;
+x5=realx;
+y5=realy;
+x6=realx;
+y6=realy;
+x7=realx;
+y7=realy;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

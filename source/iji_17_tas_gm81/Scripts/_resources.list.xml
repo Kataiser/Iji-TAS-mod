@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="global" type="GROUP"/>
+  <resource name="iji" type="GROUP"/>
+  <resource name="enemy" type="GROUP"/>
+  <resource name="mainmenu" type="GROUP"/>
+  <resource name="pausemenu" type="GROUP"/>
+  <resource name="clear" type="GROUP"/>
+  <resource name="crack" type="GROUP"/>
+  <resource name="keys" type="GROUP"/>
+  <resource name="save" type="GROUP"/>
+  <resource name="message" type="GROUP"/>
+  <resource name="hero3d" type="GROUP"/>
+  <resource name="tor" type="GROUP"/>
+  <resource name="seczmusic" type="GROUP"/>
+  <resource name="sound" type="GROUP"/>
+  <resource name="horse" type="GROUP"/>
+  <resource name="scr_nextline" type="RESOURCE"/>
+  <resource name="scr_executecommand" type="RESOURCE"/>
+  <resource name="scr_taspause" type="RESOURCE"/>
+  <resource name="scr_tasunpause" type="RESOURCE"/>
+  <resource name="scr_storeseed" type="RESOURCE"/>
+  <resource name="scr_restoreseed" type="RESOURCE"/>
+  <resource name="scr_seed" type="RESOURCE"/>
+</resources>

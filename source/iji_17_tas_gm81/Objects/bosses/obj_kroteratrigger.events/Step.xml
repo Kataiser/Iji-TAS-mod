@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_iji.x&gt;x-32 &amp;&amp; !ultrigger){
+    ultrigger=1;
+    obj_sabot.ultimatecannotpause=1;
+    }
+
+if (!triggered2 &amp;&amp; !global.ignoreall){
+triggered2=1;
+obj_krotera.alarm[2]=30;
+instance_create(x,y,obj_kroterabar);
+scr_sound("kro_emote2");
+}
+
+if (!superkd &amp;&amp; kroteradead &amp;&amp; ((abs(obj_iji.x-obj_krotera.x-80)&lt;96 &amp;&amp; obj_krotera.sprite_index==spr_krotera_death) || (abs(obj_iji.x-obj_krotera.x+50)&lt;96 &amp;&amp; obj_krotera.sprite_index==spr_krotera_deathleft)) &amp;&amp; global.hp&gt;0 &amp;&amp; !obj_iji.takingpain &amp;&amp; (obj_iji.sprite_index==spr_basic || obj_iji.sprite_index==spr_basicleft || obj_iji.sprite_index==spr_run || obj_iji.sprite_index==spr_runleft)){
+superkd=1;
+obj_iji.takingpain=1;
+global.ignoreall=1;
+if (obj_krotera.sprite_index==spr_krotera_death)
+    obj_krotera.kdx=83;
+else
+    obj_krotera.kdx=-70;
+if (obj_iji.x&gt;obj_krotera.x+obj_krotera.kdx){
+    global.facing=0;
+    obj_iji.sprite_index=spr_basicleft;
+    }
+else{
+    global.facing=1;
+    obj_iji.sprite_index=spr_basic;
+    }
+(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chat35";
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

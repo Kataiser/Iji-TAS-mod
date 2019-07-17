@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="7">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (alarm[2]&gt;=1){
+    alarm[7]=4;
+    image_index=0;
+    instance_create(bbox_left+random(bbox_right-bbox_left),bbox_top+random(bbox_bottom-bbox_top),obj_nanospark);
+    repeat(2)
+        (instance_create(bbox_left-8+random(bbox_right-bbox_left+16),bbox_top-4+random(bbox_bottom-bbox_top+8),obj_glassspark)).image_index=4;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

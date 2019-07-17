@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYBOARD" id="38">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!ignorephysics &amp;&amp; !place_meeting(x,y,obj_end) &amp;&amp; global.ignoreall==0 &amp;&amp; !shredder)
+scr_getup();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

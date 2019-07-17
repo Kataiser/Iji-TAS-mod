@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_armorupgrade">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_sound("glo_pickup2");
+global.topmessage="Armor +1";
+global.erasetop=0;
+global.armorlevel+=1;
+with (other){
+    script_execute(scr_pickupflash,0,0,5);
+    instance_destroy();
+    }
+if (global.sector==3)
+(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chat32";</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

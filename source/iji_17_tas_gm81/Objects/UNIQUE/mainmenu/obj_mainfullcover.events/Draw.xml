@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">for (i=0; i&lt;13; i+=1){
+for (j=0; j&lt;10; j+=1){
+draw_sprite(spr_mainfullcover,0,i*64,j*64);
+}
+}
+for (i=0; i&lt;98; i+=1){
+draw_sprite(spr_mainfullcover2,1,(i*8)+8,0);
+draw_sprite(spr_mainfullcover2,1,(i*8)+8,592);
+}
+for (i=0; i&lt;73; i+=1){
+draw_sprite(spr_mainfullcover2,0,0,(i*8)+8);
+draw_sprite(spr_mainfullcover2,0,792,(i*8)+8);
+}
+draw_sprite(spr_mainfullcover2,2,0,0);
+draw_sprite(spr_mainfullcover2,3,792,0);
+draw_sprite(spr_mainfullcover2,4,0,592);
+draw_sprite(spr_mainfullcover2,5,792,592);
+
+draw_set_font(global.fontwhite);
+draw_set_color(c_white);
+draw_text_ext(22,20,obj_face.screentext,28,756);
+
+//Enemy info
+if (obj_face.tier="wait2" &amp;&amp; obj_face.selected==3){
+if (obj_face.enemyinfo&lt;=13)
+    draw_sprite(spr_mainfullenemies,obj_face.enemyinfo-1,672,0);
+else
+    draw_sprite(spr_mainfullenemies2,obj_face.enemyinfo-14,672,0);
+draw_sprite(spr_mainarrows,0,622,0);
+}
+//Weapon info
+if (obj_face.tier="wait2" &amp;&amp; obj_face.selected==2){
+if (obj_face.weaponinfo&lt;=18)
+    draw_sprite(spr_mainfullweapons,obj_face.weaponinfo-1,672,0);
+else
+    draw_sprite(spr_mainfullweapons,obj_face.weaponinfo,672,0);
+draw_sprite(spr_mainarrows,0,622,0);
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="global" type="GROUP"/>
+  <resource name="weapon" type="GROUP"/>
+  <resource name="explo" type="GROUP"/>
+  <resource name="iji" type="GROUP"/>
+  <resource name="dan" type="GROUP"/>
+  <resource name="turret" type="GROUP"/>
+  <resource name="scout" type="GROUP"/>
+  <resource name="soldier" type="GROUP"/>
+  <resource name="commander" type="GROUP"/>
+  <resource name="elite" type="GROUP"/>
+  <resource name="shredder" type="GROUP"/>
+  <resource name="trooper" type="GROUP"/>
+  <resource name="berserker" type="GROUP"/>
+  <resource name="beast" type="GROUP"/>
+  <resource name="assassin" type="GROUP"/>
+  <resource name="annihilator" type="GROUP"/>
+  <resource name="krotera" type="GROUP"/>
+  <resource name="asha" type="GROUP"/>
+  <resource name="proxima" type="GROUP"/>
+  <resource name="iosa" type="GROUP"/>
+  <resource name="tor" type="GROUP"/>
+  <resource name="ansaksie" type="GROUP"/>
+  <resource name="music" type="GROUP"/>
+</resources>

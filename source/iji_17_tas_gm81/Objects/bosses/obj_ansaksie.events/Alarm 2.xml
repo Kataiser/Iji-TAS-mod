@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Recieve orders, appear and execute
+if (global.hp&gt;0){
+
+upslashing=0;
+upslashwait=0;
+image_index=0;
+image_single=0;
+perform=0;
+fakeperform=0;
+randomfakes=0;
+
+repeat(10){
+
+if (!perform){
+x=obj_sabot.x;
+y=obj_sabot.y;
+sprite_index=spr_komatoassassin_basic;
+randomstate=floor(random(4));
+if (randomstate&gt;1)
+    randomstate=floor(random(6));
+temprand=0;
+massrand=floor(random(3));
+
+//Three-shot between Iji and Iosa
+if (randomstate==0){
+temprand=random(150)+100;
+tempfacing=floor(random(2));
+if (tempfacing==1 &amp;&amp; obj_iji.x&lt;obj_iosa.x-temprand-100){
+    sprite_index=spr_komatoassassin_pose1;
+    if (place_free(obj_iosa.x-temprand-50,803)){
+        x=obj_iosa.x-temprand;
+        y=803;
+        perform=1;
+        }
+    }
+else if (tempfacing==0 &amp;&amp; obj_iji.x&gt;obj_iosa.x+temprand+150){
+    sprite_index=spr_komatoassassin_pose1left;
+    if (place_free(obj_iosa.x+100+temprand,803)){
+        x=obj_iosa.x+temprand;
+        y=803;
+        perform=1;
+        }
+    }
+if (perform){
+    move_contact_solid(270,64);
+    if (place_free(x,y) &amp;&amp; !place_free(x,y+1) &amp;&amp; !collision_line(x,y,obj_iosa.x,obj_iosa.y,obj_block,0,1)){
+        alarm[1]=36;
+        alarm[0]=15;
+        shotcount=0;
+        scr_sound("tor_gather");
+        if (sprite_index==spr_komatoassassin_pose1)
+            (instance_create(x+65,y+5,obj_chargetell)).tempid=id;
+        if (sprite_index==spr_komatoassassin_pose1left)
+            (instance_create(x-40,y+10,obj_chargetell)).tempid=id;
+        }
+    else
+        perform=0;
+    }
+}
+
+//Dual-shot between Iji and Iosa
+if (randomstate==1){
+temprand=random(100)+200;
+tempfacing=floor(random(2));
+if (tempfacing==1 &amp;&amp; obj_iji.x&lt;obj_iosa.x-temprand-50){
+    if (massrand==0){
+        sprite_index=spr_komatoassassin_massacre;
+        y=780;
+        }
+    else{
+        sprite_index=spr_komatoassassin_pose2;
+        y=800;
+        }
+    if (place_free(obj_iosa.x-temprand-50,780)){
+        x=obj_iosa.x-temprand;
+        perform=1;
+        }
+    }
+else if (tempfacing==0 &amp;&amp; obj_iji.x&gt;obj_iosa.x+temprand+100){
+    if (massrand==0){
+        sprite_index=spr_komatoassassin_massacreleft;
+        y=780;
+        }
+    else{
+        sprite_index=spr_komatoassassin_pose2left;
+        y=800;
+        }
+    if (place_free(obj_iosa.x+100+temprand,780)){
+        x=obj_iosa.x+temprand;
+        perform=1;
+        }
+    }
+if (perform){
+    move_contact_solid(270,128);
+    if (place_free(x,y) &amp;&amp; !place_free(x,y+1) &amp;&amp; !collision_line(x,y,obj_iosa.x,obj_iosa.y,obj_block,0,1)){
+        //Massacre
+        if (massrand==0){
+            alarm[1]=20;
+            scr_sound("tor_gather");
+            if (sprite_index==spr_komatoassassin_massacre)
+                (instance_create(x+80,y+8,obj_chargetell)).tempid=id;
+            if (sprite_index==spr_komatoassassin_massacreleft)
+                (instance_create(x-55,y+8,obj_chargetell)).tempid=id;
+            }
+        //Dual-shot
+        else{
+            alarm[1]=15;
+            scr_sound("tor_gather");
+            if (sprite_index==spr_komatoassassin_pose2){
+                (instance_create(x+70,y+2,obj_chargetell)).tempid=id;
+                (instance_create(x+45,y+42,obj_chargetell)).tempid=id;
+                }
+            if (sprite_index==spr_komatoassassin_pose2left){
+                (instance_create(x-37,y+2,obj_chargetell)).tempid=id;
+                (instance_create(x-12,y+42,obj_chargetell)).tempid=id;
+                }
+            }
+        }
+    else
+        perform=0;
+    }
+}
+
+//Downstab
+if (randomstate==2){
+temprand=random(10)+150;
+sprite_index=spr_komatoassassin_downstab;
+if (place_free(obj_iosa.x,obj_iosa.y-temprand)){
+    x=obj_iosa.x;
+    y=obj_iosa.y-temprand;
+    if (!collision_line(x,y,obj_iosa.x,obj_iosa.y,obj_block,0,1)){
+        gravity=1;
+        gravity_direction=270;
+        perform=1;
+        obj_iosa.downstabbed=0;
+        }
+    else
+        sprite_index=spr_komatoassassin_basic;
+    }
+}
+
+//Uppercut
+if (randomstate==3){
+temprand=random(1);
+if (temprand&gt;0.5){
+    sprite_index=spr_komatoassassin_uppercut;
+    if (place_free(obj_iosa.x-50,836) &amp;&amp; !place_free(obj_iosa.x-50,846)){
+        x=obj_iosa.x-50;
+        y=836;
+        perform=1;
+        }
+    }
+else{
+    sprite_index=spr_komatoassassin_uppercutleft;
+    if (place_free(obj_iosa.x+32,836) &amp;&amp; !place_free(obj_iosa.x+32,846)){
+        x=obj_iosa.x+110;
+        y=836;
+        perform=1;
+        }
+    }
+if (perform){
+    move_contact_solid(270,64);
+    if (place_free(x,y) &amp;&amp; !place_free(x,y+1)){
+        image_single=0;
+        alarm[1]=15;
+        alarm[0]=10;
+        }
+    else
+        perform=0;
+    }
+}
+
+//Backstab
+if (randomstate==4){
+if (obj_iosa.facing==0){
+    sprite_index=spr_komatoassassin_backstableft;
+    if (place_free(obj_iosa.x+50,784) &amp;&amp; !place_free(obj_iosa.x+32,794)){
+        x=obj_iosa.x+110;
+        y=784;
+        perform=1;
+        }
+    }
+else if (obj_iosa.facing==1){
+    sprite_index=spr_komatoassassin_backstab;
+    if (place_free(obj_iosa.x-50,784) &amp;&amp; !place_free(obj_iosa.x-50,794)){
+        x=obj_iosa.x-50;
+        y=784;
+        perform=1;
+        }
+    }
+if (perform){
+    move_contact_solid(270,64);
+    if (place_free(x,y) &amp;&amp; !place_free(x,y+1)){
+        image_single=0;
+        alarm[1]=14;
+        alarm[0]=10;
+        }
+    else
+        perform=0;
+    }
+}
+//Fake attack
+if (randomstate==5){
+    randomfakes=ceil(random(2))+3;
+    alarm[4]=5;
+    perform=1;
+    fakeperform=1;
+    }
+
+} //End of perform
+} //End of repeat
+
+//Perform
+if (perform){
+    if (!fakeperform &amp;&amp; sprite_index!=spr_komatoassassin_basic &amp;&amp; sprite_index!=spr_komatoassassin_basicleft){
+        instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+        visible=1;
+        }
+    }
+else
+    alarm[2]=random(10)+10;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

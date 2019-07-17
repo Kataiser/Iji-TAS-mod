@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_liftoff" type="RESOURCE"/>
+  <resource name="obj_strikeblock" type="RESOURCE"/>
+  <resource name="obj_sec8trigger1" type="RESOURCE"/>
+  <resource name="obj_sec8trigger2" type="RESOURCE"/>
+  <resource name="obj_sec8trigger3" type="RESOURCE"/>
+  <resource name="obj_hammershot" type="RESOURCE"/>
+  <resource name="obj_crumble81" type="RESOURCE"/>
+  <resource name="obj_trapmine" type="RESOURCE"/>
+  <resource name="obj_sec8egg" type="RESOURCE"/>
+  <resource name="obj_armed_trapmine" type="RESOURCE"/>
+  <resource name="obj_sec8hologram" type="RESOURCE"/>
+  <resource name="obj_dan" type="RESOURCE"/>
+  <resource name="obj_sec8hologram2" type="RESOURCE"/>
+  <resource name="obj_sec8can" type="RESOURCE"/>
+  <resource name="obj_sec8vend" type="RESOURCE"/>
+</resources>

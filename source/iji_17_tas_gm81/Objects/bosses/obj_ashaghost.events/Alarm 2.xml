@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Recieve orders, appear and execute
+if (global.hp&gt;0 &amp;&amp; hp&gt;0){
+
+upslashing=0;
+upslashwait=0;
+image_index=0;
+image_single=0;
+perform=0;
+repeat(10){
+
+if (!perform){
+x=obj_sabot.x;
+y=obj_sabot.y;
+sprite_index=spr_asha_basic;
+randomstate=floor(random(8));
+if (global.weapon==16)
+    randomstate=7;
+temprand=0;
+
+//Five-shot in front of Iji
+if (randomstate==0){
+temprand=random(150)+100;
+if (global.facing==0){
+    sprite_index=spr_asha_pose1;
+    if (place_free(obj_iji.x-temprand,obj_iji.y-20)){
+        x=obj_iji.x-temprand;
+        y=obj_iji.y-20;
+        perform=1;
+        }
+    }
+else if (global.facing==1){
+    sprite_index=spr_asha_pose1left;
+    if (place_free(obj_iji.x+temprand,obj_iji.y-20)){
+        x=obj_iji.x+temprand;
+        y=obj_iji.y-20;
+        perform=1;
+        }
+    }
+if (perform){
+    move_contact_solid(270,64);
+    if (place_free(x,y) &amp;&amp; !place_free(x,y+1) &amp;&amp; !collision_line(x,y,obj_iji.x,obj_iji.y,obj_block,0,1)){
+        alarm[1]=30-(global.difficulty*5);
+        }
+    else
+        perform=0;
+    }
+}
+
+//Dual-shot behind Iji
+if (randomstate==1){
+temprand=random(150)+100;
+if (global.facing==0){
+    sprite_index=spr_asha_pose2left;
+    if (place_free(obj_iji.x+temprand,obj_iji.y-20)){
+        x=obj_iji.x+temprand;
+        y=obj_iji.y-20;
+        perform=1;
+        }
+    }
+else if (global.facing==1){
+    sprite_index=spr_asha_pose2;
+    if (place_free(obj_iji.x-temprand,obj_iji.y-20)){
+        x=obj_iji.x-temprand;
+        y=obj_iji.y-20;
+        perform=1;
+        }
+    }
+if (perform){
+    move_contact_solid(270,64);
+    if (place_free(x,y) &amp;&amp; !place_free(x,y+1) &amp;&amp; !collision_line(x,y,obj_iji.x,obj_iji.y,obj_block,0,1)){
+        alarm[1]=30-global.difficulty*5;
+        }
+    else
+        perform=0;
+    }
+}
+
+//Downstab
+if (randomstate==2){
+temprand=random(64)+256;
+sprite_index=spr_asha_downstab;
+if (place_free(obj_iji.x,obj_iji.y-temprand)){
+    x=obj_iji.x;
+    y=obj_iji.y-temprand;
+    if (!collision_line(x,y,obj_iji.x,obj_iji.y,obj_block,0,1)){
+        gravity=1;
+        gravity_direction=270;
+        perform=1;
+        }
+    else
+        sprite_index=spr_asha_basic;
+    }
+}
+
+//Uppercut
+if (randomstate==3 &amp;&amp; global.difficulty!=0){
+temprand=random(1);
+if (temprand&gt;0.5){
+    sprite_index=spr_asha_uppercut;
+    if (place_free(obj_iji.x-50,obj_iji.y-20) &amp;&amp; !place_free(obj_iji.x-50,obj_iji.y+64)){
+        x=obj_iji.x-50;
+        y=obj_iji.y-20;
+        perform=1;
+        }
+    }
+else{
+    sprite_index=spr_asha_uppercutleft;
+    if (place_free(obj_iji.x+32,obj_iji.y-20) &amp;&amp; !place_free(obj_iji.x+32,obj_iji.y+64)){
+        x=obj_iji.x+32;
+        y=obj_iji.y-20;
+        perform=1;
+        }
+    }
+if (perform){
+    move_contact_solid(270,64);
+    if (place_free(x,y) &amp;&amp; !place_free(x,y+1)){
+        image_single=0;
+        alarm[1]=39-(global.difficulty*5);
+        alarm[0]=34-(global.difficulty*5);
+        }
+    else
+        perform=0;
+    }
+}
+
+//Backstab
+if (randomstate==4){
+if (global.facing==0){
+    sprite_index=spr_asha_backstableft;
+    if (place_free(obj_iji.x+50,obj_iji.y-30) &amp;&amp; !place_free(obj_iji.x+32,obj_iji.y+32)){
+        x=obj_iji.x+50;
+        y=obj_iji.y-30;
+        perform=1;
+        }
+    }
+else if (global.facing==1){
+    sprite_index=spr_asha_backstab;
+    if (place_free(obj_iji.x-50,obj_iji.y-30) &amp;&amp; !place_free(obj_iji.x-50,obj_iji.y+32)){
+        x=obj_iji.x-50;
+        y=obj_iji.y-30;
+        perform=1;
+        }
+    }
+if (perform){
+    move_contact_solid(270,64);
+    if (place_free(x,y) &amp;&amp; !place_free(x,y+1)){
+        image_single=0;
+        alarm[1]=34-(global.difficulty*5);
+        alarm[0]=30-(global.difficulty*5);
+        }
+    else
+        perform=0;
+    }
+}
+
+//Upslash
+if (randomstate==5){
+sprite_index=spr_asha_upslash;
+x=obj_iji.x;
+y=obj_iji.y;
+if (place_free(x,y)){
+    move_contact_solid(270,384);
+    if (!place_free(x,y+1) &amp;&amp; (y-obj_iji.y)&gt;128 &amp;&amp; obj_iji.vspeed&lt;2){
+        perform=1;
+        image_single=0;
+        }
+    else{
+        x=obj_sabot.x;
+        y=obj_sabot.y;
+        }
+    }
+}
+
+//Plasma rage
+if (randomstate==6){
+    image_single=0;
+    perform=1;
+    temprand=floor(random(2));
+    if (temprand==0){
+       x=5888;
+       sprite_index=spr_asha_wall;
+       }
+    else{
+       x=6464;
+       sprite_index=spr_asha_wallleft;
+       }
+    y=2780+random(100);
+    alarm[1]=30;
+    }
+
+//Megasmash
+if (randomstate==7){
+    perform=1;
+    sprite_index=spr_asha_smash;
+    temprand=random(1);
+    if (temprand&lt;0.5)
+        sprite_index=spr_asha_vortex;
+    image_single=0;
+    temprand=floor(random(2));
+    if (temprand==0)
+        x=5984+random(128);
+    else
+        x=6208+random(128);
+    y=smashy-100;
+    if (global.difficulty==0){
+        gravity=0.25;
+        vspeed=-8;
+        y+=23;
+        }    
+    if (global.difficulty==1){
+        gravity=0.25;
+        vspeed=-6.5;
+        y-=21;
+        }
+    if (global.difficulty==2){
+        gravity=0.25;
+        vspeed=-5;
+        y-=55;
+        }
+    }
+
+} //End of perform
+} //End of repeat
+
+//Perform
+if (perform){
+    if (sprite_index!=spr_asha_basic){
+        //(instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash)).depth=10;
+        visible=1;
+        }
+    }
+else
+    alarm[2]=2;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

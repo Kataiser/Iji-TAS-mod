@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">voice=200+random(200);
+ansaksie=1;
+lastx=x;
+lasty=y;
+image_speed=0.5;
+hp=1000;
+maxhp=1000;
+armor=200;
+maxarmor=200;
+enemytype=12;
+resistance=1;
+security=12;
+angry=1;
+alarm[2]=10;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

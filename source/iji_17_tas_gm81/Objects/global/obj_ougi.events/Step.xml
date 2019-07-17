@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.usingougi=40;
+cyc+=1;
+if (cyc==2 &amp;&amp; !attack)
+    sleep(500);
+if (cyc==3 &amp;&amp; !attack){
+    scr_sound("exp_boss");
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    }
+if (cyc==25 &amp;&amp; !attack)
+    scr_sound("iji_ougi2");
+if (cyc==50 &amp;&amp; !attack){
+    attack=1;
+    cyc=0;
+    explodist=40;
+    }
+//Attack
+if (attack){
+    //Spawn explos
+    if (cyc&lt;77){
+        explodist+=4;
+        explodir+=20-cyc/10;
+        scr_shakescreen(2);
+        if (cyc mod 2 == 0){
+            tempid=instance_create(x+explodist*cos(degtorad(explodir)),y+explodist*sin(degtorad(explodir)),obj_rocketexplosion);
+            tempid.depth=-51;
+            tempid.nospark=1;
+            tempid.ijis=1;
+            instance_create(x+explodist*cos(degtorad(explodir)),y+explodist*sin(degtorad(explodir)),obj_explosioncenter);
+            tempid=instance_create(x-explodist*cos(degtorad(explodir)),y-explodist*sin(degtorad(explodir)),obj_rocketexplosion);
+            tempid.depth=-51;
+            tempid.nospark=1;
+            tempid.ijis=1;
+            instance_create(x-explodist*cos(degtorad(explodir)),y-explodist*sin(degtorad(explodir)),obj_explosioncenter);
+            }
+        }
+    //Spawn mpfbs
+    if (cyc==78){
+        explodist=50;
+        }
+    if (cyc&gt;80 &amp;&amp; cyc&lt;90){
+        explodist+=35;
+        if (cyc mod 2 == 0){
+            scr_sound("exp_mpfb");
+            scr_shakescreen(3);
+            (instance_create(x+explodist,y+explodist,obj_mpfbexplosion)).ijis=1;
+            instance_create(x+explodist,y+explodist,obj_explosioncenter);
+            (instance_create(x-explodist,y+explodist,obj_mpfbexplosion)).ijis=1;
+            instance_create(x-explodist,y+explodist,obj_explosioncenter);
+            (instance_create(x-explodist,y-explodist,obj_mpfbexplosion)).ijis=1;
+            instance_create(x-explodist,y-explodist,obj_explosioncenter);
+            (instance_create(x+explodist,y-explodist,obj_mpfbexplosion)).ijis=1;
+            instance_create(x+explodist,y-explodist,obj_explosioncenter);
+            }
+        }
+    }
+//Nuke
+if (cyc&gt;=100){
+    with (obj_iji){
+        global.ignoreall=0;
+        visible=1;
+        invisible=0;
+        recovering=0;
+        takingpain=0;
+        ignorephysics=0;
+        }
+    instance_destroy();
+    instance_create(x,y,obj_nuke);
+    scr_sound("exp_nuke");
+    scr_shakescreen(4);
+    script_execute(scr_shakescreen,5);
+    script_execute(scr_nuke,1);
+    instance_create(x+6,y+15,obj_harmlessexplosion);
+    instance_create(x,y,obj_nuke);
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    obj_iji.velocity=1;
+    obj_iji.vspeed=-10;
+    obj_sabot.ultimatecannotpause=0;
+    }
+
+if (vspeed&lt;0)
+vspeed+=0.2;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

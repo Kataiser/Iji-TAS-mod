@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_electropad">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.active){
+    nosupercharge=1;
+    scr_sound("glo_electrocute");
+    scr_proximatalk(3);
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    if (other.tag==1){
+        obj_proximatrigger.elecpad1=0;
+        (instance_create(x,y,obj_pickuphealth)).hspeed=3;
+        }
+    else{
+        obj_proximatrigger.elecpad2=0;
+        (instance_create(x,y,obj_pickuphealth)).hspeed=-3;
+        }
+    other.active=0;
+    hp-=(45-global.difficulty*10);
+    chargingnuke=0;
+    with (obj_proximasupercharge)
+        instance_destroy();
+    obj_sabot.flash=1;
+    scr_shakescreen(5);
+    nukewait=0;
+    order=3;//1
+    state=0;
+    hs=0;
+    vs=0;
+    gasl=0;
+    gasd=0;
+    gasu=0;
+    gasr=0;
+    streaming=1;
+    antigrav=1;
+    fire=0;
+    idle=0;
+    electrified=30;
+    alarm[0]=0;
+    alarm[1]=0;
+    alarm[2]=60;
+    alarm[4]=5;
+    alarm[3]=0;
+    alarm[5]=90;
+    makebeep=1;
+    repeat(5)
+        instance_create(x-32+random(64),y-32+random(64),obj_smokepoint);
+    if (global.detail==0){
+        repeat(30){
+            tempid=instance_create(x-32+random(64),y-32+random(64),obj_scrapwhite);
+            tempid.direction=random(360);
+            tempid.speed=random(10)+6;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

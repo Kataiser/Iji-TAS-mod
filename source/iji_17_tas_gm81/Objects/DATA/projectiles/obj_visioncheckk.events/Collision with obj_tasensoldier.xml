@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tasensoldier">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">other.target=target;
+with (other){
+    if (angry==0 &amp;&amp; (state==0 || state==1 || state==2))
+        alarm[2]=1;
+    angry=1;
+    targetrival=300;
+    alarm[5]=300;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

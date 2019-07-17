@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_save" type="RESOURCE"/>
+  <resource name="scr_loadkeys" type="RESOURCE"/>
+  <resource name="scr_readsaves" type="RESOURCE"/>
+  <resource name="scr_load" type="RESOURCE"/>
+  <resource name="scr_createfile" type="RESOURCE"/>
+  <resource name="scr_writesum" type="RESOURCE"/>
+  <resource name="scr_readsum" type="RESOURCE"/>
+  <resource name="scr_appendsave" type="RESOURCE"/>
+  <resource name="scr_realtostring" type="RESOURCE"/>
+  <resource name="scr_savekills" type="RESOURCE"/>
+  <resource name="scr_loadkills" type="RESOURCE"/>
+  <resource name="scr_createkillfile" type="RESOURCE"/>
+</resources>

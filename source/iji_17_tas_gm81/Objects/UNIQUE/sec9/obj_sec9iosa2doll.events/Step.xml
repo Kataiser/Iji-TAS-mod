@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (go==1){
+    go=2;
+    gravity=1.2;
+    vspeed=3;
+    }
+if (vspeed&gt;22)
+    vspeed=22;
+
+if (y&gt;=5920){
+    obj_iosadoll.holdit=0;
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    scr_sound("tur_appear");
+    scr_sound("exp_nano");
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

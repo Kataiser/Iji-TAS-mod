@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (hyper==0)
+    y=ystart+(random(21)-10);
+rand=random(1);
+if (rand&gt;0.92){
+    if (linker){
+        tempid=instance_create(x+random(16)-8+hspeed,y+random(32)-16,obj_pulsespark);
+        tempid.speed=random(4)-2;
+        tempid.image_index=12;
+        }
+    else if (hyper){
+        tempid=instance_create(x+random(16)-8+hspeed,y+random(32)-16,obj_pulsespark);
+        tempid.speed=random(4)-2;
+        tempid.image_index=6;
+        }
+    else
+        (instance_create(x+random(16)-8+hspeed,y+random(32)-16,obj_pulsespark)).speed=random(4)-2;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

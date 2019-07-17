@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (x==864 || x==1312)
+    solid=1;
+if (global.sector==14 &amp;&amp; tag&gt;0){
+    if (x&lt;864){
+        instance_destroy();
+        (instance_create(x+32,y,obj_iosacrumble)).tag=1;
+        with (obj_iosapad){
+            if (tag==1 &amp;&amp; charge&gt;=85)
+                resetme=1;
+            }
+        }
+    if (x&gt;1312){
+        instance_destroy();
+        (instance_create(x-32,y,obj_iosacrumble)).tag=2;
+        with (obj_iosapad){
+            if (tag==2 &amp;&amp; charge&gt;=85)
+                resetme=1;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

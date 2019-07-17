@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="cuts" type="GROUP"/>
+  <resource name="iji" type="GROUP"/>
+  <resource name="ijibase" type="GROUP"/>
+  <resource name="outfit" type="GROUP"/>
+  <resource name="enemy" type="GROUP"/>
+  <resource name="global" type="GROUP"/>
+  <resource name="pickup" type="GROUP"/>
+  <resource name="station" type="GROUP"/>
+  <resource name="metas" type="GROUP"/>
+  <resource name="text" type="GROUP"/>
+  <resource name="portraits" type="GROUP"/>
+  <resource name="DATA" type="GROUP"/>
+  <resource name="UNIQUE" type="GROUP"/>
+  <resource name="spr_tastext" type="RESOURCE"/>
+</resources>

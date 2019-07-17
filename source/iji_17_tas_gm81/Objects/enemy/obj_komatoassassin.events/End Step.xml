@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Armor
+if (armor&lt;maxarmor-0.1)
+    armor+=0.1;
+
+//Pain from armordrop
+if (armor&lt;=0){
+    hp-=1;
+    scr_assassinpain();
+    }
+
+//Return to sabot
+if (!visible){
+    x=obj_sabot.x;
+    y=obj_sabot.y;
+    }
+
+//Meta broke underneath
+if (visible &amp;&amp; place_free(x,y+1) &amp;&amp; sprite_index!=spr_komatoassassin_downstab)
+    scr_assassinpain(1);
+
+//Ordered to be destroyed
+if (destroyme){
+    if (visible)
+        scr_assassinpain(1);
+    else
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

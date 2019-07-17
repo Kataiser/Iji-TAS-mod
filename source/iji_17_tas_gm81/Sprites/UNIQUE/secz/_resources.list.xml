@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_zhwhite" type="RESOURCE"/>
+  <resource name="spr_zrfuzz" type="RESOURCE"/>
+  <resource name="spr_ztrapper" type="RESOURCE"/>
+  <resource name="spr_zhdrone" type="RESOURCE"/>
+  <resource name="spr_zxsquare" type="RESOURCE"/>
+  <resource name="spr_zblock" type="RESOURCE"/>
+  <resource name="spr_zblock2" type="RESOURCE"/>
+  <resource name="spr_zblock3" type="RESOURCE"/>
+  <resource name="spr_zblock4" type="RESOURCE"/>
+  <resource name="spr_zgback" type="RESOURCE"/>
+  <resource name="spr_zbarrier" type="RESOURCE"/>
+</resources>

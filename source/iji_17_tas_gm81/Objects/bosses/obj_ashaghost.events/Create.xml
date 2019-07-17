@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">lastx=x;
+lasty=y;
+hp=10;
+maxhp=10;
+armor=200;
+enemytype=12;
+ashaghost=1;
+image_alpha=0.35;
+alarm[2]=5;
+angry=1;
+x=obj_sabot.x;
+y=obj_sabot.y;
+smashx=6048;
+smashy=3040;
+if (global.specialbake)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

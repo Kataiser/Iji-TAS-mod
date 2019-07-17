@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (distance_to_object(obj_megaflash)&lt;100){
+repeat(2){
+    instance_create(x+12,y+3,obj_enemyrocketexplosion);
+    instance_create(x+12,y+3,obj_explosioncenter);
+    }
+with (obj_teledest){
+    if (dest==obj_armed_trapmine.dest){
+        instance_destroy();
+        instance_create(x,y,obj_exteledest);
+        }
+    }
+instance_destroy();
+scr_shakescreen(3);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

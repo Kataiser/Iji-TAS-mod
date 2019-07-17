@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (flash==1 &amp;&amp; !obj_tortrigger.slowdowned){
+tempid=instance_create(x,y,obj_megamissilespark);
+tempid.size=size*0.9;
+tempid.depth=1500001-size;
+}
+
+//Reflect
+if (instance_number(obj_reflector)==1){
+if (point_distance(x,y,obj_reflector.x,obj_reflector.y)&lt;90 &amp;&amp; obj_reflector.image_single&lt;=3 &amp;&amp; size&gt;=35 &amp;&amp; !reflected){
+    scr_sound("glo_reflect");
+    reflected=1;
+    whiteflash=3;
+    if (instance_number(obj_thorspark)&lt;20){
+        repeat(5){
+            tempid=instance_create(x,y,obj_thorspark);
+            tempid.speed=random(2)+2;
+            tempid.gravity=0.2;
+            }
+        }
+    }
+}
+
+//Disruptor
+if (instance_number(obj_disruptor)==1){
+if (point_distance(x,y,obj_disruptor.x,obj_disruptor.y)&lt;90 &amp;&amp; size&gt;=35 &amp;&amp; !reflected){
+    repeat(20)
+        instance_create(x,y,obj_thorspark);
+    repeat(6)
+        instance_create(x,y,obj_smokepoint);
+    instance_create(x,y,obj_megaflash);
+    instance_create(x-48,y,obj_megaflash);
+    instance_create(x+48,y,obj_megaflash);
+    instance_create(x,y-48,obj_megaflash);
+    instance_create(x,y+48,obj_megaflash);
+    scr_sound("exp_mpfb");
+    scr_shakescreen(4);
+    instance_destroy();
+    }
+}
+
+//Barrier
+if (instance_number(obj_shockbarrier)==1){
+if (point_distance(x,y,obj_shockbarrier.x,obj_shockbarrier.y)&lt;90 &amp;&amp; size&gt;=35 &amp;&amp; !reflected){
+    repeat(20)
+        instance_create(x,y,obj_thorspark);
+    repeat(6)
+        instance_create(x,y,obj_smokepoint);
+    instance_create(x,y,obj_megaflash);
+    instance_create(x-48,y,obj_megaflash);
+    instance_create(x+48,y,obj_megaflash);
+    instance_create(x,y-48,obj_megaflash);
+    instance_create(x,y+48,obj_megaflash);
+    scr_sound("exp_mpfb");
+    scr_shakescreen(4);
+    instance_destroy();
+    }
+}
+
+//Explode
+if (size&gt;=40){
+    scr_sound("exp_mpfb");
+    instance_create(x,y,obj_enemympfbexplosion);
+    instance_create(x,y,obj_explosioncenter);
+    if (global.specialbake==0)
+        maxsparks=90;
+    else
+        maxsparks=10;
+    if (instance_number(obj_mpfbspark2)&lt;maxsparks)
+        repeat(30) instance_create(x-16+random(32),y-16+random(32),obj_mpfbspark2);
+    scr_shakescreen(4);
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

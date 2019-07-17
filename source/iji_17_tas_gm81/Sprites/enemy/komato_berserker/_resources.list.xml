@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_komatoberserker_basic" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_basicleft" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_fire" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_fireleft" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_pain" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_painleft" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_fall" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_fallleft" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_walk" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_walkleft" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_knockdown" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_knockdownleft" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_hitfloor" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_hitfloorleft" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_getup" type="RESOURCE"/>
+  <resource name="spr_komatoberserker_getupleft" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_herosabot" type="RESOURCE"/>
+  <resource name="obj_hero" type="RESOURCE"/>
+  <resource name="obj_heroshot" type="RESOURCE"/>
+  <resource name="obj_herodrone" type="RESOURCE"/>
+  <resource name="obj_herocrusher" type="RESOURCE"/>
+  <resource name="obj_heromegamissile" type="RESOURCE"/>
+  <resource name="obj_heroexplo" type="RESOURCE"/>
+  <resource name="obj_heroexplo2" type="RESOURCE"/>
+  <resource name="obj_herogenerator" type="RESOURCE"/>
+  <resource name="obj_herobarrier" type="RESOURCE"/>
+  <resource name="obj_heromine" type="RESOURCE"/>
+  <resource name="obj_herolife" type="RESOURCE"/>
+  <resource name="obj_herogoal" type="RESOURCE"/>
+  <resource name="obj_herorobo" type="RESOURCE"/>
+  <resource name="obj_heroflower" type="RESOURCE"/>
+  <resource name="obj_starthero3d" type="RESOURCE"/>
+  <resource name="obj_mainhero3d" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">drawcyc+=1;
+if (drawcyc&gt;1){
+    if (dir==1 || dir==5){
+        if (!global.specialbake){
+            draw_set_color(make_color_rgb(195,45,69));
+            draw_rectangle(x-20+drawcyc*2.4,y,x+20-drawcyc*2.4,ystart,0);
+            }
+        draw_set_color(make_color_rgb(255,105,129));
+        draw_rectangle(x-16+drawcyc*1.95,y,x+16-drawcyc*1.95,ystart,0);
+        if (!global.specialbake){
+            draw_set_color(make_color_rgb(255,195,219));
+            draw_rectangle(x-10+drawcyc*1.25,y,x+10-drawcyc*1.25,ystart,0);
+            }
+        }
+    else if (dir==2 || dir==6){
+        if (!global.specialbake){
+            draw_set_color(make_color_rgb(195,45,69));
+            draw_primitive_begin(pr_trianglestrip);
+            draw_vertex(xstart-16+drawcyc*1.95,ystart-16+drawcyc*1.95);
+            draw_vertex(xstart+16-drawcyc*1.95,ystart+16-drawcyc*1.95);
+            draw_vertex(x+16-drawcyc*1.95,y+16-drawcyc*1.95);
+            draw_vertex(x-16+drawcyc*1.95,y-16+drawcyc*1.95);
+            draw_primitive_end();
+            }
+        draw_set_color(make_color_rgb(255,105,129));
+        draw_primitive_begin(pr_trianglestrip);
+        draw_vertex(xstart-12+drawcyc*1.45,ystart-12+drawcyc*1.45);
+        draw_vertex(xstart+12-drawcyc*1.45,ystart+12-drawcyc*1.45);
+        draw_vertex(x+12-drawcyc*1.45,y+12-drawcyc*1.45);
+        draw_vertex(x-12+drawcyc*1.45,y-12+drawcyc*1.45);
+        draw_primitive_end();
+        if (!global.specialbake){
+            draw_set_color(make_color_rgb(255,195,219));
+            draw_primitive_begin(pr_trianglestrip);
+            draw_vertex(xstart-8+drawcyc*0.95,ystart-8+drawcyc*0.95);
+            draw_vertex(xstart+8-drawcyc*0.95,ystart+8-drawcyc*0.95);
+            draw_vertex(x+8-drawcyc*0.95,y+8-drawcyc*0.95);
+            draw_vertex(x-8+drawcyc*0.95,y-8+drawcyc*0.95);
+            draw_primitive_end();
+            }
+        }
+    else if (dir==3 || dir==7){
+        if (!global.specialbake){
+            draw_set_color(make_color_rgb(195,45,69));
+            draw_rectangle(x,y-20+drawcyc*2.4,xstart,y+20-drawcyc*2.4,0);
+            }
+        draw_set_color(make_color_rgb(255,105,129));
+        draw_rectangle(x,y-16+drawcyc*1.95,xstart,y+16-drawcyc*1.95,0);
+        if (!global.specialbake){
+            draw_set_color(make_color_rgb(255,195,219));
+            draw_rectangle(x,y-10+drawcyc*1.25,xstart,y+10-drawcyc*1.25,0);
+            }
+        }
+    else if (dir==4 || dir==8){
+        if (!global.specialbake){
+            draw_set_color(make_color_rgb(195,45,69));
+            draw_primitive_begin(pr_trianglestrip);
+            draw_vertex(xstart-16+drawcyc*1.95,ystart+16-drawcyc*1.95);
+            draw_vertex(xstart+16-drawcyc*1.95,ystart-16+drawcyc*1.95);
+            draw_vertex(x+16-drawcyc*1.95,y-16+drawcyc*1.95);
+            draw_vertex(x-16+drawcyc*1.95,y+16-drawcyc*1.95);
+            draw_primitive_end();
+            }
+        draw_set_color(make_color_rgb(255,105,129));
+        draw_primitive_begin(pr_trianglestrip);
+        draw_vertex(xstart-12+drawcyc*1.45,ystart+12-drawcyc*1.45);
+        draw_vertex(xstart+12-drawcyc*1.45,ystart-12+drawcyc*1.45);
+        draw_vertex(x+12-drawcyc*1.45,y-12+drawcyc*1.45);
+        draw_vertex(x-12+drawcyc*1.45,y+12-drawcyc*1.45);
+        draw_primitive_end();
+        if (!global.specialbake){
+            draw_set_color(make_color_rgb(255,195,219));
+            draw_primitive_begin(pr_trianglestrip);
+            draw_vertex(xstart-8+drawcyc*0.95,ystart+8-drawcyc*0.95);
+            draw_vertex(xstart+8-drawcyc*0.95,ystart-8+drawcyc*0.95);
+            draw_vertex(x+8-drawcyc*0.95,y-8+drawcyc*0.95);
+            draw_vertex(x-8+drawcyc*0.95,y+8-drawcyc*0.95);
+            draw_primitive_end();
+            }
+        }
+    }
+if (drawcyc&gt;=8-global.specialbake*3)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_levelup" type="RESOURCE"/>
+  <resource name="obj_hud" type="RESOURCE"/>
+  <resource name="obj_weapon1" type="RESOURCE"/>
+  <resource name="obj_weapon2" type="RESOURCE"/>
+  <resource name="obj_weapon3" type="RESOURCE"/>
+  <resource name="obj_weapon4" type="RESOURCE"/>
+  <resource name="obj_weapon5" type="RESOURCE"/>
+  <resource name="obj_weapon6" type="RESOURCE"/>
+  <resource name="obj_weapon7" type="RESOURCE"/>
+  <resource name="obj_weapon8" type="RESOURCE"/>
+  <resource name="obj_reloader" type="RESOURCE"/>
+</resources>

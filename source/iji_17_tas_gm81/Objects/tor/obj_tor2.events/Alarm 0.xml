@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//DEATH HAIL
+image_single=11;
+obj_sabot.flash=0.5;
+alarm[2]=60;
+scr_sound("exp_nuke",1);
+
+if (obj_tor.hailtype&lt;1){
+for (i=0; i&lt;10; i+=1){
+    tempid=instance_create(background_x[0]+424,realy+background_y[0],obj_deathhail);
+    tempid.realxspeed=sin(degtorad(i*9+2))*13;
+    tempid.realyspeed=-cos(degtorad(i*9+2))*13;
+    tempid.realyspeed*=0.6;
+    tempid=instance_create(background_x[0]+424,realy+background_y[0],obj_deathhail);
+    tempid.realxspeed=sin(degtorad(i*9+2))*13;
+    tempid.realyspeed=-cos(degtorad(i*9+2))*13;
+    tempid.realxspeed=-tempid.realxspeed;
+    tempid.realyspeed*=0.6;
+    }
+    }
+
+else{
+for (i=0; i&lt;20; i+=1){
+    tempid=instance_create(background_x[0]+424,realy+background_y[0],obj_deathhail);
+    tempid.realxspeed=sin(degtorad(i*4.5+2))*13;
+    tempid.realyspeed=-cos(degtorad(i*4.5+2))*13;
+    tempid.realyspeed*=0.6;
+    tempid=instance_create(background_x[0]+424,realy+background_y[0],obj_deathhail);
+    tempid.realxspeed=sin(degtorad(i*4.5+2))*13;
+    tempid.realyspeed=-cos(degtorad(i*4.5+2))*13;
+    tempid.realxspeed=-tempid.realxspeed;
+    tempid.realyspeed*=0.6;
+    }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

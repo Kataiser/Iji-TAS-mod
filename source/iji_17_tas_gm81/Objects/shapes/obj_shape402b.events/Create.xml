@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Shape
+shapex[0]=-51;
+shapey[0]=61;
+shapex[1]=-25;
+shapey[1]=31;
+shapex[2]=-40;
+shapey[2]=39;
+shapex[3]=-54;
+shapey[3]=54;
+shapex[4]=-78;
+shapey[4]=67;
+shapex[5]=-76;
+shapey[5]=73;
+points=6;
+bone=4;
+
+scr_findallangles();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

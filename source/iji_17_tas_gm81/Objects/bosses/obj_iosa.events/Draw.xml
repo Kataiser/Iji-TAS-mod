@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//game over fix
+if (calmdown){
+    angry=0;
+    alarm[2]=0;
+    alarm[6]=0;
+    alarm[7]=0;
+    state=0;
+    firingrocket=0;
+    firingmpfb=0;
+    firingplasma=0;
+    firingthor=0;
+    idling=0;
+    if (facing==0)
+        sprite_index=spr_iosa_bodyleft;
+    else
+        sprite_index=spr_iosa_body;
+    image_single=0;
+    }
+
+//Destroy
+if (electrocute){
+    eleccyc+=1;
+    scr_shakescreen(1);
+    if (eleccyc==2)
+        eleccyc2=1;
+    if (eleccyc==4){
+        eleccyc=0;
+        eleccyc2=0;
+        }
+    }
+else{
+    eleccyc=0;
+    eleccyc2=0;
+    }
+
+if (state==10 &amp;&amp; facing==0){
+    draw_sprite(sprite_index,image_single,x,y)
+    if (!goback){
+        if (targettype==0){
+            if (obj_iji.overload==3 &amp;&amp; obj_iji.overloadtime&gt;0)
+                targetalpha=random(0.2);
+            else
+                targetalpha=1;
+            if (image_single==0)
+                draw_sprite_ext(spr_iosa_destroyed_ijileft,0,x-27,y+56,1,1,0,c_white,targetalpha);
+            if (image_single==1)
+                draw_sprite_ext(spr_iosa_destroyed_ijileft,0,x-30,y+37,1,1,0,c_white,targetalpha);
+            if (image_single==2)
+                draw_sprite_ext(spr_iosa_destroyed_ijileft,0,x-23,y+11,1,1,0,c_white,targetalpha);
+            if (image_single==3)
+                draw_sprite_ext(spr_iosa_destroyed_ijileft,eleccyc2,x-2,y-21,1,1,0,c_white,targetalpha);
+            }
+        }
+    }
+else if (state==10 &amp;&amp; facing==1){
+    draw_sprite(sprite_index,image_single,x,y)
+    if (!goback){
+        if (targettype==0){
+            if (obj_iji.overload==3 &amp;&amp; obj_iji.overloadtime&gt;0)
+                targetalpha=random(0.2);
+            else
+                targetalpha=1;
+            if (image_single==0)
+                draw_sprite_ext(spr_iosa_destroyed_iji,0,x+123,y+60,1,1,0,c_white,targetalpha);
+            if (image_single==1)
+                draw_sprite_ext(spr_iosa_destroyed_iji,0,x+128,y+39,1,1,0,c_white,targetalpha);
+            if (image_single==2)
+                draw_sprite_ext(spr_iosa_destroyed_iji,0,x+124,y+13,1,1,0,c_white,targetalpha);
+            if (image_single==3)
+                draw_sprite_ext(spr_iosa_destroyed_iji,eleccyc2,x+108,y-18,1,1,0,c_white,targetalpha);
+            }
+        }
+    }
+
+//Basic
+else if (sprite_index==spr_iosa_body || sprite_index==spr_iosa_bodyleft){
+    basiccyc+=1;
+    if (basiccyc==10)
+        basicbob=-1;
+    if (basiccyc==15)
+        basicbob=-2;
+    if (basiccyc==25)
+        basicbob=-1;
+    if (basiccyc==30){
+        basicbob=0;
+        basiccyc=0;
+        }
+    if (firingrocket){
+        basiccyc=0;
+        basicbob=0;
+        }
+    if (facing==0){
+        draw_sprite(spr_iosa_bodyleft,0,x,y)
+        draw_sprite(spr_iosa_armsleft,0,x,y+basicbob);
+        }
+    else{
+        draw_sprite(spr_iosa_body,0,x,y)
+        draw_sprite(spr_iosa_arms,0,x,y+basicbob);
+        }
+    }
+else{
+    basiccyc=0;
+    basicbob=0;
+    if (firingthor &amp;&amp; (sprite_index==spr_iosa_fire || sprite_index==spr_iosa_fireleft)){
+        firesingle+=1;
+        if (firesingle==2)
+            image_single=1;
+        if (firesingle&gt;=4){
+            image_single=0;
+            firesingle=0;
+            }
+        }
+    draw_sprite(sprite_index,image_single,x,y)
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

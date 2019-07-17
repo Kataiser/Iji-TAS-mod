@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_tasencommander_basic" type="RESOURCE"/>
+  <resource name="spr_tasencommander_basicleft" type="RESOURCE"/>
+  <resource name="spr_tasencommander_fire" type="RESOURCE"/>
+  <resource name="spr_tasencommander_fireleft" type="RESOURCE"/>
+  <resource name="spr_tasencommander_walk" type="RESOURCE"/>
+  <resource name="spr_tasencommander_walkleft" type="RESOURCE"/>
+  <resource name="spr_tasencommander_pain" type="RESOURCE"/>
+  <resource name="spr_tasencommander_painleft" type="RESOURCE"/>
+  <resource name="spr_tasencommander_swipe" type="RESOURCE"/>
+  <resource name="spr_tasencommander_swipeleft" type="RESOURCE"/>
+  <resource name="spr_tasencommander_knockdown" type="RESOURCE"/>
+  <resource name="spr_tasencommander_knockdownleft" type="RESOURCE"/>
+  <resource name="spr_tasencommander_hitfloor" type="RESOURCE"/>
+  <resource name="spr_tasencommander_hitfloorleft" type="RESOURCE"/>
+  <resource name="spr_tasencommander_getup" type="RESOURCE"/>
+  <resource name="spr_tasencommander_getupleft" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_meta" type="RESOURCE"/>
+  <resource name="obj_meta2" type="RESOURCE"/>
+  <resource name="obj_weaponpickup" type="RESOURCE"/>
+  <resource name="obj_xp" type="RESOURCE"/>
+  <resource name="obj_ammo" type="RESOURCE"/>
+  <resource name="obj_station" type="RESOURCE"/>
+  <resource name="obj_enemy" type="RESOURCE"/>
+  <resource name="obj_alliedenemy" type="RESOURCE"/>
+  <resource name="obj_tasenenemy" type="RESOURCE"/>
+  <resource name="obj_komatoenemy" type="RESOURCE"/>
+  <resource name="obj_activateme" type="RESOURCE"/>
+  <resource name="obj_deactivateme" type="RESOURCE"/>
+</resources>

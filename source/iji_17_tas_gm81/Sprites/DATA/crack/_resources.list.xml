@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_crackbar" type="RESOURCE"/>
+  <resource name="spr_nodecol" type="RESOURCE"/>
+  <resource name="spr_noderow" type="RESOURCE"/>
+  <resource name="spr_younode" type="RESOURCE"/>
+  <resource name="spr_goalnode" type="RESOURCE"/>
+  <resource name="spr_icenode" type="RESOURCE"/>
+  <resource name="spr_binary" type="RESOURCE"/>
+  <resource name="spr_colnumber" type="RESOURCE"/>
+</resources>

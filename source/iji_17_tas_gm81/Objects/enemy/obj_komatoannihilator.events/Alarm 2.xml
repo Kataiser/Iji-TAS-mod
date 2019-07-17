@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Short range distance
+if (weapon==1)
+    targetdistance=400;
+else
+    targetdistance=192;
+
+//Choose target
+if (targetrival==0){
+    if (targetiji&gt;0)
+        target=obj_iji.id;
+    else{
+        angry=0;
+        alarm[5]=300;
+        }
+    }
+if (!instance_exists(target)){
+angry=0;
+targetrival=0;
+if (targetiji&gt;0 &amp;&amp; target!=obj_iji.id){
+    angry=1;
+    alarm[5]=300;
+    target=obj_iji.id;
+    }
+}
+
+//Begin taking action
+//Rocket has fired, Destroy
+if (firingrocket==1){
+    if (facing==0 &amp;&amp; place_meeting(x-40,y+96,target) &amp;&amp; place_free(x-128,y-64) &amp;&amp; !target.takingpain &amp;&amp; target.y&lt;y+150){
+        targettype=target.enemytype;
+        destroytarget=target;
+        timeline_index=tim_destroy;
+        timeline_running=true;
+        timeline_position=0;
+        }
+    else if (facing==1 &amp;&amp; place_meeting(x+40,y+96,target) &amp;&amp; place_free(x+128,y-64) &amp;&amp; !target.takingpain &amp;&amp; target.y&lt;y+150){
+        targettype=target.enemytype;
+        destroytarget=target;
+        timeline_index=tim_destroy;
+        timeline_running=true;
+        timeline_position=0;
+        }
+    else{
+        state=1;
+        alarm[2]=24;
+        image_single=0;
+        walkcyc=0;
+        firingrocket=0;
+        if (x+50&gt;target.x){
+            facing=0;
+            sprite_index=spr_komatoannihilator_walkleft;
+            }
+        else{
+            facing=1;
+            sprite_index=spr_komatoannihilator_walk;
+            }
+        exit;
+        }
+    }
+//Roam
+randomstate=random(1);
+if (angry==0){
+    if (randomstate&lt;0.6){
+        state=0;
+        alarm[2]=60+random(90);
+        if (facing==0)
+            sprite_index=spr_komatoannihilator_bodyleft;
+        else
+            sprite_index=spr_komatoannihilator_body;
+        }
+    else{
+        state=1;
+        facing=0;
+        image_single=0;
+        walkcyc=0;
+        alarm[2]=24;
+        sprite_index=spr_komatoannihilator_walkleft;
+        if (randomstate&gt;0.8){
+            facing=1;
+            sprite_index=spr_komatoannihilator_walk;
+            }
+        }
+    }
+//Angry
+else{
+    state=1;
+    //Face target
+    if (x+50&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+
+    //Too much idling
+    if (idling==4){
+        randomstate=random(0.7)+0.3;
+        idling=0;
+        }
+    //Destroy, Walk
+    if (randomstate&lt;0.3){
+        if (facing==0 &amp;&amp; place_meeting(x-40,y+96,target) &amp;&amp; place_free(x-128,y-64) &amp;&amp; !target.takingpain &amp;&amp; target.y&lt;y+150){
+            targettype=target.enemytype;
+            destroytarget=target;
+            timeline_index=tim_destroy;
+            timeline_running=true;
+            timeline_position=0;
+            }
+        else if (facing==1 &amp;&amp; place_meeting(x+40,y+96,target) &amp;&amp; place_free(x+128,y-64) &amp;&amp; !target.takingpain &amp;&amp; target.y&lt;y+150){
+            targettype=target.enemytype;
+            destroytarget=target;
+            timeline_index=tim_destroy;
+            timeline_running=true;
+            timeline_position=0;
+            }
+
+        else{
+            state=1;
+            idling+=1;
+            alarm[2]=24;
+            image_single=0;
+            walkcyc=0;
+            if (facing==0)
+                sprite_index=spr_komatoannihilator_walkleft;
+            else
+                sprite_index=spr_komatoannihilator_walk;
+            }
+        }
+    //Fire
+    else if (randomstate&gt;=0.3 &amp;&amp; randomstate&lt;0.6 &amp;&amp; abs((x+50)-target.x)&lt;targetdistance){
+        if (abs(target.y-y)&lt;128){
+            alarm[2]=30+random(30);
+            state=2;
+            if (facing==0)
+                sprite_index=spr_komatoannihilator_fireleft;
+            else
+                sprite_index=spr_komatoannihilator_fire;
+            }
+        else{
+            state=1;
+            alarm[2]=24;
+            image_single=0;
+            walkcyc=0;
+            if (facing==0)
+                sprite_index=spr_komatoannihilator_walkleft;
+            else
+                sprite_index=spr_komatoannihilator_walk;
+            }
+        }
+    //Charge a projectile attack
+    else if (randomstate&gt;=0.6 &amp;&amp; abs(y+50-target.y)&lt;192){
+        idling=0;
+        global.annitemp=0;
+        instance_create(x-128+facing*228,y+100,obj_annicheck);
+        with (obj_annicheck){
+            if (place_free(x,y))
+                global.annitemp=1;
+            }
+        if (!oops &amp;&amp; global.annitemp &amp;&amp; x+50&lt;=target.x){
+            tempid=instance_create(x+124,y+100,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            sprite_index=spr_komatoannihilator_body;
+            alarm[6]=20;
+            firingrocket=1;
+            if (randomstate&gt;=0.9 &amp;&amp; abs((x+50)-obj_iji.x)&lt;350){
+                scr_sound("tor_gather");
+                firingplasma=1;
+                alarm[2]=23;
+                alarm[6]=20;
+                }
+            else{
+                scr_sound("wea_charge");
+                firingplasma=0;
+                shockcount=ceil(random(3))+global.difficulty;
+                }
+            }
+        else if (!oops&amp;&amp; global.annitemp &amp;&amp; x+50&gt;target.x){
+            tempid=instance_create(x-24,y+100,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            sprite_index=spr_komatoannihilator_bodyleft;
+            alarm[6]=20;
+            firingrocket=1;
+            if (randomstate&gt;=0.9 &amp;&amp; abs((x+50)-obj_iji.x)&lt;350){
+                scr_sound("tor_gather");
+                firingplasma=1;
+                alarm[2]=23;
+                alarm[6]=20;
+                }
+            else{
+                scr_sound("wea_charge");
+                firingplasma=0;
+                shockcount=ceil(random(3))+global.difficulty;
+                }
+            }
+        //Rocket test failed, just walk
+        else{
+            state=1;
+            idling+=1;
+            alarm[2]=24;
+            image_single=0;
+            walkcyc=0;
+            if (facing==0)
+                sprite_index=spr_komatoannihilator_walkleft;
+            else
+                sprite_index=spr_komatoannihilator_walk;
+            }
+        }
+    //Nothing done, just walk
+    else if (destroy==0){
+        state=1;
+        idling+=1;
+        alarm[2]=24;
+        image_single=0;
+        walkcyc=0;
+        if (facing==0)
+            sprite_index=spr_komatoannihilator_walkleft;
+        else
+            sprite_index=spr_komatoannihilator_walk;
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

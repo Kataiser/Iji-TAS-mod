@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_glass">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!vortex)
+    scr_sound("glo_shell");
+bounce+=1;
+if (vortex)
+    (instance_create(x,y,obj_shockemit)).sprite_index=spr_vortexemit;
+else
+    instance_create(x,y,obj_shockemit);
+if (bounce&gt;2-short){
+    instance_destroy();
+    exit;
+    }
+move_bounce_all(0);
+speed*=0.5;
+image_speed=random(0.5)+0.5;
+temprand=random(1);
+if (temprand&gt;0.5)
+    image_speed*=-1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

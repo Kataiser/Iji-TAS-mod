@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Charged Detonator fix
+if (firedetonator){
+    firedetonator=0;
+    firingrocket=0;
+    }
+
+//Choose target
+if (targetrival==0){
+    if (targetiji&gt;0)
+        target=obj_iji.id;
+    else{
+        angry=0;
+        alarm[5]=300;
+        }
+    }
+if (!instance_exists(target)){
+angry=0;
+targetrival=0;
+if (targetiji&gt;0 &amp;&amp; target!=obj_iji.id){
+    if (!angry &amp;&amp; (state==0 || state==1))
+        alarm[2]=1;
+    angry=1;
+    alarm[5]=300;
+    target=obj_iji.id;
+    }
+}
+
+//Adjust sprite
+if (facing==0 &amp;&amp; state==0)
+    sprite_index=spr_komatoberserker_basicleft;
+if (facing==1 &amp;&amp; state==0)
+    sprite_index=spr_komatoberserker_basic;
+//Begin taking action
+takingpain=0;
+alarm[2]=25+random(10);
+//Scour for seen health
+if (!angry &amp;&amp; scouring&gt;0){
+    state=1;
+    if (scouringdir&gt;0)
+        facing=0;
+    else
+        facing=1;
+    exit;
+    }
+//Rocket has fired
+if (firingrocket==1){
+    state=1;
+    firingrocket=0;
+    if (x&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+    exit;
+    }
+//Roam
+randomstate=random(1);
+if (angry==0){
+    if (randomstate&lt;0.6 &amp;&amp; !goodgrief){
+        state=0;
+        alarm[2]=60+random(90);
+        }
+    else{
+        state=1;
+        facing=0;
+        if (randomstate&gt;0.8 || goodgrief)
+            facing=1;
+        }
+    }
+//Angry
+else{
+    state=1;
+    idling+=1;
+    if (idling==4){
+        idling=0;
+        if (abs(target.y-y)&lt;128)
+            randomstate=1;
+        }
+    //Face target
+    if (x&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+    //Charge Detonate
+    if (randomstate&gt;0.3){
+        if (x&gt;target.x &amp;&amp; (place_meeting(x-40,y,obj_meta) || place_meeting(x-40,y,obj_glass)) &amp;&amp; detocool==0){
+            idling=0;
+            tempid=instance_create(x-15,y+30,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            facing=0;
+            firedetonator=1;
+            detocool=45;
+            sprite_index=spr_komatoberserker_basicleft;
+            firingrocket=1;
+            scr_sound("wea_charge");
+            alarm[2]=15;
+            alarm[6]=12;
+            }
+        else if (x&lt;=target.x &amp;&amp; (place_meeting(x+40,y,obj_meta) || place_meeting(x+40,y,obj_glass)) &amp;&amp; detocool==0){
+            idling=0;
+            tempid=instance_create(x+45,y+30,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            facing=1;
+            firedetonator=1;
+            detocool=45;
+            sprite_index=spr_komatoberserker_basic;
+            firingrocket=1;
+            scr_sound("wea_charge");
+            alarm[2]=15;
+            alarm[6]=12;
+            }
+        if (distance_to_object(target)&lt;60 &amp;&amp; detocool==0){
+            idling=0;
+            state=0;
+            firedetonator=1;
+            detocool=45;
+            firingrocket=1;
+            scr_sound("wea_charge");
+            alarm[2]=15;
+            alarm[6]=12;
+            if (x&gt;target.x){
+                facing=0;
+                sprite_index=spr_komatoberserker_basicleft;
+                tempid=instance_create(x-15,y+30,obj_chargetell);
+                tempid.tempid=id;
+                }
+            else{
+                facing=1;
+                sprite_index=spr_komatoberserker_basic;
+                tempid=instance_create(x+45,y+30,obj_chargetell);
+                tempid.tempid=id;
+                }
+            }
+        }
+    //Get ready for rocket
+    if (!firingrocket &amp;&amp; randomstate&gt;0.6 &amp;&amp; distance_to_object(target)&gt;=60 &amp;&amp; abs(y-target.y)&lt;192 &amp;&amp; (weapon==0 || (weapon==1 &amp;&amp; abs((x+50)-target.x)&lt;400))){
+        if (x+20&gt;target.x)
+            facing=0;
+        else
+            facing=1;
+        //Charge a shocksplinter
+        idling=0;
+        if (!oops &amp;&amp; !(goodgrief &amp;&amp; obj_iji.x&gt;7168) &amp;&amp; ((place_free(x+16,y-32) &amp;&amp; place_free(x+32,y-32) &amp;&amp; place_free(x+48,y-32) &amp;&amp; place_free(x+64,y-32) &amp;&amp; place_free(x+80,y-32) &amp;&amp; place_free(x+96,y-32)) || (place_free(x+16,y) &amp;&amp; place_free(x+32,y) &amp;&amp; place_free(x+48,y) &amp;&amp; place_free(x+64,y) &amp;&amp; place_free(x+80,y) &amp;&amp; place_free(x+96,y))) &amp;&amp; !place_meeting(x+16,y-32,obj_glass) &amp;&amp; !place_meeting(x+32,y-32,obj_glass) &amp;&amp; !place_meeting(x+48,y-32,obj_glass) &amp;&amp; !place_meeting(x+64,y-32,obj_glass) &amp;&amp; !place_meeting(x+80,y-32,obj_glass) &amp;&amp; !place_meeting(x+96,y-32,obj_glass) &amp;&amp; !place_meeting(x+16,y-32,obj_meta) &amp;&amp; !place_meeting(x+32,y-32,obj_meta) &amp;&amp; !place_meeting(x+48,y-32,obj_meta) &amp;&amp; !place_meeting(x+64,y-32,obj_meta) &amp;&amp; !place_meeting(x+80,y-32,obj_meta) &amp;&amp; !place_meeting(x+96,y-32,obj_meta) &amp;&amp; x+20&lt;=target.x){
+            tempid=instance_create(x+45,y+30,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            facing=1;
+            firedetonator=0;
+            sprite_index=spr_komatoberserker_basic;
+            firingrocket=1;
+            if (weapon==0){
+                scr_sound("wea_charge");
+                alarm[2]=23;
+                alarm[6]=20;
+                }
+            else if (weapon==1 &amp;&amp; abs((x+20)-obj_iji.x)&lt;350){
+                scr_sound("tor_gather");
+                alarm[2]=38;
+                alarm[6]=35;
+                }
+            else{
+                state=1;
+                firingrocket=0;
+                sprite_index=spr_komatoberserker_walk;
+                alarm[2]=25+random(10);
+                }
+            }
+        else if (!oops &amp;&amp; ((place_free(x-16,y-32) &amp;&amp; place_free(x-32,y-32) &amp;&amp; place_free(x-48,y-32) &amp;&amp; place_free(x-64,y-32) &amp;&amp; place_free(x-80,y-32) &amp;&amp; place_free(x-96,y-32)) || (place_free(x-16,y) &amp;&amp; place_free(x-32,y) &amp;&amp; place_free(x-48,y) &amp;&amp; place_free(x-64,y) &amp;&amp; place_free(x-80,y) &amp;&amp; place_free(x-96,y))) &amp;&amp; !place_meeting(x-16,y-32,obj_glass) &amp;&amp; !place_meeting(x-32,y-32,obj_glass) &amp;&amp; !place_meeting(x-48,y-32,obj_glass) &amp;&amp; !place_meeting(x-64,y-32,obj_glass) &amp;&amp; !place_meeting(x-80,y-32,obj_glass) &amp;&amp; !place_meeting(x-96,y-32,obj_glass) &amp;&amp; !place_meeting(x-16,y-32,obj_meta) &amp;&amp; !place_meeting(x-32,y-32,obj_meta) &amp;&amp; !place_meeting(x-48,y-32,obj_meta) &amp;&amp; !place_meeting(x-64,y-32,obj_meta) &amp;&amp; !place_meeting(x-80,y-32,obj_meta) &amp;&amp; !place_meeting(x-96,y-32,obj_meta) &amp;&amp; x+20&gt;target.x){
+            tempid=instance_create(x-15,y+30,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            facing=0;
+            firedetonator=0;
+            sprite_index=spr_komatoberserker_basicleft;
+            firingrocket=1;
+            if (weapon==0){
+                scr_sound("wea_charge");
+                alarm[2]=23;
+                alarm[6]=20;
+                }
+            else if (weapon==1 &amp;&amp; abs((x+20)-obj_iji.x)&lt;350){
+                scr_sound("tor_gather");
+                alarm[2]=38;
+                alarm[6]=35;
+                }
+            else{
+                state=1;
+                firingrocket=0;
+                sprite_index=spr_komatoberserker_walkleft;
+                alarm[2]=25+random(10);
+                }
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_ext_ansaksie1" type="RESOURCE"/>
+  <resource name="snd_ext_ansaksie2" type="RESOURCE"/>
+  <resource name="snd_ext_ansaksie3" type="RESOURCE"/>
+  <resource name="snd_ext_ansaksie4" type="RESOURCE"/>
+  <resource name="snd_ext_ansaksie5" type="RESOURCE"/>
+  <resource name="snd_ext_ansaksie6" type="RESOURCE"/>
+</resources>

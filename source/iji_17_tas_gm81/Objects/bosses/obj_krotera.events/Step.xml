@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//"TRY TO STOP THIS"
+if (stopthis&gt;0)
+    stopthis-=1;
+if (stopthis==1 &amp;&amp; (sprite_index==spr_krotera_flash || sprite_index==spr_krotera_flashleft))
+    scr_sound("kro_ambient3");
+
+//"WIN"
+if (obj_sabot.gameover &amp;&amp; !winquote &amp;&amp; hp&gt;0){
+    winquote=1;
+    win=30;
+    }
+if (win&gt;0)
+    win-=1;
+if (win==1)
+    scr_sound("kro_win");
+
+//"HOLD STILL"
+if (ijihp==global.hp &amp;&amp; holdstillwait==0 &amp;&amp; !global.ignoreall)
+    holdstill+=1;
+else
+    holdstill=0;
+ijihp=global.hp;
+if (holdstillwait&gt;0)
+    holdstillwait-=1;
+//"CAN'T HIDE"
+if (canthidewait&gt;0)
+    canthidewait-=1;
+
+//Calm down
+if (calmdown){
+state=0;
+angry=0;
+alarm[2]=0;
+alarm[6]=0;
+firingrocket=0;
+firingmpfb=0;
+rapidfirempfb=0;
+firing=0;
+if (facing==0)
+    sprite_index=spr_krotera_basicleft;
+else
+    sprite_index=spr_krotera_basic;
+}
+
+//Spawn turrets
+if (hp&lt;spawncount-3 &amp;&amp; hp&gt;6 &amp;&amp; maxhp&gt;10){
+    spawncount-=3;
+    instance_create(x,y,obj_kroteraspawner);}
+
+cfised=0;
+thored=0;
+//Fix sprite
+if (sprite_index=spr_krotera_basic || sprite_index=spr_krotera_basicleft)
+    image_speed=0.2;
+else if (!(sprite_index=spr_krotera_death || sprite_index=spr_krotera_deathleft))
+    image_speed=0.5;
+//Kick
+if (image_index==2){
+    if (sprite_index=spr_krotera_kick){
+        scr_sound("glo_swipe");
+        tempid=instance_create(x+5,y+26,obj_kickbox_elite);
+        tempid.facing=1;
+        tempid.target=id;
+        }
+    if (sprite_index=spr_krotera_kickleft){
+        scr_sound("glo_swipe");
+        tempid=instance_create(x-30,y+26,obj_kickbox_elite);
+        tempid.target=id;
+        }
+    }
+/*
+//Autodeath
+if (hp&lt;=0){
+    dead=1;
+    }
+*/
+//Smoke when charging
+if (firingrocket==1 &amp;&amp; state==0)
+    smoking+=1;
+if (smoking&gt;=5){
+    smoking=0;
+    if (firingmpfb==0){
+        if (facing==0)
+            instance_create(x-22,y+35,obj_smoke);
+        else
+            instance_create(x+55,y+35,obj_smoke);
+        }
+    else{
+        if (facing==0)
+            instance_create(x-22,y+35,obj_mpfbspark);
+        else
+            instance_create(x+55,y+35,obj_mpfbspark);
+        }
+    }
+//Armor
+if (armor&lt;99.9 &amp;&amp; hp&gt;0)
+    armor+=0.1;
+//Pain from armordrop
+if (armor&lt;1 &amp;&amp; hp&gt;0){
+    hp-=1;
+    script_execute(scr_elitepain,1);
+    }
+//Fire
+if (state==2 &amp;&amp; reloading==0){
+    scr_sound("wea_imach");
+    reloading=1;
+    alarm[0]=3;
+    alarm[1]=3;
+    if (facing==0){
+        sprite_index=spr_krotera_fireleft;
+        (instance_create(x+14,y+30,obj_enemybullet)).target=id;
+        instance_create(x-26,y+30,obj_muzzleflash);
+        (instance_create(x+20,y+40,obj_enemybullet)).target=id;
+        instance_create(x-20,y+40,obj_muzzleflash);
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x-9,y+30,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+40;
+            tempid=instance_create(x-9,y+26,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+40;
+            }
+        }
+    else{
+        sprite_index=spr_krotera_fire;
+        (instance_create(x+16,y+30,obj_enemybullet2)).target=id;
+        (instance_create(x+82,y+30,obj_muzzleflash)).image_single=floor(random(5))+5;
+        (instance_create(x+10,y+40,obj_enemybullet2)).target=id;
+        (instance_create(x+77,y+40,obj_muzzleflash)).image_single=floor(random(5))+5;
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x+40,y+30,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+130;
+            tempid=instance_create(x+40,y+26,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+130;
+            }
+        }
+    }
+//Stand still
+if (state==0 &amp;&amp; firingrocket==0 &amp;&amp; swiping==0 &amp;&amp; !ignorestand &amp;&amp; !dead){
+    if (facing==0)
+        sprite_index=spr_krotera_basicleft;
+    else
+        sprite_index=spr_krotera_basic;
+    }
+//Walk
+if (state==1 &amp;&amp; !dead){
+    if (facing==0){
+        sprite_index=spr_krotera_walkleft;
+        if (place_meeting(x-walkspeed,y,obj_glass) || place_meeting(x-walkspeed,y,obj_blockenemy) || place_free(x-20,y+20)){
+            facing=1;
+            exit;
+            }
+        if (place_free(x-walkspeed,y+1) &amp;&amp; (place_meeting(x-walkspeed,y+10,obj_slopel) || place_meeting(x-walkspeed,y+10,obj_sloper))){
+            x-=walkspeed;
+            move_contact_solid(270,-1);
+            }
+        else if (place_free(x-walkspeed,y))
+            x-=walkspeed;
+        else{
+            if (place_free(x-walkspeed,y-5) &amp;&amp; (place_meeting(x,y+10,obj_slopel) || place_meeting(x,y+10,obj_sloper))){
+                y-=5;
+                x-=walkspeed;
+                move_contact_solid(270,-1);
+                }
+            else
+                facing=1;
+            }
+        }
+    else{
+        sprite_index=spr_krotera_walk;
+        if (place_meeting(x+walkspeed,y,obj_glass) || place_meeting(x+walkspeed,y,obj_blockenemy) || place_free(x+20,y+20)){
+            facing=0;
+            exit;
+            }
+        if (place_free(x+walkspeed,y+1) &amp;&amp; (place_meeting(x+walkspeed,y+10,obj_slopel) || place_meeting(x+walkspeed,y+10,obj_sloper))){
+            x+=walkspeed;
+            move_contact_solid(270,-1);
+            }
+        else if (place_free(x+walkspeed,y))
+            x+=walkspeed;
+        else{
+            if (place_free(x+walkspeed,y-5) &amp;&amp; (place_meeting(x,y+10,obj_slopel) || place_meeting(x,y+10,obj_sloper))){
+                y-=5;
+                x+=walkspeed;
+                move_contact_solid(270,-1);
+                }
+            else
+                facing=0;
+            }
+        }
+    }
+
+//Supermove flash
+if (rapidfirempfb&gt;0){
+chargesoundcyc+=1;
+if (chargesoundcyc&gt;=8){
+    chargesoundcyc=0;
+    scr_sound("tor_gather_q03");
+    }
+if (facing==0)
+    sprite_index=spr_krotera_flashleft;
+else
+    sprite_index=spr_krotera_flash;
+if (facing==0)
+    instance_create(x-32+random(20),y+25+random(20),obj_mpfbspark);
+else
+    instance_create(x+45+random(20),y+25+random(20),obj_mpfbspark);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

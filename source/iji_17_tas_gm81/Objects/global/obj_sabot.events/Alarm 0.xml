@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">firstfadein=0.25;
+with (obj_loadingback)
+    instance_destroy();
+//deactivate surrounding world
+if (room!=rom_sector11 &amp;&amp; room!=rom_sector12 &amp;&amp; room!=rom_sector13 &amp;&amp; room!=rom_sector14 &amp;&amp; room!=rom_sector15 &amp;&amp; room!=rom_sector16){
+    instance_deactivate_all(1);
+    instance_activate_object(obj_iji);
+    instance_activate_object(obj_shakescreen);
+    //METHOD X
+    with (obj_shakescreen)
+        scr_methodx();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

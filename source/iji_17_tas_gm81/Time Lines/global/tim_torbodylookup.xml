@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="5">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Sector 16, screen scrolls up to reveal the strike
+obj_iji.sprite_index=spr_lookaround;
+obj_iji.image_single=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="7">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.image_single=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="9">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.image_single=2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="11">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.image_single=3;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="15">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=4;
+with (obj_sabot)
+    scr_music("mus_doom");</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="35">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=7;
+tempid.sprite_index=spr_strikelight2;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="55">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=2;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="65">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=12;
+tempid.sprite_index=spr_strikelight3;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="70">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=9;
+tempid.sprite_index=spr_strikelight2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="75">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=13;
+tempid.sprite_index=spr_strikelight3;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="78">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=3;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="81">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=8;
+tempid.sprite_index=spr_strikelight2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="84">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=11;
+tempid.sprite_index=spr_strikelight3;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="87">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="89">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=5;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="91">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=10;
+tempid.sprite_index=spr_strikelight2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="93">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=15;
+tempid.sprite_index=spr_strikelight3;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="95">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=6;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="97">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(0,0,obj_strikelight);
+tempid.tag=14;
+tempid.sprite_index=spr_strikelight3;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="209">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.image_single=2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="211">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.image_single=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="213">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.image_single=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="215">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.sprite_index=spr_basic;
+(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatx8";</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_kro_pain1" type="RESOURCE"/>
+  <resource name="snd_kro_pain2" type="RESOURCE"/>
+  <resource name="snd_kro_death" type="RESOURCE"/>
+  <resource name="snd_kro_ambient1" type="RESOURCE"/>
+  <resource name="snd_kro_ambient2" type="RESOURCE"/>
+  <resource name="snd_kro_ambient3" type="RESOURCE"/>
+  <resource name="snd_kro_win" type="RESOURCE"/>
+  <resource name="snd_kro_emote2" type="RESOURCE"/>
+</resources>

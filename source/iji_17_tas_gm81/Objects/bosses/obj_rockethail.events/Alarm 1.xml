@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">alarm[1]=2;
+if (round(image_index) mod 8==0 || round(image_index) mod 8==-8)
+    instance_create(x-8,y,obj_smoke);
+if (round(image_index) mod 8==1 || round(image_index) mod 8==-7)
+    instance_create(x-8,y+8,obj_smoke);
+if (round(image_index) mod 8==2 || round(image_index) mod 8==-6)
+    instance_create(x,y+8,obj_smoke);
+if (round(image_index) mod 8==3 || round(image_index) mod 8==-5)
+    instance_create(x+8,y+8,obj_smoke);
+if (round(image_index) mod 8==4 || round(image_index) mod 8==-4)
+    instance_create(x+8,y,obj_smoke);
+if (round(image_index) mod 8==5 || round(image_index) mod 8==-3)
+    instance_create(x+8,y-8,obj_smoke);
+if (round(image_index) mod 8==6 || round(image_index) mod 8==-2)
+    instance_create(x,y-8,obj_smoke);
+if (round(image_index) mod 8==7 || round(image_index) mod 8==-1)
+    instance_create(x-8,y-8,obj_smoke);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

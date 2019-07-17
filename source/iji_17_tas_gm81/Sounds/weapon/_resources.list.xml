@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_wea_shot" type="RESOURCE"/>
+  <resource name="snd_wea_imach" type="RESOURCE"/>
+  <resource name="snd_wea_imach_q1" type="RESOURCE"/>
+  <resource name="snd_wea_imach_q2" type="RESOURCE"/>
+  <resource name="snd_wea_mach" type="RESOURCE"/>
+  <resource name="snd_wea_mach_q1" type="RESOURCE"/>
+  <resource name="snd_wea_mach_q2" type="RESOURCE"/>
+  <resource name="snd_wea_mpfb" type="RESOURCE"/>
+  <resource name="snd_wea_spli" type="RESOURCE"/>
+  <resource name="snd_wea_spli_q1" type="RESOURCE"/>
+  <resource name="snd_wea_spli_q2" type="RESOURCE"/>
+  <resource name="snd_wea_plas" type="RESOURCE"/>
+  <resource name="snd_wea_reso" type="RESOURCE"/>
+  <resource name="snd_wea_rock" type="RESOURCE"/>
+  <resource name="snd_wea_shoc" type="RESOURCE"/>
+  <resource name="snd_wea_puls" type="RESOURCE"/>
+  <resource name="snd_wea_pulsend" type="RESOURCE"/>
+  <resource name="snd_wea_thor" type="RESOURCE"/>
+  <resource name="snd_wea_thorend" type="RESOURCE"/>
+  <resource name="snd_wea_charge" type="RESOURCE"/>
+  <resource name="snd_wea_cfis" type="RESOURCE"/>
+  <resource name="snd_wea_cfisend" type="RESOURCE"/>
+  <resource name="snd_wea_banana" type="RESOURCE"/>
+  <resource name="snd_ext_barrier" type="RESOURCE"/>
+</resources>

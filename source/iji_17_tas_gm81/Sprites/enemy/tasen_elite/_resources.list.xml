@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_tasenelite_basic" type="RESOURCE"/>
+  <resource name="spr_tasenelite_basicleft" type="RESOURCE"/>
+  <resource name="spr_tasenelite_fire" type="RESOURCE"/>
+  <resource name="spr_tasenelite_fireleft" type="RESOURCE"/>
+  <resource name="spr_tasenelite_kick" type="RESOURCE"/>
+  <resource name="spr_tasenelite_kickleft" type="RESOURCE"/>
+  <resource name="spr_tasenelite_pain" type="RESOURCE"/>
+  <resource name="spr_tasenelite_painleft" type="RESOURCE"/>
+  <resource name="spr_tasenelite_walk" type="RESOURCE"/>
+  <resource name="spr_tasenelite_walkleft" type="RESOURCE"/>
+  <resource name="spr_tasenelite_death" type="RESOURCE"/>
+  <resource name="spr_tasenelite_deathleft" type="RESOURCE"/>
+  <resource name="spr_tasenelite_weapon" type="RESOURCE"/>
+  <resource name="spr_tasenelite_weaponleft" type="RESOURCE"/>
+</resources>

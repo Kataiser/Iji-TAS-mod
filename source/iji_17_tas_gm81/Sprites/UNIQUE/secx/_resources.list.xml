@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_secxcloudb" type="RESOURCE"/>
+  <resource name="spr_secxcloudt" type="RESOURCE"/>
+  <resource name="spr_crumblex" type="RESOURCE"/>
+  <resource name="spr_crumblex2" type="RESOURCE"/>
+  <resource name="spr_xelecpad" type="RESOURCE"/>
+  <resource name="spr_strikelight" type="RESOURCE"/>
+  <resource name="spr_strikelight2" type="RESOURCE"/>
+  <resource name="spr_strikelight3" type="RESOURCE"/>
+  <resource name="spr_lowrain" type="RESOURCE"/>
+  <resource name="spr_secxansaksie" type="RESOURCE"/>
+  <resource name="spr_secxansaksieh" type="RESOURCE"/>
+</resources>

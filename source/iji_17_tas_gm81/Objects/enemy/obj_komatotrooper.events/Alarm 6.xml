@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (facing==0){
+    if (cracked==0){
+        scr_sound("wea_shoc");
+        tempid=instance_create(x-28,y+19,obj_enemyshock);
+        tempid.speed=-global.shockspeed;
+        tempid.target=id;
+        instance_create(x-28,y+19,obj_shockspark);
+        sprite_index=spr_komatotrooper_fireleft;
+        }
+    else{
+        scr_sound("exp_shoc");
+        tempid=instance_create(x-28,y+19,obj_enemyshockexplosion);
+        tempid.target=id;
+        instance_create(x-28,y+19,obj_explosioncenter);
+        script_execute(scr_shakescreen,2);
+        oops=1;
+        }
+    }
+else{
+    if (cracked==0){
+        scr_sound("wea_shoc");
+        tempid=instance_create(x+44,y+19,obj_enemyshock);
+        tempid.speed=global.shockspeed;
+        tempid.target=id;
+        instance_create(x+44,y+19,obj_shockspark);
+        sprite_index=spr_komatotrooper_fire;
+        }
+    else{
+        scr_sound("exp_shoc");
+        tempid=instance_create(x+44,y+19,obj_enemyshockexplosion);
+        tempid.target=id;
+        instance_create(x+44,y+19,obj_explosioncenter);
+        script_execute(scr_shakescreen,2);
+        oops=1;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

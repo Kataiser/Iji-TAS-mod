@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">ready=1;
+if (global.sector==0)
+    image_single=9;
+else
+    image_single=global.sector-1;
+if (room==rom_sectorz)
+    image_single=10;
+if (room==rom_sector1 &amp;&amp; global.wty)
+    image_single=11;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_shakescreen(4);
+cyc+=1;
+if (dir==1)
+    x+=64+random(64);
+else
+    x+=-(64+random(64));
+y+=-64+random(128);
+if (cyc&lt;=5){
+    (instance_create(x,y,obj_enemyrocketexplosion)).killsky=1;
+    instance_create(x,y,obj_explosioncenter);
+    }
+else{
+    (instance_create(x,y,obj_enemympfbexplosion)).killsky=1;
+    (instance_create(x,y,obj_enemympfbexplosion)).killsky=1;
+    instance_create(x,y,obj_explosioncenter);
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_sec7star" type="RESOURCE"/>
+  <resource name="obj_paletteswap" type="RESOURCE"/>
+  <resource name="obj_crumble71" type="RESOURCE"/>
+  <resource name="obj_crumble72" type="RESOURCE"/>
+  <resource name="obj_crumble73" type="RESOURCE"/>
+  <resource name="obj_phantomhammer" type="RESOURCE"/>
+  <resource name="obj_phantomhammer3" type="RESOURCE"/>
+  <resource name="obj_phantomhammer4" type="RESOURCE"/>
+  <resource name="obj_komatodetail1" type="RESOURCE"/>
+  <resource name="obj_komatodetail2" type="RESOURCE"/>
+  <resource name="obj_komatodetail3" type="RESOURCE"/>
+  <resource name="obj_komatodetail4" type="RESOURCE"/>
+  <resource name="obj_komatodetail5" type="RESOURCE"/>
+  <resource name="obj_komatodetail6" type="RESOURCE"/>
+  <resource name="obj_komatodetail7" type="RESOURCE"/>
+  <resource name="obj_sec7hatch" type="RESOURCE"/>
+  <resource name="obj_sec7sentinels" type="RESOURCE"/>
+  <resource name="obj_sec7cp2" type="RESOURCE"/>
+  <resource name="obj_dummycp" type="RESOURCE"/>
+  <resource name="obj_sec7liftmarker" type="RESOURCE"/>
+  <resource name="obj_sec7vateilika" type="RESOURCE"/>
+  <resource name="obj_crumble74" type="RESOURCE"/>
+  <resource name="obj_sec7plushie" type="RESOURCE"/>
+  <resource name="obj_sec7shutup" type="RESOURCE"/>
+</resources>

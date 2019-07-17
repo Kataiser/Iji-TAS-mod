@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (active){
+if (tempid.turret)
+    factor=(tempid.alarm[2]/factormax)*40;
+else if (tempid.enemytype!=12)
+    factor=(tempid.alarm[6]/factormax)*40;
+else{ //Assassin
+    if (special9==1)
+        factor=(tempid.alarm[1]/factormax)*40;
+    else if (tempid.sprite_index==spr_komatoassassin_pose1 || tempid.sprite_index==spr_komatoassassin_pose1left || tempid.sprite_index==spr_komatoassassin_pose1fire || tempid.sprite_index==spr_komatoassassin_pose1fireleft || tempid.sprite_index==spr_asha_pose1 || tempid.sprite_index==spr_asha_pose1left || tempid.sprite_index==spr_asha_pose1fire || tempid.sprite_index==spr_asha_pose1fireleft)
+        factor=(tempid.alarm[0]/factormax)*40;
+    else
+        factor=(tempid.alarm[1]/factormax)*40;
+    }
+if (tempid.enemytype==15){
+    x=tempid.x-24+tempid.facing*48;
+    y=tempid.y;
+    }
+if (factor&gt;3){
+    draw_set_color(c_white);
+    draw_line(x-factor*2,y-factor*2,x+factor*2,y+factor*2);
+    draw_line(x-factor*2,y+factor*2,x+factor*2,y-factor*2);
+    if (!global.specialbake)
+        draw_circle(x,y,factor,1);
+    }
+else
+    instance_destroy();
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

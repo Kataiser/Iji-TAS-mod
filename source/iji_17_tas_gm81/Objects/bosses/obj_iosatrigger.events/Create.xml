@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!global.specialtrigger2){
+obj_sabot.lightrave=1;
+obj_sabot.raveflash=-0.4;
+}
+image_speed=0.5;
+
+//PHASE 2
+if (global.iosaphase==1){
+    phase2=1;
+    with (obj_iosa)
+        instance_destroy();
+    with (obj_iosacrumble){
+        if (x&gt;736 &amp;&amp; x&lt;1568)
+            instance_destroy();
+        }
+    with (obj_terminal){
+        instance_destroy();
+        instance_create(x,y,obj_turretdead);
+        }
+    with (obj_iji) instance_destroy();
+    tempid=instance_create(1104,803,obj_iji);
+    tempid.takingpain=1
+    tempid.recovering=0;
+    if (global.outfit){
+        tempid.sprite_index=spr_outfit_basic;
+        }
+    global.ignoreall=1;
+    global.hp=global.healthlevel*2;
+    global.armor=100;
+    global.topmessage="";
+    global.state=1;
+    global.facing=1;
+    instance_create(1291,793,obj_iosa2doll);
+    global.viewyoffset=-60;
+    global.viewxoffset=50;
+    with (obj_trigger)
+        instance_destroy();
+    with (obj_iosa2doll){
+        alarm[0]=30;
+        alarm[2]=44;
+        alarm[1]=54;
+        alarm[3]=90;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

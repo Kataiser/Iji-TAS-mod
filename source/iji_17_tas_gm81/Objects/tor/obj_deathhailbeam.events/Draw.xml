@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Target
+if (target&gt;0){
+    target-=1;
+    draw_sprite(spr_deathhailtarget,target mod 8,x,y-8)
+    draw_sprite(spr_deathhailtarget,target mod 8,x,y-32)
+    draw_sprite(spr_deathhailtarget,target mod 8,x,y-56)
+    }
+
+//Beam
+else{
+if (!explo){
+    if (!nosound)
+        scr_sound("exp_rock");
+    explo=1;
+    instance_create(x,y,obj_deathhailexplo);
+    //if (!nosound)
+    //    scr_shakescreen(0);
+    }
+if (obj_iji.x+6&gt;x-16 &amp;&amp; obj_iji.x+6&lt;x+16 &amp;&amp; !obj_iji.takingpain &amp;&amp; !obj_iji.recovering){
+    with (obj_iji){
+        global.hp-=3;
+        global.damage+=3;
+        scr_knockdown(2-global.facing,6);
+        }
+    }
+    draw_set_color(c_teal);
+    if (!obj_tortrigger.slowdowned)
+        draw_rectangle(x-20+cyc*3,y,x+20-cyc*3,y-600,0);
+    draw_set_color(c_white);
+    draw_rectangle(x-16+cyc*2.4,y,x+16-cyc*2.4,y-600,0);
+    cyc+=1;
+    if (cyc==5)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

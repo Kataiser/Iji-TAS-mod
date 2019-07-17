@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Stop when Iji is dead
+if (global.hp&lt;=0){
+    deadgo=0;
+    if (instance_number(obj_iji)==1){
+        if (obj_iji.sprite_index==spr_hitfloor || obj_iji.sprite_index==spr_hitfloorleft)
+            deadgo=1;
+        }
+    else
+        deadgo=1;
+    if (deadgo){
+        charge=0;
+        resetme=0;
+        trip=0;
+        charge=0;
+        elecing=0;
+        attack=0;
+        sizecyc=1.6;
+        size=0;
+        }
+    }
+
+//Charge
+if (trip &amp;&amp; elecing=0){
+    charge+=1;
+    tempid=instance_create(x+16+32*cadjust,y+12,obj_thorspark);
+    tempid.direction=random(180)+180;
+    tempid.speed=random(0.5)+0.05*charge;
+    instance_create(x+16+32*cadjust,y+12,obj_nanospark);
+    cadjust+=1;
+    if (cadjust&gt;=6)
+        cadjust=0;
+    }
+if (spawnstrikesmokes==1){
+    spawnstrikesmokes=0;
+    instance_create(x+random(192),848+random(16),obj_iosastrikesmoke);
+    }
+if (iosacreates){
+    iosacreates=0;
+    if (global.difficulty!=2){
+        if (instance_number(obj_pickuphealth)&lt;3)
+            instance_create(obj_iosa.x+30,obj_iosa.y+75,obj_pickuphealth);
+        if (instance_number(obj_pickuphealth)&lt;3)
+            instance_create(obj_iosa.x+70,obj_iosa.y+75,obj_pickuphealth);
+        }
+    else{
+        if (instance_number(obj_pickuphealth)&lt;3)
+            instance_create(obj_iosa.x+50,obj_iosa.y+75,obj_pickuphealth);
+        }
+    with (obj_iosa)
+        script_execute(scr_annihilatorpain);
+    repeat(10)
+        instance_create(obj_iosa.x+10+random(80),obj_iosa.y+10+random(115),obj_komatobloodspecial);
+    repeat(25-global.specialbake*20){
+        tempid=instance_create(obj_iosa.x+10+random(80),obj_iosa.y+10+random(115),obj_scrapwhite);
+        tempid.speed=random(10)+10;
+        tempid.direction=random(360);
+        }
+    }
+
+//Elecing
+if (charge==74)
+    scr_sound("glo_electrocute");
+if (charge&gt;=75){
+    obj_sabot.raveflash=0;
+    //Attack Reflector
+    if (instance_number(obj_reflector)==1){
+        if (place_meeting(x,y+96,obj_iosacrumble)){
+            if (place_meeting(x,obj_reflector.y,obj_reflector) &amp;&amp; obj_reflector.y&lt;576){
+                with (obj_reflector)
+                    scr_reflectorexplo();
+                }
+            }
+        else{
+            if (place_meeting(x,obj_reflector.y,obj_reflector)){
+                with (obj_reflector)
+                    scr_reflectorexplo();
+                }
+            }
+        }
+    //Attack Disruptor
+    if (instance_number(obj_disruptor)==1){
+        if (place_meeting(x,y+96,obj_iosacrumble)){
+            if (place_meeting(x,obj_disruptor.y,obj_disruptor) &amp;&amp; obj_disruptor.y&lt;576){
+                with (obj_disruptor)
+                    scr_disruptorexplo();
+                }
+            }
+        else{
+            if (place_meeting(x,obj_disruptor.y,obj_disruptor)){
+                with (obj_disruptor)
+                    scr_disruptorexplo();
+                }
+            }
+        }
+    //Attack Barrier
+    if (instance_number(obj_shockbarrier)==1){
+        if (place_meeting(x,y+96,obj_iosacrumble)){
+            if (place_meeting(x,obj_shockbarrier.y,obj_shockbarrier) &amp;&amp; obj_shockbarrier.y&lt;576){
+                with (obj_shockbarrier)
+                    scr_barrierexplo();
+                }
+            }
+        else{
+            if (place_meeting(x,obj_shockbarrier.y,obj_shockbarrier)){
+                with (obj_shockbarrier)
+                    scr_barrierexplo();
+                }
+            }
+        }
+    //Attack Iji
+    if (place_meeting(x,y+96,obj_iosacrumble)){
+        if (place_meeting(x,obj_iji.y,obj_iji) &amp;&amp; !obj_iji.takingpain &amp;&amp; obj_iji.y&lt;576){
+            global.hp-=4;
+            global.damage+=3;
+            obj_iji.notech=10;
+            with (obj_iji)
+                scr_pain();
+            obj_sabot.raveflash2=1;
+            if (global.hp&gt;1){
+                with (obj_ansaksie){
+                    voice=300+random(300);
+                    shutup=0;
+                    stopfooling=25;
+                    }
+                }
+            }
+        }
+    else{
+        if (place_meeting(x,obj_iji.y,obj_iji) &amp;&amp; !obj_iji.takingpain){
+            global.hp-=5;
+            global.damage+=5;
+            obj_iji.notech=10;
+            with (obj_iji)
+                scr_pain();
+            obj_sabot.raveflash2=1;
+            }
+        }
+    //Attack crumble
+    if (!attack){
+        scr_shakescreen(3);
+        attack=1;
+        if (tag==1){
+            with (obj_iosacrumble){
+                if (tag==1){
+                    if (image_single&lt;2)
+                        image_single+=1;
+                    else{
+                        instance_destroy();
+                        obj_terminal.sprite_index=spr_terminal;
+                        obj_terminal.cracked=0;
+                        repeat(30-global.specialbake*20){
+                            tempid=instance_create(x+random(192),y+random(32),obj_scrapwhite);
+                            tempid.speed=random(12);
+                            tempid.direction=random(360);
+                            }
+                        }
+                    }
+                }
+            }
+        if (tag==2){
+            with (obj_iosacrumble){
+                if (tag==2){
+                    if (image_single&lt;2)
+                        image_single+=1;
+                    else{
+                        instance_destroy();
+                        obj_terminal.sprite_index=spr_terminal;
+                        obj_terminal.cracked=0;
+                        repeat(30-global.specialbake*20){
+                            tempid=instance_create(x+random(192),y+random(32),obj_scrapwhite);
+                            tempid.speed=random(12);
+                            tempid.direction=random(360);
+                            }
+                        }
+                    }
+                }
+            }
+        if (place_meeting(x,y+96,obj_iosacrumble)){
+            repeat(50-global.specialbake*20)
+                instance_create(x+random(192),560+random(16),obj_iosastrikesmoke);
+            }
+        //Attack Iosa
+        if (!place_meeting(x,y+96,obj_iosacrumble)){
+            if (place_meeting(x,obj_iosa.y,obj_iosa)){
+                obj_sabot.raveflash2=0.5;
+                obj_iosa.hp-=40-global.difficulty*5;
+                obj_iosa.elecsmoke=90;
+                iosacreates=1;
+                }
+            //Attack Ansaksie
+            if (place_meeting(x,obj_ansaksie.y,obj_ansaksie)){
+                with (obj_ansaksie)
+                    scr_assassinpain(1);
+                }
+            //Strike floor
+            repeat(50-global.specialbake*30)
+                spawnstrikesmokes=1;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

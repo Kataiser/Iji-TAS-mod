@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (sprite_index==spr_iosa_bodyleft){
+//Basic
+if (!holdit)
+basiccyc+=1;
+if (basiccyc==10)
+    basicbob=-1;
+if (basiccyc==15)
+    basicbob=-2;
+if (basiccyc==25)
+    basicbob=-1;
+if (basiccyc==30){
+    basicbob=0;
+    basiccyc=0;
+    }
+draw_sprite(spr_iosa_bodyleft,0,x,y)
+draw_sprite(spr_iosa_armsleft,0,x,y+basicbob);
+/*else{
+laughcyc+=1;
+if (laughcyc==2)
+    laughbob=-1;
+if (laughcyc==4)
+    laughbob=-2;
+if (laughcyc==10)
+    laughbob=-1;
+if (laughcyc==12){
+    laughbob=0;
+    laughcyc=0;
+    }
+draw_sprite(spr_iosa_bodyleft,0,x,y)
+draw_sprite(spr_iosa_armsleft,0,x,y+laughbob);
+}*/
+}
+else
+    draw_sprite(sprite_index,image_single,x,y);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_horse" type="RESOURCE"/>
+  <resource name="obj_horse2" type="RESOURCE"/>
+  <resource name="obj_horsebegin" type="RESOURCE"/>
+  <resource name="obj_horsebeginbg" type="RESOURCE"/>
+  <resource name="obj_silentexplospewer" type="RESOURCE"/>
+  <resource name="obj_horseenter" type="RESOURCE"/>
+  <resource name="obj_horseexit" type="RESOURCE"/>
+  <resource name="obj_horseflip" type="RESOURCE"/>
+  <resource name="obj_horseflip2" type="RESOURCE"/>
+  <resource name="obj_horseshot" type="RESOURCE"/>
+  <resource name="obj_horsepup" type="RESOURCE"/>
+  <resource name="obj_horsecoin" type="RESOURCE"/>
+  <resource name="obj_horseenemy" type="RESOURCE"/>
+  <resource name="obj_horseeshot" type="RESOURCE"/>
+  <resource name="obj_horsepoints" type="RESOURCE"/>
+  <resource name="obj_horseexplo" type="RESOURCE"/>
+  <resource name="obj_horseexplospewer" type="RESOURCE"/>
+  <resource name="obj_horsestars" type="RESOURCE"/>
+  <resource name="obj_horseblocker" type="RESOURCE"/>
+</resources>

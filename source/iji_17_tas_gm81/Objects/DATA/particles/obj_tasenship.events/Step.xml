@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.sector==5 || global.sector==12 || global.sector==7){
+    temprand=random(1);
+    if (temprand&lt;0.08)
+    instance_create(x-5+random(40),y+random(15),obj_distantexplosion);
+    }
+
+cycle+=0.05;
+if (cycle&gt;=bob){
+    cycle=0;
+    bob2+=1;
+    if (bob2==1)
+        y+=1;
+    if (bob2==3)
+        y-=1;
+    if (bob2==4)
+        y-=1;
+    if (bob2==6){
+        y+=1;
+        bob2=0;
+        }
+    }
+
+//crash
+if (global.sector==5 || global.sector==12 || global.sector==7){
+    temprand=random(1);
+    if (temprand&lt;0.0002 &amp;&amp; obj_sabot.crashedships&lt;30 &amp;&amp; !crashing){
+        if (x&gt;obj_sabot.x &amp;&amp; x&lt;obj_sabot.x+800 &amp;&amp; y&gt;obj_sabot.y &amp;&amp; y&lt;obj_sabot.y+600){
+            alarm[0]=60;
+            gravity=0.01;
+            crashing=1;
+            obj_sabot.crashedships+=1;
+            instance_create(x+14,y+8,obj_distantexplospewer);
+            }
+        }
+    if (crashing)
+        (instance_create(x-5+random(40),y+random(15),obj_distantexplosion)).image_index=0;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

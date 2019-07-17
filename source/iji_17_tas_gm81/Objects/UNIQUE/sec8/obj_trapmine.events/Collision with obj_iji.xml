@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.state==1 &amp;&amp; !global.ignoreall){
+global.ignoreall=1;
+with (other){
+timeline_index=tim_getribbon;
+timeline_running=true;
+timeline_position=0;
+with (obj_visioncheck)
+    instance_destroy();
+with (obj_visionchecke)
+    instance_destroy();
+}
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

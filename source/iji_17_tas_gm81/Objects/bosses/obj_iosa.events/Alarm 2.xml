@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Choose target
+//Only turn to Ansaksie if she's behind Iosa relative to Iji
+targrand=random(1);
+if (targrand&lt;0.6 &amp;&amp; global.specialtriggerb2==1 &amp;&amp; instance_number(obj_ansaksie)&gt;0 &amp;&amp; obj_ansaksie.visible){
+    if ((obj_ansaksie.x&lt;x+50 &amp;&amp; obj_iji.x&gt;x+50) || (obj_ansaksie.x&gt;x+50 &amp;&amp; obj_iji.x&lt;x+50))
+    target=obj_ansaksie.id;
+    }
+else
+    target=obj_iji.id;
+if (!instance_exists(target)){
+    angry=0;
+    alarm[2]=0;
+    alarm[6]=0;
+    alarm[7]=0;
+    state=0;
+    firingrocket=0;
+    firingmpfb=0;
+    firingplasma=0;
+    firingthor=0;
+    firingcrawler=0;
+    idling=0;
+    calmdown=1;
+    if (facing==0)
+        sprite_index=spr_iosa_bodyleft;
+    else
+        sprite_index=spr_iosa_body;
+    image_single=0;
+    exit;
+    }
+
+if (global.hp&lt;=0){
+    state=0;
+    exit;
+    }
+
+//Begin taking action
+//Rocket has fired, Destroy or walk
+if (firingrocket==1){
+    if (facing==0 &amp;&amp; place_meeting(x-32,y+96,target) &amp;&amp; place_free(x-128,y-96) &amp;&amp; !target.takingpain &amp;&amp; !target.ansaksie){
+        timeline_index=tim_destroy;
+        timeline_running=true;
+        timeline_position=0;
+        }
+    else if (facing==1 &amp;&amp; place_meeting(x+32,y+96,target) &amp;&amp; place_free(x+128,y-96) &amp;&amp; !target.takingpain &amp;&amp; !target.ansaksie){
+        timeline_index=tim_destroy;
+        timeline_running=true;
+        timeline_position=0;
+        }
+    else if (idling&lt;=4){
+        state=1;
+        image_single=0;
+        alarm[2]=24;
+        firingrocket=0;
+        idling+=1;
+        if (x+50&gt;target.x){
+            facing=0;
+            sprite_index=spr_iosa_walkleft;
+            }
+        else{
+            facing=1;
+            sprite_index=spr_iosa_walk;
+            }
+        exit;
+        }
+    }
+//Rand
+randomstate=random(1);
+//Angry
+if (angry==1){
+    state=1;
+    //Face target
+    if (x+50&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+
+    //Too much idling (aggression)
+    if (idling&gt;=4){
+        randomstate=random(0.7)+0.3;
+        idling=0;
+        }
+    //Destroy, Walk
+    if (randomstate&lt;0.3){
+        if (facing==0 &amp;&amp; place_meeting(x-32,y+96,target) &amp;&amp; place_free(x-128,y-96) &amp;&amp; !target.takingpain &amp;&amp; !target.ansaksie){
+            timeline_index=tim_destroy;
+            timeline_running=true;
+            timeline_position=0;
+            }
+        else if (facing==1 &amp;&amp; place_meeting(x+32,y+96,target) &amp;&amp; place_free(x+128,y-96) &amp;&amp; !target.takingpain &amp;&amp; !target.ansaksie){
+            timeline_index=tim_destroy;
+            timeline_running=true;
+            timeline_position=0;
+            }
+
+        else{
+            image_single=0;
+            state=1;
+            idling+=1;
+            alarm[2]=24;
+            if (x&lt;832)
+                facing=1;
+            if (x&gt;1408)
+                facing=0;
+            if (facing==0)
+                sprite_index=spr_iosa_walkleft;
+            else
+                sprite_index=spr_iosa_walk;
+            }
+        }
+    //Fire
+    else if (randomstate&gt;=0.3 &amp;&amp; randomstate&lt;0.6 &amp;&amp; abs((x+50)-target.x)&lt;192){
+        if (abs(target.y-y)&lt;128){
+            image_single=0;
+            firingthor=0;
+            idling=0;
+            alarm[2]=30+random(30);
+            state=2;
+            if (facing==0)
+                sprite_index=spr_iosa_fireleft;
+            else
+                sprite_index=spr_iosa_fire;
+            }
+        else{
+            image_single=0;
+            state=1;
+            idling+=1;
+            alarm[2]=24;
+            if (x&lt;832)
+                facing=1;
+            if (x&gt;1408)
+                facing=0;
+            if (facing==0)
+                sprite_index=spr_iosa_walkleft;
+            else
+                sprite_index=spr_iosa_walk;
+            }
+        }
+    //Charge a projectile attack
+    else if (randomstate&gt;=0.6 &amp;&amp; abs(y+50-target.y)&lt;192){
+        idling=0;
+        if (!oops &amp;&amp; place_free(x+16,y-32) &amp;&amp; place_free(x+32,y-32) &amp;&amp; place_free(x+48,y-32) &amp;&amp; place_free(x+64,y-32) &amp;&amp; place_free(x+80,y-32) &amp;&amp; place_free(x+96,y-32) &amp;&amp; x+50&lt;=target.x){
+            tempid=instance_create(x+124,y+100,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            sprite_index=spr_iosa_body;
+            alarm[6]=20;
+            firingrocket=1;
+            //Decide crawler
+            /*
+            if (hp&lt;=350 &amp;&amp; firedcrawler[0]==0){
+                firedcrawler[0]=1;
+                crawlernow=1;
+                crawlerfast=0;
+                }
+            */
+            if (hp&lt;=300 &amp;&amp; firedcrawler[1]==0){
+                firedcrawler[1]=1;
+                crawlernow=1;
+                crawlerfast=1;
+                }
+            else if (hp&lt;=200 &amp;&amp; firedcrawler[2]==0 &amp;&amp; global.difficulty&gt;=1){
+                firedcrawler[2]=1;
+                crawlernow=1;
+                crawlerfast=2;
+                }
+            else if (hp&lt;=150 &amp;&amp; firedcrawler[3]==0 &amp;&amp; global.difficulty==2){
+                firedcrawler[3]=1;
+                crawlernow=1;
+                crawlerfast=3;
+                }
+            //Crawler
+            if (crawlernow){
+                crawlernow=0;
+                firingthor=0;
+                firingplasma=0;
+                firingmpfb=0;
+                firingcrawler=1;
+                alarm[2]=23;
+                alarm[6]=20;
+                scr_sound("tor_gather");
+                scr_iosaholdstill();
+                }
+            //Thor
+            else if (randomstate&gt;=0.95 &amp;&amp; hp&gt;200 &amp;&amp; waitforthor==0){
+                if (hp&gt;300)
+                    scr_sound("ios_ambient5");
+                else if (hp&gt;250)
+                    scr_sound("ios_ambient2");
+                else
+                    scr_sound("ios_pain");
+                waitforthor=600;
+                sprite_index=spr_iosa_fire;
+                firingthor=1;
+                firingplasma=0;
+                firingmpfb=0;
+                firingcrawler=0;
+                alarm[6]=45;
+                thorcount=10;
+                //thorcount=10+global.difficulty*15;
+                }
+            //Plasma
+            else if (randomstate&gt;=0.9 &amp;&amp; abs((x+50)-obj_iji.x)&lt;350){
+                firingthor=0;
+                firingplasma=1;
+                firingmpfb=0;
+                firingcrawler=0;
+                alarm[2]=23;
+                alarm[6]=20;
+                scr_sound("tor_gather");
+                scr_iosaholdstill();
+                }
+            //MPFB
+            else if (randomstate&gt;=0.8){
+                firingthor=0;
+                firingplasma=0;
+                firingmpfb=1;
+                firingcrawler=0;
+                alarm[2]=23;
+                alarm[6]=20;
+                scr_sound("tor_gather");
+                scr_iosaholdstill();
+                }
+            //Shocksplinter
+            else{
+                firingthor=0;
+                firingplasma=0;
+                firingmpfb=0;
+                firingcrawler=0;
+                shockcount=3+global.difficulty;
+                scr_sound("wea_charge");
+                scr_iosaholdstill();
+                }
+            }
+        else if (!oops &amp;&amp; place_free(x-16,y-32) &amp;&amp; place_free(x-32,y-32) &amp;&amp; place_free(x-48,y-32) &amp;&amp; place_free(x-64,y-32) &amp;&amp; place_free(x-80,y-32) &amp;&amp; place_free(x-96,y-32) &amp;&amp; x+50&gt;target.x){
+            tempid=instance_create(x-24,y+100,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            sprite_index=spr_iosa_bodyleft;
+            alarm[6]=20;
+            firingrocket=1;
+            //Decide crawler
+            /*
+            if (hp&lt;=350 &amp;&amp; firedcrawler[0]==0){
+                firedcrawler[0]=1;
+                crawlernow=1;
+                crawlerfast=0;
+                }
+            */
+            if (hp&lt;=300 &amp;&amp; firedcrawler[1]==0){
+                firedcrawler[1]=1;
+                crawlernow=1;
+                crawlerfast=1;
+                }
+            else if (hp&lt;=200 &amp;&amp; firedcrawler[2]==0 &amp;&amp; global.difficulty&gt;=1){
+                firedcrawler[2]=1;
+                crawlernow=1;
+                crawlerfast=2;
+                }
+            else if (hp&lt;=150 &amp;&amp; firedcrawler[3]==0 &amp;&amp; global.difficulty==2){
+                firedcrawler[3]=1;
+                crawlernow=1;
+                crawlerfast=3;
+                }
+            //Crawler
+            if (crawlernow){
+                crawlernow=0;
+                firingthor=0;
+                firingplasma=0;
+                firingmpfb=0;
+                firingcrawler=1;
+                alarm[2]=23;
+                alarm[6]=20;
+                scr_sound("tor_gather");
+                scr_iosaholdstill();
+                }
+            //Thor
+            else if (randomstate&gt;=0.95 &amp;&amp; hp&gt;200 &amp;&amp; waitforthor==0){
+                if (hp&gt;300)
+                    scr_sound("ios_ambient5");
+                else if (hp&gt;250)
+                    scr_sound("ios_ambient2");
+                else
+                    scr_sound("ios_pain");
+                waitforthor=600;
+                sprite_index=spr_iosa_fireleft;
+                firingthor=1;
+                firingplasma=0;
+                firingmpfb=0;
+                firingcrawler=0;
+                alarm[6]=45;
+                thorcount=10;
+                }
+            //Plasma
+            else if (randomstate&gt;=0.9 &amp;&amp; abs((x+50)-obj_iji.x)&lt;350){
+                firingthor=0;
+                firingplasma=1;
+                firingmpfb=0;
+                firingcrawler=0;
+                alarm[2]=23;
+                alarm[6]=20;
+                scr_sound("tor_gather");
+                scr_iosaholdstill();
+                }
+            //MPFB
+            else if (randomstate&gt;=0.8){
+                firingthor=0;
+                firingplasma=0;
+                firingmpfb=1;
+                firingcrawler=0;
+                alarm[2]=23;
+                alarm[6]=20;
+                scr_sound("tor_gather");
+                scr_iosaholdstill();
+                }
+            //Shocksplinter
+            else{
+                firingthor=0;
+                firingplasma=0;
+                firingmpfb=0;
+                firingcrawler=0;
+                shockcount=3+global.difficulty;
+                scr_sound("wea_charge");
+                scr_iosaholdstill();
+                }
+            }
+        //Rocket test failed, just walk
+        else{
+            image_single=0;
+            state=1;
+            idling+=1;
+            alarm[2]=24;
+            if (x&lt;832)
+                facing=1;
+            if (x&gt;1408)
+                facing=0;
+            if (facing==0)
+                sprite_index=spr_iosa_walkleft;
+            else
+                sprite_index=spr_iosa_walk;
+            }
+        }
+    //Nothing done, just walk
+    else if (destroy==0){
+        image_single=0;
+        state=1;
+        idling+=1;
+        alarm[2]=24;
+        if (x&lt;832)
+            facing=1;
+        if (x&gt;1408)
+            facing=0;
+        if (facing==0)
+            sprite_index=spr_iosa_walkleft;
+        else
+            sprite_index=spr_iosa_walk;
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (distance_to_object(obj_asha)&gt;100)
+    instance_destroy();
+direction=point_direction(x,y,obj_asha.x+15,obj_asha.y+50);
+direction+=180;
+speed=random(16)+2;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

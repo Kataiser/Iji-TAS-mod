@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pulse">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (visible){
+if (other.hyper==1 &amp;&amp; armor&lt;=maxarmor/3){
+    if (global.voc_glo_kick==0)
+        scr_sound("glo_kick");
+    scr_shakescreen(1);
+    if (other.hspeed&lt;0)
+        scr_turretkick(1);
+    else
+        scr_turretkick(2);
+    }
+with (other){
+    scr_pulseexplosion();
+    instance_destroy();
+    }
+if (angry==0 &amp;&amp; sprite_index==spr_turret){
+    alarm[2]=30;
+    scr_turretchargetell();
+    tempid=instance_create(x+6,y+8,obj_visionchecke)
+    tempid.direction=0;
+    tempid.speed=16;
+    tempid=instance_create(x+6,y+8,obj_visionchecke)
+    tempid.direction=180;
+    tempid.speed=16;
+    }
+global.truce=0;
+angry=1;
+alarm[3]=300;
+if (!other.linker)
+    armor-=2*global.atmult;
+}
+if (other.linker)
+    scr_pulselink(2);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

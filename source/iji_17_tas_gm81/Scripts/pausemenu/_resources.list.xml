@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_pausecreate" type="RESOURCE"/>
+  <resource name="scr_pausemenudraw" type="RESOURCE"/>
+  <resource name="scr_pausemenutext" type="RESOURCE"/>
+  <resource name="scr_pauseselection" type="RESOURCE"/>
+  <resource name="scr_pausefulltexts" type="RESOURCE"/>
+  <resource name="scr_pausemenuescape" type="RESOURCE"/>
+</resources>

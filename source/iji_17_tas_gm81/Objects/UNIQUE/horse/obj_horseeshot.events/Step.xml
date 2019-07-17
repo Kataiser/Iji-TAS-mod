@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (mpfb){
+    if (x+hspeed&lt;=8400)
+        hspeed=abs(hspeed);
+    else if (x+hspeed&gt;=8944)
+        hspeed=-abs(hspeed);
+    if (y+vspeed&lt;=2096)
+        vspeed=abs(vspeed);
+    else if (y+vspeed&gt;=2588)
+        vspeed=-abs(vspeed);
+    }
+else{
+    if (!place_free(x+hspeed,y+vspeed))
+        instance_destroy();
+    if (x&lt;obj_sabot.x-404 || x&gt;obj_sabot.x+396 || y&lt;obj_sabot.y-304 || y&gt;obj_sabot.y+296)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

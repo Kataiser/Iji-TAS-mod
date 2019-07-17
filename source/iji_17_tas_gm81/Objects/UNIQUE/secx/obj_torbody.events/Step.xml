@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Holdgun
+if (sprite_index==spr_torbody_holdgun &amp;&amp; !nobob){
+imagecyc+=1;
+if (imagecyc==4)
+image_single=1;
+if (imagecyc==8)
+image_single=2;
+if (imagecyc==16)
+image_single=1;
+if (imagecyc==20)
+image_single=0;
+if (imagecyc==24)
+    imagecyc=0;
+    }
+
+//Jump
+if (sparkcyc&gt;0){
+    sparkcyc-=2;
+    repeat(sparkcyc){
+        tempid=instance_create(x+random(100),y+random(125),obj_thorspark);
+        tempid.speed=0;
+        tempid.gravity=0.25;
+        }
+    }
+
+if (vspeed&lt;-1){
+    vspeed*=0.90;
+    }
+else
+    vspeed=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

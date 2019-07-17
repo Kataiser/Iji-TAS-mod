@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="0">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">global.specialtrigger1=1;
+with (obj_trigger)
+    instance_destroy();
+instance_create(obj_dan.x+32,obj_dan.y,obj_megaflash);
+obj_dan.image_single=-1;
+obj_dan.image_speed=0.5;
+obj_dan.sprite_index=spr_dan_fall;
+obj_dan.image_index=0;
+with (obj_sabot)
+    scr_music("mus_lightstroke");</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="16">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_dan.image_single=7;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="46">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.instantend=1;
+instance_create(obj_iji.x,obj_iji.y,obj_end);</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

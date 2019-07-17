@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">cyc-=1+global.specialbake;
+if (cyc&lt;=0)
+    instance_destroy();
+
+y1-=cyc*cyc*0.15;
+
+if (cyc&lt;15)
+    cyc2+=3;
+y3-=cyc2;
+if (cyc&lt;15)
+    cyc3+=2+cyc-8.3;
+y2-=cyc3;
+y4-=cyc3;
+
+x2+=3.15;
+x4-=3.15;
+
+draw_set_color(make_color_rgb(255,55+cyc*10,55+cyc*10));
+draw_primitive_begin(pr_trianglefan);
+draw_vertex(x+x1,y+y1);
+draw_vertex(x+x2,y+y2);
+draw_vertex(x+x3,y+y3);
+draw_vertex(x+x4,y+y4);
+draw_primitive_end();
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

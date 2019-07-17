@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_herogoal">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_herosabot){
+    level+=1;
+    if (level==9){
+        level=0;
+        if (skill&lt;242)
+            skill+=1;
+        if (skill2==1)
+            skill2=3;
+        }
+    scr_herospawnlevel();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

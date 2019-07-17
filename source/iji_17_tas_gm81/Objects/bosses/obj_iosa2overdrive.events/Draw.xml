@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">attack+=1;
+if (attack&gt;=3){
+    attack=0;
+    scr_sound("glo_swipe");
+    }
+
+rand1=rand3;
+rand2=rand4;
+rand3=floor(random(10));
+rand4=floor(random(10));
+
+count=0;
+while (rand3==rand1 || rand3==rand2 || count&gt;1000){
+count+=1;
+rand3=floor(random(10));
+}
+count=0;
+while (rand4==rand1 || rand4==rand2 || rand4==rand3 || count&gt;1000){
+count+=1;
+rand4=floor(random(10));
+}
+if (rand1==0 || rand2==0) draw_sprite(sprite_index,0,x,y)
+if (rand1==1 || rand2==1) draw_sprite(sprite_index,1,x,y)
+if (rand1==2 || rand2==2) draw_sprite(sprite_index,2,x,y)
+if (rand1==3 || rand2==3) draw_sprite(sprite_index,3,x,y)
+if (rand1==4 || rand2==4) draw_sprite(sprite_index,4,x,y)
+if (rand1==5 || rand2==5) draw_sprite(sprite_index,5,x,y)
+if (rand1==6 || rand2==6) draw_sprite(sprite_index,6,x,y)
+if (rand1==7 || rand2==7) draw_sprite(sprite_index,7,x,y)
+if (rand1==8 || rand2==8) draw_sprite(sprite_index,8,x,y)
+if (rand1==9 || rand2==9) draw_sprite(sprite_index,9,x,y)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

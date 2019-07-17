@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (dir==0){
+    draw_set_color(c_white);
+    draw_primitive_begin(pr_linestrip);
+    draw_vertex(x-16,y-16);
+    draw_vertex(x-16,y+16);
+    draw_vertex(x+16,y);
+    draw_vertex(x-16,y-16);
+    draw_primitive_end();
+    }
+else if (dir==1){
+    draw_set_color(c_white);
+    draw_primitive_begin(pr_linestrip);
+    draw_vertex(x-16,y+16);
+    draw_vertex(x+16,y+16);
+    draw_vertex(x,y-16);
+    draw_vertex(x-16,y+16);
+    draw_primitive_end();
+    }
+else if (dir==2){
+    draw_set_color(c_white);
+    draw_primitive_begin(pr_linestrip);
+    draw_vertex(x+16,y+16);
+    draw_vertex(x+16,y-16);
+    draw_vertex(x-16,y);
+    draw_vertex(x+16,y+16);
+    draw_primitive_end();
+    }
+else if (dir==3){
+    draw_set_color(c_white);
+    draw_primitive_begin(pr_linestrip);
+    draw_vertex(x-16,y-16);
+    draw_vertex(x+16,y-16);
+    draw_vertex(x,y+16);
+    draw_vertex(x-16,y-16);
+    draw_primitive_end();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

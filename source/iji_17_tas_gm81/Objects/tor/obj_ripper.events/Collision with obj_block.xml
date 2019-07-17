@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_block">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">move_contact_solid(270,100);
+if (direction==244){
+    if (!obj_tortrigger.slowdowned)
+        instance_create(x-40,y+42,obj_ripper2);
+    instance_create(x-24,y-85,obj_ripper3);
+    }
+else{
+    if (!obj_tortrigger.slowdowned)
+        instance_create(x-52,y+36,obj_ripper2);
+    instance_create(x-42,y-93,obj_ripper32);
+    }
+instance_destroy();
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

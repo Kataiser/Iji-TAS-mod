@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_turret">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (speed&gt;8 &amp;&amp; other.kicked==0){
+    scr_sound("glo_kick");
+    script_execute(scr_shakescreen,1);
+    global.tempshred=abs(hspeed);
+    if (hspeed&lt;0){
+        with (other){
+            scr_turretkick(1,global.tempshred);
+            kicked=1;
+            alarm[7]=20;
+            }
+        }
+    else{
+        with (other){
+            scr_turretkick(2,global.tempshred);
+            kicked=1;
+            alarm[7]=20;
+            }
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

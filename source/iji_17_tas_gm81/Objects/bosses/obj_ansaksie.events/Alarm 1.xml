@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Visibility time is up
+//Firing in pose 2
+if (sprite_index==spr_komatoassassin_pose2){
+    scr_sound("wea_plas");
+    scr_shakescreen(3);
+    tempid=instance_create(x+54,y+2,obj_enemyplasmatrace);
+    tempid.fromansaksie=1;
+    with(tempid)
+        scr_enemyplasmatrace(1);
+    tempid=instance_create(x+29,y+42,obj_enemyplasmatrace);
+    tempid.fromansaksie=1;
+    with(tempid)
+        scr_enemyplasmatrace(1);
+    }
+if (sprite_index==spr_komatoassassin_pose2left){
+    scr_sound("wea_plas");
+    scr_shakescreen(3);
+    tempid=instance_create(x-21,y+2,obj_enemyplasmatrace);
+    tempid.fromansaksie=1;
+    with(tempid)
+        scr_enemyplasmatrace(0);
+    tempid=instance_create(x+4,y+42,obj_enemyplasmatrace);
+    tempid.fromansaksie=1;
+    with(tempid)
+        scr_enemyplasmatrace(0);
+    }
+//Firing Massacre
+if (sprite_index==spr_komatoassassin_massacre){
+    scr_shakescreen(4);
+    scr_sound("wea_nuke");
+    scr_sound("wea_plas");
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    repeat(12)
+        (instance_create(x+40,y+5,obj_massprojectile)).dir=1;
+    }
+if (sprite_index==spr_komatoassassin_massacreleft){
+    scr_shakescreen(4);
+    scr_sound("wea_nuke");
+    scr_sound("wea_plas");
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    repeat(12)
+        (instance_create(x-15,y+5,obj_massprojectile)).dir=0;
+    }
+
+alarm[2]=random(10)+10;
+instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+visible=0;
+image_single=0;
+image_index=0;
+sprite_index=spr_komatoassassin_basic;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

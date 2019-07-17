@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (type==5){
+    draw_sprite(spr_proxima_body,img,floor(x),floor(y));
+    draw_sprite(spr_proxima_streams,streamimg,floor(x-64),floor(y-64));
+    if (whitened&gt;0)
+        whitened-=1;
+    if (temphp&lt;temphpprev &amp;&amp; whitened==0){
+        whitened=2;
+        draw_set_color(c_white);
+        draw_circle(floor(x),floor(y),66,0);
+        }
+    temphpprev=temphp;
+    draw_set_color(c_white);
+    draw_circle(floor(x),floor(y),20,0);
+    draw_set_color(c_black);
+    lookx=cos(degtorad(point_direction(x,y,obj_sabot.lastx,obj_sabot.lasty)))*11;
+    looky=-sin(degtorad(point_direction(x,y,obj_sabot.lastx,obj_sabot.lasty)))*11;
+    draw_circle(floor(x+lookx),floor(y+looky),10,0);
+    }
+else{
+    if (hp&lt;hpprev)
+        draw_sprite(spr_nerd,6,floor(x-2+random(4)),floor(y-2+random(4)));
+    else
+        draw_sprite(spr_nerd,type,floor(x),floor(y));
+    hpprev=hp;
+    eyex=x+cos(degtorad(point_direction(x,y,obj_sabot.lastx,obj_sabot.lasty)))*2;
+    eyey=y-sin(degtorad(point_direction(x,y,obj_sabot.lastx,obj_sabot.lasty)))*2;
+    draw_sprite(spr_nerd,5,floor(eyex),floor(eyey));
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

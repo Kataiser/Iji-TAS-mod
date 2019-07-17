@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_proxima_open" type="RESOURCE"/>
+  <resource name="spr_proxima_body" type="RESOURCE"/>
+  <resource name="spr_proxima_streams" type="RESOURCE"/>
+  <resource name="spr_proxima_wavedown" type="RESOURCE"/>
+  <resource name="spr_proxima_wavedown2" type="RESOURCE"/>
+  <resource name="spr_proxima_waveright" type="RESOURCE"/>
+  <resource name="spr_proxima_waveup" type="RESOURCE"/>
+  <resource name="spr_proxima_waveup2" type="RESOURCE"/>
+  <resource name="spr_proxima_waveleft" type="RESOURCE"/>
+  <resource name="spr_rockethail" type="RESOURCE"/>
+  <resource name="spr_electropad" type="RESOURCE"/>
+  <resource name="spr_electropad2" type="RESOURCE"/>
+  <resource name="spr_electropadbox" type="RESOURCE"/>
+  <resource name="spr_proximause" type="RESOURCE"/>
+</resources>

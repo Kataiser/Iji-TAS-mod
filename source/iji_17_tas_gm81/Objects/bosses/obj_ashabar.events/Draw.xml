@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (yadjust&lt;0 &amp;&amp; obj_asha.hp&gt;0)
+yadjust+=8;
+
+x=floor(x);
+y=floor(y);
+
+if (!global.specialbake){
+draw_set_color(c_black);
+draw_rectangle(x-originalwidth-1,y-1,x+originalwidth,y+15,0);
+draw_set_color(c_white);
+draw_rectangle(x-originalwidth-1,y-1,x+originalwidth,y+15,1);
+}
+draw_sprite(spr_bossnames,1,x,y-10);
+
+if (obj_asha.hp&gt;0){
+if (!global.specialbake){
+    width=(obj_asha.hp)*2;
+    draw_sprite_stretched(sprite_index,image_index,x-width,y,width*2,15);
+    }
+else{
+    draw_sprite(spr_hpbarback,9,x-81,y);
+    draw_sprite(spr_hpbar,ceil((obj_asha.hp/obj_asha.maxhp)*20),x-80,y);
+    }
+}
+
+if (obj_asha.hp&lt;=0){
+    yadjust-=8;
+    if (yadjust&lt;-64)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Plasma cannon
+scr_shakescreen(3);
+firingplasma=0;
+scr_sound("wea_plas");
+if (facing==0){
+    tempid=instance_create(x-24,y+100,obj_plasmatrace);
+    tempid.target=id;
+    sprite_index=spr_komatoannihilator_fireleft;
+    }
+else{
+    tempid=instance_create(x+124,y+100,obj_plasmatrace);
+    tempid.target=id;
+    sprite_index=spr_komatoannihilator_fire;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

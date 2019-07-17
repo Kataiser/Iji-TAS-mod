@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (x&lt;4000 || x&gt;6080 || y&gt;1880 || !place_free(x,y))
+    instance_destroy();
+else if (y&gt;1600 &amp;&amp; x&gt;5312 &amp;&amp; x&lt;5568)
+    instance_destroy();
+else if (y&gt;1568 &amp;&amp; x&lt;4608)
+    instance_destroy();
+else if (y&gt;1792 &amp;&amp; x&lt;4768)
+    instance_destroy();
+else{
+    cyc=3+floor(random(6));
+    alarm[0]=2;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

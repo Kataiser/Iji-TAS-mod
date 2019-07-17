@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (x&gt;-96 &amp;&amp; x&lt;896 &amp;&amp; y&gt;-96 &amp;&amp; y&lt;696){
+rf=distance_to_point(400,300)/2-40;
+if (rf&lt;0)
+    rf=0;
+cd=distance_to_point(400,300)/2;
+if (cd&gt;255)
+    cd=255;
+draw_set_color(make_color_rgb(255-cd,255-cd,255-cd));
+draw_line(x+16+random(rf)-(rf/2),y+32+random(rf)-(rf/2),x+16+random(rf)-(rf/2),y-32+random(rf)-(rf/2));
+draw_line(x+16+random(rf)-(rf/2),y-32+random(rf)-(rf/2),x+32+random(rf)-(rf/2),y-16+random(rf)-(rf/2));
+draw_line(x+32+random(rf)-(rf/2),y-16+random(rf)-(rf/2),x-32+random(rf)-(rf/2),y-16+random(rf)-(rf/2));
+draw_line(x-32+random(rf)-(rf/2),y-16+random(rf)-(rf/2),x-16+random(rf)-(rf/2),y-32+random(rf)-(rf/2));
+draw_line(x-16+random(rf)-(rf/2),y-32+random(rf)-(rf/2),x-16+random(rf)-(rf/2),y+32+random(rf)-(rf/2));
+draw_line(x-16+random(rf)-(rf/2),y+32+random(rf)-(rf/2),x-32+random(rf)-(rf/2),y+16+random(rf)-(rf/2));
+draw_line(x-32+random(rf)-(rf/2),y+16+random(rf)-(rf/2),x+32+random(rf)-(rf/2),y+16+random(rf)-(rf/2));
+draw_line(x+32+random(rf)-(rf/2),y+16+random(rf)-(rf/2),x+16+random(rf)-(rf/2),y+32+random(rf)-(rf/2));
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

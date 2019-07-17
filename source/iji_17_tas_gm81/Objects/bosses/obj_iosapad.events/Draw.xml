@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_sprite(sprite_index,0,x,y);
+
+if (trip &amp;&amp; !place_meeting(x,y+96,obj_iosacrumble))
+    trip=0;
+
+if (charge&gt;=75){
+    //Draw
+    if (!place_meeting(x,y+96,obj_iosacrumble))
+        yadjust=288;
+    else
+        yadjust=0;
+    sizecyc-=0.22;
+    size+=sizecyc;
+    pensize=8+size;
+    draw_set_color(c_blue);
+    adjust=0;
+    repeat(6){
+        draw_line_width(x+16+32*adjust,y+11,x+16+32*adjust,y+96+yadjust,pensize);
+        adjust+=1;
+        }
+    pensize=6+size;
+    draw_set_color(c_teal);
+    adjust=0;
+    repeat(6){
+        draw_line_width(x+16+32*adjust,y+11,x+16+32*adjust,y+96+yadjust,pensize);
+        adjust+=1;
+        }
+    pensize=4+size;
+    draw_set_color(c_white);
+    adjust=0;
+    repeat(6){
+        draw_line_width(x+16+32*adjust,y+11,x+16+32*adjust,y+96+yadjust,pensize);
+        adjust+=1;
+        }
+    //Reset
+    elecing+=1;
+    if (elecing&gt;=15 || resetme){
+        resetme=0;
+        trip=0;
+        charge=0;
+        elecing=0;
+        attack=0;
+        sizecyc=1.6;
+        size=0;
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

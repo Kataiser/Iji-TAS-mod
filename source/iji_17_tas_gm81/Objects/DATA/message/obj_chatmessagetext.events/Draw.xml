@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Text
+if (page&gt;=0){
+    //scramble the text here
+    if (global.scrambler){
+        if (global.textid!="text403" &amp;&amp; global.textid!="text605" &amp;&amp; global.textid!="chat47_1" &amp;&amp; global.textid!="chat47_2" &amp;&amp; global.textid!="chat63_1" &amp;&amp; global.textid!="chat63_2"){
+            if (page!=prevpage)
+                scrambled=0;
+            prevpage=page;
+            if (instance_number(obj_chat)==0)
+                global.scramblefactor=1;
+            if (!scrambled){
+                scrambled=1;
+                scr_scramble();
+                }
+            }
+        }
+    draw_set_font(global.fontgreen);
+    draw_set_color(c_white);
+    draw_text_ext(10,483+firstscroll*48,text[page],28,793);
+    }
+
+if (!global.specialbake){
+//Outline
+if (outline=0) //Neutral
+    draw_set_color(make_color_rgb(140,140,140));
+if (outline=1) //Iji
+    draw_set_color(make_color_rgb(80,180,80));
+if (outline=2) //Dan
+    draw_set_color(make_color_rgb(170,160,70));
+if (outline=3) //Tasen
+    draw_set_color(make_color_rgb(130,10,110));
+if (outline=4) //Komato
+    draw_set_color(make_color(30,130,190));
+draw_rectangle(1,473+firstscroll*48,798,598+firstscroll*48,1);
+draw_rectangle(3,475+firstscroll*48,796,596+firstscroll*48,1);
+if (outline=0) //Neutral light
+    draw_set_color(make_color_rgb(210,210,210));
+if (outline=1) //Iji light
+    draw_set_color(make_color_rgb(120,220,120));
+if (outline=2) //Dan light
+    draw_set_color(make_color_rgb(210,200,100));
+if (outline=3) //Tasen light
+    draw_set_color(make_color_rgb(210,20,190));
+if (outline=4) //Komato light
+    draw_set_color(make_color_rgb(40,170,230));
+draw_rectangle(2,474+firstscroll*48,797,597+firstscroll*48,1);
+}
+if (global.scrambler)
+    draw_sprite(spr_scramblertext,0,0,469+firstscroll*48);
+
+//Firstscroll
+if (firstscroll==1)
+    firstscroll=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

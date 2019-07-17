@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="76">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">///Load savestate
+state_filename_load = get_open_filename("STATE file|*.state", "");
+if (state_filename_load != "") {
+    instance_activate_object(obj_tas);
+    ds_list_clear(obj_tas.held_keys);
+    paused = false;
+    game_load(state_filename_load);
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

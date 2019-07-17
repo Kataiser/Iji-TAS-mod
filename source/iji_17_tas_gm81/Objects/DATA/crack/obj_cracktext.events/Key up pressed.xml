@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="38">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.cracking){
+if (global.yourow&gt;0){
+    if (global.nodes[global.yourow-1,global.youcol]==1){
+        global.erasetop=0;
+        global.topmessage="CRACKING FAILED";
+        script_execute(scr_crackfail);
+        global.cracking=0;
+        }
+    else if (global.nodes[global.yourow-1,global.youcol]==3)
+        scr_cracksuccess();
+    else
+        scr_sound("glo_cracktick");
+    global.nodes[global.yourow,global.youcol]=1;
+    global.yourow-=1;
+    global.nodes[global.yourow,global.youcol]=2;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

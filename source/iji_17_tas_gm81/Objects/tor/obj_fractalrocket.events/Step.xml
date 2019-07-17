@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (type==0 &amp;&amp; x&lt;xstart-150){
+if (obj_tor.potency[7]==1){
+    instance_create(x,y,obj_megaflash);
+    scr_shakescreen(2);
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=90;
+    tempid.type=1;
+    tempid.image_single=2;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=270;
+    tempid.type=1;
+    tempid.image_single=6;
+    instance_destroy();
+    }
+if (obj_tor.potency[7]==2){
+    instance_create(x,y,obj_megaflash);
+    scr_shakescreen(2);
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=45;
+    tempid.type=1;
+    tempid.image_single=1;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=135;
+    tempid.type=1;
+    tempid.image_single=3;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=270;
+    tempid.type=1;
+    tempid.image_single=6;
+    instance_destroy();
+    }
+if (obj_tor.potency[7]==3){
+    instance_create(x,y,obj_megaflash);
+    scr_shakescreen(2);
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=90;
+    tempid.type=1;
+    tempid.image_single=2;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=225;
+    tempid.type=1;
+    tempid.image_single=5;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=315;
+    tempid.type=1;
+    tempid.image_single=7;
+    instance_destroy();
+    }
+if (obj_tor.potency[7]==4){
+    instance_create(x,y,obj_megaflash);
+    scr_shakescreen(2);
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=45;
+    tempid.type=1;
+    tempid.image_single=1;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=135;
+    tempid.type=1;
+    tempid.image_single=3;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=225;
+    tempid.type=1;
+    tempid.image_single=5;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=315;
+    tempid.type=1;
+    tempid.image_single=7;
+    instance_destroy();
+    }
+if (obj_tor.potency[7]&gt;=5){
+    instance_create(x,y,obj_megaflash);
+    scr_shakescreen(2);
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=45;
+    tempid.type=1;
+    tempid.image_single=1;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=135;
+    tempid.type=1;
+    tempid.image_single=3;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=225;
+    tempid.type=1;
+    tempid.image_single=5;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=315;
+    tempid.type=1;
+    tempid.image_single=7;
+    tempid=instance_create(x,y,obj_fractalrocket);
+    tempid.direction=90;
+    tempid.type=1;
+    tempid.image_single=2;
+    instance_destroy();
+    }
+}
+
+else if (type==1 &amp;&amp; y&lt;ystart-100){
+    instance_create(x,y,obj_megaflash);
+scr_shakescreen(2);
+tempid=instance_create(x,y,obj_fractalrocket);
+tempid.direction=180;
+tempid.type=2;
+tempid.image_single=4;
+tempid=instance_create(x,y,obj_fractalrocket);
+tempid.direction=270;
+tempid.type=2;
+tempid.image_single=6;
+instance_destroy();
+}
+
+else if (type==1 &amp;&amp; y&gt;ystart+150){
+    instance_create(x,y,obj_megaflash);
+scr_shakescreen(2);
+tempid=instance_create(x,y,obj_fractalrocket);
+tempid.direction=90;
+tempid.type=2;
+tempid.image_single=2;
+tempid=instance_create(x,y,obj_fractalrocket);
+tempid.direction=180;
+tempid.type=2;
+tempid.image_single=4;
+instance_destroy();
+}
+
+if (!obj_tortrigger.slowdowned){
+    (instance_create(x-1+random(2),y-1+random(2),obj_bigsmoke)).depth=2002;
+    }
+if (x&lt;100 || x&gt;1600 || y&lt;0 || y&gt;1000)
+    instance_destroy();
+
+if (!shift){
+    shift=1;
+    image_single+=8;
+    }
+else{
+    shift=0;
+    image_single-=8;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

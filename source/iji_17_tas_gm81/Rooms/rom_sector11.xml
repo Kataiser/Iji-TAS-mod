@@ -1,0 +1,4124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<room>
+  <caption>Iji - Press Alt+F4 to quit</caption>
+  <size height="3000" width="5000"/>
+  <grid>
+    <isometric>false</isometric>
+    <snap x="8" y="16"/>
+  </grid>
+  <speed>30</speed>
+  <persistent>false</persistent>
+  <creationCode/>
+  <backgroundColor>804600</backgroundColor>
+  <drawBackgroundColor>false</drawBackgroundColor>
+  <clearViewBackground>true</clearViewBackground>
+  <backgrounds>
+    <backgroundDef>
+      <visibleOnRoomStart>true</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage>bg_back3</backgroundImage>
+      <offset x="32" y="32"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+  </backgrounds>
+  <enableViews>true</enableViews>
+  <views>
+    <view>
+      <visibleOnRoomStart>true</visibleOnRoomStart>
+      <viewInRoom height="600" width="800" x="32" y="32"/>
+      <portOnScreen height="600" width="800" x="0" y="0"/>
+      <objectFollowing hBorder="400" hSpeed="-1" vBorder="300" vSpeed="-1">obj_shakescreen</objectFollowing>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+  </views>
+  <instances>
+    <instance>
+      <object>obj_cloudb</object>
+      <position x="2912" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudb</object>
+      <position x="2880" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudb</object>
+      <position x="2848" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudb</object>
+      <position x="2816" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudb</object>
+      <position x="2784" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudb</object>
+      <position x="2752" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudb</object>
+      <position x="2720" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudb</object>
+      <position x="2688" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudt</object>
+      <position x="2880" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudt</object>
+      <position x="2816" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudt</object>
+      <position x="2752" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudt</object>
+      <position x="2688" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudc</object>
+      <position x="2944" y="2176"/>
+      <creationCode>top=1;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudc</object>
+      <position x="2944" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudd</object>
+      <position x="2592" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cloudd</object>
+      <position x="2624" y="2240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_bgspeaker</object>
+      <position x="2624" y="2368"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_bgspeaker</object>
+      <position x="2912" y="2368"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_bgspeaker</object>
+      <position x="3200" y="2368"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_tasenship</object>
+      <position x="2705" y="2287"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_tasenship</object>
+      <position x="2742" y="2300"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_tasenship</object>
+      <position x="2824" y="2284"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_tasenship</object>
+      <position x="2890" y="2305"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="2304" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="2304" y="2144"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="2272" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="3360" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="3296" y="2144"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="3296" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="3328" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="3360" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="3392" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="3360" y="2336"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="2240" y="2304"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_block</object>
+      <position x="2240" y="2336"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blocktall</object>
+      <position x="1824" y="2336"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blocktall</object>
+      <position x="2240" y="2176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blocktall</object>
+      <position x="3360" y="2208"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blocktall</object>
+      <position x="3392" y="2336"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="1824" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="1952" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2080" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="1856" y="2336"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="1984" y="2336"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2112" y="2336"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2208" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2336" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2464" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2592" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2720" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2848" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2976" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="3104" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="3232" y="2464"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2304" y="2112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2432" y="2112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2560" y="2112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2688" y="2112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2816" y="2112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="2944" y="2112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="3072" y="2112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_blockwide</object>
+      <position x="3200" y="2112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cdoor</object>
+      <position x="2240" y="2272"/>
+      <creationCode>security=15;
+tag=1;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cdoor</object>
+      <position x="3360" y="2368"/>
+      <creationCode>security=15;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_doorslide</object>
+      <position x="2240" y="2272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_doorslide</object>
+      <position x="3360" y="2272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_lamp</object>
+      <position x="1728" y="2368"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_lamp</object>
+      <position x="1984" y="2368"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_lamp</object>
+      <position x="2080" y="2368"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_lamp</object>
+      <position x="3584" y="2368"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_lamp</object>
+      <position x="3712" y="2368"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_crate2</object>
+      <position x="3136" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_crate1</object>
+      <position x="3168" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_crate2</object>
+      <position x="2752" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_crate2</object>
+      <position x="2720" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_crate1</object>
+      <position x="2784" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_crate2</object>
+      <position x="2976" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_crate2</object>
+      <position x="2944" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_locker</object>
+      <position x="2688" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_locker</object>
+      <position x="3104" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuphealth</object>
+      <position x="3216" y="2448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuphealth</object>
+      <position x="3248" y="2448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuparmor</object>
+      <position x="3024" y="2448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuparmor</object>
+      <position x="3088" y="2448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuphealth</object>
+      <position x="3344" y="2448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuphealth</object>
+      <position x="3280" y="2448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuphealth</object>
+      <position x="3184" y="2416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuphealth</object>
+      <position x="3152" y="2416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuphealth</object>
+      <position x="2928" y="2448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_pickuphealth</object>
+      <position x="2832" y="2448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_krotera</object>
+      <position x="2547" y="2373"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_shakescreen</object>
+      <position x="1920" y="2432"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_kroteratrigger</object>
+      <position x="2400" y="2400"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_sec3specialtrucetrig</object>
+      <position x="1976" y="2416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_iji</object>
+      <position x="1888" y="2403"/>
+      <creationCode>image_speed=0.5;
+sprite_index=spr_run;
+hspeed=5;
+alwayschangeweapon=1;
+specialtruce=1;
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_sabot</object>
+      <position x="1920" y="2400"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+  </instances>
+  <tiles>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="2272" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="2208" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="1984" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="2208" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="1824" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="1696" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="3328" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="3200" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="3072" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="3712" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="3424" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="160"/>
+      <roomPosition x="3328" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="160"/>
+      <roomPosition x="3360" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="160"/>
+      <roomPosition x="3296" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="32"/>
+      <roomPosition x="3360" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="32"/>
+      <roomPosition x="3296" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="32"/>
+      <roomPosition x="3296" y="2112"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="160"/>
+      <roomPosition x="2272" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="160"/>
+      <roomPosition x="2240" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="160"/>
+      <roomPosition x="2304" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="32"/>
+      <roomPosition x="2304" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="2240" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="2304" y="2112"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="480"/>
+      <roomPosition x="2240" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="480"/>
+      <roomPosition x="2240" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="480"/>
+      <roomPosition x="2240" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="480"/>
+      <roomPosition x="3360" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="480"/>
+      <roomPosition x="3360" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="480"/>
+      <roomPosition x="3360" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="416"/>
+      <roomPosition x="2432" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="416"/>
+      <roomPosition x="3008" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="416"/>
+      <roomPosition x="3168" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="416"/>
+      <roomPosition x="2592" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="3392" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="416"/>
+      <roomPosition x="3040" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="416"/>
+      <roomPosition x="3072" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="416"/>
+      <roomPosition x="3104" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="416"/>
+      <roomPosition x="3136" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="416"/>
+      <roomPosition x="2464" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="416"/>
+      <roomPosition x="2496" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="416"/>
+      <roomPosition x="2528" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="416"/>
+      <roomPosition x="2560" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="96" y="416"/>
+      <roomPosition x="2432" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="96" y="416"/>
+      <roomPosition x="3008" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="416"/>
+      <roomPosition x="3168" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="416"/>
+      <roomPosition x="2592" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="416"/>
+      <roomPosition x="2464" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="416"/>
+      <roomPosition x="2560" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="416"/>
+      <roomPosition x="3136" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="416"/>
+      <roomPosition x="3072" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="416"/>
+      <roomPosition x="2528" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="416"/>
+      <roomPosition x="2496" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="416"/>
+      <roomPosition x="3040" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="416"/>
+      <roomPosition x="3104" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2272" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2304" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2400" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2432" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2464" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2496" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2528" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2560" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2592" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2976" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3008" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3040" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3072" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3104" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3136" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3168" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3200" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3328" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3296" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3200" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3168" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3136" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3104" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3072" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3040" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3008" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2560" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2528" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2496" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2464" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2432" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2400" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2944" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2944" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2944" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2944" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2368" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="3232" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2336" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="3264" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="96" y="544"/>
+      <roomPosition x="2336" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="96" y="512"/>
+      <roomPosition x="2336" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="2336" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="512"/>
+      <roomPosition x="2304" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="512"/>
+      <roomPosition x="2272" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="544"/>
+      <roomPosition x="3264" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3264" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3264" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="512"/>
+      <roomPosition x="3296" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="96" y="544"/>
+      <roomPosition x="3328" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2368" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2400" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2432" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2464" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2496" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2592" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2624" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2656" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2688" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2752" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2784" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2816" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2848" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2976" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3008" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2912" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2880" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2848" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2816" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2720" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2688" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2656" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2560" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2528" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2496" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2432" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3104" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3136" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3136" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3104" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3072" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3008" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3040" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3168" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3200" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3264" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3296" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="3264" y="2048"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="128"/>
+      <roomPosition x="2304" y="2080"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="32"/>
+      <roomPosition x="2272" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="32"/>
+      <roomPosition x="3328" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="96"/>
+      <roomPosition x="3424" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="96"/>
+      <roomPosition x="3616" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="96"/>
+      <roomPosition x="2144" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="96"/>
+      <roomPosition x="1952" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="96"/>
+      <roomPosition x="1760" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="128"/>
+      <roomPosition x="1536" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="224"/>
+      <roomPosition x="3360" y="2464"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="224"/>
+      <roomPosition x="2240" y="2464"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="1952" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="2144" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="2048" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="1856" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="1760" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="1664" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="1568" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="3424" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="3520" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="3616" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="3712" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="128"/>
+      <roomPosition x="3808" y="2528"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="96"/>
+      <roomPosition x="3808" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="32"/>
+      <roomPosition x="2784" y="2560"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="32"/>
+      <roomPosition x="3072" y="2560"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="32"/>
+      <roomPosition x="2496" y="2560"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="512"/>
+      <roomPosition x="2016" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="512"/>
+      <roomPosition x="2048" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="544"/>
+      <roomPosition x="2016" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="544"/>
+      <roomPosition x="2016" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="544"/>
+      <roomPosition x="2048" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="512"/>
+      <roomPosition x="2752" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="512"/>
+      <roomPosition x="3136" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="512"/>
+      <roomPosition x="2784" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="512"/>
+      <roomPosition x="3168" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="544"/>
+      <roomPosition x="2752" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="544"/>
+      <roomPosition x="2752" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="544"/>
+      <roomPosition x="2784" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="544"/>
+      <roomPosition x="3168" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="544"/>
+      <roomPosition x="3136" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="544"/>
+      <roomPosition x="3136" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="512"/>
+      <roomPosition x="3168" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="544"/>
+      <roomPosition x="2784" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="512"/>
+      <roomPosition x="2048" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="1920" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="1888" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="1856" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="1920" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="1888" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="1856" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="288"/>
+      <roomPosition x="1952" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="384"/>
+      <roomPosition x="1792" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="384"/>
+      <roomPosition x="1728" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="384"/>
+      <roomPosition x="1760" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="384"/>
+      <roomPosition x="1696" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="352"/>
+      <roomPosition x="1696" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="96" y="544"/>
+      <roomPosition x="1568" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="512"/>
+      <roomPosition x="1536" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="1568" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="1568" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="1600" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="1600" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="1600" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="320"/>
+      <roomPosition x="2208" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="320"/>
+      <roomPosition x="2272" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="320"/>
+      <roomPosition x="3328" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="320"/>
+      <roomPosition x="3392" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="384"/>
+      <roomPosition x="2592" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="384"/>
+      <roomPosition x="2560" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="384"/>
+      <roomPosition x="2496" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="384"/>
+      <roomPosition x="2528" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="384"/>
+      <roomPosition x="2464" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="384"/>
+      <roomPosition x="2528" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="384"/>
+      <roomPosition x="2560" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="320"/>
+      <roomPosition x="2272" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="384"/>
+      <roomPosition x="3072" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="384"/>
+      <roomPosition x="3040" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="384"/>
+      <roomPosition x="3008" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="384"/>
+      <roomPosition x="3008" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="384"/>
+      <roomPosition x="3040" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="2976" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="2912" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="2880" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="2912" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="2880" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="2976" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="2944" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="2944" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="2624" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="320"/>
+      <roomPosition x="2976" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="320"/>
+      <roomPosition x="3200" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="320"/>
+      <roomPosition x="3328" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="0"/>
+      <roomPosition x="2624" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="64" y="320"/>
+      <roomPosition x="2592" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2944" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2944" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="576"/>
+      <roomPosition x="2688" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="576"/>
+      <roomPosition x="2720" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="576"/>
+      <roomPosition x="2752" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="576"/>
+      <roomPosition x="2784" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="576"/>
+      <roomPosition x="2816" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="576"/>
+      <roomPosition x="2848" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="576"/>
+      <roomPosition x="2880" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="576"/>
+      <roomPosition x="2912" y="2144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="640"/>
+      <roomPosition x="2688" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="640"/>
+      <roomPosition x="2720" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="640"/>
+      <roomPosition x="2752" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="640"/>
+      <roomPosition x="2784" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="640"/>
+      <roomPosition x="2816" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="640"/>
+      <roomPosition x="2848" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="640"/>
+      <roomPosition x="2880" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="640"/>
+      <roomPosition x="2912" y="2208"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2688" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2720" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2752" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2784" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2816" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2848" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2880" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2912" y="2272"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2688" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2720" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2752" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2784" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2816" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2848" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2880" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="576"/>
+      <roomPosition x="2912" y="2304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2688" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2720" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2752" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2784" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2816" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2848" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2880" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2912" y="2336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="3488" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="3520" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="288"/>
+      <roomPosition x="3552" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="3488" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="3520" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="0" y="256"/>
+      <roomPosition x="3552" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="384"/>
+      <roomPosition x="3584" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="384"/>
+      <roomPosition x="3648" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="384"/>
+      <roomPosition x="3616" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="224" y="384"/>
+      <roomPosition x="3680" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="384"/>
+      <roomPosition x="3584" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="352"/>
+      <roomPosition x="3616" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="320"/>
+      <roomPosition x="3456" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="192" y="320"/>
+      <roomPosition x="3424" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="160" y="480"/>
+      <roomPosition x="3456" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3744" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3744" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3744" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3808" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3808" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3808" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3872" y="2368"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3872" y="2400"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="128" y="544"/>
+      <roomPosition x="3872" y="2432"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2592" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2624" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2624" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="256" y="544"/>
+      <roomPosition x="2976" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2656" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2944" y="2240"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tile3</background>
+      <backgroundPosition x="32" y="544"/>
+      <roomPosition x="2944" y="2176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2080" y="2368"/>
+      <size height="96" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="1408" y="2368"/>
+      <size height="96" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2272" y="2304"/>
+      <size height="96" width="96"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3264" y="2304"/>
+      <size height="96" width="96"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="1728" y="2368"/>
+      <size height="64" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2400" y="2368"/>
+      <size height="64" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="1632" y="2368"/>
+      <size height="96" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="1344" y="2368"/>
+      <size height="96" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2688" y="2368"/>
+      <size height="96" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2816" y="2368"/>
+      <size height="96" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3648" y="2368"/>
+      <size height="64" width="96"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="1952" y="2368"/>
+      <size height="64" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2304" y="2400"/>
+      <size height="64" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2592" y="2368"/>
+      <size height="64" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3264" y="2400"/>
+      <size height="64" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3392" y="2368"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3520" y="2368"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2976" y="2144"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3008" y="2208"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2976" y="2272"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3104" y="2272"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2400" y="2144"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2400" y="2208"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2400" y="2272"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2528" y="2208"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2528" y="2272"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3200" y="2304"/>
+      <size height="128" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3776" y="2368"/>
+      <size height="96" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3840" y="2368"/>
+      <size height="96" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3104" y="2368"/>
+      <size height="96" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2976" y="2304"/>
+      <size height="96" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="1856" y="2368"/>
+      <size height="32" width="96"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3136" y="2208"/>
+      <size height="32" width="96"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3104" y="2144"/>
+      <size height="32" width="96"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3008" y="2368"/>
+      <size height="32" width="96"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3264" y="2272"/>
+      <size height="32" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2880" y="2368"/>
+      <size height="32" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2528" y="2368"/>
+      <size height="32" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2400" y="2432"/>
+      <size height="32" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2304" y="2272"/>
+      <size height="32" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2528" y="2144"/>
+      <size height="32" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="1536" y="2368"/>
+      <size height="64" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2400" y="2304"/>
+      <size height="64" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_allblue</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="2624" y="2304"/>
+      <size height="64" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="1344" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="1472" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="1600" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="1728" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="1856" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="1984" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="2112" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="2272" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="2400" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="2528" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="2656" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="2784" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="2912" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="3040" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="3168" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="3392" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="3520" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="3648" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="3776" y="2464"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="3392" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="3520" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="3648" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="3776" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="1344" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="1472" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="1600" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="1728" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="1856" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="1984" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="2112" y="2336"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="0"/>
+      <roomPosition x="3296" y="2464"/>
+      <size height="32" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="2336" y="2112"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="2464" y="2112"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="2592" y="2112"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="2720" y="2112"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="2848" y="2112"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="2976" y="2112"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="3104" y="2112"/>
+      <size height="32" width="128"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="128" y="32"/>
+      <roomPosition x="3232" y="2112"/>
+      <size height="32" width="64"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="3360" y="2208"/>
+      <size height="128" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>bg_tilefix3</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="2240" y="2208"/>
+      <size height="128" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+  </tiles>
+  <editorSettings remember="true">
+    <size height="769" width="917"/>
+    <showGrid>false</showGrid>
+    <showObjects>false</showObjects>
+    <showTiles>true</showTiles>
+    <showBackgrounds>true</showBackgrounds>
+    <showForegrounds>true</showForegrounds>
+    <showViews>false</showViews>
+    <deleteUnderlyingObjects>false</deleteUnderlyingObjects>
+    <deleteUnderlyingTiles>true</deleteUnderlyingTiles>
+    <currentTab>1</currentTab>
+    <horizontalScrollPosition>1948</horizontalScrollPosition>
+    <verticalScrollPosition>1986</verticalScrollPosition>
+  </editorSettings>
+</room>

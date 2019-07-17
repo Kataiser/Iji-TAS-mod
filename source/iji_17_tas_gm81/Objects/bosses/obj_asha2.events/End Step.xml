@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Armor
+if (armor&lt;199.9)
+    armor+=0.1;
+
+//Pain from armordrop
+if (armor&lt;=0){
+    hp-=1;
+    if (((hp==9 || hp==7 || hp==5 || hp==3) &amp;&amp; global.difficulty&gt;0) || (hp&gt;=2 &amp;&amp; global.difficulty==0)){
+        tempid=instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_pickuphealth);
+        if (tempid.x&lt;5984)
+            tempid.x=5984;
+        if (tempid.x&gt;6368)
+            tempid.x=6368;
+        if (tempid.y&gt;3008)
+            tempid.y=3008;
+        }
+    scr_assassinpain();
+    }
+
+//Return to sabot
+if (!visible &amp;&amp; angry){
+    x=obj_sabot.x;
+    y=obj_sabot.y;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

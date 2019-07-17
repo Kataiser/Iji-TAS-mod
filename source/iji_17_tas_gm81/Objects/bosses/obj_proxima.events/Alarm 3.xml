@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="3">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Nuke attack
+
+chargingnuke=0;
+obj_sabot.flash=0;
+with (obj_proximasupercharge)
+    instance_destroy();
+
+//Iji is not affected during ougi
+if (instance_number(obj_ougi)==0){
+    with (obj_iji){
+        fatality=1;
+        takingpain=0;
+        global.damage+=obj_proxima.nukepower;
+        global.armor=0;
+        global.hp-=obj_proxima.nukepower;
+        if (x&lt;obj_proxima.x)
+            scr_knockdown(1,25-global.assimilatelevel/2);
+        else
+            scr_knockdown(2,25-global.assimilatelevel/2);
+        }
+    }
+with (obj_paper)
+    dead=1;
+instance_create(x,y,obj_harmlessexplosion);
+(instance_create(x,y,obj_nuke)).proxima=1;
+scr_sound("exp_nuke");
+antigrav=1;
+streaming=1;
+gasu=10;
+order=2;
+fire=0;
+alarm[2]=30;
+
+with (obj_reflector)
+    scr_reflectorexplo();
+with (obj_disruptor)
+    scr_disruptorexplo();
+with (obj_shockbarrier)
+    scr_barrierexplo();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

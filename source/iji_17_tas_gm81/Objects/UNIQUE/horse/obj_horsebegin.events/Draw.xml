@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_sprite_ext(spr_horse,0,400+xoff,300,scale,scale,rot,c_white,1);
+if (cyc&gt;=36){
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    text="MISSILE PONY X"
+    text2="GET READY"
+    draw_text_ext_transformed(400-string_length(text)*12,32,text,56,800,2,2,0);
+    draw_text_ext_transformed(400-string_length(text2)*12,516,text2,56,800,2,2,0);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

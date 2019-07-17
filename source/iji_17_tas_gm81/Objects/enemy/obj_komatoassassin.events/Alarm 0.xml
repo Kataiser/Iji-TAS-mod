@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Uppercut, Backstab, Upslash
+if (sprite_index==spr_komatoassassin_uppercut || sprite_index==spr_komatoassassin_uppercutleft || sprite_index==spr_komatoassassin_backstab || sprite_index==spr_komatoassassin_backstableft || sprite_index==spr_komatoassassin_upslash){
+    image_single=-1;
+    image_speed=1;
+    image_index=1;
+    scr_sound("glo_swipe");
+    }
+
+//Firing in pose1
+if (sprite_index==spr_komatoassassin_pose1 || sprite_index==spr_komatoassassin_pose1left){
+scr_sound("wea_plas");
+scr_shakescreen(3);
+shotcount+=1;
+if (sprite_index==spr_komatoassassin_pose1){
+    tempid=instance_create(x+49,y+10,obj_enemyplasmatrace);
+    with (tempid)
+        scr_enemyplasmatrace(1);
+    }
+else{
+    tempid=instance_create(x-24,y+10,obj_enemyplasmatrace);
+    with (tempid)
+        scr_enemyplasmatrace(0);
+    }
+
+if (sprite_index==spr_komatoassassin_pose1)
+    sprite_index=spr_komatoassassin_pose1fire;
+else
+    sprite_index=spr_komatoassassin_pose1fireleft;
+if (shotcount!=5){
+    alarm[3]=5;
+    alarm[0]=8;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

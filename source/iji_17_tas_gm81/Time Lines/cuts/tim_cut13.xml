@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="10">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x01;
+scr_music("mus_ending");</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="16">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_cutdoll){
+    if (target==1){
+        sprite_index=spr_x01b;
+        image_single=0;
+        visible=1;
+        x=330;
+        y=209;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="285">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x02;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="291">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_cutdoll){
+    if (target==1){
+        sprite_index=spr_x02c;
+        image_single=0;
+        visible=1;
+        x=212;
+        y=178;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="570">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_1301;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="576">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_cutdoll){
+    visible=0;
+    if (target==1){
+        sprite_index=spr_1301a;
+        image_single=0;
+        visible=1;
+        x=362;
+        y=286;
+        vspeed=-0.18;
+        }
+    if (global.specialtrigger1==1 &amp;&amp; target==2){
+        sprite_index=spr_1301b;
+        image_single=0;
+        visible=1;
+        x=472;
+        y=393;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="885">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x05;
+edgefill=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="891">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_cutdoll){
+    visible=0;
+    if (target==1){
+        sprite_index=spr_x05b;
+        image_single=0;
+        x=200;
+        y=150+0.18*180;
+        visible=1;
+        vspeed=-0.18;
+        }
+    if (target==2){
+        sprite_index=spr_x05d;
+        image_single=0;
+        x=200;
+        y=346;
+        visible=1;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1245">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_cutdoll){
+    if (target==1){
+        vspeed=0;
+        obj_cutsabot.tempx=x;
+        obj_cutsabot.tempy=y;
+        }
+    if (target==3){
+        sprite_index=spr_x05b;
+        image_single=1;
+        image_alpha=0;
+        style=2;
+        visible=1;
+        x=obj_cutsabot.tempx;
+        y=obj_cutsabot.tempy;
+        }
+    if (target==4){
+        sprite_index=spr_x05d;
+        image_single=1;
+        image_alpha=0;
+        style=2;
+        visible=1;
+        x=200;
+        y=346;
+        }
+    }
+background_index[1]=bg_x06
+background_alpha[1]=0;
+background_visible[1]=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1246">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1247">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1248">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1249">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1250">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1251">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1252">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1253">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1254">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]+=0.1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1255">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_alpha[1]=1;
+with (obj_cutdoll){
+if (target==1 || target==2)
+    visible=0;
+}</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="1270">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">credits=1;
+coff=600;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="2400">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x07;
+nextppe=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="2406">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_index[1]=bg_black;
+background_visible[1]=0;
+background_x[0]=50;
+xadjust=-150;
+with (obj_cutdoll){
+    visible=0;
+    style=0;
+    }
+edgefill=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="3000">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x08;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="3540">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_1302;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="4125">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_1303;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="4740">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x11;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="5325">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x12;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="5850">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x13;
+if (global.specialtrigger2)
+    nextbg=bg_x16;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="5856">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_cutdoll)
+    visible=0;
+if (global.specialtrigger2){
+    with (obj_cutdoll){
+        if (target==1 &amp;&amp; global.killdata[276]==0){
+            visible=1;
+            sprite_index=spr_x16a;
+            image_single=0;
+            x=448-150;
+            y=299;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="6435">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x14;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="6441">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_cutdoll)
+    visible=0;
+if (global.totkills&gt;50){
+    with (obj_cutdoll){
+        if (target==1){
+            sprite_index=spr_x06a;
+            image_single=0;
+            visible=1;
+            x=38+50;
+            y=148+150;
+            }
+        if (target==2){
+            sprite_index=spr_x06b;
+            image_single=0;
+            visible=1;
+            x=176+50;
+            y=225+150;
+            }
+        if (target==3){
+            sprite_index=spr_x06c;
+            image_single=0;
+            visible=1;
+            x=321+50;
+            y=155+150;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="6975">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=1;
+nextbg=bg_x15;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="6981">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_cutdoll)
+    visible=0;
+if (global.totkills&gt;50){
+    with (obj_cutdoll){
+    if (target==1){
+        sprite_index=spr_x07a;
+        image_single=0;
+        visible=1;
+        x=121+50;
+        y=175+150;
+        }
+    if (target==2){
+        sprite_index=spr_x07b;
+        image_single=0;
+        visible=1;
+        x=229+50;
+        y=159+150;
+        }
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="7520">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.totkills&lt;=50){
+with (obj_ppe)
+    instance_destroy();
+with (obj_cutdoll){
+    if (target==1){
+        sprite_index=spr_x08b;
+        image_alpha=0;
+        visible=1;
+        style=5;
+        x=50;
+        y=150;
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="7845">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">slowfade=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="8150">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">background_index[0]=bg_black;
+with (obj_ppe)
+    instance_destroy();
+credits=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="8160">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_jumpfromcut();</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

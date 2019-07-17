@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="37">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_paused.getinfo==10){
+    if (obj_paused.weaponinfo==1)
+        obj_paused.weaponinfo=obj_paused.weaponlistlength;
+    else
+        obj_paused.weaponinfo-=1;
+    //scr_sound("glo_menumove");
+    with (obj_paused)
+        scr_pausefulltexts();
+    }
+
+if (obj_paused.getinfo==11){
+    if (obj_paused.enemyinfo==1)
+        obj_paused.enemyinfo=obj_paused.enemylistlength;
+    else
+        obj_paused.enemyinfo-=1;
+    //scr_sound("glo_menumove");
+    with (obj_paused)
+        scr_pausefulltexts();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

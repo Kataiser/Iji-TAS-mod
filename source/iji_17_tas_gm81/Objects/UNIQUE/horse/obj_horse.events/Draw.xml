@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (trailer&gt;0)
+    draw_sprite_ext(spr_horse,1,floor(x),floor(y),1,1,0,c_red,0.35);
+else{
+    //Self
+    if (mercy&gt;0 &amp;&amp; (mercy mod 2)==0)
+        draw_sprite_ext(spr_horse,0,floor(x),floor(y),1,1,0,c_red,1);
+    else
+        draw_sprite_ext(spr_horse,0,floor(x),floor(y),1,1,0,c_white,1);
+//    if (room==rom_sector1){
+        if (arrowfade&lt;120){
+            arrowfade+=1;
+            if (arrowfade mod 8&lt;6){
+                draw_set_color(c_white);
+                draw_primitive_begin(pr_trianglelist);
+                draw_vertex(x+64,y);
+                draw_vertex(x+48,y-16);
+                draw_vertex(x+48,y+16);
+                draw_primitive_end();
+                draw_primitive_begin(pr_trianglelist);
+                draw_vertex(x-64,y);
+                draw_vertex(x-48,y-16);
+                draw_vertex(x-48,y+16);
+                draw_primitive_end();
+                draw_primitive_begin(pr_trianglelist);
+                draw_vertex(x,y-64);
+                draw_vertex(x-16,y-48);
+                draw_vertex(x+16,y-48);
+                draw_primitive_end();
+                draw_primitive_begin(pr_trianglelist);
+                draw_vertex(x,y+64);
+                draw_vertex(x-16,y+48);
+                draw_vertex(x+16,y+48);
+                draw_primitive_end();
+                }
+            }
+        }
+//    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

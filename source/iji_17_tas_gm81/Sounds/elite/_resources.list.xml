@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_eli_find1" type="RESOURCE"/>
+  <resource name="snd_eli_find2" type="RESOURCE"/>
+  <resource name="snd_eli_pain1" type="RESOURCE"/>
+  <resource name="snd_eli_pain2" type="RESOURCE"/>
+  <resource name="snd_eli_death1" type="RESOURCE"/>
+  <resource name="snd_eli_death2" type="RESOURCE"/>
+</resources>

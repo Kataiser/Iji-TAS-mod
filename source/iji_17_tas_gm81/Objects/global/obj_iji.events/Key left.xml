@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYBOARD" id="37">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Walk left
+if (!ignorephysics){
+if (!place_meeting(x,y,obj_end)){
+if (global.ignoreall==0 &amp;&amp; goingright==0 &amp;&amp; !shredder){
+
+    scr_getup();
+
+    //Airbrake left
+    if (global.state==6 &amp;&amp; global.facing==0 &amp;&amp; velocity&gt;2 &amp;&amp; global.hp&gt;0){
+        velocity-=0.4;
+        }
+
+    goingleft=1;
+    lookingaround=0;
+    if (global.state==1){
+        alarm[1]=0;
+        running=1;
+        global.facing=0;
+        if (sprite_index!=spr_runfireleft)
+            sprite_index=spr_runleft;
+        if (place_meeting(x-walkspeed,y,obj_glass))
+            exit;
+        if (place_free(x-walkspeed,y))
+            x-=walkspeed;
+        else if (place_free(x-walkspeed,y-4)){
+            x-=walkspeed;
+            y-=4;
+            move_contact_solid(270,-1);
+            }
+        //Go down stairs
+        if (place_free(x,y+1) &amp;&amp; (place_meeting(x,y+5,obj_sloper) || place_meeting(x,y+5,obj_slopel)))
+            move_contact_solid(270,-1);
+        }
+    //Jump
+    if (global.state==2){
+        running=1;
+        global.facing=0;
+        sprite_index=spr_jumpleft;
+        if (place_meeting(x-walkspeed,y,obj_glass))
+            exit;
+        if (place_free(x-walkspeed,y) &amp;&amp; place_free(x-walkspeed,y+vspeed-2))
+            x-=walkspeed;
+        //if (place_free(x-5,y+vspeed+gravity+1) &amp;&amp; place_free(x-5,y+vspeed-2))
+        //    x-=5;
+        //else if (vspeed&gt;0 &amp;&amp; place_free(x-5,y) &amp;&amp; !place_free(x,y+vspeed+gravity+1) &amp;&amp; !place_free(x+5,y+vspeed+gravity+1))
+        //    x-=5;
+        }
+    }
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

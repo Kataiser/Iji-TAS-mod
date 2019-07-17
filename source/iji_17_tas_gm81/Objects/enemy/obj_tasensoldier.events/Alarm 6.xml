@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_storeseed();
+
+if (golden){
+if (facing==0){
+    scr_shakescreen(2);
+    scr_sound("wea_plas");
+    tempid=instance_create(x-24,y+15,obj_enemyplasmatrace);
+    with (tempid)
+        scr_enemyplasmatrace(0);
+    sprite_index=spr_tasensoldier_fireleft;
+    }
+else{
+    scr_shakescreen(2);
+    scr_sound("wea_plas");
+    tempid=instance_create(x+28,y+15,obj_enemyplasmatrace);
+    with (tempid)
+        scr_enemyplasmatrace(1);
+    sprite_index=spr_tasensoldier_fire;
+    }
+}
+
+else{
+if (weapon==0){
+if (facing==0){
+    if (cracked==0){
+        scr_sound("wea_rock");
+        tempid=instance_create(x-14,y+15,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=-global.rocketspeed;
+        tempid.image_single=1;
+        tempid=instance_create(x-20,y+15,obj_rocketlaunch);
+        tempid.sprite_index=spr_rocketlaunchleft;
+        sprite_index=spr_tasensoldier_fireleft;
+        }
+    else{
+        tempid=instance_create(x-3,y+15,obj_enemyrocketexplosion);
+        tempid.target=id;
+        instance_create(x-3,y+15,obj_explosioncenter);
+        script_execute(scr_shakescreen,2);
+        }
+    }
+else{
+    if (cracked==0){
+        scr_sound("wea_rock");
+        tempid=instance_create(x+18,y+15,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed;
+        tempid.image_single=0;
+        instance_create(x+26,y+15,obj_rocketlaunch);
+        sprite_index=spr_tasensoldier_fire;
+        }
+    else{
+        tempid=instance_create(x+18,y+15,obj_enemyrocketexplosion);
+        tempid.target=id;
+        instance_create(x+18,y+15,obj_explosioncenter);
+        script_execute(scr_shakescreen,2);
+        }
+    }
+}
+if (weapon==1){
+if (facing==0){
+    if (cracked==0){
+        scr_sound("wea_rock");
+        tempid=instance_create(x-14,y+15,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=-global.rocketspeed;
+        tempid.image_single=1;
+        tempid=instance_create(x-14,y+15,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed-2;
+        tempid.direction=174;
+        tempid.image_single=1;
+        tempid=instance_create(x-14,y+15,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed-4;
+        tempid.direction=186;
+        tempid.image_single=1;
+        tempid=instance_create(x-20,y+15,obj_rocketlaunch);
+        tempid.sprite_index=spr_rocketlaunchleft;
+        sprite_index=spr_tasensoldier_fireleft;
+        }
+    else{
+        tempid=instance_create(x-3,y+15,obj_enemyrocketexplosion);
+        tempid.target=id;
+        instance_create(x-3,y+15,obj_explosioncenter);
+        script_execute(scr_shakescreen,2);
+        }
+    }
+else{
+    if (cracked==0){
+        scr_sound("wea_rock");
+        tempid=instance_create(x+18,y+15,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed;
+        tempid.image_single=0;
+        tempid=instance_create(x+18,y+15,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed-2;
+        tempid.direction=6;
+        tempid.image_single=0;
+        tempid=instance_create(x+18,y+15,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed-4;
+        tempid.direction=-6;
+        tempid.image_single=0;
+        instance_create(x+26,y+15,obj_rocketlaunch);
+        sprite_index=spr_tasensoldier_fire;
+        }
+    else{
+        tempid=instance_create(x+18,y+15,obj_enemyrocketexplosion);
+        tempid.target=id;
+        instance_create(x+18,y+15,obj_explosioncenter);
+        script_execute(scr_shakescreen,2);
+        }
+    }
+}
+}
+
+scr_restoreseed();
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

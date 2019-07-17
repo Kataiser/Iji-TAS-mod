@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">script_execute(scr_shakescreen,4);
+tempid=instance_create(x,y,obj_mpfbexplosion);
+tempid.banana=1
+tempid.ijis=1;
+instance_create(x,y,obj_explosioncenter);
+repeat(30) instance_create(x-16+random(32),y-16+random(32),obj_mpfbspark2);
+instance_destroy();
+scr_sound("exp_mpfb");</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

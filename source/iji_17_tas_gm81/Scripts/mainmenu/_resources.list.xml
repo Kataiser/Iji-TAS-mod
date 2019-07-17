@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_resolutionsabotcreate" type="RESOURCE"/>
+  <resource name="scr_facecreate" type="RESOURCE"/>
+  <resource name="scr_facedraw" type="RESOURCE"/>
+  <resource name="scr_mainload" type="RESOURCE"/>
+  <resource name="scr_mainmenu" type="RESOURCE"/>
+  <resource name="scr_menutext" type="RESOURCE"/>
+  <resource name="scr_menuselection" type="RESOURCE"/>
+  <resource name="scr_controlmapping" type="RESOURCE"/>
+  <resource name="scr_init" type="RESOURCE"/>
+  <resource name="scr_menufulltexts" type="RESOURCE"/>
+  <resource name="scr_setmaps" type="RESOURCE"/>
+  <resource name="scr_drawunlocks" type="RESOURCE"/>
+  <resource name="scr_mainmenuescape" type="RESOURCE"/>
+  <resource name="scr_mainsoundtexts" type="RESOURCE"/>
+  <resource name="scr_mainsoundstop" type="RESOURCE"/>
+  <resource name="scr_mainsoundplay" type="RESOURCE"/>
+</resources>

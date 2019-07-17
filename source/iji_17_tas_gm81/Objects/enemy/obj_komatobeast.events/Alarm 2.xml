@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">alarm[7]=0;
+if (state!=3){
+//Choose target
+if (targetrival==0){
+    if (targetiji&gt;0)
+        target=obj_iji.id;
+    else{
+        angry=0;
+        alarm[5]=300;
+        }
+    }
+if (!instance_exists(target)){
+angry=0;
+targetrival=0;
+if (targetiji&gt;0 &amp;&amp; target!=obj_iji.id){
+    if (!angry)
+        alarm[2]=1;
+    angry=1;
+    alarm[5]=300;
+    target=obj_iji.id;
+    }
+}
+
+//Adjust sprite
+if (facing==0 &amp;&amp; state==0)
+    sprite_index=spr_komatobeast_basicleft;
+if (facing==1 &amp;&amp; state==0)
+    sprite_index=spr_komatobeast_basic;
+
+//Begin taking action
+alarm[2]=25+random(10);
+
+//Roam
+randomstate=random(1);
+if (angry==0){
+    if (randomstate&lt;0.6){
+        state=0;
+        alarm[2]=60+random(90);
+        }
+    else{
+        state=1;
+        facing=0;
+        if (randomstate&gt;0.8)
+            facing=1;
+        }
+    }
+
+//Angry
+else{
+    state=2;
+    //Face target
+    if (x&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+    }
+
+//Jump!
+randomstate=random(1);
+if (state==2 &amp;&amp; randomstate&gt;0.6 &amp;&amp; place_free(x-64,y) &amp;&amp; place_free(x+64,y)){
+    if (x&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+    scr_sound("bea_jump");
+    state=3;
+    velocity=runspeed;
+    vspeed=-18;
+    gravity=1;
+    gravity_direction=270;
+    if (facing==0)
+        sprite_index=spr_komatobeast_runleft;
+    else
+        sprite_index=spr_komatobeast_run;
+    image_single=1;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

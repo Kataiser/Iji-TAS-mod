@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_ann_step" type="RESOURCE"/>
+  <resource name="snd_ann_find1" type="RESOURCE"/>
+  <resource name="snd_ann_find1_q1" type="RESOURCE"/>
+  <resource name="snd_ann_find2" type="RESOURCE"/>
+  <resource name="snd_ann_find2_q1" type="RESOURCE"/>
+  <resource name="snd_ann_destroy" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_sabot)
+    scr_seczmusicchange();
+scr_sound("glo_teleport");
+obj_iji.dest=dest;
+obj_sabot.ignoresmooth=1;
+obj_sabot.alarm[4]=3;
+instance_activate_object(obj_teledest);
+with (obj_teledest){
+    if (obj_iji.dest==dest){
+        instance_create(obj_iji.x-11,obj_iji.y-4,obj_ijiflash);
+        obj_iji.x=x+10;
+        obj_iji.y=y-29;
+        instance_create(x,y,obj_whiteflash);
+        repeat(30){
+            tempid=instance_create(x+random(32),y+12-random(64),obj_thorspark);
+            tempid.speed=random(3.5)-1.5;
+            tempid.direction=90;
+            tempid.gravity=0.2;
+            }
+        }
+    }
+with (obj_sabot){
+    metcyc=0;
+    doteleport=1;
+    zback+=1;
+    if (zback==1){
+        background_visible[0]=1;
+        with (obj_zgback)
+            instance_destroy();
+        with (obj_zgbackback)
+            instance_destroy();
+        }
+    if (zback==2){
+        background_visible[0]=0;
+        background_visible[1]=1;
+        }
+    if (zback==3)
+        background_visible[1]=0;
+    if (zback==4){
+        global.viewxoffset=0;
+        global.viewyoffset=0;
+        repeat(150)
+            instance_create(obj_iji.x-500+random(1000),obj_iji.y-400+random(800),obj_zxsquare);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

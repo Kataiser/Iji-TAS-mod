@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.specialbake)
+draw_sprite(spr_nanoflash,floor(random(3)),x,y);
+else{
+draw_set_color(c_white);
+draw_line(x,y,x+hspeed,y+vspeed);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

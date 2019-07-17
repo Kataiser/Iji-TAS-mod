@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!obj_sabot.fixedpalette){
+if (obj_sabot.palette==0 &amp;&amp; !used){
+    used=1;
+    alarm[0]=50;
+    obj_sabot.palette=1;
+    background_index[0]=bg_back73;
+    }
+if (obj_sabot.palette==1 &amp;&amp; !used){
+    used=1;
+    alarm[0]=50;
+    obj_sabot.palette=0;
+    background_index[0]=bg_back7;
+    if (other.x&gt;6000)
+        obj_sabot.fixedpalette=1;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

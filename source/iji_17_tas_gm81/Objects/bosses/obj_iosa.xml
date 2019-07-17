@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object id="476">
+  <sprite>spr_iosa_bodyleft</sprite>
+  <solid>false</solid>
+  <visible>true</visible>
+  <depth>0</depth>
+  <persistent>false</persistent>
+  <parent>obj_komatoenemy</parent>
+  <mask>spr_annimask</mask>
+</object>

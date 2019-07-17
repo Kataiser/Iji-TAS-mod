@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">thored=0;
+cfised=0;
+
+if (angryprev==0 &amp;&amp; angry==1 &amp;&amp; !tor)
+    scr_sound("tur_find");
+angryprev=angry;
+
+//Lose sight
+if ((x &lt; obj_shakescreen.x-1000) || (x &gt; obj_shakescreen.x+1000) || (y &lt; obj_shakescreen.y-800) || (y &gt; obj_shakescreen.y+800)){
+    angry=0;
+    alarm[5]=0;
+    sstep=0;
+    fstep=0;
+    alarm[6]=0;
+    firingrocket=0;
+    }
+
+//Goto angry
+if (angry &amp;&amp; !angry2 &amp;&amp; fstep&lt;fstepmax-6)
+    fstep=fstepmax-6;
+angry2=angry;
+
+//Armor
+if (armor&lt;maxarmor-0.1)
+    armor+=0.1;
+
+//Roam
+if (!angry){
+//Face
+fstep+=1;
+if (fstep&gt;fstepmax){
+fstep=0;
+fstepmax=60+random(60);
+tempface=facing;
+facing=floor(random(2));
+if (tempface!=facing){
+    turn=1;
+    image_single=2;
+    }
+}
+if (turn==1)
+    tstep+=1;
+if (tstep&gt;=8){
+    tstep=0;
+    turn=0;
+    image_single=facing;
+    }
+//Move
+xstep+=1;
+if (xstep&gt;=xstepmax){
+    xstep=0;
+    xdir=floor(random(2));
+    xstepmax=20+floor(random(40));
+    }
+if (xdir==0)
+    hspeed-=0.1;
+if (xdir==1)
+    hspeed+=0.1;
+if (hspeed&lt;-1.2)
+    hspeed=-1.2;
+if (hspeed&gt;1.2)
+    hspeed=1.2;
+if (x&lt;xorigin-32)
+    xdir=1;
+if (x&gt;xorigin+32)
+    xdir=0;
+
+ystep+=1;
+if (ystep&gt;=ystepmax){
+    ystep=0;
+    ydir=floor(random(2));
+    ystepmax=20+floor(random(20));
+    }
+if (ydir==0)
+    vspeed-=0.1;
+if (ydir==1)
+    vspeed+=0.1;
+if (vspeed&lt;-3)
+    vspeed=-3;
+if (vspeed&gt;3)
+    vspeed=3;
+if (y&lt;yorigin-128 &amp;&amp; !flyaway)
+    ydir=1;
+if (y&gt;yorigin+128)
+    ydir=0;
+if (!place_free(x,y-32)){
+    ydir=1;
+    vspeed+=0.2;
+    }
+if (!place_free(x,y+32)){
+    ydir=0;
+    vspeed-=0.2;
+    }
+}
+
+//Angry
+if (angry){
+//Fire
+if (sstep&lt;100)
+    sstep+=1;
+if (turn==0 &amp;&amp; !firingrocket &amp;&amp; !stunned &amp;&amp; sstep&gt;=60 &amp;&amp; (abs(y-obj_iji.y-30)&lt;6) &amp;&amp; !place_meeting(x,y,obj_tor) &amp;&amp; obj_iji.sprite_index!=spr_getup &amp;&amp; obj_iji.sprite_index!=spr_getupleft){
+    scr_sound("wea_charge");
+    tempid=instance_create(x,y,obj_chargetell);
+    tempid.tempid=id;
+    alarm[6]=10;
+    firingrocket=1;
+    }
+//Face
+fstep+=1;
+if (fstep&gt;fstepmax){
+fstep=0;
+fstepmax=8;
+tempface=facing;
+if (!firingrocket){
+    if (x&gt;obj_iji.x+6)
+        facing=0;
+    else
+        facing=1;
+    }
+if (tempface!=facing){
+    turn=1;
+    image_single=2;
+    }
+}
+if (turn==1)
+    tstep+=1;
+if (tstep&gt;=8){
+    fstep=0;
+    tstep=0;
+    turn=0;
+    image_single=facing;
+    }
+//Move
+xstep+=1;
+if (xstep&gt;=xstepmax){
+    xstep=0;
+    xdir=floor(random(2));
+    xstepmax=10+floor(random(10));
+    }
+if (xdir==0)
+    hspeed-=0.5;
+if (xdir==1)
+    hspeed+=0.5;
+if (hspeed&lt;-5)
+    hspeed=-5;
+if (hspeed&gt;5)
+    hspeed=5;
+if (x&lt;xorigin-64)
+    xdir=1;
+if (x&gt;xorigin+64)
+    xdir=0;
+
+ystep+=1;
+if (ystep&gt;=ystepmax){
+    ystep=0;
+    ydir=floor(random(2));
+    ystepmax=10+floor(random(10));
+    if (y&gt;obj_iji.y+30 || flyaway==1)
+        ydir=0;
+    else
+        ydir=1;
+    }
+if (ydir==0)
+    vspeed-=1;
+if (ydir==1)
+    vspeed+=1;
+if (vspeed&lt;-5)
+    vspeed=-5;
+if (vspeed&gt;5)
+    vspeed=5;
+if (y&lt;yorigin-256 &amp;&amp; !flyaway)
+    ydir=1;
+if (y&gt;yorigin+256)
+    ydir=0;
+if (!place_free(x,y-16)){
+    ydir=1;
+    vspeed+=1;
+    }
+if (!place_free(x,y+16)){
+    ydir=0;
+    vspeed-=1;
+    }
+}
+
+//Death
+if (armor&lt;=0){
+    scr_sound("exp_turret");
+    scr_shakescreen(2);
+    instance_create(x,y,obj_enemyrocketexplosion);
+    instance_create(x,y,obj_explosioncenter);
+    if (!tor)
+        scr_dropammo(0,0,3,9);
+    if (global.specialbake==0)
+        maximum=20;
+    else
+        maximum=100;
+    if (instance_number(obj_scrapwhite)&lt;maximum){
+        repeat(20){
+            tempid=instance_create(x,y,obj_scrapwhite);
+            tempid.speed=random(10)+10;
+            tempid.direction=random(360);
+            tempid.alarm[2]=4;
+            }
+        }
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

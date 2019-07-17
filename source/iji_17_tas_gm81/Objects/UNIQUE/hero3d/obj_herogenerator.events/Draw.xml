@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (x&gt;-32 &amp;&amp; x&lt;832 &amp;&amp; y&gt;-32 &amp;&amp; y&lt;632){
+pulse+=1;
+if (pulse mod 2==1){
+    draw_set_color(c_black);
+    draw_circle(x,y,32,0);
+    draw_set_color(c_white);
+    draw_circle(x,y,32,1);
+    }
+if (pulse&lt;3){
+    draw_set_color(c_black);
+    draw_circle(x,y,26,0);
+    draw_set_color(c_white);
+    draw_circle(x,y,26,1);
+    draw_circle(x-12,y-12,5,1);
+    draw_circle(x+12,y+12,3,1);
+    }
+else{
+    draw_set_color(c_black);
+    draw_circle(x,y,24,0);
+    draw_set_color(c_white);
+    draw_circle(x,y,24,1);
+    draw_circle(x-12,y-12,4,1);
+    draw_circle(x+12,y+12,2,1);
+    }
+if (pulse&gt;4)
+    pulse=0;
+    }
+
+//FIRE
+mine+=1;
+if (mine&gt;=60 &amp;&amp; instance_number(obj_hero)==1){
+    mine=0;
+    instance_create(x,y,obj_heromine);
+    scr_heroexplo();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

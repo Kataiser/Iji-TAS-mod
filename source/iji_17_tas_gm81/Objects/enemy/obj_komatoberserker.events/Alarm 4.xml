@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Get up
+if (dead==0) &amp;&amp; state==5{
+    if (ijikill){
+    tempid=instance_create(x+6,y+20,obj_visionchecke)
+    tempid.direction=0;
+    tempid.speed=16;
+    tempid=instance_create(x+6,y+20,obj_visionchecke)
+    tempid.direction=180;
+    tempid.speed=16;
+    }
+    armor=200;
+    state=6;
+    takingpain=0;
+    image_index=0;
+    image_single=-1;
+    image_speed=0.5;
+    if (facing==0)
+        sprite_index=spr_komatoberserker_getupleft;
+    else
+        sprite_index=spr_komatoberserker_getup;
+    alarm[2]=6;
+    if (global.sector==6){
+        if (x&gt;6624 &amp;&amp; x&lt;6880 &amp;&amp; y&gt;2280 &amp;&amp; y&lt;3104)
+            goodgrief=1;
+        else
+            goodgrief=0;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

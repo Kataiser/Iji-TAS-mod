@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_kickbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">kicked=1;
+if (!ignorekick &amp;&amp; other.image_index==0){
+    scr_sound("glo_kick");
+    script_execute(scr_shakescreen,1);
+    repeat(3){
+        tempid=instance_create(other.x+18,other.y+10,obj_scrapwhite);
+        tempid.speed=global.strengthlevel*0.25+10;
+        if (global.facing==0)
+            tempid.direction=random(180)-90;
+        else
+            tempid.direction=random(180)+90;
+        }
+    if (other.sprite_index==spr_detonator){
+        if (x&lt;other.x &amp;&amp; place_free(x-4,y))
+            hs=-(8+global.strengthlevel*0.5);
+        else if (place_free(x+4,y))
+            hs=8+global.strengthlevel*0.5;
+        }
+    else{
+        if (global.facing==0 &amp;&amp; place_free(x-4,y))
+            hs=-(10+global.strengthlevel*0.25);
+        else if (place_free(x+4,y))
+            hs=10+global.strengthlevel*0.25;
+        }
+    if (place_free(x,y-6) &amp;&amp; !place_free(x,y+6) &amp;&amp; !streaming)
+        vs-=5;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

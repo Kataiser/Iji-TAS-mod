@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (pulsedirection==0)
+    pulse+=9*randompulse;
+else
+    pulse-=9*randompulse;
+if (pulse&gt;=245 &amp;&amp; pulsedirection==0)
+    pulsedirection=1;
+if (pulse&lt;=10 &amp;&amp; pulsedirection==1)
+    pulsedirection=0;
+
+if (pulse2direction==0)
+    pulse2+=8*randompulse;
+else
+    pulse2-=8*randompulse;
+if (pulse2&gt;=245 &amp;&amp; pulse2direction==0)
+    pulse2direction=1;
+if (pulse2&lt;=10 &amp;&amp; pulse2direction==1)
+    pulse2direction=0;
+
+if (pulse3direction==0)
+    pulse3+=7*randompulse;
+else
+    pulse3-=7*randompulse;
+if (pulse3&gt;=245 &amp;&amp; pulse3direction==0)
+    pulse3direction=1;
+if (pulse3&lt;=10 &amp;&amp; pulse3direction==1)
+    pulse3direction=0;
+if (x&gt;-96 &amp;&amp; x&lt;800 &amp;&amp; y&gt;-128 &amp;&amp; y&lt;600){
+draw_set_color(make_color_rgb(pulse,pulse2,pulse3));
+draw_line(x+64,y+128,x+64,y+32);
+draw_line(x+80,y+64,x+48,y);
+draw_line(x+48,y,x+32,y+16);
+draw_line(x+32,y+16,x+96,y+48);
+draw_line(x+96,y+48,x+80,y+64);
+draw_line(x+48,y+64,x+80,y);
+draw_line(x+80,y,x+96,y+16);
+draw_line(x+96,y+16,x+32,y+48);
+draw_line(x+32,y+48,x+48,y+64);
+draw_line(x+64,y+128,x+32,y+96);
+draw_line(x+64,y+112,x+96,y+80);
+draw_line(x+64,y+96,x+48,y+80);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

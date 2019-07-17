@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_loadcuts();
+scr_musicvolume();
+instance_create(0,0,obj_gamma);
+
+nextbg=bg_black;
+ready=0;
+alpha=1;
+alarm[0]=10;
+endnow=0;
+nextppe=0;
+scrolling=0;
+scrolldelay=0;
+scrollcyc=0;
+flash=0;
+flashcyc=0;
+overlays=0;
+
+coffspeed=((121*28)+600)/6350; //Credits scroll speed
+//coffspeed=((113*28)+600)/6575; //Credits scroll speed
+
+//Credits
+if (global.cut==10 || global.cut==13 || global.cut==15){
+ credtext="$$$$$$$$- CREDITS -#$#$#$#$$$$GAME DESIGN, SCRIPT,#$$$PROGRAMMING, GRAPHICS,#$$$$$$$SFX/VOICE EDIT#$#$$$$$$$$Daniel Remar#$#$#$#$$$$$$$$$$$MUSIC#$#$$$$$THE IJI SOUNDTRACK#$$$$$$$$Chris Geehan#$$$$Dan Byrne McCullough#$#$$$$$$$$$BOSS THEME#$$$$$$$Tom Mauritzon#$#$$$$HERO 3D THEME: HERO#$$$$$$$$$Written by#$$$$$Machinae Supremacy#$$$$$$$$$Covered by#$$$$$Captain Goodnight#$#$$$ENDING THEME: FURTHER#$$$Written by VNV Nation#$$$Covered and performed#$$$$$$$$by LifeForce#$#$#";
+credtext+="$#$$$$$$$$VOICE ACTING#$#$$$$$$$$$$$$IJI#$$$$$$$Anna Ashabova#$#$$$$$$$ELITE KROTERA,#$$$$$$$$GENERAL TOR,#$$$KOMATO ANNIHILATOR and#$$$$$$$$KOMATO BEAST#$$$$$$$Erik Sj^strand#$#$$$$$ANNIHILATOR IOSA,#$$$$$$TASEN ELITE and#$$$$$$KOMATO ASSASSIN#$$$$$$Annette Nielsen#$#$$$$$$$ASSASSIN ASHA#$$$$$$$$Ola Holmdahl#$#$$$$$ASSASSIN ANSAKSIE#$$$$$$Camila Dalence,#$$$$$$Lisa Lenkel and#$$$$$$$Louise Stigell#$#$$$$$$$$$$DAN and#$$$$$$$KOMATO TROOPER#$$$$$$Henrik Engstr^m#$#$$$$$$KOMATO BERSERKER#$$$$$$$Monika Mikucka#$#$$$$$$TASEN COMMANDER#$$$$$$Miguel Nalvarte#$#$$$$$$$TASEN SOLDIER#$$$$$Birgitta Johansson#$#$$$$$$$$TASEN SCOUT#$$$$$Johannes Helgesson#$#$#";
+credtext+="$#$$$$$$$$$$TESTING#$#$2005 Ultimortal community$#$$$$2005 MaSu community#$$$$$$$$Eo community#$#$#$#$$$$$$IN-DEPTH TESTING#$#$$$$$$Anders Davallius#$$$$$$Annette Nielsen#$$$$$$Anton Grundvall#$$$$$$$$$$$Audric#$$$$$$$$$$$$Bag#$$$$$$$$$$$Beoran#$$$$$$$$$$$Berra#$$$$$$$$$$$Cactus#$$$$$$$$$$ChevyRay#$$$$$$Chris Laviolette#$$$$$$$Erik Sj^strand#$$$$$$$$Grashaboras#$$$$$$Henrik Engstr^m#$$$$$$$Linus Nordgren#$$$$$$$$Ola Holmdahl#$$$$$$$Oscar Aludden#$$$$$$$$$Pondwater#$$$$$$$$$ReallyJoel#$$$$$$$$$$Srehpog#$$$$$$Thomas Ahlstr^m#$#$#";
+credtext+="$#$$$$$$$SPECIAL THANKS#$#$$$$$$$$$$$Beoran#$$$$$$$$$Blender 3D#$$$$$$$Mark Overmars#$$$$$$$$$$Trollis#$$$$Game Maker Community#$#$#$#$$$Copyright Remar Games#$$$$$$$$$2004-2010#$#$#$#$#$#$#$#$#$#$#$$$$$$$$$$THE END";
+
+// credtext="$$$$$$$$- CREDITS -$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$GAME DESIGN, SCRIPT,$$$#$$$PROGRAMMING, GRAPHICS,$$#$$$$$$$SFX/VOICE EDIT$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$Daniel Remar$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$MUSIC$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$THE IJI SOUNDTRACK$$$$#$$$$$$$$Chris Geehan$$$$$$$#$$$$Dan Byrne McCullough$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$BOSS THEME$$$$$$$$#$$$$$$$Tom Mauritzon$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$HERO 3D THEME: HERO$$$$#$$$$$$$$$Written by$$$$$$$$#$$$$$Machinae Supremacy$$$$#$$$$$$$$$Covered by$$$$$$$$#$$$$$Captain Goodnight$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$ENDING THEME: FURTHER$$$#$$$Written by VNV Nation$$$#$$$Covered and performed$$$#$$$$$$$$by LifeForce$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#";
+//credtext+="$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$VOICE ACTING$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$IJI$$$$$$$$$$$$#$$$$$$$Anna Ashabova$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$ELITE KROTERA,$$$$$$#$$$$$$$$GENERAL TOR,$$$$$$$#$$$KOMATO ANNIHILATOR and$$#$$$$$$$$KOMATO BEAST$$$$$$$#$$$$$$$Erik Sj^strand$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$ANNIHILATOR IOSA,$$$$$#$$$$$$TASEN ELITE and$$$$$$#$$$$$$KOMATO ASSASSIN$$$$$$#$$$$$$Annette Nielsen$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$ASSASSIN ASHA$$$$$$$#$$$$$$$$Ola Holmdahl$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$ASSASSIN ANSAKSIE$$$$$#$$$$$$Camila Dalence,$$$$$$#$$$$$$Lisa Lenkel and$$$$$$#$$$$$$$Louise Stigell$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$DAN and$$$$$$$$$$#$$$$$$$KOMATO TROOPER$$$$$$#$$$$$$Henrik Engstr^m$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$KOMATO BERSERKER$$$$$#$$$$$$$Monika Mikucka$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$TASEN COMMANDER$$$$$$#$$$$$$Miguel Nalvarte$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$TASEN SOLDIER$$$$$$$#$$$$$Birgitta Johansson$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$TASEN SCOUT$$$$$$$$#$$$$$Johannes Helgesson$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#";
+//credtext+="$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$TESTING$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$2005 Ultimortal community$#$$$$2005 MaSu community$$$$#$$$$$$$$Eo community$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$IN-DEPTH TESTING$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$Anders Davallius$$$$$#$$$$$$Annette Nielsen$$$$$$#$$$$$$Anton Grundvall$$$$$$#$$$$$$$$$$$Audric$$$$$$$$$$#$$$$$$$$$$$$Bag$$$$$$$$$$$$#$$$$$$$$$$$Beoran$$$$$$$$$$#$$$$$$$$$$$Berra$$$$$$$$$$$#$$$$$$$$$$$Cactus$$$$$$$$$$#$$$$$$$$$$ChevyRay$$$$$$$$$#$$$$$$Chris Laviolette$$$$$#$$$$$$$Erik Sj^strand$$$$$$#$$$$$$$$Grashaboras$$$$$$$$#$$$$$$Henrik Engstr^m$$$$$$#$$$$$$$Linus Nordgren$$$$$$#$$$$$$$$Ola Holmdahl$$$$$$$#$$$$$$$Oscar Aludden$$$$$$$#$$$$$$$$$Pondwater$$$$$$$$$#$$$$$$$$$ReallyJoel$$$$$$$$#$$$$$$$$$$Srehpog$$$$$$$$$$#$$$$$$Thomas Ahlstr^m$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#";
+//credtext+="$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$SPECIAL THANKS$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$Beoran$$$$$$$$$$#$$$$$$$$$Blender 3D$$$$$$$$#$$$$$$$Mark Overmars$$$$$$$#$$$$$$$$$$Trollis$$$$$$$$$$#$$$$Game Maker Community$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$Copyright Remar Games$$$#$$$$$$$$$2004-2010$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$$$$$$$$$$$$$$$$$$#$$$$$$$$$$THE END$$$$$$$$$$";
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

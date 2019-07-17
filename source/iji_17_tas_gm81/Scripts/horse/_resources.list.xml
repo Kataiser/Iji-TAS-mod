@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_horseinit" type="RESOURCE"/>
+  <resource name="scr_horseendstep" type="RESOURCE"/>
+  <resource name="scr_horsedraw" type="RESOURCE"/>
+  <resource name="scr_horseview" type="RESOURCE"/>
+  <resource name="scr_methodhorse" type="RESOURCE"/>
+  <resource name="scr_horseenemystep" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">rand1=floor(random(10));
+rand2=floor(random(10));
+
+count=0;
+while (rand2==rand1 || count&gt;1000){
+count+=1;
+rand2=floor(random(10));
+}
+
+attack=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pushbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (visible){
+if (dead==0){
+    if (global.truce){
+        tempid=instance_create(x+6,y+8,obj_visionchecke)
+        tempid.direction=0;
+        tempid.speed=16;
+        tempid=instance_create(x+6,y+8,obj_visionchecke)
+        tempid.direction=180;
+        tempid.speed=16;
+        }
+    if (global.cracklevel&gt;=security){
+        if (cracked==0){
+            global.security=security;
+            crackmark=1;
+            if (weapon==0) global.cracktext="Machinegun Turret#H1 A"+string(maxarmor)+" W1#Security: ";
+            else if (weapon==1) global.cracktext="Rocket Turret#H1 A"+string(maxarmor)+" W1#Security: ";
+            else if (weapon==2) global.cracktext="Spread Turret#H1 A"+string(maxarmor)+" W1#Security: ";
+            else if (weapon==3) global.cracktext="Devastator Turret#H1 A"+string(maxarmor)+" W1#Security: ";
+            else if (weapon==4) global.cracktext="Shock Turret#H1 A"+string(maxarmor)+" W1#Security: ";
+            else if (weapon==5) global.cracktext="Splinter Turret#H1 A"+string(maxarmor)+" W1#Security: ";
+            else if (weapon==6) global.cracktext="Plasma Turret#H1 A"+string(maxarmor)+" W1#Security: ";
+            else if (weapon==7) global.cracktext="Corrupted Turret#H1 A"+string(maxarmor)+" W1#Security: ";
+            global.cracktext+=string(global.security);
+            if (global.security==10)
+                global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+            else
+                global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+            script_execute(scr_begincrack);
+            }
+        else{
+            global.erasetop=0;
+            global.topmessage="Subject has already been cracked";
+            }
+        }
+    else{
+        global.erasetop=0;
+        if (weapon==0) global.topmessage="You need a Crack skill of "+string(security)+" to crack a Machinegun Turret";
+        else if (weapon==1) global.topmessage="You need a Crack skill of "+string(security)+" to crack a Rocket Turret";
+        else if (weapon==2) global.topmessage="You need a Crack skill of "+string(security)+" to crack a Spread Turret";
+        else if (weapon==3) global.topmessage="You need a Crack skill of "+string(security)+" to crack a Devastator Turret";
+        else if (weapon==4) global.topmessage="You need a Crack skill of "+string(security)+" to crack a Shock Turret";
+        else if (weapon==5) global.topmessage="You need a Crack skill of "+string(security)+" to crack a Splinter Turret";
+        else if (weapon==6) global.topmessage="You need a Crack skill of "+string(security)+" to crack a Plasma Turret";
+        else if (weapon==7) global.topmessage="You need a Crack skill of "+string(security)+" to crack a Corrupted Turret";
+        scr_sound("glo_crackfail");
+        global.ignorestation=90;
+        }
+    }
+else{
+    global.erasetop=0;
+    global.topmessage="Unable to crack; malfunction detected";
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

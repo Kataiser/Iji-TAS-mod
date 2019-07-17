@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_crumble4" type="RESOURCE"/>
+  <resource name="obj_s4reactor" type="RESOURCE"/>
+  <resource name="obj_blockshredder" type="RESOURCE"/>
+  <resource name="obj_s4stopflash" type="RESOURCE"/>
+  <resource name="obj_sec4doll" type="RESOURCE"/>
+</resources>

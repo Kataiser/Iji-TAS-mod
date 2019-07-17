@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_alliedenemy">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Shredder
+if (speed&gt;6 &amp;&amp; other.enemytype==5){
+    other.shredderhp-=100;
+    if (countdown&gt;0)
+        other.ijikill=1;
+    else
+        other.ijikill=0;
+    if (other.shredderhp&lt;=0 &amp;&amp; other.ijikill &amp;&amp; other.killtype&lt;6)
+        other.killtype=6;
+    scr_sound("glo_kick");
+    instance_destroy();
+    script_execute(scr_shakescreen,1);
+    if (global.specialbake==0) maximum=25;
+    else maximum=120;
+    if (instance_number(obj_scrapwhite)&lt;maximum){
+        repeat(20){
+            tempid=instance_create(x+random(16),y+random(16),obj_scrapwhite);
+            tempid.speed=random(9)+(10);
+            tempid.direction=random(360);
+            }
+        }
+    }
+
+//Annihilator    
+else if (speed&gt;6 &amp;&amp; other.enemytype==14){
+    other.hp-=1;
+    if (countdown&gt;0)
+        other.ijikill=1;
+    else
+        other.ijikill=0;
+    if (other.hp&lt;=0 &amp;&amp; other.ijikill &amp;&amp; other.killtype&lt;6)
+        other.killtype=6;
+    if (other.state!=10){
+        if (other.angry==0 &amp;&amp; (other.state==0 || other.state==1))
+            other.alarm[2]=1;
+        other.angry=1;
+        other.targetiji=300;
+        other.alarm[5]=300;
+        }
+    scr_sound("glo_kick");
+    instance_destroy();
+    script_execute(scr_shakescreen,1);
+    with (other){
+        if (annihilatorbeta)
+            scr_betaannihilatorpain();
+        else
+            scr_annihilatorpain();
+        }
+    if (global.specialbake==0) maximum=25;
+    else maximum=120;
+    if (instance_number(obj_scrapwhite)&lt;maximum){
+        repeat(20){
+            tempid=instance_create(x+random(16),y+random(16),obj_scrapwhite);
+            tempid.speed=random(9)+(10);
+            tempid.direction=random(360);
+            }
+        }
+    }
+
+//Everything else
+else if (speed&gt;6 &amp;&amp; other.hp&gt;0 &amp;&amp; !other.takingpain &amp;&amp; !other.rapidfirempfb){
+    other.armor=-10;
+    other.angry=1;
+    other.targetiji=300;
+    if (countdown&gt;0)
+        other.ijikill=1;
+    else
+        other.ijikill=0;
+    if (other.krotera &amp;&amp; global.difficulty==0)
+        other.hp-=2;
+    if (other.krotera &amp;&amp; global.difficulty==1)
+        other.hp-=1;
+    if (other.hp&lt;=0)
+        other.hp=1;
+    if (other.hp&lt;=1 &amp;&amp; other.ijikill &amp;&amp; other.killtype&lt;6)
+        other.killtype=6;
+    scr_sound("glo_kick");
+    instance_destroy();
+    script_execute(scr_shakescreen,1);
+    if (global.specialbake==0) maximum=25;
+    else maximum=120;
+    if (instance_number(obj_scrapwhite)&lt;maximum){
+        repeat(20){
+            tempid=instance_create(x+random(16),y+random(16),obj_scrapwhite);
+            tempid.speed=random(9)+(10);
+            tempid.direction=random(360);
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

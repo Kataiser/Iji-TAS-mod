@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tasenelite">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if ((state==2 || state==3) &amp;&amp; !other.dead &amp;&amp; other.sprite_index!=spr_tasenelite_pain &amp;&amp; other.sprite_index!=spr_tasenelite_painleft){
+    scr_sound("glo_kick");
+    repeat(3){
+        tempid=instance_create(other.x+18,other.y+30,obj_scrapwhite);
+        tempid.speed=hspeed;
+        tempid.direction=random(360);
+        }
+    scr_shakescreen(2);
+    other.ijikill=0;
+    other.hp-=1;
+    other.targetrival=300;
+    other.target=id;
+    global.tempshred=hspeed;
+    with (other)
+        scr_elitepain(0);
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

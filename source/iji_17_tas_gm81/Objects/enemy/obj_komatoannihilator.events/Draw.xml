@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Destroy
+if (electrocute){
+    eleccyc+=1;
+    scr_shakescreen(1);
+    if (eleccyc==2)
+        eleccyc2=1;
+    if (eleccyc==4){
+        eleccyc=0;
+        eleccyc2=0;
+        }
+    }
+else{
+    eleccyc=0;
+    eleccyc2=0;
+    }
+
+if (sprite_index==spr_komatoannihilator_walk || sprite_index==spr_komatoannihilator_walkleft){
+    basiccyc=0;
+    basicbob=0;
+    draw_sprite(sprite_index,image_single,x,y)
+    }
+else if (state==10 &amp;&amp; facing==0){
+    draw_sprite(sprite_index,image_single,x,y)
+    if (!goback){
+        if (targettype==0){
+            if (obj_iji.overload==3 &amp;&amp; obj_iji.overloadtime&gt;0)
+                targetalpha=random(0.2);
+            else
+                targetalpha=1;
+            if (image_single==0)
+                draw_sprite_ext(spr_destroyed_iji_left,0,x-27,y+56,1,1,0,c_white,targetalpha);
+            if (image_single==1)
+                draw_sprite_ext(spr_destroyed_iji_left,0,x-30,y+37,1,1,0,c_white,targetalpha);
+            if (image_single==2)
+                draw_sprite_ext(spr_destroyed_iji_left,0,x-23,y+11,1,1,0,c_white,targetalpha);
+            if (image_single==3)
+                draw_sprite_ext(spr_destroyed_iji_left,eleccyc2,x-2,y-21,1,1,0,c_white,targetalpha);
+            }
+        if (targettype==2){
+            if (image_single==0)
+                draw_sprite(spr_destroyed_commander_left,0,x-23,y+50);
+            if (image_single==1)
+                draw_sprite(spr_destroyed_commander_left,0,x-26,y+31);
+            if (image_single==2)
+                draw_sprite(spr_destroyed_commander_left,0,x-20,y+5);
+            if (image_single==3)
+                draw_sprite(spr_destroyed_commander_left,eleccyc2,x,y-23);
+            }
+        if (targettype==3){
+            if (image_single==0)
+                draw_sprite(spr_destroyed_elite_left,0,x-18,y+50);
+            if (image_single==1)
+                draw_sprite(spr_destroyed_elite_left,0,x-23,y+35);
+            if (image_single==2)
+                draw_sprite(spr_destroyed_elite_left,0,x-15,y+7);
+            if (image_single==3)
+                draw_sprite(spr_destroyed_elite_left,eleccyc2,x+2,y-22);
+            }
+        }
+    }
+else if (state==10 &amp;&amp; facing==1){
+    draw_sprite(sprite_index,image_single,x,y)
+    if (!goback){
+        if (targettype==0){
+            if (obj_iji.overload==3 &amp;&amp; obj_iji.overloadtime&gt;0)
+                targetalpha=random(0.2);
+            else
+                targetalpha=1;
+            if (image_single==0)
+                draw_sprite_ext(spr_destroyed_iji,0,x+123,y+60,1,1,0,c_white,targetalpha);
+            if (image_single==1)
+                draw_sprite_ext(spr_destroyed_iji,0,x+128,y+39,1,1,0,c_white,targetalpha);
+            if (image_single==2)
+                draw_sprite_ext(spr_destroyed_iji,0,x+124,y+13,1,1,0,c_white,targetalpha);
+            if (image_single==3)
+                draw_sprite_ext(spr_destroyed_iji,eleccyc2,x+108,y-18,1,1,0,c_white,targetalpha);
+            }
+        if (targettype==2){
+            if (image_single==0)
+                draw_sprite(spr_destroyed_commander,0,x+124,y+55);
+            if (image_single==1)
+                draw_sprite(spr_destroyed_commander,0,x+128,y+35);
+            if (image_single==2)
+                draw_sprite(spr_destroyed_commander,0,x+121,y+9);
+            if (image_single==3)
+                draw_sprite(spr_destroyed_commander,eleccyc2,x+104,y-22);
+            }
+        if (targettype==3){
+            if (image_single==0)
+                draw_sprite(spr_destroyed_elite,0,x+120,y+50);
+            if (image_single==1)
+                draw_sprite(spr_destroyed_elite,0,x+123,y+32);
+            if (image_single==2)
+                draw_sprite(spr_destroyed_elite,0,x+117,y+6);
+            if (image_single==3)
+                draw_sprite(spr_destroyed_elite,eleccyc2,x+99,y-24);
+            }
+        }
+    }
+
+//Basic
+else if (sprite_index==spr_komatoannihilator_body || sprite_index==spr_komatoannihilator_bodyleft){
+    basiccyc+=1;
+    if (basiccyc==10)
+        basicbob=-1;
+    if (basiccyc==15)
+        basicbob=-2;
+    if (basiccyc==25)
+        basicbob=-1;
+    if (basiccyc==30){
+        basicbob=0;
+        basiccyc=0;
+        }
+    if (firingrocket){
+        basiccyc=0;
+        basicbob=0;
+        }
+    if (facing==0){
+        draw_sprite(spr_komatoannihilator_bodyleft,0,x,y)
+        draw_sprite(spr_komatoannihilator_armsleft,0,x,y+basicbob);
+        }
+    else{
+        draw_sprite(spr_komatoannihilator_body,0,x,y)
+        draw_sprite(spr_komatoannihilator_arms,0,x,y+basicbob);
+        }
+    }
+else{
+    basiccyc=0;
+    basicbob=0;
+    draw_sprite(sprite_index,image_single,x,y)
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

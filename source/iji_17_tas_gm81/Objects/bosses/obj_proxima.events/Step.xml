@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">xtargetprev=obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2;
+ytargetprev=obj_iji.bbox_top+(obj_iji.bbox_bottom-obj_iji.bbox_top)/2;
+xtarget=xtargetprev-(xtargetprev-xtarget)/1.02;
+ytarget=ytargetprev-(ytargetprev-ytarget)/1.02;
+
+//speak phrase
+if (talkcyc&lt;100){
+    talkcyc+=1;
+    if (talkcyc==2){
+        if (talk[0]==0)
+            scr_sound("pro_beep1");
+        else if (talk[0]==1)
+            scr_sound("pro_beep2");
+        else if (talk[0]==2)
+            scr_sound("pro_beep3");
+        }
+    else if (talkcyc==6){
+        if (talk[1]==0)
+            scr_sound("pro_beep1");
+        else if (talk[1]==1)
+            scr_sound("pro_beep2");
+        else if (talk[1]==2)
+            scr_sound("pro_beep3");
+        }
+    else if (talkcyc==10){
+        if (talk[2]==0)
+            scr_sound("pro_beep1");
+        else if (talk[2]==1)
+            scr_sound("pro_beep2");
+        else if (talk[2]==2)
+            scr_sound("pro_beep3");
+        }
+    }
+
+
+cfised=0;
+thored=0;
+if (instance_number(obj_iji)==0){
+    order=0;
+    state=0;
+    fire=0;
+    alarm[1]=0;
+    alarm[2]=0;
+    alarm[3]=0;
+    alarm[4]=0;
+    chargingnuke=0;
+    with (obj_proximasupercharge)
+        instance_destroy();
+    }
+
+//Charge Nuke
+if (chargingnuke){
+    if (alarm[3]&lt;30)
+        obj_sabot.flash+=0.035;
+    else
+        obj_sabot.flash+=0.0212;
+    instance_create(x-512+random(1024),y-512+random(1024),obj_proximasupercharge);
+    sndchargecyc+=1;
+    if (sndchargecyc&gt;=sndchargecycmax){
+        sndcharge+=1;
+        sndchargecyc=0;
+        if (alarm[3]&gt;=300){
+            scr_sound("tor_gather");
+            sndchargecycmax=20;
+            }
+        else if (alarm[3]&gt;=150){
+            scr_sound("tor_gather_q01");
+            sndchargecycmax=15;
+            }
+        else{
+            scr_sound("tor_gather_q03");
+            sndchargecycmax=10;
+            }
+        }
+    }
+
+//Move left or right until halfway to "middle"
+if (state==1){
+    if (x&lt;xgashere &amp;&amp; x&lt;xmiddle-16)
+        gasr=2;
+    if (x&gt;xgashere &amp;&amp; x&gt;xmiddle+16)
+        gasl=2;
+    }
+
+//Move freely until halfway to target
+if (state==2){
+    if (x&lt;xgashere &amp;&amp; x&lt;xdestination-16)
+        gasr=2;
+    if (x&gt;xgashere &amp;&amp; x&gt;xdestination+16)
+        gasl=2;
+    if (y&lt;ygashere &amp;&amp; y&lt;ydestination-16)
+        gasd=2;
+    if (y&gt;ygashere &amp;&amp; y&gt;ydestination+16)
+        gasu=2;
+    }
+
+//Tackle (move towards Iji)
+if (state==3){
+    seeiji=1;
+    if (collision_line(x,y,obj_iji.x,obj_iji.y,obj_block,0,1))
+        seeiji=0;
+    if (y&lt;=736 &amp;&amp; obj_iji.y&gt;800 &amp;&amp; (collision_line(x-64,y,obj_iji.x,obj_iji.y,obj_block,0,1) || collision_line(x+64,y,obj_iji.x,obj_iji.y,obj_block,0,1)))
+        seeiji=0;
+    else if (y&lt;=960 &amp;&amp; obj_iji.y&gt;1024 &amp;&amp; (collision_line(x-64,y,obj_iji.x,obj_iji.y,obj_block,0,1) || collision_line(x+64,y,obj_iji.x,obj_iji.y,obj_block,0,1)))
+        seeiji=0;
+    if (seeiji==0){
+        if (x&gt;xmiddle){
+            if (x&lt;xright){
+                if (y&lt;obj_iji.y-20)
+                    gasd=2;
+                if (y&gt;obj_iji.y-20)
+                    gasu=2;
+                }
+            gasl=2;
+            gasr=0;
+            }
+        else{
+            if (x&gt;xleft){
+                if (y&lt;obj_iji.y-20)
+                    gasd=2;
+                if (y&gt;obj_iji.y)
+                    gasu=2;
+                }
+            gasl=0;
+            gasr=2;
+            }
+        }
+    else{
+        if (x&lt;obj_iji.x-20)
+            gasr=2;
+        if (x&gt;obj_iji.x+32)
+            gasl=2;
+        if (y&lt;obj_iji.y-20)
+            gasd=2;
+        if (y&gt;obj_iji.y)
+            gasu=2;
+        }
+    }
+
+//Spread rockets (and MPFB)
+if (state==4){
+    if (y&lt;ygashere &amp;&amp; y&lt;ydestination-16)
+        gasd=2;
+    if (y&gt;ygashere &amp;&amp; y&gt;ydestination+16)
+        gasu=2;
+    if (fire==1)
+        instance_create(x-30+random(60),y-30+random(60),obj_bigsmoke);
+    if (fire==3)
+        instance_create(x-30+random(60),y-30+random(60),obj_mpfbspark);
+    }
+
+//Splintergun emit sparks
+if (fire==2)
+    instance_create(x-30+random(60),y-30+random(60),obj_shockemit);
+//Rocket hail emit smoke
+if (fire==5)
+        instance_create(x-30+random(60),y-30+random(60),obj_bigsmoke);
+
+//Plasma cannon
+if (state==5){
+    if (y&lt;obj_iji.y+20 &amp;&amp; y&lt;1168)
+        gasd=2;
+    if (y&gt;obj_iji.y+20)
+        gasu=2;
+    instance_create(x-30+random(60),y-30+random(60),obj_shockemit);
+    }
+
+//REROLL ORDERS WHEN IDLE (done with current order)
+if (idle &amp;&amp; abs(hs)&lt;=4 &amp;&amp; abs(vs)&lt;=4 &amp;&amp; gasl==0 &amp;&amp; gasr==0 &amp;&amp; gasu==0 &amp;&amp; gasd==0 &amp;&amp; (fire!=7 || abs(hs)&lt;5)){
+    //After electrocution
+    if (electrified&gt;0){
+        order=3;
+        alarm[2]=1;
+        idle=0;
+        }
+    //Move around while Splintergunning
+    else if (fire==2){
+        order=2;
+        alarm[2]=1;
+        idle=0;
+        }
+    //After Rocket hail
+    else if (fire==5){
+        scr_sound("wea_rock");
+        repeat(5+global.difficulty*2)
+            instance_create(x,y,obj_rockethail);
+        repeat(5)
+            instance_create(x,y,obj_smokepoint);
+        order=4+floor(random(5));
+        alarm[2]=1;
+        idle=0;
+        fire=0;
+        }
+    //Power down and charge Nuke
+    else if (fire==7){
+        order=0;
+        idle=0;
+        fire=0;
+        streaming=0;
+        antigrav=0;
+        nukewait=0;
+        alarm[3]=450;
+        chargingnuke=1;
+        scr_sound("pro_powerdown");
+        }
+    //Normal stuff
+    else{
+        idle=0;
+        state=0;
+        if (x&lt;xleft || x&gt;xright)
+            order=1;
+        else{
+            nukewait+=1;
+            if (nukewait&gt;=10+global.difficulty*2){
+                order=9;
+                }
+            else{
+                order=4+floor(random(5));
+                }
+            }
+        alarm[2]=1;
+        }
+    }
+
+//No antigrav
+if (!antigrav &amp;&amp; (place_free(x,y+vs+1)))
+    vs+=1;
+
+//Limit speed
+if (hs&gt;20)
+    hs=20;
+if (vs&gt;20)
+    vs=20;
+if (hs&lt;-20)
+    hs=-20;
+if (vs&lt;-20)
+    vs=-20;
+if (hs&gt;-0.25 &amp;&amp; hs&lt;0.25)
+    hs=0;
+if (vs&gt;-0.25 &amp;&amp; vs&lt;0.25)
+    vs=0;
+
+//Move
+x+=hs;
+y+=vs;
+
+//Collisions
+//Ortagonal
+ortagonal=0;
+if (!place_free(x+hs,y+vs)){
+    if (abs(hs)+abs(vs)&gt;5){
+        scr_shakescreen(1);
+        scr_sound("glo_land");
+        with (obj_paper){
+            if (distance_to_object(obj_proxima)&lt;64 &amp;&amp; dead==0)
+                dead=1;
+            }
+        }
+    if (!place_free(x,y-abs(vs))){
+        move_contact_solid(90,30);
+        vs*=-0.5;
+        if (vs&lt;2)
+            vs=2;
+        ortagonal=1;
+        }
+    else if (!place_free(x,y+abs(vs))){
+        move_contact_solid(270,30);
+        if (!antigrav &amp;&amp; vs&gt;3){
+            instance_create(x-32,y+54,obj_smoke);
+            instance_create(x+32,y+54,obj_smoke);
+            repeat(5)
+                instance_create(x-32+random(64),y+50+random(8),obj_smoke);
+            }
+        vs*=-0.5;
+        ortagonal=1;
+        if (vs&gt;-2 &amp;&amp; antigrav)
+            vs=-2;
+        }
+    if (!place_free(x-abs(hs),y)){
+        move_contact_solid(180,30);
+        hs*=-0.5;
+        if (hs&lt;2)
+            hs=2;
+        ortagonal=1;
+        }
+    else if (!place_free(x+abs(hs),y)){
+        move_contact_solid(0,30);
+        hs*=-0.5;
+        if (hs&gt;-2)
+            hs=-2;
+        ortagonal=1;
+        }
+//Diagonal
+    if (!place_free(x-abs(hs),y-abs(vs)) &amp;&amp; !ortagonal){
+        move_contact_solid(135,30);
+        hs*=-0.5;
+        vs*=-0.5;
+        }
+    else if (!place_free(x-abs(hs),y+abs(vs)) &amp;&amp; !ortagonal){
+        move_contact_solid(225,30);
+        hs*=-0.5;
+        vs*=-0.5;
+        }
+    else if (!place_free(x+abs(hs),y+abs(vs)) &amp;&amp; !ortagonal){
+        move_contact_solid(315,30);
+        hs*=-0.5;
+        vs*=-0.5;
+        }
+    else if (!place_free(x+abs(hs),y-abs(vs)) &amp;&amp; !ortagonal){
+        move_contact_solid(45,30);
+        hs*=-0.5;
+        vs*=-0.5;
+        }
+    }
+
+//Gas
+if (gasl&gt;0){
+    if (antigrav &amp;&amp; place_free(x-6,y))
+        hs-=0.5;
+    gasl-=1;
+    }
+else if(hs&lt;0 &amp;&amp; antigrav)
+    hs+=0.5;
+
+if (gasr&gt;0){
+    if (antigrav &amp;&amp; place_free(x+6,y))
+        hs+=0.5;
+    gasr-=1;
+    }
+else if(hs&gt;0 &amp;&amp; antigrav)
+    hs-=0.5;
+
+if (gasu&gt;0){
+    if (antigrav &amp;&amp; place_free(x,y-6))
+        vs-=0.5;
+    gasu-=1;
+    }
+else if(vs&lt;0 &amp;&amp; antigrav)
+    vs+=0.5;
+
+if (gasd&gt;0){
+    if (antigrav &amp;&amp; place_free(x,y+6))
+        vs+=0.5;
+    gasd-=1;
+    }
+else if(vs&gt;0 &amp;&amp; antigrav)
+    vs-=0.5;
+
+//Exhaust gas and move
+if (gasl&lt;1) gasl=0;
+if (gasd&lt;1) gasd=0;
+if (gasr&lt;1) gasr=0;
+if (gasu&lt;1) gasu=0;
+if (hs&gt;-0.5 &amp;&amp; hs&lt;0.5) hs=0;
+if (vs&gt;-0.5 &amp;&amp; vs&lt;0.5) vs=0;
+
+//Rest and friction
+if (!antigrav &amp;&amp; !place_free(x,y+2)){
+    if (vs&gt;0 &amp;&amp; vs&lt;2){
+        move_contact_solid(270,10)
+        vs=0;
+        }
+    if (hs&lt;-2)
+        hs+=1;
+    else if (hs&gt;2)
+        hs-=1;
+    else
+        hs=0;
+    }
+
+//Wave
+if (antigrav &amp;&amp; streamcyc==0){
+    if (gasu) (instance_create(x+hs-64,y+vs-64,obj_proxima_wave)).sprite_index=spr_proxima_wavedown;
+    if (gasl) (instance_create(x+hs-64,y+vs-64,obj_proxima_wave)).sprite_index=spr_proxima_waveright;
+    if (gasd) (instance_create(x+hs-64,y+vs-64,obj_proxima_wave)).sprite_index=spr_proxima_waveup;
+    if (gasr) (instance_create(x+hs-64,y+vs-64,obj_proxima_wave)).sprite_index=spr_proxima_waveleft;
+    }
+if (state==6 &amp;&amp; angleshift&gt;0 &amp;&amp; vs!=0){
+    tempid=instance_create(x+hs-64,y+vs-64,obj_proxima_wave);
+    if (vs&lt;0)
+        tempid.sprite_index=spr_proxima_wavedown2;
+    if (vs&gt;0)
+        tempid.sprite_index=spr_proxima_waveup2;
+    }
+
+//Armor
+if (armor&lt;=0){
+    hp-=1;
+    while (armor&lt;=0)
+        armor+=200;
+    }
+if (armor&lt;maxarmor-0.1)
+    armor+=0.1;
+
+//Stuck
+if (!place_free(x,y)){
+    if (place_free(x-16,y-16))
+        move_outside_solid(135,32);
+    else if (place_free(x-16,y+16))
+        move_outside_solid(225,32);
+    else if (place_free(x+16,y+16))
+        move_outside_solid(315,32);
+    else if (place_free(x+16,y-16))
+        move_outside_solid(45,32);
+    }
+
+//Change image
+if (hp&lt;=200-((image_single+1)*50) &amp;&amp; hp&gt;10){
+    scr_shakescreen(3);
+    if (chargingnuke==0)
+        obj_sabot.flash=0.2;
+    image_single+=1;
+    if (image_single==1)
+        (instance_create(x+44,y-29,obj_proximacord)).type=1;
+    if (image_single==2)
+        (instance_create(x-49,y+9,obj_proximacord)).type=2;
+    if (image_single==3)
+        (instance_create(x+27,y+43,obj_proximacord)).type=3;
+    repeat(5)
+        instance_create(x-32+random(64),y-32+random(64),obj_smokepoint);
+    repeat(4)
+        instance_create(x-32+random(64),y-32+random(64),obj_nanospark);
+    if (global.detail==0){
+        repeat(30){
+            tempid=instance_create(x-32+random(64),y-32+random(64),obj_scrapwhite);
+            tempid.direction=random(360);
+            tempid.speed=random(10)+6;
+            }
+    repeat(20)
+        instance_create(x-32+random(64),y-32+random(64),obj_thorspark);
+        }
+    }
+
+//Death
+if (hp&lt;=0){
+    if (!nosupercharge)
+        instance_create(x,y,obj_supercharge);
+    scr_sound("exp_boss");
+    with (obj_sabot)
+        scr_stopmusic();
+    obj_proximatrigger.alarm[2]=20;
+    repeat(10)
+        instance_create(x,y,obj_nanospark2);
+    with (obj_proximacord)
+        instance_destroy();
+    scr_shakescreen(4);
+    instance_create(x,y,obj_harmlessexplosion);
+    repeat(5)
+        instance_create(x,y,obj_smokepoint);
+    obj_sabot.flash=0.8;
+    repeat(150)
+        instance_create(obj_proxima.x-100+random(200),obj_proxima.y-100+random(200),obj_proximaflash);
+    instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2),obj_megaflare);
+    obj_proximatrigger.alarm[1]=90;
+    with (obj_enemyrocket)
+        instance_destroy();
+    with (obj_komatorocket)
+        instance_destroy();
+    with (obj_enemympfb)
+        instance_destroy();
+    with (obj_komatompfb)
+        instance_destroy();
+    with (obj_enemyshockball)
+        instance_destroy();
+    with (obj_rockethail)
+        instance_destroy();
+    with (obj_proximasupercharge)
+        instance_destroy();
+    repeat(70)
+        instance_create(x-32+random(64),y-32+random(64),obj_shardhail);
+    repeat(20)
+        instance_create(x-32+random(64),y-32+random(64),obj_thorspark);
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    instance_destroy();
+    }
+
+//Electrified
+if (electrified&gt;0)
+    instance_create(x-64+random(128),y-64+random(128),obj_bigsmoke);
+
+//Angular shift
+if ((state==1 || state==2 || state==6) &amp;&amp; x&gt;xmiddle-270 &amp;&amp; x&lt;xmiddle+270 &amp;&amp; electrified&lt;=0 &amp;&amp; fire==0 &amp;&amp; chargingnuke==0){
+    if (hp&lt;hpasprev || (kicked &amp;&amp; !kickedprev)){
+        xgashere=x;
+        ygashere=y;
+        xdestination=x;
+        ydestination=y;
+        hspeed=0;
+        vspeed=0;
+        gasu=0;
+        gasl=0;
+        gasr=0;
+        gasd=0;
+        hs=0;
+        idle=0;
+        if (state==1 || state==2){
+            if (y&lt;864){
+                vs=20;
+                for (i=1;i&lt;6;i+=1){
+                    tempid=instance_create(x+32,y-32,obj_bigsmoke);
+                    tempid.speed=8*i;
+                    tempid.direction=45;
+                    tempid=instance_create(x-32,y-32,obj_bigsmoke);
+                    tempid.speed=8*i;
+                    tempid.direction=135;
+                    }
+                }
+            else{
+                vs=-20;
+                for (i=1;i&lt;6;i+=1){
+                    tempid=instance_create(x-32,y+32,obj_bigsmoke);
+                    tempid.speed=8*i;
+                    tempid.direction=225;
+                    tempid=instance_create(x+32,y+32,obj_bigsmoke);
+                    tempid.speed=8*i;
+                    tempid.direction=315;
+                    }
+                }
+            scr_sound("tur_appear");
+            angleshift=10;
+            }
+        state=6;
+        }
+    }
+hpasprev=hp;
+kickedprev=kicked;
+kicked=0;
+
+//Angular shift state
+if (state==6){
+    angleshift-=1;
+    if (angleshift&lt;=0){
+        if (vs&lt;0){
+            for (i=1;i&lt;6;i+=1){
+                tempid=instance_create(x+32,y-32,obj_bigsmoke);
+                tempid.speed=8*i;
+                tempid.direction=45;
+                tempid=instance_create(x-32,y-32,obj_bigsmoke);
+                tempid.speed=8*i;
+                tempid.direction=135;
+                }
+            }
+        else{
+            for (i=1;i&lt;6;i+=1){
+                tempid=instance_create(x-32,y+32,obj_bigsmoke);
+                tempid.speed=8*i;
+                tempid.direction=225;
+                tempid=instance_create(x+32,y+32,obj_bigsmoke);
+                tempid.speed=8*i;
+                tempid.direction=315;
+                }
+            }
+        hs=0;
+        vs=0;
+        gasu=0;
+        gasl=0;
+        gasr=0;
+        gasd=0;
+        angleshift=0;
+        xgashere=x;
+        ygashere=y;
+        xdestination=x;
+        ydestination=y;
+        scr_sound("tur_appear");
+        idle=1;
+        alarm[2]=1;
+        order=4+floor(random(5));
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

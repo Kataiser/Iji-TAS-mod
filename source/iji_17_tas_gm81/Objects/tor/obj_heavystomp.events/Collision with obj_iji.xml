@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (other){
+if (global.state!=6 &amp;&amp; global.state!=2 &amp;&amp; !recovering &amp;&amp; !takingpain){
+notech=10;
+visible=1;
+goaroundcyen=1;
+scr_knockdown(1,1,1,1,1);
+scr_sound("iji_pain",1);
+if (obj_tor.superstomp){
+    scr_sound("iji_death",1);
+    vspeed=-19;
+    obj_tortrigger.alarm[1]=2;
+    obj_tor.timeline_position=98;
+    }
+else if (obj_heavystomp.nostomp)
+    vspeed=-5;
+else
+    vspeed=-(obj_tor.potency[3]*5);
+recovering=0;
+takingpain=0;
+if (nostomp){
+    obj_tor.weight[3]+=3;
+    obj_tor.potencycount[3]-=1;
+    }
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

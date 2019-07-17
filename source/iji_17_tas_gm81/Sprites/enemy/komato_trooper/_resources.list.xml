@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_komatotrooper_basic" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_basicleft" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_fire" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_fireleft" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_walk" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_walkleft" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_pain" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_painleft" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_duck" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_duckleft" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_knockdown" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_knockdownleft" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_hitfloor" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_hitfloorleft" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_death" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_deathleft" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_getup" type="RESOURCE"/>
+  <resource name="spr_komatotrooper_getupleft" type="RESOURCE"/>
+</resources>

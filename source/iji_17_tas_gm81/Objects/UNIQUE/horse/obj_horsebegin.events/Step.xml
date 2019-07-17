@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">cyc+=1;
+if (cyc==1)
+    scr_sound("tor_fly");
+if (cyc&lt;=36){
+    rot-=50;
+    scale+=0.075+scale*0.075;
+    }
+if (cyc==36){
+    instance_create(0,0,obj_horsebeginbg);
+    scr_sound("exp_nuke");
+    with (obj_face)
+        scr_music("mus_tor");
+    for (i=0;i&lt;15;i+=1){
+        myx=random(800);
+        myy=random(600);
+        for (j=0;j&lt;4;j+=1)
+            instance_create(myx,myy,obj_silentexplospewer);
+        }
+    }
+if (cyc&gt;=120)
+    xoff+=100;
+if (cyc==125){
+    global.horse=1;
+    global.horselives=2;
+    global.horsepoints=0;
+    global.backuphorsepoints=0;
+    instance_create(0,0,obj_horseexit);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

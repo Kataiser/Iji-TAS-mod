@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_torbody_basic" type="RESOURCE"/>
+  <resource name="spr_torbody_drawgun" type="RESOURCE"/>
+  <resource name="spr_torbody_holdgun" type="RESOURCE"/>
+  <resource name="spr_torbody_jump" type="RESOURCE"/>
+  <resource name="spr_torbody_death" type="RESOURCE"/>
+  <resource name="spr_torbody_hitfloor" type="RESOURCE"/>
+</resources>

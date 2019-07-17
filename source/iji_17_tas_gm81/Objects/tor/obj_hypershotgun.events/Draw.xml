@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!blink)
+    blink=1;
+else
+    blink=0;
+if (!blink)
+    draw_sprite(sprite_index,0,x,y);
+draw_sprite(spr_hypershotgun2,0,x-61+cyc,y-61+cyc);
+draw_sprite(spr_hypershotgun2,1,x+48-cyc,y-61+cyc);
+draw_sprite(spr_hypershotgun2,1,x-61+cyc,y+48-cyc);
+draw_sprite(spr_hypershotgun2,0,x+48-cyc,y+48-cyc);
+
+cyc+=1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

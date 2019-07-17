@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">colcyc+=1;
+if (colcyc&gt;=30)
+    col-=3.5;
+
+if (col&lt;=0){
+    col=0;
+    room_goto_next();
+    }
+draw_set_color(make_color_rgb(col,col,col));
+draw_rectangle(view_xview[0]-20,view_yview[0]-20,view_xview[0]+view_wview[0]+20,view_yview[0]+view_hview[0]+20,0);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

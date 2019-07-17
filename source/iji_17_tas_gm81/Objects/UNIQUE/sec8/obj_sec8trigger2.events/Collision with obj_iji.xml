@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.state==6 || global.state==7 || global.state==8){ //Stand up when knockdown
+    global.state=2;
+    vspeed=0;
+    hspeed=0;
+    velocity=0;
+    if (facing==0)
+        sprite_index=spr_jumpleft;
+    else
+        sprite_index=spr_jump;
+    image_index=0;
+    image_single=-1;
+    image_speed=0.5;
+    if (!place_free(x,y)){
+        if (place_free(x,y+30))
+            y+=30;
+        else if (place_free(x,y-30))
+            y-=30;
+        }
+    }
+
+scr_sound("exp_nuke");
+scr_sound("exp_mpfb");
+obj_sabot.sec8trigger2=1;
+obj_iji.goaroundcyen=1;
+obj_iji.notech=10;
+instance_activate_object(obj_strikeblock);
+with (obj_strikeblock)
+    instance_destroy();
+instance_destroy();
+tile_layer_hide(667);
+with (obj_iji){
+    takingpain=0;
+    recovering=0;
+    scr_knockdown(2,4,1);
+    takingpain=0;
+    recovering=0;
+    }
+scr_shakescreen(5);
+with (obj_sec8can){
+    if (x&gt;7904 &amp;&amp; x&lt;8064)
+        instance_destroy();
+    }
+with (obj_alliedenemy){
+    if (x&gt;7904 &amp;&amp; x&lt;8064 &amp;&amp; hp&gt;0){
+        scr_nanoexplosion(15,30);
+        instance_destroy();
+        }
+    else if (x&lt;7950){
+        if (enemytype==2 || enemytype==10 || enemytype==11){
+            hp-=100;
+            ijikill=0;
+            scr_enemyknockdown(1,10);
+            }
+        }
+    else if (x&gt;7950){
+        if (enemytype==2 || enemytype==10 || enemytype==11){
+            hp-=100;
+            ijikill=0;
+            scr_enemyknockdown(2,10);
+            }
+        }
+    }
+
+instance_create(7936,1280,obj_hammershot);
+repeat(50){
+    tempid=instance_create(7936+random(128),768+random(768),obj_scrapwhite);
+    if (tempid.x&lt;7968)
+        direction=170+random(20);
+    else
+        direction=350+random(20);
+    tempid.speed=8+random(12);
+    }
+
+(instance_create(x,y,obj_whiteblanket)).alarm[0]=2;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

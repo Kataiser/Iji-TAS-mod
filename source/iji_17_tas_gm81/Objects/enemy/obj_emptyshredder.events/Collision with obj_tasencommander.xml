@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tasencommander">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (speed&gt;8 &amp;&amp; other.state!=4 &amp;&amp; other.state!=5){
+    scr_sound("glo_kick");
+    repeat(3){
+        tempid=instance_create(other.x+18,other.y+10,obj_scrapwhite);
+        tempid.speed=hspeed;
+        tempid.direction=random(360);
+        }
+    scr_shakescreen(2);
+    if (iji&gt;0){
+        other.ijikill=1;
+        other.killtype=7;
+        }
+    else
+        other.ijikill=0;
+    other.hp-=1;
+    global.tempshred=hspeed;
+    if (hspeed&lt;0){
+        with (other)
+            scr_enemyknockdown(1,abs(global.tempshred)-resistance);
+        }
+    if (hspeed&gt;0){
+        with (other)
+            scr_enemyknockdown(2,abs(global.tempshred)-resistance);
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

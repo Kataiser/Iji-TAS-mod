@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_enemythor">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (thored==0){
+thored=2;
+
+if (!takingpain &amp;&amp; !recovering &amp;&amp; !thored2){
+    thored2=1;
+    scr_sound("iji_bigpain");
+    }
+
+if (thored2){
+takingpain=0;
+recovering=0;
+visible=1;
+fatality=1;
+notech=10;
+scr_shakescreen(4);
+if (obj_iosa.facing==0){
+    scr_knockdown(1,0,0,0,1);
+    if (place_free(x-66,y))
+        x-=64;
+    else if (place_free(x-34,y))
+        x-=32;
+    else if (place_free(x-18,y))
+        x-=16;
+    }
+else{
+    scr_knockdown(2,0,0,0,1);
+    if (place_free(x+66,y))
+        x+=64;
+    else if (place_free(x+34,y))
+        x+=32;
+    else if (place_free(x+18,y))
+        x+=16;
+    }
+fatality=0;
+if (global.hp&gt;0){
+global.damage+=1;
+global.hp-=1;
+}
+if (place_free(x,y+9))
+    y+=7;
+velocity=0;
+hspeed=0;
+vspeed=0;
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

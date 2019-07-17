@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_enemyshock">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">{
+if (dud==0){
+if (other.bbox_left+((other.bbox_right-other.bbox_left)/2)&lt;bbox_left+((bbox_right-bbox_left)/2) &amp;&amp; other.hspeed&gt;0){
+    with (other){
+        scr_sound("glo_reflect");
+        tempid=instance_create(x,y,obj_shock);
+        tempid.ijis=ijis;
+        if (global.rrkills==1)
+            tempid.ijis=1;
+        tempid.speed=-global.shockspeed;
+        tempid.reflected=1;
+        if (instance_number(obj_thorspark)&lt;20){
+            repeat(5){
+                tempid=instance_create(x,y,obj_thorspark);
+                tempid.speed=random(2)+2;
+                tempid.gravity=0.2;
+                }
+            }
+        instance_destroy();
+        }
+    }
+if (other.bbox_left+((other.bbox_right-other.bbox_left)/2)&gt;=bbox_left+((bbox_right-bbox_left)/2) &amp;&amp; other.hspeed&lt;0){
+    with (other){
+        scr_sound("glo_reflect");
+        tempid=instance_create(x,y,obj_shock);
+        tempid.ijis=ijis;
+        if (global.rrkills==1)
+            tempid.ijis=1;
+        tempid.speed=global.shockspeed;
+        tempid.reflected=1;
+        if (instance_number(obj_thorspark)&lt;20){
+            repeat(5){
+                tempid=instance_create(x,y,obj_thorspark);
+                tempid.speed=random(2)+2;
+                tempid.gravity=0.2;
+                }
+            }
+        instance_destroy();
+        }
+    }
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

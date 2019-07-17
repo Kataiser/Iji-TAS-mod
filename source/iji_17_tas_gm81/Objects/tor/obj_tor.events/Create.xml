@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.bosshint==1){
+    with (obj_sabot){
+        if (global.passive){
+            global.passive=0;
+            global.killdata[799]=0;
+            }
+        if (global.weapon!=13)
+            scr_changeweapon(5);
+        if (global.weapon!=13)
+            scr_changeweapon(5);
+        global.erasetop=0;
+        global.topmessage="SYSTEM REPORT: SWITCHING TO RESONANCE REFLECTOR";
+        depth=-1001;
+        }
+    }
+
+scr_createlookup();
+scr_tor_pose();
+instance_create(obj_iji.x,obj_iji.y,obj_iosa2safe);
+wobble=1200;
+security=250;
+resistance=250;
+hp=900+global.difficulty*150;
+maxhp=900+global.difficulty*150; //Holy hit points Batman!
+armor=200;
+maxarmor=200;
+if (global.suddendeath){
+    hp=1;
+    maxhp=1;
+    armor=100;
+    maxarmor=100;
+    }
+enemytype=16;
+vulnerable=1;
+hailtype=global.difficulty-1;
+eruptiontype=global.difficulty;
+for (i=0; i&lt;8; i+=1){
+    weight[i]=1;
+    potency[i]=1+global.difficulty;
+    potencycount[i]=0;
+    }
+
+//Maximum charge
+if (global.tormaximumcharge){
+    if (!global.suddendeath){
+        hp=1200;
+        maxhp=1200;
+        }
+    hailtype=1;
+    eruptiontype=2;
+    for (i=0; i&lt;8; i+=1){
+        weight[i]=1;
+        potency[i]=5;
+        potencycount[i]=0;
+        }
+    }
+
+bonedirections[0]=0;
+bonedirections[1]=180;
+bonedirections[2]=0;
+bonedirections[3]=0;
+bonedirections[4]=0;
+bonedirections[5]=0;
+bonedirections[6]=0;
+bonedirections[7]=0;
+bonedirections[8]=0;
+bonedirections[9]=0;
+
+bonepositionsx[0]=0;
+bonepositionsx[1]=0;
+bonepositionsx[2]=0;
+bonepositionsx[3]=0;
+bonepositionsx[4]=0;
+bonepositionsx[5]=0;
+bonepositionsx[6]=0;
+bonepositionsx[7]=0;
+bonepositionsx[8]=0;
+bonepositionsx[9]=0;
+
+bonepositionsy[0]=0;
+bonepositionsy[1]=0;
+bonepositionsy[2]=0;
+bonepositionsy[3]=0;
+bonepositionsy[4]=0;
+bonepositionsy[5]=0;
+bonepositionsy[6]=0;
+bonepositionsy[7]=0;
+bonepositionsy[8]=0;
+bonepositionsy[9]=0;
+
+instance_create(x,y,obj_shape001);
+instance_create(x,y,obj_shape002);
+instance_create(x,y,obj_shape003);
+instance_create(x,y,obj_shape004);
+instance_create(x,y,obj_shape004b);
+instance_create(x,y,obj_shape005);
+instance_create(x,y,obj_shape006);
+instance_create(x,y,obj_shape007);
+instance_create(x,y,obj_shape008);
+instance_create(x,y,obj_shape009);
+instance_create(x,y,obj_shape010);
+instance_create(x,y,obj_shape011);
+instance_create(x,y,obj_shape012);
+instance_create(x,y,obj_shape013);
+instance_create(x,y,obj_shape014);
+instance_create(x,y,obj_shape015);
+instance_create(x,y,obj_shape016);
+instance_create(x,y,obj_shape017);
+instance_create(x,y,obj_shape018);
+instance_create(x,y,obj_shape019);
+instance_create(x,y,obj_shape020);
+instance_create(x,y,obj_shape101);
+instance_create(x,y,obj_shape102);
+instance_create(x,y,obj_shape103);
+instance_create(x,y,obj_shape104);
+instance_create(x,y,obj_shape105);
+instance_create(x,y,obj_shape201);
+instance_create(x,y,obj_shape202);
+instance_create(x,y,obj_shape203);
+instance_create(x,y,obj_shape301);
+instance_create(x,y,obj_shape302);
+instance_create(x,y,obj_shape303);
+instance_create(x,y,obj_shape401);
+instance_create(x,y,obj_shape401b);
+instance_create(x,y,obj_shape401c);
+instance_create(x,y,obj_shape401d);
+instance_create(x,y,obj_shape402);
+instance_create(x,y,obj_shape402b);
+instance_create(x,y,obj_shape403);
+instance_create(x,y,obj_shape404);
+instance_create(x,y,obj_shape405);
+instance_create(x,y,obj_shape405b);
+instance_create(x,y,obj_shape406);
+instance_create(x,y,obj_shape407);
+instance_create(x,y,obj_shape408);
+instance_create(x,y,obj_shape409);
+instance_create(x,y,obj_shape501);
+instance_create(x,y,obj_shape502);
+instance_create(x,y,obj_shape503);
+instance_create(x,y,obj_shape601);
+instance_create(x,y,obj_shape601);
+instance_create(x,y,obj_shape602);
+instance_create(x,y,obj_shape603);
+instance_create(x,y,obj_shape604);
+instance_create(x,y,obj_shape605);
+instance_create(x,y,obj_shape606);
+instance_create(x,y,obj_shape701);
+instance_create(x,y,obj_shape702);
+instance_create(x,y,obj_shape801);
+instance_create(x,y,obj_shape802);
+instance_create(x,y,obj_shape803);
+instance_create(x,y,obj_shape901);
+instance_create(x,y,obj_shape902);
+
+with (obj_shape)
+    depth=-1000;
+
+/*if (global.detaillevel==1){
+    obj_shape303.visible=0;
+    obj_shape403.visible=0;
+    obj_shape407.visible=0;
+    obj_shape502.visible=0;
+    obj_shape503.visible=0;
+    obj_shape605.visible=0;
+    obj_shape606.visible=0;
+    obj_shape803.visible=0;
+    }*/</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

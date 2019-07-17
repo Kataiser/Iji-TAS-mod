@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_iosa_body" type="RESOURCE"/>
+  <resource name="spr_iosa_arms" type="RESOURCE"/>
+  <resource name="spr_iosa_bodyleft" type="RESOURCE"/>
+  <resource name="spr_iosa_armsleft" type="RESOURCE"/>
+  <resource name="spr_iosa_fire" type="RESOURCE"/>
+  <resource name="spr_iosa_fireleft" type="RESOURCE"/>
+  <resource name="spr_iosa_walk" type="RESOURCE"/>
+  <resource name="spr_iosa_walkleft" type="RESOURCE"/>
+  <resource name="spr_iosa_destroy" type="RESOURCE"/>
+  <resource name="spr_iosa_destroyleft" type="RESOURCE"/>
+  <resource name="spr_iosacrumble" type="RESOURCE"/>
+  <resource name="spr_iosapad" type="RESOURCE"/>
+  <resource name="spr_iosacrawler" type="RESOURCE"/>
+  <resource name="spr_iosacrawler2" type="RESOURCE"/>
+</resources>

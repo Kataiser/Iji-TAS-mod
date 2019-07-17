@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="3">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_iosatrigger.phase2==0){
+    //(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chat9a";
+    //with (obj_trigger)
+    //    instance_destroy();
+    instance_create(obj_sabot.x,obj_sabot.y,obj_iosa2bar);
+    instance_create(x,y,obj_iosa2);
+    obj_iji.takingpain=0;
+    obj_iji.alwayschangeweapon=0;
+    global.ignoreall=0;
+    global.facing=1;
+    global.state=1;
+    instance_destroy();
+    }
+else
+    (instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chat9b";</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_enemympfbexplosion">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.dud==0){
+    hp-=1.5;
+    hstemp=5-(distance_to_object(obj_explosioncenter)/10);
+    if (hstemp&lt;1)
+        hstemp=1;
+    if (x&lt;other.x)
+        hstemp*=-1;
+    hs+=hstemp;
+    //scr_proximatalk(0);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

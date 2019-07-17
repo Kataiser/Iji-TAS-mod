@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_frame" type="RESOURCE"/>
+  <resource name="spr_scrollarrow" type="RESOURCE"/>
+  <resource name="spr_log1" type="RESOURCE"/>
+  <resource name="spr_log2" type="RESOURCE"/>
+  <resource name="spr_log3" type="RESOURCE"/>
+  <resource name="spr_log4" type="RESOURCE"/>
+  <resource name="spr_scramblertext" type="RESOURCE"/>
+  <resource name="spr_readpaper" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!fade){
+text="Press Enter to run Iji in fullscreen mode."
+text2="Press Escape to run in windowed mode."
+text3="NOTE: The fullscreen mode will set your"
+text4="screen resolution to 800x600."
+draw_set_font(global.fontspecial);
+draw_set_color(c_white);
+draw_text_ext(96,156,text,28,672);
+draw_text_ext(96,212,text2,28,672);
+draw_set_font(global.fontwhite);
+draw_text_ext(96,268,text3,28,672);
+draw_text_ext(96,296,text4,28,672);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

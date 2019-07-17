@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_xcore" type="RESOURCE"/>
+  <resource name="obj_xcore2" type="RESOURCE"/>
+  <resource name="obj_crumblex" type="RESOURCE"/>
+  <resource name="obj_crumblex2" type="RESOURCE"/>
+  <resource name="obj_xannid" type="RESOURCE"/>
+  <resource name="obj_xpants" type="RESOURCE"/>
+  <resource name="obj_xtrigger" type="RESOURCE"/>
+  <resource name="obj_xelec" type="RESOURCE"/>
+  <resource name="obj_annihilatorbeta" type="RESOURCE"/>
+  <resource name="obj_xelecpad" type="RESOURCE"/>
+  <resource name="obj_xrain" type="RESOURCE"/>
+  <resource name="obj_xrain2" type="RESOURCE"/>
+  <resource name="obj_xsplash" type="RESOURCE"/>
+  <resource name="obj_strikelight" type="RESOURCE"/>
+  <resource name="obj_torbody" type="RESOURCE"/>
+  <resource name="obj_sec16lift" type="RESOURCE"/>
+  <resource name="obj_torbodytrigger" type="RESOURCE"/>
+  <resource name="obj_torbodyblanket" type="RESOURCE"/>
+  <resource name="obj_secxcp2" type="RESOURCE"/>
+  <resource name="obj_xdarkmusic" type="RESOURCE"/>
+  <resource name="obj_xspecialcannotfire" type="RESOURCE"/>
+  <resource name="obj_mass" type="RESOURCE"/>
+  <resource name="obj_secxansaksie" type="RESOURCE"/>
+  <resource name="obj_iosa2_gun" type="RESOURCE"/>
+</resources>

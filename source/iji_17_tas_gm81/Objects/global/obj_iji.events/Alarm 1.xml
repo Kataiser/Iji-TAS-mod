@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed=0.5;
+lookingaround=0;
+global.state=1;
+if (global.facing==0)
+    sprite_index=spr_basicleft;
+else
+    sprite_index=spr_basic;
+switchingpose=0;
+kicking=0;
+if (takingpain==1 &amp;&amp; recovering==0 &amp;&amp; goaroundtrigger==0){
+    recovering=1;
+    if (global.strengthlevel==10)
+        alarm[7]=90;
+    else
+        alarm[7]=60;
+    }
+scr_ougi();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

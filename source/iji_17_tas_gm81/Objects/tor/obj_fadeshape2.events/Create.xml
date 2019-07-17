@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">for (i=0; i&lt;3; i+=1){
+xv[i]=x-400+random(800);
+yv[i]=y-400+random(800);
+}
+
+xc=x-(xv[0]+xv[1]+xv[2])/3;
+yc=y-(yv[0]+yv[1]+yv[2])/3;
+
+for (i=0; i&lt;3; i+=1){
+    xv[i]+=xc;
+    yv[i]+=yc;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_xp">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.hp&gt;0 &amp;&amp; !shredder){
+    //Nanoshield
+    if (overload==8)
+        global.armor=100;
+    //Conditions
+    okay=0;
+    if (other.sprite_index==spr_pickuphealth &amp;&amp; (global.hp&lt;global.healthlevel*2 || global.armor&lt;100))
+        okay=1;
+    if (other.sprite_index==spr_pickuparmor &amp;&amp; (global.armor&lt;100 || (global.assimilatelevel==10 &amp;&amp; global.hp&lt;global.healthlevel*2)))
+        okay=1;
+    if (other.sprite_index==spr_xp1 &amp;&amp; (global.level&lt;global.maxlevel || global.armor&lt;100))
+        okay=1;
+    if (other.sprite_index==spr_xp2 &amp;&amp; (global.level&lt;global.maxlevel || global.armor&lt;100))
+        okay=1;
+    if (other.sprite_index==spr_xp3 &amp;&amp; (global.level&lt;global.maxlevel || global.armor&lt;100))
+        okay=1;
+    if (other.sprite_index==spr_xp4 &amp;&amp; (global.level&lt;global.maxlevel || global.armor&lt;100))
+        okay=1;
+    //Execute
+    if (okay){
+        script_execute(scr_pickupxp);
+        with (other){
+            if (sprite_index==spr_xp1)
+                script_execute(scr_pickupflash,0,0,1);
+            if (sprite_index==spr_xp2)
+                script_execute(scr_pickupflash,0,0,2);
+            if (sprite_index==spr_xp3)
+                script_execute(scr_pickupflash,0,0,3);
+            if (sprite_index==spr_xp4)
+                script_execute(scr_pickupflash,0,0,4);
+            if (sprite_index==spr_pickuphealth)
+                script_execute(scr_pickupflash,0,0,3);
+            if (sprite_index==spr_pickuparmor)
+                script_execute(scr_pickupflash,0,0,3);
+            instance_destroy();
+            }
+        }
+    else if (global.ignorestation==0 &amp;&amp; (other.sprite_index==spr_xp1 || other.sprite_index==spr_xp2 || other.sprite_index==spr_xp3 || other.sprite_index==spr_xp4)){
+        if (global.sector==0)
+            tempsec="X";
+        else
+            tempsec=string(global.sector);
+        global.erasetop=0;
+        global.topmessage="Max Level for Sector "+tempsec+" reached";
+        }
+    else if (global.ignorestation==0 &amp;&amp; other.sprite_index==spr_pickuphealth &amp;&amp; !place_meeting(x,y,obj_station)){
+        if (string_copy(global.topmessage,1,6)!="Nano +"){
+            global.erasetop=0;
+            global.topmessage="Health full";
+            }
+        }
+    else if (global.ignorestation==0 &amp;&amp; other.sprite_index==spr_pickuparmor &amp;&amp; !place_meeting(x,y,obj_station)){
+        global.erasetop=0;
+        if (string_copy(global.topmessage,1,6)!="Nano +"){
+            if (global.assimilatelevel==10)
+                global.topmessage="Health/Armor full";
+            else
+                global.topmessage="Armor full";
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

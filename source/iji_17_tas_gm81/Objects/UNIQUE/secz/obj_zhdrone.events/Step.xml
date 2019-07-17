@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">cyc+=1;
+if (cyc&gt;=60){
+cyc=0;
+if (instance_number(obj_iji)==1 &amp;&amp; point_distance(x,y,obj_iji.x+6,obj_iji.y+30)&lt;500)
+direction=point_direction(x,y,obj_iji.x+6,obj_iji.y+15);
+else
+direction=random(360);
+}
+
+if (x&gt;2560 &amp;&amp; y&lt;6200)
+    x=2560;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="5">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!housessmashed){
+    housessmashed=1;
+    background_index[2]=bg_finalsky3s;
+    background_index[3]=bg_finalsky4s;
+    scr_sound("glo_thunder");
+    //scr_sound("exp_nuke",1);
+    scr_sound("exp_glass",1);
+    scr_sound("exp_miniglass",1);
+    obj_sabot.torsmashshake=8;
+    for (i=0;i&lt;850;i+=2){
+        tempy=130;
+        tempy2=(abs(i-425))/40;
+        tempy+=tempy2*tempy2;
+        tempid=instance_create(i,500-random(tempy),obj_torsmashpart);
+        tempid.image_single=floor(random(8))+8;
+        if (random(1)&lt;0.5)
+            tempid.image_single=floor(random(8));
+        tempid.gravity=0.005+random(0.005);
+        tempid.gravity_direction=270;
+        tempid.vspeed=-0.05-random(0.55);
+        tempid.hspeed=(i-425)/800+random((i-425)/800);
+        tempid.diespeed=random(0.01)+0.01;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

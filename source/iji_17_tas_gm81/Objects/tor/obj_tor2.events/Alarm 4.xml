@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//MEGAMISSILE
+megamissilecyc+=1;
+if (megamissilecyc==1){
+    tempid=instance_create(background_x[0]+430,background_y[0]+363,obj_megamissile);
+    tempid.hspeed=-3-random(3);
+    tempid.depth=11000;
+    instance_create(background_x[0]+430,background_y[0]+363,obj_tor2muzzleflash);
+    alarm[4]=25;
+    scr_sound("wea_shoc",1);
+    }
+else if (megamissilecyc==2){
+    tempid=instance_create(background_x[0]+430,background_y[0]+363,obj_megamissile);
+    tempid.hspeed=3+random(3);
+    tempid.depth=11001;
+    instance_create(background_x[0]+430,background_y[0]+363,obj_tor2muzzleflash);
+    alarm[4]=25;
+    scr_sound("wea_shoc",1);
+    }
+else if (megamissilecyc==3){
+    tempid=instance_create(background_x[0]+430,background_y[0]+363,obj_megamissile);
+    tempid.hspeed=-2-random(2);
+    tempid.vspeed=-2;
+    tempid.depth=11002;
+    instance_create(background_x[0]+430,background_y[0]+363,obj_tor2muzzleflash);
+    alarm[4]=25;
+    scr_sound("wea_shoc",1);
+    }
+else if (megamissilecyc==4){
+    tempid=instance_create(background_x[0]+430,background_y[0]+363,obj_megamissile);
+    tempid.hspeed=2+random(2);
+    tempid.vspeed=-2;
+    tempid.depth=11003;
+    instance_create(background_x[0]+430,background_y[0]+363,obj_tor2muzzleflash);
+    scr_sound("wea_shoc",1);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

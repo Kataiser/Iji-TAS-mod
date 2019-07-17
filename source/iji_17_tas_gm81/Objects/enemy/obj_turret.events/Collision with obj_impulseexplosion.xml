@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_impulseexplosion">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (visible &amp;&amp; !other.dud){
+    if (!dead){
+        tempid=instance_create(x+6,y+8,obj_visionchecke)
+        tempid.direction=0;
+        tempid.speed=16;
+        tempid=instance_create(x+6,y+8,obj_visionchecke)
+        tempid.direction=180;
+        tempid.speed=16;
+        (instance_create(x,y,obj_turretpole)).image_single=facing;
+        scr_turretdestroy();
+        }
+    else
+        scr_turretdestroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

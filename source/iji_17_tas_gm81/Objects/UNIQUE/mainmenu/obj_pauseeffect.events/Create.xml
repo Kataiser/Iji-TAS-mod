@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">x1=xstart;
+y1=ystart;
+x2=xstart;
+y2=ystart;
+x3=xstart;
+y3=ystart;
+x4=xstart;
+y4=ystart;
+if (x&lt;view_xview[0]+400){
+    direction=0;
+    dir=1;
+    }
+else{
+    direction=180;
+    dir=0;
+    }
+speed=20+random(130);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

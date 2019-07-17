@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (state==0){
+    if (x&gt;obj_sabot.x-100 &amp;&amp; x&lt;obj_sabot.x+900 &amp;&amp; y&gt;obj_sabot.y-100 &amp;&amp; y&lt;obj_sabot.y+700){
+        if (place_meeting(x,y,obj_muzzleflash))
+            dead=1;
+        else if (place_meeting(x,y,obj_shotgunflash))
+            dead=1;
+        else if (place_meeting(x,y,obj_bullethit))
+            dead=1;
+        else if (place_meeting(x,y,obj_pellethit))
+            dead=1;
+
+        if (cyc==0)
+            cyc=1;
+        else if (cyc==1)
+            cyc=2;
+        else if (cyc==2){
+            cyc=0;
+            if (place_meeting(x,y-8,obj_rocket))
+                dead=1;
+            else if (place_meeting(x,y-8,obj_enemyrocket))
+                dead=1;
+            else if (place_meeting(x,y-8,obj_shock))
+                dead=1;
+            else if (place_meeting(x,y-8,obj_enemyshock))
+                dead=1;
+            else if (place_meeting(x,y,obj_rocketexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_enemyrocketexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_mpfbexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_enemympfbexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_harmlessexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_detonator))
+                dead=1;
+            else if (place_meeting(x,y,obj_enemydetonator))
+                dead=1;
+            else if (place_meeting(x,y,obj_shockexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_enemyshockexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_thor))
+                instance_destroy();
+            else if (place_meeting(x,y,obj_shockballexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_enemyshockballexplosion))
+                dead=1;
+            else if (place_meeting(x,y,obj_plasma))
+                dead=1;
+            else if (place_meeting(x,y,obj_impulseexplosion))
+                dead=1;
+            }
+        }
+    if (dead){
+        cyc=0;
+        state=1;
+        y-=2;
+        vspeed=-(3+random(5));
+        hspeed=-6+random(12);
+        maxspeed=1+random(0.5);
+        gr=maxspeed*0.1;
+        sprite_index=spr_paperfly;
+        image_index=floor(random(18));
+        image_speed=0.4+random(0.4);
+        }
+    }
+if (state==1){
+    if (speed&gt;1)
+        speed*=0.95;
+    vspeed+=gr;
+    if (vspeed&gt;maxspeed)
+        vspeed=maxspeed;
+    if (!place_free(x+hspeed,y+vspeed)){
+        if (hspeed&gt;0)
+            x-=1;
+        else
+            x+=1;
+        hspeed=0;
+        }
+    if (!place_free(x,y+vspeed) &amp;&amp; vspeed&lt;0)
+        vspeed=0;
+    if (!place_free(x,y+vspeed) &amp;&amp; vspeed&gt;0){
+        if (place_meeting(x,y+1,obj_lift) || place_meeting(x,y+1,obj_sloper) || place_meeting(x,y+1,obj_slopel))
+            instance_destroy();
+        else{
+            dead=0;
+            state=0;
+            speed=0;
+            x=floor(x);
+            y=floor(y);
+            move_contact_solid(270,8);
+            sprite_index=spr_paper;
+            image_speed=0;
+            image_index=0;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

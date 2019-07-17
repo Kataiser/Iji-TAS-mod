@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">{
+if ((x &lt; obj_shakescreen.x-1000) || (x &gt; obj_shakescreen.x+1000) || (y &lt; obj_shakescreen.y-800) || (y &gt; obj_shakescreen.y+800))
+    totcyc=300;
+if (totcyc&lt;250){
+cycle+=1;
+totcyc+=1;
+}
+if (cycle==5){
+cycle=0;
+instance_create(x+14+random(6),y+44+random(6),obj_smoke);
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

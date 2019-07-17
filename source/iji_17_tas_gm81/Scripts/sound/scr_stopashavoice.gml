@@ -1,0 +1,9 @@
+repeat(5){
+sound_stop(snd_ash_ambient1);
+sound_stop(snd_ash_ambient2);
+sound_stop(snd_ash_ambient3);
+sound_stop(snd_ash_ambient4);
+sound_stop(snd_ash_pain);
+sound_stop(snd_ash_win);
+sound_stop(snd_ash_win2);
+}

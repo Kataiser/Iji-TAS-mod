@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(y==311-46 &amp;&amp; global.noshake==0)
+image_single=2;
+if(y==311-46 &amp;&amp; global.noshake==1)
+image_single=3;
+if(y==339-46 &amp;&amp; global.novoice==0)
+image_single=0;
+if(y==339-46 &amp;&amp; global.novoice==1)
+image_single=1;
+if(y==367-46 &amp;&amp; global.nosound==0)
+image_single=0;
+if(y==367-46 &amp;&amp; global.nosound==1)
+image_single=1;
+if(y==395-46 &amp;&amp; global.nomusic==0)
+image_single=0;
+if(y==395-46 &amp;&amp; global.nomusic==1)
+image_single=1;
+if(y==423-46 &amp;&amp; global.hidetime==0)
+image_single=0;
+if(y==423-46 &amp;&amp; global.hidetime==1)
+image_single=1;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

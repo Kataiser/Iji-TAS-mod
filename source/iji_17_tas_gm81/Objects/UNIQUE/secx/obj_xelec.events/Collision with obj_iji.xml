@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (elec==1 &amp;&amp; global.hp&gt;0 &amp;&amp; !obj_iji.takingpain &amp;&amp; !obj_iji.recovering){
+    scr_shakescreen(3);
+    global.armor=-100;
+    //global.hp-=1;
+    //global.damage+=1;
+    //with (obj_iji)
+    //    scr_pain();
+    scr_sound("glo_electrocute");
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_sabot.annihilatorbeta){
+global.erasetop=118;
+global.topmessage="CONTROLS: LEFT/RIGHT TO WALK, "+chr(global.firekey)+" TO FIRE, "+chr(global.usekey)+" TO ABORT";
+global.ignorestation=4;
+}
+
+scr_tasenvision(50,100);
+cfised=0;
+thored=0;
+plasmaed=0;
+//Smoke when charging
+if (firingplasma &amp;&amp; state==0)
+    smoking+=1;
+if (smoking&gt;=5){
+    smoking=0;
+    if (facing==0)
+        (instance_create(x-24,y+100,obj_shockspark)).vspeed=3;
+    else
+        (instance_create(x+124,y+100,obj_shockspark)).vspeed=3;
+    }
+//Armor
+if (armor&lt;199.9)
+    armor+=0.1;
+//Pain from armordrop
+if (armor&lt;1){
+    hp-=1;
+    scr_betaannihilatorpain();
+    }
+
+//Walk
+if (state==1){
+    if (!walkcyc)
+        walkcyc=1;
+    else{
+        walkcyc=0;
+        image_single+=1;
+        if (image_single==6){
+            scr_sound("ann_step");
+            //scr_shakescreen(0);
+            }
+        if (image_single==12){
+            image_single=0;
+            scr_sound("ann_step");
+            //scr_shakescreen(0);
+            }
+        if (facing==0){
+            if (!place_free(x-6,y)){
+                facing=1;
+                sprite_index=spr_komatoannihilator_walk;
+                }
+            else
+                x-=6;
+            }
+        else{
+            if (!place_free(x+6,y)){
+                facing=0;
+                sprite_index=spr_komatoannihilator_walkleft;
+                }
+            else
+                x+=6;
+            }
+        }
+    }
+else
+    walkcyc=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

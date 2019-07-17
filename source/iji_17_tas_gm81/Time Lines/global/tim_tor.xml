@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="0">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_tor_jump();</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="60">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(0,120,obj_tor2);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="120">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1)
+scr_thirdtier();</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="210">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_tor2.jump=1;
+obj_tor2.jumpcyc=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="320">
+    <action id="601" library="1">
+      <!--action name: Execute_Script-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_execute_script</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="SCRIPT">scr_tor_land</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="330">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.hp&gt;0)
+    scr_sound("tor_ambient");</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="345">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1)
+    scr_firsttier(1,0);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="390">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1)
+    scr_secondtier();</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="480">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1)
+    scr_firsttier(0,0);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="525">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1)
+    scr_secondtier();</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="615">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1)
+    scr_firsttier(0,1);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="660">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1)
+    scr_secondtier();</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="705">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1){
+    scr_secondtier(1);
+    if (global.hp&gt;0){
+        if (!ambiented)
+            scr_sound("tor_ambient");
+        }
+    ambiented=0;
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="860">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1){
+timeline_position=0;
+if (global.bosshint==1 &amp;&amp; !obj_iji.secxrcb){
+global.erasetop=0;
+global.topmessage="Press 5 or "+chr(global.weap5key)+" twice in Active mode to switch to Resonance reflector";
+}
+}</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

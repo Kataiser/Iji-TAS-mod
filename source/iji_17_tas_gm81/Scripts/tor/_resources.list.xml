@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_firsttier" type="RESOURCE"/>
+  <resource name="scr_secondtier" type="RESOURCE"/>
+  <resource name="scr_thirdtier" type="RESOURCE"/>
+  <resource name="scr_rotate" type="RESOURCE"/>
+  <resource name="scr_findallangles" type="RESOURCE"/>
+  <resource name="scr_findangle" type="RESOURCE"/>
+  <resource name="scr_createlookup" type="RESOURCE"/>
+  <resource name="scr_drawshape" type="RESOURCE"/>
+  <resource name="scr_getframe" type="RESOURCE"/>
+  <resource name="scr_tor_pose" type="RESOURCE"/>
+  <resource name="scr_tor_drawgun" type="RESOURCE"/>
+  <resource name="scr_tor_fire" type="RESOURCE"/>
+  <resource name="scr_tor_jump" type="RESOURCE"/>
+  <resource name="scr_tor_land" type="RESOURCE"/>
+  <resource name="scr_tor_stomp" type="RESOURCE"/>
+  <resource name="scr_tor_death" type="RESOURCE"/>
+  <resource name="scr_torexplo" type="RESOURCE"/>
+  <resource name="scr_tor_phantom" type="RESOURCE"/>
+</resources>

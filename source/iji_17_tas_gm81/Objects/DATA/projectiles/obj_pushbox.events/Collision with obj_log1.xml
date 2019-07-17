@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_log1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!place_meeting(x,y,obj_enemy)){
+with (other){
+global.textid=textid;
+if (textid=="text195" &amp;&amp; x==10144){
+    ultccyc+=1;
+    if (ultccyc==2)
+        textid="text194";
+    }
+if (sprite_index==spr_log1)
+    global.outline=3;
+if (sprite_index==spr_log2)
+    global.outline=4;
+if (sprite_index==spr_log3)
+    global.outline=2;
+if (sprite_index==spr_log4)
+    global.outline=0;
+scr_beginmessage(1);
+obj_iji.readinglog=1;
+with (obj_messagetext){
+if (global.sector==1)
+    scr_logs1();
+else if (global.sector==2)
+    scr_logs2();
+else if (global.sector==3)
+    scr_logs3();
+else if (global.sector==4)
+    scr_logs4();
+else if (global.sector==5)
+    scr_logs5();
+else if (global.sector==6)
+    scr_logs6();
+else if (global.sector==7)
+    scr_logs7();
+else if (global.sector==8)
+    scr_logs8();
+else if (global.sector==9)
+    scr_logs9();
+else if (global.sector==0)
+    scr_logsx();
+}
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

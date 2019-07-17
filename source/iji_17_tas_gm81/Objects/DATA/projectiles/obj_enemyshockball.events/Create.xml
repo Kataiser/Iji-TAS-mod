@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed=0.5;
+direction=random(360);
+speed+=6;
+gravity=0.8;
+gravity_direction=random(360);
+dud=1;
+alarm[0]=3;
+alarm[1]=10;
+alarm[2]=14;
+obj_sabot.raveflash=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

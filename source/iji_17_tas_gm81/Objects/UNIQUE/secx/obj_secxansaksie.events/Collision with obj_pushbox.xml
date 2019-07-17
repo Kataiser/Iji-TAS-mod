@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pushbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">chattemp=instance_create(obj_iji.x,obj_iji.y,obj_trigger);
+if (talk==0){
+    chattemp.textid="chatxr";
+    talk=1;
+    }
+else if (talk==1){
+    chattemp.textid="chatxs";
+    talk=2;
+    }
+else if (talk==2){
+    subtalk+=1;
+    if (subtalk==4){
+        chattemp.textid="chatxu";
+        subtalk=0;
+        }
+    else
+        chattemp.textid="chatxt";
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

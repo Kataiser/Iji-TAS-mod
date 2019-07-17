@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (vspeed&lt;0){
+    if (image_single==0)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (vspeed&gt;0){
+    vspeed=0;
+    gravity=0;
+    gosmash=1;
+    }
+if (gosmash)
+    smashcyc+=1;
+if (smashcyc==1){
+    image_single=2;
+    y+=30;
+    }
+if (smashcyc==2){
+    sprite_index=spr_asha_smash2;
+    image_single=0;
+    y+=50;
+    }
+if (smashcyc==3){
+    image_single=1;
+    y+=80;
+    }
+if (smashcyc==4){
+    image_single=2;
+    y+=120;
+    }
+if (smashcyc==5){
+    visible=0;
+    megasmash=10;
+    repeat(80)
+        instance_create(smashx+random(384)-56,smashy-random(32),obj_ashadots);
+    with (obj_ashadots){
+        speed=random(15);
+        direction=point_direction(x,y,obj_sabotx.smashx+192,obj_sabotx.smashy+256);
+        direction+=180;
+        vspeed-=random(50);
+        }
+    }
+
+if (megasmash&gt;0)
+    megasmash-=1;
+if (megasmash==9 || megasmash==6 || megasmash==3){
+    for (i=0; i&lt;9; i+=1)
+        instance_create(smashx+i*32,smashy,obj_ashasmash);
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_ansaksie">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (downstabbed==0){
+    if (other.sprite_index==spr_komatoassassin_downstab || other.sprite_index==spr_asha_downstab){
+        downstabbed=1;
+        hp-=1;
+        scr_sound("iji_sworded");
+        scr_annihilatorpain();
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

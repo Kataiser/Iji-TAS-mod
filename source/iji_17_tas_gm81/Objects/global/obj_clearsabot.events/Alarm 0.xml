@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.wty)
+    global.sector=1;
+if(global.sector==2){
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==3){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==4){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==5){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==6){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==7){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==8){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==9){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==0){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinaryx) instance_destroy();
+}
+else if(global.sector==1){
+with(obj_clearbinary1) instance_destroy();
+with(obj_clearbinary2) instance_destroy();
+with(obj_clearbinary3) instance_destroy();
+with(obj_clearbinary4) instance_destroy();
+with(obj_clearbinary5) instance_destroy();
+with(obj_clearbinary6) instance_destroy();
+with(obj_clearbinary7) instance_destroy();
+with(obj_clearbinary8) instance_destroy();
+with(obj_clearbinary9) instance_destroy();
+}
+if (global.wty)
+    global.sector=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

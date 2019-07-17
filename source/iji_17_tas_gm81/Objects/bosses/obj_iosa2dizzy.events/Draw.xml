@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//cycle in degrees
+cyc-=20-(8-obj_iosa2.guard-global.difficulty)*1.4;
+if (cyc&lt;=0)
+    cyc+=360;
+x1=x+(cos(degtorad(cyc))*10)*2;
+y1=y+(sin(degtorad(cyc))*10)/2;
+if (cyc&lt;45 || cyc&gt;315)
+    size=3;
+else if (cyc&gt;45 &amp;&amp; cyc&lt;135)
+    size=2;
+else if (cyc&gt;135 &amp;&amp; cyc&lt;225)
+    size=3;
+else
+    size=4;
+draw_sprite(spr_ijiblood,size,x1,y1);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.sector==2){
+    image_single=floor(random(3)+3);
+    smallness=image_single-3;
+    }
+if (global.sector==3 || global.sector==11){
+    image_single=floor(random(3)+6);
+    smallness=image_single-6;
+    }
+if (global.sector==5 || global.sector==12){
+    image_single=floor(random(3)+9);
+    smallness=image_single-9;
+    }
+if (global.sector==7){
+    image_single=floor(random(3)+12);
+    smallness=image_single-12;
+    }
+bob=(random(1)*smallness)+0.4;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

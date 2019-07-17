@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="5">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!dropnothing){
+if (weapon==0)
+instance_create(x,y+32,obj_ammo1);
+else if (weapon==1)
+instance_create(x,y+32,obj_ammo3);
+else if (weapon==2)
+instance_create(x,y+32,obj_ammo3);
+else if (weapon==3)
+instance_create(x,y+32,obj_ammo5);
+else if (weapon==4)
+instance_create(x,y+32,obj_ammo9);
+else if (weapon==5)
+instance_create(x,y+32,obj_ammo9);
+else if (weapon==6)
+instance_create(x,y+32,obj_ammo10);
+else if (weapon==7)
+instance_create(x,y,obj_emptyshredder);
+}
+instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

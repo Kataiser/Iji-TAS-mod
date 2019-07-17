@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_tasenscout_basic" type="RESOURCE"/>
+  <resource name="spr_tasenscout_basicleft" type="RESOURCE"/>
+  <resource name="spr_tasenscout_afraid" type="RESOURCE"/>
+  <resource name="spr_tasenscout_afraidleft" type="RESOURCE"/>
+  <resource name="spr_tasenscout_fire" type="RESOURCE"/>
+  <resource name="spr_tasenscout_fireleft" type="RESOURCE"/>
+  <resource name="spr_tasenscout_pain" type="RESOURCE"/>
+  <resource name="spr_tasenscout_painleft" type="RESOURCE"/>
+  <resource name="spr_tasenscout_walk" type="RESOURCE"/>
+  <resource name="spr_tasenscout_walkleft" type="RESOURCE"/>
+  <resource name="spr_tasenscout_knockdown" type="RESOURCE"/>
+  <resource name="spr_tasenscout_knockdownleft" type="RESOURCE"/>
+  <resource name="spr_tasenscout_hitfloor" type="RESOURCE"/>
+  <resource name="spr_tasenscout_hitfloorleft" type="RESOURCE"/>
+  <resource name="spr_tasenscout_getup" type="RESOURCE"/>
+  <resource name="spr_tasenscout_getupleft" type="RESOURCE"/>
+</resources>

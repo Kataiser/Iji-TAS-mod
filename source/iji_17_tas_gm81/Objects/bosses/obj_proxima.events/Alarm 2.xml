@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_iji)==1){
+
+if (makebeep==1){
+    makebeep=0;
+    //scr_proximatalk(3);
+    }
+
+//Move to middle
+if (order==1){
+    state=1;
+    idle=1;
+    if (x&lt;xmiddle)
+        xgashere=x+(abs(x-xleft))/2;
+    else
+        xgashere=xright+(abs(xright-x))/2;
+    }
+
+//Roam (and Rocket hail)
+if (order==2 || order==8){
+    xdestination=x;
+    ydestination=y;
+    repeats=0;
+    while(abs(y-ydestination)&lt;250 &amp;&amp; repeats&lt;1000){
+        repeats+=1;
+        xdestination=xleft+random(352);
+        ydestination=640+random(480);
+        }
+    if (x&lt;xdestination)
+        xgashere=x+(abs(x-xdestination))/2;
+    else
+        xgashere=xdestination+(abs(xdestination-x))/2;
+    if (y&lt;ydestination)
+        ygashere=y+(abs(y-ydestination))/2;
+    else
+        ygashere=ydestination+(abs(ydestination-y))/2;
+    state=2;
+    idle=1;
+    //Charge Rocket Hail
+    if (order==8){
+        idle=0;
+        alarm[0]=30;
+        fire=5;
+        scr_sound("wea_charge");
+        scr_proximatalk(4);
+        }
+    }
+
+//Tackle
+if (order==3){
+    state=3;
+    alarm[0]=150;
+    scr_proximatalk(5);
+    }
+
+//Spread rockets
+if (order==4){
+    ydestination=obj_iji.y;
+    if (ydestination&gt;1152)
+        ydestination=1152;
+    if (y&lt;ydestination)
+        ygashere=y+(abs(y-ydestination))/2;
+    else
+        ygashere=ydestination+(abs(ydestination-y))/2;
+    alarm[1]=60-global.difficulty*20;
+    fire=1;
+    state=4;
+    scr_sound("wea_charge");
+    scr_proximatalk(6);
+    }
+
+//Splintergun
+if (order==5){
+    xdestination=x;
+    ydestination=y;
+    repeats=0;
+    while(abs(y-ydestination)&lt;250 &amp;&amp; repeats&lt;1000){
+        repeats+=1;
+        xdestination=xleft+random(352);
+        ydestination=640+random(480);
+        }
+    if (x&lt;xdestination)
+        xgashere=x+(abs(x-xdestination))/2;
+    else
+        xgashere=xdestination+(abs(xdestination-x))/2;
+    if (y&lt;ydestination)
+        ygashere=y+(abs(y-ydestination))/2;
+    else
+        ygashere=ydestination+(abs(ydestination-y))/2;
+    state=2;
+    idle=1;
+    fire=2;
+    fireamount=21;
+    xtarget=obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2;
+    ytarget=obj_iji.bbox_top+(obj_iji.bbox_bottom-obj_iji.bbox_top)/2;
+    alarm[1]=20-global.difficulty*5;
+    scr_proximatalk(7);
+    }
+
+//MPFB
+if (order==6){
+    ydestination=obj_iji.y;
+    if (ydestination&gt;1152)
+        ydestination=1152;
+    if (y&lt;ydestination)
+        ygashere=y+(abs(y-ydestination))/2;
+    else
+        ygashere=ydestination+(abs(ydestination-y))/2;
+    alarm[1]=30-global.difficulty*5;
+    fire=3;
+    state=4;
+    scr_sound("tor_gather");
+    scr_proximatalk(8);
+    }
+
+//Plasma cannon
+if (order==7){
+    state=5;
+    alarm[1]=60-global.difficulty*20;
+    fire=4;
+    fireamount=4+global.difficulty;
+    scr_sound("tor_gather");
+    scr_proximatalk(9);
+    }
+}
+
+//Nuke
+if (order==9){
+    scr_proximatalk(1);
+    sndchargecyc=0;
+    sndcharge=0;
+    sndchargecycmax=15;
+    state=2;
+    fire=7;
+    xdestination=xmiddle;
+    ydestination=1060;
+    idle=1;
+    if (x&lt;xmiddle)
+        xgashere=x+(abs(x-xdestination))/2;
+    else
+        xgashere=xdestination+(abs(xdestination-x))/2;
+    if (y&lt;1050)
+        ygashere=y+(abs(y-ydestination))/2;
+    else
+        ygashere=ydestination+(abs(ydestination-y))/2;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

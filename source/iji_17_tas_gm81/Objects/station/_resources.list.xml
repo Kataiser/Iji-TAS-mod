@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_station_health" type="RESOURCE"/>
+  <resource name="obj_station_attack" type="RESOURCE"/>
+  <resource name="obj_station_assimilate" type="RESOURCE"/>
+  <resource name="obj_station_strength" type="RESOURCE"/>
+  <resource name="obj_station_crack" type="RESOURCE"/>
+  <resource name="obj_station_tasen" type="RESOURCE"/>
+  <resource name="obj_station_komato" type="RESOURCE"/>
+  <resource name="obj_levelstation" type="RESOURCE"/>
+  <resource name="obj_weapstation" type="RESOURCE"/>
+  <resource name="obj_terminal" type="RESOURCE"/>
+  <resource name="obj_checkpoint" type="RESOURCE"/>
+</resources>

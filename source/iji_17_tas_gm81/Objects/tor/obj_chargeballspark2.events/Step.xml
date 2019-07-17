@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!follow)
+    speed-=1;
+
+else{
+dir=point_direction(x,y,obj_tor.x-80,obj_tor.y+235)+90;
+direction=dir;
+speed+=1;
+if (speed&gt;15)
+    speed=15;
+
+factor+=0.1;
+gravity+=0.2;
+gravity_direction=point_direction(x,y,obj_tor.x-80,obj_tor.y+235);
+if (gravity&gt;12)
+    gravity=12;
+
+if (x&gt;obj_tor.x-105 &amp;&amp; x&lt;obj_tor.x-55 &amp;&amp; y&gt;obj_tor.y+210 &amp;&amp; y&lt;obj_tor.y+260){
+    instance_destroy();
+    (instance_create(x,y,obj_megaflash)).mute=1;
+    }
+}
+
+(instance_create(x,y,obj_glassspark)).depth=1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

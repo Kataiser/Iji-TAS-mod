@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">turret=1;
+alarm[7]=2;
+sprite_index=spr_turretappear;
+image_single=0;
+armor=200;
+maxarmor=200;
+if (global.suddendeath){
+    armor=100;
+    maxarmor=100;
+    }
+security=2;
+resistance=1;
+if (active){
+    visible=1;
+    sprite_index=spr_turret;
+    image_single=0;
+    if (facing==1)
+        image_single=2;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

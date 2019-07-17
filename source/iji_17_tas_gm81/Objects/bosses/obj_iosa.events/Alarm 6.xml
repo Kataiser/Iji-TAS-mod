@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Shocksplinter
+if (firingplasma==0 &amp;&amp; firingmpfb==0 &amp;&amp; firingthor==0 &amp;&amp; firingcrawler==0){
+    if (shockcount&gt;1){
+        shockcount-=1;
+        alarm[6]=3;
+        }
+    else
+        alarm[2]=3;
+    scr_sound("wea_shoc");
+    global.tempid=id;
+    with (obj_chargetell){
+        if (tempid==global.tempid)
+            instance_destroy();
+        }
+    if (facing==0){
+        tempid=instance_create(x-24,y+100,obj_enemyshock);
+        tempid.target=id;
+        tempid.speed=-global.shockspeed;
+        sprite_index=spr_iosa_fireleft;
+        image_single=0;
+        }
+    else{
+        tempid=instance_create(x+124,y+100,obj_enemyshock);
+        tempid.target=id;
+        tempid.speed=global.shockspeed;
+        sprite_index=spr_iosa_fire;
+        image_single=0;
+        }
+    }
+//Plasma cannon
+else if (firingplasma){
+    scr_sound("wea_plas");
+    scr_shakescreen(3);
+    if (facing==0){
+        tempid=instance_create(x-24,y+100,obj_enemyplasmatrace);
+        tempid.fromiosa=1;
+        with (tempid) scr_enemyplasmatrace(0);
+        tempid.target=id;
+        sprite_index=spr_iosa_fireleft;
+        image_single=0;
+        }
+    else{
+        tempid=instance_create(x+124,y+100,obj_enemyplasmatrace);
+        tempid.fromiosa=1;
+        with (tempid) scr_enemyplasmatrace(1);
+        sprite_index=spr_iosa_fire;
+        image_single=0;
+        }
+    }
+//MPFB
+else if (firingmpfb){
+    scr_sound("wea_mpfb");
+    scr_shakescreen(1);
+    if (facing==0){
+        tempid=instance_create(x-24,y+100,obj_komatompfb);
+        tempid.speed=global.mpfbspeed;
+        tempid.direction=180;
+        tempid=instance_create(x-24,y+100,obj_komatompfb);
+        tempid.speed=global.mpfbspeed-4;
+        tempid.direction=180;
+        tempid=instance_create(x-24,y+100,obj_komatompfb);
+        tempid.speed=global.mpfbspeed-8;
+        tempid.direction=180;
+        tempid.target=id;
+        sprite_index=spr_iosa_fireleft;
+        image_single=0;
+        }
+    else{
+        tempid=instance_create(x+124,y+100,obj_komatompfb);
+        tempid.speed=global.mpfbspeed;
+        tempid=instance_create(x+124,y+100,obj_komatompfb);
+        tempid.speed=global.mpfbspeed-4;
+        tempid=instance_create(x+124,y+100,obj_komatompfb);
+        tempid.speed=global.mpfbspeed-8;
+        sprite_index=spr_iosa_fire;
+        image_single=0;
+        }
+    }
+
+//Velocithor V2-10
+else if (firingthor){
+    scr_shakescreen(2);
+    if (thorcount&gt;1){
+        thorcount-=1;
+        alarm[6]=2;
+        }
+    else{
+        alarm[2]=3;
+        alarm[1]=10;
+        }
+    if (facing==0){
+        instance_create(x-40,y+98,obj_enemythortrace);
+        tempid=instance_create(x+5,y+85,obj_smokepoint);
+        tempid.direction=random(20);
+        tempid.speed=20+random(20);
+        tempid.massive=1;
+        tempid.alarm[0]=8+random(5);
+        instance_create(x-24,y+98,obj_thorspark);
+        sprite_index=spr_iosa_fireleft;
+        image_single=0;
+        }
+    else{
+        instance_create(x+139,y+98,obj_enemythortrace);
+        tempid=instance_create(x+95,y+85,obj_smokepoint);
+        tempid.direction=random(20)+160;
+        tempid.speed=20+random(20);
+        tempid.massive=1;
+        tempid.alarm[0]=8+random(5);
+        instance_create(x+123,y+98,obj_thorspark);
+        sprite_index=spr_iosa_fire;
+        image_single=0;
+        }
+    }
+
+//Crawler
+else if (firingcrawler){
+    scr_sound("wea_shoc");
+    scr_shakescreen(1);
+    if (facing==0){
+        tempx=x-24;
+        tempy=y+100;
+        tempx=floor(tempx/4)*4;
+        tempy=floor(tempy/4)*4;
+        tempid=instance_create(tempx,tempy,obj_iosacrawler);
+        tempid.dir=2;
+        tempid.facing=0;
+        tempid.image_speed=1;
+        tempid.fast=crawlerfast;
+        sprite_index=spr_iosa_fireleft;
+        image_single=0;
+        }
+    else{
+        tempx=x+124;
+        tempy=y+100;
+        tempx=floor(tempx/4)*4;
+        tempy=floor(tempy/4)*4;
+        tempid=instance_create(tempx,tempy,obj_iosacrawler);
+        tempid.dir=0;
+        tempid.facing=1;
+        tempid.image_speed=-1;
+        tempid.fast=crawlerfast;
+        sprite_index=spr_iosa_fire;
+        image_single=0;
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

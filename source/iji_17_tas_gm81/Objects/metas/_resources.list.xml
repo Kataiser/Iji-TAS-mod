@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_leetbox" type="RESOURCE"/>
+  <resource name="obj_screen" type="RESOURCE"/>
+  <resource name="obj_lamp" type="RESOURCE"/>
+  <resource name="obj_crate1" type="RESOURCE"/>
+  <resource name="obj_crate2" type="RESOURCE"/>
+  <resource name="obj_locker" type="RESOURCE"/>
+  <resource name="obj_barrel" type="RESOURCE"/>
+  <resource name="obj_glass" type="RESOURCE"/>
+  <resource name="obj_glass2" type="RESOURCE"/>
+  <resource name="obj_glass2short" type="RESOURCE"/>
+  <resource name="obj_paper" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_enemyshockballexplosion">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_storeseed();
+
+{
+if (other.dud==0){
+    if (other.ijis)
+        ijikill=1;
+    else
+        ijikill=0;
+    if (dead==0)
+        armor-=30;
+    if (angry==0 &amp;&amp; (state==0 || state==1 || state==2))
+        alarm[2]=1;
+    angry=1;
+    alarm[5]=300;
+    targetrival=300;
+    target=other.target;
+    }
+}
+
+scr_restoreseed();
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

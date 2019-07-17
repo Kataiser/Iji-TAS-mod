@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!dud &amp;&amp; !global.dead &amp;&amp; !other.takingpain){
+global.armor=100;
+global.hp-=1;
+global.damage+=1;
+scr_shakescreen(2);
+scr_sound("glo_kick");
+if (other.bbox_left+((other.bbox_right-other.bbox_left)/2)&lt;bbox_left+((bbox_right-bbox_left)/2)){
+    with (other)
+        scr_knockdown(1,12);
+        }
+else{
+    with (other)
+        scr_knockdown(2,12);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

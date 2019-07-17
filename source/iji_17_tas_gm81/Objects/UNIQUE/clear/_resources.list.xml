@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_clearbinary" type="RESOURCE"/>
+  <resource name="obj_clearbinary1" type="RESOURCE"/>
+  <resource name="obj_clearbinary2" type="RESOURCE"/>
+  <resource name="obj_clearbinary3" type="RESOURCE"/>
+  <resource name="obj_clearbinary4" type="RESOURCE"/>
+  <resource name="obj_clearbinary5" type="RESOURCE"/>
+  <resource name="obj_clearbinary6" type="RESOURCE"/>
+  <resource name="obj_clearbinary7" type="RESOURCE"/>
+  <resource name="obj_clearbinary8" type="RESOURCE"/>
+  <resource name="obj_clearbinary9" type="RESOURCE"/>
+  <resource name="obj_clearbinaryx" type="RESOURCE"/>
+  <resource name="obj_clearzoom" type="RESOURCE"/>
+  <resource name="obj_clearpix" type="RESOURCE"/>
+  <resource name="obj_clearpixtrail" type="RESOURCE"/>
+  <resource name="obj_cleariji" type="RESOURCE"/>
+  <resource name="obj_clearcover" type="RESOURCE"/>
+  <resource name="obj_clearwbox" type="RESOURCE"/>
+  <resource name="obj_clearonoff" type="RESOURCE"/>
+</resources>

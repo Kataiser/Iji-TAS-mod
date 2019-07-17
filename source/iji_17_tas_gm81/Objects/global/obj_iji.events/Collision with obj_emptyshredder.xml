@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_emptyshredder">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Mount Shredder
+if (!shredder){
+if (ignoreshreddertext&lt;=0){
+    if (string_copy(global.topmessage,1,6)!="Nano +"){
+        global.erasetop=0;
+        global.topmessage="Press "+chr(global.usekey)+" to mount a Tasen Shredder";
+        }
+    }
+if (other.speed==0 &amp;&amp; abs(y-other.y+28)&lt;22 &amp;&amp; keyboard_check(ord("C")) &amp;&amp; !global.ignoreall &amp;&amp; global.state==1){
+    keyboard_clear(ord("C"));
+    x=floor(other.x);
+    y=floor(other.y);
+    obj_sabot.shredderx=xprevious-x;
+    obj_sabot.shreddery=yprevious-y+28;
+    scr_recoveryblinkend();
+    visible=0;
+    instance_create(x,y,obj_hologram);
+    shredderhp=other.shredderhp;
+    lookingaround=0;
+    global.state=1;
+    shredder=1;
+    goingleft=0;
+    goingright=0;
+    running=0;
+    takingpain=0;
+    recovering=0;
+    alarm[3]=12;
+    alarm[0]=0;
+    alarm[1]=0;
+    alarm[4]=0;
+    alarm[5]=0;
+    alarm[7]=0;
+    global.ignoreall=1;
+    if (other.facing==0)    
+        sprite_index=spr_tasenshredder_getonleft;
+    else
+        sprite_index=spr_tasenshredder_geton;
+    global.facing=other.facing;
+    image_index=0;
+    image_single=-1;
+    image_speed=0.5;
+    with (other)
+        instance_destroy();
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

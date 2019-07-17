@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (countdown&gt;0)
+    countdown-=1;
+
+if (angryprev==0 &amp;&amp; angry==1 &amp;&amp; !dead)
+    scr_sound("tur_find");
+angryprev=angry;
+
+cfised=0;
+thored=0;
+//Lose sight
+if ((x &lt; obj_shakescreen.x-1000) || (x &gt; obj_shakescreen.x+1000) || (y &lt; obj_shakescreen.y-800) || (y &gt; obj_shakescreen.y+800)){
+    angry=0;
+    alarm[1]=0;
+    alarm[2]=0;
+    alarm[3]=0;
+    state=0;
+    }
+//Death
+if (armor&lt;=0){
+if (!dead){
+    tempid=instance_create(x+6,y+8,obj_visionchecke)
+    tempid.direction=0;
+    tempid.speed=16;
+    tempid=instance_create(x+6,y+8,obj_visionchecke)
+    tempid.direction=180;
+    tempid.speed=16;
+    scr_sound("exp_turret");
+    instance_create(x,y,obj_turretdead);
+    instance_create(x+16,y+32,obj_enemyrocketexplosion);
+    instance_create(x+16,y+32,obj_explosioncenter);
+    script_execute(scr_shakescreen,2);
+    scr_turretdestroy();
+    }
+else
+    scr_turretdestroy();
+}
+//Armor
+if (armor&lt;maxarmor-0.1 &amp;&amp; !dead)
+    armor+=0.1;
+//Lurk
+if (!active){
+    check+=1;
+    if (check==6){
+        check=0;
+        if (distance_to_object(obj_iji)&lt;192 &amp;&amp; obj_iji.overload!=3 &amp;&amp; !global.truce){
+            scr_sound("tur_appear");
+            active=1;
+            visible=1;
+            image_single=-1;
+            alarm[0]=3;
+            }
+        }
+    }
+else{
+if (state==1 &amp;&amp; (weapon==0 || weapon==7)){ //Machinegun
+    machcycle+=1;
+    if (machcycle==3){
+    scr_sound("wea_mach");
+    machcycle=0;
+    if (facing==0){
+        image_single=3;
+        alarm[4]=3;
+        if (weapon==7){
+            if (!global.specialbake)
+                (instance_create(x+8,y+21,obj_shockshell)).hspeed=-random(20);
+            }
+        else
+            instance_create(x+16,y+21,obj_enemybullet);
+        instance_create(x-2,y+21,obj_muzzleflash);
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x+12,y+16,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+40;
+            }
+        }
+    else{
+        image_single=4;
+        alarm[4]=3;
+        if (weapon==7){
+            if (!global.specialbake)
+                (instance_create(x+24,y+21,obj_shockshell)).hspeed=random(20);
+            }
+        else
+            instance_create(x+16,y+21,obj_enemybullet2);
+        (instance_create(x+66,y+21,obj_muzzleflash)).image_single=floor(random(5))+5;
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x+20,y+16,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+130;
+            }
+        }
+        }
+    }
+else if (state==1 &amp;&amp; weapon==5){ //Splintergun
+    machcycle+=1;
+    if (machcycle==3){
+    scr_sound("wea_spli");
+    machcycle=0;
+    if (facing==0){
+        image_single=3;
+        alarm[4]=3;
+        tempid=instance_create(x+16,y+21,obj_enemyshockball);
+        tempid.speed=25;
+        tempid.direction=180;
+        tempid.dud=0;
+        (instance_create(x-2,y+21,obj_shockspark)).speed=-3;
+        if (!global.specialbake)
+            (instance_create(x+12,y+16,obj_shockshell)).short=1;
+        }
+    else{
+        image_single=4;
+        alarm[4]=3;
+        tempid=instance_create(x+16,y+21,obj_enemyshockball);
+        tempid.speed=25;
+        tempid.direction=0;
+        tempid.dud=0;
+        (instance_create(x+34,y+21,obj_shockspark)).speed=3;
+        if (!global.specialbake){
+            tempid=instance_create(x+12,y+16,obj_shockshell);
+            tempid.hspeed=-tempid.hspeed;
+            tempid.short=1;
+            }
+        }
+        }
+    }
+}
+
+if (place_free(x,y+1))
+    gravity=0.7;
+if (speed&gt;20)
+    speed=20;
+if (dead &amp;&amp; speed&gt;0){
+    if (hspeed&lt;0)
+        sprite_index=spr_turretheadright;
+    else if (hspeed&gt;0)
+        sprite_index=spr_turretheadleft;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

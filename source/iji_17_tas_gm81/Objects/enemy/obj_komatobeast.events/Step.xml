@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//"FIND"
+if (angry &amp;&amp; !prevangry)
+    scr_sound("bea_find");
+prevangry=angry;
+
+scr_komatovision(40,12);
+if (targetiji&gt;0)
+targetiji-=1;
+if (targetrival&gt;0)
+targetrival-=1;
+cfised=0;
+thored=0;
+//Jump over rockets
+randomstate=random(1+0.25*global.difficulty);
+if (state==2 &amp;&amp; (randomstate&gt;0.75)){
+if ((facing==0 &amp;&amp; place_free(x-160,y) &amp;&amp; (place_meeting(x-160,y,obj_rocket) || place_meeting(x-160,y,obj_mpfb) || place_meeting(x-160,y,obj_shock) || place_meeting(x-160,y,obj_enemyrocket) || place_meeting(x-160,y,obj_enemympfb))) || (facing==1 &amp;&amp; place_free(x-160,y) &amp;&amp; (place_meeting(x+160,y,obj_rocket) || place_meeting(x+160,y,obj_mpfb) || place_meeting(x+160,y,obj_shock) || place_meeting(x+160,y,obj_enemyrocket) || place_meeting(x+160,y,obj_enemympfb)))){
+    scr_sound("bea_jump");
+    state=3;
+    velocity=runspeed;
+    vspeed=-18;
+    gravity=1;
+    gravity_direction=270;
+    if (facing==0)
+        sprite_index=spr_komatobeast_runleft;
+    else
+        sprite_index=spr_komatobeast_run;
+    image_single=1;
+    image_speed=0;
+    }
+}
+
+//Lose sight
+if ((x &lt; obj_shakescreen.x-1000) || (x &gt; obj_shakescreen.x+1000) || (y &lt; obj_shakescreen.y-800) || (y &gt; obj_shakescreen.y+800)){
+    angry=0;
+    alarm[5]=0;
+    if (state==2)
+        state=0;
+    }
+//Alter sprite speed
+if (sprite_index=spr_komatobeast_basic || sprite_index=spr_komatobeast_basicleft)
+    image_speed=0.25;
+else if (state!=3)
+    image_speed=0.5;
+
+//Crack fail
+if (crackmark==1 &amp;&amp; distance_to_object(obj_iji) &gt; 50){
+    script_execute(scr_crackfail);
+    script_execute(scr_terminatecrack);
+    global.erasetop=0;
+    global.topmessage="Subject is too far away to crack";
+    }
+//Fix hitting cieling
+if (state==3 &amp;&amp; place_meeting(x,y+vspeed-2,(obj_block)) &amp;&amp; !place_meeting(x,y+vspeed-2,(obj_meta)) &amp;&amp; vspeed&lt;0){
+    move_contact_solid(90,-1);
+    vspeed=0;
+    y+=3;
+    }
+//Autodeath
+if (hp&lt;=0 || armor&lt;1)
+    scr_beastdeath();
+//Jump
+if (state==3){
+    if (facing==0){
+        if (place_free(x-velocity,y+vspeed+2) &amp;&amp; !place_meeting(x-velocity,y,obj_blockenemy)){
+            if (place_free(x-velocity,y+vspeed-2))
+                x-=velocity;
+            else if (place_free(x,y+vspeed+12)){
+                velocity*=0.3;
+                sprite_index=spr_komatobeast_run;
+                facing=1;
+                }
+            }
+        else if (place_free(x,y+vspeed+12)){
+            velocity*=0.3;
+            sprite_index=spr_komatobeast_run;
+            facing=1;
+            }
+        }
+    else if (facing==1){
+        if (place_free(x+velocity,y+vspeed+2) &amp;&amp; !place_meeting(x+velocity,y,obj_blockenemy)){
+            if (place_free(x+velocity,y+vspeed-2))
+                x+=velocity;
+            else if (place_free(x,y+vspeed+12)){
+                velocity*=0.3;
+                sprite_index=spr_komatobeast_runleft;
+                facing=0;
+                }
+            }
+        else if (place_free(x,y+vspeed+12)){
+            velocity*=0.3;
+            sprite_index=spr_komatobeast_runleft;
+            facing=0;
+            }
+        }
+    //Fall
+    if (place_free(x,y+1)){
+        gravity=1;
+        gravity_direction=270;
+        }
+    }
+//Limit fall speed
+if (vspeed&gt;20)
+    vspeed=20;
+//Armor
+if (armor&lt;199.9)
+    armor+=0.1;
+//Stand still
+if (state==0){
+    if (facing==0)
+        sprite_index=spr_komatobeast_basicleft;
+    else
+        sprite_index=spr_komatobeast_basic;
+    }
+
+//Walk
+if (state==1){
+    if (facing==0){
+        sprite_index=spr_komatobeast_walkleft;
+        if (place_meeting(x-walkspeed,y,obj_blockenemy) || place_free(x-80,y+20))
+            facing=1;
+        else if (place_free(x-walkspeed,y))
+            x-=walkspeed;
+        else
+            facing=1;
+        }
+    else{
+        sprite_index=spr_komatobeast_walk;
+        if (place_meeting(x+walkspeed,y,obj_blockenemy) || place_free(x+80,y+20))
+            facing=0;
+        else if (place_free(x+walkspeed,y))
+            x+=walkspeed;
+        else
+            facing=0;
+        }
+    }
+
+//Run
+if (state==2){
+    if (facing==0){
+        sprite_index=spr_komatobeast_runleft;
+        if (place_meeting(x-runspeed,y,obj_blockenemy) || place_free(x-80,y+20))
+            facing=1;
+        else if (place_free(x-runspeed,y))
+            x-=runspeed;
+        else
+            facing=1;
+        }
+    else{
+        sprite_index=spr_komatobeast_run;
+        if (place_meeting(x+runspeed,y,obj_blockenemy) || place_free(x+80,y+20))
+            facing=0;
+        else if (place_free(x+runspeed,y))
+            x+=runspeed;
+        else
+            facing=0;
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

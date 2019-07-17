@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Avoid elec
+if (visible &amp;&amp; y&gt;3040)
+    scr_assassinpain(1);
+
+//Megasmash recovery
+if ((sprite_index==spr_asha_smash || sprite_index==spr_asha_vortex) &amp;&amp; vspeed&gt;0){
+    gravity=0;
+    vspeed=0;
+    scr_assassinpain(1);
+    }
+
+//Execute upslash
+if (sprite_index==spr_asha_upslash &amp;&amp; visible){
+    upslashwait+=1;
+    if (upslashwait&gt;60 &amp;&amp; !upslashing){
+        upslashing=1;
+        alarm[1]=1;
+        }
+    if (obj_iji.y&gt;y-32 &amp;&amp; !upslashing){
+        upslashing=1;
+        alarm[1]=1;
+        }
+    if (distance_to_object(obj_iji)&lt;64 &amp;&amp; !upslashing){
+        upslashing=1;
+        alarm[0]=1;
+        alarm[1]=5;
+        }
+    }
+
+//Downstab recovery
+if(!place_free(x,y) &amp;&amp; sprite_index==spr_asha_downstab &amp;&amp; visible){
+    alarm[2]=2;
+    //(instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash)).depth=10;
+    visible=0;
+    gravity=0;
+    vspeed=0;
+    sprite_index=spr_asha_pose1;
+    }
+if (vspeed&gt;22)
+    vspeed=22;
+if (visible &amp;&amp; sprite_index==spr_asha_downstab &amp;&amp; y&gt;obj_iji.y+64)
+    scr_assassinpain(1);
+
+//Change of plans
+if (sprite_index==spr_asha_uppercut || sprite_index==spr_asha_uppercutleft || sprite_index==spr_asha_backstab || sprite_index==spr_asha_backstableft){
+    if (visible &amp;&amp; distance_to_object(obj_asha2)&lt;40)
+        scr_assassinpain(1);
+    if (visible &amp;&amp; distance_to_object(obj_iji)&gt;100){
+        scr_assassinpain(1);
+        alarm[2]=2;
+        }
+    if (visible &amp;&amp; ((sprite_index==spr_asha_uppercut &amp;&amp; (obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2 &lt; bbox_left+(bbox_right-bbox_left)/2+10)) || (sprite_index==spr_asha_uppercutleft &amp;&amp; (obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2 &gt; bbox_left+(bbox_right-bbox_left)/2-10)))){
+        if (alarm[1]&gt;6){
+            alarm[1]=5;
+            alarm[0]=2;
+            }
+        }
+    if (visible &amp;&amp; ((sprite_index==spr_asha_backstab &amp;&amp; (obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2 &lt; bbox_left+(bbox_right-bbox_left)/2+10)) || (sprite_index==spr_asha_backstableft &amp;&amp; (obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2 &gt; bbox_left+(bbox_right-bbox_left)/2-10)))){
+        if (alarm[1]&gt;6){
+            alarm[1]=4;
+            alarm[0]=2;
+            }
+        }
+    }
+if (sprite_index==spr_asha_pose1 || sprite_index==spr_asha_pose1left || sprite_index==spr_asha_pose1fire || sprite_index==spr_asha_pose1fireleft || sprite_index==spr_asha_pose2 || sprite_index==spr_asha_pose2left){
+    if (visible &amp;&amp; distance_to_object(obj_asha2)&lt;40)
+        scr_assassinpain(1);
+    if (visible &amp;&amp; distance_to_object(obj_iji)&lt;30){
+        scr_assassinpain(1);
+        alarm[2]=2;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

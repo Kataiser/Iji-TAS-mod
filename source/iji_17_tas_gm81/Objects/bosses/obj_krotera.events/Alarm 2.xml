@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!dead){
+
+target=obj_iji;
+swiping=0;
+//Adjust sprite
+if (facing==0)
+    sprite_index=spr_krotera_basicleft;
+else
+    sprite_index=spr_krotera_basic;
+//Begin taking action
+takingpain=0;
+alarm[2]=25+random(10);
+//Rocket has fired
+if (firingrocket==1){
+    state=1;
+    firingrocket=0;
+    firingrocket2=1;
+    if (x&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+    //Kick
+    if (x&gt;target.x &amp;&amp; (place_meeting(x-30,y,obj_meta) || place_meeting(x-30,y,obj_glass))){
+        state=0;
+        idling=0;
+        swiping=1;
+        image_index=0;
+        alarm[2]=14;
+        sprite_index=spr_krotera_kickleft;
+        }
+    else if (x&lt;=target.x &amp;&amp; (place_meeting(x+30,y,obj_meta) || place_meeting(x+30,y,obj_glass))){
+        state=0;
+        idling=0;
+        swiping=1;
+        image_index=0;
+        alarm[2]=14;
+        sprite_index=spr_krotera_kick;
+        }
+    if (distance_to_object(target)&lt;28){
+        state=0;
+        idling=0;
+        swiping=1;
+        alarm[2]=14;
+        image_index=0;
+        if (x&gt;target.x){
+            facing=0;
+            sprite_index=spr_krotera_kickleft;
+            }
+        else{
+            facing=1;
+            sprite_index=spr_krotera_kick;
+            }
+        }
+    exit;
+    }
+//Iji is dead
+if (!angry){
+state=0;
+if (facing==0)
+    sprite_index=spr_krotera_basicleft;
+else
+    sprite_index=spr_krotera_basic;
+}
+//Always angry
+else{
+randomstate=random(1);
+state=1;
+//Face target
+if (x&gt;target.x)
+    facing=0;
+else
+    facing=1;
+if (idling==4){
+    if (abs(target.y-y)&lt;128)
+        state=2;
+    else
+        state=1;
+    idling=0;
+    }
+if (randomstate&lt;0.4){
+    state=1;
+    idling+=1;
+    //Kick (again)
+    if (x&gt;target.x &amp;&amp; (place_meeting(x-30,y,obj_meta) || place_meeting(x-30,y,obj_glass))){
+        state=0;
+        idling=0;
+        swiping=1;
+        image_index=0;
+        alarm[2]=14;
+        sprite_index=spr_krotera_kickleft;
+        }
+    else if (x&lt;=target.x &amp;&amp; (place_meeting(x+30,y,obj_meta) || place_meeting(x+30,y,obj_meta))){
+        state=0;
+        idling=0;
+        swiping=1;
+        image_index=0;
+        alarm[2]=14;
+        sprite_index=spr_krotera_kick;
+        }
+    if (distance_to_object(target)&lt;28){
+        state=0;
+        idling=0;
+        swiping=1;
+        image_index=0;
+        alarm[2]=14;
+        if (x&gt;target.x){
+            facing=0;
+            sprite_index=spr_krotera_kickleft;
+            }
+        else{
+            facing=1;
+            sprite_index=spr_krotera_kick;
+            }
+        }
+    }
+if (randomstate&gt;=0.4){
+    if (abs(target.y-y)&lt;128)
+        state=2;
+    else
+        state=1;
+    //Face target
+    if (x&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+    //Charge a rocket
+    if (randomstate&gt;=0.9 &amp;&amp; abs(y-target.y)&lt;256){
+        idling=0;
+        if (place_free(x+16,y-32) &amp;&amp; place_free(x+32,y-32) &amp;&amp; place_free(x+48,y-32) &amp;&amp; place_free(x+64,y-32) &amp;&amp; place_free(x+80,y-32) &amp;&amp; place_free(x+96,y-32) &amp;&amp; !place_meeting(x+16,y-32,obj_glass) &amp;&amp; !place_meeting(x+32,y-32,obj_glass) &amp;&amp; !place_meeting(x+48,y-32,obj_glass) &amp;&amp; !place_meeting(x+64,y-32,obj_glass) &amp;&amp; !place_meeting(x+80,y-32,obj_glass) &amp;&amp; !place_meeting(x+96,y-32,obj_glass) &amp;&amp; !place_meeting(x+16,y-32,obj_meta) &amp;&amp; !place_meeting(x+32,y-32,obj_meta) &amp;&amp; !place_meeting(x+48,y-32,obj_meta) &amp;&amp; !place_meeting(x+64,y-32,obj_meta) &amp;&amp; !place_meeting(x+80,y-32,obj_meta) &amp;&amp; !place_meeting(x+96,y-32,obj_meta) &amp;&amp; x&lt;=target.x){
+            tempid=instance_create(x+55,y+35,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            sprite_index=spr_krotera_basic;
+            alarm[2]=22;
+            alarm[6]=19;
+            firingrocket=1;
+            if (randomstate&gt;=0.95){
+                firingmpfb=1;
+                alarm[2]=38;
+                alarm[6]=35;
+                if (randomstate&gt;=0.98){
+                    rapidfirempfb=7;
+                    alarm[2]=130;
+                    alarm[6]=90;
+                    stopthis=30;
+                    }
+                else{
+                    scr_sound("tor_gather");
+                    }
+                }
+            else{
+                firingmpfb=0;
+                scr_sound("wea_charge");
+                }
+            }
+        else if (place_free(x-16,y-32) &amp;&amp; place_free(x-32,y-32) &amp;&amp; place_free(x-48,y-32) &amp;&amp; place_free(x-64,y-32) &amp;&amp; place_free(x-80,y-32) &amp;&amp; place_free(x-96,y-32) &amp;&amp; !place_meeting(x-16,y-32,obj_glass) &amp;&amp; !place_meeting(x-32,y-32,obj_glass) &amp;&amp; !place_meeting(x-48,y-32,obj_glass) &amp;&amp; !place_meeting(x-64,y-32,obj_glass) &amp;&amp; !place_meeting(x-80,y-32,obj_glass) &amp;&amp; !place_meeting(x-96,y-32,obj_glass) &amp;&amp; !place_meeting(x-16,y-32,obj_meta) &amp;&amp; !place_meeting(x-32,y-32,obj_meta) &amp;&amp; !place_meeting(x-48,y-32,obj_meta) &amp;&amp; !place_meeting(x-64,y-32,obj_meta) &amp;&amp; !place_meeting(x-80,y-32,obj_meta) &amp;&amp; !place_meeting(x-96,y-32,obj_meta) &amp;&amp; x&gt;target.x){
+            tempid=instance_create(x-22,y+35,obj_chargetell);
+            tempid.tempid=id;
+            state=0;
+            sprite_index=spr_krotera_basicleft;
+            alarm[2]=22;
+            alarm[6]=19;
+            firingrocket=1;
+            if (randomstate&gt;=0.95){
+                firingmpfb=1;
+                alarm[2]=38;
+                alarm[6]=35;
+                if (randomstate&gt;=0.98){
+                    rapidfirempfb=7;
+                    alarm[2]=130;
+                    alarm[6]=90;
+                    stopthis=30;
+                    }
+                else{
+                    scr_sound("tor_gather");
+                    }
+                }
+            else{
+                firingmpfb=0;
+                scr_sound("wea_charge");
+                }
+            }
+        }
+    else{
+        //Rocket test failed
+        state=2;
+        idling=0;
+        }
+    }
+}
+
+if (state==1 &amp;&amp; firingrocket2==0){
+    //"HOLD STILL"
+    if (holdstill&gt;=300 &amp;&amp; obj_iji.y&lt;2330){
+        holdstillwait=200+ceil(random(200));
+        holdstill=0;
+        scr_sound("kro_ambient1");
+        canthidewait=100+ceil(random(100));
+        }
+    //"CAN'T HIDE"
+    else if (canthidewait==0 &amp;&amp; obj_iji.y&gt;2384 &amp;&amp; collision_line(x+15,y+76,obj_iji.x+6,obj_iji.y+44,obj_meta,0,1)){
+        scr_sound("kro_ambient2");
+        canthidewait=200+ceil(random(200));
+        holdstill=0;
+        }
+    }
+firingrocket2=0;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">killtype=1;
+angry=1;
+krotera=1;
+image_speed=0.5;
+state=0;
+hp=25;
+maxhp=25;
+spawncount=25;
+if (global.suddendeath){
+    hp=1;
+    maxhp=1;
+    spawncount=0;
+    }
+armor=100;
+maxarmor=100;
+enemytype=3;
+resistance=9;
+security=25;
+walkspeed=4;
+killdataid=95</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

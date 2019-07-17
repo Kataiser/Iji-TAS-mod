@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (place_free(x,y+1))
+    newspd=spd*2;
+else
+    newspd=spd;
+
+repeat(newspd){
+    spdcyc+=1;
+    if (spdcyc==3){
+        spdcyc=0;
+        if (place_meeting(x,y+1,obj_meta))
+            gone=1;
+        else if (place_free(x,y+1)){
+            if (place_free(x+1-dir*2,y+1))
+                gone=1;
+            else
+                y+=1;
+            }
+        else{
+            if (place_free(x-1+dir*2,y))
+                x+=-1+dir*2;
+            else
+                gone=1;
+            if (place_free(x,y+1))
+                y+=1;
+            }
+        if (!gone)
+            (instance_create(x,y,obj_bloodflow2)).image_single=img;
+        }
+    }
+
+ttl+=1;
+if (ttl==20)
+    spd=3;
+if (ttl==35)
+    spd=2;
+if (ttl==50){
+    spd=1;
+    img=1;
+    }
+if (ttl&gt;=90 || gone)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

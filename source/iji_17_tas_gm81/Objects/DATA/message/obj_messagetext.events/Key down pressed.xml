@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="40">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.ignoremessagescroll==0 &amp;&amp; firstscroll==0 &amp;&amp; sabotscroll==0){
+page+=1;
+obj_iji.ignoredown=1;
+with (obj_scrollarrow)
+    bounce=1;
+if (page==pages){
+    page-=1;
+    firstscroll=1;
+    sabotscroll=1;
+    alarm[0]=1;
+    if (obj_iji.readinglog)
+        obj_iji.cannotpause=0;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

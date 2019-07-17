@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">killtype=2;
+image_speed=0.5;
+state=1;
+alarm[2]=25+random(10);
+hp=1;
+maxhp=1;
+armor=100;
+maxarmor=100;
+enemytype=13;
+resistance=7;
+security=6;
+walkspeed=4;
+runspeed=8+global.specialtrigger16*2;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

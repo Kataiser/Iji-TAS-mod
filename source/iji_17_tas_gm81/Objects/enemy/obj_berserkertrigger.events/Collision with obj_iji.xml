@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">temprand=random(1);
+if (temprand&gt;0.95 || instant){
+if (amount&gt;=1){
+    scr_sound("ber_find");
+    instance_create(x1,y1,obj_megaflash);
+    tempid=instance_create(x1-15,y1-40,obj_komatoberserker);
+    if (weapon1)
+        tempid.weapon=1;
+    tempid.killdataid=killdataid1;
+    with (tempid){
+        nullresistant=1;
+        alarm[2]=0;
+        angry=1;
+        targetijii=300;
+        alarm[5]=300;
+        state=4;
+        if (x&gt;obj_iji.x){
+            sprite_index=spr_komatoberserker_fallleft;
+            facing=0;
+            knockdowntype=2;
+            }
+        else{
+            sprite_index=spr_komatoberserker_fall;
+            facing=1;
+            knockdowntype=1;
+            }
+        }
+    }
+
+if (amount&gt;=2){
+    instance_create(x2,y2,obj_megaflash);
+    tempid=instance_create(x2-15,y2-40,obj_komatoberserker);
+    if (weapon2)
+        tempid.weapon=1;
+    tempid.killdataid=killdataid2;
+    with (tempid){
+        nullresistant=1;
+        alarm[2]=0;
+        angry=1;
+        targetijii=300;
+        alarm[5]=300;
+        state=4;
+        if (x&gt;obj_iji.x){
+            sprite_index=spr_komatoberserker_fallleft;
+            facing=0;
+            knockdowntype=2;
+            }
+        else{
+            sprite_index=spr_komatoberserker_fall;
+            facing=1;
+            knockdowntype=1;
+            }
+        }
+    }
+
+if (amount&gt;=3){
+    instance_create(x3,y3,obj_megaflash);
+    tempid=instance_create(x3-15,y3-40,obj_komatoberserker);
+    tempid.killdataid=killdataid3;
+    if (weapon3)
+        tempid.weapon=1;
+    with (tempid){
+        nullresistant=1;
+        alarm[2]=0;
+        angry=1;
+        targetijii=300;
+        alarm[5]=300;
+        state=4;
+        if (x&gt;obj_iji.x){
+            sprite_index=spr_komatoberserker_fallleft;
+            facing=0;
+            knockdowntype=2;
+            }
+        else{
+            sprite_index=spr_komatoberserker_fall;
+            facing=1;
+            knockdowntype=1;
+            }
+        }
+    }
+
+instance_destroy();
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="37">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!ignoreall &amp;&amp; tier!="wait" &amp;&amp; tier!="wait2" &amp;&amp; tier!="wait3"){
+if (menu){
+    //OPTIONS
+    if(tier="options"){
+        if(selected==2){
+            if(global.noshake){
+                global.noshake=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.noshake=1;
+                scr_sound("glo_menuback");
+                }
+            }
+        else if(selected==3){
+            if(global.novoice){
+                global.novoice=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.novoice=1;
+                scr_sound("glo_menuback");
+                }
+            }
+        else if(selected==4){
+            if(global.nosound){
+                global.nosound=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.nosound=1;
+                scr_sound("glo_menuback");
+                }
+            }
+        else if(selected==5){
+            if(global.nomusic){
+                global.nomusic=0;
+                scr_sound("glo_menuselect");
+                //Play currently playing music
+                scr_music("mus_mainmenu");
+                soundtested=0;
+                }
+            else{
+                global.nomusic=1;
+                scr_sound("glo_menuback");
+                with (obj_face)
+                    scr_stopmusic();
+                }
+            }
+        else if(selected==6){
+            if(global.hidetime){
+                global.hidetime=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.hidetime=1;
+                scr_sound("glo_menuback");
+                }
+            }
+        else if (selected==7){
+            if(global.nogamma){
+                global.nogamma=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.nogamma=1;
+                scr_sound("glo_menuback");
+                nocovers=1;
+                waittype=4;
+                scr_menufulltexts();
+                instance_create(0,0,obj_mainfullcover);
+                tier="wait";
+                }
+            }
+        }
+    //SINGLE SECTOR WARP
+    if (tier=="extras" &amp;&amp; selected==3 &amp;&amp; global.extras1){
+        scr_sound("glo_menumove");
+        if ((warp==0 &amp;&amp; global.extras5) || (warp==1 &amp;&amp; !global.extras5))
+            warp=10;
+        else
+            warp-=1;
+        }
+    //ALTERNATE OUTFIT
+    if (tier=="extras" &amp;&amp; selected==5 &amp;&amp; global.extras3){
+        scr_sound("glo_menumove");
+        if (global.outfit==0)
+            global.outfit=1;
+        else
+            global.outfit=0;
+        }
+    //WEAPON INFORMATION
+    if (tier=="extras2" &amp;&amp; selected==2 &amp;&amp; global.extras4){
+        scr_sound("glo_menumove");
+        if (weaponinfo==1)
+            weaponinfo=26;
+        else
+            weaponinfo-=1;
+        }
+    //ENEMY INFORMATION
+    if (tier=="extras2" &amp;&amp; selected==3 &amp;&amp; global.extras6){
+        scr_sound("glo_menumove");
+        if (enemyinfo==1)
+            enemyinfo=25;
+        else
+            enemyinfo-=1;
+        }
+    //SECTOR MAPS
+    if (tier=="extras2" &amp;&amp; selected==4 &amp;&amp; global.extras1){
+        scr_sound("glo_menumove");
+        if (sectormaps==0)
+            sectormaps=9;
+        else
+            sectormaps-=1;
+        }
+    //SUDDEN DEATH SECTOR
+    if (tier=="extras2" &amp;&amp; selected==5 &amp;&amp; global.extras2){
+        scr_sound("glo_menumove");
+        if (sdwarp==0)
+            sdwarp=9;
+        else
+            sdwarp-=1;
+        }
+    //TURBO MODE
+    if (tier=="extras3" &amp;&amp; selected==2 &amp;&amp; global.extras8){
+        scr_sound("glo_menumove");
+        if (global.turbomode==0)
+            global.turbomode=1;
+        else
+            global.turbomode=0;
+        }
+    //SCRAMBLER
+    if (tier=="extras3" &amp;&amp; selected==3 &amp;&amp; global.extras7){
+        scr_sound("glo_menumove");
+        if (global.scrambler==0)
+            global.scrambler=1;
+        else
+            global.scrambler=0;
+        }
+    //SOUND TEST
+    if (tier=="extras3" &amp;&amp; selected==4 &amp;&amp; global.extras1){
+        subtitle="";
+        repeat(10)
+            sound_stop_all();
+        scr_stopmusic();
+        soundtested=1;
+        seczmusic=0;
+        if (soundtest==0)
+            soundtest=soundtestmax;
+        else
+            soundtest-=1;
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

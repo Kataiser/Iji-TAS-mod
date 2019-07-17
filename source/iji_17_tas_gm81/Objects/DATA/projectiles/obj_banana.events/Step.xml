@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (speed&lt;2.2 &amp;&amp; !place_free(x,y+2)){
+    speed=0;
+    move_contact_solid(270,-1);
+    gravity=0;
+    doit=1;
+    }
+if (doit==1)
+    cycle+=1;
+if (cycle==1)
+    image_single=0;
+if (cycle==4){
+    image_single=1;
+    }
+if (cycle==7){
+    image_single=2;
+    x+=6;
+    }
+if (cycle==10){
+    image_single=1;
+    x-=6;
+    }
+if (cycle==13){
+    image_single=0;
+    x-=6;
+    }
+if (cycle==16){
+    image_single=1;
+    x+=6;
+    }
+scr_outside();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

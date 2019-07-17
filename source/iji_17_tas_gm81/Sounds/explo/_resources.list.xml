@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_exp_turret" type="RESOURCE"/>
+  <resource name="snd_exp_mpfb" type="RESOURCE"/>
+  <resource name="snd_exp_spli" type="RESOURCE"/>
+  <resource name="snd_exp_spli_q1" type="RESOURCE"/>
+  <resource name="snd_exp_spli_q2" type="RESOURCE"/>
+  <resource name="snd_exp_glass" type="RESOURCE"/>
+  <resource name="snd_exp_miniglass" type="RESOURCE"/>
+  <resource name="snd_exp_shoc" type="RESOURCE"/>
+  <resource name="snd_exp_meta1" type="RESOURCE"/>
+  <resource name="snd_exp_meta2" type="RESOURCE"/>
+  <resource name="snd_exp_nano" type="RESOURCE"/>
+  <resource name="snd_exp_nuke" type="RESOURCE"/>
+  <resource name="snd_exp_pew" type="RESOURCE"/>
+  <resource name="snd_exp_rock" type="RESOURCE"/>
+  <resource name="snd_exp_boss" type="RESOURCE"/>
+  <resource name="snd_ext_impulseexplo" type="RESOURCE"/>
+  <resource name="snd_ext_barrierexplo" type="RESOURCE"/>
+</resources>

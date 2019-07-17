@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_log1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!shredder){
+if (global.noitemtext==0 &amp;&amp; global.ignorestation==0){
+    if (string_copy(global.topmessage,1,6)!="Nano +"){
+        if (other.sprite_index==spr_terminal)
+            global.topmessage="Use this terminal with the "+chr(global.usekey)+" key";
+        else{
+            if (other.sprite_index=spr_log1)
+                global.topmessage="Use this Tasen text log ("+chr(global.usekey)+" key) to read it";
+            else if (other.sprite_index=spr_log2)
+                global.topmessage="Use this Komato text log ("+chr(global.usekey)+" key) to read it";
+            else
+                global.topmessage="Use this text log ("+chr(global.usekey)+" key) to read it";
+            }
+        global.erasetop=0;
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

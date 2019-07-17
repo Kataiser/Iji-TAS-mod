@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="5">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!rageperform &amp;&amp; !plasmavortex){
+    if (!donerageonce || global.difficulty==0){
+        donerageonce=1;
+        obj_asha2safe.visible=1;
+        obj_asha2safe.sprite_index=spr_iosa2_safed;
+        }
+    rageperform=1;
+    alarm[5]=50-(global.difficulty*10);
+    image_index=0;
+    image_single=-1;
+    image_speed=0.5;
+    if (obj_iji.x&lt;6182){
+       x=5888;
+       sprite_index=spr_asha_wall;
+       }
+    else{
+       x=6464;
+       sprite_index=spr_asha_wallleft;
+       }
+    y=2780+random(60);
+    visible=1;
+    instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+    }
+
+else{
+if (visible){
+    instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+    visible=0;
+    image_single=0;
+    image_index=0;
+    sprite_index=spr_asha_basic;
+    }
+plasmarage-=1;
+if (plasmarage&gt;0){
+    scr_sound("wea_plas");
+    xrand=5904+random(544);
+    yrand=3024-plasmarage*32;
+    scr_shakescreen(3);
+    instance_create(xrand,yrand,obj_megaflash);
+    tempid=instance_create(xrand,yrand,obj_enemyplasmatrace);
+    with (tempid){
+        if (obj_asha2.xrand&gt;6176)
+            scr_enemyplasmatrace(0);
+        else
+            scr_enemyplasmatrace(1);
+        }
+    alarm[5]=2;
+    }
+else{
+    alarm[2]=30-global.difficulty*10;
+    obj_asha2safe.visible=0;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

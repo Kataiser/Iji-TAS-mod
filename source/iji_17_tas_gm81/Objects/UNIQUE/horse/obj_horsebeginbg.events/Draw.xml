@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">cyc+=1;
+if (cyc mod 30&lt;15)
+    col+=5;
+else
+    col-=5;
+if (col&lt;0)
+    col=0;
+draw_set_color(make_color_rgb(0,128-col,col));
+draw_rectangle(-10,-10,820,620,0);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

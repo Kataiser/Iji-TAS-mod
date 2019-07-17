@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!triggered){
+
+global.erasetop=0;
+global.topmessage="[EXPLOSIONS AND SCREAMS ARE HEARD, THEN SILENCE]";
+global.ignorestation=90;
+triggered=1;
+global.ignoreall=1;
+
+obj_sabot.lightrave=1;
+obj_sabot.raveflash=-0.4;
+timeline_index=tim_iosastrike;
+timeline_running=true;
+timeline_position=0;
+
+with (obj_iji){
+//xcannotfire=1;
+takingpain=1;
+alarm[5]=0;
+alarm[7]=0;
+recovering=0;
+running=0;
+goingleft=0;
+goingright=0;
+if (global.state==1){
+    if (global.facing==0)
+        sprite_index=spr_basicleft;
+    else
+        sprite_index=spr_basic;
+    }
+if (global.state==5){ //Stand up when halfway ducking
+    if (sprite_index==spr_duck || sprite_index==spr_duckleft){
+        switchingpose=1;
+        if (image_index&lt;2)
+            image_index=2-image_index;
+        else
+            image_index=0;
+        if (global.facing==0)
+            sprite_index=spr_standupleft;
+        else
+            sprite_index=spr_standup;
+        image_single=-1;
+        image_speed=0.5;
+        alarm[1]=6-(image_index*2);
+        alarm[0]=0;
+        }
+    }
+}
+
+alarm[0]=150;
+scr_shakescreen(4);
+if (!global.nogamma)
+    global.gamma=-0.3;
+instance_activate_object(obj_lamp);
+with (obj_lamp)
+    scr_metabreak(3);
+instance_activate_object(obj_sec9elite);
+with (obj_sec9elite)
+    instance_destroy();
+instance_activate_object(obj_sec9commander);
+with (obj_sec9commander)
+    instance_destroy();
+instance_activate_object(obj_cdoor);
+with (obj_cdoor){
+    if (destroyme)
+        instance_destroy();
+    }
+instance_activate_object(obj_corpse1);
+with (obj_corpse1)
+    visible=1;
+instance_activate_object(obj_cdoor92);
+with (obj_cdoor92)
+    visible=1;
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

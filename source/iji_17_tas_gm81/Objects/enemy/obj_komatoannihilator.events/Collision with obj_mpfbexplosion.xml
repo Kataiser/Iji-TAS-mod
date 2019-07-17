@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_mpfbexplosion">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.dud==0){
+    if (other.ijis)
+        ijikill=1;
+    else
+        ijikill=0;
+    if (state!=10)
+        targetiji=300;
+if (angry==0 &amp;&amp; (state==0 || state==1)){
+    tempid=instance_create(x+50,y+100,obj_visionchecke)
+    tempid.direction=0;
+    tempid.speed=16;
+    tempid=instance_create(x+50,y+100,obj_visionchecke)
+    tempid.direction=180;
+    tempid.speed=16;
+    }
+    hp-=3*global.atmult;
+    if (hp&lt;=0 &amp;&amp; ijikill &amp;&amp; killtype&lt;5)
+        killtype=5;
+    if (other.banana &amp;&amp; hp&lt;=0 &amp;&amp; ijikill &amp;&amp; killtype&lt;8)
+        killtype=8;
+    script_execute(scr_annihilatorpain);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

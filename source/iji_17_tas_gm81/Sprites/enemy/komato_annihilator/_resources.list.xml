@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_annimask" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_body" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_arms" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_bodyleft" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_armsleft" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_fire" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_fireleft" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_walk" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_walkleft" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_destroy" type="RESOURCE"/>
+  <resource name="spr_komatoannihilator_destroyleft" type="RESOURCE"/>
+  <resource name="spr_destroyed_commander" type="RESOURCE"/>
+  <resource name="spr_destroyed_commander_left" type="RESOURCE"/>
+  <resource name="spr_destroyed_elite" type="RESOURCE"/>
+  <resource name="spr_destroyed_elite_left" type="RESOURCE"/>
+</resources>

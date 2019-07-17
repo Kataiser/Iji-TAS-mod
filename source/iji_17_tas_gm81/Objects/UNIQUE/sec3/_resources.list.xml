@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_crumble3" type="RESOURCE"/>
+  <resource name="obj_sec3trigger" type="RESOURCE"/>
+  <resource name="obj_sec3hologram" type="RESOURCE"/>
+  <resource name="obj_sec3holotrigger" type="RESOURCE"/>
+  <resource name="obj_sec3timebump" type="RESOURCE"/>
+  <resource name="obj_sec3specialtrucetrig" type="RESOURCE"/>
+</resources>

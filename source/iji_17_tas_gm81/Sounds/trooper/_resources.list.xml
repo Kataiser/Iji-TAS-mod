@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_tro_find1" type="RESOURCE"/>
+  <resource name="snd_tro_find2" type="RESOURCE"/>
+  <resource name="snd_tro_pain1" type="RESOURCE"/>
+  <resource name="snd_tro_pain2" type="RESOURCE"/>
+  <resource name="snd_tro_death1" type="RESOURCE"/>
+  <resource name="snd_tro_death2" type="RESOURCE"/>
+</resources>

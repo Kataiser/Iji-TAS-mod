@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_annihilatorbeta">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_activate_object(obj_crumblex2);
+instance_activate_object(obj_door);
+
+if (trigger==0){
+    with (obj_crumblex2){
+        if (x&lt;6500){
+            repeat(8-global.specialbake*5){
+                tempid=instance_create(x+random(64),y+random(32),obj_scrapwhite);
+                tempid.speed=random(5)+2;
+                tempid.direction=random(360);
+                }
+            instance_destroy();
+            }
+        }
+    with (obj_door){
+        if (strigger==2)
+            scr_metabreak();
+        }
+    }
+
+
+if (trigger==1){
+    with (obj_crumblex2){
+        if (x&lt;7000 &amp;&amp; x&gt;6500){
+            repeat(8-global.specialbake*5){
+                tempid=instance_create(x+random(64),y+random(32),obj_scrapwhite);
+                tempid.speed=random(5)+2;
+                tempid.direction=random(360);
+                }
+            instance_destroy();
+            }
+        }
+    }
+
+if (trigger==2){
+    with (obj_crumblex2){
+    if (x&gt;7000){
+        repeat(8-global.specialbake*5){
+            tempid=instance_create(x+random(64),y+random(32),obj_scrapwhite);
+            tempid.speed=random(5)+2;
+            tempid.direction=random(360);
+            }
+        instance_destroy();
+        }
+    }
+    with (obj_door){
+        if (strigger==1)
+            scr_metabreak();
+        }
+    }
+
+instance_destroy();
+scr_sound("exp_meta");
+scr_sound("glo_kick");</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_destroy();
+scr_sound("glo_pickup2");
+scr_pickupflash(16,16,10);
+(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chat68";
+global.extras7=1;
+scr_readsum()
+if (!wrongsum){
+    scr_save(0);
+    global.erasetop=0;
+    global.topmessage="SCRAMBLER PERMANENTLY ADDED TO PAUSE MENU";
+    global.ignorestation=120;
+    }
+global.scrambler=0;
+global.scramblefactor=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

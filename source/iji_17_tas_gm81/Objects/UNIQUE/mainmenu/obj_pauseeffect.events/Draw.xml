@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (x&lt;view_xview[0]-300 || x&gt;view_xview[0]+1200 || y&lt;view_yview[0]-300 || y&gt;view_yview[0]+1000)
+    instance_destroy();
+
+//Move
+movecyc+=1;
+if (movecyc==3){
+    movecyc=0;
+    temprand=floor(random(2));
+    if (direction==45)
+        temprand=0;
+    if (direction==135)
+        temprand=1;
+    if (direction==225)
+        temprand=0;
+    if (direction==315)
+        temprand=1;
+    if (temprand==0)
+        direction-=45;
+    if (temprand==1)
+        direction+=45;
+    }
+
+//Draw
+if (!global.specialbake){
+draw_set_color(make_color_rgb(speed*1.5+15,speed*1.5+15,speed*1.5+15));
+draw_line(x,y,x1,y1);
+if (dir==0){
+    draw_set_color(make_color_rgb(speed*0.5+15,speed*0.5+15,speed*1.5+15));
+    }
+else{
+    draw_set_color(make_color_rgb(speed*0.5+15,speed*1.5+15,speed*0.5+15));
+    }
+draw_line(x1,y1,x2,y2);
+draw_line(x2,y2,x3,y3);
+draw_line(x3,y3,x4,y4);
+}
+x4=x3;
+y4=y3;
+x3=x2;
+y3=y2;
+x2=x1;
+y2=y1;
+x1=x;
+y1=y;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

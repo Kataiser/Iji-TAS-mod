@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (hp&lt;=0){
+    scr_sound("exp_mpfb");
+    if (global.specialbake==0)
+        maxsparks=90;
+    else
+        maxsparks=10;
+    if (instance_number(obj_mpfbspark2)&lt;maxsparks)
+        repeat(40) instance_create(x-16+random(32),y-16+random(32),obj_mpfbspark2);
+    if (global.specialbake==0) maximum=20;
+    if (global.specialbake==1) maximum=5;
+    if (instance_number(obj_smokepoint)&lt;maximum){
+    repeat(5) instance_create(x,y,obj_smokepoint);
+    }
+    instance_activate_object(obj_trigger);
+    with (obj_trigger){
+        if (textid=="chatx2" || textid=="chatxc")
+            instance_destroy();
+        }
+    scr_shakescreen(4);
+    instance_destroy();
+    instance_create(x,y,obj_harmlessexplosion);
+    instance_create(x,y,obj_explosioncenter);
+    if (!global.specialbake){
+        repeat(10)
+            (instance_create(x,y,obj_scrapwhite)).alarm[2]=5;
+        }
+    global.erasetop=0;
+    global.topmessage="MOBILE POWER CORE DESTROYED - DOORS OPENED";
+    instance_activate_object(obj_cdoor)
+    with (obj_cdoor){
+        if (trigger==40)
+            instance_destroy();
+        if (trigger==41){
+            cracked=1;
+            vspeed=-16;
+            alarm[0]=6;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

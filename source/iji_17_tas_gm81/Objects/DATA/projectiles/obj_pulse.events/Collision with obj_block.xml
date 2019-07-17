@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_block">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (hyper &amp;&amp; (other.sprite_index==spr_door || other.sprite_index==spr_door2 || other.sprite_index==spr_door3)){
+    with (other){
+        if (global.strengthlevel&gt;=resistance){
+            scr_sound("glo_kick");
+            script_execute(scr_shakescreen,1);
+            script_execute(scr_metabreak,global.strengthlevel+2,0);
+            global.erasetop=0;
+            global.topmessage="Level "+string(resistance)+" Shield door destroyed";
+            //Wake Assassin
+            if (assassin){
+                with (obj_komatoassassin){
+                    if (!angry &amp;&amp; door){
+                        alarm[2]=random(60-(global.difficulty*20))+30-(global.difficulty*10);
+                        angry=1;
+                        visible=0;
+                        instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+                        }
+                    }
+                }
+            }
+        else{
+            global.erasetop=0;
+            global.topmessage="You need a Strength of ";
+            global.topmessage+=string(resistance);
+            global.topmessage+=" to destroy this Shield door";
+        }
+    }
+}
+if (linker &amp;&amp; (other.sprite_index==spr_door || other.sprite_index==spr_door2 || other.sprite_index==spr_door3 || other.sprite_index==spr_cdoor)){
+    if (global.topmessage=="0"){
+        global.erasetop=0;
+        global.topmessage="Pulse link could not be established";
+        }
+    }
+scr_pulseexplosion(1);
+instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

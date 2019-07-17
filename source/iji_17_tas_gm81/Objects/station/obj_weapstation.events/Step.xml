@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">/*
+if (global.weapstation==1){
+    global.erasetop=0;
+    global.topmessage="PRESS THE NUMBER OF THE FIRST WEAPON TO USE IN THE COMBINATION";
+    global.ignorestation=120;
+    }
+if (global.weapstation==2){
+    global.erasetop=0;
+    global.topmessage="PRESS THE NUMBER OF THE SECOND WEAPON TO USE IN THE COMBINATION";
+    global.ignorestation=120;
+    }
+*/
+if (touchstation){
+if (global.weapstation==3){
+    global.weapstation=4;
+    weap3=0;
+    security=0;
+    if ((weap1==1 &amp;&amp; weap2==2) || (weap1==2 &amp;&amp; weap2==1)){
+        weap3=9;
+        security=3;
+        global.cracktext="BUSTER GUN#[Nanoweapon mod]#Security: ";
+        }
+    else if ((weap1==2 &amp;&amp; weap2==7) || (weap1==7 &amp;&amp; weap2==2)){
+        weap3=10;
+        security=7;
+        global.cracktext="SPLINTERGUN#[Nanoweapon mod]#Security: ";
+        }
+    else if ((weap1==1 &amp;&amp; weap2==3) || (weap1==3 &amp;&amp; weap2==1)){
+        weap3=11;
+        security=5;
+        global.cracktext="SPREAD ROCKETS#[Nanoweapon mod]#Security: ";
+        }
+    else if ((weap1==3 &amp;&amp; weap2==4) || (weap1==4 &amp;&amp; weap2==3)){
+        weap3=12;
+        security=9;
+        global.cracktext="NUKE#[Nanoweapon mod]#Security: ";
+        }
+    else if ((weap1==1 &amp;&amp; weap2==5) || (weap1==5 &amp;&amp; weap2==1)){
+        weap3=13;
+        security=4;
+        global.cracktext="RESONANCE REFLECTOR#[Nanoweapon mod]#Security: ";
+        }
+    else if ((weap1==5 &amp;&amp; weap2==6) || (weap1==6 &amp;&amp; weap2==5)){
+        weap3=14;
+        security=6;
+        global.cracktext="HYPER PULSE#[Nanoweapon mod]#Security: ";
+        }
+    else if ((weap1==6 &amp;&amp; weap2==7) || (weap1==7 &amp;&amp; weap2==6)){
+        weap3=15;
+        security=8;
+        global.cracktext="PLASMA CANNON#[Nanoweapon mod]#Security: ";
+        }
+    else if ((weap1==4 &amp;&amp; weap2==8) || (weap1==8 &amp;&amp; weap2==4)){
+        weap3=16;
+        security=10;
+        global.cracktext="VELOCITHOR V2-10#[Nanoweapon mod]#Security: ";
+        }
+    else{
+        global.ignoreall=0;
+        global.weapstation=0;
+        touchstation=0;
+        global.erasetop=0;
+        global.topmessage="Error: Invalid combination of weapons";
+        scr_sound("glo_crackfail");
+        global.ignorestation=120;
+        }
+    if (global.cracklevel&lt;security){
+        global.ignoreall=0;
+        global.weapstation=0;
+        touchstation=0;
+        global.erasetop=0;
+        global.topmessage="Error: You need a Crack level of "+string(security)+" to attempt that modification";
+        scr_sound("glo_crackfail");
+        global.ignorestation=120;
+        }
+    if ((weap3==9 &amp;&amp; global.weapon9) || (weap3==10 &amp;&amp; global.weapon10) || (weap3==11 &amp;&amp; global.weapon11) || (weap3==12 &amp;&amp; global.weapon12) || (weap3==13 &amp;&amp; global.weapon13) || (weap3==14 &amp;&amp; global.weapon14) || (weap3==15 &amp;&amp; global.weapon15) || (weap3==16 &amp;&amp; global.weapon16)){
+        global.ignoreall=0;
+        global.weapstation=0;
+        touchstation=0;
+        global.erasetop=0;
+        global.topmessage="Error: You have already performed that Nanoweapon modification";
+        scr_sound("glo_crackfail");
+        global.ignorestation=120;
+        }
+    }
+//Time to crack
+if (global.weapstation==4){
+    global.weapstation=0;
+    touchstation=0;
+    global.erasetop=0;
+    global.topmessage="Attempting modification of Nanoweapon systems|";
+    global.security=security;
+    global.ignorestation=120;
+    crackmark=1;
+    global.cracktext+=string(global.security);
+    if (global.security==10)
+        global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+    else
+        global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+    script_execute(scr_begincrack);
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

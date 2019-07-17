@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="40">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Dismount Shredder
+if (shredder &amp;&amp; (sprite_index==spr_tasenshredder_basiciji || sprite_index==spr_tasenshredder_basicijileft)){
+    visible=1;
+    with (obj_hologram)
+        instance_destroy();
+    tempid=instance_create(floor(x),floor(y)-1,obj_emptyshredder);
+    tempid.shredderhp=shredderhp;
+    tempid.iji=21;
+    if (sprite_index==spr_tasenshredder_basicijileft){
+        tempid.sprite_index=spr_tasenshredder_emptyleft;
+        tempid.facing=0;
+        }
+    else{
+        tempid.sprite_index=spr_tasenshredder_empty;
+        tempid.facing=1;
+        }
+    tempid.hspeed=hspeed;
+    tempid.vspeed=vspeed;
+    y-=46;
+    x=floor(x);
+    y=floor(y);
+    shredder=0;
+    pressjump=1;
+    global.state=2;
+    image_index=0;
+    vspeed=-1;
+    if (global.facing==0)
+        sprite_index=spr_jumpleft;
+    else
+        sprite_index=spr_jump;
+    hspeed=0;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

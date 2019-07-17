@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//0 fall
+//1 land
+//2 stand
+//3 fire
+//4 stretch
+//5 stretchstand
+
+strikeiji=0;
+if (anim==3)
+    animcyc=2
+else
+    animcyc+=1;
+if (animcyc&gt;=2){
+    animcyc=0;
+    animcyc2+=1;
+    //fall
+    if (anim==0){
+        if (animcyc2==1)
+            img=1;
+        else if (animcyc2==2)
+            img=2;
+        else if (animcyc2==3){
+            animcyc2=0;
+            img=0;
+            }
+        }
+    //land
+    else if (anim==1){
+        if (animcyc2==1)
+            img=3;
+        else if (animcyc2==2)
+            img=4;
+        else if (animcyc2==3)
+            img=5;
+        else if (animcyc2==4){
+            animcyc2=0;
+            img=6;
+            anim=2;
+            }
+        }
+    //stand
+    else if (anim==2){
+        if (animcyc2==1)
+            img=7;
+        else if (animcyc2==2)
+            img=8;
+        else if (animcyc2==3){
+            animcyc2=0;
+            img=9;
+            }
+        }
+    //fire
+    else if (anim==3){
+        if (animcyc2==1){
+            img=10;
+            strikeiji=1;
+            }
+        else if (animcyc2==2)
+            img=7;
+        else if (animcyc2==3){
+            img=10;
+            strikeiji=1;
+            }
+        else if (animcyc2==4)
+            img=8;
+        else if (animcyc2==5){
+            img=10;
+            strikeiji=1;
+            }
+        else if (animcyc2==6){
+            animcyc2=0;
+            img=9;
+            }
+        }
+    //stretch
+    else if (anim==4){
+        if (animcyc2==1)
+            img=11;
+        else if (animcyc2==2)
+            img=12;
+        else if (animcyc2==3)
+            img=13;
+        else if (animcyc2==4)
+            img=14;
+        else if (animcyc2==5)
+            img=15;
+        else if (animcyc2==6)
+            img=16;
+        else if (animcyc2==7)
+            img=17;
+        else if (animcyc2==8){
+            animcyc2=0;
+            img=18;
+            anim=5;
+            }
+        }
+    //stretchstand
+    else if (anim==5){
+        if (animcyc2==1)
+            img=19;
+        else if (animcyc2==2)
+            img=20;
+        else if (animcyc2==3){
+            animcyc2=0;
+            img=21;
+            }
+        }
+    }
+
+//Hit floor
+if (anim==0 &amp;&amp; !place_free(x,y+1+vspeed)){
+    speed=0;
+    move_contact_solid(270,64);
+    obj_tor.holdright=0;
+    anim=1;
+    animcyc=1;
+    animcyc2=1;
+    img=3;
+    scr_sound("glo_kick");
+    scr_shakescreen(1);
+    }
+
+//Strike Iji
+if (strikeiji &amp;&amp; anim==3){
+    scr_shakescreen(3);
+    scr_sound("exp_turret");
+    //scr_sound("wea_plas");
+    scr_sound("wea_spli");
+    tempid=instance_create(x+72,y+42,obj_shockshell);
+    tempid.sprite_index=spr_vortexshell;
+    tempid.vortex=1;
+    instance_create(x-26,y+56,obj_vortexcannon);
+    firedfirst=1;
+    with (obj_iji){
+        if (!deathscreamed){
+            instance_create(0,0,obj_whiteflash);
+            deathscreamed=1;
+            scr_sound("iji_death",1);
+            tile_layer_show(999990);
+            }
+        vortexkilled=1;
+        takingpain=0;
+        recovering=0;
+        visible=1;
+        fatality=1;
+        notech=10;
+        scr_knockdown(1,2,0,1,1,0);
+        obj_iji.velocity=1;
+        obj_iji.y=1750;
+        if (obj_iji.x&lt;=72)
+            obj_iji.x=72;
+        if (global.hp&gt;0){
+            if (global.healthlevel==10)
+                global.hp-=2;
+            else
+                global.hp-=3;
+            global.armor=100;
+            if (global.hp&lt;=0){
+                global.hp=0;
+                global.armor=0;
+                }
+            }
+        else{
+            global.hp=0;
+            global.armor=0;
+            with (obj_iji){
+                if (!global.noblood){
+                    repeat(1){
+                        tempid=instance_create(bbox_left+((bbox_right-bbox_left)/2),bbox_top+((bbox_bottom-bbox_top)/2),obj_tasenbloodspecial);
+                        tempid.sprite_index=spr_ijiblood2;
+                        tempid.speed*=1.5;
+                        tempid.depth=-7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+image_single=img;
+
+//hole smoke
+if (firedfirst){
+    instance_create(0+floor(random(96)),1722,obj_smoke);
+    instance_create(0+floor(random(96)),1806,obj_smoke);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

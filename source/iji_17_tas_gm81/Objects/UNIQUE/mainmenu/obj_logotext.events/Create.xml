@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(x==497) sprite_index=spr_smallj;
+if(x==574) sprite_index=spr_smalli;
+if(x==496){ sprite_index=spr_dot1; x+=1;}
+if(x==573){ sprite_index=spr_dot1; x+=1;}
+y-=300;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

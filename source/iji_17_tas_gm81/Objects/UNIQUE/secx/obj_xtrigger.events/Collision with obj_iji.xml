@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (ready){
+if (!obj_iji.recovering &amp;&amp; !obj_iji.takingpain &amp;&amp; global.state==1){
+global.ignoreall=1;
+tempid=instance_create(x,y,obj_trigger);
+if (obj_asha2trigger.rematch==1)
+    tempid.textid="chatxm";
+else if (obj_asha2trigger.rematch&gt;=2)
+    tempid.textid="chatxv";
+else{
+    if (global.specialtrigger1==1)
+        tempid.textid="chatx4";
+    else
+        tempid.textid="chatxe";
+    }
+instance_deactivate_all(1);
+instance_activate_region(5450,2200,1650,1032,1);
+instance_activate_object(obj_activateme);
+instance_activate_object(obj_hud);
+instance_activate_object(obj_weapon1);
+instance_activate_object(obj_weapon2);
+instance_activate_object(obj_weapon3);
+instance_activate_object(obj_weapon4);
+instance_activate_object(obj_weapon5);
+instance_activate_object(obj_weapon6);
+instance_activate_object(obj_weapon7);
+instance_activate_object(obj_weapon8);
+instance_activate_object(obj_reloader);
+instance_deactivate_object(obj_alliedenemy);
+instance_deactivate_object(obj_skysmasher);
+instance_activate_object(obj_cloudb);
+instance_activate_object(obj_cloudt);
+instance_activate_object(obj_cloudc);
+instance_create(6322,2980,obj_asha2);
+instance_create(6334,3009,obj_megaflash);
+instance_destroy();
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

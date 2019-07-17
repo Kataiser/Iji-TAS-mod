@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pushbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (visible){
+if (dead==0){
+    ijikill=1;
+    if (global.cracklevel&gt;=security){
+        if (cracked==0){
+            global.security=security;
+            crackmark=1;
+            if (global.suddendeath)
+                global.cracktext="Komato Assassin#H1 A100 W1#Security: ";
+            else
+                global.cracktext="Komato Assassin#H"+string(maxhp)+" A200 W1#Security: ";
+            global.cracktext+=string(global.security);
+            if (global.security==10)
+                global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+            else
+                global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+            script_execute(scr_begincrack);
+            }
+        else{
+            global.erasetop=0;
+            global.topmessage="Subject has already been cracked";
+            }
+        }
+    else{
+        global.erasetop=0;
+        global.topmessage="You need a Crack skill of "+string(security)+" to crack a Komato Assassin";
+        scr_sound("glo_crackfail");
+        global.ignorestation=90;
+        }
+    }
+else{
+    global.erasetop=0;
+    global.topmessage="Unable to connect to nanofield; subject is dead";
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

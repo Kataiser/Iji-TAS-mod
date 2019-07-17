@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_sec7star" type="RESOURCE"/>
+  <resource name="spr_sec7cloudb" type="RESOURCE"/>
+  <resource name="spr_sec7cloudt" type="RESOURCE"/>
+  <resource name="spr_crumble71" type="RESOURCE"/>
+  <resource name="spr_crumble72" type="RESOURCE"/>
+  <resource name="spr_crumble73" type="RESOURCE"/>
+  <resource name="spr_phantomhammer" type="RESOURCE"/>
+  <resource name="spr_phantomhammer2" type="RESOURCE"/>
+  <resource name="spr_phantomhammer3" type="RESOURCE"/>
+  <resource name="spr_komatodetail1" type="RESOURCE"/>
+  <resource name="spr_komatodetail2" type="RESOURCE"/>
+  <resource name="spr_komatodetail3" type="RESOURCE"/>
+  <resource name="spr_komatodetail4" type="RESOURCE"/>
+  <resource name="spr_komatodetail5" type="RESOURCE"/>
+  <resource name="spr_komatodetail6" type="RESOURCE"/>
+  <resource name="spr_komatodetail7" type="RESOURCE"/>
+  <resource name="spr_sec7terminal" type="RESOURCE"/>
+  <resource name="spr_sec7hatch" type="RESOURCE"/>
+  <resource name="spr_sec7sentinels" type="RESOURCE"/>
+  <resource name="spr_sec7liftmarker" type="RESOURCE"/>
+  <resource name="spr_crumble74" type="RESOURCE"/>
+  <resource name="spr_sec7plushie" type="RESOURCE"/>
+</resources>

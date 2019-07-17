@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.horse)
+    scr_horsedraw();
+else{
+    if (drawgameover){
+        gameoverrestartcyc+=1;
+        if (gameoverrestartcyc&gt;40){
+            with (obj_breakscreen)
+                fade+=8.5;
+            }
+        if (gameoverrestartcyc&gt;=70){
+            scr_retrysector();
+            }
+        }
+    if (!gameover)
+        scr_topmessage();
+    scr_drawtime();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

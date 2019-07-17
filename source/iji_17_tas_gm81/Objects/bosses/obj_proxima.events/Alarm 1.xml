@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Spread rockets
+if (fire==1){
+    scr_sound("wea_rock");
+    if (x&gt;obj_iji.x){
+        tempid=instance_create(x+11,y,obj_komatorocket);
+        tempid.speed=-global.rocketspeed;
+        tempid.image_single=1;
+        tempid=instance_create(x+11,y,obj_komatorocket);
+        tempid.speed=global.rocketspeed-2;
+        tempid.direction=174;
+        tempid.image_single=1;
+        tempid=instance_create(x+11,y,obj_komatorocket);
+        tempid.speed=global.rocketspeed-4;
+        tempid.direction=186;
+        tempid.image_single=1;
+        tempid=instance_create(x+11,y,obj_rocketlaunch);
+        tempid.sprite_index=spr_rocketlaunchleft;
+        }
+    else{
+        tempid=instance_create(x,y,obj_komatorocket);
+        tempid.speed=global.rocketspeed;
+        tempid.image_single=0;
+        tempid=instance_create(x,y,obj_komatorocket);
+        tempid.speed=global.rocketspeed-2;
+        tempid.direction=6;
+        tempid.image_single=0;
+        tempid=instance_create(x,y,obj_komatorocket);
+        tempid.speed=global.rocketspeed-4;
+        tempid.direction=-6;
+        tempid.image_single=0;
+        instance_create(x,y,obj_rocketlaunch);
+        }
+    idle=1;
+    fire=0;
+    }
+
+//Splintergun
+if (fire==2){
+    scr_sound("wea_spli");
+    fireamount-=1;
+    if (fireamount&lt;=0){
+        idle=1;
+        fire=0;
+        }
+    else{
+        instance_create(x,y,obj_shockspark);
+        tempid=instance_create(x,y,obj_enemyshockball);
+        tempid.direction=point_direction(x,y,xtarget,ytarget);
+        tempid.speed=30;
+        if (!global.specialbake){
+            tempid=instance_create(x,y,obj_shockshell);
+            tempid.vspeed=-(3+(random(6)));
+            tempid.hspeed=-3+(random(6));
+            tempid.short=1;
+            }
+        alarm[1]=3;
+        }
+    }
+
+//MPFB
+if (fire==3){
+    scr_sound("wea_mpfb");
+    tempid=instance_create(x,y,obj_komatompfb);
+    tempid.speed=global.mpfbspeed-10+global.difficulty*5;
+    tempid.direction=point_direction(x,y,obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2,obj_iji.bbox_top+(obj_iji.bbox_bottom-obj_iji.bbox_top)/2)
+    tempid.wakeless=1;
+    tempid=instance_create(x,y,obj_komatompfb);
+    tempid.speed=global.mpfbspeed-12+global.difficulty*4;
+    tempid.direction=point_direction(x,y,obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2,obj_iji.bbox_top+(obj_iji.bbox_bottom-obj_iji.bbox_top)/2)
+    tempid.wakeless=1;
+    tempid=instance_create(x,y,obj_komatompfb);
+    tempid.speed=global.mpfbspeed-14+global.difficulty*3;
+    tempid.direction=point_direction(x,y,obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2,obj_iji.bbox_top+(obj_iji.bbox_bottom-obj_iji.bbox_top)/2)
+    tempid.wakeless=1;
+    idle=1;
+    fire=0;
+    scr_shakescreen(1);
+    }
+
+//Plasma cannon
+if (fire==4){
+    fireamount-=1;
+    if (fireamount&lt;=0){
+        idle=1;
+        fire=0;
+        state=0;
+        }
+    else{
+        scr_sound("wea_plas");
+        scr_shakescreen(3);
+        alarm[1]=30-global.difficulty*5;
+        tempid=instance_create(x,y,obj_enemyplasmatrace);
+        if (x&gt;obj_iji.x){
+            with (tempid)
+                scr_enemyplasmatrace(0);
+            }
+        else{
+            with (tempid)
+                scr_enemyplasmatrace(1);
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

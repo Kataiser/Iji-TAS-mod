@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_mainposter0" type="RESOURCE"/>
+  <resource name="spr_mainposter1" type="RESOURCE"/>
+  <resource name="spr_mainposter2" type="RESOURCE"/>
+  <resource name="spr_mainposter3" type="RESOURCE"/>
+  <resource name="spr_mainposter4" type="RESOURCE"/>
+  <resource name="spr_mainposter5" type="RESOURCE"/>
+  <resource name="spr_mainposter6" type="RESOURCE"/>
+  <resource name="spr_mainposter7" type="RESOURCE"/>
+  <resource name="spr_mainposter8" type="RESOURCE"/>
+  <resource name="spr_mainposter9" type="RESOURCE"/>
+  <resource name="spr_mainposter10" type="RESOURCE"/>
+</resources>

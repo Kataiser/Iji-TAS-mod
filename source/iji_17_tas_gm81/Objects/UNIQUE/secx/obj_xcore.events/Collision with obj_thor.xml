@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_thor">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!go &amp;&amp; !xrewarded){
+    xrewarded=1;
+    (instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatxn";
+    instance_create(x,y,obj_supercharge);
+    }
+hp=0;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">realx+=realxspeed;
+realy+=realyspeed;
+
+factor+=0.1;
+realyspeed-=factor;
+
+x7=x6;
+y7=y6;
+x6=x5;
+y6=y5;
+x5=x4;
+y5=y4;
+x4=x3;
+y4=y3;
+x3=x2;
+y3=y2;
+x2=x1;
+y2=y1;
+x1=realx;
+y1=realy;
+draw_set_color(make_color_rgb(224,224,255));
+draw_line(x7+background_x[0],y7+background_y[0],x6+background_x[0],y6+background_y[0]);
+if (!obj_tortrigger.slowdowned){
+    draw_set_color(make_color_rgb(208,208,255));
+    draw_line(x6+background_x[0],y6+background_y[0],x5+background_x[0],y5+background_y[0]);
+    draw_set_color(make_color_rgb(192,192,255));
+    draw_line(x5+background_x[0],y5+background_y[0],x4+background_x[0],y4+background_y[0]);
+    draw_set_color(make_color_rgb(176,176,255));
+    draw_line(x4+background_x[0],y4+background_y[0],x3+background_x[0],y3+background_y[0]);
+    draw_set_color(make_color_rgb(160,160,255));
+    draw_line(x3+background_x[0],y3+background_y[0],x2+background_x[0],y2+background_y[0]);
+    draw_set_color(make_color_rgb(144,144,255));
+    draw_line(x2+background_x[0],y2+background_y[0],x1+background_x[0],y1+background_y[0]);
+    draw_set_color(make_color_rgb(128,128,255));
+    draw_line(x1+background_x[0],y1+background_y[0],realx+background_x[0],realy+background_y[0]);
+    }
+if (realy&lt;-250)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

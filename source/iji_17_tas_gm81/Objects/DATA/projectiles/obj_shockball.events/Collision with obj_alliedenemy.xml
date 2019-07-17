@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_alliedenemy">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.enemytype==12)
+    instance_create(other.bbox_left+((other.bbox_right-other.bbox_left)/2), other.bbox_top+((other.bbox_bottom-other.bbox_top)/2), obj_enemyreflector);
+else if (dud==0){
+    tempid=instance_create(x,y,obj_shockballexplosion);
+    tempid.ijis=ijis;
+    script_execute(scr_shakescreen,1);
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

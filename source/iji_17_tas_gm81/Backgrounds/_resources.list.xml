@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="cuts" type="GROUP"/>
+  <resource name="global" type="GROUP"/>
+  <resource name="tilesets" type="GROUP"/>
+  <resource name="sector bgs" type="GROUP"/>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pulse">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (go){
+    with (other){
+        scr_pulseexplosion();
+        instance_destroy();
+    }
+    if (!other.linker)
+        hp-=1;
+    if (other.linker){
+        if (global.topmessage=="0"){
+            global.erasetop=0;
+            global.topmessage="Pulse link could not be established";
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="3">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Mount Shredder
+global.ignoreall=0;
+global.erasetop=0;
+global.topmessage="Press Up or Down to dismount";
+ignoreshreddertext=10;
+if (global.facing==0)
+    sprite_index=spr_tasenshredder_basicijileft;
+else
+    sprite_index=spr_tasenshredder_basiciji;
+image_index=14;
+image_single=-1;
+image_speed=0.5;
+alarm[0]=0;
+alarm[1]=0;
+alarm[4]=0;
+alarm[5]=0;
+alarm[7]=0;
+    </argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

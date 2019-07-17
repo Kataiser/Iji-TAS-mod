@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="0">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_ribbon.visible &amp;&amp; obj_ribbon.sprite_index==spr_ribbon){
+    obj_iji.gotribbon=1;
+    global.specialtrigger8=1;
+    global.numribbons+=1;
+    }
+if (instance_number(obj_trapmine)==1)
+    trapmine=1;
+
+//Stop and stand still
+if (global.facing==0)
+    sprite_index=spr_basicleft;
+else
+    sprite_index=spr_basic;
+takingpain=1;
+global.ignoreall=1;
+takingpain=1;
+goaroundtrigger=1;
+alarm[5]=0;
+alarm[7]=0;
+recovering=0;
+running=0;
+goingleft=0;
+goingright=0;
+if (obj_ribbon.lookleft)
+    global.facing=0;
+if (obj_specialribbon.lookright)
+    global.facing=1;
+if (global.state==5){ //Stand up when halfway ducking
+    if (sprite_index==spr_duck || sprite_index==spr_duckleft){
+        switchingpose=1;
+        if (image_index&lt;2)
+            image_index=2-image_index;
+        else
+            image_index=0;
+        if (global.facing==0)
+            sprite_index=spr_standupleft;
+        else
+            sprite_index=spr_standup;
+        image_single=-1;
+        alarm[1]=6-(image_index*2);
+        alarm[0]=0;
+        }
+    else{
+        if (obj_ribbon.lookleft)
+            sprite_index=spr_basicleft;
+        if (obj_specialribbon.lookright)
+            sprite_index=spr_basic;
+        }
+    }
+else{
+    if (obj_ribbon.lookleft)
+        sprite_index=spr_basicleft;
+    if (obj_specialribbon.lookright)
+        sprite_index=spr_basic;
+    }
+
+if (global.sector==9 &amp;&amp; x&gt;9000){
+    global.facing=1;
+    sprite_index=spr_basic;
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="15">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.facing==0)
+sprite_index=spr_duckleft;
+else
+sprite_index=spr_duck;
+image_single=-1;
+image_speed=0.5;
+image_index=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="25">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_single=4;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="42">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_ribbon)
+instance_destroy();
+with (obj_specialribbon)
+instance_destroy();
+with (obj_trapmine)
+instance_destroy();
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="59">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.facing==0)
+sprite_index=spr_standupleft;
+else
+sprite_index=spr_standup;
+image_single=-1;
+image_speed=0.5;
+image_index=0;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="63">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.facing==0)
+sprite_index=spr_basicleft;
+else
+sprite_index=spr_basic;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="78">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">tempid=instance_create(obj_iji.x,obj_iji.y,obj_trigger);
+if (global.sector==1){
+    if (x&gt;2000)
+        tempid.textid="chat1mia";
+    else
+        tempid.textid="chat14";
+    }
+if (global.sector==2)
+tempid.textid="chat2mia";
+if (global.sector==3)
+tempid.textid="chat3mia";
+if (global.sector==4)
+tempid.textid="chat4mia";
+if (global.sector==5)
+tempid.textid="chat5mia";
+if (global.sector==6)
+tempid.textid="chat6mia";
+if (global.sector==7)
+tempid.textid="chat7mia";
+if (global.sector==8){
+    if (x&gt;5000)
+        tempid.textid="chat8mia";
+    else
+        tempid.textid="chat82";
+    }
+if (global.sector==9){
+    if (x&lt;9000)
+        tempid.textid="chat9mia";
+    else
+        tempid.textid="chat98";
+    }
+if (global.sector==0)
+tempid.textid="chatxmia";
+</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

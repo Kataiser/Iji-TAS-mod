@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="global" type="GROUP"/>
+  <resource name="cutscenes" type="GROUP"/>
+  <resource name="enemy" type="GROUP"/>
+  <resource name="metas" type="GROUP"/>
+  <resource name="pickup" type="GROUP"/>
+  <resource name="station" type="GROUP"/>
+  <resource name="shapes" type="GROUP"/>
+  <resource name="bosses" type="GROUP"/>
+  <resource name="tor" type="GROUP"/>
+  <resource name="DATA" type="GROUP"/>
+  <resource name="UNIQUE" type="GROUP"/>
+  <resource name="obj_tas" type="RESOURCE"/>
+  <resource name="obj_taspause" type="RESOURCE"/>
+  <resource name="obj_tastext" type="RESOURCE"/>
+</resources>

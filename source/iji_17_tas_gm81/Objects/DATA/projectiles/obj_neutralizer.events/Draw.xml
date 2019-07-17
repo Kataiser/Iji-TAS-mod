@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Neutralizer graphics
+cycle += 1;
+if (cycle == 1){
+    draw_set_color(c_white);
+    draw_ellipse(obj_iji.x-200+6,obj_iji.y-200+30,obj_iji.x+200+6,obj_iji.y+200+30,0);
+    }
+if (cycle == 3){
+    draw_set_color(c_white);
+    draw_ellipse(obj_iji.x-400+6,obj_iji.y-400+30,obj_iji.x+400+6,obj_iji.y+400+30,0);
+    }
+if (cycle == 5){
+    draw_set_color(c_white);
+    draw_ellipse(obj_iji.x-600+6,obj_iji.y-600+30,obj_iji.x+600+6,obj_iji.y+600+30,0);
+    }
+if (cycle == 7){
+    draw_set_color(c_white);
+    draw_rectangle(view_xview[0]-50,view_yview[0]-50,view_xview[0]+850,view_yview[0]+650,0);
+    }
+if (cycle &gt;= maxcycle)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

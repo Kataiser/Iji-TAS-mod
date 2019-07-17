@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="5">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Failsafe orders
+alarm[5]=30;
+if (order!=1 &amp;&amp; order!=3 &amp;&amp; !chargingnuke &amp;&amp; electrified==0 &amp;&amp; state!=6){
+    if (x&lt;(xleft-128) || x&gt;(xright+128)){
+        state=1;
+        idle=0;
+        fire=0;
+        order=1;
+        alarm[0]=0;
+        alarm[1]=0;
+        alarm[2]=1;
+        alarm[3]=0;
+        }
+    }
+
+//Last resort safety catch
+if (ydestination&lt;608 || ydestination&gt;1152 || xdestination&lt;1088 || xdestination&gt;1664){
+    state=1;
+    idle=0;
+    fire=0;
+    order=1;
+    alarm[0]=0;
+    alarm[1]=0;
+    alarm[2]=1;
+    alarm[3]=0;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

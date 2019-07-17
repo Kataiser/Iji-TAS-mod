@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="hero3d" type="GROUP"/>
+  <resource name="mainmenu" type="GROUP"/>
+  <resource name="clear" type="GROUP"/>
+  <resource name="secz" type="GROUP"/>
+  <resource name="sec1" type="GROUP"/>
+  <resource name="sec2" type="GROUP"/>
+  <resource name="sec3" type="GROUP"/>
+  <resource name="sec4" type="GROUP"/>
+  <resource name="sec5" type="GROUP"/>
+  <resource name="sec6" type="GROUP"/>
+  <resource name="sec7" type="GROUP"/>
+  <resource name="sec8" type="GROUP"/>
+  <resource name="sec9" type="GROUP"/>
+  <resource name="secx" type="GROUP"/>
+  <resource name="horse" type="GROUP"/>
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Pacifist end
+if (pacifistend==1){
+    pacifistendcyc+=1;
+    if (pacifistendcyc&gt;=60){
+        pacifistendcyc=0;
+        pacifistend=2;
+        instance_create(obj_iji.x,obj_iji.y,obj_torkilldrawer);
+        }
+    }
+else if (pacifistend==2){
+    pacifistendcyc+=1;
+    //Kill
+    if (keyboard_check_pressed(ord("X")) &amp;&amp; pacifistendcyc&gt;=5 &amp;&amp; pacifistendcyc&lt;=178){
+        pacifistend=4;
+        pacifistendcyc=0;
+        alarm[2]=1;
+        alarm[3]=3;
+        }
+    //Don't kill
+    else if (pacifistendcyc&gt;=180){
+        pacifistend=3;
+        global.killdata[797]=1;
+        obj_iji.sprite_index=spr_kickstrong;
+        obj_iji.image_single=-1;
+        obj_iji.image_index=0;
+        obj_iji.image_speed=0.5;
+        alarm[3]=8;
+        alarm[9]=16;
+        obj_iji.depth=obj_iosa2.depth-1;
+        }
+    }
+
+if (phase2==0){
+    if (!triggered &amp;&amp; !global.ignoreall){
+        triggered=1;
+        obj_iosa.angry=1;
+        obj_iosa.alarm[2]=30;
+        instance_create(x,y,obj_iosabar);
+        if (global.specialtriggerb2==1){
+            instance_create(736,800,obj_ansaksie);
+            scr_sound("ext_ansaksie",5);
+            }
+        else
+            scr_sound("ios_pain");
+        }
+    }
+if (phase2==1){
+    if (!triggered &amp;&amp; !global.ignoreall){
+        triggered=1;
+        instance_create(obj_sabot.x,obj_sabot.y,obj_iosa2bar);
+        with (obj_iosa2doll){
+            instance_create(x,y,obj_iosa2);
+            instance_destroy();
+            }
+        obj_iji.takingpain=0;
+        global.ignoreall=0;
+        global.facing=1;
+        global.state=1;
+        }
+    }
+
+//Charge elecpads
+if (obj_iji.y&lt;576){
+global.tempcru1=0;
+global.tempcru2=0;
+with (obj_iosacrumble){
+    if (tag==1)
+        global.tempcru1=1;
+    if (tag==2)
+        global.tempcru2=1;
+    }
+if (obj_iji.x&gt;852 &amp;&amp; obj_iji.x&lt;1056 &amp;&amp; global.tempcru1==1){
+    with (obj_iosapad){
+        if (tag==1 &amp;&amp; !trip){
+            scr_sound("tor_spark");
+            trip=1;
+            }
+        }
+    }
+if (obj_iji.x&gt;1300 &amp;&amp; obj_iji.x&lt;1504 &amp;&amp; global.tempcru2==1){
+    with (obj_iosapad){
+        if (tag==2 &amp;&amp; !trip){
+            scr_sound("tor_spark");
+            trip=1;
+            }
+        }
+    }
+}
+
+//Iosa dies
+if (instance_number(obj_iosa)==0 &amp;&amp; global.iosaphase==0){
+    if (flash&lt;20)
+        flash+=1;
+    if (flash==1)
+        obj_sabot.raveflash2=3;
+    else if (flash==2)
+        obj_sabot.raveflash2=0.1;
+    else if (flash==3)
+        obj_sabot.raveflash2=3;
+    else if (flash==4)
+        obj_sabot.raveflash2=0.1;
+    else if (flash==5)
+        obj_sabot.raveflash2=3;
+    else if (flash==6)
+        obj_sabot.raveflash2=0.1;
+    else if (flash==7){
+        obj_sabot.raveflash2=3;
+        (instance_create(x,y,obj_whiteblanket)).alarm[0]=60;
+        alarm[6]=59;
+        }
+    else if (flash==8 &amp;&amp; !spawnediosa2){
+        spawnediosa2=1;
+        with (obj_iosacrumble){
+            if (tag&gt;0)
+            instance_destroy();
+            }
+        with (obj_terminal){
+            instance_destroy();
+            instance_create(x,y,obj_turretdead);
+            }
+        global.iosaphase=1;
+        with (obj_ansaksie) instance_destroy();
+        with (obj_ougi) instance_destroy();
+        with (obj_iji) instance_destroy();
+        with (obj_mpfb) instance_destroy();
+        with (obj_rocket) instance_destroy();
+        with (obj_shock) instance_destroy();
+        with (obj_pulse) instance_destroy();
+        with (obj_iosacrawler) instance_destroy();
+        with (obj_shockball) instance_destroy();
+        with (obj_komatompfb) instance_destroy();
+        with (obj_enemympfb) instance_destroy();
+        with (obj_enemyshock) instance_destroy();
+        with (obj_enemyshockball) instance_destroy();
+        with (obj_enemypulse) instance_destroy();
+        with (obj_scrapwhite) instance_destroy();
+        with (obj_scrapbrown) instance_destroy();
+        with (obj_pickuphealth) instance_destroy();
+        tempid=instance_create(1104,803,obj_iji);
+        tempid.takingpain=1
+        tempid.recovering=0;
+        if (global.outfit){
+            tempid.sprite_index=spr_outfit_basic;
+            }
+        global.ignoreall=1;
+        global.hp=global.healthlevel*2;
+        if (global.suddendeath)
+            global.hp=1;
+        global.armor=100;
+        global.topmessage="";
+        global.state=1;
+        global.facing=1;
+        instance_create(1291,793,obj_iosa2doll);
+        alarm[0]=50;
+        repeat(30){
+            tempid=instance_create(obj_iosa2doll.x+25,obj_iosa2doll.y,obj_scrapwhite);
+            tempid.direction=random(100)+40;
+            tempid.speed=random(30)+5;
+            tempid.nolimit=1;
+            }
+        repeat(10){
+            tempid=instance_create(obj_iosa2doll.x+25,obj_iosa2doll.y,obj_shard);
+            tempid.direction=random(100)+40;
+            tempid.speed=random(30)+5;
+            tempid.nolimit=1;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

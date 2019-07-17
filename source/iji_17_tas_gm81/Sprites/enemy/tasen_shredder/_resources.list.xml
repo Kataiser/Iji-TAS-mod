@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_tasenshredder_basic" type="RESOURCE"/>
+  <resource name="spr_tasenshredder_basicleft" type="RESOURCE"/>
+  <resource name="spr_tasenshredder_empty" type="RESOURCE"/>
+  <resource name="spr_tasenshredder_emptyleft" type="RESOURCE"/>
+</resources>

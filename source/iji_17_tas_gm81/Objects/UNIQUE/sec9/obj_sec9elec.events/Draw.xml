@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (alarm[0]&lt;20 &amp;&amp; elec==0){
+    draw_set_color(c_white);
+    if (r==7)
+        r=5;
+    else if (r==5)
+        r=3;
+    else
+        r=7;
+    draw_circle(x,y+8,r,0);
+    draw_circle(x+128,y+8,r,0);
+    }
+
+if (elec==1){
+    x1=x+random(16)+20;
+    x2=x+random(16)+52;
+    x3=x+random(16)+84;
+    y1=y+random(16);
+    y2=y+random(16);
+    y3=y+random(16);
+    draw_set_color(c_white);
+    draw_line_width(x,y+8,x1,y1,2);
+    draw_line_width(x1,y1,x2,y2,2);
+    draw_line_width(x2,y2,x3,y3,2);
+    draw_line_width(x3,y3,x+128,y+8,2);
+    elec2+=1;
+    if (elec2&gt;=4){
+        elec2=0;
+        elec=2;
+        }
+    }
+else if (elec==2)
+    elec=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

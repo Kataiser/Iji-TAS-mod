@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_tasenscout" type="RESOURCE"/>
+  <resource name="obj_tasensoldier" type="RESOURCE"/>
+  <resource name="obj_tasencommander" type="RESOURCE"/>
+  <resource name="obj_tasenelite" type="RESOURCE"/>
+  <resource name="obj_tasenshredder" type="RESOURCE"/>
+  <resource name="obj_emptyshredder" type="RESOURCE"/>
+  <resource name="obj_komatotrooper" type="RESOURCE"/>
+  <resource name="obj_komatoberserker" type="RESOURCE"/>
+  <resource name="obj_komatoassassin" type="RESOURCE"/>
+  <resource name="obj_komatobeast" type="RESOURCE"/>
+  <resource name="obj_komatoannihilator" type="RESOURCE"/>
+  <resource name="obj_turret" type="RESOURCE"/>
+  <resource name="obj_skysmasher" type="RESOURCE"/>
+  <resource name="obj_blit" type="RESOURCE"/>
+  <resource name="obj_blitnest" type="RESOURCE"/>
+  <resource name="obj_berserkertrigger" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_crackframe" type="RESOURCE"/>
+  <resource name="scr_begincrack" type="RESOURCE"/>
+  <resource name="scr_cracksuccess" type="RESOURCE"/>
+  <resource name="scr_crackfail" type="RESOURCE"/>
+  <resource name="scr_terminatecrack" type="RESOURCE"/>
+</resources>

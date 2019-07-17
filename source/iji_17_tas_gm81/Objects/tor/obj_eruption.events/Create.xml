@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">x1=x;
+y1=y;
+x2=x+16;
+y2=y;
+x3=x+32;
+y3=y;
+x4=x+48;
+y4=y;
+x5=x+64;
+y5=y;
+force=45;
+spark=20;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

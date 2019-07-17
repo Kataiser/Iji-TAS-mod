@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_kickbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.image_index==0){
+    scr_sound("glo_kick");
+    if (state!=10)
+        targetiji=300;
+    script_execute(scr_shakescreen,1);
+    repeat(3){
+        tempid=instance_create(other.x+18,other.y+10,obj_scrapwhite);
+        tempid.speed=global.strengthlevel+2;
+        if (global.facing==0)
+            tempid.direction=random(180)-90;
+        else
+            tempid.direction=random(180)+90;
+        }
+    
+    if (global.strengthlevel&gt;=resistance){
+        hp-=1;
+        script_execute(scr_annihilatorpain);
+        }
+    else{
+        global.erasetop=0;
+        global.topmessage="You need a Strength of "+string(resistance)+" to damage Annihilator Iosa";
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

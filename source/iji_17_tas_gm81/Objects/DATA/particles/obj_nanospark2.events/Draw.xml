@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">dir+=random(120)-60;
+if (distance&gt;=maxdistance)
+    instance_destroy();
+image_single=0;
+if (distance&lt;maxdistance-1)
+    move_contact_solid(dir,random(33)+10);
+distance+=1;
+if (!global.specialbake){
+draw_set_color(make_color_rgb(255-distance,255-distance,255));
+draw_line(xprev,yprev,x,y);
+draw_line(xprev2,yprev2,xprev,yprev);
+}
+xprev2=xprev;
+yprev2=yprev;
+xprev=x;
+yprev=y;
+image_single=1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

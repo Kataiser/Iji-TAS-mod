@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_swipe">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.dud==0){
+    scr_sound("glo_kick");
+    ijikill=0;
+    hp-=1;
+    scr_annihilatorpain();
+    if (state!=10){
+        targetrival=300;
+        target=other.target;
+        }
+    scr_shakescreen(1);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

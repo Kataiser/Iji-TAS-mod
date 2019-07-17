@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bg_black" type="RESOURCE"/>
+  <resource name="1" type="GROUP"/>
+  <resource name="2" type="GROUP"/>
+  <resource name="3" type="GROUP"/>
+  <resource name="4" type="GROUP"/>
+  <resource name="5" type="GROUP"/>
+  <resource name="6" type="GROUP"/>
+  <resource name="7" type="GROUP"/>
+  <resource name="8" type="GROUP"/>
+  <resource name="9x" type="GROUP"/>
+  <resource name="11" type="GROUP"/>
+  <resource name="12" type="GROUP"/>
+  <resource name="13" type="GROUP"/>
+  <resource name="15" type="GROUP"/>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_block">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (vspeed&gt;1){
+    vspeed=0;
+    gravity=0;
+    move_contact_solid(270,30);
+    }
+sprite_index=spr_blackstandup;
+image_index=0;
+image_speed=0.5;
+alarm[0]=6;
+scr_sound("iji_land2");
+obj_torsecsil.vspeed=0;
+obj_torsecsil.gravity=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

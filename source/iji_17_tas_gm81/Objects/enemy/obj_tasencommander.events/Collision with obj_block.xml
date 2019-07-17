@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_block">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Knockdown landing
+if (state==4){
+    if (vspeed&lt;0){
+        move_contact_solid(90,-1);
+        vspeed=0;
+        y+=3;
+        }
+    else{
+        scr_sound("glo_land");
+        state=5;
+        image_single=-1;
+        image_index=0;
+        image_speed=0.5;
+        if (knockdowntype==1)
+            sprite_index=spr_tasencommander_hitfloor;
+        if (knockdowntype==2)
+            sprite_index=spr_tasencommander_hitfloorleft;
+        alarm[4]=10;
+        gravity=0;
+        vspeed=0;
+        move_contact_solid(270,-1);
+    if ((x &gt; obj_shakescreen.x-500) &amp;&amp; (x &lt; obj_shakescreen.x+500) &amp;&amp; (y &gt; obj_shakescreen.y-400) &amp;&amp; (y &lt; obj_shakescreen.y+400))
+        script_execute(scr_shakescreen,1);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

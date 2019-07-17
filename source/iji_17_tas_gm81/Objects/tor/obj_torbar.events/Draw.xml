@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (yadjust&lt;0 &amp;&amp; obj_tor.hp&gt;0)
+yadjust+=8;
+
+x=floor(x);
+y=floor(y);
+
+if (!global.specialbake){
+if (!global.suddendeath){
+    draw_set_color(c_black);
+    draw_rectangle(x-originalwidth-1,y-1,x+originalwidth,y+15,0);
+    draw_set_color(c_white);
+    draw_rectangle(x-originalwidth-1,y-1,x+originalwidth,y+15,1);
+    }
+else{
+    draw_set_color(c_black);
+    draw_rectangle(x-originalwidth-2,y-1,x+originalwidth+1,y+15,0);
+    draw_set_color(c_white);
+    draw_rectangle(x-originalwidth-2,y-1,x+originalwidth+1,y+15,1);
+    }
+}
+draw_sprite(spr_bossnames,5,x,y-10);
+if (global.tormaximumcharge)
+    draw_sprite(spr_bossnames,6,x,y+26);
+
+//Draw bar
+if (obj_tor.hp&gt;0){
+if (!global.specialbake){
+if (obj_tor.hp&gt;1050){
+    width=(obj_tor.hp-1050)*2;
+    width2=300;
+    }
+else if (obj_tor.hp&gt;900){
+    width2=(obj_tor.hp-900)*2;
+    width3=300;
+    }
+else if (obj_tor.hp&gt;750){
+    width3=(obj_tor.hp-750)*2;
+    width4=300;
+    }
+else if (obj_tor.hp&gt;600){
+    width4=(obj_tor.hp-600)*2;
+    width5=300;
+    }
+else if (obj_tor.hp&gt;450){
+    width5=(obj_tor.hp-450)*2;
+    width6=300;
+    }
+else if (obj_tor.hp&gt;300){
+    width6=(obj_tor.hp-300)*2;
+    width7=300;
+    }
+else if (obj_tor.hp&gt;150){
+    width7=(obj_tor.hp-150)*2;
+    width8=300;
+    }
+else
+    width8=(obj_tor.hp)*2;
+if (obj_tor.hp&lt;=150)
+    draw_sprite_stretched(sprite_index,image_index,x-width8,y,width8*2,15);
+else
+    draw_sprite_stretched(sprite_index,1,x-width8,y,width8*2,15);
+if (obj_tor.hp&gt;150){
+    if (obj_tor.hp&lt;=300){
+        draw_sprite_stretched(spr_bossbar2,image_index,x-width7,y,width7*2,15);
+        draw_sprite(spr_bossx,0,x,y+7);
+        }
+    else
+        draw_sprite_stretched(spr_bossbar2,1,x-width7,y,width7*2,15);
+    }
+if (obj_tor.hp&gt;300){
+    if (obj_tor.hp&lt;=450){
+        draw_sprite_stretched(spr_bossbar3,image_index,x-width6,y,width6*2,15);
+        draw_sprite(spr_bossx,1,x,y+7);
+        }
+    else
+        draw_sprite_stretched(spr_bossbar3,1,x-width6,y,width6*2,15);
+    }
+if (obj_tor.hp&gt;450){
+    if (obj_tor.hp&lt;=600){
+        draw_sprite_stretched(spr_bossbar4,image_index,x-width5,y,width5*2,15);
+        draw_sprite(spr_bossx,2,x,y+7);
+        }
+    else
+        draw_sprite_stretched(spr_bossbar4,1,x-width5,y,width5*2,15);
+    }
+if (obj_tor.hp&gt;600){
+    if (obj_tor.hp&lt;=750){
+        draw_sprite_stretched(spr_bossbar5,image_index,x-width4,y,width4*2,15);
+        draw_sprite(spr_bossx,3,x,y+7);
+        }
+    else
+        draw_sprite_stretched(spr_bossbar5,1,x-width4,y,width4*2,15);
+    }
+if (obj_tor.hp&gt;750){
+    if (obj_tor.hp&lt;=900){
+        draw_sprite_stretched(spr_bossbar6,image_index,x-width3,y,width3*2,15);
+        draw_sprite(spr_bossx,4,x,y+7);
+        }
+    else
+        draw_sprite_stretched(spr_bossbar6,1,x-width3,y,width3*2,15);
+    }
+if (obj_tor.hp&gt;900){
+    if (obj_tor.hp&lt;=1050){
+        draw_sprite_stretched(spr_bossbar7,image_index,x-width2,y,width2*2,15);
+        draw_sprite(spr_bossx,5,x,y+7);
+        }
+    else
+        draw_sprite_stretched(spr_bossbar7,1,x-width2,y,width2*2,15);
+    }
+if (obj_tor.hp&gt;1050){
+    draw_sprite_stretched(spr_bossbar8,image_index,x-width,y,width*2,15);
+    draw_sprite(spr_bossx,6,x,y+7);
+    }
+}
+else{
+    draw_sprite(spr_hpbarback,9,x-81,y);
+    draw_sprite(spr_hpbar,ceil((obj_tor.hp/obj_tor.maxhp)*20),x-80,y);
+    }
+}
+
+//Energy tanks (15 px gap)
+if (!global.suddendeath &amp;&amp; !global.specialbake){
+    draw_set_color(c_black);
+    draw_rectangle(x-301,y+21,x+9-301,y+30,0);
+    draw_rectangle(x+15-301,y+21,x+9+15-301,y+30,0);
+    draw_rectangle(x+30-301,y+21,x+9+30-301,y+30,0);
+    draw_rectangle(x+45-301,y+21,x+9+45-301,y+30,0);
+    draw_rectangle(x+60-301,y+21,x+9+60-301,y+30,0);
+    draw_set_color(c_white);
+    draw_rectangle(x-301,y+21,x+9-301,y+30,1);
+    draw_rectangle(x+15-301,y+21,x+9+15-301,y+30,1);
+    draw_rectangle(x+30-301,y+21,x+9+30-301,y+30,1);
+    draw_rectangle(x+45-301,y+21,x+9+45-301,y+30,1);
+    draw_rectangle(x+60-301,y+21,x+9+60-301,y+30,1);
+    if (obj_tor.maxhp&gt;=1050){
+        draw_set_color(c_black);
+        draw_rectangle(x+75-301,y+21,x+9+75-301,y+30,0);
+        draw_set_color(c_white);
+        draw_rectangle(x+75-301,y+21,x+9+75-301,y+30,1);
+        }
+    if (obj_tor.maxhp==1200){
+        draw_set_color(c_black);
+        draw_rectangle(x+90-301,y+21,x+9+90-301,y+30,0);
+        draw_set_color(c_white);
+        draw_rectangle(x+90-301,y+21,x+9+90-301,y+30,1);
+        }
+    if (obj_tor.hp&gt;150){
+        if (obj_tor.hp&lt;=300)
+            draw_sprite_stretched(spr_bossbar2,image_index,x+1-301,y+22,8,8);
+        else
+            draw_sprite_stretched(spr_bossbar2,1,x+1-301,y+22,8,8);
+        }
+    if (obj_tor.hp&gt;300){
+        if (obj_tor.hp&lt;=450)
+            draw_sprite_stretched(spr_bossbar3,image_index,x+1+15-301,y+22,8,8);
+        else
+            draw_sprite_stretched(spr_bossbar3,1,x+1+15-301,y+22,8,8);
+        }
+    if (obj_tor.hp&gt;450){
+        if (obj_tor.hp&lt;=600)
+            draw_sprite_stretched(spr_bossbar4,image_index,x+1+30-301,y+22,8,8);
+        else
+            draw_sprite_stretched(spr_bossbar4,1,x+1+30-301,y+22,8,8);
+        }
+    if (obj_tor.hp&gt;600){
+        if (obj_tor.hp&lt;=750)
+            draw_sprite_stretched(spr_bossbar5,image_index,x+1+45-301,y+22,8,8);
+        else
+            draw_sprite_stretched(spr_bossbar5,1,x+1+45-301,y+22,8,8);
+        }
+    if (obj_tor.hp&gt;750){
+        if (obj_tor.hp&lt;=900)
+            draw_sprite_stretched(spr_bossbar6,image_index,x+1+60-301,y+22,8,8);
+        else
+            draw_sprite_stretched(spr_bossbar6,1,x+1+60-301,y+22,8,8);
+        }
+    if (obj_tor.maxhp&gt;=1050){
+        if (obj_tor.hp&gt;900){
+            if (obj_tor.hp&lt;=1050)
+                draw_sprite_stretched(spr_bossbar7,image_index,x+1+75-301,y+22,8,8);
+            else
+                draw_sprite_stretched(spr_bossbar7,1,x+1+75-301,y+22,8,8);
+            }
+        }
+    if (obj_tor.maxhp==1200){
+        if (obj_tor.hp&gt;1050)
+            draw_sprite_stretched(spr_bossbar8,image_index,x+1+90-301,y+22,8,8);
+        }
+    }
+
+if (obj_tor.hp&lt;=0){
+    yadjust-=8;
+    if (yadjust&lt;-64)
+        instance_destroy();
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

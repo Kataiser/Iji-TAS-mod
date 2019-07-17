@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object id="198">
+  <sprite>spr_scrollarrow</sprite>
+  <solid>false</solid>
+  <visible>false</visible>
+  <depth>-401</depth>
+  <persistent>false</persistent>
+  <parent/>
+  <mask/>
+</object>

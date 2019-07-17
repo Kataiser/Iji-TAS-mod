@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Unmanned
+if (room==rom_sector5 || room==rom_sector6 || (room==rom_sector8 &amp;&amp; obj_iji.nocameras) || (room==rom_sector9 &amp;&amp; global.specialtrigger1==0)){
+    //Do nothing
+    }
+
+//Focus on Iji
+else if (room==rom_sectorx &amp;&amp; global.specialtrigger1==0){
+    animcyc+=1;
+    ijix=obj_iji.x+6;
+    myx=x+16;
+    if (obj_iji.y&lt;y+192 &amp;&amp; obj_iji.y&gt;y-4 &amp;&amp; ((abs(ijix-myx)&lt;256 &amp;&amp; dir==0) || (ijix-myx&lt;6 &amp;&amp; ijix-myx&gt;-256 &amp;&amp; dir==1) || (ijix-myx&gt;6 &amp;&amp; ijix-myx&lt;256 &amp;&amp; dir==2))){
+        lookdir=point_direction(x+16,y+6,obj_iji.x+6,obj_iji.y+15);
+        if (lookdir&gt;180 &amp;&amp; lookdir&lt;200)
+            animwant=0;
+        else if (lookdir&gt;200 &amp;&amp; lookdir&lt;215)
+            animwant=1;
+        else if (lookdir&gt;215 &amp;&amp; lookdir&lt;240)
+            animwant=2;
+        else if (lookdir&gt;240 &amp;&amp; lookdir&lt;262)
+            animwant=3;
+        else if (lookdir&gt;262 &amp;&amp; lookdir&lt;278)
+            animwant=4;
+        else if (lookdir&gt;278 &amp;&amp; lookdir&lt;300)
+            animwant=5;
+        else if (lookdir&gt;300 &amp;&amp; lookdir&lt;325)
+            animwant=6;
+        else if (lookdir&gt;325 &amp;&amp; lookdir&lt;340)
+            animwant=7;
+        else if (lookdir&gt;340 &amp;&amp; lookdir&lt;359.9)
+            animwant=8;
+        }
+    if (animcyc&gt;=2){
+        animcyc=0;
+        if (image_single&lt;animwant &amp;&amp; image_single&lt;highlimit)
+            image_single+=1;
+        if (image_single&gt;animwant &amp;&amp; image_single&gt;lowlimit)
+            image_single-=1;
+        }
+    }
+
+//Just look around
+else{
+    animcyc+=1;
+    if (animcyc&gt;=4){
+        animcyc=0;
+        if (animdir==0){
+            if (image_single==lowlimit){
+                animdir=1;
+                animcyc=-30;
+                }
+            else
+                image_single-=1;
+            }
+        else if (animdir==1){
+            if (image_single==highlimit){
+                animdir=0;
+                animcyc=-30;
+                }
+            else
+                image_single+=1;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

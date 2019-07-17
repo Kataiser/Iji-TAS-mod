@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="0">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_trigger)
+    instance_destroy();
+global.facing=1;
+obj_iji.firing=1;
+obj_iji.sprite_index=spr_fire;
+obj_dan.image_single=-1;
+obj_dan.image_speed=0.5;
+obj_dan.electro=1;
+scr_sound("glo_destroy");
+scr_sound("dan_death");
+with (obj_sabot)
+    scr_stopmusic();</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="60">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x+32,obj_dan.y,obj_megaflash);
+obj_iji.firing=0;
+obj_iji.sprite_index=spr_basic;
+obj_dan.sprite_index=spr_dan_fall;
+obj_dan.image_index=0;
+obj_dan.toasted=1;
+obj_dan.electro=0;
+instance_create(obj_dan.x-9,obj_dan.y-14,obj_smoke);
+obj_sabot.flash=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="61">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x-5,obj_dan.y+7,obj_smoke);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="62">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x-29,obj_dan.y-5,obj_smoke);
+obj_sabot.hammerflash=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="63">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x+3,obj_dan.y+14,obj_smoke);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="64">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x-21,obj_dan.y+20,obj_smoke);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="65">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x-6,obj_dan.y+22,obj_smoke);
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="66">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x-36,obj_dan.y+35,obj_smoke);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="67">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x,obj_dan.y+25,obj_smoke);
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="68">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x-30,obj_dan.y+32,obj_smoke);</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="69">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(obj_dan.x-9,obj_dan.y+35,obj_smoke);
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="76">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_dan.image_single=7;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="90">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chat89";</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

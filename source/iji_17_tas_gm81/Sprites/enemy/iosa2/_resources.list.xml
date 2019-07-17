@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_iosa2_basic" type="RESOURCE"/>
+  <resource name="spr_iosa2_begin" type="RESOURCE"/>
+  <resource name="spr_iosa2_walk" type="RESOURCE"/>
+  <resource name="spr_iosa2_swipe" type="RESOURCE"/>
+  <resource name="spr_iosa2_swipebox" type="RESOURCE"/>
+  <resource name="spr_iosa2_swipe2" type="RESOURCE"/>
+  <resource name="spr_iosa2_uppercut" type="RESOURCE"/>
+  <resource name="spr_iosa2_slash" type="RESOURCE"/>
+  <resource name="spr_iosa2_spin" type="RESOURCE"/>
+  <resource name="spr_iosa2_overdrive" type="RESOURCE"/>
+  <resource name="spr_iosa2_stagger" type="RESOURCE"/>
+  <resource name="spr_iosa2_stagger2" type="RESOURCE"/>
+  <resource name="spr_iosa2_hitwall" type="RESOURCE"/>
+  <resource name="spr_iosa2_woozy" type="RESOURCE"/>
+  <resource name="spr_iosa2_death" type="RESOURCE"/>
+  <resource name="spr_iosa2_dead" type="RESOURCE"/>
+  <resource name="spr_iosa2_gun" type="RESOURCE"/>
+  <resource name="spr_iosa2_gore" type="RESOURCE"/>
+  <resource name="spr_iosa2_safed" type="RESOURCE"/>
+  <resource name="spr_iosa2_safeu" type="RESOURCE"/>
+  <resource name="spr_iosa2_safel" type="RESOURCE"/>
+</resources>

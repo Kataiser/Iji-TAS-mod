@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_blitright" type="RESOURCE"/>
+  <resource name="spr_blitleft" type="RESOURCE"/>
+  <resource name="spr_blitjump" type="RESOURCE"/>
+</resources>

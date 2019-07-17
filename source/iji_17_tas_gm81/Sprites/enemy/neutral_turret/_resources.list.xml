@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_turret" type="RESOURCE"/>
+  <resource name="spr_turretappear" type="RESOURCE"/>
+  <resource name="spr_turretdead" type="RESOURCE"/>
+  <resource name="spr_turretpole" type="RESOURCE"/>
+  <resource name="spr_turretheadleft" type="RESOURCE"/>
+  <resource name="spr_turretheadright" type="RESOURCE"/>
+  <resource name="spr_turretlight" type="RESOURCE"/>
+</resources>

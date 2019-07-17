@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Portraits
+if (portrait==1) draw_sprite(spr_portrait1,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==2) draw_sprite(spr_portrait2,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==3) draw_sprite(spr_portrait3,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==4) draw_sprite(spr_portrait4,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==5) draw_sprite(spr_portrait5,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==6) draw_sprite(spr_portrait6,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==7) draw_sprite(spr_portrait7,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==70){
+    draw_sprite(spr_portrait7,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+    draw_sprite(spr_portrait7b,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+    }
+if (portrait==8) draw_sprite(spr_portrait8,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==9) draw_sprite(spr_portrait9,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==10) draw_sprite(spr_portrait10,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==11) draw_sprite(spr_portrait11,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==12) draw_sprite(spr_portrait12,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+if (portrait==13) draw_sprite(spr_portrait13,0,obj_shakescreen.x-392-firstscroll*64,obj_shakescreen.y+16);
+
+if (portrait==98) draw_sprite(spr_portrait98,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==99) draw_sprite(spr_portrait99,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==100) draw_sprite(spr_portrait100,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==101) draw_sprite(spr_portrait101,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==102) draw_sprite(spr_portrait102,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==103) draw_sprite(spr_portrait103,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==104) draw_sprite(spr_portrait104,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==106) draw_sprite(spr_portrait106,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==107) draw_sprite(spr_portrait107,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==108) draw_sprite(spr_portrait108,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==110) draw_sprite(spr_portrait110,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==111) draw_sprite(spr_portrait111,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==114) draw_sprite(spr_portrait114,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==115) draw_sprite(spr_portrait115,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==116) draw_sprite(spr_portrait116,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==117) draw_sprite(spr_portrait117,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==118) draw_sprite(spr_portrait118,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==119) draw_sprite(spr_portrait119,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+if (portrait==1000){
+    draw_sprite(spr_portrait100,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+    draw_sprite(spr_portrait100b,0,obj_shakescreen.x+264+firstscroll*64,obj_shakescreen.y+16);
+    }
+
+if (global.squeak){
+    if ((portrait&gt;=1 &amp;&amp; portrait&lt;=13) || portrait==70)
+        draw_sprite(spr_ammo10,0,obj_shakescreen.x-300-firstscroll*64,obj_shakescreen.y+80);
+    }
+
+//Text
+if (page&gt;=0){
+    //scramble the text here
+    if (global.scrambler){
+        //if (page!=prevpage &amp;&amp; !scrambled[page])
+        //    scrambled[page]=0;
+        //prevpage=page;
+        if (instance_number(obj_chat)==0)
+            global.scramblefactor=2;
+        if (!scrambled[page]){
+            scrambled[page]=1;
+            scr_scramble();
+            }
+        }
+    draw_set_font(global.fontgreen);
+    draw_set_color(c_white);
+    draw_text_ext(obj_shakescreen.x-390,obj_shakescreen.y+183+firstscroll*48,text[page],28,793);
+    }
+//Outline
+if (!global.specialbake){
+if (outline=0) //Neutral
+    draw_set_color(make_color_rgb(140,140,140));
+if (outline=1) //Iji
+    draw_set_color(make_color_rgb(80,180,80));
+if (outline=2) //Dan
+    draw_set_color(make_color_rgb(170,160,70));
+if (outline=3) //Tasen
+    draw_set_color(make_color_rgb(130,10,110));
+if (outline=4) //Komato
+    draw_set_color(make_color_rgb(30,130,190));
+draw_rectangle(x-399,y+173+firstscroll*48,x+398,y+298+firstscroll*48,1);
+draw_rectangle(x-397,y+175+firstscroll*48,x+396,y+296+firstscroll*48,1);
+if (outline=0) //Neutral light
+    draw_set_color(make_color_rgb(210,210,210));
+if (outline=1) //Iji light
+    draw_set_color(make_color_rgb(120,220,120));
+if (outline=2) //Dan light
+    draw_set_color(make_color_rgb(210,200,100));
+if (outline=3) //Tasen light
+    draw_set_color(make_color_rgb(210,20,190));
+if (outline=4) //Komato light
+    draw_set_color(make_color_rgb(40,170,230));
+draw_rectangle(x-398,y+174+firstscroll*48,x+397,y+297+firstscroll*48,1);
+}
+
+if (global.scrambler)
+    draw_sprite(spr_scramblertext,0,x-400,y+168+firstscroll*48);
+    
+//Firstscroll
+if (firstscroll==1)
+    firstscroll=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

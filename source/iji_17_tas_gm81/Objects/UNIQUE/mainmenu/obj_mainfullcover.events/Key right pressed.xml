@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="39">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_face.tier="wait2" &amp;&amp; obj_face.selected==2){
+if (obj_face.weaponinfo==26)
+    obj_face.weaponinfo=1;
+else
+    obj_face.weaponinfo+=1;
+scr_sound("glo_menumove");
+with (obj_face)
+    scr_menufulltexts();
+}
+if (obj_face.tier="wait2" &amp;&amp; obj_face.selected==3){
+if (obj_face.enemyinfo==25)
+    obj_face.enemyinfo=1;
+else
+    obj_face.enemyinfo+=1;
+scr_sound("glo_menumove");
+with (obj_face)
+    scr_menufulltexts();
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

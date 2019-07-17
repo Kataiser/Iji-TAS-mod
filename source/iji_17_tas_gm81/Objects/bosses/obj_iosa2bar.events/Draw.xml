@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (yadjust&lt;0 &amp;&amp; instance_number(obj_iosa2)==1)
+yadjust+=8;
+x=floor(x);
+y=floor(y);
+draw_sprite(spr_bossnames,4,x,y-10);
+
+if (instance_number(obj_iosa2)==0){
+    yadjust-=8;
+    if (yadjust&lt;-64)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

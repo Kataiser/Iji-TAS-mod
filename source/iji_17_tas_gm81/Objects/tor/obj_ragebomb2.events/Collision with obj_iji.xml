@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!iji &amp;&amp; !other.takingpain &amp;&amp; !other.recovering){
+global.hp-=1;
+global.damage+=1;
+with (obj_iji)
+    scr_pain();
+obj_tor.weight[0]+=3;
+obj_tor.potencycount[0]-=1;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

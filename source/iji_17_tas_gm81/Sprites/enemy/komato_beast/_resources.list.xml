@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_komatobeast_basic" type="RESOURCE"/>
+  <resource name="spr_komatobeast_basicleft" type="RESOURCE"/>
+  <resource name="spr_komatobeast_pain" type="RESOURCE"/>
+  <resource name="spr_komatobeast_painleft" type="RESOURCE"/>
+  <resource name="spr_komatobeast_walk" type="RESOURCE"/>
+  <resource name="spr_komatobeast_walkleft" type="RESOURCE"/>
+  <resource name="spr_komatobeast_run" type="RESOURCE"/>
+  <resource name="spr_komatobeast_runleft" type="RESOURCE"/>
+</resources>

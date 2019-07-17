@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_krotera_basic" type="RESOURCE"/>
+  <resource name="spr_krotera_basicleft" type="RESOURCE"/>
+  <resource name="spr_krotera_fire" type="RESOURCE"/>
+  <resource name="spr_krotera_fireleft" type="RESOURCE"/>
+  <resource name="spr_krotera_flash" type="RESOURCE"/>
+  <resource name="spr_krotera_flashleft" type="RESOURCE"/>
+  <resource name="spr_krotera_kick" type="RESOURCE"/>
+  <resource name="spr_krotera_kickleft" type="RESOURCE"/>
+  <resource name="spr_krotera_pain" type="RESOURCE"/>
+  <resource name="spr_krotera_painleft" type="RESOURCE"/>
+  <resource name="spr_krotera_walk" type="RESOURCE"/>
+  <resource name="spr_krotera_walkleft" type="RESOURCE"/>
+  <resource name="spr_krotera_death" type="RESOURCE"/>
+  <resource name="spr_krotera_deathleft" type="RESOURCE"/>
+  <resource name="spr_bossbar" type="RESOURCE"/>
+  <resource name="spr_bossbar2" type="RESOURCE"/>
+  <resource name="spr_bossbar3" type="RESOURCE"/>
+  <resource name="spr_bossbar4" type="RESOURCE"/>
+  <resource name="spr_bossbar5" type="RESOURCE"/>
+  <resource name="spr_bossbar6" type="RESOURCE"/>
+  <resource name="spr_bossbar7" type="RESOURCE"/>
+  <resource name="spr_bossbar8" type="RESOURCE"/>
+</resources>

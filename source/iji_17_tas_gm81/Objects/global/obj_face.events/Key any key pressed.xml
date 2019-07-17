@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (menu==1 &amp;&amp; !ignoreall &amp;&amp; instance_number(obj_mainfullcover)==0 &amp;&amp; tier="main"){
+    if (code==0){
+        if (keyboard_check(vk_up))
+            code=1;
+        else
+            code=0;
+        }
+    else if (code==1){
+        if (keyboard_check(vk_up))
+            code=2;
+        else
+            code=0;
+        }
+    else if (code==2){
+        if (keyboard_check(vk_down))
+            code=3;
+        else
+            code=0;
+        }
+    else if (code==3){
+        if (keyboard_check(vk_down))
+            code=4;
+        else
+            code=0;
+        }
+    else if (code==4){
+        if (keyboard_check(vk_left))
+            code=5;
+        else
+            code=0;
+        }
+    else if (code==5){
+        if (keyboard_check(vk_right))
+            code=6;
+        else
+            code=0;
+        }
+    else if (code==6){
+        if (keyboard_check(vk_left))
+            code=7;
+        else
+            code=0;
+        }
+    else if (code==7){
+        if (keyboard_check(vk_right)){
+            code=10;
+            drawkonami=1;
+            ignoreall=1;
+            konamitext="Version 1.7 was tough to make, but also a lot of fun. The conversion to GM7.0 took about two weeks, and I finally added the stuff I wanted for 1.6. Enjoy!";
+            }
+        else
+            code=0;
+        }
+    }
+
+if (menu==1 &amp;&amp; !ignoreall &amp;&amp; instance_number(obj_mainfullcover)==0 &amp;&amp; tier="main"){
+    if (hcode==0){
+        if (keyboard_check(ord("H")))
+            hcode=1;
+        else
+            hcode=0;
+        }
+    else if (hcode==1){
+        if (keyboard_check(ord("O")))
+            hcode=2;
+        else
+            hcode=0;
+        }
+    else if (hcode==2){
+        if (keyboard_check(ord("R")))
+            hcode=3;
+        else
+            hcode=0;
+        }
+    else if (hcode==3){
+        if (keyboard_check(ord("S")))
+            hcode=4;
+        else
+            hcode=0;
+        }
+    else if (hcode==4){
+        if (keyboard_check(ord("E")))
+            hcode=5;
+        else
+            hcode=0;
+        }
+    else if (hcode==5){
+        if (keyboard_check(ord("G")))
+            hcode=6;
+        else
+            hcode=0;
+        }
+    else if (hcode==6){
+        if (keyboard_check(ord("U")))
+            hcode=7;
+        else
+            hcode=0;
+        }
+    else if (hcode==7){
+        if (keyboard_check(ord("N"))){
+            hcode=10;
+            ignoreall=1;
+            with (obj_face)
+                scr_stopmusic();
+            instance_create(0,0,obj_horsebegin);
+            global.ignoreall=1;
+            }
+        else
+            hcode=0;
+        }
+    }
+
+if (menu==1 &amp;&amp; !ignoreall &amp;&amp; instance_number(obj_mainfullcover)==0 &amp;&amp; tier="main"){
+    if (dcode==0){
+        if (keyboard_check(ord("D")))
+            dcode=1;
+        else
+            dcode=0;
+        }
+    else if (dcode==1){
+        if (keyboard_check(ord("E")))
+            dcode=2;
+        else
+            dcode=0;
+        }
+    else if (dcode==2){
+        if (keyboard_check(ord("V")))
+            dcode=3;
+        else
+            dcode=0;
+        }
+    else if (dcode==3){
+        if (keyboard_check(ord("A")))
+            dcode=4;
+        else
+            dcode=0;
+        }
+    else if (dcode==4){
+        if (keyboard_check(ord("S")))
+            dcode=5;
+        else
+            dcode=0;
+        }
+    else if (dcode==5){
+        if (keyboard_check(ord("T")))
+            dcode=6;
+        else
+            dcode=0;
+        }
+    else if (dcode==6){
+        if (keyboard_check(ord("A")))
+            dcode=7;
+        else
+            dcode=0;
+        }
+    else if (dcode==7){
+        if (keyboard_check(ord("T")))
+            dcode=8;
+        else
+            dcode=0;
+        }
+    else if (dcode==8){
+        if (keyboard_check(ord("E"))){
+            dcode=0;
+            dcodego=0;
+            if (global.extras1 &amp;&amp; global.extras2 &amp;&amp; global.extras3 &amp;&amp; global.extras4 &amp;&amp; global.extras5 &amp;&amp; global.extras6 &amp;&amp; global.extras7 &amp;&amp; global.extras8 &amp;&amp; global.poster1 &amp;&amp; global.poster2 &amp;&amp; global.poster3 &amp;&amp; global.poster4 &amp;&amp; global.poster5 &amp;&amp; global.poster6 &amp;&amp; global.poster7 &amp;&amp; global.poster8 &amp;&amp; global.poster9 &amp;&amp; global.poster10){
+                if (global.sds1 &amp;&amp; global.sds2 &amp;&amp; global.sds3 &amp;&amp; global.sds4 &amp;&amp; global.sds5 &amp;&amp; global.sds6 &amp;&amp; global.sds7 &amp;&amp; global.sds8 &amp;&amp; global.sds9 &amp;&amp; global.sds10){
+                    if (global.maxribbons==10 &amp;&amp; global.hiddenskill1 &amp;&amp; global.hiddenskill2 &amp;&amp; global.hiddenskill3){
+                        dcodego=1;
+                        }
+                    }
+                }
+            if (dcodego){
+                selected=8;
+                scr_menuselection();
+                }
+            else{
+                drawkonami=1;
+                ignoreall=1;
+                konamitext="Not so fast! You must first achieve everything on the Records screen except beating Remar Games' speedrun times!";
+                }
+            }
+        else
+            dcode=0;
+        }
+    }
+
+if (menu==1 &amp;&amp; !ignoreall &amp;&amp; instance_number(obj_mainfullcover)==0 &amp;&amp; tier="main"){
+    if (scode==0){
+        if (keyboard_check(ord("A")))
+            scode=1;
+        else
+            scode=0;
+        }
+    else if (scode==1){
+        if (keyboard_check(ord("R")))
+            scode=2;
+        else
+            scode=0;
+        }
+    else if (scode==2){
+        if (keyboard_check(ord("E")))
+            scode=3;
+        else
+            scode=0;
+        }
+    else if (scode==3){
+        if (keyboard_check(ord("Y")))
+            scode=4;
+        else
+            scode=0;
+        }
+    else if (scode==4){
+        if (keyboard_check(ord("O")))
+            scode=5;
+        else
+            scode=0;
+        }
+    else if (scode==5){
+        if (keyboard_check(ord("U")))
+            scode=6;
+        else
+            scode=0;
+        }
+    else if (scode==6){
+        if (keyboard_check(ord("S")))
+            scode=7;
+        else
+            scode=0;
+        }
+    else if (scode==7){
+        if (keyboard_check(ord("E")))
+            scode=8;
+        else
+            scode=0;
+        }
+    else if (scode==8){
+        if (keyboard_check(ord("R")))
+            scode=9;
+        else
+            scode=0;
+        }
+    else if (scode==9){
+        if (keyboard_check(ord("I")))
+            scode=10;
+        else
+            scode=0;
+        }
+    else if (scode==10){
+        if (keyboard_check(ord("O")))
+            scode=11;
+        else
+            scode=0;
+        }
+    else if (scode==11){
+        if (keyboard_check(ord("U")))
+            scode=12;
+        else
+            scode=0;
+        }
+    else if (scode==12){
+        if (keyboard_check(ord("S"))){
+            scode=0;
+            scodego=0;
+            if (global.extras1 &amp;&amp; global.extras2 &amp;&amp; global.extras3 &amp;&amp; global.extras4 &amp;&amp; global.extras5 &amp;&amp; global.extras6 &amp;&amp; global.extras7 &amp;&amp; global.extras8 &amp;&amp; global.poster1 &amp;&amp; global.poster2 &amp;&amp; global.poster3 &amp;&amp; global.poster4 &amp;&amp; global.poster5 &amp;&amp; global.poster6 &amp;&amp; global.poster7 &amp;&amp; global.poster8 &amp;&amp; global.poster9 &amp;&amp; global.poster10){
+                if (global.sds1 &amp;&amp; global.sds2 &amp;&amp; global.sds3 &amp;&amp; global.sds4 &amp;&amp; global.sds5 &amp;&amp; global.sds6 &amp;&amp; global.sds7 &amp;&amp; global.sds8 &amp;&amp; global.sds9 &amp;&amp; global.sds10){
+                    if (global.maxribbons==10 &amp;&amp; global.hiddenskill1 &amp;&amp; global.hiddenskill2 &amp;&amp; global.hiddenskill3){
+                        scodego=1;
+                        }
+                    }
+                }
+            if (scodego){
+                selected=9;
+                scr_menuselection();
+                }
+            else{
+                drawkonami=1;
+                ignoreall=1;
+                konamitext="Not so fast! You must first achieve everything on the Records screen except beating Remar Games' speedrun times!";
+                }
+            }
+        else
+            scode=0;
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_station_health" type="RESOURCE"/>
+  <resource name="spr_station_attack" type="RESOURCE"/>
+  <resource name="spr_station_assimilate" type="RESOURCE"/>
+  <resource name="spr_station_strength" type="RESOURCE"/>
+  <resource name="spr_station_crack" type="RESOURCE"/>
+  <resource name="spr_station_tasen" type="RESOURCE"/>
+  <resource name="spr_station_komato" type="RESOURCE"/>
+  <resource name="spr_station_blank" type="RESOURCE"/>
+  <resource name="spr_levelstation" type="RESOURCE"/>
+  <resource name="spr_levelstation_blank" type="RESOURCE"/>
+  <resource name="spr_weapstation" type="RESOURCE"/>
+  <resource name="spr_terminal" type="RESOURCE"/>
+  <resource name="spr_checkpoint" type="RESOURCE"/>
+</resources>

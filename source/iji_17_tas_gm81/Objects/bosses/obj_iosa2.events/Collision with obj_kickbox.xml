@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_kickbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.image_index==0 &amp;&amp; (other.sprite_index=spr_detonator || global.facing==1)){
+//spin now
+if (state==0 || state==1 || state==2 || state==4){
+    state=6;
+    standcyc=0;
+    swipecyc=0;
+    uppercutcyc=0;
+    image_single=-1;
+    image_speed=1;
+    image_index=0;
+    sprite_index=spr_iosa2_spin;
+    gravity=1;
+    vspeed=-(floor(((1568-x)/32)/2)+3);
+    if (vspeed&gt;-6)
+        vspeed=-6;
+    }
+else if (state==3 || state==8 || state==9 || state==10){
+    //stagger now
+    if (place_free(x+6,y)){
+        with (obj_iosa2dizzy)
+            instance_destroy();
+        scr_sound("glo_kick");
+        guard+=1;
+        state=7;
+        sprite_index=spr_iosa2_stagger;
+        image_single=-1;
+        image_index=0;
+        image_speed=0.5;
+        swipe2cyc=0;
+        staggercyc=0;
+        stagger2cyc=0;
+        woozycyc=0;
+        scr_shakescreen(2);
+        temprand=random(1);
+        if (temprand&lt;0.3)
+            scr_sound("io2_kicked");
+        }
+    //hitwall now
+    else{
+        scr_sound("glo_kick");
+        scr_sound("glo_land");
+        state=9;
+        sprite_index=spr_iosa2_hitwall;
+        image_single=-1;
+        image_index=0;
+        image_speed=0.5;
+        swipe2cyc=0;
+        staggercyc=0;
+        stagger2cyc=0;
+        hitwallcyc=0;
+        woozycyc=0;
+        scr_shakescreen(2);
+        global.erasetop=0;
+        global.topmessage="SUBJECT IS DAZED, PRESS "+chr(global.usekey)+" TO CRACK IT";
+        temprand=random(1);
+        if (temprand&lt;0.3)
+            scr_sound("io2_kicked");
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

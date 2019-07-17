@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_cracktext" type="RESOURCE"/>
+  <resource name="obj_crackbar" type="RESOURCE"/>
+  <resource name="obj_nodecol" type="RESOURCE"/>
+  <resource name="obj_noderow" type="RESOURCE"/>
+  <resource name="obj_younode" type="RESOURCE"/>
+  <resource name="obj_goalnode" type="RESOURCE"/>
+  <resource name="obj_icenode" type="RESOURCE"/>
+  <resource name="obj_binary" type="RESOURCE"/>
+  <resource name="obj_colnumber" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tasensoldier">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">other.ijikill=0;
+other.armor-=2;
+if (instance_number(obj_ijisplat)&lt;5)
+instance_create(x,y,obj_ijisplat);
+if (other.angry==0 &amp;&amp; other.sprite_index!=spr_tasensoldier_pain &amp;&amp; other.sprite_index!=spr_tasensoldier_painleft){
+other.alarm[2]=25+random(10);
+other.state=1;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

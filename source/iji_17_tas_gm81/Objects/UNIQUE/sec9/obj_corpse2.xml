@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object id="461">
+  <sprite>spr_tasenelite_death</sprite>
+  <solid>false</solid>
+  <visible>false</visible>
+  <depth>101</depth>
+  <persistent>false</persistent>
+  <parent>obj_corpse1</parent>
+  <mask/>
+</object>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (collect&lt;100)
+    collect+=1;
+
+if (place_free(x,y+32) &amp;&amp; place_free(x,y+64))
+    y+=2;
+
+if (!init){
+    init=1;
+    x1dir=1;
+    x1=-16;
+    y1dir=1;
+    y1=-14;
+    x2dir=0;
+    x2=16;
+    y2dir=0;
+    y2=12;
+    x3dir=0;
+    x3=-12;
+    y3dir=0;
+    y3=16;
+    bob=-2;
+    }
+
+//bob
+if (bobdir==0)
+    bobv-=0.1;
+else
+    bobv+=0.1;
+bob+=bobv;
+if (bob&lt;=0 &amp;&amp; bobdir==0)
+    bobdir=1;
+if (bob&gt;=0 &amp;&amp; bobdir==1)
+    bobdir=0;
+
+//1
+if (x1dir==0)
+    x1v-=0.2;
+else
+    x1v+=0.2;
+x1+=x1v;
+if (x1&lt;=0 &amp;&amp; x1dir==0)
+    x1dir=1;
+if (x1&gt;=0 &amp;&amp; x1dir==1)
+    x1dir=0;
+
+if (y1dir==0)
+    y1v-=0.2;
+else
+    y1v+=0.2;
+y1+=y1v;
+if (y1&lt;=0 &amp;&amp; y1dir==0)
+    y1dir=1;
+if (y1&gt;=0 &amp;&amp; y1dir==1)
+    y1dir=0;
+
+//2
+if (x2dir==0)
+    x2v-=0.2;
+else
+    x2v+=0.2;
+x2+=x2v;
+if (x2&lt;=0 &amp;&amp; x2dir==0)
+    x2dir=1;
+if (x2&gt;=0 &amp;&amp; x2dir==1)
+    x2dir=0;
+
+if (y2dir==0)
+    y2v-=0.2;
+else
+    y2v+=0.2;
+y2+=y2v;
+if (y2&lt;=0 &amp;&amp; y2dir==0)
+    y2dir=1;
+if (y2&gt;=0 &amp;&amp; y2dir==1)
+    y2dir=0;
+
+//3
+if (x3dir==0)
+    x3v-=0.2;
+else
+    x3v+=0.2;
+x3+=x3v;
+if (x3&lt;=0 &amp;&amp; x3dir==0)
+    x3dir=1;
+if (x3&gt;=0 &amp;&amp; x3dir==1)
+    x3dir=0;
+
+if (y3dir==0)
+    y3v-=0.2;
+else
+    y3v+=0.2;
+y3+=y3v;
+if (y3&lt;=0 &amp;&amp; y3dir==0)
+    y3dir=1;
+if (y3&gt;=0 &amp;&amp; y3dir==1)
+    y3dir=0;
+
+//B
+bcyc+=1;
+if (bcyc==1){
+    bcyc=0;
+    tempid=(instance_create(x+x1,y+y1,obj_superchargep));
+    if (x1v&lt;=0){
+        if (x1&lt;0)
+            tempid.depth=150;
+        else
+            tempid.depth=150-x1v;
+        }
+    else{
+        if (x1&gt;=0)
+            tempid.depth=50-x1v;
+        else
+            tempid.depth=50;
+        }
+    tempid=(instance_create(x+x2,y+y2,obj_superchargep));
+    if (x2v&lt;=0){
+        if (x2&lt;0)
+            tempid.depth=150;
+        else
+            tempid.depth=150-x2v;
+        }
+    else{
+        if (x2&gt;=0)
+            tempid.depth=50-x2v;
+        else
+            tempid.depth=50;
+        }
+    tempid=(instance_create(x+x3,y+y3,obj_superchargep));
+    if (x3v&lt;=0){
+        if (x3&lt;0)
+            tempid.depth=150;
+        else
+            tempid.depth=150-x3v;
+        }
+    else{
+        if (x3&gt;=0)
+            tempid.depth=50-x3v;
+        else
+            tempid.depth=50;
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if ((global.sector==9 &amp;&amp; global.specialtrigger1==0) || global.sector==3 || (global.sector==1 &amp;&amp; global.killdata[797]&gt;0)){
+    scr_music("mus_calm");
+    slow=1;
+    }
+else if (global.sector==1 &amp;&amp; global.killdata[798]&gt;0){
+    scr_music("mus_dark");
+    slow=1;
+    }
+else
+    scr_music("mus_clear");
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

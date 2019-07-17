@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_sco_find1" type="RESOURCE"/>
+  <resource name="snd_sco_find2" type="RESOURCE"/>
+  <resource name="snd_sco_death1" type="RESOURCE"/>
+  <resource name="snd_sco_death2" type="RESOURCE"/>
+</resources>

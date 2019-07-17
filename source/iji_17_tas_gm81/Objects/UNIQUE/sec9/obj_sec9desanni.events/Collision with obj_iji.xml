@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.hp&gt;0){
+instance_activate_object(obj_komatoannihilator);
+with (obj_komatoannihilator)
+instance_destroy();
+//bunker
+if (global.specialtriggerc &amp;&amp; global.kills+global.totkills&lt;=9*global.neutralkc &amp;&amp; !setoff){
+    setoff=1;
+    (instance_create(9152,5888,obj_trigger)).textid="chat9e";
+    (instance_create(10176,5888,obj_trigger)).textid="chat9e22";
+    obj_sabot.bunkertruce=1;
+    obj_sabot.lightrave=1;
+    obj_sabot.lightravebottom=0.0;
+    instance_activate_object(obj_door);
+    instance_activate_object(obj_cdoor);
+    instance_activate_object(obj_cdoor92);
+    instance_activate_object(obj_sec9_iosat);
+    instance_activate_object(obj_turret);
+    instance_activate_object(obj_log1);
+    instance_activate_object(obj_trigger);
+    instance_activate_object(obj_turretdead);
+    instance_activate_object(obj_turretpole);
+    with (obj_door){
+        if (s9tag==1)
+            instance_destroy();
+        }
+    with (obj_cdoor){
+        if (destroyme || s9tag==1)
+            instance_destroy();
+        }
+    with (obj_cdoor92)
+        instance_destroy();
+    with (obj_sec9_iosat)
+        instance_destroy();
+    with (obj_turret)
+        instance_destroy();
+    with (obj_turretdead){
+        if (s9tag)
+            instance_destroy();
+        }
+    with (obj_turretpole){
+        if (s9tag)
+            instance_destroy();
+        }
+    with (obj_log1){
+        if (textid=="text907" || textid=="text908" || textid=="text918")
+            instance_destroy();
+        }
+    with (obj_trigger){
+        if (textid=="chat92" || textid=="chat99")
+            instance_destroy();
+        }
+    }
+else if (!setoff){
+    setoff=1;
+    instance_activate_object(obj_xspecialcannotfire);
+    with (obj_xspecialcannotfire)
+        instance_destroy();
+    instance_activate_object(obj_sec9vateilika);
+    with (obj_sec9vateilika)
+        instance_destroy();
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (type==0){
+    draw_sprite(spr_ansaksie,image_single,x,y);
+    draw_sprite(spr_ansaksiehead,img,x,y);
+    if (shakehead){
+        if (shakedir==0 &amp;&amp; img&lt;5){
+            imgcyc+=1;
+            if (imgcyc==2){
+                imgcyc=0;
+                img+=1;
+                }
+            }
+        else if (shakedir==1 &amp;&amp; img&gt;0){
+            imgcyc+=1;
+            if (imgcyc==2){
+                imgcyc=0;
+                img-=1;
+                }
+            }
+        if (img==5 &amp;&amp; shakedir==0)
+            shakedir=1;
+        else if (img==0 &amp;&amp; shakedir==1)
+            shakehead=0;
+        }
+    else{
+        img=0;
+        shakedir=0;
+        imgcyc=0;
+        }
+    }
+else if (type==1)
+    draw_sprite(spr_komatoassassin_pose1,0,x,y);
+else if (type==2)
+    draw_sprite(spr_komatoassassin_downstab,0,x,y);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

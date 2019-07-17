@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">ismeta=1;
+if (sprite_index==spr_crackbox){
+    hp=50;
+    image_speed=0.333;
+    if (security==0)
+        security=1;
+    }
+if (sprite_index==spr_barrel)
+    hp=15;
+if (sprite_index==spr_leetbox)
+    hp=4;
+if (sprite_index==spr_screen)
+    hp=4;
+if (sprite_index==spr_lamp)
+    hp=1;
+if (sprite_index==spr_crate1)
+    hp=20;
+if (sprite_index==spr_crate2)
+    hp=50;
+if (sprite_index==spr_locker)
+    hp=10;
+if (sprite_index==spr_glass2)
+    hp=1;
+if (sprite_index==spr_glass2short)
+    hp=1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_enemyrocketexplosion">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!other.dud){
+    shredderhp-=200;
+    if (other.ijis)
+        ijikill=1;
+    else
+        ijikill=0;
+    if (shredderhp&gt;0){
+        scr_sound("sol_death");
+        tempid=instance_create(x,y-30,obj_tasensoldier);
+        tempid.hp=0;
+        tempid.dead=1;
+        tempid.killdataid=killdataid;
+        if (facing==0){
+            with (tempid)
+                script_execute(scr_enemyknockdown,2,11);
+            }
+        else{
+            with (tempid)
+                script_execute(scr_enemyknockdown,1,11);
+            }
+        instance_destroy();
+        tempid=instance_create(floor(x),floor(y)-1,obj_emptyshredder);
+        tempid.shredderhp=shredderhp;
+        if (sprite_index==spr_tasenshredder_basicleft)
+            tempid.sprite_index=spr_tasenshredder_emptyleft;
+        else
+            tempid.sprite_index=spr_tasenshredder_empty;
+        tempid.facing=facing;
+        tempid.hspeed=hspeed;
+        tempid.vspeed=vspeed;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

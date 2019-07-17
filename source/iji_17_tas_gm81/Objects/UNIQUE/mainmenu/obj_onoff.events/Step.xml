@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Main menu
+if (room==rom_main){
+    if (obj_face.tier=="options"){
+        if(y==311 &amp;&amp; global.noshake==0)
+        image_single=2;
+        if(y==311 &amp;&amp; global.noshake==1)
+        image_single=3;
+        if(y==339 &amp;&amp; global.novoice==0)
+        image_single=0;
+        if(y==339 &amp;&amp; global.novoice==1)
+        image_single=1;
+        if(y==367 &amp;&amp; global.nosound==0)
+        image_single=0;
+        if(y==367 &amp;&amp; global.nosound==1)
+        image_single=1;
+        if(y==395 &amp;&amp; global.nomusic==0)
+        image_single=0;
+        if(y==395 &amp;&amp; global.nomusic==1)
+        image_single=1;
+        if(y==423 &amp;&amp; global.hidetime==0)
+        image_single=0;
+        if(y==423 &amp;&amp; global.hidetime==1)
+        image_single=1;
+        }
+    else if (obj_face.tier=="options2"){
+        if(y==311 &amp;&amp; global.nogamma==0)
+        image_single=0;
+        if(y==311 &amp;&amp; global.nogamma==1)
+        image_single=1;
+        if(y==339 &amp;&amp; global.specialbake==0)
+        image_single=2;
+        if(y==339 &amp;&amp; global.specialbake==1)
+        image_single=3;
+        if(y==367 &amp;&amp; global.noblood==0)
+        image_single=0;
+        if(y==367 &amp;&amp; global.noblood==1)
+        image_single=1;
+    }
+    else if (obj_face.tier=="secret"){
+        if(y==339 &amp;&amp; global.rrkills==0)
+        image_single=0;
+        if(y==339 &amp;&amp; global.rrkills==1)
+        image_single=1;
+        if(y==367 &amp;&amp; global.nomercy==1)
+        image_single=0;
+        if(y==367 &amp;&amp; global.nomercy==0)
+        image_single=1;
+        if(y==395 &amp;&amp; global.fireanytime==1)
+        image_single=0;
+        if(y==395 &amp;&amp; global.fireanytime==0)
+        image_single=1;
+        if(y==423 &amp;&amp; global.randomstations==1)
+        image_single=0;
+        if(y==423 &amp;&amp; global.randomstations==0)
+        image_single=1;
+        if(y==451 &amp;&amp; global.noreloads==1)
+        image_single=0;
+        if(y==451 &amp;&amp; global.noreloads==0)
+        image_single=1;
+        }
+    else if (obj_face.tier=="supersecret"){
+        if(y==339 &amp;&amp; global.debug==1)
+        image_single=0;
+        if(y==339 &amp;&amp; global.debug==0)
+        image_single=1;
+        }
+    }
+
+//Pause menu
+else{
+    if(y==view_yview[0]+185 &amp;&amp; global.noshake==0)
+    image_single=2;
+    if(y==view_yview[0]+185 &amp;&amp; global.noshake==1)
+    image_single=3;
+    if(y==view_yview[0]+213 &amp;&amp; global.novoice==0)
+    image_single=0;
+    if(y==view_yview[0]+213 &amp;&amp; global.novoice==1)
+    image_single=1;
+    if(y==view_yview[0]+241 &amp;&amp; global.nosound==0)
+    image_single=0;
+    if(y==view_yview[0]+241 &amp;&amp; global.nosound==1)
+    image_single=1;
+    if(y==view_yview[0]+269 &amp;&amp; global.nomusic==0)
+    image_single=0;
+    if(y==view_yview[0]+269 &amp;&amp; global.nomusic==1)
+    image_single=1;
+    if(y==view_yview[0]+297 &amp;&amp; global.hidetime==0)
+    image_single=0;
+    if(y==view_yview[0]+297 &amp;&amp; global.hidetime==1)
+    image_single=1;
+    if(y==view_yview[0]+325 &amp;&amp; global.noblood==0)
+    image_single=0;
+    if(y==view_yview[0]+325 &amp;&amp; global.noblood==1)
+    image_single=1;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

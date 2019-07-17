@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_alliedenemy">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.scouring&lt;=0 &amp;&amp; !other.krotera &amp;&amp; !other.iosa &amp;&amp; (other.enemytype==0 || other.enemytype==1 || other.enemytype==2 || other.enemytype==3 || other.enemytype==10 || other.enemytype==11)){
+    other.scouringdir=hspeed;
+    with (other){
+        if (angry==0 &amp;&amp; firingrocket==0 &amp;&amp; (state==0 || state==1) &amp;&amp; hp&lt;maxhp){
+            if (scouringdir&gt;0)
+                facing=0;
+            else
+                facing=1;
+            state=1;
+            scouring=300;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

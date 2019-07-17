@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!global.specialbake){
+draw_set_color(c_black);
+for (j=0; j&lt;12; j+=1){
+    for (i=0; i&lt;3; i+=1){
+        draw_line(crackx[j,i],cracky[j,i]-2,crackx[j,i+1],cracky[j,i+1]-2);
+        }
+    }
+if (fade&gt;255)
+    fade=255;
+draw_set_color(make_color_rgb(255-fade,255-fade,255-fade));
+for (j=0; j&lt;12; j+=1){
+    for (i=0; i&lt;3; i+=1){
+        draw_line(crackx[j,i],cracky[j,i],crackx[j,i+1],cracky[j,i+1]);
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

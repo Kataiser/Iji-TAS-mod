@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (active){
+    with (other){
+        if (!takingpain &amp;&amp; !recovering){
+            scr_sound("glo_electrocute");
+            notech=10;
+            global.damage+=3;
+            global.hp-=3;
+            scr_pain();
+            scr_shakescreen(4);
+            //obj_sabot.flash=1;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

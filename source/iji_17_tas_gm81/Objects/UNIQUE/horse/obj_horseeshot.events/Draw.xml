@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (mpfb){
+    mpfbimg=1-mpfbimg;
+    draw_sprite(spr_mpfb,mpfbimg,floor(x),floor(y));
+    }
+else{
+    dcyc=1-dcyc;
+    if (dcyc==0){
+        draw_sprite_ext(spr_shockball,0,floor(x),floor(y),1,1,0,c_white,1);
+        draw_sprite_ext(spr_shockballtrail,0,floor(x),floor(y),1,1,0,c_black,1);
+        }
+    else{
+        draw_sprite_ext(spr_shockball,0,floor(x),floor(y),1,1,0,c_black,1);
+        draw_sprite_ext(spr_shockballtrail,0,floor(x),floor(y),1,1,0,c_white,1);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

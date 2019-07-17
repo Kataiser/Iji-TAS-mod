@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pushbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.poster1 &amp;&amp; global.poster2 &amp;&amp; global.poster3 &amp;&amp; global.poster4 &amp;&amp; global.poster5 &amp;&amp; global.poster6 &amp;&amp; global.poster7 &amp;&amp; global.poster8 &amp;&amp; global.poster9 &amp;&amp; global.poster10){
+
+scr_sound("glo_teleport");
+alarm[0]=14;
+instance_create(x,y,obj_endtransition);
+global.ignoreall=1;
+obj_iji.visible=0;
+obj_iji.invisible=1;
+
+if (global.facing==1)
+    instance_create(obj_iji.x-11,obj_iji.y-4,obj_ijiflash);
+if (global.facing==0){
+    tempid=instance_create(obj_iji.x-19,obj_iji.y-4,obj_ijiflash);
+    tempid.image_index=5;
+    }
+}
+else{
+    global.ignorestation=60;
+    global.erasetop=0;
+    global.topmessage="Access denied; all ten posters required";
+    scr_sound("glo_crackfail");
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

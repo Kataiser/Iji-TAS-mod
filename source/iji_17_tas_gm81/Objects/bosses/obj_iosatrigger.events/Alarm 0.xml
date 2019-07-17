@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">repeat(50){
+tempid=instance_create(obj_iosa2doll.x+25,obj_iosa2doll.y,obj_scrapwhite);
+tempid.direction=random(180);
+tempid.speed=random(40)+5;
+tempid.nolimit=1;
+}
+repeat(30){
+tempid=instance_create(obj_iosa2doll.x+25,obj_iosa2doll.y,obj_shard);
+tempid.direction=random(180);
+tempid.speed=random(30)+5;
+tempid.nolimit=1;
+}
+global.viewyoffset=-60;
+global.viewxoffset=50;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_destroy();
+if (obj_iji.x&lt;3616){
+instance_create(3698,4328,obj_megaflash);
+tempid2=instance_create(3698,4328,obj_komatoassassin);
+tempid2.sprite_index=spr_komatoassassin_pose2left;
+tempid2.alarm[1]=45-global.difficulty*10;
+tempid2.angry=1;
+tempid2.special9=1;
+(instance_create(3698-37,4328+2,obj_chargetell)).tempid=tempid2.id;
+(instance_create(3698-12,4328+42,obj_chargetell)).tempid=tempid2.id;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

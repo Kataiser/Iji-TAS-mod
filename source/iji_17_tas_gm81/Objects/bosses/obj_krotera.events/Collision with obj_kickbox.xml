@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_kickbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.image_index==0 &amp;&amp; !rapidfirempfb &amp;&amp; !dead){
+    scr_sound("glo_kick");
+    ijikill=1;
+    script_execute(scr_shakescreen,1);
+    repeat(3){
+        tempid=instance_create(other.x+18,other.y+10,obj_scrapwhite);
+        tempid.speed=global.strengthlevel+2;
+        if (global.facing==0)
+            tempid.direction=random(180)-90;
+        else
+            tempid.direction=random(180)+90;
+        }
+    
+    if (global.strengthlevel&gt;=resistance){
+        hp-=1;
+        script_execute(scr_elitepain);
+        }
+    else{
+        global.erasetop=0;
+        global.topmessage="You need a Strength of "+string(resistance)+" to damage Elite Krotera by knockdown";
+        script_execute(scr_shakescreen,1);
+        //Stagger
+        if (hp&gt;0 &amp;&amp; (state==0 || state==1 || state==2 || state==3)){
+            alarm[5]=300;
+            takingpain=1;
+            swiping=0;
+            firingrocket=0;
+            firingrocket2=0;
+            firingmpfb=0;
+            rapidfirempfb=0;
+            state=3;
+            alarm[1]=0;
+            alarm[2]=10;
+            alarm[6]=0;
+            alarm[7]=0;
+            image_index=0;
+            if (facing==0)
+                sprite_index=spr_krotera_painleft;
+            if (facing==1)
+                sprite_index=spr_krotera_pain;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

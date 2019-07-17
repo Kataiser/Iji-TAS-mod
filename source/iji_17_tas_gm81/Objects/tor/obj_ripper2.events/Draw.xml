@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (heightdir==0){
+    heightcyc-=1;
+    height+=heightcyc/15;
+    if (heightcyc&lt;=0)
+        heightdir=1;
+    }
+else{
+    heightcyc+=1;
+    height-=heightcyc/20;
+    if (height&lt;=0.01){
+        instance_destroy();
+        exit;
+        }
+    }
+
+pen_size=1;
+draw_set_color(make_color_rgb(0,118,163));
+draw_primitive_begin(pr_trianglefan);
+for (i=0; i&lt;12; i+=1){
+    draw_vertex(x+point[i,0],y+(point[i,1]*height));
+    }
+draw_primitive_end();
+
+draw_set_color(make_color_rgb(0,191,243));
+draw_primitive_begin(pr_trianglefan);
+for (i=0; i&lt;12; i+=1){
+    draw_vertex(x+point[i,0],y+(point[i,1]*height*0.7));
+    }
+draw_primitive_end();
+
+draw_set_color(make_color_rgb(153,221,249));
+draw_primitive_begin(pr_trianglefan);
+for (i=0; i&lt;12; i+=1){
+    draw_vertex(x+point[i,0],y+(point[i,1]*height*0.4));
+    }
+draw_primitive_end();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

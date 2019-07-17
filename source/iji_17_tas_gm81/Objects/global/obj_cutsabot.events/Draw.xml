@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Restart/quit
+if (keyboard_check(vk_f2)){
+    f2restart+=1;
+    if (f2restart&gt;=20){
+        repeat(10)
+            sound_stop_all();
+        room_goto(rom_main);
+        }
+    }
+else
+    f2restart=0;
+if (keyboard_check(vk_f12)){
+    f12quit+=1;
+    if (f12quit&gt;=20){
+        sound_stop_all();
+        game_end();
+        }
+    }
+else
+    f12quit=0;
+
+//Fill pic with white
+if (cutfillwhite){
+    for (i=0;i&lt;5;i+=1){
+        for (j=0;j&lt;5;j+=1)
+            draw_sprite(spr_cutfillwhite,0,200+i*80,150+j*60);
+        }
+    }
+
+//Slowfade to black
+if (slowfade){
+    if (slowfadecyc&gt;-1)
+        slowfadecyc-=0.005;
+    if (!global.nogamma)
+        global.gamma=slowfadecyc;
+    }
+
+//Don't scroll first chat (ineffective?)
+if (firstscroll&lt;5)
+    firstscroll+=1;
+
+//Flash
+if (flash){
+    if (flashcyc&lt;1)
+        flashcyc+=1/30;
+    }
+else{
+    if (flashcyc&gt;0)
+        flashcyc-=1/30;
+    }
+if (prevflashcyc!=0 || flashcyc!=0){
+    if (!global.nogamma)
+        global.gamma=flashcyc;
+    }
+prevflashcyc=flashcyc;
+
+//If the image scrolls (or special case), use black overlays
+if (overlays || edgefill){
+    draw_sprite_stretched(spr_block,0,x+xadjust,y+yadjust-300,400,300);
+    draw_sprite_stretched(spr_block,0,x+xadjust,y+yadjust+300,400,300);
+    }
+
+//Draw the alpha block
+if (fade==1 || fade==2)
+    draw_sprite_stretched_ext(spr_block,0,x+xadjust,y+yadjust,400,300,c_white,alpha);
+
+//Fade to black
+if (fade==1){
+    if (nextppe){
+        with (obj_ppe)
+            instance_destroy();
+        }
+    alpha+=0.2;
+    if (alpha&gt;=1){
+        fade=2;
+        if (endnow)
+            scr_jumpfromcut();
+        else{
+            background_index[0]=nextbg;
+            if (scrolling){
+                scrollcyc=-100;
+                overlays=1;
+                }
+            else{
+                scrollcyc=0;
+                overlays=0;
+                }
+            scrolldelay=0;
+            }
+        }
+    }
+//Fade in from black
+else if (fade==2){
+    alpha-=0.2;
+    if (alpha&lt;=0){
+        fade=0;
+        ready=1;
+        if (nextppe)
+            instance_create(x+xadjust,y+yadjust,obj_ppe);
+        }
+    }
+
+//Scrolling image
+if (scrolling==1){
+    scrolldelay+=1;
+    if (scrolldelay&gt;=30 &amp;&amp; scrollcyc&lt;0)
+        scrollcyc+=2;
+    }
+background_y[0]=150+scrollcyc;
+
+//Draw credits
+if (credits){
+if (coff&gt;-28*121) //Number of rows
+    coff-=coffspeed;
+draw_set_font(global.fontwhite);
+draw_set_color(c_white);
+draw_text_ext(462,coff,credtext,28,400);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

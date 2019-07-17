@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Choose target
+if (targetrival==0){
+    if (targetiji&gt;0)
+        target=obj_iji.id;
+    else{
+        angry=0;
+        alarm[5]=300;
+        }
+    }
+if (!instance_exists(target)){
+angry=0;
+targetrival=0;
+if (targetiji&gt;0 &amp;&amp; target!=obj_iji.id){
+    if (!angry)
+    alarm[2]=1;
+    angry=1;
+    alarm[5]=300;
+    target=obj_iji.id;
+    }
+}
+
+randomstate=random(1);
+//Roam
+if (!angry){
+    driving=0;
+    state=0;
+    alarm[2]=60+random(90);
+    if (randomstate&gt;0.5)
+        facing=0;
+    else
+        facing=1;
+    }
+//Angry
+else{
+    alarm[2]=20+random(20);
+    driving=1;
+    if (x&gt;target.x){
+        if (place_meeting(x-16,y-24,obj_block) &amp;&amp; !place_meeting(x-16,y-24,obj_sloper))
+            facing=1;
+        else
+            facing=0;
+        }
+    else{
+        if (place_meeting(x+16,y-24,obj_block) &amp;&amp; !place_meeting(x+16,y-24,obj_slopel))
+            facing=0;
+        else
+            facing=1;
+            }
+    if (randomstate&lt;0.5 &amp;&amp; abs(y-obj_iji.y)&lt;100)
+        state=1;
+    else
+        state=0;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

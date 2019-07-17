@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sprite>
+  <origin x="45" y="23"/>
+  <mask>
+    <separate>true</separate>
+    <shape>RECTANGLE</shape>
+    <bounds alphaTolerance="0" mode="MANUAL">
+      <left>20</left>
+      <right>85</right>
+      <top>23</top>
+      <bottom>93</bottom>
+    </bounds>
+  </mask>
+  <preload>true</preload>
+  <smoothEdges>false</smoothEdges>
+  <transparent>false</transparent>
+</sprite>

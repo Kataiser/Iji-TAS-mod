@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">inputs_file = file_text_open_read(tas_file_name);
+line = 0;
+
+repeat (step) {
+    scr_nextline();
+    
+    if (string_count("speed", current_inputs) == 1) {
+        room_speed = num_in_inputs;
+        rm_speed = num_in_inputs;
+        scr_nextline();
+    }
+}
+
+file_text_close(inputs_file);
+step += 1;
+
+handle = false;
+scr_executecommand("escape", vk_escape);
+scr_executecommand("enter", vk_enter);
+scr_executecommand("up", vk_up);
+scr_executecommand("down", vk_down);
+scr_executecommand("left", vk_left);
+scr_executecommand("right", vk_right);
+scr_executecommand("z", ord('Z'));
+scr_executecommand("x", ord('X'));
+scr_executecommand("c", ord('C'));
+scr_executecommand("a", ord('A'));
+scr_executecommand("s", ord('S'));
+scr_executecommand("d", ord('D'));
+scr_executecommand("q", ord('Q'));
+scr_executecommand("one", ord('1'));
+scr_executecommand("two", ord('2'));
+scr_executecommand("three", ord('3'));
+scr_executecommand("four", ord('4'));
+scr_executecommand("five", ord('5'));
+scr_executecommand("six", ord('6'));
+scr_executecommand("seven", ord('7'));
+scr_executecommand("eight", ord('8'));
+scr_executecommand("nine", ord('9'));
+if (handle) {io_handle();}
+
+if (string_count("save: ", current_inputs) == 1) {
+    state_filename_save = string_replace(current_inputs, "save: ", "");
+    obj_taspause.most_recent_savestate = state_filename_save
+    io_clear();
+    alarm[0] = 1;
+    game_save("savestates\" + state_filename_save + ".state");
+    // yeah this eats the frame
+}
+else {alarm[0] = num_in_inputs;}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

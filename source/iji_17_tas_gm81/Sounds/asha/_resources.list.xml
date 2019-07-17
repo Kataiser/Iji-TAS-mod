@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_ash_ambient1" type="RESOURCE"/>
+  <resource name="snd_ash_ambient2" type="RESOURCE"/>
+  <resource name="snd_ash_ambient3" type="RESOURCE"/>
+  <resource name="snd_ash_ambient4" type="RESOURCE"/>
+  <resource name="snd_ash_pain" type="RESOURCE"/>
+  <resource name="snd_ash_death" type="RESOURCE"/>
+  <resource name="snd_ash_win2" type="RESOURCE"/>
+  <resource name="snd_ash_win" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bg_901" type="RESOURCE"/>
+  <resource name="bg_x01" type="RESOURCE"/>
+  <resource name="bg_x02" type="RESOURCE"/>
+  <resource name="bg_x03" type="RESOURCE"/>
+  <resource name="bg_x04" type="RESOURCE"/>
+  <resource name="bg_x05" type="RESOURCE"/>
+  <resource name="bg_x06" type="RESOURCE"/>
+  <resource name="bg_x07" type="RESOURCE"/>
+  <resource name="bg_x08" type="RESOURCE"/>
+  <resource name="bg_x09" type="RESOURCE"/>
+  <resource name="bg_x10" type="RESOURCE"/>
+  <resource name="bg_x11" type="RESOURCE"/>
+  <resource name="bg_x12" type="RESOURCE"/>
+  <resource name="bg_x13" type="RESOURCE"/>
+  <resource name="bg_x14" type="RESOURCE"/>
+  <resource name="bg_x15" type="RESOURCE"/>
+  <resource name="bg_x16" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_mpfbexplosion">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_storeseed();
+
+//Nanodust
+if (other.dud==0){
+    if (x&gt;other.x)
+        scr_nanodust(x+6,y+32,1);
+    else
+        scr_nanodust(x+6,y+32,0);
+    script_execute(scr_nanoexplosion,6,25);
+    repeat(10){
+        sound_stop(snd_sco_find1);
+        sound_stop(snd_sco_find2);
+        sound_stop(snd_sco_death1);
+        sound_stop(snd_sco_death2);
+        }
+    instance_create(x+6,y+18,obj_xp1);
+    if (cracked)
+            script_execute(scr_dropammo,6,15,1,1);
+    if (other.ijis){
+        ijikill=1;
+        if (!killawarded){
+            global.kills+=1;
+            global.killdata[killdataid]=5;
+            if (other.banana &amp;&amp; killtype&lt;8)
+                global.killdata[killdataid]=8;
+            killawarded=1;
+            }
+        }
+    else
+        ijikill=0;
+    scr_sound("tur_appear");
+    instance_destroy();
+    }
+
+scr_restoreseed();
+    
+/*
+if (other.dud==0){
+if (angry==0){
+    tempid=instance_create(x+6,y+8,obj_visionchecke)
+    tempid.direction=0;
+    tempid.speed=16;
+    tempid=instance_create(x+6,y+8,obj_visionchecke)
+    tempid.direction=180;
+    tempid.speed=16;
+    }
+    if (other.ijis)
+        ijikill=1;
+    else
+        ijikill=0;
+    global.truce=0;
+    targetiji=300;
+    hp+=-(3*(1+(global.attacklevel/10)));
+    if (hp&lt;=0 &amp;&amp; ijikill &amp;&amp; killtype&lt;5)
+        killtype=5;
+    if (other.banana &amp;&amp; hp&lt;=0 &amp;&amp; ijikill &amp;&amp; killtype&lt;8)
+        killtype=8;
+    force=22-(distance_to_object(obj_explosioncenter)/10);
+    if ((bbox_left+(bbox_right-bbox_left)/2)) &lt; (other.bbox_left+((other.bbox_right-other.bbox_left)/2))
+        script_execute(scr_enemyknockdown,1,force);
+    else
+        script_execute(scr_enemyknockdown,2,force);
+    }
+*/
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

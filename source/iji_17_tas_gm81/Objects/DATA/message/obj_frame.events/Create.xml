@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (room==rom_cut){
+    if (obj_cutsabot.firstscroll==5)
+    y=ystart+obj_chatmessagetext.firstscroll*48;
+    image_single=1;
+    if (x==0)
+        image_single=0;
+    if (x==792)
+        image_single=2;
+    }
+
+else{
+    if (obj_sabot.firstscroll==5)
+    y=ystart+obj_messagetext.firstscroll*48;
+    image_single=1;
+    if (x==obj_shakescreen.x-400)
+        image_single=0;
+    if (x==obj_shakescreen.x+392)
+        image_single=2;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

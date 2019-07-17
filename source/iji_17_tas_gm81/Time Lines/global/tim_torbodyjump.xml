@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="0">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+obj_torbody.vspeed=-25;
+obj_torbody.sprite_index=spr_torbody_jump;
+obj_torbody.image_single=0;
+obj_torbody.sparkcyc=10;
+scr_sound("exp_pew");
+scr_sound("tor_emote2");</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="20">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_torbody.image_single=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="22">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_torbody.image_single=2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="24">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_torbody.image_single=3;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="35">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_torbody.image_single=1;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="36">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_torbody.image_single=4;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="37">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+scr_sound("exp_boss");
+scr_sound("tor_emote3");</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="41">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+obj_torbody.depth=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="43">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">repeat(30)
+    instance_create(obj_torbody.x+55,obj_torbody.y+42,obj_fadeshape2);
+obj_torbody.depth=-1000015;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="45">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_fadeshape2)
+    instance_destroy();
+(instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+obj_torbody.depth=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="47">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">repeat(30)
+    (instance_create(obj_torbody.x+55,obj_torbody.y+42,obj_fadeshape2)).alarm[0]=1;;
+obj_torbody.depth=-1000015;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="49">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_fadeshape2)
+    instance_destroy();
+instance_create(x,y,obj_torbodyblanket);
+obj_torbody.depth=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

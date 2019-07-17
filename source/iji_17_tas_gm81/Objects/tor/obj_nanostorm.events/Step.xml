@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!follow &amp;&amp; speed&gt;0){
+    speed-=1;
+    if (speed&lt;0)
+        speed=0;
+    }
+if (follow){
+    if (speed&lt;25)
+    speed+=1;
+    }
+
+if (x&gt;targetx-15 &amp;&amp; x&lt;targetx+15 &amp;&amp; y&gt;targety-15 &amp;&amp; y&lt;targety+15){
+    instance_destroy();
+    instance_create(x,y,obj_stormflash);
+    }
+
+cyc+=1;
+if (cyc==3){
+cyc=0;
+(instance_create(x,y,obj_glassspark)).depth=1;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

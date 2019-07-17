@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_herogenerator">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_heroexplo();
+instance_destroy();
+with (other){
+    hp-=1;
+    obj_herosabot.fgrf=10;
+    obj_herosabot.ultrashake=5;
+    if (hp==0){
+        if (obj_herosabot.level==7){
+            obj_herosabot.sentineldestroyed=1;
+            obj_herosabot.screenflash=250;
+            repeat(50)
+                instance_create(400-(obj_herosabot.viewx/10)-32+random(64),300-(obj_herosabot.viewy/10)+random(128),obj_heroexplo2);
+            }
+        instance_destroy();
+        obj_herosabot.fgrf=80;
+        obj_herosabot.ultrashake=15;
+        scr_heroexplo();
+        scr_heroexplo(-16,-16);
+        scr_heroexplo(-16,+16);
+        scr_heroexplo(+16,-16);
+        scr_heroexplo(+16,+16);
+        with (obj_herobarrier)
+            instance_destroy();
+        with (obj_herosabot){
+            for (i=0; i&lt;15; i+=1){
+                for (j=0; j&lt;15; j+=1){
+                    if (levelarray[i,j]=="6")
+                        levelarray[i,j]="0";
+                    }
+                }
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

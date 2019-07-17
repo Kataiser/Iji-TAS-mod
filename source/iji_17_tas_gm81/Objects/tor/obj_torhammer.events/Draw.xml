@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">cyc+=1;
+if (cyc==1){
+    obj_iji.cannotpause=1;
+    room_speed=10;
+    obj_tor.increasespeed=1;
+    obj_tortrigger.alarm[4]=30;
+    obj_tortrigger.alarm[5]=38;
+    obj_iji.phantomshove=16;
+    }
+if (cyc&gt;=6)
+    instance_destroy();
+if (cyc&lt;5){
+    with (obj_tor)
+        scr_tor_fire();
+    }
+
+draw_set_color(c_white);
+if (cyc==0 || cyc==2 || cyc==4 || cyc==6){
+    draw_rectangle(100,100,1400,1000,0);
+    }
+else{
+    draw_primitive_begin(pr_trianglefan);
+    draw_vertex(x-69,y+217);
+    draw_vertex(x-76,y+79);
+    draw_vertex(x-87,y+126);
+    draw_vertex(x-113,y+71);
+    draw_vertex(x-110,y+126);
+    draw_vertex(x-209,y+68);
+    draw_vertex(x-153,y+127);
+    draw_vertex(x-358,y+70);
+    draw_vertex(x-154,y+178);
+    draw_vertex(x-154,y+292);
+    draw_vertex(x-358,y+400);
+    draw_vertex(x-153,y+342);
+    draw_vertex(x-209,y+402);
+    draw_vertex(x-110,y+344);
+    draw_vertex(x-113,y+399);
+    draw_vertex(x-87,y+344);
+    draw_vertex(x-76,y+391);
+    draw_vertex(x-69,y+253);
+    draw_primitive_end();
+    draw_sprite(spr_torhammer,1,obj_tor.x-101,obj_tor.y+235);
+    for (i=0; i&lt;30; i+=1)
+        draw_sprite(spr_torhammer,0,obj_tor.x-133-(i*32),obj_tor.y+235);
+    }
+
+//Strike Iji
+if (obj_iji.x&lt;obj_tor.x &amp;&amp; obj_iji.bbox_bottom&gt;obj_tor.y+159 &amp;&amp; obj_iji.bbox_top&lt;obj_tor.y+311 &amp;&amp; instance_number(obj_ougi)==0){
+    obj_iji.cannotpause=1;
+    obj_tortrigger.alarm[4]=0;
+    room_speed=10;
+    obj_tor.alarm[6]=20;
+    obj_tor.alarm[7]=130;
+    obj_tortrigger.alarm[5]=22;
+    obj_tor.increasespeed=0;
+    obj_iji.fatality=1;
+    with (obj_weapon1) instance_destroy();
+    with (obj_weapon2) instance_destroy();
+    with (obj_weapon3) instance_destroy();
+    with (obj_weapon4) instance_destroy();
+    with (obj_weapon5) instance_destroy();
+    with (obj_weapon6) instance_destroy();
+    with (obj_weapon7) instance_destroy();
+    with (obj_weapon8) instance_destroy();
+    with (obj_reloader) instance_destroy();
+    global.healthlevel=0;
+    global.attacklevel=0;
+    global.assimilatelevel=0;
+    global.strengthlevel=0;
+    global.cracklevel=0;
+    global.tasenlevel=0;
+    global.komatolevel=0;
+    global.jumplevel=0;
+    global.armorlevel=0;
+    global.ammo2=0;
+    global.ammo3=0;
+    global.ammo4=0;
+    global.ammo6=0;
+    global.ammo7=0;
+    global.ammo8=0;
+    global.hp=0;
+    global.armor=0;
+    global.bosshint=1;
+    global.level=0;
+    global.points=0;
+    global.xp=0;
+    obj_hud.dontdrawweapon=1;
+    obj_hud.obliterated=1;
+    scr_stopijivoice();
+    with (obj_sabot)
+        scr_music("mus_darkstroke");
+    with (obj_iji){
+        cenx=x-14;
+        ceny=y+6;
+        for (i=0; i&lt;50; i+=1){
+            (instance_create(cenx,ceny+i,obj_ijimist)).image_single=i;
+            }
+        instance_destroy();
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

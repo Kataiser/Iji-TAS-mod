@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tasenshredder">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.hp&gt;0 &amp;&amp; !takingpain &amp;&amp; !shredder){
+    if (abs(other.hspeed)&lt;8){
+        global.armor-=6/global.armorlevel;
+        instance_create(bbox_left+random(bbox_right-bbox_left),bbox_top+random(bbox_bottom-bbox_top),obj_ijiblood);
+        }
+    else if (other.hspeed&lt;0){
+        global.hp-=1;
+        global.damage+=1;
+        scr_sound("iji_swiped");
+        scr_knockdown(1,abs(other.hspeed)-2);
+        }
+    else{
+        global.hp-=1;
+        global.damage+=1;
+        scr_sound("iji_swiped");
+        scr_knockdown(2,abs(other.hspeed)-2);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

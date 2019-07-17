@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_liftoff" type="RESOURCE"/>
+  <resource name="spr_hammershot" type="RESOURCE"/>
+  <resource name="spr_crumble81" type="RESOURCE"/>
+  <resource name="spr_trapmine" type="RESOURCE"/>
+  <resource name="spr_sec8egg" type="RESOURCE"/>
+  <resource name="spr_dan_sit" type="RESOURCE"/>
+  <resource name="spr_dan_hold" type="RESOURCE"/>
+  <resource name="spr_dan_fall" type="RESOURCE"/>
+  <resource name="spr_sec8can" type="RESOURCE"/>
+  <resource name="spr_sec8can2" type="RESOURCE"/>
+  <resource name="spr_sec8can3" type="RESOURCE"/>
+</resources>

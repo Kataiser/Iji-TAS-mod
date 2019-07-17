@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Loadmusic is at the bottom because of Sector changing
+global.gamma=0;
+global.gammagreen=0;
+global.gammared=0;
+global.gammablue=0;
+
+alarm[0]=1;
+alarm[4]=2;
+instance_create(0,0,obj_gamma);
+
+//ribbons
+if (global.numribbons&gt;global.maxribbons)
+    global.maxribbons=global.numribbons;
+
+//sudden death sector completions
+if (global.suddendeath==1){
+    if (global.sector==1)
+        global.sds1=1;
+    else if (global.sector==2)
+        global.sds2=1;
+    else if (global.sector==3)
+        global.sds3=1;
+    else if (global.sector==4)
+        global.sds4=1;
+    else if (global.sector==5)
+        global.sds5=1;
+    else if (global.sector==6)
+        global.sds6=1;
+    else if (global.sector==7)
+        global.sds7=1;
+    else if (global.sector==8)
+        global.sds8=1;
+    else if (global.sector==9)
+        global.sds9=1;
+    else if (global.sector==0)
+        global.sds10=1;
+    }
+
+repeat(15)
+    (instance_create(random(800),156,obj_clearpix)).direction=90;
+repeat(15)
+    (instance_create(random(800),444,obj_clearpix)).direction=270;
+with (obj_clearpix)
+    instance_create(x,y,obj_clearpixtrail);
+global.sector+=1;
+if (global.sector==10 || global.wty)
+    global.sector=0;
+global.totkills+=global.kills;
+global.totdamage+=global.damage;
+global.totcracks+=global.cracks;
+global.totfails+=global.fails;
+if (global.totkills&gt;999)
+    global.totkills=999;
+if (global.totdamage&gt;999)
+    global.totdamage=999;
+if (global.totcracks&gt;999)
+    global.totcracks=999;
+if (global.totfails&gt;999)
+    global.totfails=999;
+temptier=0;
+tier=0;
+
+//save keys
+scr_readsum();
+if (!wrongsum)
+    scr_save(0);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

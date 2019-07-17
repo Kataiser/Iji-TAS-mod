@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (electro){
+    obj_sabot.hammerflash=1;
+    obj_sabot.flash=random(0.8);
+    scr_shakescreen(2);
+    instance_create(x+4,y-17,obj_nanospark);
+    }
+if ((image_index&gt;5 || image_single==7) &amp;&amp; toasted &amp;&amp; sprite_index==spr_dan_fall){
+    cyc+=1;
+    if (cyc==2){
+        cyc=0;
+        instance_create(x+random(56)-43,y+random(6)+32,obj_smoke);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

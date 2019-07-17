@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_block">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_sound("glo_debris");
+move_bounce_solid(1);
+image_speed*=0.6;
+speed*=0.6;
+
+if (speed&lt;2.5 &amp;&amp; !place_free(x,y+2)){
+    speed=0;
+    move_contact_solid(270,-1);
+    image_speed=0;
+    gravity=0;
+    }
+
+if (other.ismeta){
+with (other)
+script_execute(scr_metabreak,8);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

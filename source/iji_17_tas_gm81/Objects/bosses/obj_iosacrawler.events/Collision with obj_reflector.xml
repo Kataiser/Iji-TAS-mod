@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_reflector">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (other)
+    scr_reflectorexplo();
+
+/*
+if (!iji &amp;&amp; other.image_index&lt;=1){
+    scr_sound("glo_reflect");
+    if (instance_number(obj_thorspark)&lt;20){
+        repeat(5){
+            tempid=instance_create(x,y,obj_thorspark);
+            tempid.speed=random(2)+2;
+            tempid.gravity=0.2;
+            }
+        }
+    if (!cling){
+        if (x&lt;other.x)
+            facing=0;
+        else
+            facing=1;
+        }
+    else{
+        if (dir==0 &amp;&amp; x&lt;other.x){
+            dir=2;
+            facing=1-facing;
+            }
+        else if (dir==2 &amp;&amp; x&gt;other.x){
+            dir=0;
+            facing=1-facing;
+            }
+        else if (dir==3 &amp;&amp; y&lt;other.y){
+            dir=1;
+            facing=1-facing;
+            }
+        else if (dir==1 &amp;&amp; y&gt;other.y){
+            dir=3;
+            facing=1-facing;
+            }
+        }
+    if (facing==0)
+        image_speed=1;
+    else
+        image_speed=-1;
+    }
+*/</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_kickkey" type="RESOURCE"/>
+  <resource name="scr_usekey" type="RESOURCE"/>
+  <resource name="scr_firekey" type="RESOURCE"/>
+  <resource name="scr_prevweap" type="RESOURCE"/>
+  <resource name="scr_specialweap" type="RESOURCE"/>
+  <resource name="scr_nextweap" type="RESOURCE"/>
+  <resource name="scr_pressfirekey" type="RESOURCE"/>
+  <resource name="scr_enterkey" type="RESOURCE"/>
+</resources>

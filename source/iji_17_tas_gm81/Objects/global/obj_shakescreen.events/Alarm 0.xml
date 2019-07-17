@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Activated duplicate checkpoint in sec7 and secX
+instance_activate_object(obj_checkpoint);
+with (obj_checkpoint){
+    if (tag==1){
+        instance_destroy();
+        instance_create(x,y,obj_dummycp);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">thored=0;
+plasmaed=0;
+cfised=0;
+
+if (laughcool&gt;0)
+    laughcool-=1;
+if (tauntwait&gt;0)
+    tauntwait-=1;
+
+//"WIN"
+if (obj_sabot.gameover &amp;&amp; !winquote &amp;&amp; hp&gt;0){
+    winquote=1;
+    win=30;
+    }
+if (win&gt;0)
+    win-=1;
+if (win==1)
+    scr_sound("ash_win2");
+
+//Plasma vortex
+if (plasmavortex){
+    if (vspeed&gt;=0){
+        vortexcyc+=1;
+        gravity=0.1;
+        }
+    else{
+        pvicyc+=1;
+        if (pvicyc==2){
+            pvicyc=0;
+            if (image_single==0)
+                image_single=1;
+            else
+                image_single=0;
+            }
+        }
+    if (vortexcyc==2){
+        (instance_create(x-54,y+8,obj_plasmavortex)).dir=7;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==4){
+        (instance_create(x-36,y+48,obj_plasmavortex)).dir=6;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==6){
+        (instance_create(x+8,y+62,obj_plasmavortex)).dir=5;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==8){
+        (instance_create(x+50,y+40,obj_plasmavortex)).dir=4;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==10){
+        (instance_create(x+74,y-12,obj_plasmavortex)).dir=3;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==12){
+        (instance_create(x+50,y-66,obj_plasmavortex)).dir=2;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==14){
+        (instance_create(x-10,y-80,obj_plasmavortex)).dir=1;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==16){
+        (instance_create(x-70,y-60,obj_plasmavortex)).dir=8;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==18){
+        (instance_create(x-84,y,obj_plasmavortex)).dir=7;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==20){
+        (instance_create(x-68,y+60,obj_plasmavortex)).dir=6;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==22){
+        (instance_create(x-4,y+84,obj_plasmavortex)).dir=5;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==24){
+        (instance_create(x+60,y+60,obj_plasmavortex)).dir=4;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==26){
+        (instance_create(x+80,y,obj_plasmavortex)).dir=3;
+        scr_shakescreen(3);
+        scr_sound("wea_plas");
+        }
+    if (vortexcyc==3)
+        image_single=2;
+    if (vortexcyc==5)
+        image_single=3;
+    if (vortexcyc==7)
+        image_single=4;
+    if (vortexcyc==9)
+        image_single=5;
+    if (vortexcyc==11)
+        image_single=6;
+    if (vortexcyc==13)
+        image_single=7;
+    if (vortexcyc==15)
+        image_single=8;
+    if (vortexcyc==17)
+        image_single=9;
+    if (vortexcyc==19)
+        image_single=10;
+    if (vortexcyc==21)
+        image_single=11;
+    if (vortexcyc==23)
+        image_single=12;
+    if (vortexcyc==25)
+        image_single=13;
+    if (vortexcyc==27){
+        hspeed=0;
+        vspeed=0;
+        plasmavortex=0;
+        perform=0;
+        fakeperform=0;
+        rageperform=0;
+        scr_assassinpain(1);
+        alarm[2]=30-global.difficulty*10;
+        }
+    }
+
+//Megasmash
+if (performsmash==1){
+if (vspeed&lt;0){
+    if (image_single==0)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (vspeed&gt;0){
+    vspeed=0;
+    gravity=0;
+    gosmash=1;
+    scr_sound("glo_swipe");
+    }
+if (gosmash)
+    smashcyc+=1;
+if (smashcyc==1){
+    image_single=2;
+    y+=10;
+    }
+if (smashcyc==2){
+    sprite_index=spr_asha_smash2;
+    image_single=0;
+    y+=30;
+    }
+if (smashcyc==3){
+    image_single=1;
+    y+=50;
+    }
+if (smashcyc==4){
+    image_single=2;
+    y+=80;
+    }
+if (smashcyc==5){
+    scr_sound("exp_turret");
+    scr_sound("exp_mpfb");
+    scr_shakescreen(3);
+    visible=0;
+    instance_create(x,y-128,obj_megaflash);
+    x=obj_sabot.x;
+    y=obj_sabot.y;
+    gravity=0;
+    vspeed=0;
+    megasmash=10;
+    performsmash=0;
+    alarm[2]=30;
+    gosmash=0;
+    smashcyc=0;
+    obj_asha2safe.visible=0;
+    if (global.specialbake==0){
+        repeat(80)
+            instance_create(smashx+random(384)-56,smashy-random(32),obj_ashadots);
+        }
+    with (obj_ashadots){
+        speed=random(15);
+        direction=point_direction(x,y,6176,3296);
+        direction+=180;
+        vspeed-=random(50);
+        }
+    }
+}
+
+//Dish out megasmashes
+if (megasmash&gt;0)
+    megasmash-=1;
+if (((megasmash==9 || megasmash==6 || megasmash==3) &amp;&amp; global.specialbake==0) || megasmash==9){
+    for (i=0; i&lt;9; i+=1)
+        instance_create(smashx+i*32,smashy,obj_ashasmash);
+    if (obj_iji.x&gt;=6016-6 &amp;&amp; obj_iji.x&lt;6336 &amp;&amp; obj_iji.y&lt;smashy &amp;&amp; obj_iji.y&gt;smashy-160){
+        with (obj_iji){ //DAMAGE
+            if (!takingpain &amp;&amp; !recovering){
+                global.hp-=3;
+                global.damage+=3;
+                scr_knockdown(1,2);
+                if (sprite_index==spr_knockdown || sprite_index==spr_knockdownleft)
+                    vspeed=-20;
+                }
+            }
+        }
+    //Disruptor
+    with (obj_disruptor){
+        if (x+60&gt;=6016 &amp;&amp; x-60&lt;6336 &amp;&amp; y-60&lt;obj_asha2.smashy &amp;&amp; y+60&gt;obj_asha2.smashy-160)
+            scr_disruptorexplo();
+        }
+    //Reflector
+    with (obj_reflector){
+        if (x+60&gt;=6016 &amp;&amp; x-60&lt;6336 &amp;&amp; y-60&lt;obj_asha2.smashy &amp;&amp; y+60&gt;obj_asha2.smashy-160)
+            scr_reflectorexplo();
+        }
+    //Barrier
+    with (obj_shockbarrier){
+        if (x+16&gt;=6016 &amp;&amp; x-16&lt;6336 &amp;&amp; y-32&lt;obj_asha2.smashy &amp;&amp; y+32&gt;obj_asha2.smashy-160)
+            scr_barrierexplo();
+        }
+    }
+
+//Avoid elec
+if (hp&gt;0 &amp;&amp; visible &amp;&amp; y&gt;3040 &amp;&amp; sprite_index!=spr_asha_smash2)
+    scr_assassinpain(1);
+
+//Execute upslash
+if (sprite_index==spr_asha_upslash &amp;&amp; visible){
+    upslashwait+=1;
+    if (upslashwait&gt;60 &amp;&amp; !upslashing){
+        upslashing=1;
+        alarm[1]=1;
+        }
+    if (obj_iji.y&gt;y-32 &amp;&amp; !upslashing){
+        upslashing=1;
+        alarm[1]=1;
+        }
+    if (distance_to_object(obj_iji)&lt;64 &amp;&amp; !upslashing){
+        upslashing=1;
+        alarm[0]=1;
+        alarm[1]=5;
+        }
+    }
+
+//Upercut box
+if (sprite_index==spr_asha_uppercut &amp;&amp; image_index==2)
+    (instance_create(x,y-45,obj_assassin_uppercut)).facing=1;
+if (sprite_index==spr_asha_uppercutleft &amp;&amp; image_index==2)
+    instance_create(x-50,y-45,obj_assassin_uppercut);
+
+//Backstab box
+if (sprite_index==spr_asha_backstab &amp;&amp; image_index==1)
+    (instance_create(x-10,y-5,obj_assassin_backstab)).facing=1;
+if (sprite_index==spr_asha_backstableft &amp;&amp; image_index==1)
+    instance_create(x-65,y-5,obj_assassin_backstab);
+
+//Upslash box
+if (sprite_index==spr_asha_upslash &amp;&amp; image_index==1)
+    instance_create(x-35,y-64,obj_assassin_upslash);
+
+//Downstab recovery
+if(!place_free(x,y) &amp;&amp; sprite_index==spr_asha_downstab &amp;&amp; visible){
+    alarm[2]=2;
+    instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+    visible=0;
+    gravity=0;
+    vspeed=0;
+    sprite_index=spr_asha_pose1;
+    }
+if (vspeed&gt;22)
+    vspeed=22;
+if (visible &amp;&amp; sprite_index==spr_asha_downstab &amp;&amp; y&gt;obj_iji.y+64)
+    scr_assassinpain(1);
+
+//Weapon sparks
+if (visible &amp;&amp; instance_number(obj_asha2bar)==1){
+smoke+=1;
+if (smoke==5){
+    smoke=0;
+    if (sprite_index==spr_asha_pose1)
+        instance_create(x+65,y+10,obj_shockemit);
+    if (sprite_index==spr_asha_pose1left)
+        instance_create(x-40,y+10,obj_shockemit);
+    if (sprite_index==spr_asha_pose2)
+        instance_create(x+45,y+42,obj_shockemit);
+    if (sprite_index==spr_asha_pose2left)
+        instance_create(x-12,y+42,obj_shockemit);
+    }
+}
+
+//Change of plans
+if (sprite_index==spr_asha_uppercut || sprite_index==spr_asha_uppercutleft || sprite_index==spr_asha_backstab || sprite_index==spr_asha_backstableft){
+    if (visible &amp;&amp; distance_to_object(obj_iji)&gt;100){
+        scr_assassinpain(1);
+        alarm[2]=2;
+        }
+    if (visible &amp;&amp; ((sprite_index==spr_asha_uppercut &amp;&amp; (obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2 &lt; bbox_left+(bbox_right-bbox_left)/2+10)) || (sprite_index==spr_asha_uppercutleft &amp;&amp; (obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2 &gt; bbox_left+(bbox_right-bbox_left)/2-10)))){
+        if (alarm[1]&gt;6){
+            alarm[1]=5;
+            alarm[0]=2;
+            }
+        }
+    if (visible &amp;&amp; ((sprite_index==spr_asha_backstab &amp;&amp; (obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2 &lt; bbox_left+(bbox_right-bbox_left)/2+10)) || (sprite_index==spr_asha_backstableft &amp;&amp; (obj_iji.bbox_left+(obj_iji.bbox_right-obj_iji.bbox_left)/2 &gt; bbox_left+(bbox_right-bbox_left)/2-10)))){
+        if (alarm[1]&gt;6){
+            alarm[1]=4;
+            alarm[0]=2;
+            }
+        }
+    }
+if (sprite_index==spr_asha_pose1 || sprite_index==spr_asha_pose1left || sprite_index==spr_asha_pose1fire || sprite_index==spr_asha_pose1fireleft || sprite_index==spr_asha_pose2 || sprite_index==spr_asha_pose2left){
+    if (visible &amp;&amp; distance_to_object(obj_iji)&lt;30){
+        scr_assassinpain(1);
+        alarm[2]=2;
+        }
+    }
+
+if ((sprite_index==spr_asha_wall || sprite_index==spr_asha_wallleft || (sprite_index==spr_asha_vortex &amp;&amp; (image_single==0 || image_single==1))) &amp;&amp; visible){
+chargesoundcyc+=1;
+if (chargesoundcyc&gt;=5){
+    chargesoundcyc=0;
+    scr_sound("tor_gather_q03");
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

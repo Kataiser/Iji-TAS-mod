@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="0">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (iosa){
+    if (hp&gt;maxhp*0.5)
+        scr_sound("ios_ambient5");
+    else
+        scr_sound("ios_ambient3");
+    }
+else
+    scr_sound("ann_destroy");
+state=10;
+alarm[0]=0;
+alarm[2]=0;
+alarm[5]=0;
+alarm[6]=0;
+if (!iosa)
+    angry=0;
+goback=0;
+destroy=1;
+electrocute=0;
+targetiji=0;
+targetrival=0;
+reloading=0;
+if (iosa){
+    if (facing==0)
+        sprite_index=spr_iosa_destroyleft;
+    else
+        sprite_index=spr_iosa_destroy;
+    }
+else{
+    if (facing==0)
+        sprite_index=spr_komatoannihilator_destroyleft;
+    else
+        sprite_index=spr_komatoannihilator_destroy;
+    }
+image_single=0;
+targetcracked=destroytarget.cracked;
+if (targettype==3){
+    if (destroytarget.facing==0)
+        (instance_create(destroytarget.x+5,destroytarget.y,obj_tasenelite_weapon)).sprite_index=spr_tasenelite_weaponleft;
+    else
+        instance_create(destroytarget.x+30,destroytarget.y,obj_tasenelite_weapon);
+    }
+if (targettype==0){
+    if (instance_number(obj_cracktext)==1)
+        scr_crackfail();
+    global.ignoreall=1;
+    obj_iji.alarm[0]=0;
+    obj_iji.alarm[1]=0;
+    obj_iji.alarm[3]=0;
+    obj_iji.alarm[4]=0;
+    obj_iji.alarm[5]=0;
+    obj_iji.alarm[6]=0;
+    obj_iji.alarm[7]=0;
+    obj_iji.takingpain=1;
+    obj_iji.ignorephysics=1;
+    obj_iji.invisible=1;
+    obj_iji.bedestroyed=1;
+    obj_iji.visible=0;
+    obj_iji.speed=0;
+    obj_iji.gravity=0;
+    obj_iji.sprite_index=spr_basic;
+
+    if (facing==0){
+        obj_iji.x=x-27;
+        obj_iji.y=y+56;
+        global.facing=1;
+        }
+    else{
+        obj_iji.x=x+123;
+        obj_iji.y=y+60;
+        global.facing=0;
+        }
+    }
+else{
+    with (destroytarget)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="2">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_single=1;
+if (targettype==0){
+    if (facing==0){
+        obj_iji.x=x-30;
+        obj_iji.y=y+37;
+        }
+    else{
+        obj_iji.x=x+128;
+        obj_iji.y=y+39;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="4">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_single=2;
+if (targettype==0){
+    if (facing==0){
+        obj_iji.x=x-23;
+        obj_iji.y=y+11;
+        }
+    else{
+        obj_iji.x=x+124;
+        obj_iji.y=y+13;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="6">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_single=3;
+if (targettype==0){
+    if (facing==0){
+        obj_iji.x=x-2;
+        obj_iji.y=y-21;
+        }
+    else{
+        obj_iji.x=x+108;
+        obj_iji.y=y-18;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="18">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">electrocute=1;
+scr_sound("glo_destroy");
+if (targettype==0)
+    scr_sound("iji_death");</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="44">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">electrocute=0;
+scr_shakescreen(2);
+if (facing==0){
+    (instance_create(x-5,y+15,obj_enemyrocketexplosion)).annihilator=1;
+    scr_nanoexplosion(-5,15);
+    }
+else{
+    (instance_create(x+107,y+15,obj_enemyrocketexplosion)).annihilator=1;
+    scr_nanoexplosion(107,15);
+    }
+goback=1;
+
+if (targettype==0){
+    obj_iji.goaroundcyen=1;
+    global.damage+=3;
+    global.hp-=3;
+    global.ignoreall=0;
+    obj_iji.takingpain=0;
+    obj_iji.invisible=0;
+    obj_iji.visible=1;
+    obj_iji.ignorephysics=0;
+    obj_iji.bedestroyed=0;
+    if (facing==0){
+        with (obj_iji)
+            scr_knockdown(1,10);
+        }
+    else{
+        with (obj_iji)
+            scr_knockdown(2,10);
+        }
+    }
+if (targettype==2){
+    if (facing==0){
+        instance_create(x-5,y+15,obj_xp3);
+        if (targetcracked)
+            script_execute(scr_dropammo,15,15,1,4);
+        else
+            script_execute(scr_dropammo,15,15,6,3);
+        }
+    else{
+        instance_create(x+107,y+15,obj_xp3);
+        if (targetcracked)
+            script_execute(scr_dropammo,87,15,1,4);
+        else
+            script_execute(scr_dropammo,87,15,6,3);
+        }
+    }
+if (targettype==3){
+    if (facing==0){
+        instance_create(x-5,y+15,obj_xp4);
+        if (cracked)
+            script_execute(scr_dropammo,15,15,1,5);
+        else{
+            script_execute(scr_dropammo,15,15,4,1);
+            if (ammodrop&gt;1)
+                script_execute(scr_dropammo,15,15,4,3);
+            if (ammodrop&gt;1)
+                script_execute(scr_dropammo,15,15,4,5);
+            }
+        }
+    else{
+        instance_create(x+107,y+15,obj_xp4);
+        if (cracked)
+            script_execute(scr_dropammo,87,15,1,5);
+        else{
+            script_execute(scr_dropammo,87,15,4,1);
+            if (ammodrop&gt;1)
+                script_execute(scr_dropammo,87,15,4,3);
+            if (ammodrop&gt;1)
+                script_execute(scr_dropammo,87,15,4,5);
+            }
+        }
+    }
+
+if (targettype!=0){
+repeat(10){
+    xoffset=random(30)-15;
+    if (facing==0)
+        tempid=instance_create(x-5+xoffset,y+random(30),obj_tasenbloodspecial);
+    else
+        tempid=instance_create(x+107+xoffset,y+random(30),obj_tasenbloodspecial);
+    if (xoffset&lt;0)
+        tempid.direction=random(90)+135;
+    else{
+        tempid.direction=random(90)-45;
+        tempid.image_index=6;
+        }
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="59">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_single=2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="61">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_single=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="63">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_single=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="65">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">state=0;
+if (iosa){
+    if (facing==0)
+        sprite_index=spr_iosa_bodyleft;
+    else
+        sprite_index=spr_iosa_body;
+    }
+else{
+    if (facing==0)
+        sprite_index=spr_komatoannihilator_bodyleft;
+    else
+        sprite_index=spr_komatoannihilator_body;
+    }
+alarm[2]=2;
+destroy=0;
+goback=0;
+if (targettype==0){
+    angry=1;
+    targetiji=300;
+    targetrival=0;
+    alarm[2]=1;
+    if (!iosa)
+        alarm[3]=500;
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

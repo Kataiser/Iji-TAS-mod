@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_end">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!global.ignoreall || instantend){
+
+if (global.sector==1 &amp;&amp; room!=rom_sectorz){
+    if (!gotribbon)
+        global.specialtrigger8=0;
+    }
+global.ignoreall=1;
+instantend=0;
+goaroundtrigger=1;
+if (!vortexkilled){
+    alarm[5]=0;
+    alarm[7]=0;
+    running=0;
+    goingleft=0;
+    goingright=0;
+    takingpain=1;
+    recovering=0;
+    if (global.state==1){
+        if (global.facing==0)
+            sprite_index=spr_basicleft;
+        else
+            sprite_index=spr_basic;
+        }
+    if (global.state==5){ //Stand up when halfway ducking
+        if (sprite_index==spr_duck || sprite_index==spr_duckleft){
+            switchingpose=1;
+            if (image_index&lt;2)
+                image_index=2-image_index;
+            else
+                image_index=0;
+            if (global.facing==0)
+                sprite_index=spr_standupleft;
+            else
+                sprite_index=spr_standup;
+            image_single=-1;
+            image_speed=0.5;
+            alarm[1]=6-(image_index*2);
+            alarm[0]=0;
+            }
+        }
+    }
+
+other.alarm[0]=14;
+instance_create(x,y,obj_endtransition);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

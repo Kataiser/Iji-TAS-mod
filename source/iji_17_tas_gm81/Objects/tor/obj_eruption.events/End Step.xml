@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Damage
+if (instance_number(obj_iji)==1){
+    if (obj_iji.y+40&gt;y3 &amp;&amp; !obj_iji.takingpain &amp;&amp; !obj_iji.recovering &amp;&amp; !retreat){
+        global.hp-=3;
+        global.damage+=3;
+        with (obj_iji){
+            notech=10;
+            goaroundcyen=1;
+            if (sprite_index==spr_basic || sprite_index==spr_basicleft || sprite_index==spr_duck || sprite_index==spr_duckleft || sprite_index==spr_hitfloor || sprite_index==spr_hitfloorleft || sprite_index==spr_getup || sprite_index==spr_getupleft){
+                scr_knockdown(1,2);
+                    vspeed=-40;
+                }
+            else{
+                scr_knockdown(1,2);
+                    vspeed=-30;
+                }
+            }
+        }
+    }
+
+if (instance_number(obj_reflector)==1){
+    with (obj_reflector)
+        scr_reflectorexplo();
+    }
+if (instance_number(obj_disruptor)==1){
+    with (obj_disruptor)
+        scr_disruptorexplo();
+    }
+if (instance_number(obj_shockbarrier)==1){
+    with (obj_shockbarrier)
+        scr_barrierexplo();
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

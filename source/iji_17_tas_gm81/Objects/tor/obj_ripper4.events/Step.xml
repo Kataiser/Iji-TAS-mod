@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">cyc+=1;
+if (cyc==1) image_single=1;
+if (cyc==2) image_single=4;
+if (cyc==3) image_single=7;
+if (cyc==4) image_single=9;
+if (cyc==5) image_single=11;
+if (cyc==6) image_single=13;
+if (cyc==7) image_single=14;
+if (cyc==8) image_single=15;
+if (cyc==9) image_single=14;
+if (cyc==10) image_single=13;
+if (cyc==11) image_single=12;
+if (cyc==12) image_single=10;
+if (cyc==13) image_single=8;
+if (cyc==14) image_single=6;
+if (cyc==15) image_single=5;
+if (cyc==16) image_single=4;
+if (cyc==17) image_single=3;
+if (cyc==18) image_single=2;
+if (cyc==19) image_single=1;
+if (cyc==20) image_single=0;
+if (cyc==21) instance_destroy();
+
+if (image_single!=15 &amp;&amp; bump==1)
+    image_single+=1;
+if (image_single&lt;=13 &amp;&amp; bump==2)
+    image_single+=2;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

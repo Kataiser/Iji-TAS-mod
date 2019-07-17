@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (place_meeting(x,y,obj_iji)){
+    obj_hud.touchposter=1;
+    if (!used &amp;&amp; ready){
+        ready=0;
+        alarm[0]=30;
+        if (room==rom_sector1 &amp;&amp; global.wty){
+            global.erasetop=0;
+            global.topmessage="THIS POSTER CANNOT BE UNLOCKED FOR THE SAKE OF MANKIND";
+            global.ignorestation=90;
+            }
+        else if (room==rom_sectorz){
+            global.erasetop=0;
+            global.topmessage="THIS POSTER IS TOO EPIC TO UNLOCK! /REALLYJOEL";
+            global.ignorestation=90;
+            }
+
+        //Get poster
+        else{
+            if ((room==rom_sector1 &amp;&amp; global.poster1) || (room==rom_sector2 &amp;&amp; global.poster2) || (room==rom_sector3 &amp;&amp; global.poster3) || (room==rom_sector4 &amp;&amp; global.poster4) || (room==rom_sector5 &amp;&amp; global.poster5) || (room==rom_sector6 &amp;&amp; global.poster6) || (room==rom_sector7 &amp;&amp; global.poster7) || (room==rom_sector8 &amp;&amp; global.poster8) || (room==rom_sector9 &amp;&amp; global.poster9) || (room==rom_sectorx &amp;&amp; global.poster10)){
+                global.erasetop=0;
+                global.topmessage="POSTER ALREADY UNLOCKED";
+                global.ignorestation=90;
+                }
+            else{
+                scr_readsum();
+                if (wrongsum){
+                    global.erasetop=0;
+                    global.topmessage="SAVEFILE CORRUPT, UNABLE TO UNLOCK POSTER";
+                    global.ignorestation=90;
+                    }
+                else{
+                    used=1;
+                    scr_sound("glo_cracksuccess");
+                    global.erasetop=0;
+                    global.topmessage="POSTER PERMANENTLY UNLOCKED IN THE EXTRAS MENU";
+                    if (global.sector==1)
+                        global.poster1=1;
+                    if (global.sector==2)
+                        global.poster2=1;
+                    if (global.sector==3)
+                        global.poster3=1;
+                    if (global.sector==4)
+                        global.poster4=1;
+                    if (global.sector==5)
+                        global.poster5=1;
+                    if (global.sector==6)
+                        global.poster6=1;
+                    if (global.sector==7)
+                        global.poster7=1;
+                    if (global.sector==8)
+                        global.poster8=1;
+                    if (global.sector==9)
+                        global.poster9=1;
+                    if (global.sector==0)
+                        global.poster10=1;
+                    scr_save();
+                    }
+                }
+            }
+        }
+    }
+else
+    obj_hud.touchposter=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

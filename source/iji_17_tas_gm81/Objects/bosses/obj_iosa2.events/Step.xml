@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//"WIN"
+if (obj_sabot.gameover &amp;&amp; !winquote){
+    winquote=1;
+    win=30;
+    }
+if (win&gt;0)
+    win-=1;
+if (win==1)
+    scr_sound("io2_win");
+
+//Stand
+if (state==0){
+    if (global.hp&gt;0){
+        standcyc+=1;
+        //take action
+        if ((standcyc&gt;=75 &amp;&amp; global.strengthlevel!=10) || (standcyc&gt;=105 &amp;&amp; global.strengthlevel=10) || (obj_iji.takingpain==0 &amp;&amp; obj_iji.recovering==0)){
+            standcyc=0;
+            //you are too far left of Iji
+            if (obj_iji.x&gt;x &amp;&amp; x&lt;1568){
+                state=6;
+                swipe2cyc=0;
+                image_speed=1;
+                image_index=0;
+                sprite_index=spr_iosa2_spin;
+                gravity=1;
+                vspeed=-(floor(((1568-x)/32)/2)+3);
+                if (vspeed&gt;-6)
+                    vspeed=-6;
+                }
+            //close range overdrive walk now
+            else if (obj_iji.x&gt;1472){
+                charged=1;
+                state=1;
+                image_speed=0.5;
+                sprite_index=spr_iosa2_walk;
+                }
+            else{
+                temprand=random(1);
+                if (swipeidling&gt;=4)
+                    temprand=0.31;
+                //spinattack now
+                if (temprand&lt;0.3){
+                    scr_sound("io2_jump");
+                    state=12;
+                    swipeidling+=1;
+                    image_speed=-1;
+                    image_index=0;
+                    sprite_index=spr_iosa2_spin;
+                    gravity=1;
+                    vspeed=(floor(((obj_iji.x-x)/32)/1.5)+2);
+                    vspeed-=0.55;
+                    if (vspeed&gt;-2)
+                        vspeed=-2;
+                    }
+                //walk now
+                else{
+                    temprand=random(1);
+                    if (swipeidling&gt;=4){
+                        temprand=0.31;
+                        swipeidling=0;
+                        }
+                    if (temprand&gt;0.8-0.2*global.difficulty){
+                        charged=1;
+                        swipeidling+=1;
+                        }
+                    if (!charged)
+                        swipeidling=0;
+                    state=1;
+                    image_speed=0.55;
+                    sprite_index=spr_iosa2_walk;
+                    }
+                }
+            }
+        }
+    }
+
+//Walk
+if (state==1){
+    if (charged){
+        x-=13+global.difficulty*1;
+        repeat(4){
+            tempid=instance_create(x+random(50),y+random(60),obj_thorspark);
+            tempid.speed=random(3.5)-1.5;
+            tempid.direction=90;
+            tempid.gravity=0.2;
+            }
+        }
+    else
+        x-=13+global.difficulty*1;
+    if (place_meeting(x-40,obj_iji.y,obj_iji) || x&lt;784 || x&lt;obj_iji.x){
+        //overdrive now
+        if (charged &amp;&amp; (obj_iji.x&lt;=1504 || obj_iji.y&gt;=y-10)){
+            overdrivecyc=0;
+            charged=0;
+            state=5;
+            visible=0;
+            instance_create(x,y,obj_iosa2overdrive);
+            }
+        //swipe now
+        else if (obj_iji.y&gt;y-10 &amp;&amp; x&gt;obj_iji.x){
+            scr_sound("io2_melee");
+            scr_sound("glo_swipe");
+            state=2;
+            sprite_index=spr_iosa2_swipe;
+            image_speed=1;
+            image_index=0;
+            }
+        //uppercut now
+        else{
+            scr_sound("io2_melee2");
+            scr_sound("glo_swipe");
+            uppercutcyc=0;
+            state=4;
+            sprite_index=spr_iosa2_uppercut;
+            image_single=0;
+            }
+        }
+    }
+
+//Swipe
+else if (state==2){
+    swipecyc+=1;
+    if (swipecyc==2){
+        scr_sound("glo_swipe");
+        instance_create(x,y,obj_iosa2_swipebox);
+        }
+    //swipe2 now
+    if (swipecyc&gt;3){
+        swipecyc=0;
+        state=3;
+        sprite_index=spr_iosa2_swipe2;
+        image_speed=0.5;
+        image_index=0;
+        swipe2cyc=0;
+        }
+    }
+
+//Swipe2 (waiting for uppercut)
+else if (state==3){
+    swipe2cyc+=1;
+    if (swipe2cyc&gt;=44-global.difficulty*11 || place_meeting(x,y,obj_iji)){
+        if (obj_iji.takingpain==0){
+            //uppercut now
+            if (abs(obj_iji.x-x)&lt;100){
+                scr_sound("io2_melee2");
+                scr_sound("glo_swipe");
+                swipe2cyc=0;
+                uppercutcyc=0;
+                state=4;
+                sprite_index=spr_iosa2_uppercut;
+                image_single=0;
+                }
+            //spin now, iji was too far away
+            else{
+                state=6;
+                swipe2cyc=0;
+                image_speed=1;
+                image_index=0;
+                sprite_index=spr_iosa2_spin;
+                gravity=1;
+                if (obj_iji.x&lt;1184)
+                    vspeed=-(floor(((1568-x)/32)/2)+3)/2;
+                else
+                    vspeed=-(floor(((1568-x)/32)/2)+3);
+                if (vspeed&gt;-6)
+                    vspeed=-6;
+                }
+            }
+        //spin now
+        else{
+            state=6;
+            swipe2cyc=0;
+            image_speed=1;
+            image_index=0;
+            sprite_index=spr_iosa2_spin;
+            gravity=1;
+            if (obj_iji.x&lt;1184)
+                vspeed=-(floor(((1568-x)/32)/2)+3)/2;
+            else
+                vspeed=-(floor(((1568-x)/32)/2)+3);
+            if (vspeed&gt;-6)
+                vspeed=-6;
+            }
+        }
+    }
+
+//Uppercut
+else if (state==4){
+    uppercutcyc+=1;
+    if (uppercutcyc==1){
+        image_single+=1;
+        y-=16;}
+    if (uppercutcyc==2){
+        y-=26;}
+    if (uppercutcyc==3){
+        image_single+=1;
+        y-=120;
+        instance_create(x,y,obj_iosa2slash);}
+    if (uppercutcyc==4){
+        with (obj_iosa2slash)
+            instance_destroy();
+        y-=40;
+        instance_create(x,y,obj_iosa2slash);}
+    if (uppercutcyc==5){
+        image_single+=1;
+        with (obj_iosa2slash)
+            instance_destroy();
+        y-=20;}
+    if (uppercutcyc==6){
+        y-=14;}
+    if (uppercutcyc==7){
+        image_single+=1;
+        y-=10;}
+    if (uppercutcyc==8){
+        y-=8;}
+    if (uppercutcyc==9){
+        image_single+=1;
+        y-=5;}
+    if (uppercutcyc==10){
+        y-=3;}
+    if (uppercutcyc==11){
+        image_single+=1;
+        y-=2;}
+    if (uppercutcyc==12){
+        y-=1;}
+    if (uppercutcyc==13){
+        image_single=-1;
+        image_speed=0.5;
+        image_index=7;
+        y-=2;
+        gravity=1;}
+    if (vspeed&gt;22)
+        vspeed=22;
+    if (image_index&gt;13)
+        image_index=12;
+    //spin now
+    if (!place_free(x,y+vspeed) &amp;&amp; y&gt;650){
+        state=6;
+        uppercutcyc=0;
+        move_contact_solid(270,100);
+        image_single=-1;
+        image_speed=1;
+        image_index=0;
+        sprite_index=spr_iosa2_spin;
+        gravity=1;
+        if (obj_iji.x&lt;1184)
+            vspeed=-(floor(((1568-x)/32)/2)+3)/2;
+        else
+            vspeed=-(floor(((1568-x)/32)/2)+3);
+        if (vspeed&gt;-6)
+            vspeed=-6;
+        }
+    }
+
+//Overdrive
+else if (state==5){
+    overdrivecyc+=1;
+    repeat(5){
+        tempid=instance_create(x-20+random(90),y+60+random(12),obj_iosastrikesmoke2);
+        tempid.speed=(tempid.x-x-25)/3;
+        }
+    //uppercut or spin now
+    if (overdrivecyc&gt;=37){
+        if (abs(x-obj_iji.x)&lt;128 &amp;&amp; obj_iji.y&gt;704){
+            scr_sound("io2_melee2");
+            scr_sound("glo_swipe");
+            uppercutcyc=0;
+            state=4;
+            sprite_index=spr_iosa2_uppercut;
+            image_single=0;
+            }
+        else{
+            state=6;
+            image_speed=1;
+            image_index=0;
+            sprite_index=spr_iosa2_spin;
+            gravity=1;
+            if (obj_iji.x&lt;1184)
+                vspeed=-(floor(((1568-x)/32)/2)+3)/2;
+            else
+                vspeed=-(floor(((1568-x)/32)/2)+3);
+            if (vspeed&gt;-6)
+                vspeed=-6;
+            }
+        overdrivecyc=0;
+        visible=1;
+        with (obj_iosa2overdrive)
+            instance_destroy();
+        }
+    }
+
+//Spin
+else if (state==6){
+    if (x&lt;1568)
+        x+=32;
+    //take action
+    if (vspeed&gt;0 &amp;&amp; !place_free(x,y+vspeed)){
+        move_contact_solid(270,100);
+        gravity=0;
+        vspeed=0;
+        if (global.hp=0 || obj_iji.takingpain){
+            state=0;
+            image_speed=0.5;
+            standcyc=0;
+            sprite_index=spr_iosa2_basic;
+            }
+        else{
+            //you are too far left of Iji
+            if (obj_iji.x&gt;x &amp;&amp; x&lt;1568){
+                state=6;
+                swipe2cyc=0;
+                image_speed=1;
+                image_index=0;
+                sprite_index=spr_iosa2_spin;
+                gravity=1;
+                vspeed=-(floor(((1568-x)/32)/2)+3);
+                if (vspeed&gt;-6)
+                    vspeed=-6;
+                }
+            //close range overdrive walk now
+            else if (obj_iji.x&gt;1504){
+                charged=1;
+                state=1;
+                image_speed=0.5;
+                sprite_index=spr_iosa2_walk;
+                }
+            else{
+                temprand=random(1);
+                if (swipeidling&gt;=4)
+                    temprand=0.31;
+                //spinattack now
+                if (temprand&lt;0.3){
+                    scr_sound("io2_jump");
+                    state=12;
+                    swipeidling+=1;
+                    image_speed=-1;
+                    image_index=0;
+                    sprite_index=spr_iosa2_spin;
+                    gravity=1;
+                    vspeed=(floor(((obj_iji.x-x)/32)/1.5)+2);
+                    vspeed-=0.5;
+                    if (vspeed&gt;-2)
+                        vspeed=-2;
+                    }
+                //walk now
+                else{
+                    temprand=random(1);
+                    if (swipeidling&gt;=4){
+                        temprand=0.31;
+                        swipeidling=0;
+                        }
+                    if (temprand&gt;0.8-0.2*global.difficulty){
+                        charged=1;
+                        swipeidling+=1;
+                        }
+                    if (!charged)
+                        swipeidling=0;
+                    state=1;
+                    image_speed=0.5;
+                    sprite_index=spr_iosa2_walk;
+                    }
+                }
+            }
+        }
+    }
+
+//Stagger
+if (state==7){
+    staggercyc+=1;
+    if (place_free(x+6,y))
+        x+=6;
+    //hitwall now
+    if (!place_free(x+6,y)){
+        scr_sound("glo_land");
+        guard=0;
+        state=9;
+        staggercyc=0;
+        hitwallcyc=0;
+        sprite_index=spr_iosa2_hitwall;
+        image_index=0;
+        scr_shakescreen(2);
+        }
+    //stagger2 now
+    else if (staggercyc&gt;=12){
+        state=8;
+        staggercyc=0;
+        stagger2cyc=0;
+        sprite_index=spr_iosa2_stagger2;
+        guard2=8-guard-global.difficulty*1;
+        if (guard2&gt;0){
+            for (i=0;i&lt;(guard2);i+=1)
+                (instance_create(x-8,y-12,obj_iosa2dizzy)).cyc=(i/guard2)*360;
+            }
+        }
+    }
+
+//Stagger2
+if (state==8){
+    stagger2cyc+=1;
+    //spin now
+    if (stagger2cyc&gt;=60-(global.difficulty*15) || guard&gt;=8-(global.difficulty*1)){
+        with (obj_iosa2dizzy)
+            instance_destroy();
+        guard=0;
+        stagger2cyc=0;
+        state=6;
+        image_speed=1;
+        image_index=0;
+        sprite_index=spr_iosa2_spin;
+        gravity=1;
+        if (obj_iji.x&lt;1184)
+            vspeed=-(floor(((1568-x)/32)/2)+3)/2;
+        else
+            vspeed=-(floor(((1568-x)/32)/2)+3);
+        if (vspeed&gt;-6)
+            vspeed=-6;
+        }
+    }
+
+//Hitwall
+if (state==9){
+    hitwallcyc+=1;
+    //woozy now
+    if (hitwallcyc&gt;=14){
+        state=10;
+        hitwallcyc=0;
+        woozycyc=0;
+        sprite_index=spr_iosa2_woozy;
+        }
+    }
+
+//Woozy
+if (state==10){
+    woozycyc+=1;
+    //uppercut now
+    if (woozycyc&gt;=300){
+        woozycyc=0;
+        uppercutcyc=0;
+        state=4;
+        sprite_index=spr_iosa2_uppercut;
+        image_single=0;
+        }
+    }
+
+//Death
+if (state==11){
+    if (deathcyc&lt;10)
+        deathcyc+=1;
+    if (deathcyc==2)
+        image_single=1;
+    if (deathcyc==4)
+        image_single=2;
+    }
+
+//Spinattack
+if (state==12){
+    if (x&gt;704)
+        x-=24;
+    //uppercut now
+    if (vspeed&gt;0 &amp;&amp; !place_free(x,y+vspeed)){
+        scr_sound("io2_melee2");
+        scr_sound("glo_swipe");
+        move_contact_solid(270,100);
+        gravity=0;
+        vspeed=0;
+        uppercutcyc=0;
+        state=4;
+        sprite_index=spr_iosa2_uppercut;
+        image_single=0;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

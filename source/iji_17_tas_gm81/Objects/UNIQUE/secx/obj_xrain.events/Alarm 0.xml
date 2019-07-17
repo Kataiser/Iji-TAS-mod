@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">alarm[0]=1+ceil(random(2));
+xrand=x-192+random(384);
+yrand=y-192+random(384);
+if (xrand&gt;obj_shakescreen.x-420 &amp;&amp; xrand&lt;obj_shakescreen.x+420 &amp;&amp; yrand&gt;obj_shakescreen.y-400 &amp;&amp; yrand&lt;obj_shakescreen.y+300)
+instance_create(xrand,yrand,obj_xrain2);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

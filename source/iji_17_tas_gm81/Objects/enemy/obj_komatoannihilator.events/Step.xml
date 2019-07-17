@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//"FIND"
+if (angry &amp;&amp; !prevangry)
+    scr_sound("ann_find");
+prevangry=angry;
+
+scr_komatovision(50,100);
+if (targetiji&gt;0)
+targetiji-=1;
+if (targetrival&gt;0)
+targetrival-=1;
+if (scouring&gt;0)
+scouring-=1;
+if (hp==maxhp)
+scouring=0;
+cfised=0;
+thored=0;
+plasmaed=0;
+//Lose sight
+if ((x &lt; obj_shakescreen.x-1000) || (x &gt; obj_shakescreen.x+1000) || (y &lt; obj_shakescreen.y-800) || (y &gt; obj_shakescreen.y+800)){
+    angry=0;
+    alarm[5]=0;
+    if (state==2)
+        state=0;
+    }
+//Crack fail
+if (crackmark==1 &amp;&amp; distance_to_object(obj_iji) &gt; 50){
+    script_execute(scr_crackfail);
+    script_execute(scr_terminatecrack);
+    global.erasetop=0;
+    global.topmessage="Subject is too far away to crack";
+    }
+if (crackmark==1 &amp;&amp; hp&lt;=0){
+    script_execute(scr_crackfail);
+    script_execute(scr_terminatecrack);
+    global.erasetop=0;
+    global.topmessage="CRACKING FAILED: Subject is dead";
+    }
+//Smoke when charging
+if (firingrocket==1 &amp;&amp; state==0)
+    smoking+=1;
+if (smoking&gt;=5){
+    smoking=0;
+    if (facing==0)
+        (instance_create(x-24,y+100,obj_shockspark)).vspeed=3;
+    else
+        (instance_create(x+124,y+100,obj_shockspark)).vspeed=3;
+    }
+//Armor
+if (armor&lt;maxarmor-0.1)
+    armor+=0.1;
+//Pain from armordrop
+if (armor&lt;1){
+    hp-=1;
+    scr_annihilatorpain();
+    }
+
+//Fire
+if (state==2 &amp;&amp; !reloading){
+if (weapon==0){
+    obj_sabot.pulsetot+=1;
+    reloading=1;
+    alarm[0]=1;
+    if (facing==0){
+        sprite_index=spr_komatoannihilator_fireleft;
+        repeat(4){
+            tempid=instance_create(x-4,y+100+(random(20)-10),obj_enemypulse);
+            tempid.speed=30+random(5);
+            tempid.direction=random(20)+170;
+            tempid.hyper=1;
+            tempid.hyperstrength=hyperstrength;
+            tempid.image_index=14;
+            tempid.target=id;
+            }
+        }
+    else{
+        sprite_index=spr_komatoannihilator_fire;
+        repeat(4){
+            tempid=instance_create(x+104,y+100+(random(20)-10),obj_enemypulse);
+            tempid.speed=30+random(5);
+            tempid.direction=random(20)-10;
+            tempid.hyper=1;
+            tempid.hyperstrength=hyperstrength;
+            tempid.image_index=7;
+            tempid.target=id;
+            }
+        }
+    }
+if (weapon==1){
+    scr_sound("wea_spli");
+    reloading=1;
+    alarm[0]=3;
+    if (facing==0){
+        tempid=instance_create(x+2,y+100,obj_enemyshockball);
+        tempid.speed=25;
+        tempid.direction=180;
+        tempid.dud=0;
+        (instance_create(x-16,y+100,obj_shockspark)).speed=-3;
+        if (!global.specialbake)
+            (instance_create(x-14,y+100,obj_shockshell)).short=1;
+        }
+    else{
+        image_single=4;
+        alarm[4]=3;
+        tempid=instance_create(x+98,y+100,obj_enemyshockball);
+        tempid.speed=25;
+        tempid.direction=0;
+        tempid.dud=0;
+        (instance_create(x+116,y+100,obj_shockspark)).speed=3;
+        if (!global.specialbake){
+            tempid=instance_create(x+114,y+100,obj_shockshell);
+            tempid.hspeed=-tempid.hspeed;
+            tempid.short=1;
+            }
+        }
+    }
+}
+//Walk
+if (state==1){
+    if (!walkcyc)
+        walkcyc=1;
+    else{
+        walkcyc=0;
+        image_single+=1;
+        if (image_single==6){
+            if (!global.noshake)
+                scr_shakescreen(0);
+            scr_sound("ann_step");
+            }
+        if (image_single==12){
+            image_single=0;
+            if (!global.noshake)
+                scr_shakescreen(0);
+            scr_sound("ann_step");
+            }
+        if (facing==0){
+            if (!place_free(x-6,y) || place_free(x-100,y+2)){
+                facing=1;
+                sprite_index=spr_komatoannihilator_walk;
+                }
+            else
+                x-=6;
+            }
+        else{
+            if (!place_free(x+6,y) || place_free(x+100,y+2)){
+                facing=0;
+                sprite_index=spr_komatoannihilator_walkleft;
+                }
+            else
+                x+=6;
+            }
+        }
+    }
+else
+walkcyc=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

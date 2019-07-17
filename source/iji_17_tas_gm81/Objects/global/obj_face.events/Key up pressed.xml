@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="38">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!ignoreall &amp;&amp; tier!="wait" &amp;&amp; tier!="wait2" &amp;&amp; tier!="wait3"){
+if (menu){
+    if (selected==1)
+        selected=selections;
+    else
+        selected-=1;
+    instance_create(obj_marker.x,obj_marker.y,obj_fade);
+    if (tier="extras3" &amp;&amp; global.extras1 &amp;&amp; selected==3 &amp;&amp; soundtested){
+        repeat(10)
+            sound_stop_all();
+        scr_stopmusic();
+        seczmusic=0;
+        }
+    scr_sound("glo_menumove");
+    subtitle="";
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

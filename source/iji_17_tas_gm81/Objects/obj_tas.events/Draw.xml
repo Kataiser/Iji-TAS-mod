@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (is_executing and record) {
+    screen_save('record\' + string_replace_all(string_format(frame, 6, 0), ' ', '0') + '.png')
+}
+
+draw_set_font(tas_font);
+draw_set_color(c_white);
+
+if instance_exists(obj_shakescreen) {
+    root_x = obj_shakescreen.x-396;
+    root_y = obj_shakescreen.y-296;
+    
+    if (!global.hidetime) {
+        root_x += 4;
+        root_y += 60;
+    }
+}
+else {
+    root_x = 4;
+    root_y = 4;
+}
+
+fps_string = string(room_speed) + "/" + string(fps) + "/" + string(instance_count);
+held_keys_string = "";
+for (i=0; i&lt;=ds_list_size(held_keys); i+=1) {held_keys_string += string(ds_list_find_value(held_keys, i)) + " ";}
+held_keys_string = string_replace(held_keys_string, "0", "");
+
+draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
+draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
+draw_text_ext(root_x,root_y + (18 * 2),string(frames_on_step) + " (" + string(alarm[0]) + ")",28,800);
+draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

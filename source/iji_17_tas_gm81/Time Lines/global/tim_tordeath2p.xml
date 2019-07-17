@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="0">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(0,0,obj_whiteblanket)).alarm[0]=2;
+
+//Tor's stats
+speed=0;
+gravity=0;
+with (obj_shape)
+    visible=0;
+killsmoke=0;
+obj_torblood.visible=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="2">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_tortrigger.slowdowned){
+    repeat(5)
+        instance_create(obj_tor.x+150-64+random(128),obj_tor.y+150-64+random(128),obj_fadeshape2);
+    }
+else{
+    repeat(50)
+        instance_create(obj_tor.x+150-64+random(128),obj_tor.y+150-64+random(128),obj_fadeshape2);
+    }
+
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="4">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(0,0,obj_whiteblanket)).alarm[0]=600;
+with (obj_fadeshape2)
+    instance_destroy();
+if (obj_tortrigger.slowdowned){
+    repeat(10)
+    instance_create(obj_tor.x+150-80+random(160),obj_tor.y+150-80+random(160),obj_fadeshape);
+    }
+else{
+    repeat(300)
+        instance_create(obj_tor.x+150-80+random(160),obj_tor.y+150-80+random(160),obj_fadeshape);
+    }
+
+scr_sound("exp_nuke");
+scr_sound("exp_mpfb");
+scr_sound("exp_boss");
+scr_shakescreen(4);
+instance_create(obj_iji.x,obj_iji.y,obj_torfakeiji);
+instance_create(x+45,y+90,obj_torbody2);
+with (obj_strikelight)
+    visible=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="300">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_sabot.x=432;
+obj_sabot.y=1700;
+obj_shakescreen.x=432;
+obj_shakescreen.y=1700;
+obj_iji.x=208;
+obj_iji.y=1763;
+obj_tortrigger.x=432;
+obj_tortrigger.y=1700;
+//obj_sabot.unlockcamera=1;
+obj_sabot.unlockcamera=0;
+obj_sabot.fullpcamera=1;
+obj_torfakeiji.x=208;
+obj_torfakeiji.y=1580;
+obj_torfakeiji.gravity=0.2;
+obj_torbody2.x=510;
+obj_torbody2.y=1541;
+obj_torbody2.gravity=0.2;
+obj_torbody2.image_single=-1;
+obj_torbody2.image_speed=0.5;
+obj_torbody2.image_index=0;
+obj_torbody2.alarm[1]=14;
+instance_create(0,1690,obj_torsecsil);
+
+background_visible[4]=1;
+instance_activate_all();
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="370">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_torfakeiji.fade=1;
+obj_torbody2.fade=1;
+obj_sabot.drawrecordtime=1;
+obj_sabot.throwtordebris=1;
+obj_torsecsil.fade=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="390">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_whiteblanket)
+    instance_destroy();
+obj_sabot.flash=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="440">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_sabot.ultimatecannotpause=1;
+(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatxz";
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="450">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_chat)&gt;0)
+    timeline_position-=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="462">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//holdright=1;
+tempid=instance_create(452,1248,obj_iosa2_gun);
+tempid.vspeed=32;
+tempid.hspeed=-6;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="490">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatxaa";
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="492">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_chat)&gt;0)
+    timeline_position-=1;
+else{
+    obj_iosa2_gun.anim=3;
+    obj_iosa2_gun.animcyc=0;
+    obj_iosa2_gun.animcyc2=0;
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="552">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iosa2_gun.anim=2;
+obj_iosa2_gun.animcyc=0;
+obj_iosa2_gun.animcyc2=0;
+with (obj_iosa2_gun)
+    scr_sound("glo_thunder");</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="660">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iosa2_gun.anim=4;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="676">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatxab";
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="678">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_chat)&gt;0)
+    timeline_position-=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="679">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_iji.instantend=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!global.specialbake){
+if (xoff==0)
+    xoff=5;
+xoff=20+random(30);
+xoff2=360+random(20);
+temprand=random(1);
+if (temprand&gt;0.5){
+    if (temprand&gt;0.9)
+        yoff=20+random(250);
+    else
+        yoff=300;
+    temprandcol=floor(random(3));
+    if (temprandcol==0)
+        draw_set_color(make_color_rgb(132,96,42));
+    else if (temprandcol==1)
+        draw_set_color(make_color_rgb(102,66,12));
+    else if (temprandcol==2)
+        draw_set_color(make_color_rgb(70,43,0));
+    draw_line(x+xoff,y,x+xoff,y+yoff);
+    }
+if (temprand&lt;0.2){
+    yoff2=200+random(90);
+    temprandcol=floor(random(3));
+    if (temprandcol==0)
+        draw_set_color(make_color_rgb(132,96,42));
+    else if (temprandcol==1)
+        draw_set_color(make_color_rgb(102,66,12));
+    else if (temprandcol==2)
+        draw_set_color(make_color_rgb(70,43,0));
+    draw_line(x+xoff2,y+yoff2,x+xoff2,y+300);
+    }
+xoff=random(390);
+yoff=random(290);
+temprandcol=floor(random(3));
+if (temprandcol==0)
+    draw_set_color(make_color_rgb(132,96,42));
+else if (temprandcol==1)
+    draw_set_color(make_color_rgb(102,66,12));
+else if (temprandcol==2)
+    draw_set_color(make_color_rgb(70,43,0));
+draw_rectangle(x+xoff,y+yoff,x+xoff+ceil(random(3)),y+yoff+ceil(random(3)),0);
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

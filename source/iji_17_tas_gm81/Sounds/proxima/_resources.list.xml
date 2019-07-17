@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_pro_powerdown" type="RESOURCE"/>
+  <resource name="snd_pro_beep1" type="RESOURCE"/>
+  <resource name="snd_pro_beep2" type="RESOURCE"/>
+  <resource name="snd_pro_beep3" type="RESOURCE"/>
+</resources>

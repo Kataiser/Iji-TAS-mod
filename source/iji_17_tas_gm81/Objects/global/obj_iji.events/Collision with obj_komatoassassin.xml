@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_komatoassassin">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.visible==1 &amp;&amp; takingpain==0){
+    if (other.sprite_index==spr_komatoassassin_downstab || other.sprite_index==spr_asha_downstab){
+        global.armor=100;
+        global.hp-=1;
+        scr_pain();
+        scr_sound("iji_sworded");
+        scr_putstain();
+        }
+    else{
+        global.armor-=6/global.armorlevel;
+        instance_create(bbox_left+random(bbox_right-bbox_left),bbox_top+random(bbox_bottom-bbox_top),obj_ijiblood);
+        }
+    with (other){
+        if (!angry){
+            alarm[2]=random(60-(global.difficulty*20))+30-(global.difficulty*10);
+            angry=1;
+            visible=0;
+            instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

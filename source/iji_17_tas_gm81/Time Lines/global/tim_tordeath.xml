@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="0">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(0,0,obj_whiteblanket)).alarm[0]=2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="2">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(0,0,obj_whiteblanket)).alarm[0]=30;
+with (obj_tor){
+    x=xstart;
+    y=ystart;
+    scr_tor_death();
+    nodraw=0;
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="4">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_ougi)==1){
+    with (obj_ougi)
+        instance_destroy();
+    }
+with (obj_iji){
+    instance_destroy();
+    }
+tempid=instance_create(607,578,obj_iji);
+tempid.takingpain=1
+tempid.recovering=0;
+global.ignoreall=1;
+global.topmessage="";
+global.state=1;
+global.facing=1;
+
+obj_shape001.visible=0;
+obj_shape002.visible=0;
+obj_shape003.visible=0;
+obj_shape401.visible=0;
+obj_shape401b.visible=0;
+obj_shape401c.visible=0;
+obj_shape401d.visible=0;
+killsmoke=1;
+
+with (obj_tor){
+    x=xstart;
+    y=ystart;
+    scr_tor_death();
+    nodraw=0;
+    supercharging=0;
+    weaponflash=0;
+    }
+with (obj_skysmasher)
+    instance_destroy();
+with (obj_enemyshock)
+    instance_destroy();
+with (obj_enemyshockball)
+    instance_destroy();
+with (obj_ragebomb)
+    instance_destroy();
+with (obj_ragebomb2)
+    instance_destroy();
+with (obj_ragebombexplo)
+    instance_destroy();
+with (obj_tyrian)
+    instance_destroy();
+with (obj_tyrian2)
+    instance_destroy();
+with (obj_ripper)
+    instance_destroy();
+with (obj_ripper2)
+    instance_destroy();
+with (obj_ripper3)
+    instance_destroy();
+with (obj_ripper32)
+    instance_destroy();
+with (obj_ripper4)
+    instance_destroy();
+with (obj_ripper42)
+    instance_destroy();
+with (obj_heavystomp)
+    instance_destroy();
+with (obj_torcharge)
+    instance_destroy();
+with (obj_chargeball)
+    instance_destroy();
+with (obj_chargeballspark)
+    instance_destroy();
+with (obj_chargeballspark2)
+    instance_destroy();
+with (obj_hypershotgun)
+    instance_destroy();
+with (obj_torhammer)
+    instance_destroy();
+with (obj_hammerspark)
+    instance_destroy();
+with (obj_ijimist)
+    instance_destroy();
+with (obj_fractalrocket)
+    instance_destroy();
+with (obj_nanostorm)
+    instance_destroy();
+with (obj_stormflash)
+    instance_destroy();
+with (obj_tor2)
+    instance_destroy();
+with (obj_deathhail)
+    instance_destroy();
+with (obj_deathhailspark)
+    instance_destroy();
+with (obj_deathhailbeam)
+    instance_destroy();
+with (obj_deathhailexplo)
+    instance_destroy();
+with (obj_eruption)
+    instance_destroy();
+with (obj_tor2muzzleflash)
+    instance_destroy();
+with (obj_megamissile)
+    instance_destroy();
+with (obj_megamissilespark)
+    instance_destroy();
+with (obj_rageburst)
+    instance_destroy();
+with (obj_rageburst2)
+    instance_destroy();
+with (obj_rageburstspark)
+    instance_destroy();
+with (obj_rageburstwarn)
+    instance_destroy();
+with (obj_enemyrocketexplosion)
+    instance_destroy();
+with (obj_enemympfbexplosion)
+    instance_destroy();
+with (obj_mpfbspark)
+    instance_destroy();
+with (obj_komatompfb)
+    instance_destroy();
+with (obj_enemympfb)
+    instance_destroy();
+with (obj_mpfbspark)
+    instance_destroy();
+with (obj_mpfbspark2)
+    instance_destroy();
+with (obj_bigsmoke)
+    instance_destroy();
+with (obj_smokepoint)
+    instance_destroy();
+with (obj_mpfb)
+    instance_destroy();
+with (obj_rocket)
+    instance_destroy();
+with (obj_shock)
+    instance_destroy();
+with (obj_shockball)
+    instance_destroy();
+with (obj_banana)
+    instance_destroy();
+with (obj_shell)
+    instance_destroy();
+with (obj_ijiblood)
+    instance_destroy();
+obj_iji.cannotpause=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="30">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_sabot.flash=1;
+
+with (obj_ragebomb)
+    instance_destroy();
+with (obj_ragebomb2)
+    instance_destroy();
+with (obj_ragebombexplo)
+    instance_destroy();
+with (obj_tyrian)
+    instance_destroy();
+with (obj_tyrian2)
+    instance_destroy();
+with (obj_ripper)
+    instance_destroy();
+with (obj_ripper2)
+    instance_destroy();
+with (obj_ripper3)
+    instance_destroy();
+with (obj_ripper32)
+    instance_destroy();
+with (obj_ripper4)
+    instance_destroy();
+with (obj_ripper42)
+    instance_destroy();
+with (obj_heavystomp)
+    instance_destroy();
+with (obj_torcharge)
+    instance_destroy();
+with (obj_chargeball)
+    instance_destroy();
+with (obj_chargeballspark)
+    instance_destroy();
+with (obj_chargeballspark2)
+    instance_destroy();
+with (obj_hypershotgun)
+    instance_destroy();
+with (obj_torhammer)
+    instance_destroy();
+with (obj_hammerspark)
+    instance_destroy();
+with (obj_ijimist)
+    instance_destroy();
+with (obj_fractalrocket)
+    instance_destroy();
+with (obj_nanostorm)
+    instance_destroy();
+with (obj_stormflash)
+    instance_destroy();
+with (obj_tor2)
+    instance_destroy();
+with (obj_deathhail)
+    instance_destroy();
+with (obj_deathhailspark)
+    instance_destroy();
+with (obj_deathhailbeam)
+    instance_destroy();
+with (obj_deathhailexplo)
+    instance_destroy();
+with (obj_eruption)
+    instance_destroy();
+with (obj_tor2muzzleflash)
+    instance_destroy();
+with (obj_megamissile)
+    instance_destroy();
+with (obj_megamissilespark)
+    instance_destroy();
+with (obj_rageburst)
+    instance_destroy();
+with (obj_rageburst2)
+    instance_destroy();
+with (obj_rageburstspark)
+    instance_destroy();
+with (obj_rageburstwarn)
+    instance_destroy();
+with (obj_enemyrocketexplosion)
+    instance_destroy();
+with (obj_enemympfbexplosion)
+    instance_destroy();
+with (obj_mpfbspark)
+    instance_destroy();
+with (obj_komatompfb)
+    instance_destroy();
+with (obj_enemympfb)
+    instance_destroy();
+with (obj_mpfbspark)
+    instance_destroy();
+with (obj_mpfbspark2)
+    instance_destroy();
+with (obj_bigsmoke)
+    instance_destroy();
+with (obj_smokepoint)
+    instance_destroy();
+with (obj_mpfb)
+    instance_destroy();
+with (obj_rocket)
+    instance_destroy();
+with (obj_shock)
+    instance_destroy();
+with (obj_shockball)
+    instance_destroy();
+with (obj_banana)
+    instance_destroy();
+with (obj_shell)
+    instance_destroy();
+with (obj_ijiblood)
+    instance_destroy();
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="60">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//obj_tor.killshake=1;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="80">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//obj_tor.killshake=2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="110">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_tor.killshake=1;
+scr_shakescreen(5);
+instance_create(x+100,y+300,obj_harmlessexplosion);
+scr_sound("exp_mpfb");
+obj_shape401.visible=0;
+obj_shape401b.visible=0;
+obj_shape401c.visible=0;
+obj_shape401d.visible=0;
+obj_shape402.visible=0;
+obj_shape402b.visible=0;
+obj_shape403.visible=0;
+obj_shape404.visible=0;
+obj_shape405.visible=0;
+obj_shape405b.visible=0;
+obj_shape406.visible=0;
+obj_shape407.visible=0;
+obj_shape408.visible=0;
+obj_shape409.visible=0;
+killexplo[0]=10;
+obj_sabot.flash=0.7;
+killexplocyc=0;
+(instance_create(0,0,obj_whiteblanket)).alarm[0]=2;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="170">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_shakescreen(5);
+instance_create(x+200,y+200,obj_harmlessexplosion);
+scr_sound("exp_mpfb");
+obj_shape301.visible=0;
+obj_shape302.visible=0;
+obj_shape303.visible=0;
+killexplo[1]=10;
+obj_sabot.flash=0.7;
+killexplocyc=0;
+(instance_create(0,0,obj_whiteblanket)).alarm[0]=2;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="220">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_shakescreen(5);
+instance_create(x+50,y+150,obj_harmlessexplosion);
+scr_sound("exp_mpfb");
+obj_shape101.visible=0;
+obj_shape102.visible=0;
+obj_shape103.visible=0;
+obj_shape104.visible=0;
+obj_shape105.visible=0;
+obj_shape201.visible=0;
+obj_shape202.visible=0;
+obj_shape203.visible=0;
+killexplo[2]=10;
+obj_sabot.flash=0.7;
+killexplocyc=0;
+(instance_create(0,0,obj_whiteblanket)).alarm[0]=2;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="250">
+    <action id="601" library="1">
+      <!--action name: Execute_Script-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_execute_script</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="SCRIPT">scr_torexplo</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="275">
+    <action id="601" library="1">
+      <!--action name: Execute_Script-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_execute_script</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="SCRIPT">scr_torexplo</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="285">
+    <action id="601" library="1">
+      <!--action name: Execute_Script-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_execute_script</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="SCRIPT">scr_torexplo</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="290">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">killexplo[3]=1;
+killexplocyc=0;
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="370">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">killexplo[3]=0;
+
+scr_shakescreen(6);
+instance_create(x+50,y+330,obj_harmlessexplosion);
+instance_create(x+200,y+350,obj_harmlessexplosion);
+scr_sound("exp_mpfb");
+obj_shape501.visible=0;
+obj_shape502.visible=0;
+obj_shape503.visible=0;
+obj_shape601.visible=0;
+obj_shape602.visible=0;
+obj_shape603.visible=0;
+obj_shape604.visible=0;
+obj_shape605.visible=0;
+obj_shape606.visible=0;
+obj_shape701.visible=0;
+obj_shape702.visible=0;
+obj_shape801.visible=0;
+obj_shape802.visible=0;
+obj_shape803.visible=0;
+obj_shape901.visible=0;
+obj_shape902.visible=0;
+obj_sabot.flash=0.7;
+killexplo[4]=10;
+killexplocyc=0;
+(instance_create(0,0,obj_whiteblanket)).alarm[0]=2;
+killshake=0;
+gravity=0.15;
+scr_tor_pose();
+alarm[0]=0;</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

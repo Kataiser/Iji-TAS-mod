@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_kickbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">global.temp=0;
+with (other){
+    if (place_meeting(x,y,obj_door) || place_meeting(x,y,obj_cdoor))
+        global.temp=1;
+    if (sprite_index==spr_detonator)
+        global.temp=0;
+    }
+if (global.temp==0){
+if (other.image_index==0){
+    scr_sound("glo_kick");
+    ijikill=1;
+    if (state!=10)
+        targetiji=300;
+    script_execute(scr_shakescreen,1);
+    repeat(3){
+        tempid=instance_create(other.x+18,other.y+10,obj_scrapwhite);
+        tempid.speed=global.strengthlevel+2;
+        if (global.facing==0)
+            tempid.direction=random(180)-90;
+        else
+            tempid.direction=random(180)+90;
+        }
+    
+if (angry==0 &amp;&amp; (state==0 || state==1)){
+    alarm[2]=1;
+    tempid=instance_create(x+50,y+100,obj_visionchecke)
+    tempid.direction=0;
+    tempid.speed=16;
+    tempid=instance_create(x+50,y+100,obj_visionchecke)
+    tempid.direction=180;
+    tempid.speed=16;
+    }
+    if (state!=10){
+        angry=1;
+        alarm[5]=300;
+        }
+    if (global.strengthlevel&gt;=resistance){
+        hp-=1;
+        script_execute(scr_annihilatorpain);
+        }
+    else{
+        global.erasetop=0;
+        global.topmessage="You need a Strength of "+string(resistance)+" to damage a Komato Annihilator";
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

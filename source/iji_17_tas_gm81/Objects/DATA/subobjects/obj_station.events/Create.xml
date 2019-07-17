@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed=0.25;
+if (sprite_index=spr_station_health &amp;&amp; global.healthlevel==10){
+    sprite_index=spr_station_blank;
+    type=0;
+    }
+if (sprite_index=spr_station_attack &amp;&amp; global.attacklevel==10){
+    sprite_index=spr_station_blank;
+    type=1;
+    }
+if (sprite_index=spr_station_assimilate &amp;&amp; global.assimilatelevel==10){
+    sprite_index=spr_station_blank;
+    type=2;
+    }
+if (sprite_index=spr_station_strength &amp;&amp; global.strengthlevel==10){
+    sprite_index=spr_station_blank;
+    type=3;
+    }
+if (sprite_index=spr_station_crack &amp;&amp; global.cracklevel==10){
+    sprite_index=spr_station_blank;
+    type=4;
+    }
+if (sprite_index=spr_station_tasen &amp;&amp; global.tasenlevel==10){
+    sprite_index=spr_station_blank;
+    type=5;
+    }
+if (sprite_index=spr_station_komato &amp;&amp; global.komatolevel==10){
+    sprite_index=spr_station_blank;
+    type=6;
+    }
+
+if (global.specialtrigger16 &amp;&amp; sprite_index!=spr_station_health &amp;&amp; sprite_index!=spr_readpaper)
+    sprite_index=spr_station_blank;
+if (global.really &amp;&amp; sprite_index!=spr_readpaper)
+    sprite_index=spr_station_blank;
+if (global.suddendeath &amp;&amp; sprite_index==spr_station_health)
+    sprite_index=spr_station_blank;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

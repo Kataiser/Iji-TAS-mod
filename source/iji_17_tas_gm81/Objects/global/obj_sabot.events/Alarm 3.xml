@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="3">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Part of teleportation
+instance_activate_object(obj_teledest);
+with (obj_teledest){
+    if (obj_iji.dest==dest){
+        if (sprite_index==spr_checkpoint){
+            obj_iji.x=x+10;
+            obj_iji.y=y+35;
+            //Sec7
+            if (room==rom_sector7){
+                obj_sabot.fixedpalette=0;
+                if (!obj_iji.sec7cp2){
+                    obj_sabot.palette=1;
+                    background_index[0]=bg_back73;
+                    }
+                else{
+                    obj_sabot.palette=0;
+                    background_index[0]=bg_back7;
+                    }
+                }
+            //Lifts
+            instance_activate_object(obj_lift);
+            with (obj_lift){
+                if (global.sector==2 &amp;&amp; tag==1)
+                    y=3904;
+                else if (global.sector==2 &amp;&amp; tag==2)
+                    y=2720;
+                else if (global.sector==3 &amp;&amp; tag==1)
+                    y=2400;
+                else if (global.sector==3 &amp;&amp; tag==2)
+                    y=1440;
+                else if (global.sector==5 &amp;&amp; tag==1)
+                    y=3648;
+                else if (global.sector==6 &amp;&amp; tag==1)
+                    y=3008;
+                else if (global.sector==7 &amp;&amp; tag==1)
+                    y=5952;
+                else if (global.sector==7 &amp;&amp; tag==2 &amp;&amp; obj_iji.sec7cp2)
+                    y=4704;
+                else if (global.sector==7 &amp;&amp; tag==3)
+                    y=1984;
+                }
+            }
+        else{
+            obj_iji.x=x+10;
+            obj_iji.y=y-29;
+            instance_create(obj_iji.x,obj_iji.y,obj_whiteflash2);
+            }
+        obj_sabot.ignoresmooth=1;
+        if (global.facing==1 &amp;&amp; sprite_index==spr_teledest)
+            instance_create(obj_iji.x-11,obj_iji.y-4,obj_ijiflash);
+        if (global.facing==0 &amp;&amp; sprite_index==spr_teledest){
+            tempid=instance_create(obj_iji.x-19,obj_iji.y-4,obj_ijiflash);
+            tempid.image_index=5;
+            }
+        repeat(30){
+            if (sprite_index==spr_checkpoint)
+                tempid=instance_create(x+random(32),y+random(64),obj_thorspark);
+            else
+                tempid=instance_create(x+random(32),y+12-random(64),obj_thorspark);
+            tempid.speed=random(3.5)-1.5;
+            tempid.direction=90;
+            tempid.gravity=0.2;
+            }
+        }
+    }
+instance_activate_object(obj_block);
+metcyc=0;
+doteleport=1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

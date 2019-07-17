@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!place_free(x+32,y))
+    dir=1;
+else if (!place_free(x-32,y))
+    dir=2;
+else
+    dir=0;
+image_single=4;
+animcyc=0;
+animdir=0;
+lowlimit=0;
+highlimit=8;
+animwant=4;
+//Restrict movement
+if (dir==1){
+    lowlimit=0;
+    highlimit=4;
+    }
+else if (dir==2){
+    lowlimit=4;
+    highlimit=8;
+    }
+else{
+    lowlimit=0;
+    highlimit=8;
+    }
+
+if (dir==0)
+    image_single=floor(random(9));
+else if (dir==1)
+    image_single=floor(random(5));
+else if (dir==2)
+    image_single=4+floor(random(5));
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

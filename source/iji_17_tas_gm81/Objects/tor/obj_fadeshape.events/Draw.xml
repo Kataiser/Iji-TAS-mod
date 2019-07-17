@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Shrink
+xv[0]+=(x-xv[0])/50;
+yv[0]+=(y-yv[0])/50;
+xv[1]+=(x-xv[1])/50;
+yv[1]+=(y-yv[1])/50;
+xv[2]+=(x-xv[2])/50;
+yv[2]+=(y-yv[2])/50;
+if (abs(xv[0]-x)&lt;0.5 &amp;&amp; abs(xv[1]-x)&lt;0.5 &amp;&amp; abs(xv[2]-x)&lt;0.5)
+    instance_destroy();
+
+//Move
+for (i=0; i&lt;3; i+=1){
+    xv[i]+=hspeed;
+    yv[i]+=vspeed;
+    }
+//Slow down
+hspeed*=0.95;
+vspeed*=0.95;
+
+//Draw
+if (alpha&lt;255)
+    alpha+=2+gravity*15;
+if (alpha&gt;255)
+    alpha=255;
+draw_set_color(make_color_rgb(alpha,alpha,alpha));
+draw_triangle(xv[0],yv[0],xv[1],yv[1],xv[2],yv[2],0);
+
+if (x&gt;1400)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (weapon==0){
+if (facing==0){
+    if (cracked==0){
+        scr_sound("wea_rock");
+        tempid=instance_create(x-34,y+25,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=-global.rocketspeed;
+        tempid.image_single=1;
+        tempid=instance_create(x-40,y+25,obj_rocketlaunch);
+        tempid.sprite_index=spr_rocketlaunchleft;
+        sprite_index=spr_tasencommander_fireleft;
+        }
+    else{
+        tempid=instance_create(x-23,y+25,obj_enemyrocketexplosion);
+        tempid.target=id;
+        instance_create(x-23,y+25,obj_explosioncenter);
+        oops=1;
+        script_execute(scr_shakescreen,2);
+        }
+    }
+else{
+    if (cracked==0){
+        scr_sound("wea_rock");
+        tempid=instance_create(x+42,y+25,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed;
+        tempid.image_single=0;
+        instance_create(x+46,y+25,obj_rocketlaunch);
+        sprite_index=spr_tasencommander_fire;
+        }
+    else{
+        tempid=instance_create(x+42,y+25,obj_enemyrocketexplosion);
+        tempid.target=id;
+        instance_create(x+42,y+25,obj_explosioncenter);
+        oops=1;
+        script_execute(scr_shakescreen,2);
+        }
+    }
+}
+
+if (weapon==1){
+if (facing==0){
+    if (cracked==0){
+        scr_sound("wea_rock");
+        tempid=instance_create(x-34,y+25,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=-global.rocketspeed;
+        tempid.image_single=1;
+        tempid=instance_create(x-34,y+25,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed-2;
+        tempid.direction=174;
+        tempid.image_single=1;
+        tempid=instance_create(x-34,y+25,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed-4;
+        tempid.direction=186;
+        tempid.image_single=1;
+        tempid=instance_create(x-40,y+25,obj_rocketlaunch);
+        tempid.sprite_index=spr_rocketlaunchleft;
+        sprite_index=spr_tasencommander_fireleft;
+        }
+    else{
+        tempid=instance_create(x-23,y+25,obj_enemyrocketexplosion);
+        tempid.target=id;
+        instance_create(x-23,y+25,obj_explosioncenter);
+        oops=1;
+        script_execute(scr_shakescreen,2);
+        }
+    }
+else{
+    if (cracked==0){
+        scr_sound("wea_rock");
+        tempid=instance_create(x+42,y+25,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed;
+        tempid.image_single=0;
+        tempid=instance_create(x+42,y+25,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed-2;
+        tempid.direction=6;
+        tempid.image_single=0;
+        tempid=instance_create(x+42,y+25,obj_enemyrocket);
+        tempid.target=id;
+        tempid.speed=global.rocketspeed-4;
+        tempid.direction=-6;
+        tempid.image_single=0;
+        instance_create(x+46,y+25,obj_rocketlaunch);
+        sprite_index=spr_tasencommander_fire;
+        }
+    else{
+        tempid=instance_create(x+42,y+25,obj_enemyrocketexplosion);
+        tempid.target=id;
+        instance_create(x+42,y+25,obj_explosioncenter);
+        oops=1;
+        script_execute(scr_shakescreen,2);
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

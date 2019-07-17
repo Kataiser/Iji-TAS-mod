@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">{
+//Death
+if (dead==1){
+    if ((x &gt; obj_shakescreen.x-500) &amp;&amp; (x &lt; obj_shakescreen.x+500) &amp;&amp; (y &gt; obj_shakescreen.y-400) &amp;&amp; (y &lt; obj_shakescreen.y+400))
+    script_execute(scr_nanoexplosion,10,35);
+    instance_create(x+10,y+25,obj_xp3);
+    if (cracked)
+        script_execute(scr_dropammo,10,25,1,4);
+    else
+        script_execute(scr_dropammo,10,25,6,3);
+    if (ijikill){
+    tempid=instance_create(x+6,y-1,obj_visionchecke)
+    tempid.direction=0;
+    tempid.speed=16;
+    tempid=instance_create(x+6,y-1,obj_visionchecke)
+    tempid.direction=180;
+    tempid.speed=16;
+    }
+    instance_destroy();
+    }
+//Get up
+if (dead==0) &amp;&amp; state==5{
+    if (ijikill){
+    tempid=instance_create(x+6,y-1,obj_visionchecke)
+    tempid.direction=0;
+    tempid.speed=16;
+    tempid=instance_create(x+6,y-1,obj_visionchecke)
+    tempid.direction=180;
+    tempid.speed=16;
+    }
+    armor=100;
+    state=6;
+    takingpain=0;
+    image_index=0;
+    image_single=-1;
+    image_speed=0.5;
+    if (facing==0)
+        sprite_index=spr_tasencommander_getupleft;
+    else
+        sprite_index=spr_tasencommander_getup;
+    y-=40;
+    alarm[2]=24;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

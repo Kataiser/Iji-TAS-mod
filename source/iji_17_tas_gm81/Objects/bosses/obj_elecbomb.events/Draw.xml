@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (vspeed&gt;20)
+    vspeed=20;
+if (elec){
+    temprand=random(1);
+    if (temprand&gt;=0.9 &amp;&amp; !permanent)
+        scr_sound("glo_spark");
+    //scr_shakescreen(1);
+    if (global.specialbake){
+    x1=x-20+random(40);
+    y1=y-(18+random(48));
+    x2=x-15+random(30);
+    y2=y-(70+random(50));
+    draw_set_color(c_white);
+    draw_line(x,y-12,x1,y1);
+    draw_line(x1,y1,x2,y2);
+    draw_line(x2,y2,x,y-128);
+    }
+
+    else{
+    x1=x-20+random(40);
+    y1=y-(18+random(48));
+    x2=x-15+random(30);
+    y2=y-(70+random(50));
+    x3=x-20+random(40);
+    y3=y-(18+random(48));
+    x4=x-15+random(30);
+    y4=y-(70+random(50));
+    draw_set_color(c_white);
+    pensize=ceil(random(3));
+    draw_line_width(x,y-12,x1,y1,pensize);
+    draw_line_width(x1,y1,x2,y2,pensize);
+    draw_line_width(x2,y2,x,y-(128+random(16)),pensize);
+    draw_line(x,y-12,x3,y3);
+    draw_line(x3,y3,x4,y4);
+    draw_line(x4,y4,x,y-128);
+    }
+    }
+if (elec &amp;&amp; global.hp&gt;0 &amp;&amp; !obj_iji.takingpain &amp;&amp; !obj_iji.recovering &amp;&amp; (place_meeting(x,y,obj_iji) || place_meeting(x,y-32,obj_iji) || place_meeting(x,y-64,obj_iji) ||  place_meeting(x,y-96,obj_iji))){
+    scr_shakescreen(3);
+    global.hp-=2;
+    global.damage+=2;
+    with (obj_iji)
+        scr_pain();
+    }
+
+if (vspeed!=0)
+    image_index=0;
+draw_sprite(sprite_index,image_index,floor(x),floor(y));</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

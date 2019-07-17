@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!place_free(x+hspeed,y+vspeed)){
+    if (type==3){
+        if (bounce&gt;4)
+            instance_destroy();
+        else{
+            bounce+=1;
+            if (hspeed&gt;0 &amp;&amp; !place_free(x+abs(hspeed),y))
+                hspeed=-abs(hspeed);
+            else if (hspeed&lt;0 &amp;&amp; !place_free(x-abs(hspeed),y))
+                hspeed=abs(hspeed);
+            if (vspeed&gt;0 &amp;&amp; !place_free(x,y+abs(vspeed)))
+                vspeed=-abs(vspeed);
+            else if (vspeed&lt;0 &amp;&amp; !place_free(x,y-abs(vspeed)))
+                vspeed=abs(vspeed);
+            image_single=floor(direction/45);
+            }
+        }
+    else if (type!=4 &amp;&amp; type!=1)
+        instance_destroy();
+    }
+if (type==2){
+    direction+=meteorrot;
+    if (direction&lt;5 || direction&gt;355){
+        direction=0;
+        meteorrot=0;
+        }
+    }
+if (type==1){
+    img2+=1;
+    if (img2==3){
+        img2=0;
+        img+=1;
+        image_single=img;
+        if (img&gt;=7)
+            instance_destroy();
+        }
+    }
+
+if (x&lt;obj_sabot.x-400 || x&gt;obj_sabot.x+400 || y&lt;obj_sabot.y-300 || y&gt;obj_sabot.y+300)
+    instance_destroy();
+if (type==4){
+    lancecyc+=1;
+    if (lancecyc==1)
+        invis=1;
+    if (lancecyc&gt;=2)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

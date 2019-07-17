@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">x-=(random(60)*8)+96;
+influence=random(0.2)+0.02;
+speed=16;
+
+if (obj_clearsabot.slow){
+    influence=random(0.05)+0.005;
+    speed=8;
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

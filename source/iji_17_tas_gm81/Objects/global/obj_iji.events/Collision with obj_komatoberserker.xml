@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_komatoberserker">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!shredder){
+if (other.dead==0 &amp;&amp; takingpain==0){
+    if (other.alarm[7]&lt;=0){
+        global.armor-=6/global.armorlevel;
+        instance_create(bbox_left+random(bbox_right-bbox_left),bbox_top+random(bbox_bottom-bbox_top),obj_ijiblood);
+        if (other.angry==0 &amp;&amp; (other.state==0 || other.state==1))
+            other.alarm[2]=1;
+        if (other.angry==0){
+            tempid=instance_create(other.x+6,other.y+12,obj_visionchecke)
+            tempid.direction=0;
+            tempid.speed=16;
+            tempid=instance_create(other.x+6,other.y+12,obj_visionchecke)
+            tempid.direction=180;
+            tempid.speed=16;
+            }
+        other.angry=1;
+        other.alarm[5]=300;
+        other.targetiji=300;
+        }
+    }
+}
+else if (speed&gt;8 &amp;&amp; other.state!=4 &amp;&amp; other.state!=5){
+    scr_sound("glo_kick");
+    repeat(3){
+        tempid=instance_create(other.x+18,other.y+10,obj_scrapwhite);
+        tempid.speed=hspeed;
+        tempid.direction=random(360);
+        }    scr_shakescreen(2);
+    other.ijikill=1;
+    other.hp-=1;
+    if (other.hp&lt;=0 &amp;&amp; other.killtype&lt;7)
+        other.killtype=7;
+    if (hspeed&lt;0){
+        with (other)
+            scr_enemyknockdown(1,abs(obj_iji.hspeed)-resistance);
+        }
+    if (hspeed&gt;0){
+        with (other)
+            scr_enemyknockdown(2,abs(obj_iji.hspeed)-resistance);
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

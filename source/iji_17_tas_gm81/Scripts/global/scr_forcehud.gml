@@ -1,0 +1,34 @@
+with (obj_shakescreen){
+obj_reloader.x = x+106-488;
+obj_reloader.y = y+278;
+obj_cracktext.x = x;
+obj_cracktext.y = y;
+obj_messagetext.x = x;
+obj_messagetext.y = y;
+obj_scrollarrow.x = x+399;
+obj_scrollarrow.y = y+299;
+obj_hud.x = x-400;
+obj_hud.y = y+220;
+obj_weapon1.x = x+234-488;
+obj_weapon1.y = y+231;
+obj_weapon2.x = x+274-488;
+obj_weapon2.y = y+231;
+obj_weapon3.x = x+314-488;
+obj_weapon3.y = y+231;
+obj_weapon4.x = x+354-488;
+obj_weapon4.y = y+231;
+obj_weapon5.x = x+234-488;
+obj_weapon5.y = y+263;
+obj_weapon6.x = x+274-488;
+obj_weapon6.y = y+263;
+obj_weapon7.x = x+314-488;
+obj_weapon7.y = y+263;
+obj_weapon8.x = x+354-488;
+obj_weapon8.y = y+263;
+obj_kroterabar.x=x;
+obj_kroterabar.y=y-268+obj_kroterabar.yadjust;
+obj_ashabar.x=x;
+obj_ashabar.y=y-268+obj_ashabar.yadjust;
+obj_proximabar.x=x;
+obj_proximabar.y=y-268+obj_proximabar.yadjust;
+}

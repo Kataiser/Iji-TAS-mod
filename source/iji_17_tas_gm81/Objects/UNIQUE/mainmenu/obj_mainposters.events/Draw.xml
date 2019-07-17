@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_set_color(c_black);
+draw_rectangle(-20,-20,820,620,0);
+
+if (global.poster1)
+    draw_sprite(spr_mainposter1,0,10,10);
+else
+    draw_sprite(spr_mainposter0,0,10,10);
+if (global.poster2)
+    draw_sprite(spr_mainposter2,0,168,10);
+else
+    draw_sprite(spr_mainposter0,0,168,10);
+if (global.poster3)
+    draw_sprite(spr_mainposter3,0,326,10);
+else
+    draw_sprite(spr_mainposter0,0,326,10);
+if (global.poster4)
+    draw_sprite(spr_mainposter4,0,484,10);
+else
+    draw_sprite(spr_mainposter0,0,484,10);
+if (global.poster5)
+    draw_sprite(spr_mainposter5,0,642,10);
+else
+    draw_sprite(spr_mainposter0,0,642,10);
+if (global.poster6)
+    draw_sprite(spr_mainposter6,0,10,305);
+else
+    draw_sprite(spr_mainposter0,0,10,305);
+if (global.poster7)
+    draw_sprite(spr_mainposter7,0,168,305);
+else
+    draw_sprite(spr_mainposter0,0,168,305);
+if (global.poster8)
+    draw_sprite(spr_mainposter8,0,326,305);
+else
+    draw_sprite(spr_mainposter0,0,326,305);
+if (global.poster9)
+    draw_sprite(spr_mainposter9,0,484,305);
+else
+    draw_sprite(spr_mainposter0,0,484,305);
+if (global.poster10)
+    draw_sprite(spr_mainposter10,0,642,305);
+else
+    draw_sprite(spr_mainposter0,0,642,305);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

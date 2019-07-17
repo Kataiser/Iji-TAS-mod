@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_sound("glo_getoverload");
+instance_destroy();
+(instance_create(x+16,y+16,obj_megaflash)).mute=1;
+scr_nanoexplosion(16,16);
+obj_iji.overloadtime=1499;
+obj_iji.overcyc=0;
+obj_iji.image_alpha=1;
+global.erasetop=0;
+
+kills=global.sector;
+if (global.sector==0)
+    kills=10;
+//Low spectrum (stealth)
+if ((global.kills+global.totkills)&lt;=kills*global.neutralkc){
+    while (i&lt;1000){
+        i+=1;
+        obj_iji.overload=ceil(random(8)+2);
+        if (obj_iji.overload==3 || obj_iji.overload==6 || obj_iji.overload==8 || obj_iji.overload==9 || obj_iji.overload==10)
+            i=1000;
+        }
+    }
+//High spectrum (berserk)
+else if ((global.kills+global.totkills)&gt;kills*global.berserkkc){
+    while (i&lt;1000){
+        i+=1;
+        obj_iji.overload=ceil(random(10));
+        if (obj_iji.overload==1 || obj_iji.overload==2 || obj_iji.overload==4 || obj_iji.overload==7)
+            i=1000;
+        }
+    }
+//Medium spectrum (moderate)
+else
+    obj_iji.overload=ceil(random(10));
+
+if (obj_iji.overload==1){
+    global.topmessage="NANOCHAOS - Retaliate if damaged";
+    obj_iji.overloadtime=749;
+    }
+if (obj_iji.overload==2){
+    global.topmessage="NANOSPARK - Disrupt nearby personal Nanofields";
+    obj_iji.overloadtime=749;
+    }
+if (obj_iji.overload==3)
+    global.topmessage="NANOVIS - Partial invisibility";
+if (obj_iji.overload==4){
+    global.topmessage="NANOBLAST - Explosive Shotgun";
+    obj_iji.overloadtime=749;
+    }
+if (obj_iji.overload==5){
+    global.topmessage="NANOMIRROR - Automatic Resonance reflector";
+    obj_iji.overloadtime=749;
+    }
+if (obj_iji.overload==6)
+    global.topmessage="NANOLIFE - Revive once if killed";
+if (obj_iji.overload==7){
+    global.topmessage="NANORAGE - No ammo spent";
+    obj_iji.overloadtime=749;
+    }
+if (obj_iji.overload==8){
+    global.topmessage="NANOSHIELD - No armor damage";
+    obj_iji.overloadtime=749;
+    }
+if (obj_iji.overload==9)
+    global.topmessage="NANOFORGE - When hurt by enemy fire, turn it into ammo";
+if (obj_iji.overload==10)
+    global.topmessage="NANOREFLEX - Automatically Tech all damage";
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

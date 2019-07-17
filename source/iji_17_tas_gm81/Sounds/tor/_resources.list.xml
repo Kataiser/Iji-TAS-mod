@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_tor_fire" type="RESOURCE"/>
+  <resource name="snd_tor_gather" type="RESOURCE"/>
+  <resource name="snd_tor_gather_q01" type="RESOURCE"/>
+  <resource name="snd_tor_gather_q03" type="RESOURCE"/>
+  <resource name="snd_tor_spark" type="RESOURCE"/>
+  <resource name="snd_tor_eruption" type="RESOURCE"/>
+  <resource name="snd_tor_fly" type="RESOURCE"/>
+  <resource name="snd_tor_ambient1" type="RESOURCE"/>
+  <resource name="snd_tor_ambient2" type="RESOURCE"/>
+  <resource name="snd_tor_ambient3" type="RESOURCE"/>
+  <resource name="snd_tor_ambient4" type="RESOURCE"/>
+  <resource name="snd_tor_win" type="RESOURCE"/>
+  <resource name="snd_tor_pain" type="RESOURCE"/>
+  <resource name="snd_tor_emote2" type="RESOURCE"/>
+  <resource name="snd_tor_emote3" type="RESOURCE"/>
+</resources>

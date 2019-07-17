@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">x=-200;
+speed=30;
+alarm[0]=14;
+image_single=0;
+if ((global.sector==8 &amp;&amp; global.specialtrigger1==0) || global.sector==2 || (global.sector==0 &amp;&amp; global.killdata[798]&gt;0))
+    image_single=1;
+if (global.killdata[797]&gt;0 &amp;&amp; global.sector==0){
+    visible=0;
+    with (obj_clearzoom)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

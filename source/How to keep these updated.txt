@@ -1,4 +1,0 @@
-scripts.gml: In Game Maker: Scripts -> Export All Scripts... (make sure no scripts are selected)
-objects.gml: In Game Maker: Edit -> Show Object Information. Select all the text and copy it. Open objects.gml in a text editor, select all of the text, and paste.
-
-Entirely ignore any .sav files, and make sure to save the Game Maker project when done making changes.

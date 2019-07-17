@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_sec1reaver" type="RESOURCE"/>
+  <resource name="obj_crumble1" type="RESOURCE"/>
+  <resource name="obj_ztele" type="RESOURCE"/>
+  <resource name="obj_sec1rock" type="RESOURCE"/>
+  <resource name="obj_sec1lamptrigger" type="RESOURCE"/>
+  <resource name="obj_sec1musictrigger" type="RESOURCE"/>
+  <resource name="obj_reallytrigger" type="RESOURCE"/>
+</resources>

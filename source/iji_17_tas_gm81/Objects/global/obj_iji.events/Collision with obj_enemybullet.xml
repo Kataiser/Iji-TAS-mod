@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_enemybullet">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (shredder){
+shredderhp-=4;
+}
+else{
+if (takingpain==0 &amp;&amp; recovering==0){
+    global.armor-=(4/global.armorlevel);
+    instance_create(other.x-3+random(7),other.y-3+random(7),obj_ijisplat);
+    if (overload==9){
+        global.ammo2partpart+=1;
+        if (global.ammo2partpart&gt;=3){
+            global.ammo2partpart=0;
+            global.ammo2part-=1;
+            }
+        if global.ammo2part&lt;0{
+            if (global.weapon2){
+                if (global.assimilatelevel&lt;10)
+                    maxammo=global.assimilatebase+global.assimilatelevel*global.assimilatesize;
+                else
+                    maxammo=99;
+                if (global.ammo2==maxammo)
+                    global.topmessage="Machinegun ammo full";
+                else
+                    global.topmessage="Machinegun ammo +1";
+                }
+            else{
+                if (global.assimilatelevel&lt;10)
+                    maxammo=global.assimilatebase+global.assimilatelevel*global.assimilatesize;
+                else
+                    maxammo=99;
+                if (global.ammo2==maxammo)
+                    global.topmessage="Unknown ammo full";
+                else
+                    global.topmessage="Unknown ammo +1";
+                }
+            global.ammo2part=9;
+            global.ammo2+=1;
+            global.erasetop=0;
+            }
+        }
+    }
+}
+
+with (other){
+    x+=(3-random(6));
+    y+=(3-random(6));
+    instance_create(x,y,obj_bullethit);
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

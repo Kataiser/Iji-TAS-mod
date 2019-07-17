@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pulse">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.hyper==1 &amp;&amp; armor&lt;30 &amp;&amp; global.strengthlevel&gt;=resistance &amp;&amp; rapidfirempfb==0){
+    ijikill=1;
+    hp-=1;
+    while (armor&lt;100)
+        armor+=1;
+    script_execute(scr_elitepain);
+    script_execute(scr_shakescreen,1);
+    scr_sound("glo_kick");
+    repeat(3){
+        tempid=instance_create(other.x,other.y,obj_scrapwhite);
+        tempid.speed=global.strengthlevel+2;
+        if (other.hspeed&lt;0)
+            tempid.direction=random(180)-90;
+        else
+            tempid.direction=random(180)+90;
+        }
+    }
+with (other){
+    scr_pulseexplosion();
+    instance_destroy();
+    }
+if (dead==0 &amp;&amp; rapidfirempfb==0 &amp;&amp; !other.linker){
+    ijikill=1;
+    armor-=2*global.atmult;
+    instance_create(other.x-3+random(7),other.y-3+random(7),obj_tasensplat);
+    }
+if (other.linker){
+    if (global.topmessage=="0"){
+        global.erasetop=0;
+        global.topmessage="Pulse link could not be established";
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

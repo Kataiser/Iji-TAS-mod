@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bg_back1" type="RESOURCE"/>
+  <resource name="bg_back2" type="RESOURCE"/>
+  <resource name="bg_back3" type="RESOURCE"/>
+  <resource name="bg_back32" type="RESOURCE"/>
+  <resource name="bg_back33" type="RESOURCE"/>
+  <resource name="bg_back4" type="RESOURCE"/>
+  <resource name="bg_back5" type="RESOURCE"/>
+  <resource name="bg_back52" type="RESOURCE"/>
+  <resource name="bg_back6" type="RESOURCE"/>
+  <resource name="bg_back7" type="RESOURCE"/>
+  <resource name="bg_back72" type="RESOURCE"/>
+  <resource name="bg_back73" type="RESOURCE"/>
+  <resource name="bg_back8" type="RESOURCE"/>
+  <resource name="bg_back9" type="RESOURCE"/>
+  <resource name="bg_backx" type="RESOURCE"/>
+  <resource name="bg_backx2" type="RESOURCE"/>
+  <resource name="bg_zrback" type="RESOURCE"/>
+  <resource name="bg_zcback" type="RESOURCE"/>
+</resources>

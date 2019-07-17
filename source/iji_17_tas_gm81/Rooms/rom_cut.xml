@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<room>
+  <caption>Iji - Press Alt+F4 to quit</caption>
+  <size height="600" width="800"/>
+  <grid>
+    <isometric>false</isometric>
+    <snap x="32" y="32"/>
+  </grid>
+  <speed>30</speed>
+  <persistent>false</persistent>
+  <creationCode/>
+  <backgroundColor>000000</backgroundColor>
+  <drawBackgroundColor>true</drawBackgroundColor>
+  <clearViewBackground>true</clearViewBackground>
+  <backgrounds>
+    <backgroundDef>
+      <visibleOnRoomStart>true</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage>bg_black</backgroundImage>
+      <offset x="200" y="150"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>false</tileHorizontally>
+      <tileVertically>false</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage>bg_black</backgroundImage>
+      <offset x="200" y="150"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>false</tileHorizontally>
+      <tileVertically>false</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+    <backgroundDef>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <isForeground>false</isForeground>
+      <backgroundImage/>
+      <offset x="0" y="0"/>
+      <speed x="0" y="0"/>
+      <tileHorizontally>true</tileHorizontally>
+      <tileVertically>true</tileVertically>
+      <stretch>false</stretch>
+    </backgroundDef>
+  </backgrounds>
+  <enableViews>true</enableViews>
+  <views>
+    <view>
+      <visibleOnRoomStart>true</visibleOnRoomStart>
+      <viewInRoom height="600" width="800" x="0" y="0"/>
+      <portOnScreen height="600" width="800" x="0" y="0"/>
+      <objectFollowing hBorder="0" hSpeed="-1" vBorder="0" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+    <view>
+      <visibleOnRoomStart>false</visibleOnRoomStart>
+      <viewInRoom height="480" width="640" x="0" y="0"/>
+      <portOnScreen height="480" width="640" x="0" y="0"/>
+      <objectFollowing hBorder="32" hSpeed="-1" vBorder="32" vSpeed="-1"/>
+    </view>
+  </views>
+  <instances>
+    <instance>
+      <object>obj_cutdoll</object>
+      <position x="32" y="32"/>
+      <creationCode>target=1;
+depth=-50;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cutdoll</object>
+      <position x="64" y="32"/>
+      <creationCode>target=2;
+depth=-51;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cutdoll</object>
+      <position x="96" y="32"/>
+      <creationCode>target=3;
+depth=-52;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cutdoll</object>
+      <position x="128" y="32"/>
+      <creationCode>target=4;
+depth=-53;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>obj_cutsabot</object>
+      <position x="200" y="150"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+  </instances>
+  <tiles/>
+  <editorSettings remember="true">
+    <size height="712" width="891"/>
+    <showGrid>false</showGrid>
+    <showObjects>true</showObjects>
+    <showTiles>true</showTiles>
+    <showBackgrounds>true</showBackgrounds>
+    <showForegrounds>true</showForegrounds>
+    <showViews>false</showViews>
+    <deleteUnderlyingObjects>true</deleteUnderlyingObjects>
+    <deleteUnderlyingTiles>true</deleteUnderlyingTiles>
+    <currentTab>1</currentTab>
+    <horizontalScrollPosition>0</horizontalScrollPosition>
+    <verticalScrollPosition>0</verticalScrollPosition>
+  </editorSettings>
+</room>

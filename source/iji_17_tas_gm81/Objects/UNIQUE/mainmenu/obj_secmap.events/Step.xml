@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (obj_face.selected!=4 || obj_face.tier!="extras2" &amp;&amp; !fade){
+    fade=1;
+    with (obj_postermarker)
+        instance_destroy();
+    scr_sound("glo_menuback");
+    }
+
+if (fade){
+x+=100;
+if (x&gt;1000)
+    instance_destroy();
+    }
+
+else{
+if (x&gt;525)
+    x-=100;
+else if (instance_number(obj_postermarker)==0)
+    instance_create(-10,-10,obj_postermarker);
+if (obj_face.sectormaps==1)
+    sprite_index=spr_secmap1;
+if (obj_face.sectormaps==2)
+    sprite_index=spr_secmap2;
+if (obj_face.sectormaps==3)
+    sprite_index=spr_secmap3;
+if (obj_face.sectormaps==4)
+    sprite_index=spr_secmap4;
+if (obj_face.sectormaps==5)
+    sprite_index=spr_secmap5;
+if (obj_face.sectormaps==6)
+    sprite_index=spr_secmap6;
+if (obj_face.sectormaps==7)
+    sprite_index=spr_secmap7;
+if (obj_face.sectormaps==8)
+    sprite_index=spr_secmap8;
+if (obj_face.sectormaps==9)
+    sprite_index=spr_secmap9;
+if (obj_face.sectormaps==0)
+    sprite_index=spr_secmapx;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

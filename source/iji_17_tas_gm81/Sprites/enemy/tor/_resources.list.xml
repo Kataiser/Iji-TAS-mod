@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_tor" type="RESOURCE"/>
+  <resource name="spr_ragebomb" type="RESOURCE"/>
+  <resource name="spr_ragebomb2" type="RESOURCE"/>
+  <resource name="spr_ragebombexplo" type="RESOURCE"/>
+  <resource name="spr_tyrian" type="RESOURCE"/>
+  <resource name="spr_tyrian2" type="RESOURCE"/>
+  <resource name="spr_ripper" type="RESOURCE"/>
+  <resource name="spr_ripper4" type="RESOURCE"/>
+  <resource name="spr_heavystomp" type="RESOURCE"/>
+  <resource name="spr_chargeball" type="RESOURCE"/>
+  <resource name="spr_hypershotgun" type="RESOURCE"/>
+  <resource name="spr_hypershotgun2" type="RESOURCE"/>
+  <resource name="spr_torhammer" type="RESOURCE"/>
+  <resource name="spr_fractalrocket" type="RESOURCE"/>
+  <resource name="spr_tor2" type="RESOURCE"/>
+  <resource name="spr_deathhailspark" type="RESOURCE"/>
+  <resource name="spr_deathhailexplo" type="RESOURCE"/>
+  <resource name="spr_deathhailtarget" type="RESOURCE"/>
+  <resource name="spr_eruptionspark" type="RESOURCE"/>
+  <resource name="spr_tor2muzzleflash" type="RESOURCE"/>
+  <resource name="spr_rageburst" type="RESOURCE"/>
+  <resource name="spr_rageburstspark" type="RESOURCE"/>
+  <resource name="spr_torblood" type="RESOURCE"/>
+</resources>

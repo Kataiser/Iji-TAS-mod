@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (room==rom_sector2)
+sprite_index=spr_sec2cloudt;
+if (room==rom_sector3 || room==rom_sector11)
+sprite_index=spr_sec3cloudt;
+if (room==rom_sector5 || room==rom_sector12)
+sprite_index=spr_sec5cloudt;
+if (room==rom_sector7)
+sprite_index=spr_sec7cloudt;
+if (room==rom_sectorx)
+sprite_index=spr_secxcloudt;
+image_single=floor(random(4));
+speed=-2;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

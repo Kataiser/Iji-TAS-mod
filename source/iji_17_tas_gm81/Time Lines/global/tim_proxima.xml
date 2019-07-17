@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="1">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(1216,576,obj_proxima);
+instance_create(1216,576,obj_proximalaser);
+scr_shakescreen(3);
+scr_sound("glo_metabreak");
+scr_sound("glo_kick");
+repeat(30){
+tempid=instance_create(1216,544,obj_scrapbrown);
+tempid.hspeed=-5+random(10);
+tempid.vspeed=random(20);
+}</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="75">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_proxima.antigrav=1;
+obj_proxima.gasu=21;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="120">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_proxima.image_single=1;
+scr_sound("tur_appear");
+with (obj_proxima)
+    scr_proximatalk(0);
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="121">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_proxima.image_single=2;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="122">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_proxima.image_single=3;</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="123">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">obj_proxima.streaming=1;
+obj_sabot.flash=0.5;
+obj_proxima.sprite_index=spr_proxima_body;
+obj_proxima.image_single=0;
+scr_sound("exp_nano");
+repeat(8)
+    instance_create(obj_proxima.x-32+random(64),obj_proxima.y-32+random(64),obj_nanospark);
+repeat(20)
+    instance_create(obj_proxima.x-32+random(64),obj_proxima.y-32+random(64),obj_thorspark);
+</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="138">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(obj_iji.x,obj_iji.y,obj_chat)).textid="chat74";</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

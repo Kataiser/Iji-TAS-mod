@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Reboot
+if (global.hp&gt;0 &amp;&amp; !obj_iji.takingpain &amp;&amp; !obj_iji.recovering &amp;&amp; (obj_iji.sprite_index==spr_duck || obj_iji.sprite_index==spr_duckleft)){
+    if (room==rom_sectorz || room==rom_sector1 || room==rom_sector2 || room==rom_sector3 || room==rom_sector4 || room==rom_sector5 || room==rom_sector6 || room==rom_sector7 || room==rom_sector8 || room==rom_sector9 || room==rom_sectorx){
+        global.erasetop=0;
+        global.topmessage="WARNING: CRITICAL SECURITY BREACH DETECTED";
+        global.ignorestation=90;
+        global.security=1;
+        obj_iji.crackmark=1;
+        global.cracktext="KL-53 TASEN#[1&gt;base&gt;field]#Security: ";
+        global.cracktext+=string(global.security);
+        if (global.security==10)
+            global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+        else
+            global.cracktext+="#PUSH "+chr(global.usekey)+" TO BEGIN"
+        script_execute(scr_begincrack);
+        }
+    else{
+        global.ignoreall=0;
+        global.erasetop=0;
+        global.topmessage="You are too distracted to attempt this here";
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

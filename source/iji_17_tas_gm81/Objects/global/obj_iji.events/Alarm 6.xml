@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Vortex death during full pacifist ending
+if (vortexkilled &amp;&amp; !vortexkilled2){
+    vortexkilled2=1;
+    with (obj_sabot)
+        scr_music("mus_darkstroke");
+    if (!global.noblood){
+        instance_create(x+6,y+30,obj_bloodflow);
+        (instance_create(x+6,y+30,obj_bloodflow)).dir=1;
+        }
+    repeat(150)
+        instance_create(obj_iji.x-100+random(200),obj_iji.y-100+random(200),obj_ijideathflash);
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    global.hp=0;
+    global.armor=0;
+    repeat(3)
+        script_execute(scr_nanoexplosion,6,25);
+    (instance_create(x,y,obj_deadiji)).sprite_index=sprite_index;
+    visible=0;
+    invisible=1;
+    scr_stopijivoice();
+    global.ignoreall=1;
+    image_single=9;
+    global.state=8;
+    }
+
+
+else{
+//Death
+if (global.hp&lt;1){
+    with (obj_ansaksie){
+        scr_assassinpain(1);
+        instance_destroy();
+        }
+    with (obj_tasenscout)
+        angry=0;
+    with (obj_tasensoldier)
+        angry=0;
+    with (obj_tasencommander)
+        angry=0;
+    with (obj_tasenelite)
+        angry=0;
+    with (obj_komatotrooper)
+        angry=0;
+    with (obj_komatoberserker)
+        angry=0;
+    with (obj_komatoassassin){
+        angry=0;
+        if (!asha &amp;&amp; !asha2)
+            instance_destroy=0;
+        }
+    with (obj_komatobeast)
+        angry=0;
+    with (obj_komatoannihilator)
+        angry=0;
+    with (obj_krotera){
+        if (hp&gt;0){
+            angry=0;
+            calmdown=1;
+            }
+        }
+    with (obj_asha)
+        angry=0;
+    with (obj_iosa){
+        angry=0;
+        alarm[2]=0;
+        alarm[6]=0;
+        }
+    with (obj_visioncheck)
+        instance_destroy();
+    with (obj_nanoflash)
+        instance_destroy();
+    if (obj_checkpoint.state==1)
+        scr_revive();
+    //Really dead
+    else{
+        repeat(8)
+            instance_create(x-10+floor(random(32)),y+10,obj_xp4);
+        if (global.ammo2&gt;0)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo1);
+        if (global.ammo2&gt;10)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo2);
+        if (global.ammo3&gt;0)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo3);
+        if (global.ammo3&gt;3)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo4);
+        if (global.ammo4&gt;0)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo5);
+        if (global.ammo4&gt;3)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo6);
+        if (global.ammo6&gt;0)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo7);
+        if (global.ammo6&gt;3)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo8);
+        if (global.ammo7&gt;0)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo9);
+        if (global.ammo7&gt;3)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo10);
+        if (global.ammo8&gt;0)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo11);
+        if (global.ammo8&gt;3)
+            instance_create(x-26+floor(random(32)),y-6,obj_ammo12);
+        with (obj_sabot)
+            scr_music("mus_gameover");
+        if (room==rom_sector11 || room==rom_sector12 || room==rom_sector13 || room==rom_sector14 || room==rom_sector15)
+            global.bosshint=1;
+        if (!global.noblood){
+            instance_create(x+6,y+30,obj_bloodflow);
+            (instance_create(x+6,y+30,obj_bloodflow)).dir=1;
+            }
+        obj_hud.depth=-100;
+        obj_weapon1.depth=-101;
+        obj_weapon2.depth=-101;
+        obj_weapon3.depth=-101;
+        obj_weapon4.depth=-101;
+        obj_weapon5.depth=-101;
+        obj_weapon6.depth=-101;
+        obj_weapon7.depth=-101;
+        obj_weapon8.depth=-101;
+        obj_reloader.depth=-102;
+        repeat(150)
+            instance_create(obj_iji.x-100+random(200),obj_iji.y-100+random(200),obj_ijideathflash);
+        (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+        instance_create(obj_shakescreen.x,obj_shakescreen.y,obj_breakscreen);
+        global.armor=0;
+        repeat(3) script_execute(scr_nanoexplosion,6,25);
+        with (obj_turret){
+            angry=0;
+            alarm[2]=0;
+            }
+        (instance_create(x,y,obj_deadiji)).sprite_index=sprite_index;
+        instance_destroy();
+        with (obj_chaintracer2)
+            instance_destroy();
+        obj_sabot.gameover=1;
+        scr_stopijivoice();
+        }
+    }
+//Await getup
+else{
+    image_single=9;
+    global.state=8;
+    if (takingpain==1 &amp;&amp; recovering==0){
+        if (global.strengthlevel==10)
+            alarm[7]=90;
+        else
+            alarm[7]=60;
+        recovering=1;
+        }
+    else{
+        takingpain=0;
+        recovering=0;
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

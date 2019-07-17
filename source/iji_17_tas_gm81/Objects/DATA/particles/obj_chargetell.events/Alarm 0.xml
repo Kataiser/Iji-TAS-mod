@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (tempid.turret)
+    factormax=tempid.alarm[2];
+else if (tempid.enemytype!=12)
+    factormax=tempid.alarm[6];
+else{ //Assassin
+    if (tempid.sprite_index==spr_komatoassassin_pose1 || tempid.sprite_index==spr_komatoassassin_pose1left || tempid.sprite_index==spr_komatoassassin_pose1fire || tempid.sprite_index==spr_komatoassassin_pose1fireleft || tempid.sprite_index==spr_asha_pose1 || tempid.sprite_index==spr_asha_pose1left || tempid.sprite_index==spr_asha_pose1fire || tempid.sprite_index==spr_asha_pose1fireleft)
+        factormax=tempid.alarm[0];
+    else
+        factormax=tempid.alarm[1];
+    }
+if (factormax&lt;=0)
+    factormax=30;
+active=1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

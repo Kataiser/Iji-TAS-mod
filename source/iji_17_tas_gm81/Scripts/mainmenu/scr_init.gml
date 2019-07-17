@@ -1,0 +1,108 @@
+//init stats at game start
+
+//loads a file from pause menu
+if (instance_number(obj_paused)==1){
+    global.passive=0;
+    global.suddendeath=0;
+    global.sswarp=0;
+    global.seconds=0;
+    global.difficulty=0;
+    global.facing=0;
+    global.state=0;
+    global.shakescreen=0;
+    global.dead=0;
+    global.armor=0;
+    global.hp=0;
+    global.chat=0;
+    global.chats=0;
+    global.maxlevel=0;
+    global.time=0;
+    global.erasetop=0;
+    global.cut=0;
+    global.ignoremessagescroll=0;
+    global.tempshred=0;
+    global.tempid=0;
+    global.xpcount=0;
+    global.ignorestation=0;
+    global.annitemp=0;
+    global.tempcru1=0;
+    global.tempcru2=0;
+    global.security=0;
+    global.cracktext="0";
+    global.running=0;
+    global.cracking=0;
+    global.colcount=0;
+    global.nodes=0;
+    global.youcol=0;
+    global.yourow=0;
+    global.cracktime=0;
+    global.weapstation=0;
+    global.levelstation=0;
+    global.cfissparkcycle=0;
+    global.outline=0;
+    global.bosshint=0;
+    global.tormaximumcharge=0;
+    global.iosaphase=0;
+    }
+else{
+    if (!global.sswarp)
+        global.sector=1;
+    }
+global.wty=0;
+global.truce=0;
+global.truce2=0;
+global.numribbons=0;
+global.weapon=1;
+global.weapon2=0;
+global.weapon3=0;
+global.weapon4=0;
+global.weapon5=0;
+global.weapon6=0;
+global.weapon7=0;
+global.weapon8=0;
+global.weapon9=0;
+global.weapon10=0;
+global.weapon11=0;
+global.weapon12=0;
+global.weapon13=0;
+global.weapon14=0;
+global.weapon15=0;
+global.weapon16=0;
+global.weapon17=0;
+global.weapon21=0;
+global.points=0;
+global.xp=0;
+global.xpcount=0;
+global.level=0;
+global.healthlevel=1;
+global.attacklevel=1;
+global.assimilatelevel=1;
+global.strengthlevel=1;
+global.cracklevel=1;
+global.tasenlevel=1;
+global.komatolevel=1;
+global.jumplevel=1;
+global.armorlevel=1;
+global.ammo2=0;
+global.ammo2part=0;
+global.ammo2partpart=0;
+global.ammo3=0;
+global.ammo4=0;
+global.ammo6=0;
+global.ammo6part=0;
+global.ammo7=0;
+global.ammo8=0;
+global.ammo8part=0;
+global.kills=0;
+global.damage=0;
+global.cracks=0;
+global.fails=0;
+if (!global.sswarp)
+    global.totkills=0;
+global.totdamage=0;
+global.totcracks=0;
+global.totfails=0;
+global.totalseconds=0;
+for (i=0;i<800;i+=1)
+    global.killdata[i]=0;
+global.killdata[0]=1;

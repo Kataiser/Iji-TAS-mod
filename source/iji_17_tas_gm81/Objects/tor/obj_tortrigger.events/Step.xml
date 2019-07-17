@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!init){
+    init=1;
+    for (i=0;i&lt;10;i+=1)
+        pickfps[i]=1000;
+    }
+
+if ((!slowdowned &amp;&amp; obj_tor.firsthail) || global.specialbake){
+    if (global.specialbake){
+        slowdowned=1;
+        if (!global.specialbake){
+            global.erasetop=0;
+            global.topmessage="SLOWDOWN DETECTED - LOWERING DETAIL";
+            }
+        with (obj_shape001){instance_destroy();}
+        with (obj_shape002){instance_destroy();}
+        with (obj_shape003){instance_destroy();}
+        with (obj_shape005){instance_destroy();}
+        with (obj_shape006){instance_destroy();}
+        with (obj_shape007){instance_destroy();}
+        with (obj_shape008){instance_destroy();}
+        with (obj_shape009){instance_destroy();}
+        with (obj_shape010){instance_destroy();}
+        //with (obj_shape011){instance_destroy();}
+        with (obj_shape012){instance_destroy();}
+        with (obj_shape013){instance_destroy();}
+        with (obj_shape014){instance_destroy();}
+        with (obj_shape015){instance_destroy();}
+        with (obj_shape016){instance_destroy();}
+        with (obj_shape017){instance_destroy();}
+        with (obj_shape018){instance_destroy();}
+        with (obj_shape019){instance_destroy();}
+        with (obj_shape020){instance_destroy();}
+        with (obj_shape102){instance_destroy();}
+        with (obj_shape103){instance_destroy();}
+        with (obj_shape104){instance_destroy();}
+        with (obj_shape105){instance_destroy();}
+        with (obj_shape203){instance_destroy();}
+        with (obj_shape301){instance_destroy();}
+        with (obj_shape303){instance_destroy();}
+        with (obj_shape403){instance_destroy();}
+        with (obj_shape404){instance_destroy();}
+        with (obj_shape407){instance_destroy();}
+        with (obj_shape408){instance_destroy();}
+        with (obj_shape409){instance_destroy();}
+        with (obj_shape502){instance_destroy();}
+        with (obj_shape503){instance_destroy();}
+        with (obj_shape602){instance_destroy();}
+        with (obj_shape603){instance_destroy();}
+        with (obj_shape605){instance_destroy();}
+        with (obj_shape606){instance_destroy();}
+        with (obj_shape702){instance_destroy();}
+        with (obj_shape803){instance_destroy();}
+        with (obj_shape902){instance_destroy();}
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_crumble5" type="RESOURCE"/>
+  <resource name="spr_crumble52" type="RESOURCE"/>
+  <resource name="spr_sec5cloudb" type="RESOURCE"/>
+  <resource name="spr_sec5cloudt" type="RESOURCE"/>
+  <resource name="spr_trogdorscreen" type="RESOURCE"/>
+</resources>

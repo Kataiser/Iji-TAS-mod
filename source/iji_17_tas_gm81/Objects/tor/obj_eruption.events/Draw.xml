@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Rise
+if (!retreat){
+    y1-=force;
+    y2-=force;
+    y3-=force;
+    y4-=force;
+    y5-=force;
+    force-=5;
+    if (force&lt;=0){
+        retreat=1;
+        }
+    }
+//Retreat
+else{
+    force+=1;
+    y1+=force/0.9;
+    y2+=force/1.1;
+    y3+=force/1.6;
+    y4+=force/1.1;
+    y5+=force/0.9;
+    if (y1&gt;=y)
+        y1=y;
+    if (y2&gt;=y)
+        y2=y;
+    if (y3&gt;=y){
+        y3=y;
+        instance_destroy();
+        }
+    if (y4&gt;=y)
+        y4=y;
+    if (y5&gt;=y)
+        y5=y;
+    }
+
+//Small, large
+draw_set_color(make_color_rgb(255,64,64));
+if (y2&gt;=y){
+    draw_primitive_begin(pr_trianglefan);
+    draw_vertex(x2,y2);
+    draw_vertex(x3,y3);
+    draw_vertex(x4,y4);
+    draw_primitive_end();
+    
+    draw_set_color(c_white);
+    draw_primitive_begin(pr_trianglefan);
+    draw_vertex(x2,y2+((y-y2)*0.1));
+    draw_vertex(x3,y3+((y-y3)*0.1));
+    draw_vertex(x4,y4+((y-y4)*0.1));
+    draw_primitive_end();
+    }
+else{
+    draw_primitive_begin(pr_trianglefan);
+    draw_vertex(x+32,y);
+    draw_vertex(x1,y1);
+    draw_vertex(x2,y2);
+    draw_vertex(x3,y3);
+    draw_vertex(x4,y4);
+    draw_vertex(x5,y5);
+    draw_vertex(x+64,y);
+    draw_vertex(x,y);
+    draw_vertex(x1,y1);
+    draw_primitive_end();
+    
+    draw_set_color(c_white);
+    draw_primitive_begin(pr_trianglefan);
+    draw_vertex(x+32,y);
+    draw_vertex(x1,y1+((y-y1)*0.1));
+    draw_vertex(x2,y2+((y-y2)*0.1));
+    draw_vertex(x3,y3+((y-y3)*0.1));
+    draw_vertex(x4,y4+((y-y4)*0.1));
+    draw_vertex(x5,y5+((y-y5)*0.1));
+    draw_vertex(x+64,y);
+    draw_vertex(x,y);
+    draw_vertex(x1,y1+((y-y1)*0.1));
+    draw_primitive_end();
+    }
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

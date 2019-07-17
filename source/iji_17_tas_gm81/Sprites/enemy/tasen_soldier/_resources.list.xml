@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_tasensoldier_basic" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_basicleft" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_fire" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_fireleft" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_duck" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_duckleft" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_pain" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_painleft" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_walk" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_walkleft" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_knockdown" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_knockdownleft" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_hitfloor" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_hitfloorleft" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_getup" type="RESOURCE"/>
+  <resource name="spr_tasensoldier_getupleft" type="RESOURCE"/>
+</resources>

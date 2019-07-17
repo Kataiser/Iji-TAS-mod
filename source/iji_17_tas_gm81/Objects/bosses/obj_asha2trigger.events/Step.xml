@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Begin the first fight
+if (obj_asha2.visible &amp;&amp; global.ignoreall==0 &amp;&amp; !triggered &amp;&amp; ready){
+    triggered=1;
+    scr_shakescreen(2);
+    instance_create(obj_asha2.bbox_left+((obj_asha2.bbox_right-obj_asha2.bbox_left)/2), obj_asha2.bbox_top+((obj_asha2.bbox_bottom-obj_asha2.bbox_top)/2), obj_megaflash);
+    obj_asha2.visible=0;
+    obj_asha2.x=obj_sabot.x;
+    obj_asha2.y=obj_sabot.y;
+    obj_asha2.alarm[2]=45;
+    obj_asha2.angry=1;
+    instance_create(x,y,obj_asha2bar);
+    obj_iji.attitude=1;
+    scr_sound("glo_electrocute");
+    instance_create(obj_sabot.x,obj_sabot.y,obj_asha2safe);
+    with (obj_xelec){
+        elec=1;
+        (instance_create(x+8+random(48),y+8+random(16),obj_thorspark)).direction=random(180);
+        }
+    with (obj_trigger){
+        if (textid=="chatx4" || textid=="chatxe")
+            instance_destroy();
+        }
+    }
+
+//Begin the rematch after being checkpoint-ressurected
+if (rematch==1){
+    if (obj_asha2.visible &amp;&amp; global.ignoreall==0 &amp;&amp; !rtriggered &amp;&amp; rready){
+        rtriggered=1;
+        instance_create(obj_asha2.bbox_left+((obj_asha2.bbox_right-obj_asha2.bbox_left)/2), obj_asha2.bbox_top+((obj_asha2.bbox_bottom-obj_asha2.bbox_top)/2), obj_megaflash);
+        obj_asha2.visible=0;
+        obj_asha2.x=obj_sabot.x;
+        obj_asha2.y=obj_sabot.y;
+        obj_asha2.alarm[2]=45;
+        obj_asha2.angry=1;
+        //if (global.difficulty==0)
+        obj_asha2.hp=obj_sabot.asha2hp;
+        instance_create(x,y,obj_asha2bar);
+        obj_iji.attitude=1;
+        instance_create(obj_sabot.x,obj_sabot.y,obj_asha2safe);
+        with (obj_trigger){
+            if (textid=="chatxm")
+                instance_destroy();
+            }
+        }
+    }
+
+//Begin the second rematch after being checkpoint-ressurected twice
+if (rematch&gt;=2){
+    if (obj_asha2.visible &amp;&amp; global.ignoreall==0 &amp;&amp; !rtriggered2 &amp;&amp; rready){
+        rtriggered2=1;
+        instance_create(obj_asha2.bbox_left+((obj_asha2.bbox_right-obj_asha2.bbox_left)/2), obj_asha2.bbox_top+((obj_asha2.bbox_bottom-obj_asha2.bbox_top)/2), obj_megaflash);
+        obj_asha2.visible=0;
+        obj_asha2.x=obj_sabot.x;
+        obj_asha2.y=obj_sabot.y;
+        obj_asha2.alarm[2]=45;
+        obj_asha2.angry=1;
+        //if (global.difficulty==0)
+        obj_asha2.hp=obj_sabot.asha2hp;
+        instance_create(x,y,obj_asha2bar);
+        obj_iji.attitude=1;
+        instance_create(obj_sabot.x,obj_sabot.y,obj_asha2safe);
+        with (obj_trigger){
+            if (textid=="chatxv")
+                instance_destroy();
+            }
+        }
+    }
+
+
+//Asha killed
+if (!donetrigger &amp;&amp; isdead &amp;&amp; global.hp&gt;0 &amp;&amp; !obj_iji.takingpain &amp;&amp; obj_iji.y&lt;3040 &amp;&amp; obj_iji.y&gt;2912 &amp;&amp; obj_iji.x&gt;5920 &amp;&amp; obj_iji.x&lt;6400 &amp;&amp; (obj_iji.sprite_index==spr_basic || obj_iji.sprite_index==spr_basicleft || obj_iji.sprite_index==spr_run || obj_iji.sprite_index==spr_runleft)){
+    donetrigger=1;
+    global.ignoreall=1;
+    if (global.facing==0)
+        obj_iji.sprite_index=spr_basicleft;
+    else
+        obj_iji.sprite_index=spr_basic;
+    if (global.specialtrigger1)
+        (instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatx5";
+    else
+        (instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatxf";
+    }
+
+if (ready2 &amp;&amp; !opened &amp;&amp; !global.ignoreall){
+    opened=1;
+    instance_activate_object(obj_cdoor);
+    with (obj_cdoor){
+        if (trigger==37){
+            scr_sound("glo_door");
+            cracked=1;
+            vspeed=-16;
+            alarm[0]=6;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

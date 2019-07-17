@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">x=obj_iji.x;
+y=obj_iji.y;
+
+if (!obj_iji.shredder)
+    instance_destroy();
+
+if (!place_free(obj_iji.x,obj_iji.y+16))
+bobcycle+=1-(abs(obj_iji.hspeed)/60);
+
+if (bobcycle&gt;=22){
+    bob=0;
+    bobcycle=0;
+    }
+else if (bobcycle&gt;=20)
+    bob=-1;
+else if (bobcycle&gt;=16)
+    bob=-2;
+else if (bobcycle&gt;=12)
+    bob=-1;
+else if (bobcycle&gt;=10)
+    bob=0;
+else if (bobcycle&gt;=8)
+    bob=1;
+else if (bobcycle&gt;=4)
+    bob=2;
+else if (bobcycle&gt;=2)
+    bob=1;
+
+draw_sprite_ext(obj_iji.sprite_index,floor(obj_iji.image_index),obj_iji.x,obj_iji.y+bob,1,1,0,c_white,obj_iji.image_alpha);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

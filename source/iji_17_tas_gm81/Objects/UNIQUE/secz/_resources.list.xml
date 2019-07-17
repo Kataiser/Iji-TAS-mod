@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_zblocktele" type="RESOURCE"/>
+  <resource name="obj_zblocktele2" type="RESOURCE"/>
+  <resource name="obj_whiteflash" type="RESOURCE"/>
+  <resource name="obj_whiteflash2" type="RESOURCE"/>
+  <resource name="obj_zhwhite" type="RESOURCE"/>
+  <resource name="obj_zxsquare" type="RESOURCE"/>
+  <resource name="obj_zgball" type="RESOURCE"/>
+  <resource name="obj_zrfuzz" type="RESOURCE"/>
+  <resource name="obj_ztrapper" type="RESOURCE"/>
+  <resource name="obj_zhdrone" type="RESOURCE"/>
+  <resource name="obj_zblock" type="RESOURCE"/>
+  <resource name="obj_zblock2" type="RESOURCE"/>
+  <resource name="obj_zblock3" type="RESOURCE"/>
+  <resource name="obj_zblock4" type="RESOURCE"/>
+  <resource name="obj_zspikes" type="RESOURCE"/>
+  <resource name="obj_zgback" type="RESOURCE"/>
+  <resource name="obj_zgbackback" type="RESOURCE"/>
+  <resource name="obj_zspecialtrigger" type="RESOURCE"/>
+  <resource name="obj_seczmirror" type="RESOURCE"/>
+  <resource name="obj_zbarrier" type="RESOURCE"/>
+  <resource name="obj_null" type="RESOURCE"/>
+  <resource name="obj_nul" type="RESOURCE"/>
+</resources>

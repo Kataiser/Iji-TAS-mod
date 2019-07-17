@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (room=rom_main || room=rom_clear){
+draw_sprite_stretched(spr_block,0,-48,-20,(14-cycle)*32,640);
+draw_sprite_stretched(spr_block,0,400+cycle*32,-20,(14-cycle)*32,640);
+}
+else{
+draw_sprite_stretched(spr_block,0,obj_shakescreen.x-448,obj_shakescreen.y-320,(14-cycle)*32,640);
+draw_sprite_stretched(spr_block,0,obj_shakescreen.x+cycle*32,obj_shakescreen.y-320,(14-cycle)*32,640);
+}
+cycle-=1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

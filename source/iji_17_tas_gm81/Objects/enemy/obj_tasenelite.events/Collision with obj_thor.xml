@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_thor">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!nukeimmune){
+if (thored==0){
+    ijikill=1;
+    targetiji=300;
+    if (angry==0){
+        alarm[2]=1;
+        tempid=instance_create(x+6,y+32,obj_visionchecke)
+        tempid.direction=0;
+        tempid.speed=16;
+        tempid=instance_create(x+6,y+32,obj_visionchecke)
+        tempid.direction=180;
+        tempid.speed=16;
+        }
+    armor-=35*global.atmult;
+    if (hp==1 &amp;&amp; armor&lt;=0 &amp;&amp; ijikill &amp;&amp; killtype&lt;5)
+        killtype=5;
+    angry=1;
+    alarm[5]=300;
+    thored=1;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

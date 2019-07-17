@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="rom_resolution" type="RESOURCE"/>
+  <resource name="rom_main" type="RESOURCE"/>
+  <resource name="rom_cut" type="RESOURCE"/>
+  <resource name="rom_sector1" type="RESOURCE"/>
+  <resource name="rom_sector2" type="RESOURCE"/>
+  <resource name="rom_sector3" type="RESOURCE"/>
+  <resource name="rom_sector11" type="RESOURCE"/>
+  <resource name="rom_sector4" type="RESOURCE"/>
+  <resource name="rom_sector5" type="RESOURCE"/>
+  <resource name="rom_sector12" type="RESOURCE"/>
+  <resource name="rom_sector6" type="RESOURCE"/>
+  <resource name="rom_sector7" type="RESOURCE"/>
+  <resource name="rom_sector13" type="RESOURCE"/>
+  <resource name="rom_sector8" type="RESOURCE"/>
+  <resource name="rom_sector9" type="RESOURCE"/>
+  <resource name="rom_sector14" type="RESOURCE"/>
+  <resource name="rom_sectorx" type="RESOURCE"/>
+  <resource name="rom_sector16" type="RESOURCE"/>
+  <resource name="rom_sector15" type="RESOURCE"/>
+  <resource name="rom_sectorz" type="RESOURCE"/>
+  <resource name="rom_clear" type="RESOURCE"/>
+  <resource name="rom_endgame" type="RESOURCE"/>
+</resources>

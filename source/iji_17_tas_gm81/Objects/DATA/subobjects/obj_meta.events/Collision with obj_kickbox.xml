@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_kickbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (sprite_index==spr_crackbox){
+    global.erasetop=0;
+    global.topmessage="Press "+chr(global.usekey)+" to crack this box";
+    scr_sound("glo_kick")
+    scr_shakescreen(1);
+    global.ignorestation=90;
+    }
+else
+    scr_metabreak(global.strengthlevel+2,global.facing+1);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

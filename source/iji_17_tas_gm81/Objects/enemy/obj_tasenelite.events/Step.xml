@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//"FIND"
+if (angry &amp;&amp; !prevangry){
+    if (state==0 || state==1 || state==2)
+        scr_sound("eli_find");
+    }
+prevangry=angry;
+//"DEATH"
+if (dead &amp;&amp; !prevdead)
+    scr_sound("eli_death");
+prevdead=dead;
+
+if (temphp&gt;0 &amp;&amp; hp&lt;=0 &amp;&amp; ijikill==1){
+    obj_iji.killemote=1;
+    }
+temphp=hp;
+
+scr_tasenvision(15,50);
+if (targetiji&gt;0)
+targetiji-=1;
+if (targetrival&gt;0)
+targetrival-=1;
+if (scouring&gt;0)
+scouring-=1;
+if (hp==maxhp)
+scouring=0;
+cfised=0;
+thored=0;
+plasmaed=0;
+//Lose sight
+if ((x &lt; obj_shakescreen.x-1000) || (x &gt; obj_shakescreen.x+1000) || (y &lt; obj_shakescreen.y-800) || (y &gt; obj_shakescreen.y+800)){
+    angry=0;
+    alarm[5]=0;
+    if (state==2)
+        state=0;
+    }
+//Fix sprite
+if (sprite_index=spr_tasenelite_basic || sprite_index=spr_tasenelite_basicleft)
+    image_speed=0.2;
+else if (!(sprite_index=spr_tasenelite_death || sprite_index=spr_tasenelite_deathleft))
+    image_speed=0.5;
+//Crack fail
+if (crackmark==1 &amp;&amp; distance_to_object(obj_iji) &gt; 50){
+    script_execute(scr_crackfail);
+    global.erasetop=0;
+    global.topmessage="CRACKING FAILED: Subject is too far away";
+    }
+if (crackmark==1 &amp;&amp; hp&lt;=0){
+    script_execute(scr_terminatecrack);
+    global.erasetop=0;
+    global.topmessage="CRACKING FAILED: Subject is dead";
+    }
+//Kick
+if (image_index==2){
+    if (sprite_index=spr_tasenelite_kick){
+        scr_sound("glo_swipe");
+        tempid=instance_create(x+5,y+26,obj_kickbox_elite);
+        tempid.facing=1;
+        tempid.target=id;
+        }
+    if (sprite_index=spr_tasenelite_kickleft){
+        scr_sound("glo_swipe");
+        tempid=instance_create(x-30,y+26,obj_kickbox_elite);
+        tempid.target=id;
+        }
+    }
+/*
+//Autodeath
+if (hp&lt;=0){
+    dead=1;
+    if (crackmark==1){
+        script_execute(scr_terminatecrack);
+        global.erasetop=0;
+        global.topmessage="Cracking failed; subject is dead";
+        }
+    }*/
+//Smoke when charging
+if (firingrocket==1 &amp;&amp; state==0)
+    smoking+=1;
+if (smoking&gt;=5){
+    smoking=0;
+    if (firingmpfb==0){
+        if (facing==0)
+            instance_create(x-22,y+35,obj_smoke);
+        else
+            instance_create(x+55,y+35,obj_smoke);
+        }
+    else{
+        if (facing==0)
+            instance_create(x-22,y+35,obj_mpfbspark);
+        else
+            instance_create(x+55,y+35,obj_mpfbspark);
+        }
+    }
+//Armor
+if (armor&lt;99.9 &amp;&amp; hp&gt;0)
+    armor+=0.1;
+//Pain from armordrop
+if (armor&lt;1 &amp;&amp; hp&gt;0){
+    hp-=1;
+    scr_elitepain(1);
+    }
+//Fire
+if (state==2 &amp;&amp; reloading==0){
+    scr_sound("wea_imach");
+    reloading=1;
+    alarm[0]=3;
+    alarm[1]=3;
+    if (weapon==0){
+    if (facing==0){
+        sprite_index=spr_tasenelite_fireleft;
+        (instance_create(x+20,y+35,obj_enemybullet)).target=id;
+        instance_create(x-20,y+35,obj_muzzleflash);
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x-9,y+30,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+40;
+            }
+        }
+    else{
+        sprite_index=spr_tasenelite_fire;
+        (instance_create(x+10,y+35,obj_enemybullet2)).target=id;
+        (instance_create(x+77,y+35,obj_muzzleflash)).image_single=floor(random(5))+5;
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x+40,y+30,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+130;
+            }
+        }
+        }
+    if (weapon==1){
+    if (facing==0){
+        sprite_index=spr_tasenelite_fireleft;
+        (instance_create(x+14,y+30,obj_enemybullet)).target=id;
+        instance_create(x-26,y+30,obj_muzzleflash);
+        (instance_create(x+20,y+40,obj_enemybullet)).target=id;
+        instance_create(x-20,y+40,obj_muzzleflash);
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x-9,y+30,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+40;
+            tempid=instance_create(x-9,y+26,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+40;
+            }
+        }
+    else{
+        sprite_index=spr_tasenelite_fire;
+        (instance_create(x+16,y+30,obj_enemybullet2)).target=id;
+        (instance_create(x+82,y+30,obj_muzzleflash)).image_single=floor(random(5))+5;
+        (instance_create(x+10,y+40,obj_enemybullet2)).target=id;
+        (instance_create(x+77,y+40,obj_muzzleflash)).image_single=floor(random(5))+5;
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x+40,y+30,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+130;
+            tempid=instance_create(x+40,y+26,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+130;
+            }
+        }
+        }
+    }
+//Stand still
+if (state==0 &amp;&amp; firingrocket==0 &amp;&amp; swiping==0){
+    if (facing==0)
+        sprite_index=spr_tasenelite_basicleft;
+    else
+        sprite_index=spr_tasenelite_basic;
+    }
+//Walk
+if (state==1){
+    if (facing==0){
+        sprite_index=spr_tasenelite_walkleft;
+        if (place_meeting(x-walkspeed,y,obj_glass) || place_meeting(x-walkspeed,y,obj_blockenemy) || place_free(x-20,y+20)){
+            facing=1;
+            exit;
+            }
+        if (place_free(x-walkspeed,y+1) &amp;&amp; (place_meeting(x-walkspeed,y+10,obj_slopel) || place_meeting(x-walkspeed,y+10,obj_sloper))){
+            x-=walkspeed;
+            move_contact_solid(270,-1);
+            }
+        else if (place_free(x-walkspeed,y))
+            x-=walkspeed;
+        else{
+            if (place_free(x-walkspeed,y-5) &amp;&amp; (place_meeting(x,y+10,obj_slopel) || place_meeting(x,y+10,obj_sloper))){
+                y-=5;
+                x-=walkspeed;
+                move_contact_solid(270,-1);
+                }
+            else
+                facing=1;
+            }
+        }
+    else{
+        sprite_index=spr_tasenelite_walk;
+        if (place_meeting(x+walkspeed,y,obj_glass) || place_meeting(x+walkspeed,y,obj_blockenemy) || place_free(x+20,y+20)){
+            facing=0;
+            exit;
+            }
+        if (place_free(x+walkspeed,y+1) &amp;&amp; (place_meeting(x+walkspeed,y+10,obj_slopel) || place_meeting(x+walkspeed,y+10,obj_sloper))){
+            x+=walkspeed;
+            move_contact_solid(270,-1);
+            }
+        else if (place_free(x+walkspeed,y))
+            x+=walkspeed;
+        else{
+            if (place_free(x+walkspeed,y-5) &amp;&amp; (place_meeting(x,y+10,obj_slopel) || place_meeting(x,y+10,obj_sloper))){
+                y-=5;
+                x+=walkspeed;
+                move_contact_solid(270,-1);
+                }
+            else
+                facing=0;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

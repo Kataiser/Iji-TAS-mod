@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Choose target
+if (targetrival==0){
+    if (targetiji&gt;0)
+        target=obj_iji.id;
+    else{
+        angry=0;
+        alarm[5]=300;
+        }
+    }
+if (!instance_exists(target)){
+angry=0;
+targetrival=0;
+if (targetiji&gt;0 &amp;&amp; target!=obj_iji.id){
+    if (!angry)
+        alarm[2]=1;
+    angry=1;
+    alarm[5]=300;
+    target=obj_iji.id;
+    }
+}
+
+swiping=0;
+//Adjust sprite
+if (facing==0 &amp;&amp; state==0)
+    sprite_index=spr_tasenelite_basicleft;
+if (facing==1 &amp;&amp; state==0)
+    sprite_index=spr_tasenelite_basic;
+//Begin taking action
+takingpain=0;
+alarm[2]=25+random(10);
+//Scour for seen health
+if (!angry &amp;&amp; scouring&gt;0){
+    state=1;
+    if (scouringdir&gt;0)
+        facing=0;
+    else
+        facing=1;
+    if (global.really)
+        alarm[2]=5;
+    exit;
+    }
+//Rocket has fired
+if (firingrocket==1){
+    state=1;
+    firingrocket=0;
+    if (x&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+    //Kick
+    if (x&gt;target.x &amp;&amp; (place_meeting(x-30,y,obj_meta) || place_meeting(x-30,y,obj_glass))){
+        state=0;
+        idling=0;
+        swiping=1;
+        image_index=0;
+        alarm[2]=14;
+        sprite_index=spr_tasenelite_kickleft;
+        }
+    else if (x&lt;=target.x &amp;&amp; (place_meeting(x+30,y,obj_meta) || place_meeting(x+30,y,obj_glass))){
+        state=0;
+        idling=0;
+        swiping=1;
+        image_index=0;
+        alarm[2]=14;
+        sprite_index=spr_tasenelite_kick;
+        }
+    if (distance_to_object(target)&lt;28){
+        state=0;
+        idling=0;
+        swiping=1;
+        alarm[2]=14;
+        image_index=0;
+        if (x&gt;target.x){
+            facing=0;
+            sprite_index=spr_tasenelite_kickleft;
+            }
+        else{
+            facing=1;
+            sprite_index=spr_tasenelite_kick;
+            }
+        }
+    exit;
+    }
+//Roam
+randomstate=random(1);
+if (angry==0){
+    if (randomstate&lt;0.6){
+        state=0;
+        alarm[2]=60+random(90);
+        }
+    else{
+        state=1;
+        facing=0;
+        if (randomstate&gt;0.8)
+            facing=1;
+        }
+    }
+//Angry
+else{
+    state=1;
+    //Face target
+    if (x&gt;target.x)
+        facing=0;
+    else
+        facing=1;
+
+    if (idling==4){
+        if (abs(target.y-y)&lt;96)
+            state=2;
+        else
+            state=1;
+        idling=0;
+        //Mach overload
+        if (angry &amp;&amp; obj_sabot.machtot&gt;12){
+            state=1;
+            if (x&gt;target.x)
+                facing=0;
+            else
+               facing=1;
+            exit;
+            }
+        }
+    if (randomstate&lt;0.4){
+        state=1;
+        idling+=1;
+        //Kick (again)
+        if (x&gt;target.x &amp;&amp; (place_meeting(x-30,y,obj_meta) || place_meeting(x-30,y,obj_glass))){
+            state=0;
+            idling=0;
+            swiping=1;
+            image_index=0;
+            alarm[2]=14;
+            sprite_index=spr_tasenelite_kickleft;
+            }
+        else if (x&lt;=target.x &amp;&amp; (place_meeting(x+30,y,obj_meta) || place_meeting(x+30,y,obj_meta))){
+            state=0;
+            idling=0;
+            swiping=1;
+            image_index=0;
+            alarm[2]=14;
+            sprite_index=spr_tasenelite_kick;
+            }
+        if (distance_to_object(target)&lt;28){
+            state=0;
+            idling=0;
+            swiping=1;
+            image_index=0;
+            alarm[2]=14;
+            if (x&gt;target.x){
+                facing=0;
+                sprite_index=spr_tasenelite_kickleft;
+                }
+            else{
+                facing=1;
+                sprite_index=spr_tasenelite_kick;
+                }
+            }
+        }
+    if (randomstate&gt;=0.4){
+        if (abs(target.y-y)&lt;96)
+            state=2;
+        else
+            state=1;
+        //Face target
+        if (x&gt;target.x)
+            facing=0;
+        else
+            facing=1;
+        //Charge a rocket
+        if (randomstate&gt;=0.6 &amp;&amp; abs(y-target.y)&lt;192){
+            idling=0;
+            if (!oops &amp;&amp; ((place_free(x+16,y-32) &amp;&amp; place_free(x+32,y-32) &amp;&amp; place_free(x+48,y-32) &amp;&amp; place_free(x+64,y-32) &amp;&amp; place_free(x+80,y-32) &amp;&amp; place_free(x+96,y-32) &amp;&amp; place_free(x+112,y-32) &amp;&amp; place_free(x+128,y-32)) || (place_free(x+16,y) &amp;&amp; place_free(x+32,y) &amp;&amp; place_free(x+48,y) &amp;&amp; place_free(x+64,y) &amp;&amp; place_free(x+80,y) &amp;&amp; place_free(x+96,y) &amp;&amp; place_free(x+112,y) &amp;&amp; place_free(x+128,y))) &amp;&amp; !place_meeting(x+16,y-32,obj_glass) &amp;&amp; !place_meeting(x+32,y-32,obj_glass) &amp;&amp; !place_meeting(x+48,y-32,obj_glass) &amp;&amp; !place_meeting(x+64,y-32,obj_glass) &amp;&amp; !place_meeting(x+80,y-32,obj_glass) &amp;&amp; !place_meeting(x+96,y-32,obj_glass) &amp;&amp; !place_meeting(x+112,y-32,obj_glass) &amp;&amp; !place_meeting(x+128,y-32,obj_glass) &amp;&amp; !place_meeting(x+16,y-32,obj_meta) &amp;&amp; !place_meeting(x+32,y-32,obj_meta) &amp;&amp; !place_meeting(x+48,y-32,obj_meta) &amp;&amp; !place_meeting(x+64,y-32,obj_meta) &amp;&amp; !place_meeting(x+80,y-32,obj_meta) &amp;&amp; !place_meeting(x+96,y-32,obj_meta) &amp;&amp; !place_meeting(x+112,y-32,obj_meta) &amp;&amp; !place_meeting(x+128,y-32,obj_meta) &amp;&amp; x&lt;=target.x){
+                state=0;
+                tempid=instance_create(x+55,y+35,obj_chargetell);
+                tempid.tempid=id;
+                sprite_index=spr_tasenelite_basic;
+                alarm[2]=23;
+                alarm[6]=20;
+                firingrocket=1;
+                if (randomstate&gt;=0.9){
+                    firingmpfb=1;
+                    alarm[2]=38;
+                    alarm[6]=35;
+                    scr_sound("tor_gather");
+                    }
+                else{
+                    firingmpfb=0;
+                    scr_sound("wea_charge");
+                    }
+                }
+            else if (!oops &amp;&amp; ((place_free(x-16,y-32) &amp;&amp; place_free(x-32,y-32) &amp;&amp; place_free(x-48,y-32) &amp;&amp; place_free(x-64,y-32) &amp;&amp; place_free(x-80,y-32) &amp;&amp; place_free(x-96,y-32) &amp;&amp; place_free(x-112,y-32) &amp;&amp; place_free(x-128,y-32)) || (place_free(x-16,y) &amp;&amp; place_free(x-32,y) &amp;&amp; place_free(x-48,y) &amp;&amp; place_free(x-64,y) &amp;&amp; place_free(x-80,y) &amp;&amp; place_free(x-96,y) &amp;&amp; place_free(x-112,y) &amp;&amp; place_free(x-128,y))) &amp;&amp; !place_meeting(x-16,y-32,obj_glass) &amp;&amp; !place_meeting(x-32,y-32,obj_glass) &amp;&amp; !place_meeting(x-48,y-32,obj_glass) &amp;&amp; !place_meeting(x-64,y-32,obj_glass) &amp;&amp; !place_meeting(x-80,y-32,obj_glass) &amp;&amp; !place_meeting(x-96,y-32,obj_glass) &amp;&amp; !place_meeting(x-112,y-32,obj_glass) &amp;&amp; !place_meeting(x-128,y-32,obj_glass) &amp;&amp; !place_meeting(x-16,y-32,obj_meta) &amp;&amp; !place_meeting(x-32,y-32,obj_meta) &amp;&amp; !place_meeting(x-48,y-32,obj_meta) &amp;&amp; !place_meeting(x-64,y-32,obj_meta) &amp;&amp; !place_meeting(x-80,y-32,obj_meta) &amp;&amp; !place_meeting(x-96,y-32,obj_meta) &amp;&amp; !place_meeting(x-112,y-32,obj_meta) &amp;&amp; !place_meeting(x-128,y-32,obj_meta) &amp;&amp; x&gt;target.x){
+                state=0;
+                tempid=instance_create(x-22,y+35,obj_chargetell);
+                tempid.tempid=id;
+                sprite_index=spr_tasenelite_basicleft;
+                alarm[2]=23;
+                alarm[6]=20;
+                firingrocket=1;
+                if (randomstate&gt;=0.9){
+                    firingmpfb=1;
+                    alarm[2]=38;
+                    alarm[6]=35;
+                    scr_sound("tor_gather");
+                    }
+                else{
+                    firingmpfb=0;
+                    scr_sound("wea_charge");
+                    }
+                }
+            }
+        else{
+            //Rocket test failed
+            if (abs(target.y-y)&lt;96)
+                state=2;
+            else
+                state=1;
+            idling=0;
+            if (x&gt;target.x)
+                facing=0;
+            else
+               facing=1;
+            //Mach overload
+            if (angry &amp;&amp; obj_sabot.machtot&gt;12){
+                state=1;
+                }
+            }
+        }
+    }
+if (global.really &amp;&amp; state==1 &amp;&amp; alarm[2]&gt;5)
+    alarm[2]=5;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

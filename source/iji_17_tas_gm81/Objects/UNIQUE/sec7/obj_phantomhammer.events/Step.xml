@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">thored=0;
+
+if (armor&lt;maxarmor &amp;&amp; !dead){
+    smokecyc+=1;
+    if (armor&lt;maxarmor/2)
+        smokecyc+=1;
+    }
+if (smokecyc&gt;=4){
+    smokecyc=0;
+    instance_create(x+8+random(140),y+32+random(200),obj_bigsmoke);
+    }
+
+if (place_meeting(x-12,y,obj_cfistrace))
+    armor+=-(20*(1+(global.attacklevel/10)));
+if (place_meeting(x-12,y,obj_plasmatrace))
+    armor+=-(300*(1+(global.attacklevel/10)));
+
+//Die
+if (!dead &amp;&amp; armor&lt;=0){
+    dead=1;
+    scr_sound("exp_mpfb");
+    scr_shakescreen(4);
+    with (obj_komatoscreen6){
+        if (tag)
+            instance_destroy();
+        }
+    with (obj_komatodetail1){
+        if (tag)
+            instance_destroy();
+        }
+    with (obj_komatodetail5){
+        if (tag)
+            instance_destroy();
+        }
+    instance_create(x+80,y+144,obj_harmlessexplosion);
+    sprite_index=spr_phantomhammer2;
+    instance_create(x,y,obj_phantomhammer3);
+    repeat(5) instance_create(x+64,y+45,obj_smokepoint);
+    repeat(5) instance_create(x+108,y+140,obj_smokepoint);
+    repeat(5) instance_create(x+16,y+196,obj_smokepoint);
+    instance_activate_object(obj_cdoor);
+    with (obj_cdoor){
+        if (trigger==4)
+            instance_destroy();
+        }
+    global.erasetop=0;
+    global.topmessage="PHANTOM HAMMER DESTROYED - LEVEL {{ SECURITY DOORS OPENED"
+    }
+
+if (armor&lt;-1000)
+    armor=-1000;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

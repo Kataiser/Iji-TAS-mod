@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (room==rom_sector15){
+    if (obj_tor.berserkend==2){
+        if (obj_tor.berserkendcyc mod 12&lt;=8){
+            draw_set_font(global.fontwhite);
+            draw_set_color(c_white);
+            draw_text_ext(obj_iji.x-15*6+6,obj_iji.y-32,"Press "+chr(global.firekey)+" to kill",28,400);
+            }
+        }
+    }
+
+if (room==rom_sector14){
+    if (obj_iosatrigger.pacifistend==2){
+        if (obj_iosatrigger.pacifistendcyc mod 12&lt;=8){
+            draw_set_font(global.fontwhite);
+            draw_set_color(c_white);
+            draw_text_ext(obj_iji.x-15*6+6,obj_iji.y-32,"Press "+chr(global.firekey)+" to kill",28,400);
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

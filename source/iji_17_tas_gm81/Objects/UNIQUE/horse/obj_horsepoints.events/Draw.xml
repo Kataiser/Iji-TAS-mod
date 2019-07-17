@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (scale&gt;2)
+    scale-=1;
+if (points&gt;0){
+    if (points&lt;10)
+        draw_sprite_ext(spr_chainsecurity2,points,x-8,y-6*scale,2,scale,0,c_white,1);
+    else if (points&lt;100){
+        draw_sprite_ext(spr_chainsecurity2,floor(points/10),x-8-8,y-6*scale,2,scale,0,c_white,1);
+        draw_sprite_ext(spr_chainsecurity2,points mod 10,x-8+8,y-6*scale,2,scale,0,c_white,1);
+        }
+    else if (points&lt;1000){
+        draw_sprite_ext(spr_chainsecurity2,floor(points/100),x-8-16,y-6*scale,2,scale,0,c_white,1);
+        draw_sprite_ext(spr_chainsecurity2,floor(points/10),x-8,y-6*scale,2,scale,0,c_white,1);
+        draw_sprite_ext(spr_chainsecurity2,points mod 10,x-8+16,y-6*scale,2,scale,0,c_white,1);
+        }
+    else{
+        draw_sprite_ext(spr_chainsecurity2,floor(points/1000),x-8-24,y-6*scale,2,scale,0,c_white,1);
+        draw_sprite_ext(spr_chainsecurity2,floor(points/100),x-8-8,y-6*scale,2,scale,0,c_white,1);
+        draw_sprite_ext(spr_chainsecurity2,floor(points/10),x-8+8,y-6*scale,2,scale,0,c_white,1);
+        draw_sprite_ext(spr_chainsecurity2,points mod 10,x-8+24,y-6*scale,2,scale,0,c_white,1);
+        }
+    }
+cyc+=1;
+if (cyc&gt;=30)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

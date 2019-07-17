@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Voices
+if (voice&gt;0)
+    voice-=1;
+if (shutup&gt;0){
+    shutup-=1;
+    if (shutup==1)
+        scr_voice("ext_ansaksie",3);
+    }
+if (stopfooling&gt;0){
+    stopfooling-=1;
+    if (stopfooling==1)
+        scr_voice("ext_ansaksie",6);
+    }
+
+//Upercut box
+if (sprite_index==spr_komatoassassin_uppercut &amp;&amp; image_index==2)
+    (instance_create(x,y-45,obj_assassin_uppercut)).facing=1;
+if (sprite_index==spr_komatoassassin_uppercutleft &amp;&amp; image_index==2)
+    instance_create(x-50,y-45,obj_assassin_uppercut);
+
+//Backstab box
+if (sprite_index==spr_komatoassassin_backstab &amp;&amp; image_index==1)
+    (instance_create(x-10,y-5,obj_assassin_backstab)).facing=1;
+if (sprite_index==spr_komatoassassin_backstableft &amp;&amp; image_index==1)
+    instance_create(x-65,y-5,obj_assassin_backstab);
+
+//Upslash box
+if (sprite_index==spr_komatoassassin_upslash&amp;&amp; image_index==1)
+    instance_create(x-35,y-64,obj_assassin_upslash);
+
+//Downstab recovery
+if(!place_free(x,y) &amp;&amp; sprite_index==spr_komatoassassin_downstab &amp;&amp; visible){
+    alarm[2]=random(60-(difficulty*20))+30-(difficulty*10);
+    instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+    visible=0;
+    gravity=0;
+    vspeed=0;
+    sprite_index=spr_komatoassassin_basic;
+    }
+if (vspeed&gt;20)
+    vspeed=20;
+if (visible &amp;&amp; sprite_index==spr_komatoassassin_downstab &amp;&amp; y&gt;obj_iosa.y+64)
+    scr_assassinpain(1);
+
+//Weapon sparks
+if (visible){
+smoke+=1;
+if (smoke==5){
+    smoke=0;
+    if (sprite_index==spr_komatoassassin_pose1)
+        instance_create(x+65,y+10,obj_shockemit);
+    if (sprite_index==spr_komatoassassin_pose1left)
+        instance_create(x-40,y+10,obj_shockemit);
+    if (sprite_index==spr_komatoassassin_pose2){
+        instance_create(x+70,y+2,obj_shockemit);
+        instance_create(x+45,y+42,obj_shockemit);
+        }
+    if (sprite_index==spr_komatoassassin_pose2left){
+        instance_create(x-37,y+2,obj_shockemit);
+        instance_create(x-12,y+42,obj_shockemit);
+        }
+    if (sprite_index==spr_komatoassassin_massacre){
+        instance_create(x+80,y+5,obj_smoke);
+        scr_shakescreen(3);
+        }
+    if (sprite_index==spr_komatoassassin_massacreleft){
+        instance_create(x-55,y+5,obj_smoke);
+        scr_shakescreen(3);
+        }
+    }
+}
+
+//Change of plans
+if (sprite_index==spr_komatoassassin_uppercut || sprite_index==spr_komatoassassin_uppercutleft || sprite_index==spr_komatoassassin_backstab || sprite_index==spr_komatoassassin_backstableft){
+    if (visible &amp;&amp; distance_to_object(obj_iosa)&gt;100){
+        scr_assassinpain(1);
+        alarm[2]=10;
+        }
+    if (visible &amp;&amp; ((sprite_index==spr_komatoassassin_uppercut &amp;&amp; (obj_iosa.bbox_left+(obj_iosa.bbox_right-obj_iosa.bbox_left)/2 &lt; bbox_left+(bbox_right-bbox_left)/2+10)) || (sprite_index==spr_komatoassassin_uppercutleft &amp;&amp; (obj_iosa.bbox_left+(obj_iosa.bbox_right-obj_iosa.bbox_left)/2 &gt; bbox_left+(bbox_right-bbox_left)/2-10)))){
+        if (alarm[1]&gt;6){
+            alarm[1]=5;
+            alarm[0]=2;
+            }
+        }
+    if (visible &amp;&amp; ((sprite_index==spr_komatoassassin_backstab &amp;&amp; (obj_iosa.bbox_left+(obj_iosa.bbox_right-obj_iosa.bbox_left)/2 &lt; bbox_left+(bbox_right-bbox_left)/2+10)) || (sprite_index==spr_komatoassassin_backstableft &amp;&amp; (obj_iosa.bbox_left+(obj_iosa.bbox_right-obj_iosa.bbox_left)/2 &gt; bbox_left+(bbox_right-bbox_left)/2-10)))){
+        if (alarm[1]&gt;6){
+            alarm[1]=4;
+            alarm[0]=2;
+            }
+        }
+    }
+if (sprite_index==spr_komatoassassin_pose1 || sprite_index==spr_komatoassassin_pose1left || sprite_index==spr_komatoassassin_pose1fire || sprite_index==spr_komatoassassin_pose1fireleft || sprite_index==spr_komatoassassin_pose2 || sprite_index==spr_komatoassassin_pose2left || sprite_index==spr_komatoassassin_massacre || sprite_index==spr_komatoassassin_massacreleft){
+    if (visible &amp;&amp; distance_to_object(obj_iosa)&lt;30){
+        scr_assassinpain(1);
+        scr_ansaksievoice();
+        alarm[2]=10;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

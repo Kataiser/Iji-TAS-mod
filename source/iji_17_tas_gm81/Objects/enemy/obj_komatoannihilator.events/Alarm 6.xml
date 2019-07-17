@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Shocksplinter
+if (firingplasma==0){
+    if (shockcount&gt;1){
+        shockcount-=1;
+        alarm[6]=3;
+        }
+    else
+        alarm[2]=3;
+    if (facing==0){
+        if (cracked==0){
+            global.tempid=id;
+            with (obj_chargetell){
+                if (tempid==global.tempid)
+                    instance_destroy();
+                }
+            scr_sound("wea_shoc");
+            tempid=instance_create(x-24,y+100,obj_enemyshock);
+            tempid.target=id;
+            tempid.speed=-global.shockspeed;
+            sprite_index=spr_komatoannihilator_fireleft;
+            }
+        else{
+            scr_sound("exp_shoc");
+            tempid=instance_create(x-24,y+100,obj_enemyshockexplosion);
+            tempid.target=id;
+            instance_create(x-24,y+100,obj_explosioncenter);
+            script_execute(scr_shakescreen,3);
+            oops=1;
+            }
+        }
+    else{
+        if (cracked==0){
+            global.tempid=id;
+            with (obj_chargetell){
+                if (tempid==global.tempid)
+                    instance_destroy();
+                }
+            scr_sound("wea_shoc");
+            tempid=instance_create(x+124,y+100,obj_enemyshock);
+            tempid.target=id;
+            tempid.speed=global.shockspeed;
+            sprite_index=spr_komatoannihilator_fire;
+            }
+        else{
+            scr_sound("exp_shoc");
+            tempid=instance_create(x+124,y+100,obj_enemyshockexplosion);
+            tempid.target=id;
+            instance_create(x+124,y+100,obj_explosioncenter);
+            script_execute(scr_shakescreen,3);
+            oops=1;
+            }
+        }
+    }
+//Plasma cannon
+else{
+    scr_shakescreen(3);
+    if (facing==0){
+        if (cracked==0){
+            scr_sound("wea_plas");
+            tempid=instance_create(x-24,y+100,obj_enemyplasmatrace);
+            with (tempid) scr_enemyplasmatrace(0);
+            tempid.target=id;
+            sprite_index=spr_komatoannihilator_fireleft;
+            }
+        else{
+            scr_sound("exp_shoc");
+            tempid=instance_create(x-24,y+100,obj_enemyshockexplosion);
+            tempid.target=id;
+            instance_create(x-24,y+100,obj_explosioncenter);
+            oops=1;
+            }
+        }
+    else{
+        if (cracked==0){
+            scr_sound("wea_plas");
+            tempid=instance_create(x+124,y+100,obj_enemyplasmatrace);
+            with (tempid) scr_enemyplasmatrace(1);
+            sprite_index=spr_komatoannihilator_fire;
+            }
+        else{
+            scr_sound("exp_shoc");
+            tempid=instance_create(x+124,y+100,obj_enemyshockexplosion);
+            tempid.target=id;
+            instance_create(x+124,y+100,obj_explosioncenter);
+            oops=1;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

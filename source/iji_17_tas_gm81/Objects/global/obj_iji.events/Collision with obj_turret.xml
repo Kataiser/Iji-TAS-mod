@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_turret">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.active){
+    if (!shredder){
+        if (other.dead==0 &amp;&amp; takingpain==0){
+            if (!global.truce &amp;&amp; other.alarm[8]&lt;=0){
+                global.armor-=6/global.armorlevel;
+                instance_create(bbox_left+random(bbox_right-bbox_left),bbox_top+random(bbox_bottom-bbox_top),obj_ijiblood);
+                if (other.angry==0){
+                    other.alarm[2]=15;
+                    with (other)
+                        scr_turretchargetell();
+                    }
+                other.angry=1;
+                other.alarm[3]=300;
+                }
+            }
+        if (other.dead==1){
+            if (goingright || goingleft){
+                with (other){
+                    if (kicked==0){
+                        scr_sound("glo_kick");
+                        script_execute(scr_turretkick);
+                        kicked=1;
+                        alarm[7]=20;
+                        }
+                    }
+                }
+            }
+        }
+    else if (speed&gt;8 &amp;&amp; other.kicked==0 &amp;&amp; !other.cracked){
+        script_execute(scr_shakescreen,1);
+        with (other){
+            scr_sound("glo_kick");
+            script_execute(scr_turretkick);
+            kicked=1;
+            alarm[7]=10;
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

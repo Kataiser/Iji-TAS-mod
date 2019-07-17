@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_horseeshot">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (trailer==0){
+    if (mercy==0){
+        scr_sound("iji_basepain");
+        obj_sabot.horsehp-=1;
+        mercy=10;
+        }
+    with (other){
+        if (!mpfb)
+            instance_destroy();
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (countdown){
+timer+=1;
+//Enemy waves
+if (timer==148){
+    with (obj_teledest){
+        if (dest==1 || dest==2){
+            instance_create(x+16,y,obj_megaflash);
+            scr_sound("glo_teleport");
+            repeat(30){
+                tempid=instance_create(x+random(32),y-32+random(64),obj_thorspark);
+                tempid.speed=random(3.5)-1.5;
+                tempid.direction=90;
+                tempid.gravity=0.2;
+                }
+            }
+        }
+    }
+if (timer==150){
+    with (obj_teledest){
+        if (dest==1 || dest==2){
+            tempid=instance_create(x+8,y-29,obj_komatotrooper);
+            tempid.sec8special=1;
+            if (dest==1)
+                tempid.killdataid=643;
+            else if (dest==2)
+                tempid.killdataid=644;
+            if (tempid.x&gt;obj_iji.x)
+                tempid.facing=0;
+            else
+                tempid.facing=1;
+            }
+        }
+    }
+
+if (timer&gt;155 &amp;&amp; timer&lt;545){
+    tempcheck=1;
+    with (obj_komatotrooper){
+        if (sec8special==1)
+            obj_liftoff.tempcheck=0;
+        }
+    if (tempcheck==1)
+        timer=545;
+    }
+
+if (timer==548){
+    with (obj_teledest){
+        if (dest==1 || dest==2){
+            instance_create(x+16,y,obj_megaflash);
+            scr_sound("glo_teleport");
+            repeat(30){
+                tempid=instance_create(x+random(32),y-32+random(64),obj_thorspark);
+                tempid.speed=random(3.5)-1.5;
+                tempid.direction=90;
+                tempid.gravity=0.2;
+                }
+            }
+        }
+    }
+if (timer==550){
+    with (obj_teledest){
+        if (dest==1 || dest==2){
+            tempid=instance_create(x+8,y-29,obj_komatotrooper);
+            tempid.sec8special=1;
+            tempid.weapon=1;
+            if (dest==1)
+                tempid.killdataid=645;
+            else if (dest==2)
+                tempid.killdataid=646;
+            if (tempid.x&gt;obj_iji.x)
+                tempid.facing=0;
+            else
+                tempid.facing=1;
+            }
+        }
+    }
+
+if (timer&gt;555 &amp;&amp; timer&lt;945){
+    tempcheck=1;
+    with (obj_komatotrooper){
+        if (sec8special==1)
+            obj_liftoff.tempcheck=0;
+        }
+    if (tempcheck==1)
+        timer=945;
+    }
+
+if (timer==948){
+    with (obj_teledest){
+        if (dest==1 || dest==2){
+            instance_create(x+16,y,obj_megaflash);
+            scr_sound("glo_teleport");
+            repeat(30){
+                tempid=instance_create(x+random(32),y-32+random(64),obj_thorspark);
+                tempid.speed=random(3.5)-1.5;
+                tempid.direction=90;
+                tempid.gravity=0.2;
+                }
+            }
+        }
+    }
+if (timer==950){
+    with (obj_teledest){
+        if (dest==1 || dest==2){
+            tempid=instance_create(x+4,y-44,obj_komatoberserker);
+            tempid.sec8special=1;
+            tempid.weapon=1;
+            if (dest==1)
+                tempid.killdataid=647;
+            else if (dest==2)
+                tempid.killdataid=648;
+            if (tempid.x+6&gt;obj_iji.x)
+                tempid.facing=0;
+            else
+                tempid.facing=1;
+            }
+        }
+    }
+
+if (timer&gt;955 &amp;&amp; timer&lt;975){
+    tempcheck=1;
+    with (obj_komatotrooper){
+        if (sec8special==1)
+            obj_liftoff.tempcheck=0;
+        }
+    with (obj_komatoberserker){
+        if (sec8special==1)
+            obj_liftoff.tempcheck=0;
+        }
+    if (tempcheck==1)
+        timer=975;
+    }
+
+//Activate
+if (timer&gt;=980){
+    (instance_create(x,y,obj_lift)).liftoff=1;
+    repeat(30){
+        tempid=instance_create(x+64,y-5,obj_thorspark);
+        tempid.speed=random(8)+8;
+        tempid.direction=random(100)+40;
+        }
+    instance_destroy();
+    global.erasetop=0;
+    global.topmessage="LIFT TEMPORARILY ACTIVATED";
+    with (obj_cdoor){
+        if (trigger==25){
+            scr_sound("glo_door");
+            cracked=1;
+            vspeed=-16;
+            alarm[0]=6;
+            }
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

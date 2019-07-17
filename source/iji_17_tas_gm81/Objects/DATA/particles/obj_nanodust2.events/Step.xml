@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">speed*=0.94;
+ttl+=1;
+extra+=1;
+if (type==1 &amp;&amp; extra&lt;8)
+    hspeed+=0.2;
+
+//Swirl
+if (type==0){
+    if (swirlfac&lt;-5)
+        swirlfac+=0.25;
+    swirl-=swirlfac;
+    if (swirl&lt;=0)
+        swirl+=360;
+    if (hspeed&lt;0)
+        x-=cos(degtorad(swirl))*3;
+    else
+        x+=cos(degtorad(swirl))*3;
+    y-=sin(degtorad(swirl))*3;
+    }
+
+if (speed&lt;1+type || ttl==90){
+    tempid=instance_create(x,y,obj_ijisplat);
+    tempid.speed=1;
+    tempid.direction=direction;
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pulse">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.hyper==1 &amp;&amp; armor&lt;maxarmor/3 &amp;&amp; global.strengthlevel&gt;=resistance){
+    hp-=1;
+    armor=maxarmor;
+    script_execute(scr_annihilatorpain);
+    script_execute(scr_shakescreen,2);
+    scr_sound("glo_kick");
+    repeat(3){
+        tempid=instance_create(other.x,other.y,obj_scrapwhite);
+        tempid.speed=global.strengthlevel+2;
+        if (other.hspeed&lt;0)
+            tempid.direction=random(180)-90;
+        else
+            tempid.direction=random(180)+90;
+        }
+    }
+with (other){
+    scr_pulseexplosion();
+    instance_destroy();
+    }
+if (!other.linker){
+    armor-=2*global.atmult;
+    instance_create(other.x-3+random(7),other.y-3+random(7),obj_komatosplat);
+    }
+if (other.linker){
+    if (global.topmessage=="0"){
+        global.erasetop=0;
+        global.topmessage="Pulse link could not be established";
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

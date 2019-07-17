@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">for (i=0; i&lt;13; i+=1){
+for (j=0; j&lt;10; j+=1){
+draw_sprite(spr_mainfullcover,0,view_xview[0]+i*64,view_yview[0]+j*64);
+}
+}
+for (i=0; i&lt;98; i+=1){
+draw_sprite(spr_mainfullcover2,1,view_xview[0]+(i*8)+8,view_yview[0]+0);
+draw_sprite(spr_mainfullcover2,1,view_xview[0]+(i*8)+8,view_yview[0]+592);
+}
+for (i=0; i&lt;73; i+=1){
+draw_sprite(spr_mainfullcover2,0,view_xview[0]+0,view_yview[0]+(i*8)+8);
+draw_sprite(spr_mainfullcover2,0,view_xview[0]+792,view_yview[0]+(i*8)+8);
+}
+draw_sprite(spr_mainfullcover2,2,view_xview[0]+0,view_yview[0]+0);
+draw_sprite(spr_mainfullcover2,3,view_xview[0]+792,view_yview[0]+0);
+draw_sprite(spr_mainfullcover2,4,view_xview[0]+0,view_yview[0]+592);
+draw_sprite(spr_mainfullcover2,5,view_xview[0]+792,view_yview[0]+592);
+
+draw_set_font(global.fontwhite);
+draw_set_color(c_white);
+draw_text_ext(view_xview[0]+22,view_yview[0]+20,obj_paused.screentext,28,756);
+
+//Weapon info
+if (obj_paused.getinfo==10){
+draw_sprite(spr_mainfullweapons,obj_paused.weaponlist[obj_paused.weaponinfo]-1,view_xview[0]+672,view_yview[0]+0);
+draw_sprite(spr_mainarrows,0,view_xview[0]+622,view_yview[0]+0);
+}
+//Enemy info
+if (obj_paused.getinfo==11){
+draw_sprite(spr_mainfullenemies,obj_paused.enemylist[obj_paused.enemyinfo]-1,view_xview[0]+672,view_yview[0]+0);
+draw_sprite(spr_mainarrows,0,view_xview[0]+622,view_yview[0]+0);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

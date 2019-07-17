@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Scramble
+if (global.scrambler)
+    global.scramblefactor+=0.5;
+
+global.chat+=1;
+global.textid=textid;
+global.textid+="_"+string(global.chat);
+scr_beginmessage();
+if (room==rom_cut){
+    with (obj_chatmessagetext)
+        scr_cutchats();
+    }
+else{
+    with (obj_messagetext)
+        scr_chats();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

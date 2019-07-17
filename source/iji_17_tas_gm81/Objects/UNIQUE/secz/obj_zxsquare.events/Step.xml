@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">y-=5-(size/8);
+if (obj_iji.x&gt;obj_iji.xprevious)
+    x+=(8*(size))/80;
+if (obj_iji.x&lt;obj_iji.xprevious)
+    x-=(8*(size))/80;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

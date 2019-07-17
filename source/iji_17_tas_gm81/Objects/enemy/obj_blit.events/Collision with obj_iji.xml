@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!other.takingpain){
+if (other.shredder)
+    other.shredderhp-=1;
+else
+    global.armor-=(2/global.armorlevel);
+if (instance_number(obj_ijisplat)&lt;5)
+instance_create(x,y,obj_ijisplat);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">blinkcyc+=1;
+if (blinkcyc==5)
+    visible=0;
+if (blinkcyc&gt;=10){
+    visible=1;
+    blinkcyc=0;
+    }
+
+if (obj_face.sectormaps==1){
+    x=362;
+    y=201;
+    if (global.poster1)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==2){
+    x=627;
+    y=158;
+    if (global.poster2)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==3){
+    x=499;
+    y=73;
+    if (global.poster3)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==4){
+    x=508;
+    y=213;
+    if (global.poster4)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==5){
+    x=568;
+    y=34;
+    if (global.poster5)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==6){
+    x=469;
+    y=101;
+    if (global.poster6)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==7){
+    x=525;
+    y=42;
+    if (global.poster7)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==8){
+    x=490;
+    y=131;
+    if (global.poster8)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==9){
+    x=568;
+    y=34;
+    if (global.poster9)
+        image_single=1;
+    else
+        image_single=0;
+    }
+if (obj_face.sectormaps==0){
+    x=353;
+    y=122;
+    if (global.poster10)
+        image_single=1;
+    else
+        image_single=0;
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

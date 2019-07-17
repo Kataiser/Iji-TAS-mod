@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.ignoreall==0){
+    with (obj_sec3hologram){
+        tempid=instance_create(x,y,obj_tasensoldier);
+        tempid.sprite_index=spr_tasensoldier_walk;
+        tempid.facing=1;
+        tempid.state=1;
+        tempid.alarm[2]=60;
+        global.specialtriggerb4=1;
+        tempid.specialtriggerb4=1;
+        tempid.killdataid=51;
+        instance_destroy();
+        }
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

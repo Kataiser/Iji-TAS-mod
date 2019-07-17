@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">point[0,0]=40;
+point[1,0]=4;
+point[2,0]=8;
+point[3,0]=16;
+point[4,0]=24;
+point[5,0]=32;
+point[6,0]=40;
+point[7,0]=48;
+point[8,0]=56;
+point[9,0]=64;
+point[10,0]=72;
+point[11,0]=76;
+
+point[0,1]=0;
+point[1,1]=0;
+point[2,1]=-48;
+point[3,1]=-8;
+point[4,1]=-96;
+point[5,1]=-32;
+point[6,1]=-128;
+point[7,1]=-32;
+point[8,1]=-96;
+point[9,1]=-8;
+point[10,1]=-48;
+point[11,1]=0;
+
+height=0.6;
+heightdir=0;
+heightcyc=8;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

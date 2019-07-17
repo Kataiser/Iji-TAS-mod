@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_sprite(sprite_index,0,x,y);
+draw_sprite(spr_secxansaksieh,h,x+17,y);
+if (obj_iji.x&gt;x-96)
+    up=1;
+if (obj_iji.x&lt;x-192)
+    up=0;
+cyc+=1;
+if (cyc==2){
+cyc=0;
+if (up &amp;&amp; h&lt;2)
+    h+=1;
+if (!up &amp;&amp; h&gt;0)
+    h-=1;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

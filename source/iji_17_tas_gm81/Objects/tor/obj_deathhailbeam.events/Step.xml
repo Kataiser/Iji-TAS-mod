@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_disruptor)==1){
+    if (target==0 &amp;&amp; obj_disruptor.x+65&gt;x-16 &amp;&amp; obj_disruptor.x-65&lt;x+16){
+        with (obj_disruptor)
+            scr_disruptorexplo();
+        }
+    }
+
+if (instance_number(obj_reflector)==1){
+    if (target==0 &amp;&amp; obj_reflector.x+65&gt;x-16 &amp;&amp; obj_reflector.x-65&lt;x+16){
+        with (obj_reflector)
+            scr_reflectorexplo();
+        }
+    }
+
+if (instance_number(obj_shockbarrier)==1){
+    if (target==0 &amp;&amp; obj_shockbarrier.x+12&gt;x-16 &amp;&amp; obj_shockbarrier.x-12&lt;x+16){
+        with (obj_shockbarrier)
+            scr_barrierexplo();
+        }
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

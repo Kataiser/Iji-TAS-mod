@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//repeat(250)
+//    instance_create(random(800),random(600),obj_resolutionpart);
+
+instance_create(0,0,obj_gamma);
+global.gamma=0;
+global.gammagreen=0;
+global.gammared=0;
+global.gammablue=0;
+
+cover=-1;
+//UNLOCK
+if (global.difficulty&gt;=0 &amp;&amp; global.extras1==0){
+    global.extras1=1;
+    unlocked[1]=1;
+    }
+if (global.difficulty&gt;=1 &amp;&amp; global.extras2==0){
+    global.extras2=1;
+    unlocked[2]=1;
+    }
+if (global.difficulty==2 &amp;&amp; global.extras3==0){
+    global.extras3=1;
+    unlocked[3]=1;
+    }
+if (global.totcracks-global.totfails&gt;=100 &amp;&amp; global.extras4==0){
+    global.extras4=1;
+    unlocked[4]=1;
+    }
+//EXTRAS5 replaced and in use elsewhere: Entered Sector Z
+if (global.totdamage&lt;100 &amp;&amp; global.extras6==0){
+    global.extras6=1;
+    unlocked[6]=1;
+    }
+//EXTRAS7 replaced and in use elsewhere: Yukabacera's Scrambler
+if (global.specialtrigger16==1 &amp;&amp; global.extras8==0){
+    global.extras8=1;
+    unlocked[8]=1;
+    }
+if (unlocked[1]==0 &amp;&amp; unlocked[2]==0 &amp;&amp; unlocked[3]==0 &amp;&amp; unlocked[4]==0 &amp;&amp; unlocked[6]==0 &amp;&amp; unlocked[8]==0)
+    restart=1;
+
+//Time records
+if (global.difficulty==0)
+    timetemp=global.nhours*3600+global.nminutes*60+global.nseconds;
+else if (global.difficulty==1)
+    timetemp=global.hhours*3600+global.hminutes*60+global.hseconds;
+else if (global.difficulty==2){
+    if (global.specialtrigger16==0)
+        timetemp=global.ehours*3600+global.eminutes*60+global.eseconds;
+    else
+        timetemp=global.uhours*3600+global.uminutes*60+global.useconds;
+    }
+//New time record!
+if (global.totalseconds&lt;timetemp){
+    timerecord=1;
+    xtimesecs=global.totalseconds;
+    xtimehours=floor((xtimesecs-(xtimesecs mod 3600))/3600);
+    xtimesecs-=xtimehours*3600;
+    xtimemins=floor((xtimesecs-(xtimesecs mod 60))/60);
+    xtimesecs=xtimesecs mod 60;
+    if (global.difficulty==0){
+        global.nhours=xtimehours;
+        global.nminutes=xtimemins;
+        global.nseconds=xtimesecs;
+        }
+    else if (global.difficulty==1){
+        global.hhours=xtimehours;
+        global.hminutes=xtimemins;
+        global.hseconds=xtimesecs;
+        }
+    else if (global.difficulty==2){
+        if (global.specialtrigger16==0){
+            global.ehours=xtimehours;
+            global.eminutes=xtimemins;
+            global.eseconds=xtimesecs;
+            }
+        else{
+            global.uhours=xtimehours;
+            global.uminutes=xtimemins;
+            global.useconds=xtimesecs;
+            }
+        }
+    }
+//save keys
+scr_readsum();
+if (!wrongsum)
+    scr_save(0);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

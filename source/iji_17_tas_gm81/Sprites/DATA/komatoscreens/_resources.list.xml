@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_komatoscreen1" type="RESOURCE"/>
+  <resource name="spr_komatoscreen2" type="RESOURCE"/>
+  <resource name="spr_komatoscreen3" type="RESOURCE"/>
+  <resource name="spr_komatoscreen4" type="RESOURCE"/>
+  <resource name="spr_komatoscreen5" type="RESOURCE"/>
+  <resource name="spr_komatoscreen6" type="RESOURCE"/>
+  <resource name="spr_komatoscreen7" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="67">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Begin cracking
+if (global.cracking==0){
+    scr_sound("glo_crackbegin");
+    global.cracking=1;
+    if (global.security=1) global.cracktime=6.50;
+    if (global.security=2) global.cracktime=7.00;
+    if (global.security=3) global.cracktime=7.50;
+    if (global.security=4) global.cracktime=8.00;
+    if (global.security=5) global.cracktime=8.50;
+    if (global.security=6) global.cracktime=9.00;
+    if (global.security=7) global.cracktime=9.50;
+    if (global.security=8) global.cracktime=10.00;
+    if (global.security=9) global.cracktime=10.50;
+    if (global.security=10) global.cracktime=11.00;
+    if (global.difficulty==1) global.cracktime-=2;
+    if (global.difficulty==2) global.cracktime-=4;
+    if (global.cracklevel==10) global.cracktime+=4;
+    with (obj_tasenscout){
+        if (crackmark &amp;&amp; !angry &amp;&amp; state==0){
+            alarm[2]=90+random(90);
+            }
+        }
+    with (obj_tasensoldier){
+        if (crackmark &amp;&amp; !angry &amp;&amp; state==0)
+            alarm[2]=90+random(90);
+        }
+    with (obj_tasencommander){
+        if (crackmark &amp;&amp; !angry &amp;&amp; state==0)
+            alarm[2]=90+random(90);
+        }
+    with (obj_tasenelite){
+        if (crackmark &amp;&amp; !angry &amp;&amp; state==0)
+            alarm[2]=90+random(90);
+        }
+    with (obj_tasenshredder){
+        if (crackmark &amp;&amp; !angry &amp;&amp; state==0 &amp;&amp; !driving)
+            alarm[2]=90+random(90);
+        }
+    with (obj_komatotrooper){
+        if (crackmark &amp;&amp; !angry &amp;&amp; state==0)
+            alarm[2]=90+random(90);
+        }
+    with (obj_komatoberserker){
+        if (crackmark &amp;&amp; !angry &amp;&amp; state==0)
+            alarm[2]=90+random(90);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

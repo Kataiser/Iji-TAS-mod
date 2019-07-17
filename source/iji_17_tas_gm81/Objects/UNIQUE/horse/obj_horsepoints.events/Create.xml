@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (x&lt;view_xview[0]+32)
+    x=view_xview[0]+32;
+if (x&gt;view_xview[0]+768)
+    x=view_xview[0]+768;
+if (y&lt;view_yview[0]+16)
+    y=view_yview[0]+16;
+if (y&gt;view_yview[0]+552)
+    y=view_yview[0]+552;
+scale=8;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

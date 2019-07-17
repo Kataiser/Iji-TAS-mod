@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="obj_acmachine" type="RESOURCE"/>
+  <resource name="obj_birdie" type="RESOURCE"/>
+  <resource name="obj_birdnest" type="RESOURCE"/>
+  <resource name="obj_crumble2" type="RESOURCE"/>
+  <resource name="obj_sec2musictrigger" type="RESOURCE"/>
+  <resource name="obj_sec2speciallift" type="RESOURCE"/>
+</resources>

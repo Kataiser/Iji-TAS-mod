@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_kickbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.image_index==0 &amp;&amp; active){
+global.truce=0;
+scr_sound("glo_kick");
+if (other.sprite_index==spr_detonator){
+    if (x&gt;obj_iji.x)
+    script_execute(scr_turretkick,2);
+    else
+    script_execute(scr_turretkick,1);
+    }
+else
+    script_execute(scr_turretkick);
+script_execute(scr_shakescreen,1);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_ammofloat();
+animcyc+=1;
+if (animcyc&gt;2)
+animcyc=1;
+draw_sprite(sprite_index,animcyc,x,y);
+//Lines
+draw_set_color(c_white);
+temprand=random(64)-32;
+temprand2=random(64)-32;
+temprand3=random(64)-32;
+temprand4=random(64)-32;
+draw_line(x+temprand,y-64,x+temprand,y+64);
+draw_line(x+temprand2,y-64,x+temprand2,y+64);
+draw_line(x+temprand3,y-64,x+temprand3,y+64);
+draw_line(x+temprand4,y-64,x+temprand4,y+64);
+
+if (place_free(x-96,y) &amp;&amp; place_free(x+96,y))
+    go=1;
+else
+    go=0;
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="snd_ber_find1" type="RESOURCE"/>
+  <resource name="snd_ber_find2" type="RESOURCE"/>
+  <resource name="snd_ber_pain1" type="RESOURCE"/>
+  <resource name="snd_ber_pain2" type="RESOURCE"/>
+  <resource name="snd_ber_ciretako" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,10 @@
+repeat(5){
+sound_stop(snd_tor_ambient1);
+sound_stop(snd_tor_ambient2);
+sound_stop(snd_tor_ambient3);
+sound_stop(snd_tor_ambient4);
+sound_stop(snd_tor_pain);
+sound_stop(snd_tor_win);
+sound_stop(snd_tor_emote2);
+sound_stop(snd_tor_emote3);
+}

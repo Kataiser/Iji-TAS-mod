@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_clearselection" type="RESOURCE"/>
+  <resource name="scr_loadingdestination" type="RESOURCE"/>
+  <resource name="scr_clearnextsector" type="RESOURCE"/>
+  <resource name="scr_clearpickdest" type="RESOURCE"/>
+  <resource name="scr_jumpfromcut" type="RESOURCE"/>
+  <resource name="scr_clearmenuescape" type="RESOURCE"/>
+  <resource name="scr_cleardraw" type="RESOURCE"/>
+</resources>

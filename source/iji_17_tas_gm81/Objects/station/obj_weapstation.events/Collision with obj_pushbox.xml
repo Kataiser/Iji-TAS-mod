@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pushbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!place_meeting(x,y,obj_enemy)){
+if (global.passive){
+    global.erasetop=0;
+    global.topmessage="Error: You cannot combine Nanoweapons in Passive mode";
+    global.ignorestation=120;
+    scr_sound("glo_crackfail");
+    }
+else if (!global.weapon2 &amp;&amp; !global.weapon3 &amp;&amp; !global.weapon4 &amp;&amp; !global.weapon5 &amp;&amp; !global.weapon6 &amp;&amp; !global.weapon7 &amp;&amp; !global.weapon8){
+    global.erasetop=0;
+    global.topmessage="Error: You must possess at least two Nanoweapons";
+    global.ignorestation=120;
+    scr_sound("glo_crackfail");
+    }
+else{
+    global.ignoreall=1;
+    global.weapstation=1;
+    global.weappoke=1;
+    global.tempwsweap1=0;
+    global.refreshpoke=0;
+    touchstation=1;
+    scr_sound("glo_crackbegin");
+    weap1=0;
+    weap2=0;
+    weap3=0;
+    weap4=0;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

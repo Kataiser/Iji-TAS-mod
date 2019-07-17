@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="hud" type="GROUP"/>
+  <resource name="projectiles" type="GROUP"/>
+  <resource name="particles" type="GROUP"/>
+  <resource name="komatoscreens" type="GROUP"/>
+  <resource name="message" type="GROUP"/>
+  <resource name="crack" type="GROUP"/>
+</resources>

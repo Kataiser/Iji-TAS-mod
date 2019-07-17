@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//style 1: rapid flicker
+if (style==1){
+    if (visible==1)
+        visible=0;
+    else
+        visible=1;
+    }
+
+//style 2: alpha fade in
+if (style==2)
+    image_alpha+=0.1;
+
+//style 3: blur back and forth fast
+if (style==3){
+if (styledir==0){
+    image_alpha-=0.3;
+    if (image_alpha&lt;=0)
+        styledir=1;
+    }
+else if (styledir==1){
+    image_alpha+=0.3;
+    if (image_alpha&gt;=1)
+        styledir=0;
+    }
+}
+
+//style 4: random broken flicker
+if (style==4){
+stylecyc+=1;
+if (stylecyc==2){
+    stylecyc=0;
+    temprand=random(1);
+    if (temprand&lt;0.5)
+        visible=0;
+    else
+        visible=1;
+    }
+}
+
+//style 5: slow alpha fade in
+if (style==5){
+    if (image_alpha&lt;1)
+        image_alpha+=0.03;
+    else
+        image_alpha=1;
+    }
+
+//style 6: flicker frame 0 and 2
+if (style==6){
+    if (image_single==0)
+        image_single=2;
+    else
+        image_single=0;
+    }
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

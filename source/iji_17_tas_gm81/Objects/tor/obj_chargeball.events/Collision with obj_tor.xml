@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tor">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (iji &amp;&amp; other.vulnerable){
+    scr_sound("glo_electrocute");
+    scr_sound("exp_mpfb");
+    if (obj_tor.hp&lt;400)
+        scr_sound("tor_pain");
+    else if (obj_tor.hp&lt;800){
+        temprand=random(1);
+        if (temprand&lt;0.5)
+            scr_sound("tor_pain");
+        }
+    repeat(8)
+        instance_create(x,y,obj_chargeballpart)
+    (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+    other.hp-=80;//-global.difficulty*10;
+    instance_create(x,y,obj_enemympfbexplosion);
+    instance_create(x,y,obj_explosioncenter);
+    scr_shakescreen(5);
+    instance_destroy();
+    if (global.specialbake==0)
+        maxsparks=90;
+    else
+        maxsparks=10;
+    if (instance_number(obj_mpfbspark2)&lt;maxsparks){
+        if (hspeed&lt;0)
+            repeat(30) instance_create(x-16+random(32),y-16+random(32),obj_mpfbspark2);
+        else
+            repeat(30) instance_create(x-16+random(32),y-16+random(32),obj_mpfbspark2);
+        }
+    with (obj_tor){
+        if (instance_number(obj_pickuphealth)==0 &amp;&amp; global.hp&lt;global.healthlevel*2){
+            tempid=instance_create(x+140+random(25),y+280,obj_pickuphealth);
+            tempid.depth=5000;
+            tempid.hspeed=-3-random(1);
+            }
+        if (instance_number(obj_pickuphealth)&lt;=1 &amp;&amp; global.hp&lt;global.healthlevel*2 &amp;&amp; !global.tormaximumcharge){
+            tempid=instance_create(x+180+random(25),y+270+random(20),obj_pickuphealth);
+            tempid.depth=5000;
+            tempid.hspeed=-3-random(1);
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

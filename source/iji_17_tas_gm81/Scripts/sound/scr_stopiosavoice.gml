@@ -1,0 +1,9 @@
+repeat(5){
+sound_stop(snd_ios_ambient1);
+sound_stop(snd_ios_ambient2);
+sound_stop(snd_ios_ambient3);
+sound_stop(snd_ios_ambient4);
+sound_stop(snd_ios_ambient5);
+sound_stop(snd_ios_pain);
+sound_stop(snd_ios_win);
+}

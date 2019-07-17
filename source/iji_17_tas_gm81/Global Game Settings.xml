@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+  <graphics>
+    <scalingPercent>-1</scalingPercent>
+    <displayCursor>false</displayCursor>
+    <useVsync>false</useVsync>
+    <interpolateColors>false</interpolateColors>
+    <colorOutsideRoom>000000</colorOutsideRoom>
+  </graphics>
+  <windowing>
+    <startFullscreen>false</startFullscreen>
+    <dontDrawBorder>false</dontDrawBorder>
+    <allowWindowResize>false</allowWindowResize>
+    <alwaysOnTop>false</alwaysOnTop>
+    <dontShowButtons>true</dontShowButtons>
+    <switchVideoMode>false</switchVideoMode>
+  </windowing>
+  <splashImage>
+    <showCustom>true</showCustom>
+    <partiallyTransparent>false</partiallyTransparent>
+    <alphaTransparency>255</alphaTransparency>
+  </splashImage>
+  <progressBar>
+    <mode>LOADBAR_NONE</mode>
+    <scaleImage>false</scaleImage>
+  </progressBar>
+  <keys>
+    <letF1ShowGameInfo>false</letF1ShowGameInfo>
+    <letF4SwitchFullscreen>false</letF4SwitchFullscreen>
+    <letF5SaveF6Load>false</letF5SaveF6Load>
+    <letF9Screenshot>false</letF9Screenshot>
+    <letEscEndGame>false</letEscEndGame>
+    <treatCloseAsEscape>false</treatCloseAsEscape>
+  </keys>
+  <errors>
+    <displayErrors>true</displayErrors>
+    <writeToLog>true</writeToLog>
+    <abortOnError>false</abortOnError>
+    <treatUninitializedAsZero>true</treatUninitializedAsZero>
+    <checkScriptArgumentCount>false</checkScriptArgumentCount>
+  </errors>
+  <gameInfo>
+    <gameId>330782</gameId>
+    <author>Remar Games</author>
+    <version>170</version>
+    <information>IJI&#13;
+Version 1.7&#13;
+Remar Games 2004-2010&#13;
+&#13;
+TAS mod at https://github.com/Kataiser/Iji-TAS-mod</information>
+    <versionMajor>1</versionMajor>
+    <versionMinor>0</versionMinor>
+    <versionRelease>0</versionRelease>
+    <versionBuild>0</versionBuild>
+    <company/>
+    <product/>
+    <copyright/>
+    <description/>
+    <directPlayGuid>60bfa540c2eed811bcea0010a70e7071</directPlayGuid>
+  </gameInfo>
+  <system>
+    <processPriority>PRIORITY_NORMAL</processPriority>
+    <disableScreensavers>false</disableScreensavers>
+    <freezeOnLoseFocus>false</freezeOnLoseFocus>
+  </system>
+  <includes>
+    <overwriteExisting>false</overwriteExisting>
+    <removeAtGameEnd>false</removeAtGameEnd>
+    <useTempFolder>false</useTempFolder>
+  </includes>
+</settings>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (x&gt;-32 &amp;&amp; x&lt;832 &amp;&amp; y&gt;-32 &amp;&amp; y&lt;632){
+draw_set_color(c_white);
+if (pulse==0){
+    draw_circle(x,y,random(24)+8,0);
+    pulse=1;
+    }
+else{
+    draw_circle(x,y,24,0);
+    pulse=0;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

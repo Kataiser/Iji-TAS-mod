@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_block" type="RESOURCE"/>
+  <resource name="spr_blockwide" type="RESOURCE"/>
+  <resource name="spr_blocktall" type="RESOURCE"/>
+  <resource name="spr_slopel" type="RESOURCE"/>
+  <resource name="spr_sloper" type="RESOURCE"/>
+  <resource name="spr_sabot" type="RESOURCE"/>
+  <resource name="spr_door" type="RESOURCE"/>
+  <resource name="spr_door2" type="RESOURCE"/>
+  <resource name="spr_door3" type="RESOURCE"/>
+  <resource name="spr_cdoor" type="RESOURCE"/>
+  <resource name="spr_doorcolors" type="RESOURCE"/>
+  <resource name="spr_doorslide" type="RESOURCE"/>
+  <resource name="spr_tele" type="RESOURCE"/>
+  <resource name="spr_teledest" type="RESOURCE"/>
+  <resource name="spr_lift" type="RESOURCE"/>
+  <resource name="spr_bgspeaker" type="RESOURCE"/>
+  <resource name="spr_camera" type="RESOURCE"/>
+</resources>

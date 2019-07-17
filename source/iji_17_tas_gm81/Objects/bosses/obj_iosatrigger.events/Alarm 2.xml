@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.specialtriggerb2){
+    tempid=instance_create(obj_iosa2.x-18,obj_iosa2.y-205,obj_sec9ansaksie);
+    tempid.gravity_direction=270;
+    tempid.gravity=1;
+    tempid.type=2;
+    tempid.nogo=1;
+    with (tempid)
+        instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+    }
+else{
+    if (!killawarded){
+        global.kills+=1;
+        global.killdata[720]=4;
+        killawarded=1;
+        }
+    with (obj_iji){
+        global.facing=1;
+        sprite_index=spr_fire;
+        scr_sound("wea_shot");
+        firing=1;
+        repeat(2){
+            tempid = instance_create(x+1,y+11,obj_shell);
+            tempid.speed = random(2)+5;
+            tempid.direction = random(15)+130;
+            }
+        (instance_create(x+66,y+13,obj_sec8hologram2)).image_single=1;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

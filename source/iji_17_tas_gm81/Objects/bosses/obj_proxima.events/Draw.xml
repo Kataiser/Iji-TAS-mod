@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Draw
+if (obj_proximatrigger.commence)
+    scr_proximaarrow();
+draw_sprite(sprite_index,image_single,x,y);
+if (streaming)
+    draw_sprite(spr_proxima_streams,streamcyc,x-64,y-64);
+streamcyc+=1;
+if (streamcyc&gt;=4)
+    streamcyc=0;
+
+//Draw target
+if (state==3){
+    temprand=floor(random(3));
+    if (global.specialbake)
+        temprand=1;
+    if (temprand&gt;0){
+        draw_set_color(c_ltgray);
+        draw_line_width(x,y,obj_iji.bbox_left,obj_iji.bbox_top,temprand);
+        draw_line_width(x,y,obj_iji.bbox_right,obj_iji.bbox_bottom,temprand);
+        }
+    }
+if (fire==2){
+    temprand=floor(random(3));
+    if (global.specialbake)
+        temprand=1;
+    if (temprand&gt;0){
+        draw_set_color(c_red);
+        draw_line_width(x,y,xtarget,ytarget,temprand);
+        }
+    }
+if (fire==3){
+    temprand=floor(random(3));
+    if (global.specialbake)
+        temprand=1;
+    if (temprand&gt;0){
+        draw_set_color(c_aqua);
+        draw_line_width(x,y,obj_iji.bbox_left+(obj_iji.bbox_right-obj__iji.bbox_left)/2,obj_iji.bbox_top+(obj_iji.bbox_bottom-obj__iji.bbox_top)/2,temprand);
+        }
+    }
+if (fire==4){
+    with (obj_proximalaser){
+        x=obj_proxima.x;
+        y=obj_proxima.y;
+        repeats=0;
+        if (obj_proxima.x&gt;obj_iji.x){
+            while (place_free(x,y) &amp;&amp; !place_meeting(x,y,obj_iji) &amp;&amp; repeats&lt;1000){
+                repeats+=1;
+                x-=10;
+                }
+            if (!place_free(x,y))
+                move_outside_solid(0,32);
+            }
+        else{
+            while (place_free(x,y) &amp;&amp; !place_meeting(x,y,obj_iji) &amp;&amp; repeats&lt;1000){
+                repeats+=1;
+                x+=10;
+                }
+            if (!place_free(x,y))
+                move_outside_solid(180,32);
+            }
+        }
+    temprand=floor(random(3));
+    if (global.specialbake)
+        temprand=1;
+    if (temprand&gt;0){
+        draw_set_color(c_red);
+        draw_line_width(x,y,obj_proximalaser.x,obj_proximalaser.y,temprand);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

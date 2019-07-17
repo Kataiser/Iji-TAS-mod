@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_mpfbexplosion">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">{
+if (other.dud==0 &amp;&amp; rapidfirempfb==0){
+    hp-=3*global.atmult;
+    if (other.ijis)
+        ijikill=1;
+    else
+        ijikill=0;
+    script_execute(scr_elitepain);
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

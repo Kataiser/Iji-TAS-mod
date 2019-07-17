@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_text_green" type="RESOURCE"/>
+  <resource name="spr_text_blue" type="RESOURCE"/>
+  <resource name="spr_text_blue_2" type="RESOURCE"/>
+  <resource name="spr_text_white" type="RESOURCE"/>
+  <resource name="spr_text_special" type="RESOURCE"/>
+  <resource name="spr_text_tas" type="RESOURCE"/>
+</resources>

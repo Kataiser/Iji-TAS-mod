@@ -1,6 +1,7 @@
 *.state
 *.sav
 *.log
+*.gm81
 music/
 Iji_TAS_mod/
 build_target/

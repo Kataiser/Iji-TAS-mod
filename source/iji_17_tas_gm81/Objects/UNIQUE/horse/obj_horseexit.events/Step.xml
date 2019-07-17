@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">cyc+=1;
+if (cyc==9){
+    //Next stage (default)
+    if (type==0){
+        if (room==rom_main)
+            room_goto(rom_sector1);
+        else if (room==rom_sector1)
+            room_goto(rom_sector2);
+        else if (room==rom_sector2)
+            room_goto(rom_sector3);
+        else if (room==rom_sector3)
+            room_goto(rom_sector4);
+        else if (room==rom_sector4)
+            room_goto(rom_sector5);
+        else if (room==rom_sector5)
+            room_goto(rom_sector6);
+        else if (room==rom_sector6)
+            room_goto(rom_sector7);
+        else if (room==rom_sector7)
+            room_goto(rom_sector8);
+        else if (room==rom_sector8)
+            room_goto(rom_sector9);
+        else if (room==rom_sector9)
+            room_goto(rom_sectorx);
+        else if (room==rom_sectorx){
+            //Victory
+            with (obj_sabot)
+                scr_music("mus_clear");
+            obj_sabot.horsevictory=1;
+                dist=180;
+            for (i=0;i&lt;900;i+=32){
+                for (j=0;j&lt;700;j+=32){
+                    dist+=1.1;
+                    if (dist&gt;=360)
+                        dist-=360;
+                    dist2=15+cos(degtorad(dist))*15;
+                    tempid=instance_create(obj_sabot.x-450+i,obj_sabot.y-350+j,obj_horsestars);
+                    tempid.rot=i+j*0.75;
+                    tempid.dist=dist2;
+                    while (tempid.rot&gt;=360)
+                        tempid.rot-=360;
+                    }
+                }
+            with (obj_horseenemy)
+                instance_destroy();
+            instance_destroy();
+            }
+        }
+    //Death
+    else if (type==1){
+        global.horselives-=1;
+        if (global.horselives&gt;=0){
+            global.horsepoints=global.backuphorsepoints;
+            room_restart();
+            }
+        else{
+            //Game over
+            with (obj_sabot)
+                scr_music("mus_gameover");
+            obj_sabot.horsegameover=1;
+            dist=180;
+            for (i=0;i&lt;900;i+=32){
+                for (j=0;j&lt;700;j+=32){
+                    dist+=1.1;
+                    if (dist&gt;=360)
+                        dist-=360;
+                    dist2=15+cos(degtorad(dist))*15;
+                    tempid=instance_create(obj_sabot.x-450+i,obj_sabot.y-350+j,obj_horsestars);
+                    tempid.rot=i+j*0.75;
+                    tempid.dist=dist2;
+                    while (tempid.rot&gt;=360)
+                        tempid.rot-=360;
+                    }
+                }
+            with (obj_horseenemy)
+                instance_destroy();
+            instance_destroy();
+            }
+        }
+    //Victory
+    else if (type==2){
+        with (obj_sabot)
+            scr_music("mus_clear");
+        obj_sabot.horsevictory=1;
+            dist=180;
+        for (i=0;i&lt;900;i+=32){
+            for (j=0;j&lt;700;j+=32){
+                dist+=1.1;
+                if (dist&gt;=360)
+                    dist-=360;
+                dist2=15+cos(degtorad(dist))*15;
+                tempid=instance_create(obj_sabot.x-450+i,obj_sabot.y-350+j,obj_horsestars);
+                tempid.rot=i+j*0.75;
+                tempid.dist=dist2;
+                while (tempid.rot&gt;=360)
+                    tempid.rot-=360;
+                }
+            }
+        with (obj_horseenemy)
+            instance_destroy();
+        instance_destroy();
+        }
+    //Restart Iji
+    else if (type==3){
+        sound_stop_all();
+        scr_stopmusic();
+        room_goto(rom_main);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

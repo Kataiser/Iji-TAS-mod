@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">alarm[0]=8+random(8);
+if (restrict){
+xrand=2+random(28);
+instance_create(x+xrand,y+32,obj_splash);
+instance_create(x+xrand,y+24,obj_smoke);
+}
+else{
+xrand=2+random(60);
+instance_create(x+xrand,y+32,obj_splash);
+instance_create(x+xrand,y+24,obj_smoke);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

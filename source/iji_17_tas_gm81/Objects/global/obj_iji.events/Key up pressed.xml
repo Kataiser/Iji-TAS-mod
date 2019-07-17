@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="38">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!ignorephysics){
+    if (!place_meeting(x,y,obj_end)){
+        if (global.ignoreall==0){
+            lookingaround=0;
+            tempshredderjump=0;
+            //Dismount Shredder
+            if (shredder){
+                visible=1;
+                with (obj_hologram)
+                    instance_destroy();
+                tempid=instance_create(floor(x),floor(y)-1,obj_emptyshredder);
+                tempid.shredderhp=shredderhp;
+                tempid.iji=21;
+                if (sprite_index==spr_tasenshredder_basicijileft){
+                    tempid.sprite_index=spr_tasenshredder_emptyleft;
+                    tempid.facing=0;
+                    }
+                else{
+                    tempid.sprite_index=spr_tasenshredder_empty;
+                    tempid.facing=1;
+                    }
+                tempid.hspeed=hspeed;
+                tempid.vspeed=vspeed;
+                y-=24;
+                x=floor(x);
+                y=floor(y);
+                shredder=0;
+                pressjump=1;
+                global.state=2;
+                tempshredderjump=1;
+                image_index=0;
+                if (global.jumplevel==1)
+                    vspeed=-14;
+                if (global.jumplevel==2)
+                    vspeed=-18;
+                if (global.jumplevel==3)
+                    vspeed=-23;
+                if (global.facing==0)
+                    sprite_index=spr_jumpleft;
+                else
+                    sprite_index=spr_jump;
+                hspeed=0;
+                }
+            scr_getup();
+            //Jump
+            if (tempshredderjump==0){
+                gojump=0;
+                if (global.state==2 &amp;&amp; (prevstate==1 &amp;&amp; (!place_free(xprev,yprev+4) || !place_free(xprev2,yprev2+4))) &amp;&amp; place_free(x,y-8))
+                    gojump=1;
+                if (global.state==2 &amp;&amp; (prevstate2==1 &amp;&amp; !place_free(xprev2,yprev2+4)) &amp;&amp; place_free(x,y-8))
+                    gojump=1;
+                if (global.state==1 &amp;&amp; (!place_free(x,y+4) || !place_free(xprev,yprev+4) || !place_free(xprev2,yprev2+4)) &amp;&amp; place_free(x,y-8))
+                    gojump=1;
+                if  ((sprite_index==spr_pushbutton || sprite_index==spr_pushbuttonleft) &amp;&amp; image_single=-1 &amp;&amp; place_free(x,y-8))
+                    gojump=1;
+                if  ((sprite_index==spr_duck || sprite_index==spr_duckleft || sprite_index==spr_standup || sprite_index==spr_standupleft) &amp;&amp; (image_single=-1 || delayframes&gt;0) &amp;&amp; place_free(x,y-38))
+                    gojump=1;
+                if (gojump){
+                    //Dusty below
+                    if (place_meeting(x,y+1,obj_dustyblock)){
+                        instance_create(x+1,y+57,obj_smoke);
+                        instance_create(x+14,y+57,obj_smoke);
+                        }
+                    image_single=-1;
+                    image_speed=0.5;
+                    delayframes=0;
+                    scr_sound("iji_jump");
+                    switchingpose=0;
+                    pressjump=1;
+                    global.state=2;
+                    alarm[0]=0;
+                    alarm[1]=0;
+                    image_index=0;
+                    if (global.jumplevel==1)
+                        vspeed=-14;
+                    if (global.jumplevel==2)
+                        vspeed=-18;
+                    if (global.jumplevel==3)
+                        vspeed=-22;
+                    if (global.facing==0)
+                        sprite_index=spr_jumpleft;
+                    else
+                        sprite_index=spr_jump;
+                    }
+                }
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

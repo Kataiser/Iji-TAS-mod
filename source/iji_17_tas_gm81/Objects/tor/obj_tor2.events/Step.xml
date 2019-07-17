@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Gamma
+if (redgamma&gt;0){
+    redgamma-=0.05;
+    global.gammared=redgamma;
+    if (redgamma&lt;=0){
+        redgamma=0;
+        global.gammared=0;
+        }
+    }
+
+//Speed
+realy+=realyspeed;
+
+//Spawn Death hail
+if (spawndeathhail){
+    //Type 1
+    if (obj_tor.hailtype==0){
+        sdh+=1;
+        if (sdh mod 2){
+            instance_create(1400-sdh*32,640,obj_deathhailbeam);
+            if (sdh&gt;=32){
+                sdhdir=0;
+                sdh=0;
+                spawndeathhail=0;
+                }
+            }
+        }
+
+    //Type 2
+    else if (obj_tor.hailtype==1){
+        sdh+=1;
+        if (sdhdir==0){
+            tempid=instance_create(1400-sdh*64,640,obj_deathhailbeam);
+            if (sdh mod 2==0)
+                tempid.nosound=1;
+            if (sdh&gt;=16){
+                sdhdir=1;
+                sdh=0;
+                }
+            }
+        if (sdhdir==1){
+            tempid=instance_create(-680+sdh*64,640,obj_deathhailbeam);
+            if (sdh mod 2==0)
+                tempid.nosound=1;
+            if (sdh&gt;=35){
+                sdhdir=0;
+                sdh=0;
+                spawndeathhail=0;
+                }
+            }
+        }
+
+    //Type 3
+    else if (obj_tor.hailtype==2){
+        sdh+=1;
+        if (sdhdir==0){
+            tempid=instance_create(1400-sdh*64,640,obj_deathhailbeam);
+            if (sdh mod 2==0)
+                tempid.nosound=1;
+            if (sdh&gt;=16){
+                sdhdir=1;
+                sdh=0;
+                }
+            }
+        if (sdhdir==1){
+            tempid=instance_create(280+sdh*64,640,obj_deathhailbeam);
+            if (sdh mod 2==0)
+                tempid.nosound=1;
+            if (sdh&gt;=17){
+                sdhdir=0;
+                sdh=0;
+                spawndeathhail=0;
+                }
+            }
+        }
+    }
+
+//Arriving
+if (arriving){
+    realyspeed+=0.5;
+    if (realyspeed&gt;12)
+        realyspeed=12;
+    if (realy&gt;=360){
+        realy=360;
+        land=1;
+        landcyc=0;
+        arriving=0;
+        realyspeed=0;
+        scr_sound("glo_thunder");
+        }
+    }
+
+//Leaving
+if (leaving){
+    realyspeed-=0.6;
+    if (realyspeed&lt;-12)
+        realyspeed=-12;
+    if (realy&lt;-1000)
+        instance_destroy();
+    }
+
+//Land
+if (land){
+    if (landcyc==0)
+        image_single=6;
+    if (landcyc==2)
+        image_single=5;
+    if (landcyc==4)
+        image_single=4;
+    if (landcyc==6){
+        image_single=0;
+        land=0;
+        }
+    landcyc+=1;
+    }
+
+//Jump
+if (jump){
+    if (jumpcyc==0)
+        image_single=4;
+    if (jumpcyc==2)
+        image_single=5;
+    if (jumpcyc==4)
+        image_single=6;
+    if (jumpcyc==10)
+        image_single=4;
+    if (jumpcyc==12){
+        image_single=1;
+        jump=0;
+        leaving=1;
+        realyspeed=-3;
+        }
+    jumpcyc+=1;
+    }
+
+//Extend
+if (extend){
+    if (extendcyc==0)
+        image_single=7;
+    if (extendcyc==2)
+        image_single=8;
+    if (extendcyc==4){
+        image_single=9;
+        extend=0;
+        }
+    extendcyc+=1;
+    }
+
+//Retract
+if (retract){
+    if (retractcyc==0)
+        image_single=11;
+    if (retractcyc==2)
+        image_single=8;
+    if (retractcyc==4)
+        image_single=7;
+    if (retractcyc==6){
+        image_single=0;
+        retract=0;
+        }
+    retractcyc+=1;
+    }
+
+//Looping images
+if (image_single==1)
+    image_single=2;
+else if (image_single==2)
+    image_single=3;
+else if (image_single==3)
+    image_single=1;
+
+else if (image_single==9)
+    image_single=10;
+else if (image_single==10)
+    image_single=9;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

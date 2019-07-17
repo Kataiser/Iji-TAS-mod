@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">for (j=0; j&lt;3; j+=1){
+crackx[j,0]=view_xview[0]+random(800);
+cracky[j,0]=view_yview[0]-20;
+crackx[j,1]=crackx[j,0]-50+random(100);
+cracky[j,1]=cracky[j,0]+random(150);
+crackx[j,2]=crackx[j,1]-50+random(100);
+cracky[j,2]=cracky[j,1]-50+random(150);
+crackx[j,3]=crackx[j,2]-50+random(100);
+cracky[j,3]=cracky[j,2]-50+random(150);
+
+crackx[j+3,0]=view_xview[0]+random(800);
+cracky[j+3,0]=view_yview[0]+620;
+crackx[j+3,1]=crackx[j+3,0]-50+random(100);
+cracky[j+3,1]=cracky[j+3,0]-random(150);
+crackx[j+3,2]=crackx[j+3,1]-50+random(100);
+cracky[j+3,2]=cracky[j+3,1]+50-random(150);
+crackx[j+3,3]=crackx[j+3,2]-50+random(100);
+cracky[j+3,3]=cracky[j+3,2]+50-random(150);
+
+crackx[j+6,0]=view_xview[0]-20;
+cracky[j+6,0]=view_yview[0]+random(600);
+crackx[j+6,1]=crackx[j+6,0]+random(150);
+cracky[j+6,1]=cracky[j+6,0]-50+random(100);
+crackx[j+6,2]=crackx[j+6,1]-50+random(150);
+cracky[j+6,2]=cracky[j+6,1]-50+random(100);
+crackx[j+6,3]=crackx[j+6,2]-50+random(150);
+cracky[j+6,3]=cracky[j+6,2]-50+random(100);
+
+crackx[j+9,0]=view_xview[0]+820;
+cracky[j+9,0]=view_yview[0]+random(600);
+crackx[j+9,1]=crackx[j+9,0]-random(150);
+cracky[j+9,1]=cracky[j+9,0]-50+random(100);
+crackx[j+9,2]=crackx[j+9,1]+50-random(150);
+cracky[j+9,2]=cracky[j+9,1]-50+random(100);
+crackx[j+9,3]=crackx[j+9,2]+50-random(150);
+cracky[j+9,3]=cracky[j+9,2]-50+random(100);
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

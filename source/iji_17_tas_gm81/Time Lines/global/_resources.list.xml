@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="tim_torbodyjump" type="RESOURCE"/>
+  <resource name="tim_torbodylookup" type="RESOURCE"/>
+  <resource name="tim_tordeath2" type="RESOURCE"/>
+  <resource name="tim_tordeath2p" type="RESOURCE"/>
+  <resource name="tim_tordeath" type="RESOURCE"/>
+  <resource name="tim_phantom" type="RESOURCE"/>
+  <resource name="tim_tor" type="RESOURCE"/>
+  <resource name="tim_sec8cut4" type="RESOURCE"/>
+  <resource name="tim_sec8cut3" type="RESOURCE"/>
+  <resource name="tim_sec8cut2" type="RESOURCE"/>
+  <resource name="tim_sec8cut1" type="RESOURCE"/>
+  <resource name="tim_destroy" type="RESOURCE"/>
+  <resource name="tim_proxima" type="RESOURCE"/>
+  <resource name="tim_getribbon" type="RESOURCE"/>
+  <resource name="tim_iosastrike" type="RESOURCE"/>
+</resources>

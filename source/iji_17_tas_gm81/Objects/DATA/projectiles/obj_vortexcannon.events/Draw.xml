@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">for (i=0;i&lt;20;i+=1){
+    if (i==0)
+        draw_sprite(spr_vortexcannon,img+4-1,x-i*32,y);
+    else
+        draw_sprite(spr_vortexcannon,img-1,x-i*32,y);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

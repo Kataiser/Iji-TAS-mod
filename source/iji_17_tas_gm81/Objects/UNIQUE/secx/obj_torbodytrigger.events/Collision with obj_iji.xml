@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!metiji){
+metiji=1;
+holdright=0;
+if (global.killdata[797]==1)
+    (instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatxy";
+else
+    (instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chatx7";
+obj_iji.holdafterchat=1;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

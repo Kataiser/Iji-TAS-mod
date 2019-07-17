@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_thor">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (thored==0 &amp;&amp; visible){
+    armor-=35*global.atmult;
+    thored=1;
+    if (angry==0){
+        alarm[2]=random(60-(global.difficulty*20))+30-(global.difficulty*10);
+        angry=1;
+        visible=0;
+        instance_create(bbox_left+((bbox_right-bbox_left)/2), bbox_top+((bbox_bottom-bbox_top)/2), obj_megaflash);
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

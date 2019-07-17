@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!triggered &amp;&amp; instance_number(obj_chat)==0){
+    triggered=1;
+    scr_sound("wea_mpfb");
+    scr_shakescreen(1);
+    tempid=instance_create(3000,2416,obj_komatompfb);
+    tempid.speed=global.mpfbspeed;
+    tempid.direction=180;
+    tempid=instance_create(3000,2416,obj_komatompfb);
+    tempid.speed=global.mpfbspeed-4;
+    tempid.direction=180;
+    tempid=instance_create(3000,2416,obj_komatompfb);
+    tempid.speed=global.mpfbspeed-8;
+    tempid.direction=180;
+    alarm[0]=40;
+    alarm[1]=150;
+    with (obj_sabot)
+        scr_stopmusic();
+    }
+
+if (readyforexit &amp;&amp; instance_number(obj_chat)==0 &amp;&amp; instance_number(obj_end)==0){
+    global.sector=3;
+    instance_create(obj_iji.x,obj_iji.y,obj_end);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

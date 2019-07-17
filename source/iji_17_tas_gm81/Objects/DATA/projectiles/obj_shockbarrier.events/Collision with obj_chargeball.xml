@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_chargeball">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!dud){
+    scr_sound("glo_electrocute");
+    scr_sound("exp_mpfb");
+    with (other){
+        repeat(8)
+            (instance_create(x,y,obj_chargeballpart)).direction=random(180);
+        (instance_create(x,y,obj_whiteblanket)).alarm[0]=2;
+        instance_create(x,y,obj_harmlessexplosion);
+        scr_shakescreen(5);
+        instance_destroy();
+        if (global.specialbake==0)
+            maxsparks=90;
+        else
+            maxsparks=10;
+        if (instance_number(obj_mpfbspark2)&lt;maxsparks){
+            if (hspeed&lt;0)
+                repeat(30) instance_create(x-16+random(32),y-16+random(32),obj_mpfbspark2);
+            else
+                repeat(30) instance_create(x-16+random(32),y-16+random(32),obj_mpfbspark2);
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

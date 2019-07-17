@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_komatoassassin_basic" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_basicleft" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_nod" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_nodleft" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_pose1" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_pose1left" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_pose1fire" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_pose1fireleft" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_pose2" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_pose2left" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_downstab" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_uppercut" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_uppercutleft" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_backstab" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_backstableft" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_upslash" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_massacre" type="RESOURCE"/>
+  <resource name="spr_komatoassassin_massacreleft" type="RESOURCE"/>
+</resources>

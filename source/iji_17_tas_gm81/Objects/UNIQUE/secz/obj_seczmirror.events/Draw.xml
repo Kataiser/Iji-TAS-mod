@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_number(obj_glass)==1 &amp;&amp; obj_iji.y&lt;6720 &amp;&amp; obj_iji.y&gt;6464){
+    if (obj_iji.sprite_index=spr_basic) sprite_index=spr_basicleft;
+    else if (obj_iji.sprite_index=spr_basicleft) sprite_index=spr_basic;
+    else if (obj_iji.sprite_index=spr_lookaround) sprite_index=spr_lookaroundleft;
+    else if (obj_iji.sprite_index=spr_lookaroundleft) sprite_index=spr_lookaround;
+    else if (obj_iji.sprite_index=spr_run) sprite_index=spr_runleft;
+    else if (obj_iji.sprite_index=spr_runleft) sprite_index=spr_run;
+    else if (obj_iji.sprite_index=spr_runfire) sprite_index=spr_runfireleft;
+    else if (obj_iji.sprite_index=spr_runfireleft) sprite_index=spr_runfire;
+    else if (obj_iji.sprite_index=spr_duck) sprite_index=spr_duckleft;
+    else if (obj_iji.sprite_index=spr_duckleft) sprite_index=spr_duck;
+    else if (obj_iji.sprite_index=spr_standup) sprite_index=spr_standupleft;
+    else if (obj_iji.sprite_index=spr_standupleft) sprite_index=spr_standup;
+    else if (obj_iji.sprite_index=spr_fire) sprite_index=spr_fireleft;
+    else if (obj_iji.sprite_index=spr_fireleft) sprite_index=spr_fire;
+    else if (obj_iji.sprite_index=spr_pushbutton) sprite_index=spr_pushbuttonleft;
+    else if (obj_iji.sprite_index=spr_pushbuttonleft) sprite_index=spr_pushbutton;
+    else if (obj_iji.sprite_index=spr_kickstrong) sprite_index=spr_kickstrongleft;
+    else if (obj_iji.sprite_index=spr_kickstrongleft) sprite_index=spr_kickstrong;
+    else if (obj_iji.sprite_index=spr_jump) sprite_index=spr_jumpleft;
+    else if (obj_iji.sprite_index=spr_jumpleft) sprite_index=spr_jump;
+
+    if (obj_iji.image_single==-1)
+        image_index=floor(obj_iji.image_index);
+    else
+        image_index=obj_iji.image_single;
+    draw_sprite_ext(sprite_index,image_index,7970+(8000-obj_iji.x),obj_iji.y,1,1,0,c_white,0.5);
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

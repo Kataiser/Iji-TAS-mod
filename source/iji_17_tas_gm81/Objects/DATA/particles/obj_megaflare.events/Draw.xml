@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!init){
+    init=1;
+    size=80;
+    scr_shakescreen(4);
+    }
+size-=1+(size/10);
+if (size&lt;=0)
+    instance_destroy();
+else if (!global.specialbake){
+    draw_set_color(c_white);
+    draw_primitive_begin(pr_trianglestrip);
+    draw_vertex(x-1500-floor(size/2),y-1500);
+    draw_vertex(x-1500,y-1500-floor(size/2));
+    draw_vertex(x+1500+floor(size/2),y+1500);
+    draw_vertex(x+1500,y+1500+floor(size/2));
+    draw_primitive_end();
+    draw_primitive_begin(pr_trianglestrip);
+    draw_vertex(x-1500-floor(size/2),y+1500);
+    draw_vertex(x-1500,y+1500+floor(size/2));
+    draw_vertex(x+1500,y-1500+floor(size/2));
+    draw_vertex(x+1500-floor(size/2),y-1500);
+    draw_primitive_end();
+    draw_rectangle(x-1500,y-floor(size/2),x+1500,y+1+floor(size/2),0);
+    draw_rectangle(x-floor(size/2),y-1000,x+1+floor(size/2),y+1000,0);
+    }
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="3">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (pacifistend==3){
+    with (obj_iji)
+        scr_sound("glo_kick");
+    }
+else if (global.specialtriggerb2){
+    with (obj_sec9ansaksie)
+        instance_destroy();
+    with (obj_iji)
+        scr_sound("iji_sworded");
+    }
+(instance_create(x,y,obj_blackblanket)).alarm[0]=150;
+if (obj_sabot.lightrave)
+    obj_sabot.raveflash3=-2.5;
+else
+    alarm[8]=149;
+obj_iji.invisible=1;
+obj_iji.visible=0;
+instance_create(obj_iji.x-96,obj_iji.y,obj_sec9hologram);
+alarm[4]=240;
+obj_iosa2.visible=0;
+obj_iosa2_dead.visible=1;
+if (pacifistend==3)
+    obj_iosa2_dead.image_single=1;
+if (pacifistend!=3 &amp;&amp; global.specialtriggerb2==0)
+    obj_iosa2_gore.visible=1;
+alarm[5]=45;
+global.viewxoffset=-40;
+global.viewyoffset=-60;
+with (obj_iosa2bar)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_horsepup">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (trailer==0){
+    if (other.type&lt;=4){
+        scr_sound("glo_pickup2");
+        if (weapon==other.type){
+            weaponpower=1;
+            global.horsepoints+=2500;
+            (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=2500;
+            obj_sabot.forcewavetext=1;
+            if (other.type==0)
+                obj_sabot.wavetext="BLIT THROWER 2";
+            else if (other.type==1)
+                obj_sabot.wavetext="VOLCANO CANNON 2";
+            else if (other.type==2)
+                obj_sabot.wavetext="METEORIC SHREDDER 2";
+            else if (other.type==3)
+                obj_sabot.wavetext="ROCKET GUN 2";
+            else if (other.type==4)
+                obj_sabot.wavetext="CORONA LANCE 2";
+            }
+        else{
+            weapon=other.type;
+            weaponpower=0;
+            global.horsepoints+=1000;
+            (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=1000;
+            obj_sabot.forcewavetext=1;
+            if (other.type==0)
+                obj_sabot.wavetext="BLIT THROWER";
+            else if (other.type==1)
+                obj_sabot.wavetext="VOLCANO CANNON";
+            else if (other.type==2)
+                obj_sabot.wavetext="METEORIC SHREDDER";
+            else if (other.type==3)
+                obj_sabot.wavetext="ROCKET GUN";
+            else if (other.type==4)
+                obj_sabot.wavetext="CORONA LANCE";
+            }
+        }
+    if (other.type==5){
+        scr_sound("glo_getoverload");
+        if (numtwins==4){
+            obj_sabot.forcewavetext=1;
+            obj_sabot.wavetext="BONUS";
+            global.horsepoints+=2000;
+            (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=2000;
+            }
+        else{
+            with (obj_horse2)
+                trailer+=5;
+            tempid=instance_create(x,y,obj_horse2);
+            tempid.trailer=5;
+            tempid.weapon=weapon;
+            tempid.weaponpower=weaponpower;
+            tempid.depth=-1;
+            numtwins+=1;
+            obj_sabot.forcewavetext=1;
+            if (numtwins==1){
+                obj_sabot.wavetext="TWINHORSE";
+                global.horsepoints+=2000;
+                (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=2000;
+                }
+            else if (numtwins==2){
+                obj_sabot.wavetext="TRIHORSE";
+                global.horsepoints+=3000;
+                (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=3000;
+                }
+            else if (numtwins==3){
+                obj_sabot.wavetext="QUADHORSE";
+                global.horsepoints+=4000;
+                (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=4000;
+                }
+            else if (numtwins==4){
+                obj_sabot.wavetext="PENTAHORSE";
+                global.horsepoints+=5000;
+                (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=5000;
+                }
+            }
+        }
+    if (other.type==6){
+        scr_sound("glo_pickup");
+        if (obj_sabot.horsehp==10){
+            global.horsepoints+=200;
+            (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=200;
+            }
+        else{
+            global.horsepoints+=50;
+            (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=50;
+            }
+        obj_sabot.horsehp+=1;
+        if (obj_sabot.horsehp&gt;10)
+            obj_sabot.horsehp=10;
+        obj_sabot.forcewavetext=1;
+        obj_sabot.wavetext="HEALTH";
+        }
+    else if (other.type==7){
+        scr_sound("glo_levelup");
+        global.horselives+=1;
+        if (global.horselives&gt;10)
+            global.horselives=10;
+        global.horsepoints+=3000;
+        (instance_create(other.x+16,other.y+16,obj_horsepoints)).points=3000;
+        obj_sabot.forcewavetext=1;
+        obj_sabot.wavetext="LIFE";
+        }
+    with (other)
+        instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

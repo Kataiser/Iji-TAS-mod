@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!global.ignoreall){
+scr_shakescreen(3);
+(instance_create(1130,6560,obj_tasensoldier)).killawarded=1;
+instance_create(1142,6560,obj_enemyshockexplosion);
+instance_create(1142,6560,obj_explosioncenter);
+(instance_create(1260,6563,obj_komatotrooper)).killdataid=504;
+(instance_create(1250,6563,obj_tasensoldier)).killdataid=156;
+instance_destroy();
+scr_sound("exp_shoc");
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

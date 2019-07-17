@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_turret">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.sprite_index==spr_turret){
+if ((hspeed&gt;0 &amp;&amp; other.facing==0) || (hspeed&lt;0 &amp;&amp; other.facing==1)){
+    with (other){
+        if (!angry){
+            tempid=instance_create(x+6,y+8,obj_visionchecke)
+            tempid.direction=0;
+            tempid.speed=16;
+            tempid=instance_create(x+6,y+8,obj_visionchecke)
+            tempid.direction=180;
+            tempid.speed=16;
+            alarm[2]=30;
+            scr_turretchargetell();
+            angry=1;
+            }
+        alarm[3]=300;
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

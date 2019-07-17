@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_set_color(c_white);
+draw_primitive_begin(pr_trianglefan);
+draw_vertex(x+64,y+64);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+42+rand,y+102+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x-22+rand,y+139+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+29+rand,y+84+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x-43+rand,y+71+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+29+rand,y+60+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x-16+rand,y-5+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+41+rand,y+41+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+50+rand,y-34+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+59+rand,y+41+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+114+rand,y-5+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+71+rand,y+60+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+141+rand,y+71+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+71+rand,y+84+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+120+rand,y+139+rand2);
+rand=-16+random(32); rand2=-16+random(32);
+draw_vertex(x+58+rand,y+103+rand2);
+draw_primitive_end();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_horseshot">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">global.horsepoints+=1;
+if (other.type==4){
+    if (type==5)
+        temphp-=other.force;
+    else
+        hp-=other.force;
+    }
+else if (other.type==2){
+    if (other.meteorid!=id){
+        if (type==5)
+            temphp-=other.force;
+        else
+            hp-=other.force;
+        if (other.meteorid==0)
+            other.meteorid=id;
+        else{
+            with (other)
+                instance_destroy();
+            }
+        }
+    }
+else{
+    if (type==5)
+        temphp-=other.force;
+    else
+        hp-=other.force;
+    with (other)
+        instance_destroy();
+    }
+if (hp&lt;=0){
+    instance_destroy();
+    if (reward&gt;0)
+        (instance_create(x-16,y-16,obj_horsepup)).type=reward;
+    tempid=instance_create(x,y,obj_horseexplo);
+    if (type==5){
+        scr_shakescreen(4);
+        tempid.sprite_index=spr_mpfbexplosion;
+        tempid.alarm[0]=14;
+        scr_sound("exp_nuke");
+        repeat(10)
+            instance_create(x,y,obj_horseexplospewer);
+        repeat(30)
+            (instance_create(x,y,obj_horsecoin)).bounce=1;
+        repeat(70)
+            instance_create(x-32+random(64),y-32+random(64),obj_shardhail);
+        with (obj_horseeshot){
+            instance_destroy();
+            instance_create(x,y,obj_smoke);
+            }
+        }
+    else if (type==4){
+        tempid.sprite_index=spr_mpfbexplosion;
+        tempid.alarm[0]=14;
+        scr_sound("exp_mpfb");
+        }
+    else
+        scr_sound("exp_rock");
+    scr_shakescreen(3);
+    if (type==5){
+        global.horsepoints+=9999;
+        (instance_create(x,y,obj_horsepoints)).points=9999;
+        obj_sabot.horsebossdead=1;
+        }
+    else{
+        global.horsepoints+=100+100*type*type;
+        (instance_create(x,y,obj_horsepoints)).points=100+100*type*type;
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_tasenelite">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (shredder){
+if (speed&gt;8 &amp;&amp; !other.dead &amp;&amp; !other.takingpain){
+    scr_sound("glo_kick");
+    repeat(3){
+        tempid=instance_create(other.x+30,other.y+15,obj_scrapwhite);
+        tempid.speed=hspeed;
+        tempid.direction=random(360);
+        }
+    with (other){
+        ijikill=1;
+        hp-=1;
+        if (hp&lt;=0 &amp;&amp; killtype&lt;7)
+            killtype=7;
+        scr_shakescreen(2);
+        scr_elitepain();
+        }
+    }
+}
+
+else{
+if (other.dead==0 &amp;&amp; takingpain==0){
+    if (!global.truce &amp;&amp; other.alarm[7]&lt;=0){
+        global.armor-=6/global.armorlevel;
+        instance_create(bbox_left+random(bbox_right-bbox_left),bbox_top+random(bbox_bottom-bbox_top),obj_ijiblood);
+        if (other.angry==0)
+            other.alarm[2]=1;
+        if (other.angry==0){
+            tempid=instance_create(other.x+6,other.y+32,obj_visionchecke)
+            tempid.direction=0;
+            tempid.speed=16;
+            tempid=instance_create(other.x+6,other.y+32,obj_visionchecke)
+            tempid.direction=180;
+            tempid.speed=16;
+            }
+        other.angry=1;
+        other.alarm[5]=300;
+        other.targetiji=300;
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

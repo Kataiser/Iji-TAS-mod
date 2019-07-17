@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_komatobeast">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.hp&gt;0 &amp;&amp; !takingpain &amp;&amp; !shredder){
+    if (other.state==2 || other.state==3){
+        scr_sound("iji_swiped");
+        global.hp-=1;
+        global.damage+=1;
+        if (other.facing==0)
+            scr_knockdown(1,10);
+        else
+            scr_knockdown(2,10);
+        }
+    else{
+        if (other.alarm[7]&lt;=0){
+            global.armor-=6/global.armorlevel;
+            instance_create(bbox_left+random(bbox_right-bbox_left),bbox_top+random(bbox_bottom-bbox_top),obj_ijiblood);
+            }
+        }
+    if (other.angry==0)
+        other.alarm[2]=1;
+    if (other.angry==0){
+        tempid=instance_create(other.x+6,other.y+8,obj_visionchecke)
+        tempid.direction=0;
+        tempid.speed=16;
+        tempid=instance_create(other.x+6,other.y+8,obj_visionchecke)
+        tempid.direction=180;
+        tempid.speed=16;
+        }
+    angry=1;
+    alarm[5]=300;
+    other.targetiji=300;
+    }
+if (shredder){
+    with (other)
+        scr_beastdeath();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

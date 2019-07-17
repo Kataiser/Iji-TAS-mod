@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">alarm[0]=ceil(random(15))+5;
+if (!place_free(x,y+1)){
+//People are close
+if (distance_to_object(obj_alliedenemy)&lt;128){
+    scr_sound("glo_blit");
+    action=0;
+    walk=0;
+    jump=1;
+    vspeed=-(random(10)+2);
+    tempid=instance_nearest(x,y,obj_alliedenemy);
+    if (x&lt;(tempid.x+tempid.bbox_right)/2)
+        jumpspeed=random(8)+global.really*8;
+    else
+        jumpspeed=-random(8)+global.really*8;
+    }
+else if (distance_to_object(obj_iji)&lt;128 &amp;&amp; obj_iji.overload!=3){
+    scr_sound("glo_blit");
+    action=0;
+    walk=0;
+    jump=1;
+    vspeed=-(random(10)+2);
+    if (x&lt;obj_iji.x+6)
+        jumpspeed=random(8)+global.really*8;
+    else
+        jumpspeed=-random(8)+global.really*8;
+    }
+//Everyone is far
+else{
+action=ceil(random(4));
+//Stand
+if (action==1)
+    walk=0;
+//Walk left
+if (action==2){
+    walk=1;
+    facing=0;
+    }
+//Walk right
+if (action==3){
+    walk=1;
+    facing=1;
+    }
+//Jump
+if (action==4){
+    walk=0;
+    jump=1;
+    vspeed=-(random(3)+2);
+    jumpspeed=-4+random(8);
+    }
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

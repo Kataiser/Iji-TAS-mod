@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.hp&gt;0){
+if (instance_number(obj_asha2)==0){
+    if (xcannotfire==1)
+        obj_iji.xcannotfire=1;
+    else
+        obj_iji.xcannotfire=0;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

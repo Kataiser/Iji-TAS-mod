@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">rot+=20;
+if (rot&gt;=360)
+    rot-=360;
+xoff=cos(degtorad(rot))*12;
+    draw_set_color(c_olive);
+draw_ellipse(x+18-xoff,y+2,x+18+xoff,y+28,0);
+if (rot&gt;90 &amp;&amp; rot&lt;270)
+    draw_set_color(c_olive);
+else
+    draw_set_color(c_yellow);
+draw_ellipse(x+16-xoff,y+2,x+16+xoff,y+28,0);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

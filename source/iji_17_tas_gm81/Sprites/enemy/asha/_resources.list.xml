@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_asha_basic" type="RESOURCE"/>
+  <resource name="spr_asha_pose1" type="RESOURCE"/>
+  <resource name="spr_asha_pose1left" type="RESOURCE"/>
+  <resource name="spr_asha_pose1fire" type="RESOURCE"/>
+  <resource name="spr_asha_pose1fireleft" type="RESOURCE"/>
+  <resource name="spr_asha_pose2" type="RESOURCE"/>
+  <resource name="spr_asha_pose2left" type="RESOURCE"/>
+  <resource name="spr_asha_downstab" type="RESOURCE"/>
+  <resource name="spr_asha_uppercut" type="RESOURCE"/>
+  <resource name="spr_asha_uppercutleft" type="RESOURCE"/>
+  <resource name="spr_asha_backstab" type="RESOURCE"/>
+  <resource name="spr_asha_backstableft" type="RESOURCE"/>
+  <resource name="spr_asha_upslash" type="RESOURCE"/>
+  <resource name="spr_ashaheadleft" type="RESOURCE"/>
+  <resource name="spr_ashahead" type="RESOURCE"/>
+  <resource name="spr_asha_wall" type="RESOURCE"/>
+  <resource name="spr_asha_wallleft" type="RESOURCE"/>
+  <resource name="spr_asha_smash" type="RESOURCE"/>
+  <resource name="spr_asha_smash2" type="RESOURCE"/>
+  <resource name="spr_asha_vortex" type="RESOURCE"/>
+  <resource name="spr_elecbomb" type="RESOURCE"/>
+  <resource name="spr_ashagore" type="RESOURCE"/>
+</resources>

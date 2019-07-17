@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="101">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!playinghero3d &amp;&amp; !pause &amp;&amp; !global.horse){
+if (global.sector!=11 &amp;&amp; global.sector!=12 &amp;&amp; global.sector!=13 &amp;&amp; global.sector!=14 &amp;&amp; global.sector!=15 &amp;&amp; instance_number(obj_asha2)==0  &amp;&amp; instance_number(obj_ougi)==0){
+with (obj_shakescreen){
+    instance_deactivate_all(1);
+    scr_methodx();
+    }
+}
+global.viewxoffset=0;
+global.viewyoffset=0;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

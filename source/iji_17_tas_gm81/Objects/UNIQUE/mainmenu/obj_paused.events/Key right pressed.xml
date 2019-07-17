@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="39">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!ignoreall &amp;&amp; tier!="wait"){
+    //SCRAMBLER
+    if (tier=="help" &amp;&amp; selected==7 &amp;&amp; global.extras7){
+        if (!global.scrambler){
+            global.scrambler=1;
+            scr_sound("glo_menuselect");
+            }
+        else{
+            global.scrambler=0;
+            scr_sound("glo_menuback");
+            }
+        }
+    //OPTIONS
+    if (tier=="options"){
+        if (selected==2){
+            if(global.noshake){
+                global.noshake=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.noshake=1;
+                scr_sound("glo_menuback");
+                }
+            }
+        else if (selected==3){
+            if(global.novoice){
+                global.novoice=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.novoice=1;
+                scr_sound("glo_menuback");
+                }
+            }
+        else if (selected==4){
+            if(global.nosound){
+                global.nosound=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.nosound=1;
+                scr_sound("glo_menuback");
+                }
+            }
+        else if (selected==5){
+            if(global.nomusic){
+                global.nomusic=0;
+                scr_sound("glo_menuselect");
+                //Play currently playing music
+                with (obj_sabot){
+                    forcemusic=1;
+                    scr_music(music);
+                    }
+                }
+            else{
+                global.nomusic=1;
+                scr_sound("glo_menuback");
+                with (obj_sabot)
+                    scr_stopmusic();
+                }
+            }
+        else if (selected==6){
+            if(global.hidetime){
+                global.hidetime=0;
+                scr_sound("glo_menuselect");
+                }
+            else{
+                global.hidetime=1;
+                scr_sound("glo_menuback");
+                }
+            }
+        }
+    //WEAPON INFORMATION
+    if (tier=="help" &amp;&amp; selected==4 &amp;&amp; weaponlistlength&gt;1){
+        scr_sound("glo_menumove");
+        if (weaponinfo==weaponlistlength)
+            weaponinfo=1;
+        else
+            weaponinfo+=1;
+        }
+    //ENEMY INFORMATION
+    if (tier=="help" &amp;&amp; selected==5){
+        scr_sound("glo_menumove");
+        if (enemyinfo==enemylistlength)
+            enemyinfo=1;
+        else
+            enemyinfo+=1;
+        }
+    }
+//Flick sounds
+if (instance_number(obj_pausefullcover)==1 &amp;&amp; ((getinfo==10 &amp;&amp; weaponlistlength&gt;1) || getinfo==11))
+    scr_sound("glo_menumove");</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

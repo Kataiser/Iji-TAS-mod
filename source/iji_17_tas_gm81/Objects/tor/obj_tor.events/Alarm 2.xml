@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Set depths
+obj_sabot.depth=-202;
+
+obj_shape001.depth=1219;
+obj_shape002.depth=1218;
+obj_shape003.depth=1217;
+obj_shape004.depth=616;
+obj_shape004b.depth=616;
+obj_shape005.depth=615;
+obj_shape006.depth=614;
+obj_shape007.depth=613;
+obj_shape008.depth=612;
+obj_shape009.depth=611;
+obj_shape010.depth=610;
+obj_shape011.depth=609;
+obj_shape012.depth=608;
+obj_shape013.depth=607;
+obj_shape014.depth=606;
+obj_shape015.depth=605;
+obj_shape016.depth=604;
+obj_shape017.depth=603;
+obj_shape018.depth=602;
+obj_shape019.depth=601;
+obj_shape020.depth=600;
+obj_shape101.depth=504;
+obj_shape102.depth=503;
+obj_shape103.depth=502;
+obj_shape104.depth=501;
+obj_shape105.depth=500;
+obj_shape201.depth=1102;
+obj_shape202.depth=1101;
+obj_shape203.depth=1100;
+obj_shape301.depth=202;
+obj_shape302.depth=201;
+obj_shape303.depth=200;
+obj_shape401.depth=108;
+obj_shape401b.depth=108;
+obj_shape401c.depth=108;
+obj_shape401d.depth=108;
+obj_shape402.depth=107;
+obj_shape402b.depth=107;
+obj_shape403.depth=106;
+obj_shape404.depth=105;
+obj_shape405.depth=104;
+obj_shape405b.depth=104;
+obj_shape406.depth=103;
+obj_shape407.depth=102;
+obj_shape408.depth=101;
+obj_shape409.depth=100;
+obj_shape501.depth=802;
+obj_shape502.depth=801;
+obj_shape503.depth=800;
+obj_shape601.depth=905;
+obj_shape602.depth=904;
+obj_shape603.depth=903;
+obj_shape604.depth=902;
+obj_shape605.depth=901;
+obj_shape606.depth=900;
+obj_shape701.depth=1001;
+obj_shape702.depth=1000;
+obj_shape801.depth=302;
+obj_shape802.depth=301;
+obj_shape803.depth=300;
+obj_shape901.depth=401;
+obj_shape902.depth=400;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

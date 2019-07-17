@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">sprite_index=spr_tasensoldier_basicleft;
+image_single=0;
+speed=0;
+
+global.ignoremessagescroll=30;
+global.textid="chat37";
+(instance_create(obj_shakescreen.x,obj_shakescreen.y,obj_chat)).textid=global.textid;
+global.ignoreall=1;
+obj_iji.goaroundtrigger=1;
+readyforexit=1;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

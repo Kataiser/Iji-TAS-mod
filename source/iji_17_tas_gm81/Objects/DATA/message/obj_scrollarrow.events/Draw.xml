@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (bounce==1){
+    bounce2=1;
+    bounce=0;
+    }
+if (bounce==2){
+    bounce3=1;
+    bounce=0;
+    }
+if (bounce2){
+    if (yadjust&lt;8)
+        yadjust+=4;
+    else
+        bounce2=0;
+    }
+else if (bounce3){
+    if (yadjust&gt;-8)
+        yadjust-=4;
+    else
+        bounce3=0;
+    }
+else if (yadjust&gt;0)
+    yadjust-=4;
+else if (yadjust&lt;0)
+    yadjust+=4;
+
+if (instance_number(obj_chat)==1 || obj_messagetext.page==0)
+    image=0+imageframe;
+else if (obj_messagetext.page==obj_messagetext.pages-1)
+    image=4+imageframe;
+else
+    image=2+imageframe;
+//if (obj_messagetext.pages&gt;1)
+draw_sprite(sprite_index,image,x,y+yadjust);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

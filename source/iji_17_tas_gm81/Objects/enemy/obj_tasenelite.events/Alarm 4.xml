@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if ((x &gt; obj_shakescreen.x-500) &amp;&amp; (x &lt; obj_shakescreen.x+500) &amp;&amp; (y &gt; obj_shakescreen.y-400) &amp;&amp; (y &lt; obj_shakescreen.y+400)){
+    script_execute(scr_shakescreen,2);
+    (instance_create(obj_sabot.x,obj_sabot.y,obj_whiteblanket)).alarm[0]=2;
+    }
+if (facing==0){
+    if ((x &gt; obj_shakescreen.x-500) &amp;&amp; (x &lt; obj_shakescreen.x+500) &amp;&amp; (y &gt; obj_shakescreen.y-400) &amp;&amp; (y &lt; obj_shakescreen.y+400))
+    script_execute(scr_nanoexplosion,-30,80);
+    instance_create(x,y+75,obj_xp4);
+    if (cracked)
+        script_execute(scr_dropammo,0,75,1,5);
+    else{
+        script_execute(scr_dropammo,0,75,4,1);
+        if (ammodrop&gt;1)
+            script_execute(scr_dropammo,0,75,4,3);
+        if (ammodrop&gt;1)
+            script_execute(scr_dropammo,0,75,4,5);
+        }
+    }
+else{
+    if ((x &gt; obj_shakescreen.x-500) &amp;&amp; (x &lt; obj_shakescreen.x+500) &amp;&amp; (y &gt; obj_shakescreen.y-400) &amp;&amp; (y &lt; obj_shakescreen.y+400))
+    script_execute(scr_nanoexplosion,60,80);
+    instance_create(x+30,y+75,obj_xp4);
+    if (cracked)
+        script_execute(scr_dropammo,10,75,1,5);
+    else{
+        script_execute(scr_dropammo,10,75,4,1);
+        if (ammodrop&gt;1)
+            script_execute(scr_dropammo,10,75,4,3);
+        if (ammodrop&gt;1)
+            script_execute(scr_dropammo,10,75,4,5);
+        }
+    }
+if (ijikill){
+tempid=instance_create(x+10,y+36,obj_visionchecke)
+tempid.direction=0;
+tempid.speed=16;
+tempid=instance_create(x+10,y+36,obj_visionchecke)
+tempid.direction=180;
+tempid.speed=16;
+}
+instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

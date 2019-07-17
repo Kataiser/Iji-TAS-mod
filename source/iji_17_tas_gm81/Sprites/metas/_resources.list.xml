@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_crackbox" type="RESOURCE"/>
+  <resource name="spr_leetbox" type="RESOURCE"/>
+  <resource name="spr_screen" type="RESOURCE"/>
+  <resource name="spr_lamp" type="RESOURCE"/>
+  <resource name="spr_crate1" type="RESOURCE"/>
+  <resource name="spr_crate2" type="RESOURCE"/>
+  <resource name="spr_locker" type="RESOURCE"/>
+  <resource name="spr_barrel" type="RESOURCE"/>
+  <resource name="spr_glass" type="RESOURCE"/>
+  <resource name="spr_glass2" type="RESOURCE"/>
+  <resource name="spr_glass2short" type="RESOURCE"/>
+  <resource name="spr_paper" type="RESOURCE"/>
+  <resource name="spr_paperfly" type="RESOURCE"/>
+</resources>

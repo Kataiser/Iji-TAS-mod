@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_enemybullet">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">ijikill=0;
+if (angry==0 &amp;&amp; (state==0 || state==1))
+    alarm[2]=1;
+angry=1;
+targetrival=300;
+target=other.target;
+alarm[5]=300;
+if (dead==0){
+    armor-=4;
+    instance_create(other.x-3+random(7),other.y-3+random(7),obj_komatosplat);
+    }
+with (other){
+    x+=(3-random(6));
+    y+=(3-random(6));
+    instance_create(x,y,obj_bullethit);
+    instance_destroy();
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

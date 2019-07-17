@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Face down
+if (facing==0){
+    if (place_free(x+velocity,y))
+        x+=velocity;
+    else
+        facing=1;
+    if (place_free(x,y+velocity))
+        facing=3;
+    }
+//Face right
+else if (facing==1){
+    if (place_free(x,y-velocity))
+        y-=velocity;
+    else
+        facing=2;
+    if (place_free(x+velocity,y))
+        facing=0;
+    }
+//Face up
+else if (facing==2){
+    if (place_free(x-velocity,y))
+        x-=velocity;
+    else
+        facing=3;
+    if (place_free(x,y-velocity))
+        facing=1;
+    }
+//Face left
+else if (facing==3){
+    if (place_free(x,y+velocity))
+        y+=velocity;
+    else
+        facing=0;
+    if (place_free(x-velocity,y))
+        facing=2;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

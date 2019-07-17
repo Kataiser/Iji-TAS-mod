@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="neutral_blit" type="GROUP"/>
+  <resource name="neutral_turret" type="GROUP"/>
+  <resource name="neutral_skysmasher" type="GROUP"/>
+  <resource name="tasen_scout" type="GROUP"/>
+  <resource name="tasen_soldier" type="GROUP"/>
+  <resource name="tasen_commander" type="GROUP"/>
+  <resource name="tasen_elite" type="GROUP"/>
+  <resource name="tasen_shredder" type="GROUP"/>
+  <resource name="komato_trooper" type="GROUP"/>
+  <resource name="komato_berserker" type="GROUP"/>
+  <resource name="komato_assassin" type="GROUP"/>
+  <resource name="komato_beast" type="GROUP"/>
+  <resource name="komato_annihilator" type="GROUP"/>
+  <resource name="krotera" type="GROUP"/>
+  <resource name="asha" type="GROUP"/>
+  <resource name="proxima" type="GROUP"/>
+  <resource name="iosa" type="GROUP"/>
+  <resource name="iosa2" type="GROUP"/>
+  <resource name="tor" type="GROUP"/>
+  <resource name="torbody" type="GROUP"/>
+</resources>

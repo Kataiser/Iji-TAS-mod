@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//"FIND"
+if (angry &amp;&amp; !prevangry)
+    scr_sound("sol_find");
+prevangry=angry;
+
+scr_tasenvision(0,-20);
+if (targetiji&gt;0)
+targetiji-=1;
+if (targetrival&gt;0)
+targetrival-=1;
+cfised=0;
+thored=0;
+plasmaed=0;
+//Block shredder
+if (place_meeting(x,y,obj_blockshredder)){
+    alarm[2]=30;
+    facing=0;
+    driving=1;
+    }
+//Lose sight
+if ((x &lt; obj_shakescreen.x-1000) || (x &gt; obj_shakescreen.x+1000) || (y &lt; obj_shakescreen.y-800) || (y &gt; obj_shakescreen.y+800)){
+    angry=0;
+    alarm[5]=0;
+    if (state==2)
+        state=0;
+    }
+//Crack fail
+if (crackmark==1 &amp;&amp; distance_to_object(obj_iji) &gt; 50){
+    script_execute(scr_crackfail);
+    global.erasetop=0;
+    global.topmessage="CRACKING FAILED: Subject is too far away";
+    }
+if (crackmark==1 &amp;&amp; shredderhp&lt;=0){
+    script_execute(scr_terminatecrack);
+    global.erasetop=0;
+    global.topmessage="CRACKING FAILED: Subject was destroyed";
+    }
+//Fire
+if (angry==1 &amp;&amp; reloading==0 &amp;&amp; image_index&gt;=7 &amp;&amp; state==1){
+    scr_sound("wea_mach");
+    reloading=1;
+    alarm[0]=3;
+    alarm[1]=3;
+    if (facing==0 &amp;&amp; sprite_index==spr_tasenshredder_basicleft){
+        (instance_create(x-5,y+12,obj_enemybullet)).target=id;
+        (instance_create(x-5,y+12,obj_enemybullet)).target=id;
+        instance_create(x-31+hspeed,y+16+vspeed,obj_muzzleflash);
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x-10+hspeed,y+14+vspeed,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+40;
+            }
+        }
+    else if (facing==1 &amp;&amp; sprite_index==spr_tasenshredder_basic){
+        (instance_create(x+5,y+12,obj_enemybullet2)).target=id;
+        (instance_create(x+5,y+12,obj_enemybullet2)).target=id;
+        (instance_create(x+62+hspeed,y+16+vspeed,obj_muzzleflash)).image_single=floor(random(5))+5;
+        if (instance_number(obj_shell)&lt;40 &amp;&amp; !global.specialbake){
+            tempid=instance_create(x+10+hspeed,y+14+vspeed,obj_shell);
+            tempid.speed=random(2)+5;
+            tempid.direction=random(15)+130;
+            }
+        }
+    }
+
+
+
+
+
+temphspeed=hspeed;
+//Drive
+if (driving &amp;&amp; facing==0){
+    hspeed-=1.49;
+    facing=0;
+    }
+if (driving &amp;&amp; facing==1){
+    hspeed+=1.49;
+    facing=1;
+    }
+
+//Slow down
+if (!goingleft &amp;&amp; !goingright &amp;&amp; !place_free(x,y+1)){
+    if (hspeed&lt;-1)
+        hspeed+=0.4;
+    if (hspeed&gt;1)
+        hspeed-=0.4;
+    if (hspeed&gt;=-1 &amp;&amp; hspeed&lt;=1)
+        hspeed=0;
+    }
+
+//Limit speed
+if (hspeed&lt;-18)
+    hspeed=-18;
+if (hspeed&gt;18)
+    hspeed=18;
+
+//Fall
+if (place_free(x,y+1)){
+    gravity=0.7;
+    gravity_direction=270;
+    if (place_free(x+hspeed,y+vspeed+2)){
+        if (place_free(x+hspeed,y+vspeed-2)){
+            donothing=1;
+            }
+        else if (place_free(x+hspeed,y+vspeed+12)){
+            x-=hspeed;
+            if (hspeed&lt;0)
+                move_contact_solid(180,32)
+            else
+                move_contact_solid(0,32)
+            hspeed*=-0.5;
+            if (abs(hspeed)&lt;8)
+                hspeed=0;
+            }
+        }
+    else if (place_free(x+hspeed,y+vspeed+12)){
+        x-=hspeed;
+        if (hspeed&lt;0)
+            move_contact_solid(180,32)
+        else
+            move_contact_solid(0,32)
+        hspeed*=-0.5;
+        if (abs(hspeed)&lt;8)
+            hspeed=0;
+        }
+    }
+if (vspeed&gt;18)
+    vspeed=18;
+
+//Travel up slopes
+if (hspeed&lt;0 &amp;&amp; place_meeting(x+hspeed-2,y+1,obj_sloper) &amp;&amp; place_free(x+hspeed-2,y-24)){
+    y-=10;
+    move_contact_solid(270,32);
+    }
+else if (hspeed&gt;0 &amp;&amp; place_meeting(x+hspeed+2,y+1,obj_slopel) &amp;&amp; place_free(x+hspeed+2,y-24)){
+    y-=10;
+    move_contact_solid(270,32);
+    }
+
+//Travel down slopes
+else if (hspeed&lt;0 &amp;&amp; place_meeting(x,y+16,obj_slopel)){
+    move_contact_solid(270,32);
+    vspeed=0;
+    gravity=0;
+    }
+else if (hspeed&gt;0 &amp;&amp; place_meeting(x,y+16,obj_sloper)){
+    move_contact_solid(270,32);
+    vspeed=0;
+    gravity=0;
+    }
+
+//Bounce on walls
+else if (hspeed&lt;0 &amp;&amp; !place_free(x+hspeed-2,y)){
+    if (!place_meeting(x+hspeed-8,y,obj_meta) &amp;&amp; !place_meeting(x+hspeed-8,y,obj_door) &amp;&amp; !place_meeting(x+hspeed-8,y,obj_glass)){
+        hspeed*=-0.5;
+        if (hspeed&lt;8){
+            move_contact_solid(180,32)
+            hspeed=0;
+            }
+        else
+            scr_sound("glo_land");
+        }
+    }
+else if (hspeed&gt;0 &amp;&amp; !place_free(x+hspeed+2,y)){
+    if (!place_meeting(x+hspeed+8,y,obj_meta) &amp;&amp; !place_meeting(x+hspeed+8,y,obj_door) &amp;&amp; !place_meeting(x+hspeed+8,y,obj_glass)){
+        hspeed*=-0.5;
+        if (hspeed&gt;-8){
+            move_contact_solid(0,32)
+            hspeed=0;
+            }
+        else
+            scr_sound("glo_land");
+        }
+    }
+
+//Land
+if (hspeed==0 &amp;&amp; !place_free(x,y+vspeed+2)){
+    vspeed=0;
+    gravity=0;
+    move_contact_solid(270,32);
+    }
+if (vspeed&gt;0){
+    if (hspeed&lt;0){
+        if (!place_free(x+hspeed-2,y)){
+            hspeed=0;
+            move_contact_solid(180,32);
+            }
+        if (!place_free(x,y+vspeed+2)){
+            vspeed=0;
+            gravity=0;
+            move_contact_solid(270,32);
+            }
+        }
+    if (hspeed&gt;0){
+        if (!place_free(x+hspeed+2,y)){
+            hspeed=0;
+            move_contact_solid(0,32);
+            }
+        if (!place_free(x,y+vspeed+2)){
+            vspeed=0;
+            gravity=0;
+            move_contact_solid(270,32);
+            }
+        }
+    }
+
+
+//Jump
+if(hspeed&lt;-10 &amp;&amp; !place_meeting(x-140,y,obj_sloper) &amp;&amp; place_meeting(x-46,y+4,obj_sloper))
+    vspeed=-abs(hspeed)/2;
+if(hspeed&gt;10 &amp;&amp; !place_meeting(x+140,y,obj_slopel) &amp;&amp; place_meeting(x+46,y+4,obj_slopel))
+    vspeed=-abs(hspeed)/2;
+
+//Animate
+if (facing==0 &amp;&amp; image_index&gt;=7 &amp;&amp; sprite_index==spr_tasenshredder_basic){
+    image_index=0;
+    sprite_index=spr_tasenshredder_basicleft;
+    }
+if (facing==1 &amp;&amp; image_index&gt;=7 &amp;&amp; sprite_index==spr_tasenshredder_basicleft){
+    image_index=0;
+    sprite_index=spr_tasenshredder_basic;
+    }
+
+//Stop animations
+if (image_index&gt;7)
+    image_index=7;
+
+//Fix
+if (place_meeting(x,y+16,obj_slopel) || place_meeting(x,y+16,obj_sloper)){
+if ((hspeed&lt;1 &amp;&amp; temphspeed&gt;4) || (hspeed&gt;-1 &amp;&amp; temphspeed&lt;-4))
+        hspeed=temphspeed;
+    }
+if (place_meeting(x,y,obj_block)){
+    if (place_free(x-4,y))
+        x-=4;
+    else if (place_free(x+4,y))
+        x+=4;
+    move_outside_solid(90,32);
+    }
+
+//Shredder damaged
+if (shredderhp&lt;500)
+    ssmokecyc+=1;
+if (shredderhp&lt;250)
+    ssmokecyc+=2;
+if (ssmokecyc&gt;=10){
+    ssmokecyc=0;
+    instance_create(x-40+random(80),y-20+random(40),obj_bigsmoke);
+    }
+
+//Shredder explodes
+if (shredderhp&lt;=0){
+    scr_shakescreen(2);
+    instance_destroy();
+    scr_sound("sol_death");
+    tempid=instance_create(x,y-30,obj_tasensoldier);
+    tempid.hp=0;
+    tempid.dead=1;
+    tempid.killdataid=killdataid;
+    tempid.killtype=killtype;
+    if (ijikill)
+        tempid.ijikill=1;
+    if (facing==0){
+        with (tempid)
+            script_execute(scr_enemyknockdown,2,11);
+        }
+    else{
+        with (tempid)
+            script_execute(scr_enemyknockdown,1,11);
+        }
+    instance_create(x,y,obj_enemyrocketexplosion);
+    instance_create(x,y,obj_explosioncenter);
+    if (global.specialbake==0)
+        maxdebris=200;
+    else
+        maxdebris=40;
+    if (instance_number(obj_scrapwhite)&lt;maxdebris){
+        repeat(40){
+            tempid=instance_create(x-10+random(20),y-10+random(20),obj_scrapwhite);
+            tempid.direction=random(360);
+            tempid.speed=random(18)+10;
+            }
+        }
+    }
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,23 @@
+//DOESN'T WORK WITH MP3 FILES
+/*
+sound_volume(mus_secintro,0.85);
+sound_volume(mus_sec1,0.85);
+sound_volume(mus_sec2,0.85);
+sound_volume(mus_sec3,0.85);
+sound_volume(mus_sec4,0.85);
+sound_volume(mus_sec5,0.85);
+sound_volume(mus_boss,0.85);
+sound_volume(mus_tor,0.85);
+sound_volume(mus_ending,0.85);
+sound_volume(mus_mainmenu,0.85);
+sound_volume(mus_clear,0.85);
+sound_volume(mus_darkstroke,0.85);
+sound_volume(mus_lightstroke,0.85);
+sound_volume(mus_calm,0.85);
+sound_volume(mus_dark,0.85);
+sound_volume(mus_sad,0.85);
+sound_volume(mus_asha,0.85);
+sound_volume(mus_gameover,0.85);
+sound_volume(mus_hero3d,0.85);
+sound_volume(mus_doom,0.85);
+*/

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="3">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//ERUPTION
+scr_sound("exp_turret");
+scr_sound("exp_nuke");
+for (i=0; i&lt;34; i+=1){
+instance_create(316+i*64,639,obj_eruption);
+}
+obj_sabot.flash=0.5;
+scr_shakescreen(5);
+obj_tor.showsafe=0;
+if (global.difficulty!=0){
+    with (obj_iosa2safe)
+        instance_destroy();
+    }
+redgamma=1.5;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

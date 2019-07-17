@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_pushbox">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (visible){
+    global.erasetop=0;
+    global.topmessage="CUSTOM ACCESS ERROR `Not a chance. /Ansaksie`";
+    scr_sound("glo_crackfail");
+    global.ignorestation=90;
+    voice=300+random(300);
+    shutup=0;
+    stopfooling=10;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

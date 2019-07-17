@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="605" library="1">
+      <!--action name: Comment-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>NONE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">Begin</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">fade=2;
+if (global.cut==1){
+    timeline_index=tim_cut1;
+    background_index[0]=bg_101;
+    nextbg=bg_101;
+    }
+else if (global.cut==2)
+    timeline_index=tim_cut2;
+else if (global.cut==3)
+    timeline_index=tim_cut3;
+else if (global.cut==4)
+    timeline_index=tim_cut4;
+else if (global.cut==5)
+    timeline_index=tim_cut5;
+else if (global.cut==6)
+    timeline_index=tim_cut6;
+else if (global.cut==7)
+    timeline_index=tim_cut7;
+else if (global.cut==8)
+    timeline_index=tim_cut8;
+else if (global.cut==10)
+    timeline_index=tim_cut10;
+else if (global.cut==11)
+    timeline_index=tim_cut11;
+else if (global.cut==12)
+    timeline_index=tim_cut12;
+else if (global.cut==13)
+    timeline_index=tim_cut13;
+else if (global.cut==14)
+    timeline_index=tim_cut14;
+else if (global.cut==15)
+    timeline_index=tim_cut15;
+    
+if (timeline_index != -1) {timeline_running=true;}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

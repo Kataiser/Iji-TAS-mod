@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Quit
+if (keyboard_check(vk_f12)){
+    f12quit+=1;
+    if (f12quit&gt;=20){
+        sound_stop_all();
+        game_end();
+        }
+    }
+else
+    f12quit=0;
+
+//RESULTS
+if (cover&gt;=-0.95){
+
+if (drawunlocks)
+    scr_drawunlocks();
+else{
+draw_set_font(global.fontwhite);
+draw_set_color(c_white);
+draw_text_ext(180,28+56,"---RESULTS---",28,800);
+
+tempstring="Difficulty: ";
+if (global.difficulty==0)
+    tempstring+="Normal";
+if (global.difficulty==1)
+    tempstring+="Hard";
+if (global.difficulty==2){
+    if (global.specialtrigger16)
+        tempstring+="Ultimortal";
+    else
+        tempstring+="Extreme";
+    }
+draw_text_ext(168,56+56,tempstring,28,800);
+
+tempstring="Total kills: ";
+if (global.totkills&lt;100)
+    tempstring+=" ";
+if (global.totkills&lt;10)
+    tempstring+=" ";
+tempstring+=string(global.totkills);
+draw_text_ext(156,84+56,tempstring,28,800);
+
+tempstring="Damage taken: ";
+if (global.totdamage&lt;100)
+    tempstring+=" ";
+if (global.totdamage&lt;10)
+    tempstring+=" ";
+tempstring+=string(global.totdamage);
+draw_text_ext(144,112+56,tempstring,28,800);
+
+tempstring="Successful cracks: ";
+if (global.totcracks&lt;100)
+    tempstring+=" ";
+if (global.totcracks&lt;10)
+    tempstring+=" ";
+tempstring+=string(global.totcracks);
+draw_text_ext(84,140+56,tempstring,28,800);
+
+tempstring="Failed cracks: ";
+if (global.totfails&lt;100)
+    tempstring+=" ";
+if (global.totfails&lt;10)
+    tempstring+=" ";
+tempstring+=string(global.totfails);
+draw_text_ext(132,168+56,tempstring,28,800);
+
+timesecs=global.totalseconds;
+timehours=floor((timesecs-(timesecs mod 3600))/3600);
+timesecs-=timehours*3600;
+timemins=floor((timesecs-(timesecs mod 60))/60);
+timesecs=timesecs mod 60;
+tempstring="Time taken: ";
+tempstring+=string(timehours)+":";
+if (timemins&lt;10)
+    tempstring+="0";
+tempstring+=string(timemins)+".";
+if (timesecs&lt;10)
+    tempstring+="0";
+tempstring+=string(timesecs);
+if (timerecord)
+    tempstring+=" (New record)";
+draw_text_ext(168,196+56,tempstring,28,800);
+
+//PRESS ESCAPE
+draw_text_ext(492,84+56,"Thanks for playing!",28,800);
+draw_text_ext(480,112+56,"Press Escape to return",28,800);
+draw_text_ext(516,140+56,"to the Main menu",28,800);
+
+//KILLS
+draw_set_font(global.fontwhite);
+draw_set_color(c_white);
+draw_text_ext(132,420-84,"KILLS",28,800);
+if (global.totkills&gt;=300){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(60,448-84,"300: One Woman Army",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(60,448-84,"300: One Woman Army",28,800);
+    }
+
+if (global.totkills&lt;300 &amp;&amp; global.totkills&gt;=200){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(60,476-84,"200: Genocidal",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(60,476-84,"200: Genocidal",28,800);
+    }
+
+if (global.totkills&lt;200 &amp;&amp; global.totkills&gt;=51){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(60,504-84,"~51: Destroyer",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(60,504-84,"~51: Destroyer",28,800);
+    }
+
+if (global.totkills&lt;51 &amp;&amp; global.totkills&gt;=1){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(72,532-84,"~1: Pacifistic",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(72,532-84,"~1: Pacifistic",28,800);
+    }
+
+if (global.totkills&lt;1){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(84,560-84,"0: Innocent",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(84,560-84,"0: Innocent",28,800);
+    }
+
+//DAMAGE
+draw_set_font(global.fontwhite);
+draw_set_color(c_white);
+draw_text_ext(384,420-84,"DAMAGE",28,800);
+if (global.totdamage&gt;=400){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(312,448-84,"400: Hopeless",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(312,448-84,"400: Hopeless",28,800);
+    }
+
+if (global.totdamage&lt;400 &amp;&amp; global.totdamage&gt;=300){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(312,476-84,"300: Overconfident",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(312,476-84,"300: Overconfident",28,800);
+    }
+
+if (global.totdamage&lt;300 &amp;&amp; global.totdamage&gt;=200){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(312,504-84,"200: Careless",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(312,504-84,"200: Careless",28,800);
+    }
+
+if (global.totdamage&lt;200 &amp;&amp; global.totdamage&gt;=100){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(312,532-84,"100: Skilled",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(312,532-84,"100: Skilled",28,800);
+    }
+
+if (global.totdamage&lt;100){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(336,560-84,"0: Immortal",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(336,560-84,"0: Immortal",28,800);
+    }
+
+//CRACKS minus FAILS
+crackfail=global.totcracks-global.totfails;
+if (crackfail&lt;0)
+    crackfail=0;
+draw_set_font(global.fontwhite);
+draw_set_color(c_white);
+draw_text_ext(552,420-84,"CRACKS minus FAILS",28,800);
+if (crackfail&gt;=100){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(576,448-84,"100: Nanomaster",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(576,448-84,"100: Nanomaster",28,800);
+    }
+
+if (crackfail&lt;100 &amp;&amp; crackfail&gt;=70){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(588,476-84,"70: Cybergeek",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(588,476-84,"70: Cybergeek",28,800);
+    }
+
+if (crackfail&lt;70 &amp;&amp; crackfail&gt;=40){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(588,504-84,"40: Adept",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(588,504-84,"40: Adept",28,800);
+    }
+
+if (crackfail&lt;40 &amp;&amp; crackfail&gt;=20){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(588,532-84,"20: Lame",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(588,532-84,"20: Lame",28,800);
+    }
+
+if (crackfail&lt;20){
+    draw_set_font(global.fontspecial);
+    draw_set_color(c_white);
+    draw_text_ext(600,560-84,"0: Clueless",28,800);
+    }
+else{
+    draw_set_font(global.fontwhite);
+    draw_set_color(c_white);
+    draw_text_ext(600,560-84,"0: Clueless",28,800);
+    }
+
+}
+}
+
+//SCREEN COVER
+if (pressedescape){
+    if (cover&gt;-1)
+        cover-=0.025+(global.nogamma);
+    if (cover&lt;=-0.9 &amp;&amp; restart){
+        with (obj_resolutionpart)
+            instance_destroy();
+        }
+    if (cover&lt;=-1){
+        if (restart)
+            room_goto(rom_main);
+        else{
+            pressedescape=0;
+            drawunlocks=1;
+            }
+        }
+    }
+else{
+    if (cover&lt;0)
+        cover+=0.025+(global.nogamma);
+    }
+if (!global.nogamma)
+    global.gamma=cover;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

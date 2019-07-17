@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="39">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Options
+if (tier==9){
+    if(selected==2){
+        if(global.noshake){
+            global.noshake=0;
+            scr_sound("glo_menuselect");
+            }
+        else{
+            global.noshake=1;
+            scr_sound("glo_menuback");
+            }
+        }
+    if(selected==3){
+        if(global.novoice){
+            global.novoice=0;
+            scr_sound("glo_menuselect");
+            }
+        else{
+            global.novoice=1;
+            scr_sound("glo_menuback");
+            }
+        }
+    if(selected==4){
+        if(global.nosound){
+            global.nosound=0;
+            scr_sound("glo_menuselect");
+            }
+        else{
+            global.nosound=1;
+            scr_sound("glo_menuback");
+            }
+        }
+    if(selected==5){
+        if(global.nomusic){
+            global.nomusic=0;
+            scr_sound("glo_menuselect");
+            scr_music(music);
+            }
+        else{
+            global.nomusic=1;
+            scr_sound("glo_menuback");
+            scr_stopmusic();
+            }
+        }
+    if(selected==6){
+        if(global.hidetime){
+            global.hidetime=0;
+            scr_sound("glo_menuselect");
+            }
+        else{
+            global.hidetime=1;
+            scr_sound("glo_menuback");
+            }
+        }
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

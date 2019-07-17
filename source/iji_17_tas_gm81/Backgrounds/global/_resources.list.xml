@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bg_mainbrown" type="RESOURCE"/>
+  <resource name="bg_mainbalcony" type="RESOURCE"/>
+  <resource name="bg_xsky" type="RESOURCE"/>
+  <resource name="bg_finalsky" type="RESOURCE"/>
+  <resource name="bg_finalsky2" type="RESOURCE"/>
+  <resource name="bg_finalsky3" type="RESOURCE"/>
+  <resource name="bg_finalsky4" type="RESOURCE"/>
+  <resource name="bg_finalsky3s" type="RESOURCE"/>
+  <resource name="bg_finalsky4s" type="RESOURCE"/>
+  <resource name="bg_clear" type="RESOURCE"/>
+</resources>

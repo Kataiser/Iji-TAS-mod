@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_reflector">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!iji &amp;&amp; other.image_index&lt;=4){
+if (liveone){
+    if (obj_tor.timeline_position&gt;710 &amp;&amp; obj_tor.timeline_position&lt;830)
+        obj_tor.timeline_position=830;
+    }
+liveone=0;
+obj_iji.secxrcb=1;
+scr_sound("glo_reflect");
+nocontrol=1;
+direction=point_direction(x,y,other.x,other.y)+180;
+speed=25;
+iji=1;
+depth=0;
+if (instance_number(obj_thorspark)&lt;20){
+    repeat(5){
+        tempid=instance_create(x,y,obj_thorspark);
+        tempid.speed=random(2)+2;
+        tempid.gravity=0.2;
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

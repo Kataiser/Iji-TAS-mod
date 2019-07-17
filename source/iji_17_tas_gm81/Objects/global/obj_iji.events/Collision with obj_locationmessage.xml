@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_locationmessage">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.sector==7 &amp;&amp; other.sec7bg==1)
+    background_visible[1]=1;
+if (global.sector==7 &amp;&amp; other.sec7bg==2)
+    background_visible[1]=0;
+if (other.loc!=obj_sabot.topmessage3){
+    if (other.slow)
+        obj_sabot.topmessage3slow=1;
+    obj_sabot.topmessage3cyc=120;
+    obj_sabot.topmessage3dcyc=0;
+    obj_sabot.topmessage3=other.loc;
+    with (other){
+        if (destroy)
+            instance_destroy();
+        }
+    }
+if (other.truce==1)
+    specialtruce=1;
+if (other.truce==2)
+    specialtruce=0;
+if (other.thunder==1)
+    obj_sabot.thunder=1;
+else
+    obj_sabot.thunder=0;
+if (other.deepsector==1)
+    obj_sabot.deepsector=1;
+else if (other.deepsector==0 || other.deepsector==2)
+    obj_sabot.deepsector=0;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

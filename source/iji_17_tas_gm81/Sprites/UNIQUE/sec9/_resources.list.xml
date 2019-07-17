@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="spr_corpse1" type="RESOURCE"/>
+  <resource name="spr_corpse2" type="RESOURCE"/>
+  <resource name="spr_corpse3" type="RESOURCE"/>
+  <resource name="spr_corpse4" type="RESOURCE"/>
+  <resource name="spr_corpse5" type="RESOURCE"/>
+  <resource name="spr_cdoor92" type="RESOURCE"/>
+  <resource name="spr_crumble91" type="RESOURCE"/>
+  <resource name="spr_sec9slash" type="RESOURCE"/>
+  <resource name="spr_mbulkhead" type="RESOURCE"/>
+  <resource name="spr_redpixel" type="RESOURCE"/>
+  <resource name="spr_deads1" type="RESOURCE"/>
+  <resource name="spr_deads2" type="RESOURCE"/>
+  <resource name="spr_deads3" type="RESOURCE"/>
+  <resource name="spr_deads4" type="RESOURCE"/>
+  <resource name="spr_ansaksie" type="RESOURCE"/>
+  <resource name="spr_ansaksiehead" type="RESOURCE"/>
+</resources>

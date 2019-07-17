@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.cracking){
+    global.cracktime-=0.0333333333;
+    global.cracktext="  -SYSTEM REPORT-#Emergency integrity#measures commencing#in: ";
+    global.cracktext+=string(global.cracktime);
+    global.cracktext+=" seconds";
+    }
+if (global.cracktime&lt;0){
+    global.erasetop=0;
+    global.topmessage="Cracking failed";
+    script_execute(scr_crackfail);
+    global.cracking=0;
+    }</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

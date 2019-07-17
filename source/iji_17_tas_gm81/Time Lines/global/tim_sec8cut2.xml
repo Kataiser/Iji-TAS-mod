@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timeline>
+  <moment stepNo="5">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_trigger)
+    instance_destroy();
+with (obj_iji){
+    global.facing=0;
+    scr_sound("wea_shot");
+    sprite_index=spr_fireleft;
+    firing=1;
+
+    if (global.passive){
+        global.passive=0;
+        global.killdata[799]=0;
+        }
+    if (global.weapon!=1){
+        with (obj_sabot)
+            scr_changeweapon(1,1);
+        }
+    else{
+        reloader=30;
+        reloading=1;
+        alarm[2]=30;
+        }
+    repeat(8){
+        instance_create(x+14,y+14,obj_pellet);
+        }
+    if(global.detaillevel==0){
+    repeat(2){
+        tempid = instance_create(x+11,y+11,obj_shell);
+        tempid.speed = random(2)+5;
+        tempid.direction = random(15)+40;
+        }
+    }
+}
+
+instance_create(obj_iji.x-4,obj_iji.y+13,obj_sec8hologram2);
+
+tempid=instance_create(obj_sec8hologram.x,obj_sec8hologram.y,obj_komatotrooper);
+tempid.killdataid=659;
+global.killdata[659]=1;
+scr_sound("tro_death");
+tempid.hp=0;
+global.kills+=1;
+with (tempid)
+    scr_enemyknockdown(1,6);
+with (obj_sec8hologram)
+    instance_destroy();</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="8">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with (obj_iji){
+    firing=0;
+    sprite_index=spr_basicleft;
+    }</argument>
+      </arguments>
+    </action>
+  </moment>
+  <moment stepNo="50">
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">(instance_create(obj_iji.x,obj_iji.y,obj_trigger)).textid="chat88";</argument>
+      </arguments>
+    </action>
+  </moment>
+</timeline>

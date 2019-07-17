@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_door">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">script_execute(scr_shakescreen,1);
+global.tempshred=hspeed;
+if (hspeed&lt;0){
+    with (other)
+    script_execute(scr_metabreak,abs(global.tempshred),1);
+    }
+else{
+    with (other)
+    script_execute(scr_metabreak,abs(global.tempshred),2);
+    }
+global.erasetop=0;
+global.topmessage="Level "+string(other.resistance)+" Shield door destroyed";</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

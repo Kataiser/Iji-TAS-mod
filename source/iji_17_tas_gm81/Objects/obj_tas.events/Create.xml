@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">randomize();
+rm_speed = 30;
+is_executing = false;
+held_keys = ds_list_create(); //data strutures don't get saved in savestates, but that's not a problem (hopefully)
+tas_font = font_add_sprite(spr_text_tas,32,0,0);
+current_inputs = " ";
+frames_on_step = 0;
+record = false;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

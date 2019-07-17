@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scr_herosabot" type="RESOURCE"/>
+  <resource name="scr_heromain" type="RESOURCE"/>
+  <resource name="scr_heroopenlevel" type="RESOURCE"/>
+  <resource name="scr_hero" type="RESOURCE"/>
+  <resource name="scr_herodeath" type="RESOURCE"/>
+  <resource name="scr_heroexplo" type="RESOURCE"/>
+  <resource name="scr_herospawnlevel" type="RESOURCE"/>
+  <resource name="scr_herodestroy" type="RESOURCE"/>
+</resources>

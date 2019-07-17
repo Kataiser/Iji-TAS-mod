@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object id="673">
+  <sprite>spr_sec7hatch</sprite>
+  <solid>true</solid>
+  <visible>true</visible>
+  <depth>950000</depth>
+  <persistent>false</persistent>
+  <parent>obj_block</parent>
+  <mask/>
+</object>

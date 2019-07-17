@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="obj_iji">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (collect&gt;=60){
+instance_destroy();
+scr_sound("glo_pickup2");
+scr_pickupflash(0,0,10);
+global.hp=global.healthlevel*2;
+if (room==rom_sector13)
+    obj_proximatrigger.supercharge=1;
+if (global.suddendeath)
+    global.hp=1;
+global.armor=100;
+global.erasetop=0;
+global.topmessage="SUPERCHARGE: POINTS +1";
+global.ignorestation=120;
+global.points+=1;
+
+//Sector 9 specific
+if (room==rom_sector9){
+    if (!obj_iji.gotsupercharge){
+        if (global.kills+global.totkills&lt;=9*global.neutralkc){
+            if (obj_sabot.bunkertruce)
+                (instance_create(10832,5984,obj_trigger)).textid="chat9d";
+            else
+                (instance_create(9712,6064,obj_trigger)).textid="chat9d";
+            }
+        obj_iji.gotsupercharge=1;
+        instance_activate_object(obj_cdoor);
+        with (obj_cdoor){
+            if (tag==89782)
+                instance_destroy();
+            }
+        instance_activate_object(obj_visioncheck);
+        with (obj_visioncheck)
+            instance_destroy();
+        instance_activate_object(obj_cdoor);
+        with (obj_cdoor){
+            if (tag==16862)
+                y-=10000;
+            }
+        instance_deactivate_object(obj_cdoor);
+        instance_activate_object(obj_komatoassassin);
+        with (obj_komatoassassin)
+            y-=10000;
+        instance_deactivate_object(obj_komatoassassin);
+        instance_activate_object(obj_lift);
+        with (obj_lift){
+            if (tag==52789)
+                liftoff=1;
+            }
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

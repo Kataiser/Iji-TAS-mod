@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scr_sound("exp_rock");
+vspeed=-2;
+image_speed=0.5;
+dud=1;
+alarm[0]=18;
+alarm[2]=1;
+alarm[3]=2;
+if (global.specialbake==0) maximum=20;
+if (global.specialbake==1) maximum=5;
+if (instance_number(obj_smokepoint)&lt;maximum){
+repeat(5) instance_create(x,y,obj_smokepoint);
+}
+obj_sabot.raveflash=0;
+
+alarm[4]=1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>
