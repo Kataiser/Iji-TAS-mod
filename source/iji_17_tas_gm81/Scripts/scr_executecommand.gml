@@ -8,6 +8,7 @@ if (string_count("end", current_inputs) == 1) {
     handle = true;
     ds_list_clear(held_keys);
     alarm[0] = -1;
+    current_alarm = -1;
 }
 else {
     if (string_count(" " + key_short + "- ", " " + current_inputs + " ") == 1) {

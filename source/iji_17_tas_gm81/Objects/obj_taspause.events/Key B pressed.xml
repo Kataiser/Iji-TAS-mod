@@ -13,7 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">scr_tasunpause();
+        <argument kind="STRING">///Stop TAS execution/close the game
+
+scr_tasunpause();
 with (obj_tas) {
     if (is_executing) { 
         io_clear();
@@ -22,6 +24,7 @@ with (obj_tas) {
         handle = true;
         ds_list_clear(held_keys);
         alarm[0] = -1;
+        current_alarm = -1;
         is_executing = false;
     }
     else {

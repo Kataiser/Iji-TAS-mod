@@ -41,7 +41,7 @@ held_keys_string = string_replace(held_keys_string, "0", "");
 
 draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
 draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
-draw_text_ext(root_x,root_y + (18 * 2),string(frames_on_step) + " (" + string(alarm[0]) + ")",28,800);
+draw_text_ext(root_x,root_y + (18 * 2),string(frames_on_step) + " (" + string(current_alarm) + ")",28,800);
 draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
 </argument>
       </arguments>

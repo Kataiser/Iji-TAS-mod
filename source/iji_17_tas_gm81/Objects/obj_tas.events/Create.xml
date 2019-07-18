@@ -21,6 +21,7 @@ tas_font = font_add_sprite(spr_text_tas,32,0,0);
 current_inputs = " ";
 frames_on_step = 0;
 record = false;
+current_alarm = 0;
 </argument>
       </arguments>
     </action>

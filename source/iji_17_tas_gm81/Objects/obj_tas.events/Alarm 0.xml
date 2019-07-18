@@ -59,10 +59,14 @@ if (string_count("save: ", current_inputs) == 1) {
     obj_taspause.most_recent_savestate = state_filename_save
     io_clear();
     alarm[0] = 1;
+    current_alarm = 1;
     game_save("savestates\" + state_filename_save + ".state");
     // yeah this eats the frame
 }
-else {alarm[0] = num_in_inputs;}
+else {
+    alarm[0] = num_in_inputs;
+    current_alarm = num_in_inputs;
+}
 </argument>
       </arguments>
     </action>

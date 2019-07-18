@@ -33,7 +33,7 @@ K: load most recently saved savestate
 Debug text:  
 \> Current line in file / step of execution / frames since start  
 \> Held keys  
-\> Frames on current step (frames until next step)  
+\> Frames on current step (frames of current step)  
 \> Target FPS / actual FPS / activated instance count  
 
 ## Modifications

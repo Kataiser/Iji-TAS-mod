@@ -17,6 +17,7 @@
 if (paused == true) {
     scr_tasunpause();
     alarm[0] = 1;
+    current_alarm = 1;
 }
 </argument>
       </arguments>
