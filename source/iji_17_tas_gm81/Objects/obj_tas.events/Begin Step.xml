@@ -20,6 +20,19 @@
         alarm[0] = 1; // this is dumb
         current_alarm = 1;
     }
+    
+    tracked_objects[0] = obj_iji;
+    tracked_objects[1] = obj_enemy;
+    
+    file_text_write_string(syncdata_log, string(frame) + ": ");
+    
+    for (i = 0; i &lt;= 2; i += 1) {
+        with (tracked_objects[i]) {
+            file_text_write_string(obj_tas.syncdata_log, "[" + object_get_name(object_index) + " id=" + string(id) + " x=" + string(x) + " y=" + string(y) + "], ");
+        }
+    }
+    
+    file_text_writeln(syncdata_log);
 }
 </argument>
       </arguments>

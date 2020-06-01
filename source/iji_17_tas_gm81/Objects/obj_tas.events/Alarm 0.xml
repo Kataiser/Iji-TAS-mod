@@ -60,6 +60,7 @@ if (string_count("save: ", current_inputs) == 1) {
     io_clear();
     alarm[0] = 1;
     current_alarm = 1;
+    if (!directory_exists(program_directory + "\savestates")) {directory_create(program_directory + "\savestates"); sleep(100)}
     game_save("savestates\" + state_filename_save + ".state");
     // yeah this eats the frame
 }
