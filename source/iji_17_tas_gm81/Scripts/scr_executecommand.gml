@@ -1,7 +1,7 @@
 key_short = argument0;
 key_long = argument1;
 
-if (string_count("end", current_inputs) == 1) {
+if (string_count("End", current_inputs) == 1) {
     io_clear();
     room_speed = 30;
     rm_speed = 30;

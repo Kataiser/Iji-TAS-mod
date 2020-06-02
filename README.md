@@ -16,11 +16,11 @@ This tool to convert between Hourglass files (`.wtf` or `.hgm`) and Iji TAS file
 
 **IMPORTANT:** this mod works by simulating key presses system-wide (an engine limitation). As a result, defocusing the game window will result in the TAS not running (and desyncing if paused) and its inputs being sent wherever else. BE CAREFUL!
 
-Keys: `escape, enter, up, down, left, right, z, x, c, a, s, d, q, one-nine`  
+Keys: `escape, enter, up, down, left, right, z, x, c, s, one-nine`  
 Line syntax: `-` after a key presses and holds it and `+` releases it. The number afterward is the time in frames until the next step is processed (1 would be the very next frame).
 `//` anywhere in the line (preferably at the beginning) is a comment and won't be executed.  
-`save:` command: creates a savestate file with the name after the colon (can include spaces). These *take a frame, clear current input*, and *are not invalidated.*  
-`speed` command: sets the framerate of the game, default is 30. Useful for slow-motion and fast-forward. This doesn't take a frame.
+`Save:` command: creates a savestate file with the name after the colon (can include spaces). These *take a frame, clear current input*, and *are not invalidated.*  
+`Speed` command: sets the framerate of the game, default is 30. Useful for slow-motion and fast-forward. This doesn't take a frame.
 
 Backspace: restart game  
 Space: load an Iji TAS file (`.itf`)  
