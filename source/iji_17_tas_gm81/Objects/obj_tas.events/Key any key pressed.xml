@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<event category="KEYPRESS" id="8">
+<event category="KEYPRESS" id="1">
   <actions>
     <action id="603" library="1">
       <!--action name: Code-->
@@ -13,9 +13,12 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">///Restart the game
-io_clear();
-game_restart();
+        <argument kind="STRING">if (keyboard_lastchar == "'") {
+    render_hitboxes = !render_hitboxes;
+}
+else if (keyboard_lastchar == ";") {
+    debug_text = !debug_text;
+}
 </argument>
       </arguments>
     </action>

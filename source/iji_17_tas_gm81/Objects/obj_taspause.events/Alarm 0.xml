@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">keyboard_key_press(ord("M"));
+        <argument kind="STRING">keyboard_key_press(vk_rshift);
 io_handle();
 
 // Q: why not just run scr_taspause?

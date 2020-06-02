@@ -22,7 +22,12 @@ current_inputs = " ";
 frames_on_step = 0;
 record = false;
 render_hitboxes = false;
+debug_text = true;
 current_alarm = 0;
+
+if (record) {
+    if (!directory_exists(program_directory + "\record")) {directory_create(program_directory + "\record"); sleep(100)}
+}
 </argument>
       </arguments>
     </action>

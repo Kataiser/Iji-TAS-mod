@@ -22,13 +22,14 @@ Line syntax: `-` after a key presses and holds it and `+` releases it. The numbe
 `Save:` command: creates a savestate file with the name after the colon (can include spaces). These *take a frame, clear current input*, and *are not invalidated.*  
 `Speed` command: sets the framerate of the game, default is 30. Useful for slow-motion and fast-forward. This doesn't take a frame.
 
-Backspace: restart game  
 Space: load an Iji TAS file (`.itf`)  
-M: pause/unpause  
-N: advance frame while paused  
-B: stop TAS execution (or restart the game if not currently executing)  
-L: load savestate  
-K: load most recently saved savestate
+Right shift: pause/unpause  
+Right control: advance frame while paused  
+/ (forward slash): stop TAS execution, or restart the game if not currently executing  
+, (comma): load savestate, opens a file dialog  
+. (period): load most recently saved savestate  
+' (apostrophe): toggle crude hitbox rendering
+; (semicolon): toggle debug text
 
 Debug text:  
 \> Current line in file / step of execution / frames since start  
@@ -45,7 +46,7 @@ Only the bare minimum of changes to the game have been made to allow the reading
 - Pausing and frame-advancing
 - Deterministic RNG
 - Framerate control (due to the lack of delta-time in Game Maker 8.1, this doesn't affect gameplay)
-- Debug text (will be toggleable at some point)
+- Debug text and a hitbox viewer, both toggleable
 - Disabled Vsync
 
 ## It broke!

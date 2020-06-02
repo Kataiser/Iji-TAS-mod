@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<event category="KEYPRESS" id="76">
+<event category="KEYPRESS" id="16">
   <actions>
     <action id="603" library="1">
       <!--action name: Code-->
@@ -13,13 +13,19 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">///Load savestate
-state_filename_load = get_open_filename("STATE file|*.state", "");
-if (state_filename_load != "") {
-    instance_activate_object(obj_tas);
-    ds_list_clear(obj_tas.held_keys);
-    paused = false;
-    game_load(state_filename_load);
+        <argument kind="STRING">///Pause/unpause
+
+if (keyboard_check_direct(vk_rshift)) {
+    keyboard_key_release(vk_shift);
+    keyboard_key_release(vk_rshift);
+    io_handle();
+    
+    if (paused == false) {
+        scr_taspause();
+    }
+    else {
+        scr_tasunpause();
+    }
 }
 </argument>
       </arguments>

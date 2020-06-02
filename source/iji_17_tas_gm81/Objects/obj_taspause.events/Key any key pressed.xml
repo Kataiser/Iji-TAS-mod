@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">/// Misc control actions
+
+if (keyboard_lastchar == "/") {
+    // Stop TAS execution/restart the game
+    
+    scr_tasunpause();
+    restarting = false;
+    
+    with (obj_tas) {
+        if (is_executing) { 
+            io_clear();
+            room_speed = 30;
+            rm_speed = 30;
+            handle = true;
+            ds_list_clear(held_keys);
+            alarm[0] = -1;
+            current_alarm = -1;
+            is_executing = false;
+            file_text_close(obj_tas.syncdata_log);
+        }
+        else {
+            obj_taspause.restarting = true;
+            instance_destroy();
+        }
+    }
+    
+    if (restarting) {
+        io_clear();
+        game_restart();
+    }
+}
+else if (keyboard_lastchar == ",") {
+    // Load savestate
+    
+    state_filename_load = get_open_filename("STATE file|*.state", "");
+    
+    if (state_filename_load != "") {
+        instance_activate_object(obj_tas);
+        ds_list_clear(obj_tas.held_keys);
+        paused = false;
+        game_load(state_filename_load);
+    }
+}
+else if (keyboard_lastchar == ".") {
+    // Load most recent savestate
+    
+    if (most_recent_savestate != "INIT") {
+        instance_activate_object(obj_tas);
+        ds_list_clear(obj_tas.held_keys);
+        scr_tasunpause();
+        game_load("savestates\" + most_recent_savestate + ".state");
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>
