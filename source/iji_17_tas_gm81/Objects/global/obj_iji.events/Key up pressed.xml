@@ -100,7 +100,8 @@
                 }
             }
         }
-    }</argument>
+    }
+</argument>
       </arguments>
     </action>
   </actions>

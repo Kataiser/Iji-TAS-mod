@@ -14,7 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (!ignorephysics &amp;&amp; !place_meeting(x,y,obj_end) &amp;&amp; global.ignoreall==0 &amp;&amp; !shredder)
-scr_getup();</argument>
+scr_getup();
+</argument>
       </arguments>
     </action>
   </actions>

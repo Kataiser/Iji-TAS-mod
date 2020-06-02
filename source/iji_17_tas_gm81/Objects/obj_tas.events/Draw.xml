@@ -13,7 +13,25 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (is_executing and record) {
+        <argument kind="STRING">// render crude hitboxes
+if (render_hitboxes) {
+    with (all) {
+        if (solid) {
+            draw_set_color(c_red);
+            draw_set_alpha(1);
+        }
+        else {
+            draw_set_color(c_blue);
+            draw_set_alpha(0.5);
+        }
+        
+        draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
+        draw_set_alpha(1);
+    }
+}
+
+// record the game, losslessly
+if (is_executing and record) {
     screen_save('record\' + string_replace_all(string_format(frame, 6, 0), ' ', '0') + '.png')
 }
 

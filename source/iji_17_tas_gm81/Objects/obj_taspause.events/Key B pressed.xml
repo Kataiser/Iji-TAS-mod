@@ -16,6 +16,8 @@
         <argument kind="STRING">///Stop TAS execution/close the game
 
 scr_tasunpause();
+restarting = false;
+
 with (obj_tas) {
     if (is_executing) { 
         io_clear();
@@ -29,9 +31,12 @@ with (obj_tas) {
         file_text_close(obj_tas.syncdata_log);
     }
     else {
-        game_restart();
+        obj_taspause.restarting = true;
+        instance_destroy();
     }
 }
+
+if (restarting) {game_restart();}
 </argument>
       </arguments>
     </action>
