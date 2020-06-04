@@ -14,11 +14,15 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">// render crude hitboxes
-if (render_hitboxes) {
+if (obj_taspause.render_hitboxes) {
     with (all) {
         if (solid) {
             draw_set_color(c_red);
             draw_set_alpha(1);
+        }
+        else if (object_index == obj_iji) {
+            draw_set_color(c_lime);
+            draw_set_alpha(0.75);
         }
         else {
             draw_set_color(c_blue);
@@ -30,12 +34,7 @@ if (render_hitboxes) {
     }
 }
 
-// record the game, losslessly
-if (is_executing and record) {
-    screen_save('record\' + string_replace_all(string_format(frame, 6, 0), ' ', '0') + '.png')
-}
-
-if (debug_text) {
+if (obj_taspause.debug_text) {
     draw_set_font(tas_font);
     draw_set_color(c_white);
     
@@ -55,7 +54,9 @@ if (debug_text) {
     
     fps_string = string(room_speed) + "/" + string(fps) + "/" + string(instance_count);
     held_keys_string = "";
-    for (i=0; i&lt;=ds_list_size(held_keys); i+=1) {held_keys_string += string(ds_list_find_value(held_keys, i)) + " ";}
+    for (i=0; i&lt;=ds_list_size(held_keys); i+=1) {
+        held_keys_string += string(ds_list_find_value(held_keys, i)) + " ";
+    }
     held_keys_string = string_replace(held_keys_string, "0", "");
     
     draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
@@ -63,6 +64,12 @@ if (debug_text) {
     draw_text_ext(root_x,root_y + (18 * 2),string(frames_on_step) + " (" + string(current_alarm) + ")",28,800);
     draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
     draw_text_ext(root_x,root_y + (18 * 4),string(random_get_seed()),28,800);
+}
+
+// record the game, losslessly
+// not sure why I added this, may remove at some point
+if (is_executing and record) {
+    screen_save('record\' + string_replace_all(string_format(frame, 6, 0), ' ', '0') + '.png')
 }
 </argument>
       </arguments>

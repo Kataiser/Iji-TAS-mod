@@ -14,6 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">paused = false;
+render_hitboxes = false;
+debug_text = true;
 most_recent_savestate = "INIT";
 </argument>
       </arguments>

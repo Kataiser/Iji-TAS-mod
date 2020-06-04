@@ -20,10 +20,9 @@ held_keys = ds_list_create(); //data strutures don't get saved in savestates, bu
 tas_font = font_add_sprite(spr_text_tas,32,0,0);
 current_inputs = " ";
 frames_on_step = 0;
-record = false;
-render_hitboxes = false;
-debug_text = true;
 current_alarm = 0;
+record = false;
+capture_syncdata = false;
 
 if (record) {
     if (!directory_exists(program_directory + "\record")) {directory_create(program_directory + "\record"); sleep(100)}

@@ -12,7 +12,7 @@
     <dontDrawBorder>false</dontDrawBorder>
     <allowWindowResize>false</allowWindowResize>
     <alwaysOnTop>false</alwaysOnTop>
-    <dontShowButtons>true</dontShowButtons>
+    <dontShowButtons>false</dontShowButtons>
     <switchVideoMode>false</switchVideoMode>
   </windowing>
   <splashImage>

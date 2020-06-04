@@ -16,6 +16,7 @@
         <argument kind="STRING">/// Misc control actions
 
 if (keyboard_lastchar == "/") {
+    keyboard_lastchar = "0"
     // Stop TAS execution/restart the game
     
     scr_tasunpause();
@@ -35,6 +36,7 @@ if (keyboard_lastchar == "/") {
         }
         else {
             obj_taspause.restarting = true;
+            syncdata_log = file_text_open_append("syncdata\syncdata_" + obj_taspause.log_time + ".log");
             instance_destroy();
         }
     }
@@ -45,6 +47,7 @@ if (keyboard_lastchar == "/") {
     }
 }
 else if (keyboard_lastchar == ",") {
+    keyboard_lastchar = "0"
     // Load savestate
     
     state_filename_load = get_open_filename("STATE file|*.state", "");
@@ -57,6 +60,7 @@ else if (keyboard_lastchar == ",") {
     }
 }
 else if (keyboard_lastchar == ".") {
+    keyboard_lastchar = "0"
     // Load most recent savestate
     
     if (most_recent_savestate != "INIT") {
@@ -65,6 +69,14 @@ else if (keyboard_lastchar == ".") {
         scr_tasunpause();
         game_load("savestates\" + most_recent_savestate + ".state");
     }
+}
+else if (keyboard_lastchar == "'") {
+    keyboard_lastchar = "0"
+    render_hitboxes = !render_hitboxes;
+}
+else if (keyboard_lastchar == ";") {
+    keyboard_lastchar = "0"
+    debug_text = !debug_text;
 }
 </argument>
       </arguments>
