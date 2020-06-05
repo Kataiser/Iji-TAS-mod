@@ -18,18 +18,11 @@ line = 0;
 
 repeat (step) {
     scr_nextline();
-    
-    if (string_count("Speed", current_inputs) == 1) {
-        room_speed = num_in_inputs;
-        rm_speed = num_in_inputs;
-        scr_nextline();
-    }
 }
 
 file_text_close(inputs_file);
 step += 1;
 
-handle = false;
 scr_executecommand("escape", vk_escape);
 scr_executecommand("enter", vk_enter);
 scr_executecommand("u", vk_up);
@@ -49,7 +42,6 @@ scr_executecommand("six", ord('6'));
 scr_executecommand("seven", ord('7'));
 scr_executecommand("eight", ord('8'));
 scr_executecommand("nine", ord('9'));
-if (handle) {io_handle();}
 
 if (string_count("Save: ", current_inputs) == 1) {
     state_filename_save = string_replace(current_inputs, "Save: ", "");

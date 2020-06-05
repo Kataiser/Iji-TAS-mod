@@ -14,7 +14,16 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (is_executing) {
+    // fast forward
+    if (keyboard_lastchar == "\") {
+        room_speed = 240;
+    }
+    else {
+        room_speed = 30;
+    }
+
     // simulate keys
+    // a lot of these probably do nothing, but I can't be bothered to check each one
     
     scr_holdkey(vk_escape);
     scr_holdkey(vk_enter);

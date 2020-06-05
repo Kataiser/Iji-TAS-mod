@@ -18,7 +18,7 @@ Keys: `escape, enter, up, down, left, right, z, x, c, s, one-nine`
 Line syntax: `-` after a key presses and holds it and `+` releases it. The number afterward is the time in frames until the next step is processed (1 would be the very next frame).
 `//` anywhere in the line (preferably at the beginning) is a comment and won't be executed.  
 `Save:` command: creates a savestate file with the name after the colon (can include spaces). These *take a frame, clear current input*, and *are not invalidated.*  
-`Speed` command: sets the framerate of the game, default is 30. Useful for slow-motion and fast-forward. This doesn't take a frame.
+`End` command: ends the TAS playback
 
 Space: load an Iji TAS file (`.itf`)  
 Right shift: pause/unpause  
@@ -28,6 +28,7 @@ Right control: advance frame while paused
 . (period): load most recently saved savestate  
 ' (apostrophe): toggle crude hitbox rendering
 ; (semicolon): toggle debug text
+\ (backslash): fast-forward (8x speed, or at least as fast as the game can run)
 
 Debug text:  
 \> Current line in file / step of execution / frames since start  

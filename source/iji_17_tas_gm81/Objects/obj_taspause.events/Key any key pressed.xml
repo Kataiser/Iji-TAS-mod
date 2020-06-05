@@ -26,18 +26,24 @@ if (keyboard_lastchar == "/") {
         if (is_executing) { 
             io_clear();
             room_speed = 30;
-            rm_speed = 30;
-            handle = true;
             ds_list_clear(held_keys);
             ds_list_clear(held_keys_display);
+            ds_list_clear(just_pressed_keys);
+            ds_list_clear(just_released_keys);
             alarm[0] = -1;
             current_alarm = -1;
             is_executing = false;
-            file_text_close(obj_tas.syncdata_log);
+            
+            if (capture_syncdata) {
+                file_text_close(syncdata_log);
+            }
         }
         else {
+            if (capture_syncdata) {
+                syncdata_log = file_text_open_append("syncdata\syncdata_" + log_time + ".log");
+            }
+            
             obj_taspause.restarting = true;
-            syncdata_log = file_text_open_append("syncdata\syncdata_" + log_time + ".log");
             instance_destroy();
         }
     }
@@ -56,6 +62,9 @@ else if (keyboard_lastchar == ",") {
     if (state_filename_load != "") {
         instance_activate_object(obj_tas);
         ds_list_clear(obj_tas.held_keys);
+        ds_list_clear(obj_tas.held_keys_display);
+        ds_list_clear(obj_tas.just_pressed_keys);
+        ds_list_clear(obj_tas.just_released_keys);
         paused = false;
         game_load(state_filename_load);
     }
@@ -67,6 +76,9 @@ else if (keyboard_lastchar == ".") {
     if (most_recent_savestate != "INIT") {
         instance_activate_object(obj_tas);
         ds_list_clear(obj_tas.held_keys);
+        ds_list_clear(obj_tas.held_keys_display);
+        ds_list_clear(obj_tas.just_pressed_keys);
+        ds_list_clear(obj_tas.just_released_keys);
         scr_tasunpause();
         game_load("savestates\" + most_recent_savestate + ".state");
     }

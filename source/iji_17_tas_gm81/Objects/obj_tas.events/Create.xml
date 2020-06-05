@@ -14,7 +14,6 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">randomize();
-rm_speed = 30;
 is_executing = false;
 held_keys = ds_list_create(); //data strutures don't get saved in savestates, but that's not a problem (hopefully)
 held_keys_display = ds_list_create();
