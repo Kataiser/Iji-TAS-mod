@@ -58,9 +58,9 @@ if (ignoremove>0)
 
 //CONTROL HERO AND ADJUST SABOT'S VIEW
 if (instance_number(obj_hero)==1 && ignoremove==0){
-if (keyboard_check(vk_left))
+if (scr_tascheck(vk_left))
     velocityx-=2;
-else if (keyboard_check(vk_right))
+else if (scr_tascheck(vk_right))
     velocityx+=2;
 else{
     if (velocityx>0)
@@ -68,9 +68,9 @@ else{
     else if (velocityx<0)
         velocityx+=1;
     }
-if (keyboard_check(vk_up))
+if (scr_tascheck(vk_up))
     velocityy-=2;
-else if (keyboard_check(vk_down))
+else if (scr_tascheck(vk_down))
     velocityy+=2;
 else{
      if (velocityy>0)

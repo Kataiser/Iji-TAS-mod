@@ -1,5 +1,5 @@
 //Executed in alarm[1]
-if (keyboard_check(ord("C")) && gettingup>0 && !global.passive){
+if (scr_tascheck(ord("C")) && gettingup>0 && !global.passive){
 if (!place_meeting(x,y,obj_emptyshredder) && global.hp>=1 && global.hp<=5 && recovering==1 && alarm[7]>=3 && !usedougi){
 if (global.weapon2 && global.weapon3 && global.weapon4 && global.weapon5 && global.weapon6 && global.weapon7 && global.weapon8 && global.ammo2>=1 && global.ammo3>=1 && global.ammo4>=1 && global.ammo6>=1 && global.ammo7>=1 && global.ammo8>=1){
 //Do it

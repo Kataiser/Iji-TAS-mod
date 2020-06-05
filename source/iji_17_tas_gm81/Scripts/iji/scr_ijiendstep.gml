@@ -8,7 +8,7 @@ if (overload==8)
 
 //Climb right
 if (!shredder){
-if (keyboard_check(vk_right) && !global.ignoreall && global.state==2 && vspeed>0){
+if (scr_tascheck(vk_right) && !global.ignoreall && global.state==2 && vspeed>0){
 if (place_free(x,y+48) && !place_free(x+walkspeed,y) && !place_free(x+walkspeed,yprevious) && !place_free(x+walkspeed,y-38) && place_free(x+walkspeed,yprevious-38) && !place_meeting(x+24,yprevious-38,obj_glass)){
     global.state=5;
     alarm[0]=12;
@@ -26,7 +26,7 @@ if (place_free(x,y+48) && !place_free(x+walkspeed,y) && !place_free(x+walkspeed,
     }
 }
 //Climb left
-if (keyboard_check(vk_left) && !global.ignoreall && global.state==2 && vspeed>0){
+if (scr_tascheck(vk_left) && !global.ignoreall && global.state==2 && vspeed>0){
 if (place_free(x,y+48) && !place_free(x-walkspeed,y) && !place_free(x-walkspeed,yprevious) && !place_free(x-walkspeed,y-38) && place_free(x-walkspeed,yprevious-38) && !place_meeting(x-16,yprevious-38,obj_glass)){
     global.state=5;
     alarm[0]=12;
@@ -234,7 +234,7 @@ y=floor(y);
 
 //Go down lift
 if (!ignorephysics){
-if (keyboard_check(vk_down) && !ignoredown && !shredder && global.ignoreall==0 && noliftride==0){
+if (scr_tascheck(vk_down) && !ignoredown && !shredder && global.ignoreall==0 && noliftride==0){
     if (!mdk && global.state==1 && place_meeting(x,y+1,obj_lift) && place_meeting(x-16,y+1,obj_lift) && place_meeting(x+16,y+1,obj_lift)){
         with (obj_lift){
             if (place_meeting(x,y-1,obj_iji) && place_free(x,y+32) && place_free(x,y+64) && place_free(x,y+96) && place_free(x,y+128)){
@@ -262,7 +262,7 @@ if (keyboard_check(vk_down) && !ignoredown && !shredder && global.ignoreall==0 &
 }
 
 //Press down key
-if ((keyboard_check(vk_down) || delayframes>0) && !ignoredown && !shredder){
+if ((scr_tascheck(vk_down) || delayframes>0) && !ignoredown && !shredder){
     if (!place_meeting(x,y,obj_end)){
         if (global.ignoreall==0){
             lookingaround=0;
@@ -322,7 +322,7 @@ if (x>1360)
 
 if (!global.ignoreall && !shredder && !takingpain && !recovering){
     if (sprite_index==spr_duck || sprite_index==spr_duckleft){
-        if (keyboard_check(vk_enter) && keyboard_check(vk_down))
+        if (scr_tascheck(vk_enter) && scr_tascheck(vk_down))
             squeakcyc+=1;
         else
             squeakcyc=0;

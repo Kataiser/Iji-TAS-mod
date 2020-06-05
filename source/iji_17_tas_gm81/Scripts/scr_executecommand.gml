@@ -12,13 +12,15 @@ if (string_count("End", current_inputs) == 1) {
 }
 else {
     if (string_count(" " + key_short + "- ", " " + current_inputs + " ") == 1) {
-        keyboard_key_press(key_long);
-        ds_list_add(held_keys, key_short);
+        ds_list_add(held_keys, key_long);
+        ds_list_add(held_keys_display, key_short);
+        ds_list_add(just_pressed_keys, key_long);
         handle = true;
     }
     else if (string_count(" " + key_short + "+ ", " " + current_inputs + " ") == 1) {
-        keyboard_key_release(key_long);
-        ds_list_delete(held_keys, ds_list_find_index(held_keys, key_short));
+        ds_list_delete(held_keys, ds_list_find_index(held_keys, key_long));
+        ds_list_delete(held_keys_display, ds_list_find_index(held_keys_display, key_short));
+        ds_list_add(just_released_keys, key_long);
         handle = true;
     }
 }

@@ -448,12 +448,12 @@ else
 }
 
 //Retry with escape
-if (keyboard_check_pressed(vk_escape) && gameover){
+if (scr_tascheckpressed(vk_escape) && gameover){
     scr_retrysector();
     }
 
 //Pause
-if (keyboard_check_pressed(vk_escape) && ((room_speed==30 && !global.turbomode) || (room_speed==60 && global.turbomode)) && ((!gameover && instance_number(obj_starttransition)==0 && instance_number(obj_endtransition)==0 && !obj_iji.cannotpause && !ultimatecannotpause && global.weapstation==0 && global.levelstation==0) || room==rom_sector16)){
+if (scr_tascheckpressed(vk_escape) && ((room_speed==30 && !global.turbomode) || (room_speed==60 && global.turbomode)) && ((!gameover && instance_number(obj_starttransition)==0 && instance_number(obj_endtransition)==0 && !obj_iji.cannotpause && !ultimatecannotpause && global.weapstation==0 && global.levelstation==0) || room==rom_sector16)){
     keyboard_clear(vk_escape);
     //Skip sec16
     if (room==rom_sector16){
@@ -490,7 +490,7 @@ if (keyboard_check_pressed(vk_escape) && ((room_speed==30 && !global.turbomode) 
 scr_pauseeffect();
 //Part of skipping messages
 if (readytopause>0){
-if (!keyboard_check(vk_escape)){
+if (!scr_tascheck(vk_escape)){
     readytopause-=1;
     if (readytopause==0)
         obj_iji.cannotpause=0;
@@ -499,7 +499,7 @@ if (!keyboard_check(vk_escape)){
 
 //Abort weapon combining
 if (global.weapstation==1 || global.weapstation==2){
-    if (keyboard_check_pressed(vk_escape)){
+    if (scr_tascheckpressed(vk_escape)){
         keyboard_clear(vk_escape);
         global.ignoreall=0;
         global.weapstation=0;
@@ -515,7 +515,7 @@ if (global.weapstation==1 || global.weapstation==2){
 
 //Abort levelstation
 if (global.levelstation && instance_number(obj_messagetext)==0){
-    if (keyboard_check_pressed(vk_escape)){
+    if (scr_tascheckpressed(vk_escape)){
         keyboard_clear(vk_escape);
         global.ignoreall=0;
         global.levelstation=0;

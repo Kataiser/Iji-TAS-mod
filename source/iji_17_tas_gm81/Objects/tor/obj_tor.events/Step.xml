@@ -474,7 +474,7 @@ if (berserkend==1 &amp;&amp; instance_number(obj_chat)==0){
 else if (berserkend==2){
     berserkendcyc+=1;
     //Kill
-    if (keyboard_check_pressed(ord("X")) &amp;&amp; berserkendcyc&gt;=5 &amp;&amp; berserkendcyc&lt;=178){
+    if (scr_tascheckpressed(ord("X")) &amp;&amp; berserkendcyc&gt;=5 &amp;&amp; berserkendcyc&lt;=178){
         berserkend=4;
         berserkendcyc=0;
         global.kills+=1;

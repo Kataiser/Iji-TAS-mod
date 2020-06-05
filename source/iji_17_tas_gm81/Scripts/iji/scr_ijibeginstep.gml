@@ -8,7 +8,7 @@ playbigpainsfx=0;
 
 //Go up lift
 if (!ignorephysics){
-if (!mdk && noliftride==0 && keyboard_check(vk_up) && global.state==1 && !global.ignoreall && place_meeting(x,y+1,obj_lift) && place_meeting(x-16,y+1,obj_lift) && place_meeting(x+16,y+1,obj_lift)){
+if (!mdk && noliftride==0 && scr_tascheck(vk_up) && global.state==1 && !global.ignoreall && place_meeting(x,y+1,obj_lift) && place_meeting(x-16,y+1,obj_lift) && place_meeting(x+16,y+1,obj_lift)){
     with (obj_lift){
         if (place_meeting(x,y-1,obj_iji) && place_free(x,y-96) && place_free(x,y-128) && place_free(x,y-160) && place_free(x,y-192) && place_free(x,y-224) && place_free(x,y-256)){
             scr_sound("glo_liftstart");

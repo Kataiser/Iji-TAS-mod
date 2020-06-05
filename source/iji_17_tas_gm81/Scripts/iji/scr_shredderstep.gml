@@ -1,18 +1,18 @@
 temphspeed=hspeed;
 //Drive
-if (keyboard_check(vk_left) && !goingright && !global.ignoreall){
+if (scr_tascheck(vk_left) && !goingright && !global.ignoreall){
     hspeed-=1.49;
     goingleft=1;
     global.facing=0;
     }
-if (keyboard_check(vk_right) && !goingleft && !global.ignoreall){
+if (scr_tascheck(vk_right) && !goingleft && !global.ignoreall){
     hspeed+=1.49;
     goingright=1;
     global.facing=1;
     }
-if (!keyboard_check(vk_left))
+if (!scr_tascheck(vk_left))
     goingleft=0;
-if (!keyboard_check(vk_right))
+if (!scr_tascheck(vk_right))
     goingright=0;
 
 //Slow down

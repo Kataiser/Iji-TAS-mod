@@ -63,7 +63,8 @@ global.facing=1;
         }
     }
 }
-}</argument>
+}
+</argument>
       </arguments>
     </action>
   </actions>

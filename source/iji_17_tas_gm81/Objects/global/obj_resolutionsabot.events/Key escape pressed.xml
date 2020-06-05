@@ -14,14 +14,15 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (!set){
-    if (!keyboard_check(vk_enter) &amp;&amp; !keyboard_check(vk_f12)){
+    if (!scr_tascheck(vk_enter) &amp;&amp; !keyboard_check(vk_f12)){
         set=1;
         alarm[0]=5;
         fade=1;
         with (obj_resolutionpart)
             instance_destroy();
         }
-    }</argument>
+    }
+</argument>
       </arguments>
     </action>
   </actions>

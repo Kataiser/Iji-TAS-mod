@@ -17,6 +17,9 @@
 rm_speed = 30;
 is_executing = false;
 held_keys = ds_list_create(); //data strutures don't get saved in savestates, but that's not a problem (hopefully)
+held_keys_display = ds_list_create();
+just_pressed_keys = ds_list_create();
+just_released_keys = ds_list_create();
 tas_font = font_add_sprite(spr_text_tas,32,0,0);
 current_inputs = " ";
 frames_on_step = 0;

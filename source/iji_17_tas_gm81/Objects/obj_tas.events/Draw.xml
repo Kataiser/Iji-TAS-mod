@@ -54,8 +54,8 @@ if (obj_taspause.debug_text) {
     
     fps_string = string(room_speed) + "/" + string(fps) + "/" + string(instance_count);
     held_keys_string = "";
-    for (i=0; i&lt;=ds_list_size(held_keys); i+=1) {
-        held_keys_string += string(ds_list_find_value(held_keys, i)) + " ";
+    for (i=0; i&lt;=ds_list_size(held_keys_display); i+=1) {
+        held_keys_string += string(ds_list_find_value(held_keys_display, i)) + " ";
     }
     held_keys_string = string_replace(held_keys_string, "0", "");
     

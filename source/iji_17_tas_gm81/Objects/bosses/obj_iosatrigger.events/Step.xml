@@ -25,7 +25,7 @@ if (pacifistend==1){
 else if (pacifistend==2){
     pacifistendcyc+=1;
     //Kill
-    if (keyboard_check_pressed(ord("X")) &amp;&amp; pacifistendcyc&gt;=5 &amp;&amp; pacifistendcyc&lt;=178){
+    if (scr_tascheckpressed(ord("X")) &amp;&amp; pacifistendcyc&gt;=5 &amp;&amp; pacifistendcyc&lt;=178){
         pacifistend=4;
         pacifistendcyc=0;
         alarm[2]=1;
@@ -180,7 +180,8 @@ if (instance_number(obj_iosa)==0 &amp;&amp; global.iosaphase==0){
             tempid.nolimit=1;
             }
         }
-    }</argument>
+    }
+</argument>
       </arguments>
     </action>
   </actions>

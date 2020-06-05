@@ -20,7 +20,7 @@ if (!horsegameover && !horsevictory && !pause){
     if (!ignoreall){
         with (obj_horse){
             if (trailer==0){
-                if (keyboard_check(vk_left)){
+                if (scr_tascheck(vk_left)){
                     if (place_free(x-spd,y))
                         x-=spd;
                     else{
@@ -35,7 +35,7 @@ if (!horsegameover && !horsevictory && !pause){
                         x=obj_sabot.x-380;
                     obj_sabot.moved=1;
                     }
-                else if (keyboard_check(vk_right)){
+                else if (scr_tascheck(vk_right)){
                     if (place_free(x+spd,y))
                         x+=spd;
                     else{
@@ -50,7 +50,7 @@ if (!horsegameover && !horsevictory && !pause){
                         x=obj_sabot.x+380;
                     obj_sabot.moved=1;
                     }
-                if (keyboard_check(vk_up)){
+                if (scr_tascheck(vk_up)){
                     if (place_free(x,y-spd))
                         y-=spd;
                     else
@@ -59,7 +59,7 @@ if (!horsegameover && !horsevictory && !pause){
                         y=obj_sabot.y-280;
                     obj_sabot.moved=1;
                     }
-                else if (keyboard_check(vk_down)){
+                else if (scr_tascheck(vk_down)){
                     if (place_free(x,y+spd))
                         y+=spd;
                     else
@@ -350,7 +350,7 @@ if (!horsegameover && !horsevictory && !pause){
 
 //End
 if ((horsegameover || horsevictory) && !pause){
-    if (keyboard_check_pressed(vk_escape) && instance_number(obj_horseexit)==0){
+    if (scr_tascheckpressed(vk_escape) && instance_number(obj_horseexit)==0){
         (instance_create(x,y,obj_horseexit)).type=3;
         }
     }
@@ -412,7 +412,7 @@ else
     f12quit=0;
 
 //Pause
-if (keyboard_check_pressed(vk_escape) && instance_number(obj_horseenter)==0 && instance_number(obj_horseexit)==0 && instance_number(obj_horse)>0 && !horsegameover && !horsevictory){
+if (scr_tascheckpressed(vk_escape) && instance_number(obj_horseenter)==0 && instance_number(obj_horseexit)==0 && instance_number(obj_horse)>0 && !horsegameover && !horsevictory){
     keyboard_clear(vk_escape);
     if (!pause){
         pause=1;

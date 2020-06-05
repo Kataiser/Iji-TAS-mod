@@ -21,7 +21,7 @@ if (ignoreshreddertext&lt;=0){
         global.topmessage="Press "+chr(global.usekey)+" to mount a Tasen Shredder";
         }
     }
-if (other.speed==0 &amp;&amp; abs(y-other.y+28)&lt;22 &amp;&amp; keyboard_check(ord("C")) &amp;&amp; !global.ignoreall &amp;&amp; global.state==1){
+if (other.speed==0 &amp;&amp; abs(y-other.y+28)&lt;22 &amp;&amp; scr_tascheck(ord("C")) &amp;&amp; !global.ignoreall &amp;&amp; global.state==1){
     keyboard_clear(ord("C"));
     x=floor(other.x);
     y=floor(other.y);
@@ -57,7 +57,8 @@ if (other.speed==0 &amp;&amp; abs(y-other.y+28)&lt;22 &amp;&amp; keyboard_check(
     with (other)
         instance_destroy();
     }
-}</argument>
+}
+</argument>
       </arguments>
     </action>
   </actions>

@@ -181,24 +181,24 @@ if (ignoreshreddertext>0)
     ignoreshreddertext-=1;
 
 //Release up key
-if (!keyboard_check(vk_up) && !global.ignoreall && global.state==2 && vspeed<0)
+if (!scr_tascheck(vk_up) && !global.ignoreall && global.state==2 && vspeed<0)
     pressjump=0;
 //Release left key
-if (!keyboard_check(vk_left) && !global.ignoreall && goingleft && !goingright){
+if (!scr_tascheck(vk_left) && !global.ignoreall && goingleft && !goingright){
     goingleft=0;
     if (global.state==1)
         sprite_index=spr_basicleft;
     running=0;
     }
 //Release right key
-if (!keyboard_check(vk_right) && !global.ignoreall && goingright && !goingleft){
+if (!scr_tascheck(vk_right) && !global.ignoreall && goingright && !goingleft){
     goingright=0;
     if (global.state==1)
         sprite_index=spr_basic;
     running=0;
     }
 //Release down key
-if (!keyboard_check(vk_down) && delayframes==0 && !global.ignoreall && !shredder){
+if (!scr_tascheck(vk_down) && delayframes==0 && !global.ignoreall && !shredder){
     rebootcyc=0;
     ignoredown=0;
     if (global.state==5){ //Stand up when halfway ducking

@@ -22,7 +22,7 @@ if (hp&lt;1)
 if (place_meeting(x,y-obj_iji.vspeed-4,obj_iji)){
 if (obj_iji.shredder)
     script_execute(scr_metabreak,abs(obj_iji.hspeed));
-else if (global.state==6 || sprite_index==spr_leetbox || sprite_index==spr_screen || (keyboard_check(vk_down) &amp;&amp; global.state==2))
+else if (global.state==6 || sprite_index==spr_leetbox || sprite_index==spr_screen || (scr_tascheck(vk_down) &amp;&amp; global.state==2))
         script_execute(scr_metabreak,2);
 else if (global.state==2 &amp;&amp; (sprite_index==spr_leetbox || sprite_index==spr_screen || sprite_index==spr_lamp || sprite_index==spr_glass2 || sprite_index==spr_glass2short)){
         script_execute(scr_metabreak,3);
@@ -33,7 +33,8 @@ else if (global.state==2 &amp;&amp; (sprite_index==spr_leetbox || sprite_index==
 
 //Meet Shredder, Turret &amp; Beast
 if (place_meeting(x,y-8,obj_emptyshredder) || place_meeting(x,y-8,obj_tasenshredder) || place_meeting(x,y-8,obj_turret) || place_meeting(x-8,y-25,obj_komatobeast) || place_meeting(x+8,y-25,obj_komatobeast) || place_meeting(x-8,y,obj_komatoannihilator) || place_meeting(x+8,y,obj_komatoannihilator))
-    script_execute(scr_metabreak,6);</argument>
+    script_execute(scr_metabreak,6);
+</argument>
       </arguments>
     </action>
   </actions>

@@ -217,18 +217,18 @@ else
 
 //rapidly scroll through the sound effects
 if (tier=="extras3" && global.extras1 && selected==4){
-    if (keyboard_check(vk_left) && !keyboard_check(vk_right)){
+    if (scr_tascheck(vk_left) && !scr_tascheck(vk_right)){
         if (turboscroll<100)
             turboscroll+=1;
         }
-    else if (keyboard_check(vk_right) && !keyboard_check(vk_left)){
+    else if (scr_tascheck(vk_right) && !scr_tascheck(vk_left)){
         if (turboscroll<100)
             turboscroll+=1;
         }
     else
         turboscroll=0;
     if (turboscroll>=15){
-        if (keyboard_check(vk_left)){
+        if (scr_tascheck(vk_left)){
             soundtest-=1;
             repeat(10)
                 sound_stop_all();
@@ -237,7 +237,7 @@ if (tier=="extras3" && global.extras1 && selected==4){
             if (soundtest<0)
                 soundtest=soundtestmax;
             }
-        if (keyboard_check(vk_right)){
+        if (scr_tascheck(vk_right)){
             soundtest+=1;
             repeat(10)
                 sound_stop_all();
@@ -250,7 +250,7 @@ if (tier=="extras3" && global.extras1 && selected==4){
     }
 
 //really
-if (tier="new" && keyboard_check(vk_right) && !really){
+if (tier="new" && scr_tascheck(vk_right) && !really){
     reallytick+=1;
     if (reallytick==150 && global.extras3){
         reallytick=0;

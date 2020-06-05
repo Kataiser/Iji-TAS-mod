@@ -46,7 +46,7 @@ if (global.levelstation && instance_number(obj_messagetext)==0){
             global.topmessage="Komato level "+string(global.komatolevel)+" (use more advanced Komato Nanoweaponry)";
         }
     //Abort
-    if (keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_enter)){
+    if (scr_tascheckpressed(ord("Z")) || scr_tascheckpressed(ord("X")) || scr_tascheckpressed(vk_enter)){
         keyboard_clear(ord("Z"));
         keyboard_clear(ord("X"));
         keyboard_clear(vk_enter);
@@ -61,28 +61,28 @@ if (global.levelstation && instance_number(obj_messagetext)==0){
         scr_sound("glo_menumove");
         }
     //Navigate
-    else if (keyboard_check_pressed(vk_up)){
+    else if (scr_tascheckpressed(vk_up)){
         if (global.levelpoke>=1 && global.levelpoke!=4){
             global.levelpoke-=1;
             global.refreshpoke=0;
             scr_sound("glo_menumove");
             }
         }
-    else if (keyboard_check_pressed(vk_down)){
+    else if (scr_tascheckpressed(vk_down)){
         if (global.levelpoke<6 && global.levelpoke!=3){
             global.levelpoke+=1;
             global.refreshpoke=0;
             scr_sound("glo_menumove");
             }
         }
-    else if (keyboard_check_pressed(vk_left)){
+    else if (scr_tascheckpressed(vk_left)){
         if (global.levelpoke>=4){
             global.levelpoke-=4;
             global.refreshpoke=0;
             scr_sound("glo_menumove");
             }
         }
-    else if (keyboard_check_pressed(vk_right)){
+    else if (scr_tascheckpressed(vk_right)){
         if (global.levelpoke<=3){
             global.levelpoke+=4;
             if (global.levelpoke>=7)
@@ -92,7 +92,7 @@ if (global.levelstation && instance_number(obj_messagetext)==0){
             }
         }
     //Use
-    else if (keyboard_check_pressed(ord("C"))){
+    else if (scr_tascheckpressed(ord("C"))){
         if (global.randomstations)
             global.levelpoke=floor(random(7));
         if (global.levelpoke==0){

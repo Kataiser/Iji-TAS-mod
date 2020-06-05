@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYBOARD" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (is_executing) {
+    // simulate keys
+    
+    scr_holdkey(vk_escape);
+    scr_holdkey(vk_enter);
+    scr_holdkey(vk_up);
+    scr_holdkey(vk_down);
+    scr_holdkey(vk_left);
+    scr_holdkey(vk_right);
+    scr_holdkey(ord('Z'));
+    scr_holdkey(ord('X'));
+    scr_holdkey(ord('C'));
+    scr_holdkey(ord('S'));
+    scr_holdkey(ord('1'));
+    scr_holdkey(ord('2'));
+    scr_holdkey(ord('3'));
+    scr_holdkey(ord('4'));
+    scr_holdkey(ord('5'));
+    scr_holdkey(ord('6'));
+    scr_holdkey(ord('7'));
+    scr_holdkey(ord('8'));
+    scr_holdkey(ord('9'));
+    
+    scr_presskey(vk_escape);
+    scr_presskey(vk_enter);
+    scr_presskey(vk_up);
+    scr_presskey(vk_down);
+    scr_presskey(vk_left);
+    scr_presskey(vk_right);
+    scr_presskey(ord('Z'));
+    scr_presskey(ord('X'));
+    scr_presskey(ord('C'));
+    scr_presskey(ord('S'));
+    scr_presskey(ord('1'));
+    scr_presskey(ord('2'));
+    scr_presskey(ord('3'));
+    scr_presskey(ord('4'));
+    scr_presskey(ord('5'));
+    scr_presskey(ord('6'));
+    scr_presskey(ord('7'));
+    scr_presskey(ord('8'));
+    scr_presskey(ord('9'));
+    
+    scr_releasekey(vk_escape);
+    scr_releasekey(vk_enter);
+    scr_releasekey(vk_up);
+    scr_releasekey(vk_down);
+    scr_releasekey(vk_left);
+    scr_releasekey(vk_right);
+    scr_releasekey(ord('Z'));
+    scr_releasekey(ord('X'));
+    scr_releasekey(ord('C'));
+    scr_releasekey(ord('S'));
+    scr_releasekey(ord('1'));
+    scr_releasekey(ord('2'));
+    scr_releasekey(ord('3'));
+    scr_releasekey(ord('4'));
+    scr_releasekey(ord('5'));
+    scr_releasekey(ord('6'));
+    scr_releasekey(ord('7'));
+    scr_releasekey(ord('8'));
+    scr_releasekey(ord('9'));
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

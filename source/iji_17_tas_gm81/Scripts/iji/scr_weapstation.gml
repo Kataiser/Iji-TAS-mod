@@ -12,7 +12,7 @@ if (global.weapstation>0){
     else
         global.topmessage="Choose the second weapon in the combination";
     //Abort
-    if (keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_enter)){
+    if (scr_tascheckpressed(ord("Z")) || scr_tascheckpressed(ord("X")) || scr_tascheckpressed(vk_enter)){
         keyboard_clear(ord("Z"));
         keyboard_clear(ord("X"));
         keyboard_clear(vk_enter);
@@ -27,7 +27,7 @@ if (global.weapstation>0){
         global.ignorestation=120;
         }
     //Navigate
-    else if (keyboard_check_pressed(vk_up)){
+    else if (scr_tascheckpressed(vk_up)){
         if (global.weappoke==5){
             global.weappoke=1;
             global.refreshpoke=0;
@@ -66,7 +66,7 @@ if (global.weapstation>0){
             scr_sound("glo_menumove");
             }
         }
-    else if (keyboard_check_pressed(vk_down)){
+    else if (scr_tascheckpressed(vk_down)){
         if (global.weappoke==1){
             if (global.weapon5 || global.weapon6 || global.weapon7 || global.weapon8){
                 if (global.weapon5)
@@ -124,7 +124,7 @@ if (global.weapstation>0){
                 }
             }
         }
-    else if (keyboard_check_pressed(vk_left)){
+    else if (scr_tascheckpressed(vk_left)){
         if (global.weappoke==2){
             global.weappoke=1;
             global.refreshpoke=0;
@@ -178,7 +178,7 @@ if (global.weapstation>0){
                 }
             }
         }
-    else if (keyboard_check_pressed(vk_right)){
+    else if (scr_tascheckpressed(vk_right)){
         if (global.weappoke==1){
             if (global.weapon2 || global.weapon3 || global.weapon4){
                 if (global.weapon2)
@@ -239,7 +239,7 @@ if (global.weapstation>0){
             }
         }
     //Use
-    else if (keyboard_check_pressed(ord("C"))){
+    else if (scr_tascheckpressed(ord("C"))){
         if (global.weapstation==1){
             global.tempwsweap1=global.weappoke;
             global.weapstation=2;

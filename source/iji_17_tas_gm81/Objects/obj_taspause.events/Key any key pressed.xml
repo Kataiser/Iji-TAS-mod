@@ -29,6 +29,7 @@ if (keyboard_lastchar == "/") {
             rm_speed = 30;
             handle = true;
             ds_list_clear(held_keys);
+            ds_list_clear(held_keys_display);
             alarm[0] = -1;
             current_alarm = -1;
             is_executing = false;
@@ -36,7 +37,7 @@ if (keyboard_lastchar == "/") {
         }
         else {
             obj_taspause.restarting = true;
-            syncdata_log = file_text_open_append("syncdata\syncdata_" + obj_taspause.log_time + ".log");
+            syncdata_log = file_text_open_append("syncdata\syncdata_" + log_time + ".log");
             instance_destroy();
         }
     }
