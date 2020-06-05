@@ -23,6 +23,26 @@ repeat (step) {
 file_text_close(inputs_file);
 step += 1;
 
+if (string_count("Save: ", current_inputs) == 1) {
+    state_filename_save = string_replace(current_inputs, "Save: ", "");
+    obj_taspause.most_recent_savestate = state_filename_save;
+    io_clear();
+    alarm[0] = 1;
+    current_alarm = 1;
+    if (!directory_exists(program_directory + "\savestates")) {directory_create(program_directory + "\savestates"); sleep(100)}
+    last_saved_txt = file_text_open_write("savestates\last_saved.txt");
+    file_text_write_string(last_saved_txt, state_filename_save);
+    file_text_close(last_saved_txt);
+    ds_list_clear(held_keys);
+    ds_list_clear(held_keys_display);
+    // pressed and released should already be empty
+    game_save("savestates\" + state_filename_save + ".state");
+}
+else {
+    alarm[0] = num_in_inputs;
+    current_alarm = num_in_inputs;
+}
+
 scr_executecommand("escape", vk_escape);
 scr_executecommand("enter", vk_enter);
 scr_executecommand("u", vk_up);
@@ -42,21 +62,6 @@ scr_executecommand("six", ord('6'));
 scr_executecommand("seven", ord('7'));
 scr_executecommand("eight", ord('8'));
 scr_executecommand("nine", ord('9'));
-
-if (string_count("Save: ", current_inputs) == 1) {
-    state_filename_save = string_replace(current_inputs, "Save: ", "");
-    obj_taspause.most_recent_savestate = state_filename_save
-    io_clear();
-    alarm[0] = 1;
-    current_alarm = 1;
-    if (!directory_exists(program_directory + "\savestates")) {directory_create(program_directory + "\savestates"); sleep(100)}
-    game_save("savestates\" + state_filename_save + ".state");
-    // yeah this eats the frame
-}
-else {
-    alarm[0] = num_in_inputs;
-    current_alarm = num_in_inputs;
-}
 </argument>
       </arguments>
     </action>

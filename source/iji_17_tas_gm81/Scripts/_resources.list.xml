@@ -15,6 +15,7 @@
   <resource name="seczmusic" type="GROUP"/>
   <resource name="sound" type="GROUP"/>
   <resource name="horse" type="GROUP"/>
+  <resource name="scr_starttas" type="RESOURCE"/>
   <resource name="scr_nextline" type="RESOURCE"/>
   <resource name="scr_executecommand" type="RESOURCE"/>
   <resource name="scr_holdkey" type="RESOURCE"/>

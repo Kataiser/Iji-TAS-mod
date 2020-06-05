@@ -16,7 +16,15 @@
         <argument kind="STRING">paused = false;
 render_hitboxes = false;
 debug_text = true;
-most_recent_savestate = "INIT";
+
+if (file_exists("savestates\last_saved.txt")) {
+    last_saved_txt = file_text_open_read("savestates\last_saved.txt");
+    most_recent_savestate = file_text_read_string(last_saved_txt);
+    file_text_close(last_saved_txt);
+}
+else {
+    most_recent_savestate = "";
+}
 </argument>
       </arguments>
     </action>

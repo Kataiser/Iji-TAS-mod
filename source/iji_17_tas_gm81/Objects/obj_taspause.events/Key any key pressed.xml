@@ -65,7 +65,7 @@ else if (keyboard_lastchar == ",") {
         ds_list_clear(obj_tas.held_keys_display);
         ds_list_clear(obj_tas.just_pressed_keys);
         ds_list_clear(obj_tas.just_released_keys);
-        paused = false;
+        with (obj_tas) {scr_starttas();}
         game_load(state_filename_load);
     }
 }
@@ -73,13 +73,13 @@ else if (keyboard_lastchar == ".") {
     keyboard_lastchar = "0"
     // Load most recent savestate
     
-    if (most_recent_savestate != "INIT") {
+    if (file_exists("savestates\" + most_recent_savestate + ".state")) {
         instance_activate_object(obj_tas);
         ds_list_clear(obj_tas.held_keys);
         ds_list_clear(obj_tas.held_keys_display);
         ds_list_clear(obj_tas.just_pressed_keys);
         ds_list_clear(obj_tas.just_released_keys);
-        scr_tasunpause();
+        with (obj_tas) {scr_starttas();}
         game_load("savestates\" + most_recent_savestate + ".state");
     }
 }
