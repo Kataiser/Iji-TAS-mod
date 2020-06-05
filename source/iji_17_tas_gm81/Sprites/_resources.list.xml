@@ -13,5 +13,4 @@
   <resource name="portraits" type="GROUP"/>
   <resource name="DATA" type="GROUP"/>
   <resource name="UNIQUE" type="GROUP"/>
-  <resource name="spr_tastext" type="RESOURCE"/>
 </resources>

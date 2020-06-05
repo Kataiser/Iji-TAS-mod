@@ -13,5 +13,4 @@
   <resource name="UNIQUE" type="GROUP"/>
   <resource name="obj_tas" type="RESOURCE"/>
   <resource name="obj_taspause" type="RESOURCE"/>
-  <resource name="obj_tastext" type="RESOURCE"/>
 </resources>

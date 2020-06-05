@@ -153,12 +153,6 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_tastext</object>
-      <position x="4" y="584"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>obj_tas</object>
       <position x="48" y="16"/>
       <creationCode/>

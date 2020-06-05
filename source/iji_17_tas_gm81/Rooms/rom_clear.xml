@@ -5792,12 +5792,6 @@
       <creationCode/>
       <locked>false</locked>
     </instance>
-    <instance>
-      <object>obj_tastext</object>
-      <position x="4" y="584"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
   </instances>
   <tiles/>
   <editorSettings remember="true">

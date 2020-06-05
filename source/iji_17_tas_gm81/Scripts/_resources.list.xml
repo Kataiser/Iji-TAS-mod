@@ -15,17 +15,5 @@
   <resource name="seczmusic" type="GROUP"/>
   <resource name="sound" type="GROUP"/>
   <resource name="horse" type="GROUP"/>
-  <resource name="scr_starttas" type="RESOURCE"/>
-  <resource name="scr_nextline" type="RESOURCE"/>
-  <resource name="scr_executecommand" type="RESOURCE"/>
-  <resource name="scr_holdkey" type="RESOURCE"/>
-  <resource name="scr_presskey" type="RESOURCE"/>
-  <resource name="scr_releasekey" type="RESOURCE"/>
-  <resource name="scr_tascheck" type="RESOURCE"/>
-  <resource name="scr_tascheckpressed" type="RESOURCE"/>
-  <resource name="scr_taspause" type="RESOURCE"/>
-  <resource name="scr_tasunpause" type="RESOURCE"/>
-  <resource name="scr_storeseed" type="RESOURCE"/>
-  <resource name="scr_restoreseed" type="RESOURCE"/>
-  <resource name="scr_seed" type="RESOURCE"/>
+  <resource name="tas" type="GROUP"/>
 </resources>

@@ -10,7 +10,6 @@ for (i=0;i<47;i+=1){
         img=1;
     draw_sprite(spr_menuback,img,view_xview[0]+212+i*8,view_yview[0]+114)
     }
-draw_sprite(spr_tastext,0,view_xview[0]+216,view_yview[0]+366);
 scr_pausemenutext();
 draw_set_font(global.fontblue);
 draw_set_color(c_white);

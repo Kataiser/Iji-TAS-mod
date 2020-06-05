@@ -2,7 +2,6 @@ step = 1;
 frame = 1;
 current_inputs = "";
 last_inputs = "";
-io_clear();
 alarm[0] = 2;
 current_alarm = 2;
 is_executing = true;

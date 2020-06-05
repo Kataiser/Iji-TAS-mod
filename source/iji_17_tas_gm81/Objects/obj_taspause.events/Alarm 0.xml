@@ -17,7 +17,7 @@
 io_handle();
 
 // Q: why not just run scr_taspause?
-// A: it causes dysync for some reason
+// A: it causes a dysync for some reason
 </argument>
       </arguments>
     </action>
