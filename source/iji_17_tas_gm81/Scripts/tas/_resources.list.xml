@@ -2,6 +2,7 @@
 <resources>
   <resource name="scr_starttas" type="RESOURCE"/>
   <resource name="scr_nextline" type="RESOURCE"/>
+  <resource name="scr_parsekey" type="RESOURCE"/>
   <resource name="scr_executekey" type="RESOURCE"/>
   <resource name="scr_holdkey" type="RESOURCE"/>
   <resource name="scr_presskey" type="RESOURCE"/>

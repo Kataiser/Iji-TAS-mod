@@ -13,3 +13,7 @@ if (capture_syncdata) {
     log_time = string(floor(date_current_datetime() * 100) + current_datetime_second);
     syncdata_log = file_text_open_append("syncdata\syncdata_" + log_time + ".log");
 }
+
+if (keyboard_check_direct(vk_rshift)) {
+    obj_taspause.scripted_pause = true;
+}

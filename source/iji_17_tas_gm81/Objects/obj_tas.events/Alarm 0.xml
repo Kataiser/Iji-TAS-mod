@@ -48,25 +48,23 @@ else if (string_count("End", current_inputs) == 1) {
     is_executing = false;
 }
 else {
-    scr_executekey("escape", vk_escape);
-    scr_executekey("enter", vk_enter);
-    scr_executekey("u", vk_up);
-    scr_executekey("d", vk_down);
-    scr_executekey("l", vk_left);
-    scr_executekey("r", vk_right);
-    scr_executekey("z", ord('Z'));
-    scr_executekey("x", ord('X'));
-    scr_executekey("c", ord('C'));
-    scr_executekey("s", ord('S'));
-    scr_executekey("one", ord('1'));
-    scr_executekey("two", ord('2'));
-    scr_executekey("three", ord('3'));
-    scr_executekey("four", ord('4'));
-    scr_executekey("five", ord('5'));
-    scr_executekey("six", ord('6'));
-    scr_executekey("seven", ord('7'));
-    scr_executekey("eight", ord('8'));
-    scr_executekey("nine", ord('9'));
+    first_char_pos = string_pos(",", current_inputs) + 1;
+
+    if (first_char_pos != 1) {
+        string_builder = "";
+        
+        for (i=first_char_pos; i&lt;=string_length(current_inputs); i+=1) {
+            if (string_char_at(current_inputs, i) == ",") {
+                scr_parsekey(string_builder);
+                string_builder = "";
+                i += 1;
+            }
+        
+            string_builder += string_char_at(current_inputs, i);
+        }
+        
+        scr_parsekey(string_builder);
+    }
     
     alarm[0] = num_in_inputs;
     current_alarm = num_in_inputs;
