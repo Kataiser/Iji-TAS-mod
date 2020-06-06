@@ -26,8 +26,8 @@ Right control: advance frame while paused
 / (forward slash): stop TAS execution, or restart the game if not currently executing  
 , (comma): load savestate, opens a file dialog  
 . (period): load most recently saved savestate  
-' (apostrophe): toggle crude hitbox rendering
-; (semicolon): toggle debug text
+' (apostrophe): toggle crude hitbox rendering  
+; (semicolon): toggle debug text  
 \ (backslash): fast-forward (8x speed, or at least as fast as the game can run)
 
 Debug text:  
