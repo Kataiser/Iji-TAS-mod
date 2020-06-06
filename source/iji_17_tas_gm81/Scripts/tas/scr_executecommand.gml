@@ -9,7 +9,7 @@ if (string_count("End", current_inputs) == 1) {
     alarm[0] = -1;
     current_alarm = -1;
 }
-else {
+else if (string_count("Save: ", current_inputs) == 0) {
     if (string_count(" " + key_short + "- ", " " + current_inputs + " ") == 1) {
         ds_list_add(held_keys, key_long);
         ds_list_add(held_keys_display, key_short);
