@@ -20,6 +20,7 @@ Line syntax: `-` after a key presses and holds it and `+` releases it. The numbe
 `//` anywhere in the line (preferably at the beginning) is a comment and won't be executed.  
 `Save:` command: creates a savestate file with the name after the colon (can include spaces). These *take a frame, clear current input*, and *are not invalidated.*  
 `End` command: ends the TAS playback
+`Skip` command: skips to the clear screen of the current sector
 
 Space: load an Iji TAS file (`.itf`)  
 Right shift: pause/unpause  

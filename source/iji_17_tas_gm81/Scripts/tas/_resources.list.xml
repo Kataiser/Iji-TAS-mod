@@ -2,7 +2,7 @@
 <resources>
   <resource name="scr_starttas" type="RESOURCE"/>
   <resource name="scr_nextline" type="RESOURCE"/>
-  <resource name="scr_executecommand" type="RESOURCE"/>
+  <resource name="scr_executekey" type="RESOURCE"/>
   <resource name="scr_holdkey" type="RESOURCE"/>
   <resource name="scr_presskey" type="RESOURCE"/>
   <resource name="scr_releasekey" type="RESOURCE"/>
@@ -13,4 +13,5 @@
   <resource name="scr_storeseed" type="RESOURCE"/>
   <resource name="scr_restoreseed" type="RESOURCE"/>
   <resource name="scr_seed" type="RESOURCE"/>
+  <resource name="scr_skiplevel" type="RESOURCE"/>
 </resources>
