@@ -1,4491 +1,4490 @@
 // Generated from IjiNonPacifistCredits.wtf
 // by https://github.com/Kataiser/wtf-to-itf
 
-4
-escape- 1
-escape+ 6
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 1
-enter- 1
-enter+ 7
-enter- 1
-enter+ 14
-enter- 1
-enter+ 1
-enter- 1
-enter+ 16
-escape- 1
-escape+ 2
-escape- 1
-escape+ 2
-escape- 1
-escape+ 2
-escape- 1
-r- escape+ 126
-u- 8
-u+ 27
-u- 11
-u+ 17
-u- 7
-u+ 19
-x- 1
-x+ 1
-u- 9
-u+ 29
-u- 18
-u+ 29
-u- 17
-u+ 14
-u- 15
-u+ 4
-u- 8
-u+ 25
-u- 3
-u+ 125
-u- 2
-u+ 155
-c- 2
-c+ 3
-u- 1
-u+ 57
-z- 1
-z+ 58
-d- 6
-d+ 108
-// Frame 975, step 55
-escape- r+ 1
-r- escape+ 2
-c- 2
-c+ 2
-r+ 1
-u- r- 1
-u+ 100
-u- 5
-u+ 24
-u- 9
-u+ 18
-u- 18
-u+ 13
-u- 1
-u+ 79
-u- 18
-u+ 136
-u- 13
-u+ 17
-x- 6
-x+ 14
-c- 1
-c+ 4
-u- 14
-u+ 31
-u- 27
-u+ 67
-x- 2
-x+ 2
-u- 24
-u+ 22
-u- 6
-u+ 50
-d- 1
-r+ d+ 46
-r- 105
-z- 1
-z+ 31
-// Frame 1889, step 94
-u- 11
-u+ 4
-u- 4
-u+ 28
-escape- r+ 1
-u- r- escape+ 1
-u+ 1
-r+ 1
-r- 109
-z- 1
-z+ 72
-u- 10
-u+ 17
-u- 25
-u+ 6
-u- 10
-u+ 18
-u- 20
-u+ 13
-u- 11
-u+ 123
-u- 16
-u+ 43
-u- 3
-u+ 1
-u- 5
-u+ 96
-r+ 43
-enter- 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- 1
-r- escape+ 91
-c- 1
-c+ 1
-r+ 3
-c- 1
-d- c+ 1
-d+ 1
-d- 1
-d+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-d+ 60
-c- 1
-c+ 2
-r+ 2
-c- 1
-d- c+ 1
-d+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-d+ 3
-r- 2
-u- 2
-// Frame 2789, step 155
-u+ 96
-five- 10
-five+ 27
-u- 18
-u+ 41
-c- 2
-c+ 2
-r+ 1
-u- r- 1
-u+ 104
-d- 8
-d+ 58
-x- 1
-x+ 19
-u- 3
-u+ 22
-u- 29
-u+ 59
-u- 3
-u+ 97
-u- 9
-u+ 28
-u- 27
-u+ 2
-d- 1
-d+ 6
-x- 1
-x+ 18
-u- 1
-r+ u+ 30
-l- 46
-u- 9
-u+ 16
-u- 4
-u+ 37
-u- 7
-u+ 10
-u- 1
-r- l+ u+ 10
-l- r+ 1
-l+ 1
-l- 1
-l+ 1
-r- 1
-r+ 1
-l- 1
-r- l+ 2
-l- r+ 2
-r- l+ 3
-l- r+ 2
-r- l+ 3
-l- r+ 1
-r- l+ 10
-r+ 1
-u- r- 3
-u+ 73
-// Frame 3760, step 212
-u- 3
-u+ 13
-r+ 2
-l- 49
-x- 1
-x+ 5
-u- 10
-u+ 10
-u- 16
-u+ 4
-u- 7
-u+ 28
-u- 8
-u+ 8
-l+ 4
-r- 8
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 5
-u- 1
-u+ 31
-u- 11
-u+ 9
-u- 6
-u+ 11
-c- 2
-r+ c+ 3
-u- r- 2
-u+ 14
-u- 2
-u+ 18
-x- 7
-x+ 14
-u- 10
-u+ 2
-l- u- r+ 10
-u+ 2
-u- r- l+ 10
-u+ 2
-l- u- r+ 16
-u+ 3
-u- 10
-u+ 30
-c- 2
-c+ 3
-u- 1
-u+ 20
-c- 2
-c+ 3
-u- 1
-u+ 1
-one- 1
-one+ 94
-u- 6
-u+ 146
-r- l+ 83
-x- 1
-x+ 34
-x- 8
-x+ 29
-x- 1
-x+ 16
-r+ 10
-r- 9
-// Frame 4668, step 290
-x- 1
-x+ 3
-u- 20
-u+ 9
-x- 1
-x+ 26
-u- 1
-u+ 10
-r+ 3
-r- 5
-c- 1
-c+ 4
-r+ 4
-five- 1
-r- five+ 19
-l- r+ 101
-x- 1
-one- x+ 1
-one+ 27
-u- 6
-u+ 10
-x- 1
-x+ 17
-u- 9
-u+ 18
-x- 3
-x+ 14
-u- 15
-u+ 12
-u- x- 13
-x+ 4
-u+ 20
-l+ 1
-r- 9
-r+ 12
-l- 6
-l+ 1
-l- 3
-u- 21
-u+ 24
-c- 1
-c+ 4
-u- 1
-u+ 27
-five- 1
-five+ 16
-escape- 1
-escape+ 41
-u- 13
-u+ 91
-l+ 6
-r- 74
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 3
-r- l+ 2
-l- r+ 19
-u- 1
-u+ 43
-x- 1
-x+ 20
-c- 1
-l+ c+ 4
-l- u- 1
-u+ 6
-one- 2
-one+ 27
-u- 4
-r- 1
-l+ 10
-u+ 12
-// Frame 5570, step 366
-x- 3
-x+ 65
-u- 21
-u+ 20
-x- 1
-u- x+ 4
-u+ 48
-u- 14
-u+ 74
-escape- 1
-escape+ 8
-x- 2
-c- x+ 1
-c+ 1
-r+ 3
-c- 1
-d- c+ 1
-r- d+ 1
-d- r+ 1
-r- d+ 1
-r+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-r- 91
-u- 15
-u+ 4
-x- 1
-x+ 5
-five- 1
-five+ 3
-u- 1
-u+ 65
-u- 2
-u+ 80
-u- 1
-u+ 16
-r+ 1
-l- 26
-x- 1
-x+ 18
-u- 1
-u+ 14
-l+ 3
-r- 42
-u- 1
-u+ 9
-d- 7
-d+ 152
-u- 12
-u+ 51
-u- 23
-// Frame 6492, step 420
-u+ 11
-x- 1
-x+ 62
-r+ 14
-escape- 1
-escape+ 28
-escape- 1
-enter- escape+ 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- 1
-r- escape+ 58
-five- 1
-five+ 35
-d- 1
-r+ d+ 50
-l- 3
-l+ 53
-escape- d- 1
-escape+ 2
-d+ 12
-l- 26
-r- l+ 8
-d- 1
-d+ 121
-u- 1
-u+ 30
-u- 11
-u+ 4
-u- 13
-u+ 15
-u- 1
-u+ 48
-u- 1
-u+ 11
-r+ 3
-r- 7
-d- 1
-d+ 12
-u- 1
-u+ 9
-u- 7
-u+ 6
-r+ 3
-l- 23
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 4
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-l- r+ 1
-r- l+ 2
-l- r+ 3
-l+ 3
-u- r- 1
-u+ 52
-u- 9
-u+ 40
-u- 8
-u+ 22
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 3
-// Frame 7393, step 496
-l- r+ 2
-r- l+ 16
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-r+ 1
-r- 1
-u- 35
-u+ 132
-u- 38
-u+ 61
-u- 22
-u+ 99
-u- 19
-u+ 44
-u- 18
-u+ 3
-u- 13
-u+ 15
-u- 14
-u+ 11
-u- 4
-l- r+ 10
-u+ 2
-u- 4
-r- l+ 9
-u+ 15
-u- 1
-u+ 24
-u- 13
-u+ 15
-u- 1
-u+ 12
-u- 13
-u+ 15
-u- 1
-u+ 50
-x- 1
-x+ 61
-escape- r+ 1
-u- r- escape+ 25
-u+ 72
-// Frame 8294, step 540
-u- 1
-r+ u+ 30
-l- 68
-u- 5
-u+ 32
-u- 1
-u+ 15
-l+ 3
-r- 26
-c- 3
-c+ 1
-d- r+ 1
-l- d+ 5
-u- 7
-u+ 193
-u- 4
-l+ 1
-r- 14
-u+ 38
-u- 1
-u+ 9
-u- r+ 1
-l- 14
-u+ 1
-r- l+ 85
-u- 13
-u+ 15
-u- 1
-u+ 45
-u- 1
-u+ 16
-r+ 1
-r- 2
-l- r+ 1
-l+ 4
-l- u- 18
-u+ 3
-u- 15
-u+ 18
-u- 1
-u+ 63
-escape- 1
-escape+ 29
-u- 1
-l+ u+ 29
-r- 133
-// Frame 9263, step 587
-u- 12
-u+ 113
-u- 19
-u+ 17
-u- 7
-u+ 13
-u- 13
-u+ 64
-u- 4
-u+ 166
-x- 2
-x+ 55
-r+ 116
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-c+ 10
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 1
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 152
-escape- 1
-escape+ 84
-// Frame 10191, step 629
-escape- 1
-enter- escape+ 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- 1
-r- escape+ 18
-five- 1
-five+ 71
-d- 1
-d+ 141
-x- 1
-x+ 42
-u- 11
-u+ 138
-c- 2
-c+ 2
-r+ 1
-u- r- 1
-u+ 10
-c- 2
-c+ 3
-u- 1
-u+ 80
-u- 4
-u+ 10
-x- 1
-x+ 57
-u- 33
-u+ 25
-u- 25
-u+ 14
-u- 6
-u+ 9
-x- 4
-x+ 19
-u- 1
-u+ 51
-one- 1
-one+ 1
-u- 1
-u+ 13
-l- r+ 6
-l+ 3
-r- 4
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-l- r+ 6
-c- 7
-c+ 24
-x- 3
-x+ 27
-// Frame 11103, step 684
-r- l+ 23
-x- 9
-x+ 48
-five- 1
-five+ 64
-u- r+ 4
-l- 10
-u+ 15
-u- 1
-u+ 12
-escape- 1
-u- escape+ 1
-u+ 13
-u- 4
-r- l+ 9
-u+ 15
-u- 14
-u+ 3
-x- 2
-x+ 1
-one- 5
-one+ 20
-x- 2
-x+ 10
-x- 2
-x+ 15
-u- 8
-u+ 14
-five- 1
-five+ 49
-u- 22
-u+ 21
-u- 2
-u+ 15
-r+ 3
-l- 34
-u- 1
-u+ 15
-u- 7
-u+ 25
-x- 1
-x+ 15
-u- 21
-u+ 74
-u- 3
-u+ 83
-u- 12
-u+ 22
-u- 1
-u+ 45
-d- 1
-d+ 181
-// Frame 12083, step 737
-x- 1
-x+ 71
-u- 6
-u+ 32
-u- l+ 1
-l- u+ 37
-u- 19
-u+ 12
-x- 1
-x+ 7
-one- 3
-one+ 47
-x- 3
-x+ 1
-five- 1
-five+ 6
-c- 1
-l+ c+ 4
-u- r- 1
-u+ 77
-u- 5
-u+ 69
-u- 23
-u+ 10
-x- 1
-x+ 5
-c- 1
-c+ 47
-u- 11
-u+ 58
-u- 6
-u+ 74
-u- 10
-u+ 24
-u- 6
-u+ 161
-x- 4
-x+ 76
-// Frame 13005, step 776
-u- 1
-u+ 14
-r+ 1
-l- 5
-one- 1
-one+ 2
-r- l+ 1
-l- r+ 1
-r- l+ 1
-l- r+ 1
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 4
-u- 1
-u+ 55
-d- 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- z- 1
-l+ d+ c+ z+ 1
-c- 1
-d- c+ 1
-d+ 1
-d- 1
-d+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-l- r+ d+ 13
-c- 1
-c+ 4
-u- 1
-u+ 13
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 4
-u- 1
-u+ 25
-u- 7
-u+ 20
-u- 6
-u+ 26
-x- 3
-x+ 31
-u- 1
-u+ 23
-u- 2
-u+ 16
-u- 7
-r- l+ 6
-u+ 15
-u- 1
-u+ 26
-c- 1
-c+ 1
-r+ 3
-l- u- 1
-u+ 16
-u- 1
-u+ 14
-l+ 3
-r- 10
-u- 1
-u+ 13
-x- 7
-x+ 73
-u- 3
-u+ 27
-u- 2
-u+ 24
-c- 2
-r+ c+ 3
-u- r- 1
-u+ 144
-u- 22
-u+ 76
-r+ 28
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 1
-c- 1
-c+ 8
-// Frame 13910, step 884
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 17
-escape- 1
-escape+ 22
-escape- 1
-enter- escape+ 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- 1
-r- escape+ 56
-x- 4
-x+ 4
-u- 14
-u+ 44
-x- 4
-x+ 23
-u- 15
-u+ 10
-x- 1
-u- x+ 17
-u+ 57
-u- 18
-u+ 13
-u- 14
-u+ 16
-u- 1
-u+ 17
-x- 1
-five- x+ 1
-five+ 15
-u- 1
-r+ u+ 68
-l- 134
-r- l+ 67
-x- 1
-one- x+ 1
-one+ 10
-c- 1
-c+ 1
-r+ 2
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 4
-l- u- 1
-u+ 20
-x- 1
-x+ 3
-r- three- l+ 1
-three+ 22
-c- 2
-r+ c+ 2
-r- d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-r+ 1
-escape- 1
-u- r- escape+ 1
-u+ 13
-x- 1
-x+ 1
-u- 1
-u+ 69
-// Frame 14848, step 980
-x- 1
-x+ 37
-u- 1
-l- r+ 11
-five- 1
-u+ five+ 5
-r- l+ 14
-three- 1
-three+ 1
-u- 13
-u+ 37
-u- 4
-l- r+ 9
-u+ 15
-u- 1
-u+ 17
-u- 1
-u+ 12
-u- 13
-u+ 15
-u- 1
-u+ 20
-u- x- 1
-x+ 3
-u+ 56
-x- 1
-x+ 9
-u- 3
-u+ 39
-u- 4
-u+ 28
-u- 16
-u+ 8
-l+ 9
-u- r- 13
-u+ 15
-u- 13
-u+ 15
-u- 1
-u+ 24
-u- 4
-u+ 14
-u- 10
-u+ 30
-u- 2
-u+ 13
-x- 10
-x+ 57
-x- 1
-u- x+ 7
-u+ 28
-u- 14
-u+ 45
-r+ 4
-l- 3
-l+ 6
-l- 5
-l+ 1
-l- 5
-l+ 1
-r- 5
-u- 21
-u+ 11
-one- 1
-one+ 10
-u- 5
-u+ 208
-// Frame 15857, step 1048
-escape- 1
-escape+ 22
-x- 3
-x+ 24
-x- 10
-x+ 28
-x- 10
-x+ 9
-u- 9
-u+ 30
-x- 1
-three- x+ 1
-three+ 1
-r+ 5
-l- 3
-r- l+ 25
-u- 5
-u+ 37
-x- 2
-x+ 139
-one- 1
-one+ 17
-u- 18
-u+ 16
-u- 1
-u+ 35
-u- 14
-u+ 52
-x- 4
-x+ 30
-x- 7
-x+ 28
-x- 3
-x+ 16
-five- 1
-five+ 33
-d- 3
-d+ 2
-r+ 4
-r- 222
-three- 1
-three+ 13
-u- 1
-u+ 15
-// Frame 16759, step 1093
-r+ 2
-r- 17
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 3
-l+ 1
-l- 6
-u- 1
-u+ 50
-c- 1
-l+ c+ 4
-one- three- 1
-c- one+ three+ 1
-r- d- c+ 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-u- r- 1
-u+ r+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-d+ 1
-d- 1
-r- d+ 2
-r+ 6
-three- 1
-three+ 1
-escape- 1
-r- three- escape+ 1
-three+ 15
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-x- r+ 3
-r- x+ 48
-u- 1
-u+ 14
-r+ 3
-l- 9
-four- 1
-four+ 46
-u- 1
-u+ 13
-l+ 1
-r- 46
-x- 1
-five- r+ x+ 1
-five+ 4
-r- 41
-escape- 1
-escape+ 64
-c- 1
-c+ 1
-r+ 3
-c- 1
-d- c+ 1
-d+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-r- d+ 14
-u- 1
-u+ 11
-r+ 1
-l- 11
-x- 1
-x+ 41
-r- l+ 45
-u- 4
-l- r+ 12
-u+ 77
-u- 24
-u+ 7
-u- 5
-u+ 40
-u- 8
-u+ 6
-l+ 1
-u- r- 14
-u+ 16
-u- 1
-u+ 57
-// Frame 17711, step 1238
-u- 8
-u+ 7
-c- 2
-c+ 2
-d- r+ 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 4
-l- u- 7
-u+ 61
-x- 6
-x+ 19
-c- 1
-l+ c+ 4
-three- four- 1
-c- three+ four+ 1
-r- c+ 1
-r+ 1
-r- 1
-r+ 1
-r- d- 1
-r+ d+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- d- 1
-r+ d+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-r- d+ 1
-r+ 1
-r- 1
-r+ 1
-r- 2
-r+ 9
-escape- 1
-r- escape+ 48
-u- 6
-l- r+ 5
-u+ 2
-l+ 5
-u- r- 11
-u+ 2
-r+ 5
-l- u- 11
-u+ 2
-l+ 5
-u- r- 11
-u+ 2
-r+ 5
-l- u- 11
-u+ 2
-l+ 5
-u- r- 29
-u+ 32
-u- 20
-u+ 20
-u- 1
-u+ 66
-x- 1
-x+ 1
-four- 1
-four+ 112
-u- 1
-r+ u+ 24
-r- 108
-u- 1
-r+ 2
-r- 5
-u+ 3
-r+ 4
-u- 8
-r- 12
-u+ 2
-r+ 11
-l- u- 1
-l+ 7
-l- 12
-u+ 6
-x- 11
-r- l+ x+ 31
-r+ 18
-four- 1
-four+ 134
-// Frame 18717, step 1341
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 1
-c- 1
-l- x- c+ 1
-x+ 2
-l+ 3
-l- 4
-l+ 1
-l- 7
-l+ 2
-l- 4
-l+ 2
-l- 3
-l+ 1
-l- u- 10
-u+ 24
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 3
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-l+ 28
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 64
-escape- 1
-enter- escape+ 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- r- 1
-three- escape+ 1
-three+ 28
-u- 25
-u+ 15
-u- 1
-u+ 17
-d- 6
-d+ 1
-x- 1
-five- x+ 1
-five+ 43
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 28
-u- 1
-u+ 18
-z- 1
-z+ 28
-u- 1
-u+ 43
-r+ 1
-r- 5
-u- 1
-u+ 16
-x- 1
-x+ 38
-u- 12
-u+ 13
-four- 1
-four+ 1
-u- 1
-u+ 11
-r+ 2
-l- 7
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 8
-u- 1
-u+ 51
-u- 1
-u+ 45
-c- 1
-c+ 3
-l+ 1
-u- r- 1
-u+ 15
-u- 1
-u+ 30
-r+ 1
-l- 1
-x- l+ 2
-r- x+ 44
-// Frame 19631, step 1478
-u- 5
-u+ 20
-r+ 3
-u- r- 20
-u+ 68
-u- 3
-u+ 127
-three- 1
-three+ 46
-l- r+ 9
-d- 1
-l+ d+ 45
-r- 139
-x- 1
-x+ 51
-x- 10
-x+ 12
-u- 12
-u+ 94
-c- 1
-c+ 71
-four- 1
-four+ 1
-u- 5
-l- r+ 7
-u+ 24
-c- 1
-c+ 2
-l+ 2
-l- u- 1
-u+ 29
-u- 11
-u+ 18
-c- 2
-c+ 1
-l+ 1
-r- d- 1
-d+ 1
-x- 3
-r+ x+ 1
-r- 22
-five- 1
-five+ 80
-// Frame 20585, step 1522
-u- 1
-u+ 62
-escape- 1
-escape+ 144
-x- 1
-x+ 184
-x- 1
-x+ 1
-u- 12
-one- u+ 1
-one+ 5
-r+ 6
-r- 1
-r+ 1
-r- 19
-u- 1
-u+ 17
-x- 3
-x+ 4
-five- 1
-five+ 62
-u- 1
-u+ 14
-r+ 5
-l- 42
-u- 1
-u+ 10
-l+ 13
-l- 11
-x- 1
-one- x+ 1
-one+ 19
-u- 17
-u+ 31
-u- 1
-u+ 19
-x- 1
-x+ 23
-u- 21
-u+ 10
-c- 1
-c+ 1
-l+ 3
-u- r- 1
-u+ 84
-u- 11
-u+ 42
-// Frame 21497, step 1570
-u- 3
-l- r+ 3
-four- 1
-four+ 1
-u+ 3
-l+ 4
-u- 3
-r- 9
-u+ 45
-u- 5
-l- r+ 8
-u+ 97
-escape- 1
-escape+ 2
-u- 17
-u+ 8
-l+ 11
-u- r- 15
-u+ 1
-r+ 4
-l- u- 11
-u+ 2
-l+ 5
-u- r- 11
-u+ 7
-u- 10
-u+ 32
-u- 1
-u+ 18
-l- r+ 3
-x- 1
-three- l+ x+ 1
-r- three+ 33
-u- 2
-u+ 2
-u- 1
-u+ 1
-u- 1
-u+ 1
-u- 2
-u+ 1
-u- 1
-u+ 20
-u- 15
-u+ 14
-x- 2
-x+ 13
-five- 1
-five+ 23
-u- 10
-u+ 11
-c- 2
-c+ 1
-r+ 2
-l- u- 1
-u+ 53
-escape- 1
-escape+ 4
-z- 2
-z+ 25
-u- 10
-r- l+ 10
-u+ 6
-x- 13
-x+ 95
-r+ 25
-c- 1
-c+ 1
-c- 1
-c+ 8
-c- 1
-c+ 17
-escape- 1
-escape+ 63
-escape- 1
-enter- escape+ 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- 1
-r- escape+ 23
-three- 1
-three+ 15
-// Frame 22400, step 1654
-u- 10
-u+ 49
-u- 1
-u+ 43
-x- 1
-five- x+ 1
-five+ 71
-c- 1
-c+ 5
-u- 14
-u+ 16
-u- 1
-u+ 59
-x- 1
-three- x+ 1
-three+ 46
-u- 1
-u+ 34
-u- 5
-u+ 32
-u- 1
-u+ 43
-u- 24
-u+ 14
-u- 1
-u+ 11
-x- 7
-x+ 32
-u- 2
-u+ 87
-u- 1
-u+ 26
-u- 2
-u+ 14
-c- 1
-c+ 46
-u- 14
-u+ 12
-r+ 4
-u- 2
-r- 2
-l- r+ 7
-u+ 2
-l+ 5
-u- r- 6
-u+ 27
-u- 6
-u+ 36
-x- 6
-x+ 67
-// Frame 23300, step 1705
-u- 3
-u+ 17
-l- u- r+ 2
-l+ 8
-l- 10
-u+ 7
-l+ 6
-l- u- 5
-u+ 19
-u- 1
-u+ 41
-u- 9
-u+ 35
-escape- 1
-escape+ 35
-c- 2
-c+ 1
-l+ 2
-l- u- 1
-u+ 45
-u- 18
-u+ 12
-u- 12
-u+ 24
-r- l+ 14
-u- 1
-u+ 34
-u- 13
-u+ 10
-u- 1
-u+ 20
-r+ 143
-u- r- 170
-u+ 1
-r+ 27
-l- 50
-c- 1
-l+ c+ 4
-l- u- 1
-u+ 22
-u- 5
-u+ 31
-four- 1
-four+ 23
-escape- 1
-escape+ 14
-// Frame 24203, step 1752
-c- 1
-c+ 3
-l+ 1
-u- r- 1
-u+ 39
-u- 1
-u+ 18
-r+ 4
-l- 6
-l+ 6
-l- 18
-u- 14
-u+ 66
-u- 1
-u+ 32
-u- 1
-u+ 24
-u- 1
-u+ 34
-r- l+ 1
-x- 1
-l- r+ x+ 23
-u- 6
-u+ 1
-u- 10
-u+ 18
-u- 15
-u+ 1
-l+ 4
-u- 2
-r- 7
-u+ 73
-u- 21
-u+ 27
-u- 1
-u+ 19
-l- r+ 2
-x- 1
-r- l+ x+ 41
-u- 2
-u+ 2
-u- 1
-u+ 1
-u- 1
-u+ 2
-u- 2
-u+ 21
-u- 12
-u+ 26
-c- 2
-c+ 3
-u- 1
-u+ 32
-l- r+ 52
-u- 1
-u+ 75
-u- 1
-u+ 18
-r- l+ 3
-x- 1
-one- r+ x+ 1
-l- one+ 41
-u- 2
-u+ 1
-u- 2
-u+ 1
-u- 2
-u+ 67
-// Frame 25124, step 1821
-u- x- 1
-u+ x+ 40
-x- 6
-x+ 11
-u- 1
-u+ 14
-l+ 8
-r- 14
-x- 1
-x+ 26
-x- 12
-x+ 37
-three- 1
-three+ 14
-l- r+ 10
-u- 16
-u+ 8
-l+ 8
-c- 2
-c+ 3
-u- r- 1
-u+ 16
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-x- 1
-x+ 9
-one- 1
-one+ 41
-u- 17
-u+ 94
-u- 5
-l- r+ 9
-u+ 16
-u- 1
-u+ 39
-c- 3
-l+ c+ 2
-u- r- 1
-u+ 70
-r+ 5
-l- 7
-l+ 9
-r- 37
-x- 4
-x+ 34
-x- 1
-x+ 22
-four- 1
-four+ 1
-four- 1
-four+ 110
-u- 8
-u+ 57
-x- 1
-x+ 1
-r+ 2
-r- 6
-r+ 14
-u- r- 3
-u+ 10
-// Frame 26028, step 1886
-r+ 13
-one- 1
-one+ 3
-l- u- 5
-r- l+ 10
-u+ 2
-r+ 3
-u- 6
-r- 1
-r+ 2
-r- 11
-u+ 13
-u- 1
-u+ 81
-x- 4
-x+ 41
-u- 1
-u+ 27
-x- 1
-x+ 50
-r+ 7
-l- 2
-l+ 12
-r- 20
-u- 10
-u+ 31
-u- 2
-u+ 18
-r+ 2
-l- 120
-c- 2
-c+ 3
-u- 1
-u+ 33
-u- 1
-u+ 12
-l+ 4
-r- 47
-u- 15
-u+ 23
-r+ 3
-l- 29
-four- 1
-four+ 1
-four- 1
-four+ 73
-d- 5
-d+ 172
-// Frame 26954, step 1935
-escape- 1
-escape+ 102
-u- 3
-u+ 44
-r- l+ 1
-x- 1
-l- r+ x+ 13
-u- 3
-u+ 1
-u- 2
-u+ 56
-c- 2
-c+ 2
-d- 1
-d+ 33
-z- 1
-z+ 28
-u- 1
-l+ u+ 44
-r- 60
-r+ 240
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 2
-c+ 1
-r- 2
-r+ 4
-c- 2
-r- c+ 8
-l- r+ 1
-l+ 6
-l- x- 1
-three- l+ x+ 1
-three+ 1
-three- 1
-three+ 1
-r- 36
-u- 2
-u+ 1
-u- 4
-u+ 1
-u- 2
-u+ 1
-u- 1
-u+ 20
-x- 1
-r+ 20
-l- four- x+ 1
-four+ 82
-r- l+ 2
-r+ 4
-l- 3
-l+ 10
-l- 5
-// Frame 27856, step 1996
-r- l+ 1
-z- 1
-z+ 2
-c- 1
-x- c+ 12
-l- r+ x+ 8
-r- 1
-l+ 2
-x- 1
-r+ 1
-x+ 7
-l- 4
-l+ 3
-r- 2
-r+ 16
-r- 8
-u- 8
-l- r+ 10
-u+ 7
-u- 15
-u+ 9
-u- 1
-u+ 7
-l+ 3
-l- 1
-l+ 4
-l- 2
-l+ 4
-c- 1
-c+ 4
-u- r- 2
-u+ 22
-r+ 1
-l- 6
-x- 1
-r- l+ x+ 47
-u- 2
-u+ 25
-r+ 1
-u- r- 15
-u+ 5
-l- r+ 1
-three- x- 1
-r- l+ three+ x+ 1
-three- 1
-three+ 11
-c- 1
-r+ c+ 4
-l- u- 8
-u+ 2
-u- 1
-u+ 29
-u- 1
-u+ 31
-r- l+ 1
-x- 1
-l- r+ x+ 1
-c- 1
-c+ 110
-r- l+ 2
-u- 1
-u+ 21
-x- 1
-x+ 16
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-l+ 13
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- 1
-c+ 7
-c- 1
-c+ 8
-c- 1
-c+ 53
-escape- 1
-enter- escape+ 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- 1
-r- escape+ 1
-three- 1
-three+ 85
-z- 1
-z+ 31
-u- 9
-u+ 47
-// Frame 28758, step 2134
-u- 2
-u+ 26
-u- 1
-u+ 23
-x- 1
-one- x+ 1
-one+ 46
-x- 1
-five- x+ 1
-five+ 6
-u- 1
-u+ 17
-r+ 3
-r- 7
-r+ 2
-r- 40
-u- 5
-u+ 22
-u- 11
-u+ 12
-u- 4
-u+ 23
-x- 4
-x+ 63
-four- 1
-four+ 48
-u- 20
-u+ 3
-r+ 10
-u- r- 1
-u+ 10
-u- 1
-u+ 14
-r+ 10
-r- 3
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 3
-l- r+ 3
-r- 1
-l+ 4
-l- r+ 2
-r- l+ 1
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 3
-r- l+ 2
-l- r+ 12
-l+ 3
-u- r- 4
-u+ 7
-r+ 9
-r- 5
-r+ 1
-r- 3
-r+ 1
-r- 4
-l- r+ 5
-x- 1
-r- l+ x+ 44
-u- 1
-u+ 23
-one- 1
-one+ 5
-u- 2
-u+ 75
-u- 8
-u+ 7
-u- x- 1
-x+ 7
-u+ 12
-four- 1
-four+ 7
-u- 6
-u+ 246
-// Frame 29747, step 2219
-u- 1
-u+ 1
-u- 1
-u+ 29
-u- 29
-u+ 35
-d- r+ 2
-d+ 7
-r- 6
-u- 14
-u+ 16
-u- 1
-u+ 27
-four- 1
-four+ 21
-u- 1
-u+ 10
-r+ 3
-r- 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 3
-l- r+ 1
-r- l+ 12
-u- 1
-u+ 45
-r+ 1
-escape- 1
-l- escape+ 97
-c- 2
-c+ 3
-u- 1
-u+ 2
-r- l+ 1
-r+ 1
-l- 1
-l+ 8
-r- 21
-l- r+ 7
-r- l+ 2
-r+ 1
-l- 1
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-r+ 2
-x- 1
-x+ 28
-r- 4
-u- 3
-u+ 1
-u- 4
-u+ 46
-l- r+ 2
-x- l+ 2
-r- x+ 19
-r+ 4
-l- 6
-u- 2
-u+ 1
-u- 2
-u+ 1
-u- 2
-u+ 1
-u- 2
-u+ 22
-r- l+ 9
-u- 1
-u+ 16
-x- 2
-r+ x+ 2
-r- 13
-r+ 4
-r- 10
-u- 2
-u+ 1
-u- 2
-u+ 1
-u- 1
-u+ 1
-u- 2
-u+ 20
-l- r+ 10
-x- l+ 27
-x+ 22
-r- 4
-u- 1
-u+ 2
-u- 2
-u+ 2
-five- 1
-five+ 33
-u- 2
-u+ 160
-// Frame 30786, step 2366
-x- 3
-x+ 62
-c- 1
-c+ 6
-u- 20
-u+ 13
-u- 1
-u+ 74
-u- 6
-l- r+ 8
-u+ 16
-u- 1
-u+ 79
-u- 1
-u+ 4
-escape- 1
-escape+ 35
-u- 1
-u+ 12
-l+ 2
-r- 4
-r+ 2
-r- 1
-r+ 1
-l- 1
-l+ 12
-r- 1
-l- r+ 3
-l+ 2
-r- 8
-u- 1
-u+ 67
-u- 1
-u+ 12
-r+ 8
-r- 97
-u- 1
-u+ 13
-three- 1
-three+ 74
-x- 1
-x+ 24
-four- 3
-four+ 52
-u- 15
-u+ 4
-r+ 1
-l- u- 20
-u+ 13
-u- 1
-u+ 10
-u- 7
-u+ 78
-u- 24
-// Frame 31695, step 2421
-u+ 3
-l+ 11
-u- r- 18
-u+ 78
-c- 2
-c+ 2
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 4
-u- 1
-u+ 27
-u- 15
-u+ 5
-u- r+ 4
-l- 14
-u+ 9
-x- 1
-x+ 2
-r- l+ 29
-r+ 29
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 1
-c- 1
-c+ 33
-c- 1
-c+ 12
-c- 1
-c+ 14
-c- 1
-c+ 8
-c- 1
-c+ 81
-c- 1
-c+ 121
-c- 1
-c+ 17
-escape- 1
-escape+ 67
-escape- 1
-enter- escape+ 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- 1
-r- escape+ 1
-three- 1
-three+ 42
-u- 1
-u+ 30
-r+ 3
-c- 2
-r- c+ 115
-r+ 1
-l- 5
-r- l+ 21
-// Frame 32615, step 2494
-u- 1
-u+ 30
-l- r+ 1
-x- 1
-r- l+ x+ 17
-four- 1
-four+ 4
-u- 1
-u+ 18
-r+ 1
-l- 61
-u- 22
-u+ 31
-u- 7
-u+ 10
-c- 2
-c+ 1
-l+ 2
-u- r- 1
-u+ 18
-l- r+ 1
-x- 1
-l+ x+ 8
-l- 4
-l+ 18
-u- r- 1
-u+ 2
-u- 1
-u+ 22
-r+ 2
-u- 3
-r- 2
-r+ 1
-r- 1
-r+ 5
-l- 8
-u+ 13
-u- 1
-three- 1
-three+ 4
-u+ 28
-u- 20
-u+ 13
-u- 1
-u+ 15
-c- 1
-c+ 24
-u- 4
-r- 2
-l+ 8
-u+ 64
-u- 1
-u+ 18
-x- 5
-x+ 13
-x- 96
-x+ 35
-five- 1
-five+ 9
-u- 3
-u+ 15
-u- 1
-u+ 18
-u- 7
-l- r+ 11
-u+ 21
-u- 8
-r- l+ 6
-u+ 16
-u- 3
-u+ 14
-d- 3
-d+ 28
-x- 1
-x+ 29
-c- 2
-c+ 2
-r+ 1
-l- u- 1
-u+ 81
-// Frame 33573, step 2575
-u- 23
-u+ 61
-x- 1
-x+ 36
-u- 9
-r- l+ 5
-u+ 13
-r+ 3
-u- 6
-r- 1
-r+ 2
-r- 6
-u+ 5
-u- 11
-u+ 54
-z- 1
-z+ 29
-x- 1
-x+ 7
-three- 1
-three+ 12
-c- 1
-c+ 4
-u- 1
-u+ 19
-z- 1
-z+ 60
-u- 1
-c- 1
-c+ 5
-u+ 6
-d- 1
-d+ 18
-x- 1
-x+ 17
-five- 3
-five+ 17
-u- 6
-u+ 44
-u- 24
-u+ 39
-u- 2
-u+ 1
-u- 4
-u+ 1
-u- 2
-u+ 35
-x- 1
-x+ 18
-u- 2
-u+ 13
-c- 1
-c+ 2
-r+ 2
-l- u- 1
-u+ 57
-u- 2
-u+ 19
-r- l+ 29
-u- 1
-u+ 36
-four- x- 1
-four+ x+ 21
-c- 1
-c+ 15
-c- 2
-c+ 2
-r+ 1
-l- u- 1
-u+ 35
-u- 4
-r- l+ 15
-u+ 12
-u- 4
-u+ 24
-// Frame 34496, step 2651
-l- r+ 1
-x- 1
-r- l+ x+ 3
-l- r+ 2
-one- l+ 1
-one+ 1
-l- 18
-u- 2
-u+ 17
-l+ 9
-u- 8
-l- 12
-u+ 13
-u- 1
-u+ 10
-x- 1
-x+ 1
-u- 14
-u+ 16
-u- 8
-u+ 7
-u- 8
-u+ 13
-c- 1
-r- l+ c+ 57
-r+ 12
-l- 3
-l+ 11
-l- 1
-r- l+ 44
-x- 1
-four- x+ 1
-four+ 90
-u- 1
-u+ 17
-u- 7
-u+ 15
-u- 2
-u+ 8
-u- 1
-u+ 22
-x- 1
-x+ 104
-u- 9
-u+ 34
-l- r+ 1
-x- 1
-r- one- l+ x+ 1
-one+ 21
-u- 2
-u+ 1
-u- 1
-u+ 2
-u- 1
-u+ 1
-u- 2
-u+ 29
-x- 2
-x+ 55
-x- 12
-x+ 48
-u- 2
-u+ 1
-u- 1
-u+ 2
-u- 1
-u+ 1
-u- 1
-u+ 2
-u- 1
-u+ 52
-x- 3
-x+ 40
-u- 1
-u+ 58
-// Frame 35451, step 2727
-u- 7
-u+ 18
-u- 1
-u+ 13
-r+ 3
-r- 15
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 11
-u- 1
-u+ 16
-x- 1
-x+ 2
-u- 1
-u+ 5
-four- 1
-four+ 37
-u- 38
-u+ 16
-u- 2
-c- 2
-c+ 16
-u+ 48
-c- 2
-c+ 1
-r+ 2
-l- u- 1
-u+ 21
-u- 2
-u+ 30
-r- l+ 1
-x- 1
-l- r+ x+ 43
-u- 2
-u+ 1
-u- 1
-u+ 2
-u- 1
-u+ 1
-u- 2
-u+ 1
-u- 2
-u+ 71
-u- 1
-u+ 13
-l+ 1
-r- 13
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 15
-u- 7
-u+ 31
-u- 8
-u+ 78
-u- 9
-u+ 33
-c- 3
-c+ 2
-c- r+ 1
-d- c+ 1
-d+ 1
-d- 1
-d+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-d+ 17
-c- 2
-c+ 2
-r+ 1
-c- 1
-r- d- c+ 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-d+ 1
-d- 1
-r- d+ 29
-u- 14
-u+ 19
-escape- 1
-escape+ 60
-u- 1
-u+ 22
-c- 1
-c+ 4
-escape- 1
-u- escape+ 1
-u+ 41
-// Frame 36391, step 2840
-l- r+ 13
-u- 5
-l+ 1
-r- 6
-u+ 20
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 4
-escape- r+ 1
-u- r- escape+ 1
-u+ 22
-u- 5
-l- r+ 10
-u+ 18
-r- l+ 11
-u- 1
-u+ 11
-r+ 2
-l- 1
-l+ 1
-l- 4
-l+ 2
-c- 1
-c+ 4
-four- eight- 1
-c- four+ eight+ 1
-r- d- c+ 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-u- r- 1
-u+ r+ 1
-u- r- 1
-u+ r+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-u- r- 1
-u+ r+ 1
-r- 1
-r+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-d+ 1
-d- 1
-r- d+ 1
-r+ 1
-r- 1
-r+ 9
-r- 1
-escape- r+ 1
-r- escape+ 31
-u- 12
-u+ 8
-escape- 1
-escape+ 32
-u- 4
-u+ 75
-three- 12
-three+ 15
-three- 1
-three+ 54
-r+ 188
-escape- 1
-escape+ 48
-c- 1
-u- x- c+ 1
-x+ 14
-r- 5
-u+ 2
-r+ 11
-l- u- 2
-u+ 25
-u- 27
-l+ u+ 11
-u- r- 1
-u+ 26
-u- 27
-u+ 1
-r+ 10
-l- u- 1
-u+ 30
-u- 21
-// Frame 37305, step 2947
-u+ 3
-l+ 11
-u- r- 6
-u+ 21
-u- 26
-u+ 1
-r+ 11
-l- u- 4
-u+ 3
-l+ 7
-r- 14
-l- r+ 12
-u- 6
-u+ 19
-r- l+ 1
-x- 1
-l- u- r+ x+ 23
-u+ 10
-l+ 5
-r- 1
-r+ 9
-u- r- 1
-u+ 16
-r+ 1
-l- 3
-l+ 1
-l- 22
-four- 1
-u- c- four+ 83
-u+ c+ 9
-l+ 59
-l- 1
-u- 57
-x- 17
-l+ 1
-u+ 7
-r- 1
-x+ 3
-three- x- 1
-three+ x+ 1
-three- 1
-c- three+ 1
-c+ 4
-l- u- r+ 20
-u+ 2
-l+ 11
-u- r- 5
-u+ 22
-u- 32
-r+ u+ 6
-l- u- 1
-u+ 26
-u- 29
-l+ u+ 9
-u- r- 7
-u+ 20
-u- 26
-r+ u+ 12
-l- u- 18
-u+ 3
-c- 3
-c+ 1
-r- l+ 1
-x- 2
-l- r+ x+ 3
-u- seven- 1
-seven+ 25
-u+ 2
-l+ 10
-u- r- 6
-u+ 21
-l- u- r+ 5
-u+ 16
-r- l+ 5
-c- 1
-x- c+ 1
-x+ 2
-u- 1
-u+ 22
-u- 20
-u+ 3
-r+ 10
-l- u- 2
-u+ 4
-// Frame 38206, step 3032
-l+ 11
-r- 3
-r+ 1
-r- 6
-l- r+ 1
-x- 1
-l+ x+ 3
-l- 3
-u- 6
-r- l+ 2
-u+ 4
-l- r+ 19
-c- 2
-c+ 2
-l+ 1
-u- r- 20
-u+ 2
-r+ 11
-l- u- 1
-u+ 26
-u- 30
-u+ 2
-l+ 6
-u- r- 4
-u+ 24
-u- 30
-u+ 3
-r+ 5
-l- u- 23
-u+ 9
-u- 6
-c- 2
-c+ 12
-u+ 3
-l+ 10
-u- r- 1
-u+ 29
-l- r+ 1
-x- 1
-r- l+ x+ 4
-u- 20
-u+ 3
-r+ 10
-l- u- 1
-u+ 4
-l+ 4
-l- 16
-r- l+ 2
-u- 5
-u+ 4
-l- c- r+ 1
-c+ 2
-l+ 1
-r- 1
-r+ 1
-l- 1
-r- l+ 9
-l- r+ 1
-x- 1
-x+ 15
-c- 1
-c+ 3
-l+ 1
-u- r- 20
-u+ 3
-r+ 10
-l- u- 24
-u+ 3
-u- x- 1
-x+ 29
-u+ 1
-l+ 7
-l- 9
-r- l+ 35
-u- 24
-u+ 12
-r+ 2
-l- u- 1
-u+ 7
-l+ 5
-r- 10
-l- r+ 5
-l+ 1
-x- 3
-x+ 25
-l- u- 9
-r- l+ 11
-u+ 13
-u- 1
-u+ 30
-u- 1
-u+ 17
-r+ 4
-r- 3
-r+ 1
-l- 1
-x- l+ 2
-x+ 4
-five- 2
-five+ 19
-four- five- 4
-four+ 1
-five+ 6
-five- 4
-r- five+ 211
-// Frame 39224, step 3138
-d- 1
-d+ 3
-x- 1
-x+ 15
-z- 2
-z+ 25
-z- 1
-z+ 27
-z- 2
-z+ 26
-z- 1
-z+ 20
-c- 1
-r+ c+ 4
-c- 1
-r- c+ 1
-r+ 1
-r- 1
-r+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-r- d+ 1
-r+ 1
-r- d- 1
-r+ d+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-u- r- 1
-u+ r+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- d- 1
-x- r+ d+ 121
-x+ 267
-c- 1
-c+ 8
-c- 1
-c+ 8
-c- 1
-c+ 60
-escape- 1
-enter- escape+ 1
-escape- enter+ 1
-enter- escape+ 1
-enter+ 19
-escape- c- 1
-r- escape+ c+ 66
-z- 2
-z+ 18
-four- 3
-four+ 18
-u- 4
-u+ 178
-// Frame 40160, step 3201
-u- 1
-u+ 67
-u- 26
-u+ 26
-u- 8
-u+ 12
-d- 4
-d+ 19
-u- 1
-u+ 19
-l- r+ 1
-x- 1
-r- l+ x+ 31
-u- 2
-u+ 1
-u- 2
-u+ 1
-u- 2
-u+ 2
-eight- 1
-eight+ 1
-eight- 1
-eight+ 18
-u- 9
-u+ 23
-x- 9
-u- x+ 2
-u+ 27
-five- 1
-five+ 12
-u- 1
-u+ 34
-z- 1
-z+ 102
-x- 6
-x+ 20
-eight- 1
-eight+ 1
-eight- 1
-eight+ 16
-u- 28
-u+ 4
-u- 1
-u+ 258
-escape- 1
-escape+ 4
-u- 3
-l- r+ 5
-u+ 4
-r- l+ 2
-r+ 1
-x- 1
-r- x+ 2
-escape- r+ 1
-escape+ 8
-l- 84
-// Frame 41080, step 3258
-u- 1
-u+ 16
-l+ 6
-r- 42
-five- 1
-five+ 119
-u- 10
-u+ 161
-escape- 1
-escape+ 11
-u- 1
-u+ 17
-r+ 3
-l- 9
-l+ 10
-r- 51
-x- 1
-eight- x+ 1
-eight+ 1
-eight- 1
-eight+ 16
-u- 20
-u+ 17
-x- 54
-x+ 50
-u- 2
-u+ 36
-c- 1
-c+ 2
-r+ 2
-c- 1
-r- d- c+ 1
-r+ d+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- 1
-r+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-r- d+ 1
-r+ 1
-r- 1
-u- r+ 1
-u+ 1
-u- r- 1
-u+ r+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-seven- d+ 1
-seven+ 1
-seven- 1
-seven+ 3
-seven- 1
-seven+ 63
-u- 1
-u+ 17
-x- 10
-x+ 50
-c- 1
-x- c+ 1
-x+ 62
-u- 1
-// Frame 41980, step 3327
-u+ 136
-u- 10
-l- r+ 10
-u+ 3
-l+ 10
-u- r- 7
-u+ 10
-r+ 2
-u- 7
-r- 7
-u+ 16
-u- 1
-u+ 25
-u- 9
-u+ 13
-x- 10
-x+ 55
-u- 20
-u+ 7
-u- r+ 3
-l- 9
-u+ 8
-x- 4
-x+ 15
-u- 2
-c- 2
-c+ 14
-u+ 19
-u- 1
-u+ 20
-x- 1
-x+ 3
-u- 1
-u+ 13
-u- 15
-u+ 1
-l+ 4
-u- r- eight- 1
-eight+ 1
-eight- 1
-eight+ 8
-u+ 7
-l- u- r+ 18
-u+ 19
-u- 1
-u+ 48
-u- 12
-u+ 10
-x- 8
-x+ 30
-u- 22
-u+ 4
-l+ 10
-u- r- 2
-r+ 4
-r- 9
-u+ 5
-u- 3
-u+ 6
-x- 3
-u- 1
-r+ x+ 8
-l- 11
-u+ 18
-u- 5
-r- l+ 9
-u+ 16
-u- 5
-l- r+ 7
-u+ 21
-c- 2
-c+ 2
-l+ 1
-r- 169
-// Frame 42980, step 3402
-u- 7
-u+ 192
-u- 1
-r+ u+ 105
-l- 137
-u- 5
-r- l+ 3
-u+ 7
-d- 1
-c- 1
-r+ c+ 1
-c- 1
-c+ 1
-c- 1
-c+ 1
-c- z- 1
-d+ c+ z+ 1
-c- 1
-r- d- c+ 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-d+ 1
-d- 1
-d+ 11
-r- 1
-c- 1
-c+ 3
-d- 1
-r+ d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-r- c- 1
-r+ c+ 3
-d- 1
-d+ 3
-c- 1
-r- c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 4
-escape- 1
-d- escape+ 1
-d+ 5
-u- 4
-l- r+ 4
-u+ 7
-c- 1
-c+ 4
-u- 1
-u+ 15
-c- 2
-c+ 2
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 5
-c- 2
-c+ 2
-d- l+ 1
-d+ 3
-c- 1
-c+ 3
-r- d- 1
-d+ 3
-c- 1
-c+ 3
-d- 1
-d+ 3
-c- 1
-c+ 4
-escape- 1
-u- escape+ 1
-u+ 15
-c- 1
-c+ 3
-d- 1
-d+ 15
-u- 1
-u+ 18
-four- 1
-four+ 38
-l- r+ 31
-u- 1
-u+ 15
-l+ 4
-r- 17
-u- 3
-u+ 37
-escape- 1
-escape+ 2
-c- 1
-c+ 3
-r+ 1
-c- 1
-d- c+ 1
-d+ 1
-d- 1
-// Frame 43880, step 3543
-d+ 1
-r- d- 1
-r+ d+ 1
-r- d- 1
-d+ 43
-c- 2
-r+ c+ 3
-c- 1
-r- d- c+ 1
-r+ d+ 1
-r- d- 1
-r+ d+ 1
-d- 1
-d+ 1
-d- 1
-r- d+ 14
-escape- 1
-escape+ 17
-u- 11
-u+ 14
-u- 11
-u+ 3
-r+ 52
-escape- 1
-escape+ 1
-escape- 1
-escape+ 193
-l- 145
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 4
-r- l+ 1
-l- r+ 1
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-x- r+ 7
-x+ 17
-u- r- 30
-x- 4
-u+ 19
-x+ 1
-c- 6
-c+ 32
-// Frame 44802, step 3722
-l- r+ 5
-r- 1
-l+ 6
-l- r+ 5
-r- 1
-l+ 4
-x- 11
-l- r+ 1
-x+ 31
-r- 1
-l+ 19
-u- 11
-u+ 20
-x- 6
-l- 1
-r+ 1
-x+ 12
-u- 15
-u+ 32
-r- 1
-l+ 2
-x- 7
-five- x+ 1
-five+ 2
-five- 1
-five+ 11
-u- 21
-u+ 26
-l- r+ 4
-u- 11
-r- l+ 15
-l- r+ 3
-u+ 5
-r- l+ 2
-l- 1
-r+ 1
-r- l+ 8
-l- r+ 1
-r- l+ 1
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-x- 1
-three- x+ 1
-three+ 22
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-x- 1
-r+ x+ 4
-l- 2
-u- 4
-l+ 2
-r- 4
-l- r+ 5
-r- 1
-l+ 16
-u+ 36
-l- 1
-four- r+ 3
-four+ 63
-u- 23
-r- l+ 3
-l- r+ 3
-r- l+ 2
-l- r+ 3
-r- l+ 3
-l- u+ r+ 3
-r- l+ 1
-l- r+ 9
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-x- r+ 7
-x+ 21
-u- r- 23
-x- 20
-u+ r+ 15
-x+ 4
-r- 2
-c- 3
-c+ 2
-c- 3
-c+ 23
-x- 12
-u- 1
-u+ 19
-l- r+ x+ 36
-r- 1
-l+ 4
-x- 31
-// Frame 45725, step 3892
-x+ 14
-u- 9
-u+ 8
-c- 3
-c+ 26
-x- 3
-r+ 1
-r- 11
-l- x+ r+ 15
-u- 2
-u+ 10
-r- l+ 4
-r+ 1
-r- 3
-r+ 4
-l- 28
-r- l+ 1
-x- 1
-five- x+ 1
-five+ 3
-five- 1
-five+ 5
-u- 24
-u+ 10
-r+ 3
-l- u- 3
-r- l+ 7
-u+ 39
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- x- l+ 1
-three- x+ 1
-three+ 1
-l- r+ 1
-r- l+ 25
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-r+ 1
-l- 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-x- 1
-l- r+ x+ 6
-u- 1
-r- l+ 3
-u+ 1
-l- r+ 18
-u- r- l+ 23
-u+ 6
-four- 4
-four+ 44
-l- 1
-r+ 37
-u- 30
-r- l+ u+ 1
-l- 1
-r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 9
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-r+ 1
-l- 1
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 7
-x- 3
-x+ 19
-u- 28
-u+ 3
-c- 3
-c+ 1
-x- 21
-l- 2
-r+ 1
-x+ 44
-r- 1
-l+ 13
-x- 16
-x+ 8
-u- 16
-u+ 19
-l- r+ 1
-u- l+ 1
-r- 1
-u+ r+ 15
-x- 4
-r- x+ 3
-c- 13
-c+ 2
-l- r+ 14
-// Frame 46633, step 4067
-u- 3
-r- 2
-l+ 4
-u+ 21
-l- r+ 6
-r- l+ 1
-x- 1
-r+ 3
-x+ 1
-r- 3
-five- 1
-five+ 1
-five- 1
-five+ 14
-l- r+ 18
-r- l+ 3
-u- 17
-u+ 15
-l- r+ 3
-l+ 1
-r- 3
-l- r+ 1
-r- l+ 1
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 3
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-x- 1
-three- x+ 1
-three+ 30
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-x- 1
-x+ 8
-u- 2
-u+ 42
-l- r+ 4
-four- 3
-four+ 84
-u- 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 3
-l- r+ 2
-r- l+ 2
-r+ 1
-l- 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 3
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-u+ l+ 5
-l- 1
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-x- 2
-r+ x+ 25
-u- r- 32
-x- u+ 22
-c- x+ 5
-c+ 20
-u- 24
-x- u+ 29
-x+ 2
-l- 1
-r+ 11
-r- 1
-l+ 2
-x- 6
-l- r+ 2
-x+ 10
-r- 1
-l+ 2
-x- 4
-x+ 1
-u- 13
-u+ 11
-x- 13
-l- r+ x+ 18
-u- 9
-u+ 10
-l+ 2
-l- 23
-r- l+ 6
-x- 7
-l- r+ 1
-x+ 2
-five- l+ 1
-five+ 1
-five- 1
-five+ 3
-u- r- 17
-c- u+ 4
-c+ 32
-// Frame 47564, step 4267
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 3
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-x- 1
-three- x+ 1
-three+ 24
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 1
-x- 1
-r+ x+ 10
-r- 5
-u- 2
-r+ 1
-l- 1
-u+ 3
-r- 1
-l+ 19
-four- 5
-four+ 22
-l- 1
-r+ 77
-u- 1
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- u+ r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 3
-r- l+ 1
-l- r+ 5
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 1
-r- 1
-l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-l- r+ 2
-r- l+ 2
-x- r+ 1
-x+ 11
-r- 6
-u- 45
-x- 2
-u+ 3
-x+ 1
-x- 12
-x+ 11
-u- 4
-u+ 29
-u- 5
-u+ 18
-x- 2
-r+ x+ 7
-r- 8
-u- 24
-x- 1
-u+ 2
-r+ 28
-l- x+ 7
-r- 1
-l+ 2
-x- 1
-l- r+ x+ 15
-u- r- l+ 17
-u+ 3
-c- 3
-c+ 20
-x- 14
-three- x+ 1
-three+ 15
-l- 1
-r+ 5
-r- l+ 2
-l- r+ 3
-r- l+ 3
-l- r+ 2
-r- l+ 2
-l- r+ 16
-r- 1
-l+ 4
-x- 1
-r+ 5
-five- x+ 1
-five+ 1
-five- 1
-l- five+ 7
-l+ 2
-r- 4
-u- 23
-r+ u+ 16
-l- 26
-l+ 5
-r- 52
-// Frame 48509, step 4477
-l- r+ 5
-l+ 12
-x- 1
-x+ 952
-// Frame 49479, step 4482
-c- 1
-c+ 66
-enter- 1
-enter+ 17
-escape-
+   4
+   1,escape
+   6
+   1,enter
+   1
+   1,enter
+   1
+   1,enter
+   1
+   1,enter
+   7
+   1,enter
+  14
+   1,enter
+   1
+   1,enter
+  16
+   1,escape
+   2
+   1,escape
+   2
+   1,escape
+   2
+   1,escape
+ 126,R
+   8,R,U
+  27,R
+  11,R,U
+  17,R
+   7,R,U
+  19,R
+   1,R,X
+   1,R
+   9,R,U
+  29,R
+  18,R,U
+  29,R
+  17,R,U
+  14,R
+  15,R,U
+   4,R
+   8,R,U
+  25,R
+   3,R,U
+ 125,R
+   2,R,U
+ 155,R
+   2,R,C
+   3,R
+   1,R,U
+  57,R
+   1,R,Z
+  58,R
+   6,R,D
+// Frame 975, step 54
+ 108,R
+   1,escape
+   2,R
+   2,R,C
+   2,R
+   1
+   1,U,R
+ 100,R
+   5,R,U
+  24,R
+   9,R,U
+  18,R
+  18,R,U
+  13,R
+   1,R,U
+  79,R
+  18,R,U
+ 136,R
+  13,R,U
+  17,R
+   6,R,X
+  14,R
+   1,R,C
+   4,R
+  14,R,U
+  31,R
+  27,R,U
+  67,R
+   2,R,X
+   2,R
+  24,R,U
+  22,R
+   6,R,U
+  50,R
+   1,R,D
+  46
+ 105,R
+   1,R,Z
+// Frame 1889, step 93
+  31,R
+  11,R,U
+   4,R
+   4,R,U
+  28,R
+   1,escape
+   1,U,R
+   1,R
+   1
+ 109,R
+   1,R,Z
+  72,R
+  10,R,U
+  17,R
+  25,R,U
+   6,R
+  10,R,U
+  18,R
+  20,R,U
+  13,R
+  11,R,U
+ 123,R
+  16,R,U
+  43,R
+   3,R,U
+   1,R
+   5,R,U
+  96,R
+  43
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape
+  91,R
+   1,R,C
+   1,R
+   3
+   1,C
+   1,D
+   1
+   1,D
+   1
+   1,R,D
+   1
+   1,R,D
+  60,R
+   1,R,C
+   2,R
+   2
+   1,C
+   1,D
+   1
+   1,R,D
+   1
+   1,R,D
+   1
+   1,D
+   3
+   2,R
+// Frame 2789, step 154
+   2,R,U
+  96,R
+  10,R,five
+  27,R
+  18,R,U
+  41,R
+   2,R,C
+   2,R
+   1
+   1,U,R
+ 104,R
+   8,R,D
+  58,R
+   1,R,X
+  19,R
+   3,R,U
+  22,R
+  29,R,U
+  59,R
+   3,R,U
+  97,R
+   9,R,U
+  28,R
+  27,R,U
+   2,R
+   1,R,D
+   6,R
+   1,R,X
+  18,R
+   1,R,U
+  30
+  46,L
+   9,L,U
+  16,L
+   4,L,U
+  37,L
+   7,L,U
+  10,L
+   1,L,U
+  10,R
+   1,L
+   1
+   1,L
+   1
+   1,R
+   1
+   1,L
+   2,R
+   2,L
+   3,R
+   2,L
+   3,R
+   1,L
+  10,R
+   1
+   3,U,R
+// Frame 3760, step 211
+  73,R
+   3,R,U
+  13,R
+   2
+  49,L
+   1,L,X
+   5,L
+  10,L,U
+  10,L
+  16,L,U
+   4,L
+   7,L,U
+  28,L
+   8,L,U
+   8,L
+   4
+   8,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   5,R
+   1,R,U
+  31,R
+  11,R,U
+   9,R
+   6,R,U
+  11,R
+   2,R,C
+   3
+   2,U,R
+  14,R
+   2,R,U
+  18,R
+   7,R,X
+  14,R
+  10,R,U
+   2,R
+  10,L,U
+   2,L
+  10,U,R
+   2,R
+  16,L,U
+   3,L
+  10,L,U
+  30,L
+   2,L,C
+   3,L
+   1,L,U
+  20,L
+   2,L,C
+   3,L
+   1,L,U
+   1,L
+   1,L,one
+  94,L
+   6,L,U
+ 146,L
+  83,R
+   1,R,X
+  34,R
+   8,R,X
+  29,R
+   1,R,X
+  16,R
+  10
+// Frame 4668, step 289
+   9,R
+   1,R,X
+   3,R
+  20,R,U
+   9,R
+   1,R,X
+  26,R
+   1,R,U
+  10,R
+   3
+   5,R
+   1,R,C
+   4,R
+   4
+   1,five
+  19,R
+ 101,L
+   1,L,X
+   1,L,one
+  27,L
+   6,L,U
+  10,L
+   1,L,X
+  17,L
+   9,L,U
+  18,L
+   3,L,X
+  14,L
+  15,L,U
+  12,L
+  13,L,U,X
+   4,L,U
+  20,L
+   1
+   9,R
+  12
+   6,L
+   1
+   3,L
+  21,L,U
+  24,L
+   1,L,C
+   4,L
+   1,L,U
+  27,L
+   1,L,five
+  16,L
+   1,L,escape
+  41,L
+  13,L,U
+  91,L
+   6
+  74,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   3,L
+   2,R
+  19,L
+   1,L,U
+  43,L
+   1,L,X
+  20,L
+   1,L,C
+   4
+   1,L,U
+   6,L
+   2,L,one
+  27,L
+   4,L,U
+   1,L,U,R
+  10,U,R
+// Frame 5570, step 365
+  12,R
+   3,R,X
+  65,R
+  21,R,U
+  20,R
+   1,R,X
+   4,R,U
+  48,R
+  14,R,U
+  74,R
+   1,R,escape
+   8,R
+   2,R,X
+   1,R,C
+   1,R
+   3
+   1,C
+   1,D
+   1,R
+   1,D
+   1,R
+   1
+   1,R,D
+   1
+   1,R,D
+   1
+  91,R
+  15,R,U
+   4,R
+   1,R,X
+   5,R
+   1,R,five
+   3,R
+   1,R,U
+  65,R
+   2,R,U
+  80,R
+   1,R,U
+  16,R
+   1
+  26,L
+   1,L,X
+  18,L
+   1,L,U
+  14,L
+   3
+  42,R
+   1,R,U
+   9,R
+   7,R,D
+ 152,R
+  12,R,U
+  51,R
+// Frame 6492, step 419
+  23,R,U
+  11,R
+   1,R,X
+  62,R
+  14
+   1,escape
+  28
+   1,escape
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape
+  58,R
+   1,R,five
+  35,R
+   1,R,D
+  50
+   3,L
+  53
+   1,escape,D
+   2,D
+  12
+  26,L
+   8,R
+   1,R,D
+ 121,R
+   1,R,U
+  30,R
+  11,R,U
+   4,R
+  13,R,U
+  15,R
+   1,R,U
+  48,R
+   1,R,U
+  11,R
+   3
+   7,R
+   1,R,D
+  12,R
+   1,R,U
+   9,R
+   7,R,U
+   6,R
+   3
+  23,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   4,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R
+   1,L
+   2,R
+   3,L
+   3
+   1,U,R
+  52,R
+   9,R,U
+  40,R
+   8,R,U
+  22,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+// Frame 7393, step 495
+   3,R
+   2,L
+  16,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1
+   1,R
+  35,R,U
+ 132,R
+  38,R,U
+  61,R
+  22,R,U
+  99,R
+  19,R,U
+  44,R
+  18,R,U
+   3,R
+  13,R,U
+  15,R
+  14,R,U
+  11,R
+   4,R,U
+  10,U,L
+   2,L
+   4,L,U
+   9,U,R
+  15,R
+   1,R,U
+  24,R
+  13,R,U
+  15,R
+   1,R,U
+  12,R
+  13,R,U
+  15,R
+   1,R,U
+  50,R
+   1,R,X
+  61,R
+   1,escape
+  25,U,R
+// Frame 8294, step 539
+  72,R
+   1,R,U
+  30
+  68,L
+   5,L,U
+  32,L
+   1,L,U
+  15,L
+   3
+  26,R
+   3,R,C
+   1,R
+   1,D
+   5,L
+   7,L,U
+ 193,L
+   4,L,U
+   1,U
+  14,U,R
+  38,R
+   1,R,U
+   9,R
+   1,U
+  14,U,L
+   1,L
+  85,R
+  13,R,U
+  15,R
+   1,R,U
+  45,R
+   1,R,U
+  16,R
+   1
+   2,R
+   1,L
+   4
+  18,L,U
+   3,L
+  15,L,U
+  18,L
+   1,L,U
+  63,L
+   1,L,escape
+  29,L
+   1,L,U
+  29
+// Frame 9263, step 586
+ 133,R
+  12,R,U
+ 113,R
+  19,R,U
+  17,R
+   7,R,U
+  13,R
+  13,R,U
+  64,R
+   4,R,U
+ 166,R
+   2,R,X
+  55,R
+ 116
+   1,C
+   1
+   1,C
+   1
+   1,C
+  10
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   1
+   1,C
+   8
+   1,C
+   8
+   1,C
+ 152
+   1,escape
+// Frame 10191, step 628
+  84
+   1,escape
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape
+  18,R
+   1,R,five
+  71,R
+   1,R,D
+ 141,R
+   1,R,X
+  42,R
+  11,R,U
+ 138,R
+   2,R,C
+   2,R
+   1
+   1,U,R
+  10,R
+   2,R,C
+   3,R
+   1,R,U
+  80,R
+   4,R,U
+  10,R
+   1,R,X
+  57,R
+  33,R,U
+  25,R
+  25,R,U
+  14,R
+   6,R,U
+   9,R
+   4,R,X
+  19,R
+   1,R,U
+  51,R
+   1,R,one
+   1,R
+   1,R,U
+  13,R
+   6,L
+   3
+   4,R
+   2,L
+   2,R
+   2,L
+   1,R
+   6,L
+   7,L,C
+  24,L
+   3,L,X
+// Frame 11103, step 683
+  27,L
+  23,R
+   9,R,X
+  48,R
+   1,R,five
+  64,R
+   4,U
+  10,U,L
+  15,L
+   1,L,U
+  12,L
+   1,L,escape
+   1,L,U
+  13,L
+   4,L,U
+   9,U,R
+  15,R
+  14,R,U
+   3,R
+   2,R,X
+   1,R
+   5,R,one
+  20,R
+   2,R,X
+  10,R
+   2,R,X
+  15,R
+   8,R,U
+  14,R
+   1,R,five
+  49,R
+  22,R,U
+  21,R
+   2,R,U
+  15,R
+   3
+  34,L
+   1,L,U
+  15,L
+   7,L,U
+  25,L
+   1,L,X
+  15,L
+  21,L,U
+  74,L
+   3,L,U
+  83,L
+  12,L,U
+  22,L
+   1,L,U
+  45,L
+   1,L,D
+// Frame 12083, step 736
+ 181,L
+   1,L,X
+  71,L
+   6,L,U
+  32,L
+   1,U
+  37,L
+  19,L,U
+  12,L
+   1,L,X
+   7,L
+   3,L,one
+  47,L
+   3,L,X
+   1,L
+   1,L,five
+   6,L
+   1,L,C
+   4
+   1,U,R
+  77,R
+   5,R,U
+  69,R
+  23,R,U
+  10,R
+   1,R,X
+   5,R
+   1,R,C
+  47,R
+  11,R,U
+  58,R
+   6,R,U
+  74,R
+  10,R,U
+  24,R
+   6,R,U
+ 161,R
+   4,R,X
+// Frame 13005, step 775
+  76,R
+   1,R,U
+  14,R
+   1
+   5,L
+   1,L,one
+   2,L
+   1,R
+   1,L
+   1,R
+   1,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   4,L
+   1,L,U
+  55,L
+   1,L,D
+   1,L,D,C
+   1,L,D
+   1,L,D,C
+   1,L,D
+   1,L,D,C
+   1,L,D
+   1,L,D,C,Z
+   1
+   1,C
+   1,D
+   1
+   1,D
+   1
+   1,R,D
+   1
+   1,R,D
+  13,L
+   1,L,C
+   4,L
+   1,L,U
+  13,L
+   1,L,C
+   3,L
+   1,L,D
+   3,L
+   1,L,C
+   3,L
+   1,L,D
+   3,L
+   1,L,C
+   4,L
+   1,L,U
+  25,L
+   7,L,U
+  20,L
+   6,L,U
+  26,L
+   3,L,X
+  31,L
+   1,L,U
+  23,L
+   2,L,U
+  16,L
+   7,L,U
+   6,U,R
+  15,R
+   1,R,U
+  26,R
+   1,R,C
+   1,R
+   3
+   1,L,U
+  16,L
+   1,L,U
+  14,L
+   3
+  10,R
+   1,R,U
+  13,R
+   7,R,X
+  73,R
+   3,R,U
+  27,R
+   2,R,U
+  24,R
+   2,R,C
+   3
+   1,U,R
+ 144,R
+  22,R,U
+  76,R
+  28
+   1,C
+   8
+   1,C
+   8
+   1,C
+   1
+   1,C
+// Frame 13910, step 883
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+  17
+   1,escape
+  22
+   1,escape
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape
+  56,R
+   4,R,X
+   4,R
+  14,R,U
+  44,R
+   4,R,X
+  23,R
+  15,R,U
+  10,R
+   1,R,X
+  17,R,U
+  57,R
+  18,R,U
+  13,R
+  14,R,U
+  16,R
+   1,R,U
+  17,R
+   1,R,X
+   1,R,five
+  15,R
+   1,R,U
+  68
+ 134,L
+  67,R
+   1,R,X
+   1,R,one
+  10,R
+   1,R,C
+   1,R
+   2
+   1,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,C
+   4
+   1,L,U
+  20,L
+   1,L,X
+   3,L
+   1,R,three
+  22,R
+   2,R,C
+   2
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1
+   1,escape
+   1,U,R
+  13,R
+   1,R,X
+   1,R
+   1,R,U
+// Frame 14848, step 979
+  69,R
+   1,R,X
+  37,R
+   1,R,U
+  11,U,L
+   1,U,L,five
+   5,L
+  14,R
+   1,R,three
+   1,R
+  13,R,U
+  37,R
+   4,R,U
+   9,U,L
+  15,L
+   1,L,U
+  17,L
+   1,L,U
+  12,L
+  13,L,U
+  15,L
+   1,L,U
+  20,L
+   1,L,U,X
+   3,L,U
+  56,L
+   1,L,X
+   9,L
+   3,L,U
+  39,L
+   4,L,U
+  28,L
+  16,L,U
+   8,L
+   9
+  13,U,R
+  15,R
+  13,R,U
+  15,R
+   1,R,U
+  24,R
+   4,R,U
+  14,R
+  10,R,U
+  30,R
+   2,R,U
+  13,R
+  10,R,X
+  57,R
+   1,R,X
+   7,R,U
+  28,R
+  14,R,U
+  45,R
+   4
+   3,L
+   6
+   5,L
+   1
+   5,L
+   1
+   5,R
+  21,R,U
+  11,R
+   1,R,one
+  10,R
+   5,R,U
+// Frame 15857, step 1047
+ 208,R
+   1,R,escape
+  22,R
+   3,R,X
+  24,R
+  10,R,X
+  28,R
+  10,R,X
+   9,R
+   9,R,U
+  30,R
+   1,R,X
+   1,R,three
+   1,R
+   5
+   3,L
+  25,R
+   5,R,U
+  37,R
+   2,R,X
+ 139,R
+   1,R,one
+  17,R
+  18,R,U
+  16,R
+   1,R,U
+  35,R
+  14,R,U
+  52,R
+   4,R,X
+  30,R
+   7,R,X
+  28,R
+   3,R,X
+  16,R
+   1,R,five
+  33,R
+   3,R,D
+   2,R
+   4
+ 222,R
+   1,R,three
+  13,R
+   1,R,U
+// Frame 16759, step 1092
+  15,R
+   2
+  17,R
+   2,L
+   2,R
+   2,L
+   1,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   3,L
+   1
+   6,L
+   1,L,U
+  50,L
+   1,L,C
+   4
+   1,one,three
+   1,C
+   1,R,D
+   1
+   1,R,D
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R
+   1
+   1,U,R
+   1
+   1,R,D
+   1
+   1,D
+   1
+   1,D
+   2,R
+   6
+   1,three
+   1
+   1,escape
+   1,R,three
+  15,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   3,X
+  48,R
+   1,R,U
+  14,R
+   3
+   9,L
+   1,L,four
+  46,L
+   1,L,U
+  13,L
+   1
+  46,R
+   1,R,X
+   1,five
+   4
+  41,R
+   1,R,escape
+  64,R
+   1,R,C
+   1,R
+   3
+   1,C
+   1,D
+   1
+   1,R,D
+   1
+   1,R,D
+   1
+   1,D
+  14,R
+   1,R,U
+  11,R
+   1
+  11,L
+   1,L,X
+  41,L
+  45,R
+   4,R,U
+  12,U,L
+  77,L
+  24,L,U
+   7,L
+   5,L,U
+  40,L
+   8,L,U
+   6,L
+   1
+  14,U,R
+  16,R
+   1,R,U
+// Frame 17711, step 1237
+  57,R
+   8,R,U
+   7,R
+   2,R,C
+   2,R
+   1,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,C
+   4
+   7,L,U
+  61,L
+   6,L,X
+  19,L
+   1,L,C
+   4
+   1,three,four
+   1,C
+   1,R
+   1
+   1,R
+   1
+   1,R,D
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R,D
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R,D
+   1
+   1,D
+   1,R
+   1
+   1,R
+   1
+   2,R
+   9
+   1,escape
+  48,R
+   6,R,U
+   5,U,L
+   2,L
+   5
+  11,U,R
+   2,R
+   5
+  11,L,U
+   2,L
+   5
+  11,U,R
+   2,R
+   5
+  11,L,U
+   2,L
+   5
+  29,U,R
+  32,R
+  20,R,U
+  20,R
+   1,R,U
+  66,R
+   1,R,X
+   1,R
+   1,R,four
+ 112,R
+   1,R,U
+  24
+ 108,R
+   1,R,U
+   2,U
+   5,U,R
+   3,R
+   4
+   8,U
+  12,U,R
+   2,R
+  11
+   1,L,U
+   7,U
+  12,U,L
+   6,L
+  11,L,X
+  31,R
+  18
+   1,four
+// Frame 18717, step 1340
+ 134
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   1
+   1,C
+   1,L,X
+   2,L
+   3
+   4,L
+   1
+   7,L
+   2
+   4,L
+   2
+   3,L
+   1
+  10,L,U
+  24,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   3,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+  28
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+  64
+   1,escape
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape,R
+   1,R,three
+  28,R
+  25,R,U
+  15,R
+   1,R,U
+  17,R
+   6,R,D
+   1,R
+   1,R,X
+   1,R,five
+  43,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+   1,L,R
+   2,R
+   1,L
+   1,L,R
+   2,R
+   1,L
+   1,L,R
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+  28,R
+   1,R,U
+  18,R
+   1,R,Z
+  28,R
+   1,R,U
+  43,R
+   1
+   5,R
+   1,R,U
+  16,R
+   1,R,X
+  38,R
+  12,R,U
+  13,R
+   1,R,four
+   1,R
+   1,R,U
+  11,R
+   2
+   7,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   8,L
+   1,L,U
+  51,L
+   1,L,U
+  45,L
+   1,L,C
+   3,L
+   1
+   1,U,R
+  15,R
+   1,R,U
+  30,R
+   1
+   1,L
+   2,X
+// Frame 19631, step 1477
+  44,R
+   5,R,U
+  20,R
+   3
+  20,U,R
+  68,R
+   3,R,U
+ 127,R
+   1,R,three
+  46,R
+   9,L
+   1,L,D
+  45
+ 139,R
+   1,R,X
+  51,R
+  10,R,X
+  12,R
+  12,R,U
+  94,R
+   1,R,C
+  71,R
+   1,R,four
+   1,R
+   5,R,U
+   7,U,L
+  24,L
+   1,L,C
+   2,L
+   2
+   1,L,U
+  29,L
+  11,L,U
+  18,L
+   2,L,C
+   1,L
+   1
+   1,R,D
+   1,R
+   3,R,X
+   1
+  22,R
+   1,R,five
+// Frame 20585, step 1521
+  80,R
+   1,R,U
+  62,R
+   1,R,escape
+ 144,R
+   1,R,X
+ 184,R
+   1,R,X
+   1,R
+  12,R,U
+   1,R,one
+   5,R
+   6
+   1,R
+   1
+  19,R
+   1,R,U
+  17,R
+   3,R,X
+   4,R
+   1,R,five
+  62,R
+   1,R,U
+  14,R
+   5
+  42,L
+   1,L,U
+  10,L
+  13
+  11,L
+   1,L,X
+   1,L,one
+  19,L
+  17,L,U
+  31,L
+   1,L,U
+  19,L
+   1,L,X
+  23,L
+  21,L,U
+  10,L
+   1,L,C
+   1,L
+   3
+   1,U,R
+  84,R
+  11,R,U
+// Frame 21497, step 1569
+  42,R
+   3,R,U
+   3,U,L
+   1,U,L,four
+   1,U,L
+   3,L
+   4
+   3,U
+   9,U,R
+  45,R
+   5,R,U
+   8,U,L
+  97,L
+   1,L,escape
+   2,L
+  17,L,U
+   8,L
+  11
+  15,U,R
+   1,R
+   4
+  11,L,U
+   2,L
+   5
+  11,U,R
+   7,R
+  10,R,U
+  32,R
+   1,R,U
+  18,R
+   3,L
+   1,L,X
+   1,three
+  33,R
+   2,R,U
+   2,R
+   1,R,U
+   1,R
+   1,R,U
+   1,R
+   2,R,U
+   1,R
+   1,R,U
+  20,R
+  15,R,U
+  14,R
+   2,R,X
+  13,R
+   1,R,five
+  23,R
+  10,R,U
+  11,R
+   2,R,C
+   1,R
+   2
+   1,L,U
+  53,L
+   1,L,escape
+   4,L
+   2,L,Z
+  25,L
+  10,L,U
+  10,U,R
+   6,R
+  13,R,X
+  95,R
+  25
+   1,C
+   1
+   1,C
+   8
+   1,C
+  17
+   1,escape
+  63
+   1,escape
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape
+  23,R
+   1,R,three
+// Frame 22400, step 1653
+  15,R
+  10,R,U
+  49,R
+   1,R,U
+  43,R
+   1,R,X
+   1,R,five
+  71,R
+   1,R,C
+   5,R
+  14,R,U
+  16,R
+   1,R,U
+  59,R
+   1,R,X
+   1,R,three
+  46,R
+   1,R,U
+  34,R
+   5,R,U
+  32,R
+   1,R,U
+  43,R
+  24,R,U
+  14,R
+   1,R,U
+  11,R
+   7,R,X
+  32,R
+   2,R,U
+  87,R
+   1,R,U
+  26,R
+   2,R,U
+  14,R
+   1,R,C
+  46,R
+  14,R,U
+  12,R
+   4
+   2,U
+   2,U,R
+   7,U,L
+   2,L
+   5
+   6,U,R
+  27,R
+   6,R,U
+  36,R
+   6,R,X
+// Frame 23300, step 1704
+  67,R
+   3,R,U
+  17,R
+   2,L,U
+   8,U
+  10,U,L
+   7,L
+   6
+   5,L,U
+  19,L
+   1,L,U
+  41,L
+   9,L,U
+  35,L
+   1,L,escape
+  35,L
+   2,L,C
+   1,L
+   2
+   1,L,U
+  45,L
+  18,L,U
+  12,L
+  12,L,U
+  24,L
+  14,R
+   1,R,U
+  34,R
+  13,R,U
+  10,R
+   1,R,U
+  20,R
+ 143
+ 170,U,R
+   1,R
+  27
+  50,L
+   1,L,C
+   4
+   1,L,U
+  22,L
+   5,L,U
+  31,L
+   1,L,four
+  23,L
+   1,L,escape
+// Frame 24203, step 1751
+  14,L
+   1,L,C
+   3,L
+   1
+   1,U,R
+  39,R
+   1,R,U
+  18,R
+   4
+   6,L
+   6
+  18,L
+  14,L,U
+  66,L
+   1,L,U
+  32,L
+   1,L,U
+  24,L
+   1,L,U
+  34,L
+   1,R
+   1,R,X
+  23,L
+   6,L,U
+   1,L
+  10,L,U
+  18,L
+  15,L,U
+   1,L
+   4
+   2,U
+   7,U,R
+  73,R
+  21,R,U
+  27,R
+   1,R,U
+  19,R
+   2,L
+   1,L,X
+  41,R
+   2,R,U
+   2,R
+   1,R,U
+   1,R
+   1,R,U
+   2,R
+   2,R,U
+  21,R
+  12,R,U
+  26,R
+   2,R,C
+   3,R
+   1,R,U
+  32,R
+  52,L
+   1,L,U
+  75,L
+   1,L,U
+  18,L
+   3,R
+   1,R,X
+   1,one
+  41,L
+   2,L,U
+   1,L
+   2,L,U
+   1,L
+   2,L,U
+// Frame 25124, step 1820
+  67,L
+   1,L,U,X
+  40,L
+   6,L,X
+  11,L
+   1,L,U
+  14,L
+   8
+  14,R
+   1,R,X
+  26,R
+  12,R,X
+  37,R
+   1,R,three
+  14,R
+  10,L
+  16,L,U
+   8,L
+   8
+   2,C
+   3
+   1,U,R
+  16,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R
+   1,R,X
+   9,R
+   1,R,one
+  41,R
+  17,R,U
+  94,R
+   5,R,U
+   9,U,L
+  16,L
+   1,L,U
+  39,L
+   3,L,C
+   2
+   1,U,R
+  70,R
+   5
+   7,L
+   9
+  37,R
+   4,R,X
+  34,R
+   1,R,X
+  22,R
+   1,R,four
+   1,R
+   1,R,four
+ 110,R
+   8,R,U
+  57,R
+   1,R,X
+   1,R
+   2
+   6,R
+  14
+   3,U,R
+// Frame 26028, step 1885
+  10,R
+  13
+   1,one
+   3
+   5,L,U
+  10,U,R
+   2,R
+   3
+   6,U
+   1,U,R
+   2,U
+  11,U,R
+  13,R
+   1,R,U
+  81,R
+   4,R,X
+  41,R
+   1,R,U
+  27,R
+   1,R,X
+  50,R
+   7
+   2,L
+  12
+  20,R
+  10,R,U
+  31,R
+   2,R,U
+  18,R
+   2
+ 120,L
+   2,L,C
+   3,L
+   1,L,U
+  33,L
+   1,L,U
+  12,L
+   4
+  47,R
+  15,R,U
+  23,R
+   3
+  29,L
+   1,L,four
+   1,L
+   1,L,four
+  73,L
+   5,L,D
+// Frame 26954, step 1934
+ 172,L
+   1,L,escape
+ 102,L
+   3,L,U
+  44,L
+   1,R
+   1,R,X
+  13,L
+   3,L,U
+   1,L
+   2,L,U
+  56,L
+   2,L,C
+   2,L
+   1,L,D
+  33,L
+   1,L,Z
+  28,L
+   1,L,U
+  44
+  60,R
+ 240
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   2,C
+   1
+   2,R
+   4
+   2,C
+   8,R
+   1,L
+   6
+   1,L,X
+   1,three
+   1
+   1,three
+   1
+  36,R
+   2,R,U
+   1,R
+   4,R,U
+   1,R
+   2,R,U
+   1,R
+   1,R,U
+  20,R
+   1,R,X
+  20,X
+   1,L,four
+  82,L
+   2,R
+   4
+   3,L
+  10
+// Frame 27856, step 1995
+   5,L
+   1,R
+   1,R,Z
+   2,R
+   1,R,C
+  12,R,X
+   8,L
+   1,L,R
+   2,R
+   1,R,X
+   1,X
+   7
+   4,L
+   3
+   2,R
+  16
+   8,R
+   8,R,U
+  10,U,L
+   7,L
+  15,L,U
+   9,L
+   1,L,U
+   7,L
+   3
+   1,L
+   4
+   2,L
+   4
+   1,C
+   4
+   2,U,R
+  22,R
+   1
+   6,L
+   1,L,X
+  47,R
+   2,R,U
+  25,R
+   1
+  15,U,R
+   5,R
+   1,L
+   1,L,three,X
+   1,R
+   1,R,three
+  11,R
+   1,R,C
+   4
+   8,L,U
+   2,L
+   1,L,U
+  29,L
+   1,L,U
+  31,L
+   1,R
+   1,R,X
+   1,L
+   1,L,C
+ 110,L
+   2,R
+   1,R,U
+  21,R
+   1,R,X
+  16,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+  13
+   1,C
+   1
+   1,C
+   1
+   1,C
+   1
+   1,C
+   7
+   1,C
+   8
+   1,C
+  53
+   1,escape
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape
+   1,R
+   1,R,three
+  85,R
+   1,R,Z
+  31,R
+   9,R,U
+// Frame 28758, step 2133
+  47,R
+   2,R,U
+  26,R
+   1,R,U
+  23,R
+   1,R,X
+   1,R,one
+  46,R
+   1,R,X
+   1,R,five
+   6,R
+   1,R,U
+  17,R
+   3
+   7,R
+   2
+  40,R
+   5,R,U
+  22,R
+  11,R,U
+  12,R
+   4,R,U
+  23,R
+   4,R,X
+  63,R
+   1,R,four
+  48,R
+  20,R,U
+   3,R
+  10
+   1,U,R
+  10,R
+   1,R,U
+  14,R
+  10
+   3,R
+   2,L
+   2,R
+   2,L
+   3,R
+   3,L
+   1,L,R
+   4,R
+   2,L
+   1,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   3,L
+   2,R
+  12,L
+   3
+   4,U,R
+   7,R
+   9
+   5,R
+   1
+   3,R
+   1
+   4,R
+   5,L
+   1,L,X
+  44,R
+   1,R,U
+  23,R
+   1,R,one
+   5,R
+   2,R,U
+  75,R
+   8,R,U
+   7,R
+   1,R,U,X
+   7,R,U
+  12,R
+   1,R,four
+   7,R
+   6,R,U
+// Frame 29747, step 2218
+ 246,R
+   1,R,U
+   1,R
+   1,R,U
+  29,R
+  29,R,U
+  35,R
+   2,D
+   7
+   6,R
+  14,R,U
+  16,R
+   1,R,U
+  27,R
+   1,R,four
+  21,R
+   1,R,U
+  10,R
+   3
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   3,R
+   1,L
+  12,R
+   1,R,U
+  45,R
+   1
+   1,escape
+  97,L
+   2,L,C
+   3,L
+   1,L,U
+   2,L
+   1,R
+   1
+   1,L
+   8
+  21,R
+   7,L
+   2,R
+   1
+   1,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+   1,L,R
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2
+   1,X
+  28
+   4,R
+   3,R,U
+   1,R
+   4,R,U
+  46,R
+   2,L
+   2,X
+  19,R
+   4
+   6,L
+   2,L,U
+   1,L
+   2,L,U
+   1,L
+   2,L,U
+   1,L
+   2,L,U
+  22,L
+   9,R
+   1,R,U
+  16,R
+   2,R,X
+   2
+  13,R
+   4
+  10,R
+   2,R,U
+   1,R
+   2,R,U
+   1,R
+   1,R,U
+   1,R
+   2,R,U
+  20,R
+  10,L
+  27,X
+  22
+   4,R
+   1,R,U
+   2,R
+   2,R,U
+   2,R
+   1,R,five
+  33,R
+   2,R,U
+// Frame 30786, step 2365
+ 160,R
+   3,R,X
+  62,R
+   1,R,C
+   6,R
+  20,R,U
+  13,R
+   1,R,U
+  74,R
+   6,R,U
+   8,U,L
+  16,L
+   1,L,U
+  79,L
+   1,L,U
+   4,L
+   1,L,escape
+  35,L
+   1,L,U
+  12,L
+   2
+   4,R
+   2
+   1,R
+   1
+   1,L
+  12
+   1,R
+   3,L
+   2
+   8,R
+   1,R,U
+  67,R
+   1,R,U
+  12,R
+   8
+  97,R
+   1,R,U
+  13,R
+   1,R,three
+  74,R
+   1,R,X
+  24,R
+   3,R,four
+  52,R
+  15,R,U
+   4,R
+   1
+  20,L,U
+  13,L
+   1,L,U
+  10,L
+   7,L,U
+  78,L
+// Frame 31695, step 2420
+  24,L,U
+   3,L
+  11
+  18,U,R
+  78,R
+   2,R,C
+   2,R
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   4,R
+   1,R,U
+  27,R
+  15,R,U
+   5,R
+   4,U
+  14,U,L
+   9,L
+   1,L,X
+   2,L
+  29,R
+  29
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   8
+   1,C
+   1
+   1,C
+  33
+   1,C
+  12
+   1,C
+  14
+   1,C
+   8
+   1,C
+  81
+   1,C
+ 121
+   1,C
+  17
+   1,escape
+  67
+   1,escape
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape
+   1,R
+   1,R,three
+  42,R
+   1,R,U
+  30,R
+   3
+   2,C
+ 115,R
+   1
+   5,L
+// Frame 32615, step 2493
+  21,R
+   1,R,U
+  30,R
+   1,L
+   1,L,X
+  17,R
+   1,R,four
+   4,R
+   1,R,U
+  18,R
+   1
+  61,L
+  22,L,U
+  31,L
+   7,L,U
+  10,L
+   2,L,C
+   1,L
+   2
+   1,U,R
+  18,R
+   1,L
+   1,L,X
+   8
+   4,L
+  18
+   1,U,R
+   2,R
+   1,R,U
+  22,R
+   2
+   3,U
+   2,U,R
+   1,U
+   1,U,R
+   5,U
+   8,U,L
+  13,L
+   1,L,U
+   1,L,U,three
+   4,L,U
+  28,L
+  20,L,U
+  13,L
+   1,L,U
+  15,L
+   1,L,C
+  24,L
+   4,L,U
+   2,L,U,R
+   8,U,R
+  64,R
+   1,R,U
+  18,R
+   5,R,X
+  13,R
+  96,R,X
+  35,R
+   1,R,five
+   9,R
+   3,R,U
+  15,R
+   1,R,U
+  18,R
+   7,R,U
+  11,U,L
+  21,L
+   8,L,U
+   6,U,R
+  16,R
+   3,R,U
+  14,R
+   3,R,D
+  28,R
+   1,R,X
+  29,R
+   2,R,C
+   2,R
+   1
+   1,L,U
+// Frame 33573, step 2574
+  81,L
+  23,L,U
+  61,L
+   1,L,X
+  36,L
+   9,L,U
+   5,U,R
+  13,R
+   3
+   6,U
+   1,U,R
+   2,U
+   6,U,R
+   5,R
+  11,R,U
+  54,R
+   1,R,Z
+  29,R
+   1,R,X
+   7,R
+   1,R,three
+  12,R
+   1,R,C
+   4,R
+   1,R,U
+  19,R
+   1,R,Z
+  60,R
+   1,R,U
+   1,R,U,C
+   5,R,U
+   6,R
+   1,R,D
+  18,R
+   1,R,X
+  17,R
+   3,R,five
+  17,R
+   6,R,U
+  44,R
+  24,R,U
+  39,R
+   2,R,U
+   1,R
+   4,R,U
+   1,R
+   2,R,U
+  35,R
+   1,R,X
+  18,R
+   2,R,U
+  13,R
+   1,R,C
+   2,R
+   2
+   1,L,U
+  57,L
+   2,L,U
+  19,L
+  29,R
+   1,R,U
+  36,R
+   1,R,four,X
+  21,R
+   1,R,C
+  15,R
+   2,R,C
+   2,R
+   1
+   1,L,U
+  35,L
+   4,L,U
+  15,U,R
+  12,R
+   4,R,U
+// Frame 34496, step 2650
+  24,R
+   1,L
+   1,L,X
+   3,R
+   2,L
+   1,one
+   1
+  18,L
+   2,L,U
+  17,L
+   9
+   8,U
+  12,U,L
+  13,L
+   1,L,U
+  10,L
+   1,L,X
+   1,L
+  14,L,U
+  16,L
+   8,L,U
+   7,L
+   8,L,U
+  13,L
+   1,L,C
+  57,R
+  12
+   3,L
+  11
+   1,L
+  44,R
+   1,R,X
+   1,R,four
+  90,R
+   1,R,U
+  17,R
+   7,R,U
+  15,R
+   2,R,U
+   8,R
+   1,R,U
+  22,R
+   1,R,X
+ 104,R
+   9,R,U
+  34,R
+   1,L
+   1,L,X
+   1,R,one
+  21,R
+   2,R,U
+   1,R
+   1,R,U
+   2,R
+   1,R,U
+   1,R
+   2,R,U
+  29,R
+   2,R,X
+  55,R
+  12,R,X
+  48,R
+   2,R,U
+   1,R
+   1,R,U
+   2,R
+   1,R,U
+   1,R
+   1,R,U
+   2,R
+   1,R,U
+  52,R
+   3,R,X
+  40,R
+   1,R,U
+// Frame 35451, step 2726
+  58,R
+   7,R,U
+  18,R
+   1,R,U
+  13,R
+   3
+  15,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+  11,R
+   1,R,U
+  16,R
+   1,R,X
+   2,R
+   1,R,U
+   5,R
+   1,R,four
+  37,R
+  38,R,U
+  16,R
+   2,R,U
+   2,R,U,C
+  16,R,U
+  48,R
+   2,R,C
+   1,R
+   2
+   1,L,U
+  21,L
+   2,L,U
+  30,L
+   1,R
+   1,R,X
+  43,L
+   2,L,U
+   1,L
+   1,L,U
+   2,L
+   1,L,U
+   1,L
+   2,L,U
+   1,L
+   2,L,U
+  71,L
+   1,L,U
+  13,L
+   1
+  13,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+  15,R
+   7,R,U
+  31,R
+   8,R,U
+  78,R
+   9,R,U
+  33,R
+   3,R,C
+   2,R
+   1,C
+   1,D
+   1
+   1,D
+   1
+   1,R,D
+   1
+   1,R,D
+  17,R
+   2,R,C
+   2,R
+   1
+   1,C
+   1,R,D
+   1
+   1,R,D
+   1
+   1,D
+   1
+   1,D
+  29,R
+  14,R,U
+  19,R
+   1,R,escape
+  60,R
+   1,R,U
+  22,R
+   1,R,C
+   4,R
+   1,R,escape
+   1,R,U
+// Frame 36391, step 2839
+  41,R
+  13,L
+   5,L,U
+   1,U
+   6,U,R
+  20,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   4,R
+   1,escape
+   1,U,R
+  22,R
+   5,R,U
+  10,U,L
+  18,L
+  11,R
+   1,R,U
+  11,R
+   2
+   1,L
+   1
+   4,L
+   2
+   1,C
+   4
+   1,four,eight
+   1,C
+   1,R,D
+   1
+   1,R,D
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R
+   1
+   1,U,R
+   1
+   1,U,R
+   1
+   1,R,D
+   1
+   1,R,D
+   1
+   1,R
+   1
+   1,R
+   1
+   1,U,R
+   1
+   1,R
+   1
+   1,R,D
+   1
+   1,D
+   1
+   1,D
+   1,R
+   1
+   1,R
+   9
+   1,R
+   1,escape
+  31,R
+  12,R,U
+   8,R
+   1,R,escape
+  32,R
+   4,R,U
+  75,R
+  12,R,three
+  15,R
+   1,R,three
+  54,R
+ 188
+   1,escape
+  48
+   1,C
+   1,U,X
+  14,U
+   5,U,R
+   2,R
+  11
+   2,L,U
+  25,L
+  27,L,U
+  11
+   1,U,R
+  26,R
+  27,R,U
+   1,R
+  10
+   1,L,U
+  30,L
+// Frame 37305, step 2946
+  21,L,U
+   3,L
+  11
+   6,U,R
+  21,R
+  26,R,U
+   1,R
+  11
+   4,L,U
+   3,L
+   7
+  14,R
+  12,L
+   6,L,U
+  19,L
+   1,R
+   1,R,X
+  23,L,U
+  10,L
+   5
+   1,R
+   9
+   1,U,R
+  16,R
+   1
+   3,L
+   1
+  22,L
+   1,L,four
+  83,L,U,C
+   9,L
+  59
+   1,L
+  57,L,U
+  17,L,U,X
+   1,U,X
+   7,X
+   1,X,R
+   3,R
+   1,R,three,X
+   1,R
+   1,R,three
+   1,R,C
+   4,R
+  20,L,U
+   2,L
+  11
+   5,U,R
+  22,R
+  32,R,U
+   6
+   1,L,U
+  26,L
+  29,L,U
+   9
+   7,U,R
+  20,R
+  26,R,U
+  12
+  18,L,U
+   3,L
+   3,L,C
+   1,L
+   1,R
+   2,R,X
+   3,L
+   1,L,U,seven
+  25,L,U
+   2,L
+  10
+   6,U,R
+  21,R
+   5,L,U
+  16,L
+   5,R
+   1,R,C
+   1,R,X
+   2,R
+   1,R,U
+  22,R
+  20,R,U
+   3,R
+  10
+   2,L,U
+// Frame 38206, step 3031
+   4,L
+  11
+   3,R
+   1
+   6,R
+   1,L
+   1,L,X
+   3
+   3,L
+   6,L,U
+   2,U,R
+   4,R
+  19,L
+   2,L,C
+   2,L
+   1
+  20,U,R
+   2,R
+  11
+   1,L,U
+  26,L
+  30,L,U
+   2,L
+   6
+   4,U,R
+  24,R
+  30,R,U
+   3,R
+   5
+  23,L,U
+   9,L
+   6,L,U
+   2,L,U,C
+  12,L,U
+   3,L
+  10
+   1,U,R
+  29,R
+   1,L
+   1,L,X
+   4,R
+  20,R,U
+   3,R
+  10
+   1,L,U
+   4,L
+   4
+  16,L
+   2,R
+   5,R,U
+   4,R
+   1,L,C
+   2,L
+   1
+   1,R
+   1
+   1,L
+   9,R
+   1,L
+   1,L,X
+  15,L
+   1,L,C
+   3,L
+   1
+  20,U,R
+   3,R
+  10
+  24,L,U
+   3,L
+   1,L,U,X
+  29,L,U
+   1,L
+   7
+   9,L
+  35,R
+  24,R,U
+  12,R
+   2
+   1,L,U
+   7,L
+   5
+  10,R
+   5,L
+   1
+   3,X
+  25
+   9,L,U
+  11,U,R
+  13,R
+   1,R,U
+  30,R
+   1,R,U
+  17,R
+   4
+   3,R
+   1
+   1,L
+   2,X
+   4
+   2,five
+  19
+   4,four,five
+   1,five
+   6
+   4,five
+// Frame 39224, step 3137
+ 211,R
+   1,R,D
+   3,R
+   1,R,X
+  15,R
+   2,R,Z
+  25,R
+   1,R,Z
+  27,R
+   2,R,Z
+  26,R
+   1,R,Z
+  20,R
+   1,R,C
+   4
+   1,C
+   1,R
+   1
+   1,R
+   1
+   1,R,D
+   1
+   1,R,D
+   1
+   1,D
+   1,R
+   1
+   1,R,D
+   1
+   1,R
+   1
+   1,R
+   1
+   1,U,R
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R,D
+ 121,X
+ 267
+   1,C
+   8
+   1,C
+   8
+   1,C
+  60
+   1,escape
+   1,enter
+   1,escape
+   1,enter
+  19
+   1,escape,C
+  66,R
+   2,R,Z
+  18,R
+   3,R,four
+  18,R
+   4,R,U
+// Frame 40160, step 3200
+ 178,R
+   1,R,U
+  67,R
+  26,R,U
+  26,R
+   8,R,U
+  12,R
+   4,R,D
+  19,R
+   1,R,U
+  19,R
+   1,L
+   1,L,X
+  31,R
+   2,R,U
+   1,R
+   2,R,U
+   1,R
+   2,R,U
+   2,R
+   1,R,eight
+   1,R
+   1,R,eight
+  18,R
+   9,R,U
+  23,R
+   9,R,X
+   2,R,U
+  27,R
+   1,R,five
+  12,R
+   1,R,U
+  34,R
+   1,R,Z
+ 102,R
+   6,R,X
+  20,R
+   1,R,eight
+   1,R
+   1,R,eight
+  16,R
+  28,R,U
+   4,R
+   1,R,U
+ 258,R
+   1,R,escape
+   4,R
+   3,R,U
+   5,U,L
+   4,L
+   2,R
+   1
+   1,X
+   2,R
+   1,escape
+   8
+// Frame 41080, step 3257
+  84,L
+   1,L,U
+  16,L
+   6
+  42,R
+   1,R,five
+ 119,R
+  10,R,U
+ 161,R
+   1,R,escape
+  11,R
+   1,R,U
+  17,R
+   3
+   9,L
+  10
+  51,R
+   1,R,X
+   1,R,eight
+   1,R
+   1,R,eight
+  16,R
+  20,R,U
+  17,R
+  54,R,X
+  50,R
+   2,R,U
+  36,R
+   1,R,C
+   2,R
+   2
+   1,C
+   1,R,D
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R
+   1
+   1,R,D
+   1
+   1,R,D
+   1
+   1,D
+   1,R
+   1
+   1,R
+   1,U
+   1
+   1,U,R
+   1
+   1,R,D
+   1
+   1,R,D
+   1,R,seven
+   1,R
+   1,R,seven
+   3,R
+   1,R,seven
+  63,R
+   1,R,U
+  17,R
+  10,R,X
+  50,R
+   1,R,C
+   1,R,X
+  62,R
+// Frame 41980, step 3326
+   1,R,U
+ 136,R
+  10,R,U
+  10,U,L
+   3,L
+  10
+   7,U,R
+  10,R
+   2
+   7,U
+   7,U,R
+  16,R
+   1,R,U
+  25,R
+   9,R,U
+  13,R
+  10,R,X
+  55,R
+  20,R,U
+   7,R
+   3,U
+   9,U,L
+   8,L
+   4,L,X
+  15,L
+   2,L,U
+   2,L,U,C
+  14,L,U
+  19,L
+   1,L,U
+  20,L
+   1,L,X
+   3,L
+   1,L,U
+  13,L
+  15,L,U
+   1,L
+   4
+   1,U,R,eight
+   1,U,R
+   1,U,R,eight
+   8,U,R
+   7,R
+  18,L,U
+  19,L
+   1,L,U
+  48,L
+  12,L,U
+  10,L
+   8,L,X
+  30,L
+  22,L,U
+   4,L
+  10
+   2,U,R
+   4,U
+   9,U,R
+   5,R
+   3,R,U
+   6,R
+   3,R,X
+   1,R,X,U
+   8,U
+  11,U,L
+  18,L
+   5,L,U
+   9,U,R
+  16,R
+   5,R,U
+   7,U,L
+  21,L
+   2,L,C
+   2,L
+   1
+// Frame 42980, step 3401
+ 169,R
+   7,R,U
+ 192,R
+   1,R,U
+ 105
+ 137,L
+   5,L,U
+   3,U,R
+   7,R
+   1,R,D
+   1,R,D,C
+   1,D
+   1,D,C
+   1,D
+   1,D,C
+   1,D
+   1,D,C,Z
+   1
+   1,C
+   1,R,D
+   1
+   1,R,D
+   1
+   1,D
+   1
+   1,D
+  11
+   1,R
+   1,R,C
+   3,R
+   1,R,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,C
+   3
+   1,D
+   3
+   1,R,C
+   3
+   1,D
+   3
+   1,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   4,R
+   1,R,escape
+   1,R,D
+   5,R
+   4,R,U
+   4,U,L
+   7,L
+   1,L,C
+   4,L
+   1,L,U
+  15,L
+   2,L,C
+   2,L
+   1,L,D
+   3,L
+   1,L,C
+   3,L
+   1,L,D
+   3,L
+   1,L,C
+   3,L
+   1,L,D
+   3,L
+   1,L,C
+   3,L
+   1,L,D
+   3,L
+   1,L,C
+   3,L
+   1,L,D
+   3,L
+   1,L,C
+   3,L
+   1,L,D
+   3,L
+   1,L,C
+   3,L
+   1,L,D
+   5,L
+   2,L,C
+   2,L
+   1,D
+   3
+   1,C
+   3
+   1,R,D
+   3,R
+   1,R,C
+   3,R
+   1,R,D
+   3,R
+   1,R,C
+   4,R
+   1,R,escape
+   1,R,U
+  15,R
+   1,R,C
+   3,R
+   1,R,D
+  15,R
+   1,R,U
+  18,R
+   1,R,four
+  38,R
+  31,L
+   1,L,U
+  15,L
+   4
+  17,R
+   3,R,U
+  37,R
+   1,R,escape
+   2,R
+   1,R,C
+   3,R
+   1
+   1,C
+   1,D
+   1
+// Frame 43880, step 3542
+   1,D
+   1
+   1,R,D
+   1
+   1,R,D
+  43,R
+   2,R,C
+   3
+   1,C
+   1,R,D
+   1
+   1,R,D
+   1
+   1,D
+   1
+   1,D
+  14,R
+   1,R,escape
+  17,R
+  11,R,U
+  14,R
+  11,R,U
+   3,R
+  52
+   1,escape
+   1
+   1,escape
+ 193
+ 145,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+   1,L,R
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   4,L
+   1,R
+   1,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   7,X
+  17
+  30,U,R
+   4,U,R,X
+  19,R,X
+   1,R
+   6,R,C
+// Frame 44802, step 3721
+  32,R
+   5,L
+   1,L,R
+   6,R
+   5,L
+   1,L,R
+   4,R
+  11,R,X
+   1,X,L
+  31,L
+   1,L,R
+  19,R
+  11,R,U
+  20,R
+   6,R,X
+   1,R,X,L
+   1,X,L
+  12,L
+  15,L,U
+  32,L
+   1,L,R
+   2,R
+   7,R,X
+   1,R,five
+   2,R
+   1,R,five
+  11,R
+  21,R,U
+  26,R
+   4,L
+  11,L,U
+  15,U,R
+   3,U,L
+   5,L
+   2,R
+   1,R,L
+   1,L
+   8,R
+   1,L
+   1,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,R,X
+   1,R,three
+  22,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,R,X
+   4
+   2,L
+   4,L,U
+   2,U
+   4,U,R
+   5,U,L
+   1,U,L,R
+  16,U,R
+  36,R
+   1,R,L
+   3,L,four
+  63,L
+  23,L,U
+   3,U,R
+   3,U,L
+   2,U,R
+   3,U,L
+   3,U,R
+   3,L
+   1,R
+   9,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   7,X
+  21
+  23,U,R
+  20,U,R,X
+  15,X
+   4
+   2,R
+   3,R,C
+   2,R
+   3,R,C
+  23,R
+  12,R,X
+   1,R,X,U
+  19,R,X
+  36,L
+   1,L,R
+   4,R
+// Frame 45725, step 3891
+  31,R,X
+  14,R
+   9,R,U
+   8,R
+   3,R,C
+  26,R
+   3,R,X
+   1,X
+  11,X,R
+  15,L
+   2,L,U
+  10,L
+   4,R
+   1
+   3,R
+   4
+  28,L
+   1,R
+   1,R,X
+   1,R,five
+   3,R
+   1,R,five
+   5,R
+  24,R,U
+  10,R
+   3
+   3,L,U
+   7,U,R
+  39,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R,X
+   1,R,three
+   1,R
+   1,L
+  25,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R
+   1,R,X
+   6,L
+   1,L,U
+   3,U,R
+   1,R
+  18,L
+  23,U,R
+   6,R
+   4,R,four
+  44,R
+   1,R,L
+  37,L
+  30,L,U
+   1,R
+   1,R,L
+   2,L
+   2,R
+   2,L
+   2,R
+   9,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1
+   1,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   7,R
+   3,R,X
+  19,R
+  28,R,U
+   3,R
+   3,R,C
+   1,R
+  21,R,X
+   2,R,X,L
+   1,X,L
+  44,L
+   1,L,R
+  13,R
+  16,R,X
+   8,R
+  16,R,U
+  19,R
+   1,L
+   1,U
+   1,U,R
+  15
+   4,X
+   3,R
+  13,R,C
+   2,R
+// Frame 46633, step 4066
+  14,L
+   3,L,U
+   2,L,U,R
+   4,U,R
+  21,R
+   6,L
+   1,R
+   1,R,X
+   3,X
+   1
+   3,R
+   1,R,five
+   1,R
+   1,R,five
+  14,R
+  18,L
+   3,R
+  17,R,U
+  15,R
+   3,L
+   1
+   3,R
+   1,L
+   1,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   3,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R
+   1,R,X
+   1,R,three
+  30,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R
+   1,R,X
+   8,R
+   2,R,U
+  42,R
+   4,L
+   3,L,four
+  84,L
+   2,L,U
+   2,U,R
+   2,U,L
+   2,U,R
+   2,U,L
+   3,U,R
+   2,U,L
+   2,U,R
+   1,U
+   2,U,L
+   2,U,R
+   2,U,L
+   2,U,R
+   2,U,L
+   2,U,R
+   3,U,L
+   2,U,R
+   2,U,L
+   2,U,R
+   2,U,L
+   5
+   1,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R
+   2,R,X
+  25
+  32,U,R
+  22,R,X
+   5,R,C
+  20,R
+  24,R,U
+  29,R,X
+   2,R
+   1,R,L
+  11,L
+   1,L,R
+   2,R
+   6,R,X
+   2,X,L
+  10,L
+   1,L,R
+   2,R
+   4,R,X
+   1,R
+  13,R,U
+  11,R
+  13,R,X
+  18,L
+   9,L,U
+  10,L
+   2
+  23,L
+   6,R
+   7,R,X
+   1,X,L
+   2,L
+   1,five
+   1
+   1,five
+   3
+  17,U,R
+   4,R,C
+// Frame 47564, step 4266
+  32,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   3,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+   1,L,R
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+   1,L,R
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R
+   1,R,X
+   1,R,three
+  24,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   1,R
+   1,R,X
+  10
+   5,R
+   2,R,U
+   1,U
+   1,U,L
+   3,L
+   1,L,R
+  19,R
+   5,R,four
+  22,R
+   1,R,L
+  77,L
+   1,L,U
+   2,U,R
+   2,U,L
+   2,U,R
+   2,U,L
+   2,U,R
+   2,U,L
+   2,U,R
+   2,U,L
+   2,U,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   3,L
+   1,R
+   5,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+   1,L,R
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,L
+   1,L,R
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   2,L
+   2,R
+   1,X
+  11
+   6,R
+  45,R,U
+   2,R,U,X
+   3,R,X
+   1,R
+  12,R,X
+  11,R
+   4,R,U
+  29,R
+   5,R,U
+  18,R
+   2,R,X
+   7
+   8,R
+  24,R,U
+   1,R,U,X
+   2,R,X
+  28,X
+   7,L
+   1,L,R
+   2,R
+   1,R,X
+  15,L
+  17,U,R
+   3,R
+   3,R,C
+  20,R
+  14,R,X
+   1,R,three
+  15,R
+   1,R,L
+   5,L
+   2,R
+   3,L
+   3,R
+   2,L
+   2,R
+  16,L
+   1,L,R
+   4,R
+   1,R,X
+   5,X
+   1,five
+   1
+   1,five
+   7,L
+   2
+   4,R
+  23,R,U
+  16
+  26,L
+   5
+// Frame 48509, step 4476
+  52,R
+   5,L
+  12
+   1,X
+// Frame 49479, step 4481
+ 952
+   1,C
+  66
+   1,enter
+  17

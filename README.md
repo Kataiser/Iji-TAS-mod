@@ -15,11 +15,11 @@ This tool to convert between Hourglass files (`.wtf` or `.hgm`) and Iji TAS file
 
 ## Syntax, controls, and documentation
 
-Keys: `escape, enter, up, down, left, right, z, x, c, s, one-nine`  
-Line syntax: `-` after a key presses and holds it and `+` releases it. The number afterward is the time in frames until the next step is processed (1 would be the very next frame).
-`//` anywhere in the line (preferably at the beginning) is a comment and won't be executed.  
-`Save:` command: creates a savestate file with the name after the colon (can include spaces). These *take a frame, clear current input*, and *are not invalidated.*  
-`End` command: ends the TAS playback
+Keys: `escape, enter, U, D, L, R, Z, X, C, S, one-nine`  
+Line syntax: number of frames to hold the inputs, followed by the inputs to hold, all separated by commas. Ex: `8,R,U` to hold right and up for eight frames  
+`//` anywhere in the line (preferably at the beginning) is a comment and won't be executed  
+`Save:` command: creates a savestate file with the name after the colon (can include spaces). These *take a frame, clear current input*, and *are not invalidated*  
+`End` command: ends the TAS playback  
 `Skip` command: skips to the clear screen of the current sector
 
 Space: load an Iji TAS file (`.itf`)  
@@ -57,8 +57,10 @@ Sorry. This is a work-in-progress mod of a complex game that I didn't make, in a
 I've already done a [TAS of this game](https://www.youtube.com/watch?v=eiYmJJUmzpI) using [Hourglass](https://github.com/TASVideos/hourglass-win32), and it's still a totally viable option. However, there were a few frustrations I had with it that I wanted to fix with this mod: you can't make changes to an existing TAS and have them propogate forward in time, you have to replay the entire TAS so far in fast-forward after reopening the game in order to continue, playback is laggy, it crashes occasionally, and it struggles to work with Iji 1.7. The only downside I'm aware of is that this is probably not allowed on [tasvideos.org](http://tasvideos.org), if that's a motivation for you.
 
 ## Contributing
-If you made changes to or added a .tas file, here are the steps for sharing them.
+If you made changes to or added a .itf file, here are the steps for sharing them.
 
 1. Fork this repository (need a GitHub account of course)
 2. Make changes in your fork, use a descriptive commit title
 3. Create a pull request in this repo
+
+Or just ask me in the Discord and I'll upload the file myself
