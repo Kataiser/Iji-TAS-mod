@@ -14,7 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (is_executing) {
-    scr_seed(current_inputs + string(room), frames_on_step)
+    scr_seed(string_replace_all(current_inputs," ","") + string(room), frames_on_step)
     frame += 1;
     frames_on_step += 1;
 }

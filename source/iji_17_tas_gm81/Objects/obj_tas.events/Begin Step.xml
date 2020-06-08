@@ -20,7 +20,7 @@
     }
     
     if (capture_syncdata) {
-        file_text_write_string(syncdata_log, string(frame) + ": ");
+        file_text_write_string(syncdata_log, string(frame) + string_repeat(" ", 5 - string_length(string(random_get_seed()))) + string(random_get_seed()) + ": ");
         
         tracked_objects[0] = obj_iji;
         tracked_objects[1] = obj_enemy;
