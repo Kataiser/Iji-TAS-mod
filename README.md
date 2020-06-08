@@ -1,3 +1,8 @@
+[![Github downloads](https://img.shields.io/github/downloads/Kataiser/Iji-TAS-mod/total.svg)](https://www.somsubhra.com/github-release-stats/?username=Kataiser&repository=Iji-TAS-mod)
+[![GitHub release](https://img.shields.io/github/release/Kataiser/Iji-TAS-mod.svg)](https://GitHub.com/Kataiser/Iji-TAS-mod/releases/)
+[![GitHub release date](https://img.shields.io/github/release-date/Kataiser/Iji-TAS-mod.svg)](https://GitHub.com/Kataiser/Iji-TAS-mod/releases/)
+[![GitHub commits since latest release](https://img.shields.io/github/commits-since/Kataiser/Iji-TAS-mod/latest)](https://github.com/Kataiser/Iji-TAS-mod/commits/master)
+
 # Iji TAS mod
 Tool-Assisted Speedrun mod for Iji 1.7
 
