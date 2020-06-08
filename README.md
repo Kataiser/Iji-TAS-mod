@@ -32,11 +32,10 @@ Right control: advance frame while paused
 ; (semicolon): toggle debug text  
 \ (backslash): fast-forward (8x speed, or at least as fast as the game can run)
 
-Debug text:  
+Debug text (white if running, light gray if not):  
 \> Current line in file / step of execution / frames since start  
-\> Held keys  
-\> Frames on current step (frames of current step)  
-\> Target FPS / actual FPS / activated instance count  
+\> Frames on current step / Held keys  
+\> Target FPS / actual FPS / activated instance count / activated enemy count  
 \> Current RNG seed
 
 ## Modifications

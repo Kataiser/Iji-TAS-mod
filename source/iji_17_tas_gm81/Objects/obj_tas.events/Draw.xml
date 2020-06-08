@@ -36,7 +36,13 @@ if (obj_taspause.render_hitboxes) {
 
 if (obj_taspause.debug_text) {
     draw_set_font(tas_font);
-    draw_set_color(c_white);
+    
+    if (is_executing) {
+        draw_set_color(c_white);
+    }
+    else {
+        draw_set_color(c_ltgray);
+    }
     
     if instance_exists(obj_shakescreen) {
         root_x = obj_shakescreen.x-396;
@@ -52,18 +58,10 @@ if (obj_taspause.debug_text) {
         root_y = 4;
     }
     
-    fps_string = string(room_speed) + "/" + string(fps) + "/" + string(instance_count);
-    held_keys_string = "";
-    for (i=0; i&lt;=ds_list_size(held_keys_display); i+=1) {
-        held_keys_string += string(ds_list_find_value(held_keys_display, i)) + " ";
-    }
-    held_keys_string = string_replace(held_keys_string, "0", "");
-    
     draw_text_ext(root_x,root_y,string(line) + " " + string(step) + " " + string(frame) + " ",28,800);
-    draw_text_ext(root_x,root_y + (18 * 1),held_keys_string,28,800);
-    draw_text_ext(root_x,root_y + (18 * 2),string(frames_on_step) + " (" + string(current_alarm) + ")",28,800);
-    draw_text_ext(root_x,root_y + (18 * 3),fps_string,28,800);
-    draw_text_ext(root_x,root_y + (18 * 4),string(random_get_seed()),28,800);
+    draw_text_ext(root_x,root_y + (18 * 1),string(frames_on_step) + " / " + string_replace_all(current_inputs," ",""),28,800);
+    draw_text_ext(root_x,root_y + (18 * 2),string(room_speed) + "/" + string(fps) + "/" + string(instance_count) + "/" + string(instance_number(obj_enemy)),28,800);
+    draw_text_ext(root_x,root_y + (18 * 3),string(random_get_seed()),28,800);
 }
 
 // record the game, losslessly

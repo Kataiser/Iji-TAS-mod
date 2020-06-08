@@ -15,10 +15,12 @@
       <arguments>
         <argument kind="STRING">randomize();
 is_executing = false;
-held_keys = ds_list_create(); //data strutures don't get saved in savestates, but that's not a problem (hopefully)
-held_keys_display = ds_list_create();
+// TODO: reimplement all these DS lists as arrays because data strutures don't get saved in savestates
+// (would hopefully all for savestates to not take a frame)
+held_keys = ds_list_create();
 just_pressed_keys = ds_list_create();
 just_released_keys = ds_list_create();
+held_keys_old = ds_list_create();
 tas_font = font_add_sprite(spr_text_tas,32,0,0);
 current_inputs = " ";
 frames_on_step = 0;
